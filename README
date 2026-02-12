@@ -1,19 +1,27 @@
-This replication package contains all the data, code, and results used in our experiments on automated program repair (APR). The contents are organized as follows:
-
-1. ByteTrace
-Contains the source code and pre-built JAR of the ByteTrace tool, which is used for execution-level instrumentation and dynamic data collection.
-
-2. data
-Contains the processed Defects4J dataset, including:
-Execution-level dynamic information
-Exception information
-Classification of single-function and multi-function bugs
-
-3. DynaFix
-Contains the source code of the DynaFix repair tool used in the experiments.
-
-4. Result
-Contains all experimental results, including:
-Baseline results
-Results for the four research questions (RQs)
-Results from external threats analysis, including DeepSeek-based DynaFix repairs
+.
+├── DynaFix/                    # 🧠 Core Python Framework (The main approach)
+│   ├── DebugInfoFetch/         # Scripts for interacting with defects4j and collecting traces
+│   ├── LLM/                    # Interface for LLM interaction (GPT-4o, DeepSeek, etc.)
+│   ├── validator/              # Test execution and patch validation logic
+│   └── result/                 # Temporary storage for current repair session logs
+│
+├── ByteTrace/                  # 🕵️ Java Instrumentation Agent (ASM-based)
+│   ├── src/main/java/          # Source code for bytecode manipulation
+│   ├── src/main/kotlin/        # Kotlin utilities for logging runtime values
+│   └── build.gradle.kts        # Gradle build configuration
+│
+├── data/                       # 💾 Datasets and Intermediate Data
+│   ├── input/                  # Buggy method locations and metadata
+│   ├── output/                 # Collected runtime information (DebugInfo & MethodCalls)
+│   ├── Defects4J/              # Defects4J v1.2/v2.0 metadata
+│   └── Defects4J_trans/        # Transformed dataset for specific experiments
+│
+├── Result/                     # 📊 Experimental Results (Paper Evaluation)
+│   ├── RQ1/                    # Effectiveness evaluation (vs. SBFL, etc.)
+│   ├── RQ2/                    # Comparison with SOTA (ReInFix, etc.)
+│   ├── RQ3/                    # Parameter sensitivity (Breadth vs. Depth)
+│   ├── RQ4/                    # Ablation study (Components impact)
+│   └── Baseline/               # Baseline model results
+│
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
