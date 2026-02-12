@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AstChangeProxy.replaceWith",
+    "doc": "/**\n   * Replaces a node from the parent's child list.\n   */",
+    "code": "final void replaceWith(Node parent, Node node, Node replacement) {\n    replaceWith(parent, node, Lists.newArrayList(replacement));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs",
+    "doc": "/**\n   * Simplify a toplevel expression, while preserving program\n   * behavior.\n   */",
+    "code": "private void replaceTopLevelExpressionWithRhs(Node parent, Node n) {\n    switch (parent.getType()) {\n      case Token.BLOCK:\n      case Token.SCRIPT:\n      case Token.FOR:\n      case Token.LABEL:\n        break;\n      default:\n        throw new IllegalArgumentException(\n            \"Unsupported parent node type in replaceWithRhs \" +\n            Token.name(parent.getType()));\n    }\n\n    switch (n.getType()) {\n      case Token.EXPR_RESULT:\n      case Token.FUNCTION:\n      case Token.VAR:\n        break;\n      case Token.ASSIGN:\n        Preconditions.checkArgument(parent.isFor(),\n            \"Unsupported assignment in replaceWithRhs. parent: %s\",\n            Token.name(parent.getType()));\n        break;\n      default:\n        throw new IllegalArgumentException(\n            \"Unsupported node type in replaceWithRhs \" +\n            Token.name(n.getType()));\n    }\n\n    List<Node> replacements = Lists.newArrayList();\n    for (Node rhs : getRhsSubexpressions(n)) {\n      replacements.addAll(getSideEffectNodes(rhs));\n    }\n\n    if (parent.isFor()) {\n      if (replacements.isEmpty()) {\n        replacements.add(IR.empty());\n      } else {\n        Node expr = collapseReplacements(replacements);\n        replacements.clear();\n        replacements.add(expr);\n      }\n    }\n\n    changeProxy.replaceWith(parent, n, replacements);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.valueConsumedByParent",
+    "doc": "/**\n   * Determine if the parent reads the value of a child expression\n   * directly.  This is true children used in predicates, RETURN\n   * statements and, RHS of variable declarations and assignments.\n   *\n   * In the case of:\n   * if (a) b else c\n   *\n   * This method returns true for \"a\", and false for \"b\" and \"c\": the\n   * IF expression does something special based on \"a\"'s value.  \"b\"\n   * and \"c\" are effectively outputs.  Same logic applies to FOR,\n   * WHILE and DO loop predicates.  AND/OR/HOOK expressions are\n   * syntactic sugar for IF statements; therefore this method returns\n   * true for the predicate and false otherwise.\n   */",
+    "code": "private boolean valueConsumedByParent(Node n, Node parent) {\n    if (NodeUtil.isAssignmentOp(parent)) {\n      return parent.getLastChild() == n;\n    }\n\n    switch (parent.getType()) {\n      case Token.NAME:\n      case Token.RETURN:\n        return true;\n      case Token.AND:\n      case Token.OR:\n      case Token.HOOK:\n        return parent.getFirstChild() == n;\n      case Token.FOR:\n        return parent.getFirstChild().getNext() == n;\n      case Token.IF:\n      case Token.WHILE:\n        return parent.getFirstChild() == n;\n      case Token.DO:\n        return parent.getLastChild() == n;\n      default:\n        return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.detachFromParent",
+    "doc": "/**\n   * Removes this node from its parent. Equivalent to:\n   * node.getParent().removeChild();\n   */",
+    "code": "public Node detachFromParent() {\n    Preconditions.checkState(parent != null);\n    parent.removeChild(this);\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isAssign",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFor",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMarkWhenNoCharsetSet ===
+
+org.jsoup.helper.DataUtil:parseByteData:119->[Local Variables] {"charsetName":"UTF-8"}
+org.jsoup.helper.DataUtil:parseByteData:77->[Local Variables] {"parser":{"treeBuilder":{"baseUriSetFromDoc":false,"formattingElements":[],"pendingTableCharacters":[],"framesetOk":true,"fosterInserts":false,"fragmentParsing":false},"maxErrors":0},"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":16},"baseUri":"http://foo.com/"}
+org.jsoup.helper.DataUtil:parseByteData:81->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:81 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:81->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:81 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:81->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:81 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:81->[Local Variables] {"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":16},"docData":"﻿\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}
+org.jsoup.helper.DataUtil:parseByteData:82->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:82 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:82->[Local Variables] "{parser\u003dorg.jsoup.parser.Parser@3d9c13b5, doc\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  ﻿\n  \u003ctitle\u003eOne\u003c/title\u003eTwo\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseByteData:83->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:83 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseByteData:83->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:83 -> org.jsoup.select.Elements.first
+org.jsoup.helper.DataUtil:parseByteData:114->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:114 -> java.lang.String.length
+org.jsoup.helper.DataUtil:parseByteData:114->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:114 -> java.lang.String.charAt
+org.jsoup.helper.DataUtil:parseByteData:115->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:115 -> java.nio.ByteBuffer.rewind
+org.jsoup.helper.DataUtil:parseByteData:115->[Local Variables] {"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":16}}
+org.jsoup.helper.DataUtil:parseByteData:116->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:116 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:116->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:116 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:116->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:116 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:116->[Local Variables] {"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":16}}
+org.jsoup.helper.DataUtil:parseByteData:117->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:117 -> java.lang.String.substring
+org.jsoup.helper.DataUtil:parseByteData:117->[Local Variables] {"docData":"\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}

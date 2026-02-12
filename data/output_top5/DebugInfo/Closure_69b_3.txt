@@ -1,0 +1,72 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Control Flow] Branch Info: Line: 1051, Condition: if (topInstanceType != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (declaredOverride == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superClassHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superInterfacesHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1030->[Local Variables] "{ctorType\u003dfunction (new:F): undefined, t\u003dcom.google.javascript.jscomp.NodeTraversal@a619c2, propertyName\u003dbar, propertyType\u003dfunction (this:F): undefined, n\u003dASSIGN 1 [sourcename: [testcode]] : function (this:F): undefined, info\u003dnull}"
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1031->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1031 -> com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1031->[Control Flow] Branch Info: Line: 1031, Condition: if (ctorType != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1035->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1035 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1035->[Local Variables] "{superClass\u003dfunction (new:Object, *): ?}"
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1036->[Control Flow] Branch Info: Line: 1036, Condition: if (superClass != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1037 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1037 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.hasProperty
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1036->[Control Flow] Branch Info: Line: 1036, Condition: if (superClass != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Control Flow] Branch Info: Line: 1037, Condition: if (com.google.javascript.rhino.jstype.FunctionPrototypeType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1038->[Local Variables] {"superClassHasProperty":false}
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1039->[Local Variables] {"superInterfacesHasProperty":false}
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1040->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1040 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (declaredOverride != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1046->[Control Flow] Branch Info: Line: 1046, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1046->[Control Flow] Branch Info: Line: 1046, Condition: if (com.google.javascript.rhino.JSDocInfo.isOverride() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1047->[Local Variables] {"declaredOverride":false}
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1048->[Local Variables] {"foundInterfaceProperty":false}
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1049 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> com.google.javascript.rhino.jstype.FunctionType.getAllImplementedInterfaces
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1052->[Control Flow] Branch Info: Line: 1052, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> java.util.Iterator.hasNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Control Flow] Branch Info: Line: 1051, Condition: if (topInstanceType != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (declaredOverride == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superClassHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superInterfacesHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Control Flow] Branch Info: Line: 1051, Condition: if (topInstanceType != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (declaredOverride == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superClassHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1073->[Control Flow] Branch Info: Line: 1073, Condition: if (superInterfacesHasProperty == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1030->[Local Variables] {"propertyName":"lineTo"}
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1031->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1031 -> com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1031->[Control Flow] Branch Info: Line: 1031, Condition: if (ctorType != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1035->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1035 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1036->[Control Flow] Branch Info: Line: 1036, Condition: if (superClass != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1037 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1037 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.hasProperty
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1036->[Control Flow] Branch Info: Line: 1036, Condition: if (superClass != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1037->[Control Flow] Branch Info: Line: 1037, Condition: if (com.google.javascript.rhino.jstype.FunctionPrototypeType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1040->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1040 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (declaredOverride != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1046->[Control Flow] Branch Info: Line: 1046, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1046->[Control Flow] Branch Info: Line: 1046, Condition: if (com.google.javascript.rhino.JSDocInfo.isOverride() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1049 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> com.google.javascript.rhino.jstype.FunctionType.getAllImplementedInterfaces
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1052->[Control Flow] Branch Info: Line: 1052, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:checkDeclaredPropertyInheritance:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkDeclaredPropertyInheritance:1051 -> java.util.Iterator.hasNext

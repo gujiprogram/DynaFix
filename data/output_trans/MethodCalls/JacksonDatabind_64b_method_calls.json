@@ -1,0 +1,77 @@
+[
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Include.ordinal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Value.getValueInclusion",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Value.withOverrides",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findNullSerializer",
+    "doc": "/**\n     * Method for getting a serializer definition for serializer to use\n     * for nulls (null values) of associated property or type.\n     *\n     * @since 2.3\n     */",
+    "code": "public Object findNullSerializer(Annotated am) {\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findUnwrappingNameTransformer",
+    "doc": "/**\n     * Method called to check whether given property is marked to be \"unwrapped\"\n     * when being serialized (and appropriately handled in reverse direction,\n     * i.e. expect unwrapped representation during deserialization).\n     * Return value is the name transformation to use, if wrapping/unwrapping\n     * should  be done, or null if not -- note that transformation may simply\n     * be identity transformation (no changes).\n     */",
+    "code": "public NameTransformer findUnwrappingNameTransformer(AnnotatedMember member) { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.getClassAnnotations",
+    "doc": "/**\n     * Method for accessing collection of annotations the bean\n     * class has.\n     */",
+    "code": "public abstract Annotations getClassAnnotations();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializationConfig.getDefaultPropertyInclusion",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializationConfig.isEnabled",
+    "doc": "/**********************************************************\n     */",
+    "code": "return isEnabled(SerializationFeature.WRAP_ROOT_VALUE);\n    }\n\n    public final boolean isEnabled(SerializationFeature f) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.isEnabled",
+    "doc": "/**\n     * @deprecated Since 2.2, use {@link #getActiveView} instead.\n     */",
+    "code": "public final boolean isEnabled(MapperFeature feature) {\n        return _config.isEnabled(feature);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMember.fixAccess",
+    "doc": "/**\n     * Method that can be called to modify access rights, by calling\n     * {@link java.lang.reflect.AccessibleObject#setAccessible} on\n     * the underlying annotated element.\n     *<p>\n     * Note that caller should verify that\n     * {@link com.fasterxml.jackson.databind.MapperFeature#CAN_OVERRIDE_ACCESS_MODIFIERS}\n     * is enabled before calling this method; as well as pass\n     * <code>force</code> flag appropriately.\n     *\n     * @since 2.7\n     */",
+    "code": "public final void fixAccess(boolean force) {\n        Member m = getMember();\n        if (m != null) { // may be null for virtual members\n            ClassUtil.checkAndFixAccess(m, force);\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.findInclusion",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.getName",
+    "doc": "/**\n     * Accessor for name used for external representation (in JSON).\n     */",
+    "code": "public abstract String getName();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.PropertyBuilder.findSerializationType",
+    "doc": "/**\n     * Method that will try to determine statically defined type of property\n     * being serialized, based on annotations (for overrides), and alternatively\n     * declared type (if static typing for serialization is enabled).\n     * If neither can be used (no annotations, dynamic typing), returns null.\n     */",
+    "code": "protected JavaType findSerializationType(Annotated a, boolean useStaticTyping, JavaType declaredType)\n        throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.PropertyBuilder.getPropertyDefaultValue",
+    "doc": "/**\n     * Accessor used to find out \"default value\" for given property, to use for\n     * comparing values to serialize, to determine whether to exclude value from serialization with\n     * inclusion type of {@link com.fasterxml.jackson.annotation.JsonInclude.Include#NON_DEFAULT}.\n     * This method is called when we specifically want to know default value within context\n     * of a POJO, when annotation is within containing class, and not for property or\n     * defined as global baseline.\n     *<p>\n     * Note that returning of pseudo-type\n     * {@link com.fasterxml.jackson.annotation.JsonInclude.Include#NON_EMPTY} requires special handling.\n     *\n     * @since 2.7\n     * @deprecated Since 2.8.5 since this will not allow determining difference between \"no default instance\"\n     *    case and default being `null`.\n     */",
+    "code": "protected Object getPropertyDefaultValue(String name, AnnotatedMember member,\n            JavaType type)"
+  }
+]

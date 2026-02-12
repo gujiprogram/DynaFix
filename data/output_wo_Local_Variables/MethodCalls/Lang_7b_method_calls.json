@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.lang3.StringUtils.isBlank",
+    "doc": "/**\n     * <p>Checks if a CharSequence is whitespace, empty (\"\") or null.</p>\n     *\n     * <pre>\n     * StringUtils.isBlank(null)      = true\n     * StringUtils.isBlank(\"\")        = true\n     * StringUtils.isBlank(\" \")       = true\n     * StringUtils.isBlank(\"bob\")     = false\n     * StringUtils.isBlank(\"  bob  \") = false\n     * </pre>\n     *\n     * @param cs  the CharSequence to check, may be null\n     * @return {@code true} if the CharSequence is null, empty or whitespace\n     * @since 2.0\n     * @since 3.0 Changed signature from isBlank(String) to isBlank(CharSequence)\n     */",
+    "code": "public static boolean isBlank(CharSequence cs) {\n        int strLen;\n        if (cs == null || (strLen = cs.length()) == 0) {\n            return true;\n        }\n        for (int i = 0; i < strLen; i++) {\n            if (Character.isWhitespace(cs.charAt(i)) == false) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.math.NumberUtils.createBigDecimal",
+    "doc": "/**\n     * <p>Turns a string value into a java.lang.Number.</p>\n     *\n     * <p>If the string starts with <code>0x</code> or <code>-0x</code> (lower or upper case), it\n     * will be interpreted as a hexadecimal integer - or long, if the number of digits after the 0x\n     * prefix is more than 8.\n     * Values with leading <code>0</code>'s will not be interpreted as octal.</p>\n     *\n     * <p>Then, the value is examined for a type qualifier on the end, i.e. one of\n     * <code>'f','F','d','D','l','L'</code>.  If it is found, it starts\n     * trying to create successively larger types from the type specified\n     * until one is found that can represent the value.</p>\n     *\n     * <p>If a type specifier is not found, it will check for a decimal point\n     * and then try successively larger types from <code>Integer</code> to\n     * <code>BigInteger</code> and from <code>Float</code> to\n     * <code>BigDecimal</code>.</p>\n     *\n     * <p>Returns <code>null</code> if the string is <code>null</code>.</p>\n     *\n     * <p>This method does not trim the input string, i.e., strings with leading\n     * or trailing spaces will generate NumberFormatExceptions.</p>\n     *\n     * @param str  String containing a number, may be null\n     * @return Number created from the string (or null if the input is null)\n     * @throws NumberFormatException if the value cannot be converted\n     */",
+    "code": "return createBigDecimal(numeric);\n                    } catch (NumberFormatException e) { // NOPMD"
+  },
+  {
+    "method": "org.apache.commons.lang3.math.NumberUtils.createDouble",
+    "doc": "/**\n     * <p>Convert a <code>String</code> to a <code>Double</code>.</p>\n     *\n     * <p>Returns <code>null</code> if the string is <code>null</code>.</p>\n     *\n     * @param str  a <code>String</code> to convert, may be null\n     * @return converted <code>Double</code> (or null if the input is null)\n     * @throws NumberFormatException if the value cannot be converted\n     */",
+    "code": "public static Double createDouble(String str) {\n        if (str == null) {\n            return null;\n        }\n        return Double.valueOf(str);\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.math.NumberUtils.createFloat",
+    "doc": "/**\n     * <p>Convert a <code>String</code> to a <code>Float</code>.</p>\n     *\n     * <p>Returns <code>null</code> if the string is <code>null</code>.</p>\n     *\n     * @param str  a <code>String</code> to convert, may be null\n     * @return converted <code>Float</code> (or null if the input is null)\n     * @throws NumberFormatException if the value cannot be converted\n     */",
+    "code": "public static Float createFloat(String str) {\n        if (str == null) {\n            return null;\n        }\n        return Float.valueOf(str);\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.math.NumberUtils.isAllZeros",
+    "doc": "/**\n     * <p>Utility method for {@link #createNumber(java.lang.String)}.</p>\n     *\n     * <p>Returns <code>true</code> if s is <code>null</code>.</p>\n     *\n     * @param str  the String to check\n     * @return if it is all zeros or <code>null</code>\n     */",
+    "code": "private static boolean isAllZeros(String str) {\n        if (str == null) {\n            return true;\n        }\n        for (int i = str.length() - 1; i >= 0; i--) {\n            if (str.charAt(i) != '0') {\n                return false;\n            }\n        }\n        return str.length() > 0;\n    }"
+  }
+]

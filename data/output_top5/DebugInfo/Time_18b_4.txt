@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.joda.time.chrono.TestGJChronology::testLeapYearRulesConstruction ===
+Exception: org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+
+org.joda.time.chrono.GJChronology:convertByYear:82->[Local Variables] {"from":{"iMinDaysInFirstWeek":4},"to":{"iMinDaysInFirstWeek":4},"instant":-12219292800000}
+org.joda.time.chrono.GJChronology:convertByYear:84->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:84 -> org.joda.time.Chronology.year
+org.joda.time.chrono.GJChronology:convertByYear:84->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:84 -> org.joda.time.DateTimeField.get
+org.joda.time.chrono.GJChronology:convertByYear:85->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:85 -> org.joda.time.Chronology.monthOfYear
+org.joda.time.chrono.GJChronology:convertByYear:85->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:85 -> org.joda.time.DateTimeField.get
+org.joda.time.chrono.GJChronology:convertByYear:86->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:86 -> org.joda.time.Chronology.dayOfMonth
+org.joda.time.chrono.GJChronology:convertByYear:86->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:86 -> org.joda.time.DateTimeField.get
+org.joda.time.chrono.GJChronology:convertByYear:87->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:87 -> org.joda.time.Chronology.millisOfDay
+org.joda.time.chrono.GJChronology:convertByYear:87->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:87 -> org.joda.time.DateTimeField.get
+org.joda.time.chrono.GJChronology:convertByYear:84->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.convertByYear:84 -> org.joda.time.Chronology.getDateTimeMillis

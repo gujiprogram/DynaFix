@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getGenericSignature",
+    "doc": "/**\n     * Method for accessing signature that contains generic\n     * type information, in form compatible with JVM 1.5\n     * as per JLS. It is a superset of {@link #getErasedSignature},\n     * in that generic information can be automatically removed\n     * if necessary (just remove outermost\n     * angle brackets along with content inside)\n     */",
+    "code": "public String getGenericSignature() {\n        StringBuilder sb = new StringBuilder(40);\n        getGenericSignature(sb);\n        return sb.toString();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.ReferenceType._classSignature",
+    "doc": "/**********************************************************\n     */",
+    "code": "return _classSignature(_class, sb, true);\n    }\n\n    @Override\n    public StringBuilder getGenericSignature(StringBuilder sb)\n    {"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.report",
+    "doc": "/**\n   * Report an error or warning.\n   */",
+    "code": "public abstract void report(JSError error);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CheckLevel.isOn",
+    "doc": "/**\n * Controls checking levels of certain options.  For all checks going\n * forward, this should be used instead of booleans, so teams and\n * individuals can control which checks are off, which produce only warnings,\n * and which produce errors, without everyone having to agree.\n */",
+    "code": "boolean isOn() {\n    return this != OFF;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.JSError.make",
+    "doc": "/**\n   * Creates a JSError with no source information\n   *\n   * @param type The DiagnosticType\n   * @param arguments Arguments to be incorporated into the message\n   */",
+    "code": "public static JSError make(DiagnosticType type, String... arguments) {\n    return new JSError(null, null, -1, -1, type, null, arguments);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      inputId = NodeUtil.getInputId(root);\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives$ProvidedName.replace",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

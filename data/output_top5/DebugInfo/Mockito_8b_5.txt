@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type ===
+Exception: java.lang.StackOverflowError
+
+org.mockito.internal.util.reflection.GenericMetadataSupport:boundsOf:105->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.boundsOf:105 -> java.lang.reflect.TypeVariable.getBounds
+org.mockito.internal.util.reflection.GenericMetadataSupport:boundsOf:105->[Control Flow] Branch Info: Line: 105, Condition: if (typeParameter != 0), Executed: false
+org.mockito.internal.util.reflection.GenericMetadataSupport:boundsOf:107->[Local Variables] "{typeParameter\u003dT}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:boundsOf:108->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.boundsOf:108 -> org.mockito.internal.util.reflection.GenericMetadataSupport$TypeVarBoundedType.<init>

@@ -1,0 +1,22 @@
+
+=== Debug Info for Test: org.joda.time.chrono.TestGJChronology::testLeapYearRulesConstruction ===
+Exception: org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+
+org.joda.time.chrono.GJChronology:getInstance:188->[Local Variables] {"zone":{"iNameKey":"UTC","iWallOffset":0,"iStandardOffset":0,"iID":"UTC"},"gregorianCutover":{"iMillis":-12219292800000},"minDaysInFirstWeek":4}
+org.joda.time.chrono.GJChronology:getInstance:189->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:189 -> org.joda.time.DateTimeUtils.getZone
+org.joda.time.chrono.GJChronology:getInstance:191->[Control Flow] Branch Info: Line: 191, Condition: if (gregorianCutover == null), Executed: false
+org.joda.time.chrono.GJChronology:getInstance:194->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:194 -> org.joda.time.ReadableInstant.toInstant
+org.joda.time.chrono.GJChronology:getInstance:198->[Local Variables] {"cutoverInstant":{"iMillis":-12219292800000}}
+org.joda.time.chrono.GJChronology:getInstance:199->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:199 -> java.util.Map.get
+org.joda.time.chrono.GJChronology:getInstance:200->[Control Flow] Branch Info: Line: 200, Condition: if (chronos == null), Executed: true
+org.joda.time.chrono.GJChronology:getInstance:201->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:201 -> java.util.ArrayList.<init>
+org.joda.time.chrono.GJChronology:getInstance:201->[Local Variables] {"chronos":[]}
+org.joda.time.chrono.GJChronology:getInstance:202->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:202 -> java.util.Map.put
+org.joda.time.chrono.GJChronology:getInstance:204->[Control Flow] Branch Info: Line: 204, Condition: if (i >= 0), Executed: false
+org.joda.time.chrono.GJChronology:getInstance:214->[Control Flow] Branch Info: Line: 214, Condition: if (unknown_condition_166), Executed: true
+org.joda.time.chrono.GJChronology:getInstance:216->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:216 -> org.joda.time.chrono.JulianChronology.getInstance
+org.joda.time.chrono.GJChronology:getInstance:217->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:217 -> org.joda.time.chrono.GregorianChronology.getInstance
+org.joda.time.chrono.GJChronology:getInstance:217->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:217 -> org.joda.time.chrono.GJChronology.<init>
+org.joda.time.chrono.GJChronology:getInstance:227->[Local Variables] {"chrono":{"iJulianChronology":{"iMinDaysInFirstWeek":4},"iGregorianChronology":{"iMinDaysInFirstWeek":4},"iCutoverInstant":{"iMillis":-12219292800000},"iCutoverMillis":-12219292800000,"iGapDuration":864000000,"iParam":[{"iMinDaysInFirstWeek":4},{"iMinDaysInFirstWeek":4},{"iMillis":-12219292800000}]}}
+org.joda.time.chrono.GJChronology:getInstance:228->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getInstance:228 -> java.util.ArrayList.add
+org.joda.time.chrono.GJChronology:getInstance:229->[Local Variables] {"chronos":[{"iJulianChronology":{"iMinDaysInFirstWeek":4},"iGregorianChronology":{"iMinDaysInFirstWeek":4},"iCutoverInstant":{"iMillis":-12219292800000},"iCutoverMillis":-12219292800000,"iGapDuration":864000000,"iParam":[{"iMinDaysInFirstWeek":4},{"iMinDaysInFirstWeek":4},{"iMillis":-12219292800000}]}]}

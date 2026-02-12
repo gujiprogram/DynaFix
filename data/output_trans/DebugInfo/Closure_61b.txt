@@ -1,0 +1,139 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:946->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:946 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:949 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Control Flow] Branch Info: Line: 949, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:954 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:955 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Control Flow] Branch Info: Line: 956, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:960 -> com.google.javascript.rhino.Node.isOnlyModifiesThisCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.isOnlyModifiesThisCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:966 -> com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:939 -> com.google.javascript.rhino.Node.isNoSideEffectsCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Control Flow] Branch Info: Line: 939, Condition: if (com.google.javascript.rhino.Node.isNoSideEffectsCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:946->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:946 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:949 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Control Flow] Branch Info: Line: 949, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:954 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:955 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Control Flow] Branch Info: Line: 956, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:960 -> com.google.javascript.rhino.Node.isOnlyModifiesThisCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.isOnlyModifiesThisCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:930->[Local Variables] "{TransVarCompiler1\u003dcom.google.javascript.jscomp.Compiler@7173ae5b}"
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:931 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Control Flow] Branch Info: Line: 931, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:939 -> com.google.javascript.rhino.Node.isNoSideEffectsCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Control Flow] Branch Info: Line: 939, Condition: if (com.google.javascript.rhino.Node.isNoSideEffectsCall() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:946->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:946 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:949 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Control Flow] Branch Info: Line: 949, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:954 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:955 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Control Flow] Branch Info: Line: 956, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:960 -> com.google.javascript.rhino.Node.isOnlyModifiesThisCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.isOnlyModifiesThisCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:966 -> com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:939 -> com.google.javascript.rhino.Node.isNoSideEffectsCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Control Flow] Branch Info: Line: 939, Condition: if (com.google.javascript.rhino.Node.isNoSideEffectsCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:946->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:946 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:949 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Control Flow] Branch Info: Line: 949, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:954 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:955 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Control Flow] Branch Info: Line: 956, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:960 -> com.google.javascript.rhino.Node.isOnlyModifiesThisCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.isOnlyModifiesThisCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:930->[Local Variables] "{TransVarCompiler1\u003dcom.google.javascript.jscomp.Compiler@7173ae5b}"
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:931 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Control Flow] Branch Info: Line: 931, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:939 -> com.google.javascript.rhino.Node.isNoSideEffectsCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Control Flow] Branch Info: Line: 939, Condition: if (com.google.javascript.rhino.Node.isNoSideEffectsCall() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testRemoveUselessOps ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:960 -> com.google.javascript.rhino.Node.isOnlyModifiesThisCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.isOnlyModifiesThisCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:966 -> com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:960->[Control Flow] Branch Info: Line: 960, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (TransVarCompiler1 != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:966->[Control Flow] Branch Info: Line: 966, Condition: if (com.google.javascript.jscomp.AbstractCompiler.hasRegExpGlobalReferences() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:970->[Control Flow] Branch Info: Line: 970, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:971->[Control Flow] Branch Info: Line: 971, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:973->[Control Flow] Branch Info: Line: 973, Condition: if (TransVarNodeParam != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:974->[Control Flow] Branch Info: Line: 974, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:930->[Local Variables] "{TransVarCompiler1\u003dcom.google.javascript.jscomp.Compiler@7a7cc52c}"
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:931 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:931->[Control Flow] Branch Info: Line: 931, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:939 -> com.google.javascript.rhino.Node.isNoSideEffectsCall
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:939->[Control Flow] Branch Info: Line: 939, Condition: if (com.google.javascript.rhino.Node.isNoSideEffectsCall() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:946->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:946 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:949 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:949->[Control Flow] Branch Info: Line: 949, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:954 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:954->[Control Flow] Branch Info: Line: 954, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:955 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:956 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:956 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects:956 -> java.util.Set.contains
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:955->[Control Flow] Branch Info: Line: 955, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:functionCallHasSideEffects:956->[Control Flow] Branch Info: Line: 956, Condition: if (com.google.javascript.rhino.Node.getString() != 0), Executed: false

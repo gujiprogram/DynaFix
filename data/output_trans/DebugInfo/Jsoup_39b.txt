@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMarkWhenNoCharsetSet ===
+Exception: junit.framework.AssertionFailedError: expected:<[One]> but was:<[]>
+
+org.jsoup.helper.DataUtil:parseByteData:124->[Control Flow] Branch Info: Line: 124, Condition: if (java.lang.String.length() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:124->[Control Flow] Branch Info: Line: 124, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:129->[Local Variables] {"TransVarCharset":"UTF-8"}
+org.jsoup.helper.DataUtil:parseByteData:130->[Control Flow] Branch Info: Line: 130, Condition: if (TransVarDocument == null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:80->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":0},"TransVarBasePath":"http://foo.com/","TransVarParser1":{"treeBuilder":{"baseUriSetFromDoc":false,"formattingElements":[],"pendingTableCharacters":[],"framesetOk":true,"fosterInserts":false,"fragmentParsing":false},"maxErrors":0}}
+org.jsoup.helper.DataUtil:parseByteData:82->[Control Flow] Branch Info: Line: 82, Condition: if (TransVarCharset == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:87->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:87 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:87->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:87 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:87->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:87 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:87->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":0},"TransVarLocalDocData":"﻿\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}
+org.jsoup.helper.DataUtil:parseByteData:88->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:88 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:88->[Local Variables] "{TransVarDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  ﻿\n  \u003ctitle\u003eOne\u003c/title\u003eTwo\n \u003c/body\u003e\n\u003c/html\u003e, TransVarParser1\u003dorg.jsoup.parser.Parser@76f2bbc1}"
+org.jsoup.helper.DataUtil:parseByteData:89->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:89 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseByteData:89->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:89 -> org.jsoup.select.Elements.first
+org.jsoup.helper.DataUtil:parseByteData:90->[Control Flow] Branch Info: Line: 90, Condition: if (TransVarPageInfo != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarFoundCharset1 != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:110->[Control Flow] Branch Info: Line: 110, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:111->[Control Flow] Branch Info: Line: 111, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:124->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:124 -> java.lang.String.length
+org.jsoup.helper.DataUtil:parseByteData:124->[Control Flow] Branch Info: Line: 124, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:124->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:124 -> java.lang.String.charAt
+org.jsoup.helper.DataUtil:parseByteData:124->[Control Flow] Branch Info: Line: 124, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:125->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:125 -> java.nio.ByteBuffer.rewind
+org.jsoup.helper.DataUtil:parseByteData:125->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":0}}
+org.jsoup.helper.DataUtil:parseByteData:126->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:126 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:126->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:126 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:126->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:126 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:126->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":0}}
+org.jsoup.helper.DataUtil:parseByteData:127->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:127 -> java.lang.String.substring
+org.jsoup.helper.DataUtil:parseByteData:127->[Local Variables] {"TransVarLocalDocData":"\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}

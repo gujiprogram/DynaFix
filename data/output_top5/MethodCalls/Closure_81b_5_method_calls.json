@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.rhino.Node.putProp",
+    "doc": "/**\n   * Returns the integer value for the property, or 0 if the property\n   * is not defined.\n   */",
+    "code": "public void putProp(int propType, Object value) {\n    removeProp(propType);\n    if (value != null) {\n      propListHead = new PropListItem(propType, value, propListHead);\n    }\n  }"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat._getCalendar",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected Calendar _getCalendar(TimeZone tz) {\n        Calendar cal = _calendar;\n        if (cal == null ) {\n            _calendar = cal = (Calendar)CALENDAR.clone();\n        }\n        if (!cal.getTimeZone().equals(tz) ) {\n            cal.setTimeZone(tz);\n        }\n        cal.setLenient(isLenient());\n        return cal;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat.pad2",
+    "doc": "/**********************************************************\n     */",
+    "code": "private static void pad2(StringBuffer buffer, int value) {\n        int tens = value / 10;\n        if (tens == 0) {\n            buffer.append('0');\n        } else {\n            buffer.append((char) ('0' + tens));\n            value -= 10 * tens;\n        }\n        buffer.append((char) ('0' + value));\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat.pad3",
+    "doc": "/**********************************************************\n     */",
+    "code": "private static void pad3(StringBuffer buffer, int value) {\n        int h = value / 100;\n        if (h == 0) {\n            buffer.append('0');\n        } else {\n            buffer.append((char) ('0' + h));\n            value -= (h * 100);\n        }\n        pad2(buffer, value);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat.pad4",
+    "doc": "/**********************************************************\n     */",
+    "code": "private static void pad4(StringBuffer buffer, int value) {\n        int h = value / 100;\n        if (h == 0) {\n            buffer.append('0').append('0');\n        } else {\n                pad2(buffer, h);\n            value -= (100 * h);\n        }\n        pad2(buffer, value);\n    }"
+  }
+]

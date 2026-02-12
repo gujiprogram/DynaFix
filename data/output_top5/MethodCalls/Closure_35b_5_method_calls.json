@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.FlowScope.getSlot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getNativeType",
+    "doc": "/**\n   * If we access a property of a symbol, then that symbol is not\n   * null or undefined.\n   */",
+    "code": "return getNativeType(CHECKED_UNKNOWN_TYPE);\n        } else {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getQualifiedName",
+    "doc": "/**\n   * This function takes a set of GETPROP nodes and produces a string that is\n   * each property separated by dots. If the node ultimately under the left\n   * sub-tree is not a simple name, this is not a valid qualified name.\n   *\n   * @return a null if this is not a qualified name, or a dot-separated string\n   *         of the name and properties.\n   */",
+    "code": "public String getQualifiedName() {\n    if (type == Token.NAME) {\n      return getString();\n    } else if (type == Token.GETPROP) {\n      String left = getFirstChild().getQualifiedName();\n      if (left == null) {\n        return null;\n      }\n      return left + \".\" + getLastChild().getString();\n    } else if (type == Token.THIS) {\n      return \"this\";\n    } else {\n      return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.equals",
+    "doc": "/**\n   * Checks if two types are equivalent.\n   */",
+    "code": "public boolean equals(Object jsType) {\n    return (jsType instanceof JSType) ?\n        isEquivalentTo((JSType) jsType) : false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.findPropertyType",
+    "doc": "/**\n   * Coerces this type to an Object type, then gets the type of the property\n   * whose name is given.\n   *\n   * Unlike {@link ObjectType#getPropertyType}, returns null if the property\n   * is not found.\n   *\n   * @return The property's type. {@code null} if the current type cannot\n   *     have properties, or if the type is not found.\n   */",
+    "code": "public JSType findPropertyType(String propertyName) {\n    ObjectType autoboxObjType = ObjectType.cast(autoboxesTo());\n    if (autoboxObjType != null) {\n      return autoboxObjType.findPropertyType(propertyName);\n    }\n\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.getType",
+    "doc": "/**\n   * Looks up a type by name.\n   *\n   * @param jsTypeName The name string.\n   * @return the corresponding JSType object or {@code null} it cannot be found\n   */",
+    "code": "public JSType getType(String jsTypeName) {\n    if (jsTypeName.equals(templateTypeName)) {\n      return templateType;\n    }\n    return namesToTypes.get(jsTypeName);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.getType",
+    "doc": "/**\n   * Returns the type information, if any, for this slot.\n   * @return The type or {@code null} if no type is declared for it.\n   */",
+    "code": "T getType();"
+  }
+]

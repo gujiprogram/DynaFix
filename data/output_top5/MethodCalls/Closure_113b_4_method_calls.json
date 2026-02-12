@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.inGlobalScope",
+    "doc": "/**\n   * Determines whether the traversal is currently in the global scope.\n   */",
+    "code": "boolean inGlobalScope() {\n    return getScopeDepth() <= 1;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  }
+]

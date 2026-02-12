@@ -1,0 +1,110 @@
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord ===
+Exception: junit.framework.ComparisonFailure: expected:<{loop: [?], number: number, st...> but was:<{loop: [{...}], number: number, st...>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"loop"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7d78f3d5}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@2a367e93}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"string"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7f6874f2}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+=== stdout ===
+
+=== stderr ===
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /home/common/huangzhili/defects4j_buggy/Closure_39_buggy && /home/common/huangzhili/defects4j/major/bin/ant -f /home/common/huangzhili/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/home/common/huangzhili/defects4j -Dd4j.dir.projects=/home/common/huangzhili/defects4j/framework/projects -Dbasedir=/home/common/huangzhili/defects4j_buggy/Closure_39_buggy  compile.tests 2>&1
+Buildfile: /home/common/huangzhili/defects4j/framework/projects/defects4j.build.xml
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+
+compile-jdk15:
+
+compile:
+
+properties:
+
+compile:
+
+xmlimplsrc-compile:
+     [echo] Calling /home/common/huangzhili/defects4j_buggy/Closure_39_buggy/lib/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+
+jar:
+
+rhino-jarjar:
+   [jarjar] error while reading original manifest in file: /home/common/huangzhili/defects4j_buggy/Closure_39_buggy/build/lib/rhino.jar due to zip END header not found
+
+BUILD FAILED
+/home/common/huangzhili/defects4j_buggy/Closure_39_buggy/build.xml:107: Problem reading /home/common/huangzhili/defects4j_buggy/Closure_39_buggy/build/lib/rhino.jar
+
+Total time: 1 second
+Cannot compile test suite! at /home/common/huangzhili/defects4j/framework/bin/d4j/d4j-test line 134.
+Compilation failed in require at /home/common/huangzhili/defects4j/framework/bin/defects4j line 195.
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testLongToString ===
+Exception: junit.framework.ComparisonFailure: expected:<...number, a4: number, [a5: number, a6: number]}> but was:<...number, a4: number, [...]}>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a3"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7f6874f2}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a4"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@1a6dc589}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a1"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7d78f3d5}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a2"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@2a367e93}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a3"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7f6874f2}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a4"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@1a6dc589}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a1"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@7d78f3d5}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:214->[Control Flow] Branch Info: Line: 214, Condition: if (slot == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:217->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:217 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:212->[Local Variables] {"property":"a2"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType:213 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot
+com.google.javascript.rhino.jstype.PrototypeObjectType:getPropertyType:213->[Local Variables] "{slot\u003dcom.google.javascript.rhino.jstype.ObjectType$Property@2a367e93}"

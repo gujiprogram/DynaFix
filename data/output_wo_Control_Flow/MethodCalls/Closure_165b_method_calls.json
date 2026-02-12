@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isEmptyType",
+    "doc": "/**\n   * @return true if the JSType has a user meaningful label.\n   */",
+    "code": "public final boolean isEmptyType() {\n    return isNoType() || isNoObjectType() || isNoResolvedType() ||\n        (registry.getNativeFunctionType(\n             JSTypeNative.LEAST_FUNCTION_TYPE) == this);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isRecordType",
+    "doc": "/**\n   * Downcasts this to an EnumType, or returns null if this is not an EnumType.\n   */",
+    "code": "public boolean isRecordType() {\n    return toMaybeRecordType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeRecordType",
+    "doc": "/**\n   * Downcasts this to a RecordType, or returns null if this is not\n   * a RecordType.\n   */",
+    "code": "return toMaybeRecordType() != null;\n  }\n\n  RecordType toMaybeRecordType() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.defineDeclaredProperty",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordTypeBuilder$RecordProperty.getPropertyNode",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordTypeBuilder$RecordProperty.getType",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

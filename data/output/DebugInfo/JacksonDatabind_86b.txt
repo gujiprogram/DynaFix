@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.RecursiveTypeTest::testSuperClassWithReferencedJavaType ===
+Exception: junit.framework.AssertionFailedError
+
+com.fasterxml.jackson.databind.type.ResolvedRecursiveType:setReference:23->[Control Flow] Branch Info: Line: 23, Condition: if (this._referencedType != null), Executed: false
+com.fasterxml.jackson.databind.type.ResolvedRecursiveType:setReference:26->[Local Variables] "{ref\u003d[simple type, class com.fasterxml.jackson.databind.type.RecursiveTypeTest$Base]}"
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.TestTypeFactoryWithRecursiveTypes::testBasePropertiesIncludedWhenSerializingSubWhenSubTypeLoadedAfterBaseType ===
+Exception: junit.framework.ComparisonFailure: expected:<{"[base":1,"]sub":2}> but was:<{"[]sub":2}>
+
+com.fasterxml.jackson.databind.type.ResolvedRecursiveType:setReference:23->[Control Flow] Branch Info: Line: 23, Condition: if (this._referencedType != null), Executed: false
+com.fasterxml.jackson.databind.type.ResolvedRecursiveType:setReference:26->[Local Variables] "{ref\u003d[simple type, class com.fasterxml.jackson.databind.type.TestTypeFactoryWithRecursiveTypes$Base]}"

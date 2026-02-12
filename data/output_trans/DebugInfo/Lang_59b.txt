@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.apache.commons.lang.text.StrBuilderAppendInsertTest::testLang299 ===
+Exception: java.lang.ArrayIndexOutOfBoundsException
+
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:881->[Local Variables] {"TransVarObject":"foo","TransVarFillerChar":"-","TransVarLength":1}
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:882->[Control Flow] Branch Info: Line: 882, Condition: if (TransVarLength > 0), Executed: true
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:886->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadRight:886 -> org.apache.commons.lang.text.StrBuilder.ensureCapacity
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:887->[Control Flow] Branch Info: Line: 887, Condition: if (TransVarObject == null), Executed: false
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:887->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadRight:887 -> java.lang.Object.toString
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:887->[Local Variables] {"TransVarString":"foo"}
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:888->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadRight:888 -> java.lang.String.length
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:888->[Local Variables] {"TransVarLengthOfString":3}
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:889->[Control Flow] Branch Info: Line: 889, Condition: if (TransVarLength >= TransVarLength), Executed: true
+org.apache.commons.lang.text.StrBuilder:appendFixedWidthPadRight:893->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.appendFixedWidthPadRight:893 -> java.lang.String.getChars

@@ -1,0 +1,144 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToChildOfUncollapsibleFunctionInLocalScope ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:510 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Local Variables] "{varNode\u003dVAR}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:511->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:511 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:539->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:539 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:477->[Local Variables] "{ref\u003dcom.google.javascript.jscomp.GlobalNamespace$Ref@78c7f9b3, alias\u003da$b, refName\u003da.b (OTHER): globalSets\u003d1, localSets\u003d0, totalGets\u003d1, aliasingGets\u003d1, callGets\u003d0}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:478 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:479 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Local Variables] "{parent\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:480 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Local Variables] "{gramps\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:481 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Local Variables] "{greatGramps\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:482->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:482 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:485->[Local Variables] "{greatGreatGramps\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:488 -> com.google.javascript.jscomp.GlobalNamespace$Name.fullName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:486->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:486 -> com.google.javascript.jscomp.NodeUtil.newName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Local Variables] {"nameNode":{"str":"a$b","type":38,"propListHead":{"next":{"type":16,"intValue":0,"objectValue":"testcode"},"type":39,"intValue":0,"objectValue":"a.b"},"sourcePosition":4122}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.jscomp.NodeUtil.copyNameAnnotations
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:491 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Control Flow] Branch Info: Line: 491, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:507 -> com.google.javascript.rhino.Node.removeChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Local Variables] {"rvalue":{"number":1.0,"type":39,"propListHead":{"type":16,"intValue":0,"objectValue":"testcode"},"sourcePosition":4124}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:508->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:508 -> com.google.javascript.rhino.Node.addChildToFront
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:509->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode], nameNode\u003dNAME a$b 1 [sourcename: testcode] [originalname: a.b]}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:510 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Local Variables] "{varNode\u003dVAR}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:511->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:511 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:539->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:539 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:477->[Local Variables] "{ref\u003dcom.google.javascript.jscomp.GlobalNamespace$Ref@aa21042, alias\u003da$b, refName\u003da.b (OTHER): globalSets\u003d1, localSets\u003d0, totalGets\u003d1, aliasingGets\u003d1, callGets\u003d0}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:478 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:479 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Local Variables] "{parent\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:480 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Local Variables] "{gramps\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:481 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Local Variables] "{greatGramps\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:482->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:482 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:485->[Local Variables] "{greatGreatGramps\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:488 -> com.google.javascript.jscomp.GlobalNamespace$Name.fullName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:486->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:486 -> com.google.javascript.jscomp.NodeUtil.newName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Local Variables] {"nameNode":{"str":"a$b","type":38,"propListHead":{"next":{"type":16,"intValue":0,"objectValue":"testcode"},"type":39,"intValue":0,"objectValue":"a.b"},"sourcePosition":4122}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.jscomp.NodeUtil.copyNameAnnotations
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:491 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Control Flow] Branch Info: Line: 491, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:507 -> com.google.javascript.rhino.Node.removeChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Local Variables] {"rvalue":{"number":1.0,"type":39,"propListHead":{"type":16,"intValue":0,"objectValue":"testcode"},"sourcePosition":4124}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:508->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:508 -> com.google.javascript.rhino.Node.addChildToFront
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:509->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode], nameNode\u003dNAME a$b 1 [sourcename: testcode] [originalname: a.b]}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth1_3 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:510 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Local Variables] "{varNode\u003dVAR}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:511->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:511 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:539->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:539 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:477->[Local Variables] "{ref\u003dcom.google.javascript.jscomp.GlobalNamespace$Ref@601cbd8c, alias\u003da$b, refName\u003da.b (OTHER): globalSets\u003d1, localSets\u003d0, totalGets\u003d1, aliasingGets\u003d1, callGets\u003d0}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:478 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:479 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Local Variables] "{parent\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:480 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Local Variables] "{gramps\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:481 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Local Variables] "{greatGramps\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:482->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:482 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:485->[Local Variables] "{greatGreatGramps\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:488 -> com.google.javascript.jscomp.GlobalNamespace$Name.fullName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:486->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:486 -> com.google.javascript.jscomp.NodeUtil.newName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Local Variables] {"nameNode":{"str":"a$b","type":38,"propListHead":{"next":{"type":16,"intValue":0,"objectValue":"testcode"},"type":39,"intValue":0,"objectValue":"a.b"},"sourcePosition":4122}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.jscomp.NodeUtil.copyNameAnnotations
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:491 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Control Flow] Branch Info: Line: 491, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:507 -> com.google.javascript.rhino.Node.removeChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Local Variables] {"rvalue":{"number":1.0,"type":39,"propListHead":{"type":16,"intValue":0,"objectValue":"testcode"},"sourcePosition":4124}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:508->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:508 -> com.google.javascript.rhino.Node.addChildToFront
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:509->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode], nameNode\u003dNAME a$b 1 [sourcename: testcode] [originalname: a.b]}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleNamedCtorInLocalScopeDepth1 ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth1 ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAddPropertyToUncollapsibleFunctionInLocalScopeDepth2 ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.CollapsePropertiesTest::testAliasCreatedForFunctionDepth2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:510 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:510->[Local Variables] "{varNode\u003dVAR}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:511->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:511 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:539->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:539 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:477->[Local Variables] "{ref\u003dcom.google.javascript.jscomp.GlobalNamespace$Ref@7180e701, alias\u003da$b$c, refName\u003da.b.c (OTHER): globalSets\u003d1, localSets\u003d0, totalGets\u003d1, aliasingGets\u003d1, callGets\u003d0}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:478 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:478->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:479 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:479->[Local Variables] "{parent\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:480 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:480->[Local Variables] "{gramps\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:481 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:481->[Local Variables] "{greatGramps\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:482->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:482 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:485->[Local Variables] "{greatGreatGramps\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:487->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:487 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:488 -> com.google.javascript.jscomp.GlobalNamespace$Name.fullName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:486->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:486 -> com.google.javascript.jscomp.NodeUtil.newName
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:488->[Local Variables] {"nameNode":{"str":"a$b$c","type":38,"propListHead":{"next":{"type":16,"intValue":0,"objectValue":"testcode"},"type":39,"intValue":0,"objectValue":"a.b.c"},"sourcePosition":4135}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:489->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:489 -> com.google.javascript.jscomp.NodeUtil.copyNameAnnotations
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:491 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:491->[Control Flow] Branch Info: Line: 491, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:507 -> com.google.javascript.rhino.Node.removeChild
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:507->[Local Variables] {"rvalue":{"number":1.0,"type":39,"propListHead":{"type":16,"intValue":0,"objectValue":"testcode"},"sourcePosition":4137}}
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:508->[Method Call] Call Stack: com.google.javascript.jscomp.CollapseProperties.updateSimpleDeclaration:508 -> com.google.javascript.rhino.Node.addChildToFront
+com.google.javascript.jscomp.CollapseProperties:updateSimpleDeclaration:509->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename: testcode], nameNode\u003dNAME a$b$c 1 [sourcename: testcode] [originalname: a.b.c]}"

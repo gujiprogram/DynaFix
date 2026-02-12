@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.jsoup.nodes.Entities.isNamedEntity",
+    "doc": "/**\n     * Check if the input is a known named entity\n     * @param name the possible entity name (e.g. \"lt\" or \"amp\"\n     * @return true if a known named entity\n     */",
+    "code": "public static boolean isNamedEntity(String name) {\n        return full.containsKey(name);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.consumeLetterSequence",
+    "doc": "/**\n CharacterReader cosumes tokens off a string. To replace the old TokenQueue.\n */",
+    "code": "String consumeLetterSequence() {\n        int start = pos;\n        while (!isEmpty()) {\n            char c = input.charAt(pos);\n            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))\n                pos++;\n            else\n                break;\n        }\n\n        return input.substring(start, pos);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.matches",
+    "doc": "/**\n CharacterReader cosumes tokens off a string. To replace the old TokenQueue.\n */",
+    "code": "boolean matches(char c) {\n        return !isEmpty() && input.charAt(pos) == c;\n\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.rewindToMark",
+    "doc": "/**\n CharacterReader cosumes tokens off a string. To replace the old TokenQueue.\n */",
+    "code": "void rewindToMark() {\n        pos = mark;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.unconsume",
+    "doc": "/**\n CharacterReader cosumes tokens off a string. To replace the old TokenQueue.\n */",
+    "code": "void unconsume() {\n        pos--;\n    }"
+  }
+]

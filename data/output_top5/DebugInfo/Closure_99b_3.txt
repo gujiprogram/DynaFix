@@ -1,0 +1,70 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testPropertyOfMethod ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:167->[Local Variables] "{n\u003dFUNCTION  1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:168->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:168 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:169 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Local Variables] "{parent\u003dASSIGN 1}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:171->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:171 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:171->[Local Variables] {"parentType":86}
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:173->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:173 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:168->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:168 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:169 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:171->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:171 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:173->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:173 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (parentType == parentType), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testMethod4 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 39 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:167->[Local Variables] "{n\u003dFUNCTION  1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:168->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:168 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:169 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Local Variables] "{parent\u003dASSIGN 1}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:171->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:171 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:171->[Local Variables] {"parentType":86}
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType != parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:173->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:173 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testInterface1 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 54 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:167->[Local Variables] "{n\u003dFUNCTION  1 [sourcename: testcode] [jsdoc_info: JSDocInfo]}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:168->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:168 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:168->[Local Variables] {"jsDoc":{"sourceName":"testcode","visibility":"INHERITED","bitset":512,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo:169 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:169->[Local Variables] "{parent\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:170->[Control Flow] Branch Info: Line: 170, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:172->[Control Flow] Branch Info: Line: 172, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (jsDoc == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:174->[Control Flow] Branch Info: Line: 174, Condition: if (parentType == parentType), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:getFunctionJsDocInfo:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false

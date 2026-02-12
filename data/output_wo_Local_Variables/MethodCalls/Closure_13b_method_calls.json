@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode",
+    "doc": "/**\n   * Creates a peephole optimization pass that runs the given\n   * optimizations.\n   */",
+    "code": "private void exitNode(Node node) {\n    if (node.isFunction() || node.isScript()) {\n      traversalState.pop();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse",
+    "doc": "/**\n   * Creates a peephole optimization pass that runs the given\n   * optimizations.\n   */",
+    "code": "private boolean shouldRetraverse(Node node) {\n    if (node.getParent() != null && node.isFunction() || node.isScript()) {\n      ScopeState state = traversalState.peek();\n      if (state.changed) {\n        state.changed = false;\n        state.traverseChildScopes = false;\n        return true;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeOptimizationsPass.visit",
+    "doc": "/**\n   * Creates a peephole optimization pass that runs the given\n   * optimizations.\n   */",
+    "code": "public void visit(Node n) {\n    Node currentVersionOfNode = n;\n    boolean somethingChanged = false;\n\n    do {\n      somethingChanged = false;\n      for (AbstractPeepholeOptimization optimization : peepholeOptimizations) {\n        Node newVersionOfNode =\n            optimization.optimizeSubtree(currentVersionOfNode);\n\n        if (newVersionOfNode != currentVersionOfNode) {\n          somethingChanged = true;\n\n          currentVersionOfNode = newVersionOfNode;\n        }\n\n        if (currentVersionOfNode == null) {\n          return;\n        }\n      }\n    } while(somethingChanged);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  }
+]

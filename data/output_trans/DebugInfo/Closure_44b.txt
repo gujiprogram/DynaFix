@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue620 ===
+Exception: junit.framework.ComparisonFailure: expected:<alert(/ //[ ]/ /)> but was:<alert(/ //[]/ /)>
+
+com.google.javascript.jscomp.CodeConsumer:add:209->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:209 -> com.google.javascript.jscomp.CodeConsumer.append
+com.google.javascript.jscomp.CodeConsumer:add:185->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:185 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:add:187->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:187 -> java.lang.String.length
+com.google.javascript.jscomp.CodeConsumer:add:187->[Control Flow] Branch Info: Line: 187, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:194->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:194 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == TransVarCharCode), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.jscomp.CodeConsumer.getLastChar() != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:209->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:209 -> com.google.javascript.jscomp.CodeConsumer.append
+com.google.javascript.jscomp.CodeConsumer:add:184->[Local Variables] {"TransVarCode":")"}
+com.google.javascript.jscomp.CodeConsumer:add:185->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:185 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:add:187->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:187 -> java.lang.String.length
+com.google.javascript.jscomp.CodeConsumer:add:187->[Control Flow] Branch Info: Line: 187, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:194->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:194 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:add:194->[Local Variables] {"TransVarCharCode":")"}
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == TransVarCharCode), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.jscomp.CodeConsumer.getLastChar() != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:209->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:209 -> com.google.javascript.jscomp.CodeConsumer.append
+com.google.javascript.jscomp.CodeConsumer:add:184->[Local Variables] {"TransVarCode":"alert"}
+com.google.javascript.jscomp.CodeConsumer:add:185->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:185 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:add:187->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:187 -> java.lang.String.length
+com.google.javascript.jscomp.CodeConsumer:add:187->[Control Flow] Branch Info: Line: 187, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:194->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:194 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:add:194->[Local Variables] {"TransVarCharCode":"a"}
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == TransVarCharCode), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.jscomp.CodeConsumer.getLastChar() != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:209->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:209 -> com.google.javascript.jscomp.CodeConsumer.append
+com.google.javascript.jscomp.CodeConsumer:add:184->[Local Variables] {"TransVarCode":"("}
+com.google.javascript.jscomp.CodeConsumer:add:185->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:185 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:add:187->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:187 -> java.lang.String.length
+com.google.javascript.jscomp.CodeConsumer:add:187->[Control Flow] Branch Info: Line: 187, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:194->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:194 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:add:194->[Local Variables] {"TransVarCharCode":"("}
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == TransVarCharCode), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.jscomp.CodeConsumer.getLastChar() != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:209->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:209 -> com.google.javascript.jscomp.CodeConsumer.append
+com.google.javascript.jscomp.CodeConsumer:add:184->[Local Variables] {"TransVarCode":"/ /"}
+com.google.javascript.jscomp.CodeConsumer:add:185->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:185 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:add:187->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:187 -> java.lang.String.length
+com.google.javascript.jscomp.CodeConsumer:add:187->[Control Flow] Branch Info: Line: 187, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:194->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:194 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:add:194->[Local Variables] {"TransVarCharCode":"/"}
+com.google.javascript.jscomp.CodeConsumer:add:195->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.add:195 -> com.google.javascript.jscomp.CodeConsumer.isWordChar
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarCharCode == TransVarCharCode), Executed: false
+com.google.javascript.jscomp.CodeConsumer:add:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.jscomp.CodeConsumer.getLastChar() != 0), Executed: false

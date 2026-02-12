@@ -1,0 +1,50 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode ===
+Exception: java.lang.UnsupportedOperationException
+
+org.jsoup.helper.DataUtil:parseInputStream:169->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:169 -> java.io.InputStreamReader.<init>
+org.jsoup.helper.DataUtil:parseInputStream:169->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:169 -> java.io.BufferedReader.<init>
+org.jsoup.helper.DataUtil:parseInputStream:169->[Local Variables] "{TransVarBufferedReader\u003djava.io.BufferedReader@4d0f2471}"
+org.jsoup.helper.DataUtil:parseInputStream:170->[Control Flow] Branch Info: Line: 170, Condition: if (TransVarBomCharSet != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:170->[Control Flow] Branch Info: Line: 170, Condition: if (TransVarBomCharSet != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:173->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:173 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseInputStream:176->[Local Variables] "{TransVarDoc1\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e, TransVarInputStream\u003dorg.jsoup.internal.ConstrainableInputStream@1b1426f4}"
+org.jsoup.helper.DataUtil:parseInputStream:178->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:178 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseInputStream:178->[Local Variables] {"TransVarCharSet":{"name":"ISO-2022-CN","aliases":["ISO2022CN","csISO2022CN"]}}
+org.jsoup.helper.DataUtil:parseInputStream:179->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:179 -> org.jsoup.nodes.Document.outputSettings
+org.jsoup.helper.DataUtil:parseInputStream:179->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:179 -> org.jsoup.nodes.Document$OutputSettings.charset
+org.jsoup.helper.DataUtil:parseInputStream:166->[Control Flow] Branch Info: Line: 166, Condition: if (TransVarDoc1 == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:122->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:122 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseInputStream:124->[Local Variables] "{TransVarDoc1\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e, TransVarParser2\u003dorg.jsoup.parser.Parser@32b260fa}"
+org.jsoup.helper.DataUtil:parseInputStream:125->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:125 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseInputStream:125->[Local Variables] "{TransVarMetaElementList\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:127->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:127 -> org.jsoup.select.Elements.iterator
+org.jsoup.helper.DataUtil:parseInputStream:127->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:127 -> java.util.Iterator.hasNext
+org.jsoup.helper.DataUtil:parseInputStream:127->[Control Flow] Branch Info: Line: 127, Condition: if (TransVarFirstNode != 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:127->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:127 -> java.util.Iterator.next
+org.jsoup.helper.DataUtil:parseInputStream:130->[Local Variables] "{TransVarMetaElement\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:131->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:131 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:133->[Control Flow] Branch Info: Line: 133, Condition: if (TransVarCharset == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:133->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:133 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.helper.DataUtil:parseInputStream:133->[Control Flow] Branch Info: Line: 133, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:134->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:134 -> org.jsoup.nodes.Element.attr
+org.jsoup.helper.DataUtil:parseInputStream:133->[Control Flow] Branch Info: Line: 133, Condition: if (TransVarCharset == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:133->[Control Flow] Branch Info: Line: 133, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:134->[Local Variables] {"TransVarCharset":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:135->[Control Flow] Branch Info: Line: 135, Condition: if (TransVarCharset != null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:127->[Control Flow] Branch Info: Line: 127, Condition: if (TransVarFirstNode != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:140->[Control Flow] Branch Info: Line: 140, Condition: if (TransVarCharset == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:140->[Control Flow] Branch Info: Line: 140, Condition: if (org.jsoup.nodes.Document.childNodeSize() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:150->[Control Flow] Branch Info: Line: 150, Condition: if (TransVarXmlDecl != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:151->[Control Flow] Branch Info: Line: 151, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:155->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:155 -> org.jsoup.helper.DataUtil.validateCharset
+org.jsoup.helper.DataUtil:parseInputStream:156->[Control Flow] Branch Info: Line: 156, Condition: if (TransVarCharset != null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:156->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:156 -> java.lang.String.equalsIgnoreCase
+org.jsoup.helper.DataUtil:parseInputStream:156->[Control Flow] Branch Info: Line: 156, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:157->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:157 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:parseInputStream:157->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:157 -> java.lang.String.replaceAll
+org.jsoup.helper.DataUtil:parseInputStream:158->[Local Variables] {"TransVarInputStreamCharset":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:160->[Control Flow] Branch Info: Line: 160, Condition: if (TransVarReadFully == 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:166->[Control Flow] Branch Info: Line: 166, Condition: if (TransVarDoc1 == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:167->[Control Flow] Branch Info: Line: 167, Condition: if (TransVarInputStreamCharset == null), Executed: false

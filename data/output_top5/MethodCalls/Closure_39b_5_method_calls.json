@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.getSlot",
+    "doc": "/**\n   * Creates an object type, allowing specification of the implicit prototype\n   * when creating native objects.\n   */",
+    "code": "public Property getSlot(String name) {\n    if (properties.containsKey(name)) {\n      return properties.get(name);\n    }\n    ObjectType implicitPrototype = getImplicitPrototype();\n    if (implicitPrototype != null) {\n      Property prop = implicitPrototype.getSlot(name);\n      if (prop != null) {\n        return prop;\n      }\n    }\n    for (ObjectType interfaceType : getCtorExtendedInterfaces()) {\n      Property prop = interfaceType.getSlot(name);\n      if (prop != null) {\n        return prop;\n      }\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.getType",
+    "doc": "/**\n   * Returns the type information, if any, for this slot.\n   * @return The type or {@code null} if no type is declared for it.\n   */",
+    "code": "T getType();"
+  }
+]

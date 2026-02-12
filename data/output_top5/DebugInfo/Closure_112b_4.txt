@@ -1,0 +1,83 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1058 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1112->[Local Variables] "{resolvedTypes\u003d{CLASS\u003dstring}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1086->[Local Variables] "{paramType\u003dfunction (CLASS): CLASS, argType\u003dfunction (number): string}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1088->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1088 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1089->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1089 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1087->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1087 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1060->[Local Variables] "{paramType\u003dCLASS, argType\u003dnumber}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1061 -> com.google.javascript.rhino.jstype.JSType.isTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Control Flow] Branch Info: Line: 1061, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplateType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1064->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1064 -> com.google.javascript.rhino.jstype.JSType.toMaybeTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1063->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1063 -> com.google.javascript.jscomp.TypeInference.resolvedTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1112->[Local Variables] "{resolvedTypes\u003d{CLASS\u003d(number|string)}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1077->[Control Flow] Branch Info: Line: 1077, Condition: if (argObjectType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1077->[Control Flow] Branch Info: Line: 1077, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1090->[Local Variables] "{paramType\u003dfunction (CLASS): CLASS, argType\u003dfunction (number): string}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1077->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1077 -> com.google.javascript.rhino.jstype.FunctionType.isSubtype
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1077->[Control Flow] Branch Info: Line: 1077, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isSubtype() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1080->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1080 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1081->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1081 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1060->[Local Variables] "{paramType\u003d?, argType\u003d?}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1061 -> com.google.javascript.rhino.jstype.JSType.isTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Control Flow] Branch Info: Line: 1061, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplateType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1065->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1065 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1065->[Control Flow] Branch Info: Line: 1065, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1071->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1071 -> com.google.javascript.rhino.jstype.JSType.isFunctionType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1071->[Control Flow] Branch Info: Line: 1071, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1091 -> com.google.javascript.rhino.jstype.JSType.isTemplatizedType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1082->[Local Variables] "{paramType\u003dfunction (CLASS): CLASS, argType\u003dfunction (number): string}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1084->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1084 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1085->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1085 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1060->[Local Variables] "{paramType\u003dCLASS, argType\u003dstring}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1061 -> com.google.javascript.rhino.jstype.JSType.isTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Control Flow] Branch Info: Line: 1061, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplateType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1064->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1064 -> com.google.javascript.rhino.jstype.JSType.toMaybeTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1063->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1063 -> com.google.javascript.jscomp.TypeInference.resolvedTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTemplatized11 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Control Flow] Branch Info: Line: 1061, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplateType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1064->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1064 -> com.google.javascript.rhino.jstype.JSType.toMaybeTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1063->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1063 -> com.google.javascript.jscomp.TypeInference.resolvedTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1112->[Local Variables] "{resolvedTypes\u003d{T\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1069->[Local Variables] "{paramType\u003d(K|T)}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Control Flow] Loop Info: Line: 1068, Description: while at line 1068
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1068 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Control Flow] Branch Info: Line: 1068, Condition: if (argObjectType != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1068 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Local Variables] "{alernative\u003dK}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1060->[Local Variables] "{paramType\u003dK}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1061 -> com.google.javascript.rhino.jstype.JSType.isTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1061->[Control Flow] Branch Info: Line: 1061, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplateType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1064->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1064 -> com.google.javascript.rhino.jstype.JSType.toMaybeTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1063->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1063 -> com.google.javascript.jscomp.TypeInference.resolvedTemplateType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1105->[Control Flow] Branch Info: Line: 1105, Condition: if (var8 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1112->[Local Variables] "{resolvedTypes\u003d{K\u003dnumber, T\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1069->[Local Variables] "{paramType\u003d(K|T)}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Control Flow] Loop Info: Line: 1068, Description: while at line 1068
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType:1068 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1068->[Control Flow] Branch Info: Line: 1068, Condition: if (argObjectType != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (com.google.javascript.rhino.jstype.JSType.isTemplatizedType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplatedType:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false

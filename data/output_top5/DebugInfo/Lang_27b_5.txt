@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber ===
+Exception: java.lang.StringIndexOutOfBoundsException: begin 0, end 4, length 3
+
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"12345"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"2147483648"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"-12345"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"0xFADE"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"-0xFADE"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"102147483647"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode
+org.apache.commons.lang3.math.NumberUtils:createInteger:664->[Local Variables] {"str":"109223372036854775807"}
+org.apache.commons.lang3.math.NumberUtils:createInteger:665->[Control Flow] Branch Info: Line: 665, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createInteger:669->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createInteger:669 -> java.lang.Integer.decode

@@ -1,0 +1,47 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testCharSetExpansion ===
+Exception: junit.framework.AssertionFailedError: expected:<US-ASCII> but was:<null>
+
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:175->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:175 -> java.lang.String.equals
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:175->[Control Flow] Branch Info: Line: 175, Condition: if (java.lang.String.equals() == 0), Executed: false
+com.google.javascript.jscomp.Compiler:toSource:1347->[Local Variables] "{n\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.Compiler:toSource:1348->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1348 -> com.google.javascript.jscomp.Compiler.initCompilerOptionsIfTesting
+com.google.javascript.jscomp.Compiler:toSource:1356->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1356 -> com.google.javascript.jscomp.CodePrinter$Builder.<init>
+com.google.javascript.jscomp.Compiler:toSource:1356->[Local Variables] "{builder\u003dcom.google.javascript.jscomp.CodePrinter$Builder@6b5894c8}"
+com.google.javascript.jscomp.Compiler:toSource:1357->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1357 -> com.google.javascript.jscomp.CodePrinter$Builder.setPrettyPrint
+com.google.javascript.jscomp.Compiler:toSource:1358->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1358 -> com.google.javascript.jscomp.CodePrinter$Builder.setLineBreak
+com.google.javascript.jscomp.Compiler:toSource:1359->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1359 -> com.google.javascript.jscomp.CodePrinter$Builder.setSourceMap
+com.google.javascript.jscomp.Compiler:toSource:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1360 -> com.google.javascript.jscomp.CodePrinter$Builder.setSourceMapDetailLevel
+com.google.javascript.jscomp.Compiler:toSource:1363->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1363 -> com.google.javascript.jscomp.CodePrinter$Builder.setOutputCharset
+com.google.javascript.jscomp.Compiler:toSource:1365->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1365 -> com.google.javascript.jscomp.CodePrinter$Builder.build
+com.google.javascript.jscomp.Compiler:toSource:1348->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1348 -> com.google.javascript.jscomp.Compiler.initCompilerOptionsIfTesting
+com.google.javascript.jscomp.Compiler:toSource:1356->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1356 -> com.google.javascript.jscomp.CodePrinter$Builder.<init>
+com.google.javascript.jscomp.Compiler:toSource:1356->[Local Variables] "{builder\u003dcom.google.javascript.jscomp.CodePrinter$Builder@51e8e6e6}"
+com.google.javascript.jscomp.Compiler:toSource:1357->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1357 -> com.google.javascript.jscomp.CodePrinter$Builder.setPrettyPrint
+com.google.javascript.jscomp.Compiler:toSource:1358->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1358 -> com.google.javascript.jscomp.CodePrinter$Builder.setLineBreak
+com.google.javascript.jscomp.Compiler:toSource:1359->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1359 -> com.google.javascript.jscomp.CodePrinter$Builder.setSourceMap
+com.google.javascript.jscomp.Compiler:toSource:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1360 -> com.google.javascript.jscomp.CodePrinter$Builder.setSourceMapDetailLevel
+com.google.javascript.jscomp.Compiler:toSource:1363->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1363 -> com.google.javascript.jscomp.CodePrinter$Builder.setOutputCharset
+com.google.javascript.jscomp.Compiler:toSource:1365->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.toSource:1365 -> com.google.javascript.jscomp.CodePrinter$Builder.build
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:152->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:152 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$300
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:152->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:152 -> com.google.javascript.jscomp.AbstractCommandLineRunner.createDefineReplacements
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:154->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:154 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$400
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:155->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:155 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$500
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:156->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:156 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$600
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:156->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:156 -> com.google.javascript.jscomp.CompilerOptions.setCodingConvention
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:157->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:157 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$700
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:157->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:157 -> com.google.javascript.jscomp.CompilerOptions.setSummaryDetailLevel
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:159->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:159 -> com.google.javascript.jscomp.AbstractCommandLineRunner.getInputCharset
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:161->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:161 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$800
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:161->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:161 -> java.lang.String.length
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:161->[Control Flow] Branch Info: Line: 161, Condition: if (java.lang.String.length() > 0), Executed: true
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:162->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:162 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$800
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:161->[Control Flow] Branch Info: Line: 161, Condition: if (java.lang.String.length() > 0), Executed: false
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:165->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:165 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$900
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:165->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:165 -> java.lang.String.length
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:165->[Control Flow] Branch Info: Line: 165, Condition: if (java.lang.String.length() > 0), Executed: false
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:168->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:168 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1000
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:170->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:170 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1100
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:170->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:170 -> java.lang.String.equals
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:170->[Control Flow] Branch Info: Line: 170, Condition: if (java.lang.String.equals() == 0), Executed: false
+com.google.javascript.jscomp.AbstractCommandLineRunner:setRunOptions:175->[Method Call] Call Stack: com.google.javascript.jscomp.AbstractCommandLineRunner.setRunOptions:175 -> com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1200

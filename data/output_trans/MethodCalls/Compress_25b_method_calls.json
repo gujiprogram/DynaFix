@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipEncodingHelper.getZipEncoding",
+    "doc": "/**\n     * Instantiates a zip encoding.\n     *\n     * @param name The name of the zip encoding. Specify {@code null} for\n     *             the platform's default encoding.\n     * @return A zip encoding for the given encoding name.\n     */",
+    "code": "public static ZipEncoding getZipEncoding(String name) {\n\n        if (isUTF8(name)) {\n            return UTF8_ZIP_ENCODING;\n        }\n\n        if (name == null) {\n            return new FallbackZipEncoding();\n        }\n\n        SimpleEncodingHolder h = simpleEncodings.get(name);\n\n        if (h!=null) {\n            return h.getEncoding();\n        }\n\n        try {\n\n            Charset cs = Charset.forName(name);\n            return new NioZipEncoding(cs);\n\n        } catch (UnsupportedCharsetException e) {\n            return new FallbackZipEncoding(name);\n        }\n    }"
+  }
+]

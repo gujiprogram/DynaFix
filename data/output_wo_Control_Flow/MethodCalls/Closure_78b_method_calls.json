@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.DiagnosticType.error",
+    "doc": "/**\n   * Create a DiagnosticType at level CheckLevel.ERROR\n   *\n   * @param name An identifier\n   * @param descriptionFormat A format string\n   * @return A new DiagnosticType\n   */",
+    "code": "public static DiagnosticType error(String name, String descriptionFormat) {\n    return make(name, CheckLevel.ERROR, descriptionFormat);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getNumberValue",
+    "doc": "/**\n   * Gets the value of a node as a Number, or null if it cannot be converted.\n   * When it returns a non-null Double, this method effectively emulates the\n   * <code>Number()</code> JavaScript cast function.\n   */",
+    "code": "static Double getNumberValue(Node n) {\n    switch (n.getType()) {\n      case Token.TRUE:\n        return 1.0;\n\n      case Token.FALSE:\n      case Token.NULL:\n        return 0.0;\n\n      case Token.NUMBER:\n        return n.getDouble();\n\n      case Token.VOID:\n        if (mayHaveSideEffects(n.getFirstChild())) {\n          return null;\n        } else {\n          return Double.NaN;\n        }\n\n      case Token.NAME:\n        String name = n.getString();\n        if (name.equals(\"undefined\")) {\n          return Double.NaN;\n        }\n        if (name.equals(\"NaN\")) {\n          return Double.NaN;\n        }\n        if (name.equals(\"Infinity\")) {\n          return Double.POSITIVE_INFINITY;\n        }\n        return null;\n\n      case Token.NEG:\n        if (n.getChildCount() == 1 && n.getFirstChild().getType() == Token.NAME\n            && n.getFirstChild().getString().equals(\"Infinity\")) {\n          return Double.NEGATIVE_INFINITY;\n        }\n        return null;\n\n      case Token.NOT:\n        TernaryValue child = getBooleanValue(n.getFirstChild());\n        if (child != TernaryValue.UNKNOWN) {\n          return child.toBoolean(true) ? 0.0 : 1.0; // reversed.\n        }\n        break;\n\n      case Token.STRING:\n        return getStringNumberValue(n.getString());\n\n      case Token.ARRAYLIT:\n      case Token.OBJECTLIT:\n        String value = getStringValue(n);\n        return value != null ? getStringNumberValue(value) : null;\n    }\n\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.error",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newNumber",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public static Node newNumber(double number) {\n    return new NumberNode(number);\n  }"
+  }
+]

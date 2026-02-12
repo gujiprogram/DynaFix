@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testDependencySorting ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Compiler:initModules:350->[Local Variables] "{modules\u003d[m0, m1]}"
+com.google.javascript.jscomp.Compiler:initModules:351->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:351 -> com.google.javascript.jscomp.Compiler.initOptions
+com.google.javascript.jscomp.Compiler:initModules:353->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:353 -> com.google.javascript.jscomp.Compiler.checkFirstModule
+com.google.javascript.jscomp.Compiler:initModules:354->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:354 -> com.google.javascript.jscomp.Compiler.fillEmptyModules
+com.google.javascript.jscomp.Compiler:initModules:356->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:356 -> com.google.javascript.jscomp.Compiler.makeCompilerInput
+com.google.javascript.jscomp.Compiler:initModules:361->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:361 -> java.util.List.size
+com.google.javascript.jscomp.Compiler:initModules:361->[Control Flow] Branch Info: Line: 361, Condition: if (modules > modules), Executed: true
+com.google.javascript.jscomp.Compiler:initModules:363->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:363 -> com.google.javascript.jscomp.JSModuleGraph.<init>
+com.google.javascript.jscomp.Compiler:initModules:375->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:375 -> com.google.javascript.jscomp.Compiler.getAllInputsFromModules
+com.google.javascript.jscomp.Compiler:initModules:376->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:376 -> com.google.javascript.jscomp.Compiler.initBasedOnOptions
+com.google.javascript.jscomp.Compiler:initModules:378->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:378 -> com.google.javascript.jscomp.Compiler.initInputsByIdMap
+com.google.javascript.jscomp.Compiler:initModules:350->[Local Variables] "{modules\u003d[[singleton]]}"
+com.google.javascript.jscomp.Compiler:initModules:351->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:351 -> com.google.javascript.jscomp.Compiler.initOptions
+com.google.javascript.jscomp.Compiler:initModules:353->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:353 -> com.google.javascript.jscomp.Compiler.checkFirstModule
+com.google.javascript.jscomp.Compiler:initModules:354->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:354 -> com.google.javascript.jscomp.Compiler.fillEmptyModules
+com.google.javascript.jscomp.Compiler:initModules:356->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:356 -> com.google.javascript.jscomp.Compiler.makeCompilerInput
+com.google.javascript.jscomp.Compiler:initModules:361->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:361 -> java.util.List.size
+com.google.javascript.jscomp.Compiler:initModules:361->[Control Flow] Branch Info: Line: 361, Condition: if (modules > modules), Executed: false
+com.google.javascript.jscomp.Compiler:initModules:375->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:375 -> com.google.javascript.jscomp.Compiler.getAllInputsFromModules
+com.google.javascript.jscomp.Compiler:initModules:376->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:376 -> com.google.javascript.jscomp.Compiler.initBasedOnOptions
+com.google.javascript.jscomp.Compiler:initModules:378->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initModules:378 -> com.google.javascript.jscomp.Compiler.initInputsByIdMap

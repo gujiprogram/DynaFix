@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.joda.time.format.TestPeriodFormatterBuilder::testBug2495455 ===
+Exception: java.lang.IllegalArgumentException: Invalid format: "PT1003199059S" is malformed at "1003199059S"
+
+org.joda.time.format.PeriodFormatterBuilder:append:191->[Local Variables] "{formatter\u003dorg.joda.time.format.PeriodFormatter@75d0911a}"
+org.joda.time.format.PeriodFormatterBuilder:append:192->[Control Flow] Branch Info: Line: 192, Condition: if (formatter == null), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:append:195->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.append:195 -> org.joda.time.format.PeriodFormatterBuilder.clearPrefix
+org.joda.time.format.PeriodFormatterBuilder:append:196->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.append:196 -> org.joda.time.format.PeriodFormatter.getPrinter
+org.joda.time.format.PeriodFormatterBuilder:append:196->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.append:196 -> org.joda.time.format.PeriodFormatter.getParser
+org.joda.time.format.PeriodFormatterBuilder:append:196->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.append:196 -> org.joda.time.format.PeriodFormatterBuilder.append0

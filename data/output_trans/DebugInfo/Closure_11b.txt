@@ -1,0 +1,82 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetprop4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Local Variables] "{TransVarLastNode\u003dSTRING prop 1 [source_file: [testcode]] : string}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1312 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Local Variables] "{TransVarFirstNode\u003dNAME x 1 [source_file: [testcode]] : null}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1313->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1313 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1314->[Local Variables] "{TransVarCurrentType\u003dnull}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1315 -> com.google.javascript.rhino.jstype.JSType.isDict
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Control Flow] Branch Info: Line: 1315, Condition: if (com.google.javascript.rhino.jstype.JSType.isDict() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1327->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1327 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1327->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1327 -> com.google.javascript.jscomp.TypeCheck.checkPropertyAccess
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1325->[Control Flow] Branch Info: Line: 1325, Condition: if (com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1329->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1329 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1310->[Local Variables] "{TransVarTemp\u003dGETPROP 8 [jsdoc_info: JSDocInfo] [source_file: [externs]] : number, TransVarCurrentNode\u003dEXPR_RESULT 8 [source_file: [externs]]}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1311 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Local Variables] "{TransVarLastNode\u003dSTRING length 8 [source_file: [externs]] : string}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1312 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Local Variables] "{TransVarFirstNode\u003dGETPROP 8 [source_file: [externs]] : Array.prototype}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1313->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1313 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1314->[Local Variables] "{TransVarCurrentType\u003dArray.prototype}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1315 -> com.google.javascript.rhino.jstype.JSType.isDict
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Control Flow] Branch Info: Line: 1315, Condition: if (com.google.javascript.rhino.jstype.JSType.isDict() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1326->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1326 -> com.google.javascript.jscomp.TypeCheck.getNativeType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1325->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1325 -> com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1325->[Control Flow] Branch Info: Line: 1325, Condition: if (com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1327->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1327 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1327->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1327 -> com.google.javascript.jscomp.TypeCheck.checkPropertyAccess
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1325->[Control Flow] Branch Info: Line: 1325, Condition: if (com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1329->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1329 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1310->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@7fb29ca9, TransVarTemp\u003dGETPROP 1 [source_file: [testcode]] : number, TransVarCurrentNode\u003dASSIGN 1 [source_file: [testcode]] : number}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1311 -> com.google.javascript.rhino.Node.getLastChild
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue810 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+=== stdout ===
+Failing tests: 1
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue810
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1310->[Local Variables] "{TransVarTemp\u003dGETPROP 1 [source_file: [testcode]] : ?, TransVarCurrentNode\u003dASSIGN 1 [source_file: [testcode]] : ?}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1311 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Local Variables] "{TransVarLastNode\u003dSTRING prop 1 [source_file: [testcode]] : string}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1312 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Local Variables] "{TransVarFirstNode\u003dTHIS 1 [source_file: [testcode]] : Type}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1313->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1313 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1314->[Local Variables] "{TransVarCurrentType\u003dType}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1315 -> com.google.javascript.rhino.jstype.JSType.isDict
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Control Flow] Branch Info: Line: 1315, Condition: if (com.google.javascript.rhino.jstype.JSType.isDict() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1311 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1311->[Local Variables] "{TransVarLastNode\u003dSTRING unknownProp 1 [source_file: [testcode]] : string}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1312 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1312->[Local Variables] "{TransVarFirstNode\u003dNAME obj 1 [source_file: [testcode]] : ?}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1313->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1313 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1314->[Local Variables] "{TransVarCurrentType\u003d?}"
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1315 -> com.google.javascript.rhino.jstype.JSType.isDict
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1315->[Control Flow] Branch Info: Line: 1315, Condition: if (com.google.javascript.rhino.jstype.JSType.isDict() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.getJSType() != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitGetProp:1320 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.TypeCheck:visitGetProp:1320->[Control Flow] Branch Info: Line: 1320, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true

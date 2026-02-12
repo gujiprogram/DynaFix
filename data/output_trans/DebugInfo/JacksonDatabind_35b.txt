@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.WrapperObjectWithObjectIdTest::testSimple ===
+Exception: com.fasterxml.jackson.databind.JsonMappingException: Unexpected token (FIELD_NAME), expected START_OBJECT: need JSON Object to contain As.WRAPPER_OBJECT type information for class com.fasterxml.jackson.databind.jsontype.WrapperObjectWithObjectIdTest$Computer
+
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:84->[Local Variables] "{TransVarJsonParser\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@8692d67, TransVarContext\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@78f5c518}"
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:85->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:85 -> com.fasterxml.jackson.core.JsonParser.canReadTypeId
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:85->[Control Flow] Branch Info: Line: 85, Condition: if (com.fasterxml.jackson.core.JsonParser.canReadTypeId() != 0), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:90->[Control Flow] Branch Info: Line: 90, Condition: if (TransVarTypeName != null), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:98->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:98 -> com.fasterxml.jackson.core.JsonParser.getCurrentToken
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:98->[Control Flow] Branch Info: Line: 98, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:99->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:99 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:100->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:100 -> com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer.baseTypeName
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:100->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:100 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:100->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:100 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer:_deserialize:99->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer._deserialize:99 -> com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException

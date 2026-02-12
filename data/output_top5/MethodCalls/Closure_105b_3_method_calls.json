@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.FoldConstants.tryFoldBlock",
+    "doc": "/**\n   * Try removing unneeded block nodes and their useless children\n   */",
+    "code": "void tryFoldBlock(NodeTraversal t, Node n, Node parent) {\n    for (Node c = n.getFirstChild(); c != null; ) {\n      Node next = c.getNext();  // save c.next, since 'c' may be removed\n      if (!NodeUtil.mayHaveSideEffects(c)) {\n        n.removeChild(c);  // lazy kids\n        t.getCompiler().reportCodeChange();\n      }\n      c = next;\n    }\n\n    if (n.isSyntheticBlock() || parent == null) {\n      return;\n    }\n\n    if (NodeUtil.tryMergeBlock(n)) {\n      t.getCompiler().reportCodeChange();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FoldConstants.tryMinimizeCondition",
+    "doc": "/**\n   * Try to minimize conditions expressions, as there are additional\n   * assumptions that can be made when it is known that the final result\n   * is a boolean.\n   *\n   * The following transformations are done recursively:\n   *   !(x||y) --> !x&&!y\n   *   !(x&&y) --> !x||!y\n   *   !!x     --> x\n   * Thus:\n   *   !(x&&!y) --> !x||!!y --> !x||y\n   */",
+    "code": "void tryMinimizeCondition(NodeTraversal t, Node n, Node parent) {\n\n    switch (n.getType()) {\n      case Token.NOT:\n        Node first = n.getFirstChild();\n        switch (first.getType()) {\n          case Token.NOT: {\n              Node newRoot = first.removeFirstChild();\n              parent.replaceChild(n, newRoot);\n              n = newRoot; // continue from here.\n              t.getCompiler().reportCodeChange();\n\n              tryMinimizeCondition(t, n, parent);\n              return;\n            }\n          case Token.AND:\n          case Token.OR: {\n              Node leftParent = first.getFirstChild();\n              Node rightParent = first.getLastChild();\n              if (leftParent.getType() != Token.NOT\n                  || rightParent.getType() != Token.NOT) {\n                break;\n              }\n              Node left = leftParent.removeFirstChild();\n              Node right = rightParent.removeFirstChild();\n\n              int newOp = (first.getType() == Token.AND) ? Token.OR : Token.AND;\n              Node newRoot = new Node(newOp, left, right);\n              parent.replaceChild(n, newRoot);\n              n = newRoot; // continue from here.\n              t.getCompiler().reportCodeChange();\n\n            }\n            break;\n        }\n        break;\n\n      case Token.OR:\n      case Token.AND:\n        break;\n\n      default:\n        if (NodeUtil.isLiteralValue(n)) {\n          boolean result = NodeUtil.getBooleanValue(n);\n          int equivalentResult = result ? 1 : 0;\n          maybeReplaceChildWithNumber(t, n, parent, equivalentResult);\n        }\n        return;\n    }\n\n    for (Node c = n.getFirstChild(); c != null; ) {\n      Node next = c.getNext();  // c may be removed.\n      tryMinimizeCondition(t, c, n);\n      c = next;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * function() { return a; } is not.\n   */",
+    "code": "static boolean isLiteralValue(Node n) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n      case Token.OBJECTLIT:\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child)) {\n            return false;\n          }\n        }\n        return true;\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getNext() {\n        return next;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.ScopedAliasesTest::testNonAliasLocal ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:111->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:111 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:111->[Control Flow] Branch Info: Line: 111, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:116->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:116 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:116->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:116 -> java.util.Collection.iterator
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:116->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:116 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:116->[Control Flow] Branch Info: Line: 116, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:126 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:126 -> java.util.List.iterator
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:126 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Control Flow] Branch Info: Line: 126, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:136 -> com.google.javascript.jscomp.ScopedAliases$Traversal.access$100
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:136 -> java.util.List.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Control Flow] Branch Info: Line: 136, Condition: if (traversal <= 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:137 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:137 -> java.util.Collection.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Control Flow] Branch Info: Line: 137, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder() <= 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:138 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:138 -> java.util.List.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:108->[Control Flow] Branch Info: Line: 108, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.hasErrors() == 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Control Flow] Branch Info: Line: 138, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls() > 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:130->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:130 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:130->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:130 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:133->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:133 -> com.google.javascript.jscomp.NodeUtil.tryMergeBlock
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Control Flow] Loop Info: Line: 126, Description: while at line 126
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:126 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:126->[Control Flow] Branch Info: Line: 126, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:136 -> com.google.javascript.jscomp.ScopedAliases$Traversal.access$100
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:136 -> java.util.List.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Control Flow] Branch Info: Line: 136, Condition: if (traversal <= 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:137 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:137 -> java.util.Collection.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Control Flow] Branch Info: Line: 137, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder() <= 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:138 -> com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:138 -> java.util.List.size
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Control Flow] Branch Info: Line: 138, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls() > 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:136->[Control Flow] Branch Info: Line: 136, Condition: if (traversal <= 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:137->[Control Flow] Branch Info: Line: 137, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder() <= 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:139->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:139 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:108->[Control Flow] Branch Info: Line: 108, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.hasErrors() == 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:138->[Control Flow] Branch Info: Line: 138, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls() > 0), Executed: false
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:105->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:105 -> com.google.javascript.jscomp.ScopedAliases$Traversal.<init>
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:105->[Local Variables] {"traversal":{"aliasDefinitionsInOrder":[],"scopeCalls":[],"aliasUsages":[],"aliases":{},"hasErrors":false}}
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:106->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:106 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:108->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:108 -> com.google.javascript.jscomp.ScopedAliases$Traversal.hasErrors
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:108->[Control Flow] Branch Info: Line: 108, Condition: if (com.google.javascript.jscomp.ScopedAliases$Traversal.hasErrors() == 0), Executed: true
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:111->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:111 -> com.google.javascript.jscomp.ScopedAliases$Traversal.access$100
+com.google.javascript.jscomp.ScopedAliases:hotSwapScript:111->[Method Call] Call Stack: com.google.javascript.jscomp.ScopedAliases.hotSwapScript:111 -> java.util.List.iterator

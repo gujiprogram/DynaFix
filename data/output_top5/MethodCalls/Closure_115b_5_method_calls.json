@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements",
+    "doc": "/**\n   * Determines whether a function can be inlined at a particular call site.\n   * - Don't inline if the calling function contains an inner function and\n   * inlining would introduce new globals.\n   */",
+    "code": "private boolean callMeetsBlockInliningRequirements(\n      NodeTraversal t, Node callNode, final Node fnNode,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionInjector.classifyCallSite",
+    "doc": "/**\n   * Determine which, if any, of the supported types the call site is.\n   */",
+    "code": "private CallSiteType classifyCallSite(Node callNode) {\n    Node parent = callNode.getParent();\n    Node grandParent = parent.getParent();\n\n    if (NodeUtil.isExprCall(parent)) {\n      return CallSiteType.SIMPLE_CALL;\n    } else if (NodeUtil.isExprAssign(grandParent)\n        && !NodeUtil.isVarOrSimpleAssignLhs(callNode, parent)\n        && parent.getFirstChild().isName()\n        && !NodeUtil.isConstantName(parent.getFirstChild())) {\n      return CallSiteType.SIMPLE_ASSIGNMENT;\n    } else if (parent.isName()\n        && !NodeUtil.isConstantName(parent)\n        && grandParent.isVar()\n        && grandParent.hasOneChild()) {\n      return CallSiteType.VAR_DECL_SIMPLE_ASSIGNMENT;\n    } else {\n      Node expressionRoot = ExpressionDecomposer.findExpressionRoot(callNode);\n      if (expressionRoot != null) {\n        ExpressionDecomposer decomposer = new ExpressionDecomposer(\n            compiler, safeNameIdSupplier, knownConstants);\n        DecompositionType type = decomposer.canExposeExpression(\n            callNode);\n        if (type == DecompositionType.MOVABLE) {\n          return CallSiteType.EXPRESSION;\n        } else if (type == DecompositionType.DECOMPOSABLE) {\n          return CallSiteType.DECOMPOSABLE_EXPRESSION;\n        } else {\n          Preconditions.checkState(type == DecompositionType.UNDECOMPOSABLE);\n        }\n      }\n    }\n\n    return CallSiteType.UNSUPPORTED;\n  }"
+  }
+]

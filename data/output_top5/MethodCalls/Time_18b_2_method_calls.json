@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.joda.time.chrono.GJChronology.getInstance",
+    "doc": "/**\n     * Factory method returns instances of the default GJ cutover\n     * chronology. This uses a cutover date of October 15, 1582 (Gregorian)\n     * 00:00:00 UTC. For this value, October 4, 1582 (Julian) is followed by\n     * October 15, 1582 (Gregorian).\n     *\n     * <p>The first day of the week is designated to be\n     * {@link org.joda.time.DateTimeConstants#MONDAY Monday},\n     * and the minimum days in the first week of the year is 4.\n     *\n     * <p>The returned chronology is in the default time zone.\n     */",
+    "code": "return getInstance(DateTimeZone.UTC, DEFAULT_CUTOVER, 4);\n    }\n\n    public static GJChronology getInstance() {"
+  }
+]

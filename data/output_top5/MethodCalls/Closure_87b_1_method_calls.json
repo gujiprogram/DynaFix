@@ -1,0 +1,77 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * the name a is not.\n   *\n   * Function literals do not meet this definition, because they\n   * lexically capture variables. For example, if you have\n   * <code>\n   * function() { return a; }\n   * </code>\n   * If it is evaluated in a different scope, then it\n   * captures a different variable. Even if the function did not read\n   * any captured vairables directly, it would still fail this definition,\n   * because it affects the lifecycle of variables in the enclosing scope.\n   *\n   * However, a function literal with respect to a particular scope is\n   * a literal.\n   *\n   * @param includeFunctions If true, all function expressions will be\n   *     treated as literals.\n   */",
+    "code": "static boolean isLiteralValue(Node n, boolean includeFunctions) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child, includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.OBJECTLIT:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child.getFirstChild(), includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.FUNCTION:\n        return includeFunctions && !NodeUtil.isFunctionDeclaration(n);\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.newExpr",
+    "doc": "/**\n   * Creates an EXPR_RESULT.\n   *\n   * @param child The expression itself.\n   * @return Newly created EXPR node with the child as subexpression.\n   */",
+    "code": "public static Node newExpr(Node child) {\n    Node expr = new Node(Token.EXPR_RESULT, child)\n        .copyInformationFrom(child);\n    return expr;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.getBlockExpression",
+    "doc": "/**\n   * @return The expression node.\n   */",
+    "code": "private Node getBlockExpression(Node n) {\n    Preconditions.checkState(isFoldableExpressBlock(n));\n    return n.getFirstChild();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isFoldableExpressBlock",
+    "doc": "/**\n   * @return Whether the node is a block with a single statement that is\n   *     an expression.\n   */",
+    "code": "private boolean isFoldableExpressBlock(Node n) {\n    if (n.getType() == Token.BLOCK) {\n      if (n.hasOneChild()) {\n        Node maybeExpr = n.getFirstChild();\n\n\n          return NodeUtil.isExpressionNode(maybeExpr);\n      }\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isLowerPrecedenceInExpression",
+    "doc": "/**\n   * Does the expression contain an operator with lower precedence than\n   * the argument?\n   */",
+    "code": "private boolean isLowerPrecedenceInExpression(Node n,\n      final int precedence) {\n    Predicate<Node> isLowerPrecedencePredicate = new Predicate<Node>() {\n      @Override\n      public boolean apply(Node input) {\n        return NodeUtil.precedence(input.getType()) < precedence;\n      }\n    };\n\n    return NodeUtil.has(n, isLowerPrecedencePredicate,\n        DONT_TRAVERSE_FUNCTIONS_PREDICATE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isPropertyAssignmentInExpression",
+    "doc": "/**\n   * Does the expression contain a property assignment?\n   */",
+    "code": "private boolean isPropertyAssignmentInExpression(Node n) {\n    Predicate<Node> isPropertyAssignmentInExpressionPredicate =\n        new Predicate<Node>() {\n      @Override\n      public boolean apply(Node input) {\n        return (input.getType() == Token.GETPROP &&\n            input.getParent().getType() == Token.ASSIGN);\n      }\n    };\n\n    return NodeUtil.has(n, isPropertyAssignmentInExpressionPredicate,\n        DONT_TRAVERSE_FUNCTIONS_PREDICATE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.copyInformationFrom",
+    "doc": "/**\n   * Copies source file and name information from the other\n   * node given to the current node. Used for maintaining\n   * debug information across node append and remove operations.\n   * @return this\n   */",
+    "code": "public Node copyInformationFrom(Node other) {\n    if (getProp(ORIGINALNAME_PROP) == null) {\n        putProp(ORIGINALNAME_PROP, other.getProp(ORIGINALNAME_PROP));\n    }\n\n    if (getProp(SOURCENAME_PROP) == null) {\n        putProp(SOURCENAME_PROP, other.getProp(SOURCENAME_PROP));\n        sourcePosition = other.sourcePosition;\n    }\n\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeChild",
+    "doc": "/**\n   * Detach a child from its parent and siblings.\n   */",
+    "code": "public void removeChild(Node child) {\n    Node prev = getChildBefore(child);\n    if (prev == null)\n        first = first.next;\n    else\n        prev.next = child.next;\n    if (child == last) last = prev;\n    child.next = null;\n    child.parent = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeFirstChild",
+    "doc": "/**\n   * Removes the first child of Node. Equivalent to:\n   * node.removeChild(node.getFirstChild());\n   *\n   * @return The removed Node.\n   */",
+    "code": "public Node removeFirstChild() {\n    Node child = first;\n    if (child != null) {\n      removeChild(child);\n    }\n    return child;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

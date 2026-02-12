@@ -1,0 +1,52 @@
+[
+  {
+    "method": "org.joda.time.Chronology.days",
+    "doc": "/**\n     * Get the days duration field for this chronology.\n     *\n     * @return DurationField or UnsupportedDurationField if unsupported\n     */",
+    "code": "public abstract DurationField days();"
+  },
+  {
+    "method": "org.joda.time.Chronology.hours",
+    "doc": "/**\n     * Get the hours duration field for this chronology.\n     *\n     * @return DurationField or UnsupportedDurationField if unsupported\n     */",
+    "code": "public abstract DurationField hours();"
+  },
+  {
+    "method": "org.joda.time.Chronology.months",
+    "doc": "/**\n     * Get the months duration field for this chronology.\n     *\n     * @return DurationField or UnsupportedDurationField if unsupported\n     */",
+    "code": "public abstract DurationField months();"
+  },
+  {
+    "method": "org.joda.time.Chronology.weeks",
+    "doc": "/**\n     * Get the weeks duration field for this chronology.\n     *\n     * @return DurationField or UnsupportedDurationField if unsupported\n     */",
+    "code": "public abstract DurationField weeks();"
+  },
+  {
+    "method": "org.joda.time.Chronology.years",
+    "doc": "/**\n     * Get the years duration field for this chronology.\n     *\n     * @return DurationField or UnsupportedDurationField if unsupported\n     */",
+    "code": "public abstract DurationField years();"
+  },
+  {
+    "method": "org.joda.time.DurationField.add",
+    "doc": "/**\n     * Adds a duration value (which may be negative) to the instant.\n     *\n     * @param instant  the milliseconds from 1970-01-01T00:00:00Z to add to\n     * @param value  the value to add, in the units of the field\n     * @return the updated milliseconds\n     */",
+    "code": "public abstract long add(long instant, int value);"
+  },
+  {
+    "method": "org.joda.time.DurationFieldType.getField",
+    "doc": "/**\n     * Gets a suitable field for this type from the given Chronology.\n     *\n     * @param chronology  the chronology to use, null means ISOChronology in default zone\n     * @return a suitable field\n     */",
+    "code": "public abstract DurationField getField(Chronology chronology);"
+  },
+  {
+    "method": "org.joda.time.MutableDateTime.getChronology",
+    "doc": "/**\n         * Gets the chronology of the datetime that this property is linked to.\n         *\n         * @return the chronology\n         * @since 1.4\n         */",
+    "code": "protected Chronology getChronology() {\n            return iInstant.getChronology();\n        }"
+  },
+  {
+    "method": "org.joda.time.MutableDateTime.getMillis",
+    "doc": "/**\n         * Gets the milliseconds of the datetime that this property is linked to.\n         *\n         * @return the milliseconds\n         */",
+    "code": "protected long getMillis() {\n            return iInstant.getMillis();\n        }"
+  },
+  {
+    "method": "org.joda.time.MutableDateTime.setMillis",
+    "doc": "/**\n     * Set the milliseconds of the datetime.\n     * <p>\n     * All changes to the millisecond field occurs via this method.\n     *\n     * @param instant  the milliseconds since 1970-01-01T00:00:00Z to set the\n     * datetime to\n     */",
+    "code": "public void setMillis(long instant) {\n        switch (iRoundingMode) {\n            case ROUND_NONE:\n                break;\n            case ROUND_FLOOR:\n                instant = iRoundingField.roundFloor(instant);\n                break;\n            case ROUND_CEILING:\n                instant = iRoundingField.roundCeiling(instant);\n                break;\n            case ROUND_HALF_FLOOR:\n                instant = iRoundingField.roundHalfFloor(instant);\n                break;\n            case ROUND_HALF_CEILING:\n                instant = iRoundingField.roundHalfCeiling(instant);\n                break;\n            case ROUND_HALF_EVEN:\n                instant = iRoundingField.roundHalfEven(instant);\n                break;\n        }\n        super.setMillis(instant);\n    }"
+  }
+]

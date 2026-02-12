@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getValue",
+    "doc": "/**\n     * Compute the value of the linear equation at the current point\n     * @param point point at which linear equation must be evaluated\n     * @return value of the linear equation at the current point\n     */",
+    "code": "public double getValue(final double[] point) {\n        return coefficients.dotProduct(new ArrayRealVector(point, false)) + constantTerm;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow",
+    "doc": "/**\n     * Checks whether the given column is basic.\n     * @param col index of the column to check\n     * @return the row that the variable is basic in.  null if the column is not basic\n     */",
+    "code": "protected Integer getBasicRow(final int col) {\n        Integer row = null;\n        for (int i = 0; i < getHeight(); i++) {\n            final double entry = getEntry(i, col);\n            if (Precision.equals(entry, 1d, maxUlps) && (row == null)) {\n                row = i;\n            } else if (!Precision.equals(entry, 0d, maxUlps)) {\n                return null;\n            }\n        }\n        return row;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getEntry",
+    "doc": "/** Get an entry of the tableau.\n     * @param row row index\n     * @param column column index\n     * @return entry at (row, column)\n     */",
+    "code": "protected final double getEntry(final int row, final int column) {\n        return tableau.getEntry(row, column);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getOriginalNumDecisionVariables",
+    "doc": "/**\n     * Get the original number of decision variables.\n     * @return original number of decision variables\n     * @see #getNumDecisionVariables()\n     */",
+    "code": "protected final int getOriginalNumDecisionVariables() {\n        return f.getCoefficients().getDimension();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset",
+    "doc": "/**\n     * Get the offset of the right hand side.\n     * @return offset of the right hand side\n     */",
+    "code": "protected final int getRhsOffset() {\n        return getWidth() - 1;\n    }"
+  }
+]

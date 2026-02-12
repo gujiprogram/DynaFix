@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getCompiler",
+    "doc": "/**\n   * Gets the compiler.\n   */",
+    "code": "public Compiler getCompiler() {\n    return (Compiler) compiler;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExpressionResultUsed",
+    "doc": "/**\n   * @returns false iff the result of the expression is not consumed.\n   */",
+    "code": "static boolean isExpressionResultUsed(Node expr) {\n    Node parent = expr.getParent();\n    switch (parent.getType()) {\n      case Token.BLOCK:\n      case Token.EXPR_RESULT:\n        return false;\n      case Token.HOOK:\n      case Token.AND:\n      case Token.OR:\n        return (expr == parent.getFirstChild())\n            ? true : isExpressionResultUsed(parent);\n      case Token.COMMA:\n        Node gramps = parent.getParent();\n        if (gramps.isCall() &&\n            parent == gramps.getFirstChild()) {\n          if (expr == parent.getFirstChild() &&\n              parent.getChildCount() == 2 &&\n              expr.getNext().isName() &&\n              \"eval\".equals(expr.getNext().getString())) {\n            return true;\n          }\n        }\n\n        return (expr == parent.getFirstChild())\n            ? false : isExpressionResultUsed(parent);\n      case Token.FOR:\n        if (!NodeUtil.isForIn(parent)) {\n          return (parent.getChildAtIndex(1) == expr);\n        }\n        break;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType",
+    "doc": "/**\n   * A \"simple\" operator is one whose children are expressions,\n   * has no direct side-effects (unlike '+='), and has no\n   * conditional aspects (unlike '||').\n   */",
+    "code": "return isSimpleOperatorType(n.getType());\n  }\n\n  static boolean isSimpleOperatorType(int type) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects",
+    "doc": "/**\n   * Returns true if the node which may have side effects when executed.\n   */",
+    "code": "static boolean mayHaveSideEffects(Node n) {\n    return mayHaveSideEffects(n, null);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isComma",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isEmpty",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

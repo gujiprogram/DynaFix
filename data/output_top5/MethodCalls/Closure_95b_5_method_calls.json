@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator.declareNativeFunctionType",
+    "doc": "/**\n   * Create the outermost scope. This scope contains native binding such as\n   * {@code Object}, {@code Date}, etc.\n   */",
+    "code": "private void declareNativeFunctionType(Scope scope, JSTypeNative tId) {\n    FunctionType t = typeRegistry.getNativeFunctionType(tId);\n    declareNativeType(scope, t.getInstanceType().getReferenceName(), t);\n    declareNativeType(\n        scope, t.getPrototype().getReferenceName(), t.getPrototype());\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator.declareNativeValueType",
+    "doc": "/**\n   * Create the outermost scope. This scope contains native binding such as\n   * {@code Object}, {@code Date}, etc.\n   */",
+    "code": "private void declareNativeValueType(Scope scope, String name,\n      JSTypeNative tId) {\n    declareNativeType(scope, name, typeRegistry.getNativeType(tId));\n  }"
+  }
+]

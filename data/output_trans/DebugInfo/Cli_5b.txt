@@ -1,0 +1,22 @@
+
+=== Debug Info for Test: org.apache.commons.cli.UtilTest::testStripLeadingHyphens ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.Util:stripLeadingHyphens:38->[Local Variables] {"TransVarS":"-f"}
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:39 -> java.lang.String.startsWith
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Control Flow] Branch Info: Line: 39, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingHyphens:46->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:46 -> java.lang.String.startsWith
+org.apache.commons.cli.Util:stripLeadingHyphens:46->[Control Flow] Branch Info: Line: 46, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingHyphens:51->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:51 -> java.lang.String.length
+org.apache.commons.cli.Util:stripLeadingHyphens:51->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:51 -> java.lang.String.substring
+org.apache.commons.cli.Util:stripLeadingHyphens:38->[Local Variables] {"TransVarS":"--foo"}
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:39 -> java.lang.String.startsWith
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Control Flow] Branch Info: Line: 39, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingHyphens:44->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:44 -> java.lang.String.length
+org.apache.commons.cli.Util:stripLeadingHyphens:44->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:44 -> java.lang.String.substring
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:39 -> java.lang.String.startsWith
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI133Test::testOrder ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.Util:stripLeadingHyphens:39->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingHyphens:39 -> java.lang.String.startsWith

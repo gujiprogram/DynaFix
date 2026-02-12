@@ -1,0 +1,214 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarFnParameter\u003dNAME self$$1 9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:693->[Local Variables] "{TransVarCall\u003dCALL 15 [free_call: 1] [source_file: testcode], TransVarFn\u003dFUNCTION  9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:694 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Control Flow] Branch Info: Line: 694, Condition: if (com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Local Variables] "{TransVarCallNode\u003dBLOCK 9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:703->[Local Variables] {"TransVarSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:704 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:709 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Local Variables] "{TransVarStatement\u003dRETURN 10 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:710 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:714->[Local Variables] {"TransVarSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:719->[Local Variables] "{TransVarNewCall\u003dNAME self$$2 15 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Control Flow] Branch Info: Line: 720, Condition: if (com.google.javascript.rhino.Node.isName() == 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Control Flow] Branch Info: Line: 720, Condition: if (com.google.javascript.rhino.Node.isName() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:694 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Control Flow] Branch Info: Line: 694, Condition: if (com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:703->[Local Variables] {"TransVarSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:704 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:709 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:710 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:714->[Local Variables] {"TransVarSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarFnParameter\u003dNAME a 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:693->[Local Variables] "{TransVarCall\u003dCALL 1 [free_call: 1] [source_file: testcode], TransVarFn\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:694 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Control Flow] Branch Info: Line: 694, Condition: if (com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Local Variables] "{TransVarCallNode\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:703->[Local Variables] {"TransVarSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:704 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:709 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Local Variables] "{TransVarStatement\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:710 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:714->[Local Variables] {"TransVarSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:719->[Local Variables] "{TransVarNewCall\u003dNAME o 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Control Flow] Branch Info: Line: 720, Condition: if (com.google.javascript.rhino.Node.isName() == 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarFnParameter\u003dNAME a 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:693->[Local Variables] "{TransVarCall\u003dCALL 1 [free_call: 1] [source_file: testcode], TransVarFn\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:694 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:694->[Control Flow] Branch Info: Line: 694, Condition: if (com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Local Variables] "{TransVarCallNode\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:703->[Local Variables] {"TransVarSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:704 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:708->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:708 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:709 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:709->[Local Variables] "{TransVarStatement\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:710 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:704->[Control Flow] Branch Info: Line: 704, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Control Flow] Branch Info: Line: 710, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:714->[Local Variables] {"TransVarSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:715->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:715 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:719->[Local Variables] "{TransVarNewCall\u003dNAME o 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:720 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:720->[Control Flow] Branch Info: Line: 720, Condition: if (com.google.javascript.rhino.Node.isName() == 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:741->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:741 -> com.google.javascript.jscomp.NodeUtil.mayEffectMutableState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:741->[Control Flow] Branch Info: Line: 741, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:742->[Control Flow] Branch Info: Line: 742, Condition: if (com.google.javascript.rhino.Node.getString() > com.google.javascript.rhino.Node.getString()), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:746->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:746 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:747->[Local Variables] "{TransVarFnParameter\u003dNAME z 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:749->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:749 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:749->[Control Flow] Branch Info: Line: 749, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:752->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:752 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Control Flow] Loop Info: Line: 734, Description: while at line 734
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarNewCall\u003dNAME baz 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:734 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarFnParameter\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:738 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarSideEffects != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:738->[Control Flow] Branch Info: Line: 738, Condition: if (TransVarNewCall != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:741->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:741 -> com.google.javascript.jscomp.NodeUtil.mayEffectMutableState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:737->[Control Flow] Branch Info: Line: 737, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:741->[Control Flow] Branch Info: Line: 741, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:742->[Control Flow] Branch Info: Line: 742, Condition: if (com.google.javascript.rhino.Node.getString() > com.google.javascript.rhino.Node.getString()), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:746->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:746 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:747->[Local Variables] "{TransVarFnParameter\u003dNAME y 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:749->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:749 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:749->[Control Flow] Branch Info: Line: 749, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:752->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:752 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Control Flow] Loop Info: Line: 734, Description: while at line 734
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarNewCall != null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:734->[Local Variables] "{TransVarNewCall\u003dNUMBER 2.0 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:735->[Control Flow] Branch Info: Line: 735, Condition: if (TransVarNewCall == null), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Control Flow] Branch Info: Line: 736, Condition: if (TransVarFnParameter != null), Executed: true

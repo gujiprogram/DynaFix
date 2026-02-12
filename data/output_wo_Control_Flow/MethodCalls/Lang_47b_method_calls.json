@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang.text.StrBuilder.ensureCapacity",
+    "doc": "/**\n     * Checks the capacity and ensures that it is at least the size specified.\n     *\n     * @param capacity  the capacity to ensure\n     * @return this, to enable chaining\n     */",
+    "code": "public StrBuilder ensureCapacity(int capacity) {\n        if (capacity > buffer.length) {\n            char[] old = buffer;\n            buffer = new char[capacity];\n            System.arraycopy(old, 0, buffer, 0, size);\n        }\n        return this;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang.text.StrBuilder.getNullText",
+    "doc": "/**\n     * Gets the text to be appended when null is added.\n     *\n     * @return the null text, null means no append\n     */",
+    "code": "public String getNullText() {\n        return nullText;\n    }"
+  }
+]

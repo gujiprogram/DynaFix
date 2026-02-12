@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+Exception: junit.framework.ComparisonFailure: expected:<{[foo: (number|undefined)]}> but was:<{[]}>
+
+com.google.javascript.jscomp.TypeInference:traverseNew:1070->[Local Variables] "{TransVarNext\u003dNAME y 4 [source_file: [testcode]] : {}}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1071->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1071 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.TypeInference:traverseNew:1068->[Control Flow] Loop Info: Line: 1068, Description: while at line 1068
+com.google.javascript.jscomp.TypeInference:traverseNew:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarNext != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1039->[Local Variables] "{TransVarFlowScope\u003dcom.google.javascript.jscomp.LinkedFlowScope@6f1a80fb, TransVarNode\u003dNEW 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1040->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1040 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseNew:1040->[Local Variables] "{TransVarConstructorNode\u003dNAME F 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1041->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1041 -> com.google.javascript.jscomp.TypeInference.traverse
+com.google.javascript.jscomp.TypeInference:traverseNew:1041->[Local Variables] "{TransVarConstructorNode\u003dNAME F 4 [source_file: [testcode]] : function (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1042->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1042 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeInference:traverseNew:1042->[Local Variables] "{TransVarConstructorTypeInstance\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1044->[Control Flow] Branch Info: Line: 1044, Condition: if (TransVarConstructorTypeInstance != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1048->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1048 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:traverseNew:1049->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1049 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:traverseNew:1049->[Control Flow] Branch Info: Line: 1049, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1055->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1055 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:traverseNew:1055->[Local Variables] "{TransVarTypeInstance\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1056->[Control Flow] Branch Info: Line: 1056, Condition: if (TransVarNext == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1056->[Control Flow] Branch Info: Line: 1056, Condition: if (TransVarConstructorTypeInstance != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1062->[Control Flow] Branch Info: Line: 1062, Condition: if (TransVarNext != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1062->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1062 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeInference:traverseNew:1062->[Control Flow] Branch Info: Line: 1062, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1063->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1063 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.TypeInference:traverseNew:1044->[Control Flow] Branch Info: Line: 1044, Condition: if (TransVarConstructorTypeInstance != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1062->[Control Flow] Branch Info: Line: 1062, Condition: if (TransVarNext != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1062->[Control Flow] Branch Info: Line: 1062, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1066->[Local Variables] "{TransVarReturnType\u003dF}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1067->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1067 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:traverseNew:1067->[Local Variables] "{TransVarNode\u003dNEW 4 [source_file: [testcode]] : F}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1068->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1068 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.TypeInference:traverseNew:1068->[Local Variables] "{TransVarNext\u003dNAME y 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarNext != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1070->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1070 -> com.google.javascript.jscomp.TypeInference.traverse

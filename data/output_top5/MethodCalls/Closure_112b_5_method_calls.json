@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return unknownType;\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType",
+    "doc": "/**\n   * For functions with function parameters, type inference will set the type of\n   * a function literal argument from the function parameter type.\n   */",
+    "code": "private void maybeResolveTemplatedType(\n      JSType paramType,"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVarArgs",
+    "doc": "/**\n   * Returns whether this node is a variable length argument node. This\n   * method's return value is meaningful only on {@link Token#NAME} nodes\n   * used to define a {@link Token#FUNCTION}'s argument list.\n   */",
+    "code": "public boolean isVarArgs() {\n    return getBooleanProp(VAR_ARGS_NAME);\n  }"
+  }
+]

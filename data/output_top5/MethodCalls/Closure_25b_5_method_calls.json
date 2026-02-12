@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getTypeRegistry",
+    "doc": "/**\n   * Gets a central registry of type information from the compiled JS.\n   */",
+    "code": "public abstract JSTypeRegistry getTypeRegistry();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.LinkedFlowScope.createEntryLattice",
+    "doc": "/**\n   * Creates an entry lattice for the flow.\n   */",
+    "code": "public static LinkedFlowScope createEntryLattice(Scope scope) {\n    return new LinkedFlowScope(new FlatFlowScopeCache(scope));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getDeclarativelyUnboundVarsWithoutTypes",
+    "doc": "/**\n   * Gets all variables declared with \"var\" but without declared types attached.\n   */",
+    "code": "public Iterator<Var> getDeclarativelyUnboundVarsWithoutTypes() {\n    return Iterators.filter(\n        getVars(), DECLARATIVELY_UNBOUND_VARS_WITHOUT_TYPES);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getRootNode",
+    "doc": "/**\n   * Gets the container node of the scope. This is typically the FUNCTION\n   * node or the global BLOCK/SCRIPT node.\n   */",
+    "code": "public Node getRootNode() {\n    return rootNode;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in the current scope.\n   */",
+    "code": "public ObjectType getTypeOfThis() {\n    return thisType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getNativeType",
+    "doc": "/**\n   * If we access a property of a symbol, then that symbol is not\n   * null or undefined.\n   */",
+    "code": "return getNativeType(CHECKED_UNKNOWN_TYPE);\n        } else {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.isUnflowable",
+    "doc": "/**\n     * Gets the outcome scope if we do know the outcome of the entire\n     * expression.\n     */",
+    "code": "private boolean isUnflowable(Var v) {\n    return v != null && v.isLocal() && v.isMarkedEscaped() &&\n        v.getScope() == syntacticScope;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.FlowScope.inferSlotType",
+    "doc": "/**\n   * Defines the type of a symbol at this point in the flow.\n   * @throws IllegalArgumentException If no slot for this symbol exists.\n   */",
+    "code": "void inferSlotType(String symbol, JSType type);"
+  }
+]

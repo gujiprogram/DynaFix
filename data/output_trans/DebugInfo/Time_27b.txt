@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: org.joda.time.format.TestPeriodFormatterBuilder::testBug2495455 ===
+Exception: java.lang.IllegalArgumentException: Invalid format: "PT1003199059S" is malformed at "1003199059S"
+
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:123->[Local Variables] "{formatter\u003dorg.joda.time.format.PeriodFormatter@723e88f9}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:124->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:124 -> [Lorg.joda.time.format.PeriodFormatterBuilder$FieldFormatter;.clone
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:812->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:812 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:123->[Local Variables] "{formatter\u003dorg.joda.time.format.PeriodFormatter@2cb2fc20}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:124->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:124 -> [Lorg.joda.time.format.PeriodFormatterBuilder$FieldFormatter;.clone
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:797->[Local Variables] "{TransVarElementValues\u003d[org.joda.time.format.PeriodFormatterBuilder$Separator@4d6025c5, org.joda.time.format.PeriodFormatterBuilder$Separator@4d6025c5]}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Control Flow] Branch Info: Line: 798, Condition: if (TransVarPrint != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Control Flow] Branch Info: Line: 798, Condition: if (TransVarNotParse != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:804->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:804 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:804->[Local Variables] {"TransVarNum":2}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Control Flow] Branch Info: Line: 805, Condition: if (TransVarNum >= TransVarNum), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:805 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Control Flow] Branch Info: Line: 805, Condition: if (TransVarElementValues != 0), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:809->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:809 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:810->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:810 -> java.util.List.subList
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:797->[Local Variables] {"TransVarElementValues":[]}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Control Flow] Branch Info: Line: 798, Condition: if (TransVarPrint != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Control Flow] Branch Info: Line: 798, Condition: if (TransVarNotParse != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:804->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:804 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:804->[Local Variables] {"TransVarNum":0}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Control Flow] Branch Info: Line: 805, Condition: if (TransVarNum >= TransVarNum), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Control Flow] Branch Info: Line: 805, Condition: if (TransVarElementValues != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:814->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:814 -> org.joda.time.format.PeriodFormatterBuilder.createComposite
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:814->[Local Variables] {"TransVarValues":[{"iText":""},{"iText":""}]}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:815->[Control Flow] Branch Info: Line: 815, Condition: if (TransVarPrint != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:817->[Control Flow] Branch Info: Line: 817, Condition: if (TransVarNotParse != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:820->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:820 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:810->[Local Variables] "{TransVarNum\u003d2, TransVarElementValues\u003d[org.joda.time.format.PeriodFormatterBuilder$Separator@4d6025c5, org.joda.time.format.PeriodFormatterBuilder$Separator@4d6025c5], TransVarFormatter\u003dorg.joda.time.format.PeriodFormatter@4f4c4b1a}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:811->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:811 -> org.joda.time.format.PeriodFormatter.getPrinter
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:811->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:811 -> org.joda.time.format.PeriodFormatter.getParser
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:811->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:811 -> org.joda.time.format.PeriodFormatterBuilder$Separator.finish
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:812->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:812 -> org.joda.time.format.PeriodFormatter.<init>

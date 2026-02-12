@@ -1,0 +1,40 @@
+
+=== Debug Info for Test: org.apache.commons.lang.WordUtilsTest::testAbbreviate ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 15
+
+org.apache.commons.lang.WordUtils:abbreviate:638->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:638 -> java.lang.String.substring
+org.apache.commons.lang.WordUtils:abbreviate:616->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:616 -> java.lang.String.length
+org.apache.commons.lang.WordUtils:abbreviate:616->[Control Flow] Branch Info: Line: 616, Condition: if (java.lang.String.length() == 0), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (TransVarUpperString != TransVarUpperString), Executed: true
+org.apache.commons.lang.WordUtils:abbreviate:627->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:627 -> java.lang.String.length
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:631->[Control Flow] Branch Info: Line: 631, Condition: if (TransVarLowerCase < TransVarLowerCase), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:635->[Local Variables] {"TransVarStringBuffer":""}
+org.apache.commons.lang.WordUtils:abbreviate:636->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:636 -> org.apache.commons.lang.StringUtils.indexOf
+org.apache.commons.lang.WordUtils:abbreviate:637->[Control Flow] Branch Info: Line: 637, Condition: if (TransVarPosition == TransVarPosition), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:643->[Control Flow] Branch Info: Line: 643, Condition: if (TransVarUpperString > TransVarUpperString), Executed: true
+org.apache.commons.lang.WordUtils:abbreviate:644->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:644 -> java.lang.String.substring
+org.apache.commons.lang.WordUtils:abbreviate:644->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:644 -> java.lang.StringBuffer.append
+org.apache.commons.lang.WordUtils:abbreviate:644->[Local Variables] {"TransVarStringBuffer":"01 23 45 6"}
+org.apache.commons.lang.WordUtils:abbreviate:645->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:645 -> org.apache.commons.lang.StringUtils.defaultString
+org.apache.commons.lang.WordUtils:abbreviate:645->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:645 -> java.lang.StringBuffer.append
+org.apache.commons.lang.WordUtils:abbreviate:640->[Control Flow] Branch Info: Line: 640, Condition: if (java.lang.String.length() != java.lang.String.length()), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:650->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:650 -> java.lang.StringBuffer.toString
+org.apache.commons.lang.WordUtils:abbreviate:609->[Local Variables] {"TransVarStr2":"0123456789","TransVarUpperString":20,"TransVarLowerCase":15}
+org.apache.commons.lang.WordUtils:abbreviate:610->[Control Flow] Branch Info: Line: 610, Condition: if (TransVarStr2 == null), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:616->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:616 -> java.lang.String.length
+org.apache.commons.lang.WordUtils:abbreviate:616->[Control Flow] Branch Info: Line: 616, Condition: if (java.lang.String.length() == 0), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (TransVarUpperString != TransVarUpperString), Executed: true
+org.apache.commons.lang.WordUtils:abbreviate:627->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:627 -> java.lang.String.length
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: true
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (TransVarUpperString != TransVarUpperString), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:628->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:628 -> java.lang.String.length
+org.apache.commons.lang.WordUtils:abbreviate:627->[Control Flow] Branch Info: Line: 627, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:630->[Local Variables] {"TransVarUpperString":10}
+org.apache.commons.lang.WordUtils:abbreviate:631->[Control Flow] Branch Info: Line: 631, Condition: if (TransVarLowerCase < TransVarLowerCase), Executed: true
+org.apache.commons.lang.WordUtils:abbreviate:631->[Control Flow] Branch Info: Line: 631, Condition: if (TransVarLowerCase < TransVarLowerCase), Executed: false
+org.apache.commons.lang.WordUtils:abbreviate:634->[Local Variables] {"TransVarUpperString":15}
+org.apache.commons.lang.WordUtils:abbreviate:635->[Local Variables] {"TransVarStringBuffer":""}
+org.apache.commons.lang.WordUtils:abbreviate:636->[Method Call] Call Stack: org.apache.commons.lang.WordUtils.abbreviate:636 -> org.apache.commons.lang.StringUtils.indexOf
+org.apache.commons.lang.WordUtils:abbreviate:636->[Local Variables] {"TransVarPosition":-1}
+org.apache.commons.lang.WordUtils:abbreviate:637->[Control Flow] Branch Info: Line: 637, Condition: if (TransVarPosition == TransVarPosition), Executed: true

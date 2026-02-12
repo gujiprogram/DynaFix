@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.joda.time.DateTimeUtils.getZone",
+    "doc": "/**\n     * Gets the zone handling null.\n     * <p>\n     * If the zone is <code>null</code>, {@link DateTimeZone#getDefault()}\n     * will be returned. Otherwise, the zone specified is returned.\n     *\n     * @param zone  the time zone to use, null means the default zone\n     * @return the time zone, never null\n     */",
+    "code": "public static final DateTimeZone getZone(DateTimeZone zone) {\n        if (zone == null) {\n            return DateTimeZone.getDefault();\n        }\n        return zone;\n    }"
+  },
+  {
+    "method": "org.joda.time.Instant.equals",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.joda.time.ReadableInstant.toInstant",
+    "doc": "/**\n     * Get the value as a simple immutable <code>Instant</code> object.\n     * <p>\n     * This can be useful if you don't trust the implementation\n     * of the interface to be well-behaved, or to get a guaranteed\n     * immutable object.\n     *\n     * @return the value as an <code>Instant</code> object\n     */",
+    "code": "Instant toInstant();"
+  },
+  {
+    "method": "org.joda.time.chrono.GJChronology.getGregorianCutover",
+    "doc": "/**\n     * Gets the cutover instant between Gregorian and Julian chronologies.\n     * @return the cutover instant\n     */",
+    "code": "public Instant getGregorianCutover() {\n        return iCutoverInstant;\n    }"
+  },
+  {
+    "method": "org.joda.time.chrono.GJChronology.getMinimumDaysInFirstWeek",
+    "doc": "/**\n     * Gets the minimum days needed for a week to be the first week in a year.\n     *\n     * @return the minimum days\n     */",
+    "code": "public int getMinimumDaysInFirstWeek() {\n        return iGregorianChronology.getMinimumDaysInFirstWeek();\n    }"
+  },
+  {
+    "method": "org.joda.time.chrono.GregorianChronology.getInstance",
+    "doc": "/**\n     * Gets an instance of the GregorianChronology in the default time zone.\n     *\n     * @return a chronology in the default time zone\n     */",
+    "code": "public static GregorianChronology getInstance() {\n        return getInstance(DateTimeZone.getDefault(), 4);\n    }"
+  },
+  {
+    "method": "org.joda.time.chrono.JulianChronology.getInstance",
+    "doc": "/**\n     * Gets an instance of the JulianChronology in the default time zone.\n     *\n     * @return a chronology in the default time zone\n     */",
+    "code": "public static JulianChronology getInstance() {\n        return getInstance(DateTimeZone.getDefault(), 4);\n    }"
+  }
+]

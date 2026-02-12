@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored ===
+Exception: java.lang.IllegalStateException: Total width is less than the width of the argument and indent - no room for the description
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:814->[Control Flow] Branch Info: Line: 814, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:816->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:816 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:816->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:816 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:817->[Local Variables] {"sb":"Header"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Local Variables] {"nextLineTabStop":22,"text":"-x,--extralongarg     This description is Long.","sb":""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:812->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:812 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Local Variables] {"pos":21}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:814->[Control Flow] Branch Info: Line: 814, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:821->[Local Variables] {"sb":"-x,--extralongarg\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Control Flow] Branch Info: Line: 822, Condition: if (width >= width), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Local Variables] {"text":"       ons.cli.bug.BugCLI162Test"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:836->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:836 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:837->[Local Variables] {"pos":6}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:838->[Control Flow] Branch Info: Line: 838, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:845 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Control Flow] Branch Info: Line: 845, Condition: if (width > width), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Control Flow] Branch Info: Line: 845, Condition: if (nextLineTabStop == nextLineTabStop), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Control Flow] Branch Info: Line: 845, Condition: if (width > width), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Control Flow] Branch Info: Line: 845, Condition: if (nextLineTabStop == nextLineTabStop), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:849->[Local Variables] {"pos":22}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:850->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:850 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:850->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:850 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:850->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:850 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:850->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:850 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:831->[Control Flow] Loop Info: Line: 831, Description: while at line 831
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Local Variables] {"sb":"usage:\n       org.apache.comm\n       ons.cli.bug.Bug\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Local Variables] {"text":"       CLI162Test"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:836->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:836 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:837->[Local Variables] {"pos":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:838->[Control Flow] Branch Info: Line: 838, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:840->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:840 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:841->[Local Variables] {"sb":"usage:\n       org.apache.comm\n       ons.cli.bug.Bug\n       CLI162Test"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Local Variables] {"nextLineTabStop":0,"text":"Header","sb":""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:812->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:812 -> org.apache.commons.cli.HelpFormatter.findWrapPos

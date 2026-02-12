@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.TestTypeFactory::testCanonicalNames ===
+Exception: junit.framework.ComparisonFailure: expected:<...rence<java.lang.Long[>]> but was:<...rence<java.lang.Long[]>
+
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:168->[Local Variables] {"TransVarBuilder":""}
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:169->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:169 -> java.lang.Class.getName
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:169->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:169 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:169->[Local Variables] {"TransVarBuilder":"java.util.concurrent.atomic.AtomicReference"}
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:170->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:170 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:170->[Local Variables] {"TransVarBuilder":"java.util.concurrent.atomic.AtomicReference\u003c"}
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:171->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:171 -> com.fasterxml.jackson.databind.JavaType.toCanonical
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:171->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:171 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:171->[Local Variables] {"TransVarBuilder":"java.util.concurrent.atomic.AtomicReference\u003cjava.lang.Long"}
+com.fasterxml.jackson.databind.type.ReferenceType:buildCanonicalName:172->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.buildCanonicalName:172 -> java.lang.StringBuilder.toString

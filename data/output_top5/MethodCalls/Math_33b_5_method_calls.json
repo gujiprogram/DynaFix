@@ -1,0 +1,52 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.getRowVector",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.setEntry",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.setRowVector",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealVector.subtract",
+    "doc": "/**\n     * Subtract {@code v} from this vector.\n     * Returns a new vector. Does not change instance data.\n     *\n     * @param v Vector to be subtracted.\n     * @return {@code this} - {@code v}.\n     * @throws org.apache.commons.math3.exception.DimensionMismatchException\n     * if {@code v} is not the same size as this vector.\n     */",
+    "code": "public RealVector subtract(RealVector v) {\n        RealVector result = v.copy();\n        Iterator<Entry> it = sparseIterator();\n        Entry e;\n        while (it.hasNext() && (e = it.next()) != null) {\n            final int index = e.getIndex();\n            result.setEntry(index, e.getValue() - result.getEntry(index));\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getCoefficients",
+    "doc": "/**\n     * Get the coefficients of the constraint (left hand side).\n     * @return coefficients of the constraint (left hand side)\n     */",
+    "code": "public RealVector getCoefficients() {\n        return coefficients;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getRelationship",
+    "doc": "/**\n     * Get the relationship between left and right hand sides.\n     * @return relationship between left and right hand sides\n     */",
+    "code": "public Relationship getRelationship() {\n        return relationship;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getValue",
+    "doc": "/**\n     * Get the value of the constraint (right hand side).\n     * @return value of the constraint (right hand side)\n     */",
+    "code": "public double getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getArtificialVariableOffset",
+    "doc": "/**\n     * Get the offset of the first artificial variable.\n     * @return offset of the first artificial variable\n     */",
+    "code": "protected final int getArtificialVariableOffset() {\n        return getNumObjectiveFunctions() + numDecisionVariables + numSlackVariables;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getInvertedCoefficientSum",
+    "doc": "/**\n     * Get the -1 times the sum of all coefficients in the given array.\n     * @param coefficients coefficients to sum\n     * @return the -1 times the sum of all coefficients in the given array.\n     */",
+    "code": "protected static double getInvertedCoefficientSum(final RealVector coefficients) {\n        double sum = 0;\n        for (double coefficient : coefficients.toArray()) {\n            sum -= coefficient;\n        }\n        return sum;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getSlackVariableOffset",
+    "doc": "/**\n     * Get the offset of the first slack variable.\n     * @return offset of the first slack variable\n     */",
+    "code": "protected final int getSlackVariableOffset() {\n        return getNumObjectiveFunctions() + numDecisionVariables;\n    }"
+  }
+]

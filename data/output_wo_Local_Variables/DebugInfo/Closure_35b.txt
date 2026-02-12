@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1115->[Control Flow] Branch Info: Line: 1115, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1115->[Control Flow] Branch Info: Line: 1115, Condition: if (constraint == null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1120 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1120 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1121->[Control Flow] Branch Info: Line: 1121, Condition: if (constraintObj != null), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1121->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1121 -> com.google.javascript.rhino.jstype.ObjectType.isRecordType
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1121->[Control Flow] Branch Info: Line: 1121, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1122->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1122 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1122->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1122 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1121->[Control Flow] Branch Info: Line: 1121, Condition: if (constraintObj != null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1121->[Control Flow] Branch Info: Line: 1121, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1123->[Control Flow] Branch Info: Line: 1123, Condition: if (objType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1124->[Control Flow] Branch Info: Line: 1124, Condition: if (var5 != 0), Executed: false

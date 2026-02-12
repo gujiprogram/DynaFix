@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.QName.getName",
+    "doc": "/**\n * A qualified name: a combination of an optional namespace prefix\n * and an local name.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getName() {\n        return name;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.QName.getPrefix",
+    "doc": "/**\n * A qualified name: a combination of an optional namespace prefix\n * and an local name.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getPrefix() {\n        return prefix;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodePointer.getNamespaceURI",
+    "doc": "/**\n     * Decodes a namespace prefix to the corresponding URI.\n     */",
+    "code": "public String getNamespaceURI(String prefix) {\n        return null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodePointer.getNode",
+    "doc": "/**\n     * If this pointer manages a transparent container, like a variable,\n     * this method returns the pointer to the contents.\n     * Only an auxiliary (non-node) pointer can (and should) return a\n     * value pointer other than itself.\n     * Note that you probably don't want to override\n     * <code>getValuePointer()</code> directly.  Override the\n     * <code>getImmediateValuePointer()</code> method instead.  The\n     * <code>getValuePointer()</code> method is calls\n     * <code>getImmediateValuePointer()</code> and, if the result is not\n     * <code>this</code>, invokes <code>getValuePointer()</code> recursively.\n     * The idea here is to open all nested containers. Let's say we have a\n     * container within a container within a container. The\n     * <code>getValuePointer()</code> method should then open all those\n     * containers and return the pointer to the ultimate contents. It does so\n     * with the above recursion.\n     */",
+    "code": "return getNode();\n    }\n\n    public NodePointer getValuePointer() {"
+  },
+  {
+    "method": "org.jdom.Element.getNamespace",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.w3c.dom.Element.getAttributeNode",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

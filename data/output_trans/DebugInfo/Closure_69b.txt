@@ -1,0 +1,95 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@25bcd0c7, TransVarNode\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Local Variables] "{TransVarChildNode\u003dNAME f 1 [sourcename: [testcode]] : function (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1550->[Local Variables] "{TransVarNodeType\u003dfunction (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1551 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Control Flow] Branch Info: Line: 1551, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Control Flow] Branch Info: Line: 1562, Condition: if (TransVarNodeType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1567->[Local Variables] "{TransVarFunction\u003dfunction (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1568->[Local Variables] {"TransVarIsExternal":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1569 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Local Variables] "{TransVarFunctionDocInfo\u003dJSDocInfo}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1571 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Local Variables] {"TransVarSourceNameFunction":"[testcode]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1572 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Local Variables] "{TransVarFunctionInput\u003dcom.google.javascript.jscomp.CompilerInput@5217f3d0}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1573 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1579 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1580->[Control Flow] Branch Info: Line: 1580, Condition: if (TransVarIsExternal == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1588->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1588 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@403132fc, TransVarNode\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Local Variables] "{TransVarChildNode\u003dNAME f 1 [sourcename: [testcode]] : function (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1550->[Local Variables] "{TransVarNodeType\u003dfunction (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1551 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Control Flow] Branch Info: Line: 1551, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Control Flow] Branch Info: Line: 1562, Condition: if (TransVarNodeType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1567->[Local Variables] "{TransVarFunction\u003dfunction (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1568->[Local Variables] {"TransVarIsExternal":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1569 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Local Variables] {"TransVarFunctionDocInfo":{"info":{"parameters":{"var_args":{"root":{"type":302,"propListHead":{"type":16,"intValue":0,"objectValue":"[externs]"},"sourcePosition":8203},"sourceName":"[externs]"}}},"sourceName":"[externs]","visibility":"INHERITED","bitset":2,"includeDocumentation":false}}
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1571 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Local Variables] {"TransVarSourceNameFunction":"[externs]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1572 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Local Variables] "{TransVarFunctionInput\u003dcom.google.javascript.jscomp.CompilerInput@b672aa8}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1573 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1578->[Local Variables] {"TransVarIsExternal":true}
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1579 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1580->[Control Flow] Branch Info: Line: 1580, Condition: if (TransVarIsExternal == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1588->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1588 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@460f76a6, TransVarNode\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Local Variables] "{TransVarChildNode\u003dHOOK 1 [sourcename: [testcode]] [parenthesized: true] : function (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1549->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1549 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1550->[Local Variables] "{TransVarNodeType\u003dfunction (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1551 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1551->[Control Flow] Branch Info: Line: 1551, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Control Flow] Branch Info: Line: 1562, Condition: if (TransVarNodeType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1567->[Local Variables] "{TransVarFunction\u003dfunction (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1568->[Local Variables] {"TransVarIsExternal":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1569 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Local Variables] {"TransVarFunctionDocInfo":{"info":{"parameters":{"var_args":{"root":{"type":302,"propListHead":{"type":16,"intValue":0,"objectValue":"[externs]"},"sourcePosition":8203},"sourceName":"[externs]"}}},"sourceName":"[externs]","visibility":"INHERITED","bitset":2,"includeDocumentation":false}}
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1571 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Local Variables] {"TransVarSourceNameFunction":"[externs]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1572 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1572->[Local Variables] "{TransVarFunctionInput\u003dcom.google.javascript.jscomp.CompilerInput@142eef62}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1573 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (TransVarFunctionDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1578->[Local Variables] {"TransVarIsExternal":true}
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1579 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1579->[Control Flow] Branch Info: Line: 1579, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1580->[Control Flow] Branch Info: Line: 1580, Condition: if (TransVarIsExternal == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1588->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1588 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1589->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1589 -> com.google.javascript.jscomp.TypeCheck.ensureTyped

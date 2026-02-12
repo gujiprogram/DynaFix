@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1047 ===
+Exception: junit.framework.ComparisonFailure: expected:<...p never defined on C[2]> but was:<...p never defined on C[3.c2_]>
+
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:369->[Local Variables] "{owner\u003dGETPROP 6 [source_file: [externs]] : String.prototype, t\u003dcom.google.javascript.jscomp.NodeTraversal@71cea1b8, leftType\u003dfunction (...[?]): string, propName\u003dslice, n\u003dASSIGN 6 [jsdoc_info: JSDocInfo] [source_file: [externs]] : function (this:String, number): string, rightType\u003dfunction (this:String, number): string}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf:370 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf:370 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:369->[Local Variables] "{owner\u003dGETPROP 17 [source_file: [externs]] : Array.prototype, leftType\u003dfunction (...[?]): number, propName\u003dpush, n\u003dASSIGN 17 [jsdoc_info: JSDocInfo] [source_file: [externs]] : function (this:(Array.\u003cT\u003e|{length: number}), ...[T]): number, rightType\u003dfunction (this:(Array.\u003cT\u003e|{length: number}), ...[T]): number}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf:370 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf:370 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false

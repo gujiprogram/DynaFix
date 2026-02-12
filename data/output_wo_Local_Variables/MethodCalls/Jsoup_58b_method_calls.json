@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jsoup.Jsoup.parseBodyFragment",
+    "doc": "/**\n     Parse a fragment of HTML, with the assumption that it forms the {@code body} of the HTML.\n\n     @param bodyHtml body HTML fragment\n     @param baseUri  URL to resolve relative URLs against.\n     @return sane HTML document\n\n     @see Document#body()\n     */",
+    "code": "public static Document parseBodyFragment(String bodyHtml, String baseUri) {\n        return Parser.parseBodyFragment(bodyHtml, baseUri);\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the object is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.baseUri",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.body",
+    "doc": "/**\n     Accessor to the document's {@code body} element.\n     @return {@code body}\n     */",
+    "code": "public Element body() {\n        return findFirstElementByTagName(\"body\", this);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.createShell",
+    "doc": "/**\n     Create a valid, empty shell of a document, suitable for adding more elements to.\n     @param baseUri baseUri of document\n     @return document with html, head, and body elements.\n     */",
+    "code": "public static Document createShell(String baseUri) {\n        Validate.notNull(baseUri);\n\n        Document doc = new Document(baseUri);\n        Element html = doc.appendElement(\"html\");\n        html.appendElement(\"head\");\n        html.appendElement(\"body\");\n\n        return doc;\n    }"
+  },
+  {
+    "method": "org.jsoup.safety.Cleaner.copySafeNodes",
+    "doc": "/**\n     Iterates the input and copies trusted nodes (tags, attributes, text) into the destination.\n     */",
+    "code": "private int copySafeNodes(Element source, Element dest) {\n        CleaningVisitor cleaningVisitor = new CleaningVisitor(source, dest);\n        NodeTraversor traversor = new NodeTraversor(cleaningVisitor);\n        traversor.traverse(source);\n        return cleaningVisitor.numDiscarded;\n    }"
+  },
+  {
+    "method": "org.jsoup.safety.Cleaner.isValid",
+    "doc": "/**\n     Determines if the input document <b>body</b>is valid, against the whitelist. It is considered valid if all the tags and attributes\n     in the input HTML are allowed by the whitelist, and that there is no content in the <code>head</code>.\n     <p>\n     This method can be used as a validator for user input. An invalid document will still be cleaned successfully\n     using the {@link #clean(Document)} document. If using as a validator, it is recommended to still clean the document\n     to ensure enforced attributes are set correctly, and that the output is tidied.\n     </p>\n     @param dirtyDocument document to test\n     @return true if no tags or attributes need to be removed; false if they do\n     */",
+    "code": "public boolean isValid(Document dirtyDocument) {\n        Validate.notNull(dirtyDocument);\n\n        Document clean = Document.createShell(dirtyDocument.baseUri());\n        int numDiscarded = copySafeNodes(dirtyDocument.body(), clean.body());\n        return numDiscarded == 0;\n    }"
+  }
+]

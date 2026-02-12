@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getNativeType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "return getNativeType(UNKNOWN_TYPE);\n    } else {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectAllInterfaceProperties",
+    "doc": "/**\n   * Expect that all properties on interfaces that this type implements are\n   * implemented and correctly typed.\n   */",
+    "code": "void expectAllInterfaceProperties(NodeTraversal t, Node n,\n      FunctionType type) {\n    ObjectType instance = type.getInstanceType();\n    for (ObjectType implemented : type.getAllImplementedInterfaces()) {\n      if (implemented.getImplicitPrototype() != null) {\n        for (String prop :\n             implemented.getImplicitPrototype().getOwnPropertyNames()) {\n          expectInterfaceProperty(t, n, instance, implemented, prop);\n        }\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getImplementedInterfaces",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor",
+    "doc": "/**\n   * Given a constructor or an interface type, get its superclass constructor\n   * or {@code null} if none exists.\n   */",
+    "code": "public FunctionType getSuperClassConstructor() {\n    Preconditions.checkArgument(isConstructor() || isInterface());\n    ObjectType maybeSuperInstanceType = getPrototype().getImplicitPrototype();\n    if (maybeSuperInstanceType == null) {\n      return null;\n    }\n    return maybeSuperInstanceType.getConstructor();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  @Override\n  public JSType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType",
+    "doc": "/**\n   * Downcasts this to a FunctionType, or returns null if this is not\n   * a function.\n   *\n   * For the purposes of this function, we define a MaybeFunctionType as any\n   * type in the sub-lattice\n   * { x | LEAST_FUNCTION_TYPE <= x <= GREATEST_FUNCTION_TYPE }\n   * This definition excludes bottom types like NoType and NoObjectType.\n   *\n   * This definition is somewhat arbitrary and axiomatic, but this is the\n   * definition that makes the most sense for the most callers.\n   */",
+    "code": "public FunctionType toMaybeFunctionType() {\n    return null;\n  }"
+  }
+]

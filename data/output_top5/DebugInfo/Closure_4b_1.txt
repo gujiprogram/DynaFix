@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsExtendsLoop ===
+Exception: junit.framework.AssertionFailedError: unexpected warning(s) : JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 2 : 29, JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 3 : 26 expected:<1> but was:<2>
+
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:303->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@650c405c, enclosing\u003dcom.google.javascript.jscomp.Scope@2b2954e1, type\u003dF}"
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: true
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:305->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:305 -> com.google.common.base.Predicate.apply
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: false
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:307->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:307 -> com.google.javascript.rhino.jstype.NamedType.setReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:308->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:308 -> com.google.javascript.rhino.jstype.NamedType.checkEnumElementCycle
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.setResolvedTypeInternal
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsLoop ===
+Exception: junit.framework.AssertionFailedError: expected:<[Parse error. Cycle detected in inheritance chain of type T]> but was:<[can only implement interfaces]>
+
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:303->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@798256c5, enclosing\u003dcom.google.javascript.jscomp.Scope@3468ee6e, type\u003dT}"
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: true
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:305->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:305 -> com.google.common.base.Predicate.apply
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: false
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:307->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:307 -> com.google.javascript.rhino.jstype.NamedType.setReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:308->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:308 -> com.google.javascript.rhino.jstype.NamedType.checkEnumElementCycle
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.setResolvedTypeInternal
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testConversionFromInterfaceToRecursiveConstructor ===
+Exception: java.lang.StackOverflowError
+
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:303->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@76544c0a, enclosing\u003dcom.google.javascript.jscomp.Scope@4232b34a, type\u003dMyType}"
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: true
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:305->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:305 -> com.google.common.base.Predicate.apply
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.validator != null), Executed: false
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:307->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:307 -> com.google.javascript.rhino.jstype.NamedType.setReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:308->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:308 -> com.google.javascript.rhino.jstype.NamedType.checkEnumElementCycle
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType
+com.google.javascript.rhino.jstype.NamedType:setReferencedAndResolvedType:309->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType:309 -> com.google.javascript.rhino.jstype.NamedType.setResolvedTypeInternal

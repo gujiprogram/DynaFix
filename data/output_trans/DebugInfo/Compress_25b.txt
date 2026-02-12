@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::testReadingOfFirstStoredEntry ===
+Exception: junit.framework.AssertionFailedError: arrays first differed at element [0]; expected:<100> but was:<0>
+
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:142->[Local Variables] "{inputStream\u003djava.io.FileInputStream@1e0b4072}"
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:151->[Local Variables] {"encoding":"UTF8"}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:161->[Local Variables] {"useUnicodeExtraFields":true}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:176->[Local Variables] "{TransVarCharSet\u003dUTF8, TransVarUseUnicodeExtraFields2\u003dtrue, TransVarInput\u003djava.io.FileInputStream@1e0b4072, TransVarAllowStoredEntriesWithDataDescriptor1\u003dfalse}"
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:177->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:177 -> org.apache.commons.compress.archivers.ArchiveInputStream.<init>
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:71->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:71 -> java.util.zip.Inflater.<init>
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:74->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:74 -> java.nio.ByteBuffer.allocate
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:181->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:181 -> org.apache.commons.compress.archivers.zip.ZipEncodingHelper.getZipEncoding
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:183->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:183 -> java.nio.ByteBuffer.capacity
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:<init>:183->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.<init>:183 -> java.io.PushbackInputStream.<init>

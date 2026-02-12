@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.testForEquality",
+    "doc": "/**\n   * Compares {@code this} and {@code that}.\n   * @return <ul>\n   * <li>{@link TernaryValue#TRUE} if the comparison of values of\n   *   {@code this} type and {@code that} always succeed (such as\n   *   {@code undefined} compared to {@code null})</li>\n   * <li>{@link TernaryValue#FALSE} if the comparison of values of\n   *   {@code this} type and {@code that} always fails (such as\n   *   {@code undefined} compared to {@code number})</li>\n   * <li>{@link TernaryValue#UNKNOWN} if the comparison can succeed or\n   *   fail depending on the concrete values</li>\n   * </ul>\n   */",
+    "code": "public TernaryValue testForEquality(JSType that) {\n    if (that.isAllType() || that.isNoType() || that.isUnknownType()) {\n      return UNKNOWN;\n    }\n    if (that.isEnumElementType()) {\n      return that.testForEquality(this);\n    }\n    if (that instanceof UnionType) {\n      UnionType union = (UnionType) that;\n      TernaryValue result = null;\n      for (JSType t : union.alternates) {\n        TernaryValue test = this.testForEquality(t);\n        if (result == null) {\n          result = test;\n        } else if (!result.equals(test)) {\n          return UNKNOWN;\n        }\n      }\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.TernaryValue.ordinal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariableIfNotPresent",
+    "doc": "/**\n     * Represents actual type variables resolved for current class.\n     */",
+    "code": "private void registerTypeVariableIfNotPresent(TypeVariable typeVariable) {\n        if (!contextualActualTypeParameters.containsKey(typeVariable)) {\n            contextualActualTypeParameters.put(typeVariable, boundsOf(typeVariable));\n        }\n    }"
+  }
+]

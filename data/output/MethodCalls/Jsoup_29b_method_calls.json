@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the object is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.getElementsByTag",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.head",
+    "doc": "/**\n     Accessor to the document's {@code head} element.\n     @return {@code head}\n     */",
+    "code": "public Element head() {\n        return findFirstElementByTagName(\"head\", this);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.appendElement",
+    "doc": "/**\n     * Create a new element by tag name, and add it as the last child.\n     *\n     * @param tagName the name of the tag (e.g. {@code div}).\n     * @return the new element, to allow you to add content to it, e.g.:\n     *  {@code parent.appendElement(\"h1\").attr(\"id\", \"header\").text(\"Welcome\");}\n     */",
+    "code": "public Element appendElement(String tagName) {\n        Element child = new Element(Tag.valueOf(tagName), baseUri());\n        appendChild(child);\n        return child;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.text",
+    "doc": "/**\n     * Gets the combined text of this element and all its children.\n     * <p>\n     * For example, given HTML {@code <p>Hello <b>there</b> now!</p>}, {@code p.text()} returns {@code \"Hello there now!\"}\n     *\n     * @return unencoded text, or empty string if none.\n     * @see #ownText()\n     * @see #textNodes()\n     */",
+    "code": "public String text() {\n        StringBuilder sb = new StringBuilder();\n        text(sb);\n        return sb.toString().trim();\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Elements.first",
+    "doc": "/**\n     * Get the form element's value of the first matched element.\n     * @return The form element's value, or empty if not set.\n     * @see Element#val()\n     */",
+    "code": "return first().val();\n        else"
+  }
+]

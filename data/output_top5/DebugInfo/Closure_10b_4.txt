@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testIssue821 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:377->[Local Variables] {"s":"1"}
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:378->[Local Variables] {"start":0}
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:379->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:379 -> java.lang.String.length
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:379->[Local Variables] {"end":1}
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:380->[Control Flow] Branch Info: Line: 380, Condition: if (end > 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:381->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:381 -> java.lang.String.charAt
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:381->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:381 -> com.google.javascript.jscomp.NodeUtil.isStrWhiteSpaceChar
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:380->[Control Flow] Branch Info: Line: 380, Condition: if (end > 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:381->[Control Flow] Branch Info: Line: 381, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:384->[Control Flow] Branch Info: Line: 384, Condition: if (end < end), Executed: true
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:385->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:385 -> java.lang.String.charAt
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:385->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:385 -> com.google.javascript.jscomp.NodeUtil.isStrWhiteSpaceChar
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:384->[Control Flow] Branch Info: Line: 384, Condition: if (end < end), Executed: false
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:385->[Control Flow] Branch Info: Line: 385, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.NodeUtil:trimJsWhiteSpace:388->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace:388 -> java.lang.String.substring

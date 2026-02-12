@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: org.apache.commons.cli.HelpFormatterTest::testPrintOptionWithEmptyArgNameUsage ===
+Exception: junit.framework.ComparisonFailure: expected:<usage: app -f[]
+
+org.apache.commons.cli.HelpFormatter:appendOption:619->[Local Variables] {"TransVarBuff2":"usage: app ","TransVarOption2":{"opt":"f","argName":"","required":true,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"},"TransVarRequiredField":true}
+org.apache.commons.cli.HelpFormatter:appendOption:620->[Control Flow] Branch Info: Line: 620, Condition: if (TransVarRequiredField == 0), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:628->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:628 -> org.apache.commons.cli.Option.getOpt
+org.apache.commons.cli.HelpFormatter:appendOption:628->[Control Flow] Branch Info: Line: 628, Condition: if (org.apache.commons.cli.Option.getOpt() != null), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:633->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:633 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:633->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:633 -> org.apache.commons.cli.Option.getOpt
+org.apache.commons.cli.HelpFormatter:appendOption:633->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:633 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:640->[Local Variables] {"TransVarBuff2":"usage: app -f"}
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:641 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Control Flow] Branch Info: Line: 641, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:641 -> org.apache.commons.cli.Option.getArgName
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Control Flow] Branch Info: Line: 641, Condition: if (org.apache.commons.cli.Option.getArgName() != null), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:643 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:643 -> org.apache.commons.cli.Option.getArgName
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:643 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:643 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Control Flow] Branch Info: Line: 641, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:641->[Control Flow] Branch Info: Line: 641, Condition: if (org.apache.commons.cli.Option.getArgName() != null), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:646->[Local Variables] {"TransVarBuff2":"usage: app -f \u003c\u003e"}
+org.apache.commons.cli.HelpFormatter:appendOption:647->[Control Flow] Branch Info: Line: 647, Condition: if (TransVarRequiredField == 0), Executed: false

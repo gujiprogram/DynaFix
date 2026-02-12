@@ -1,0 +1,74 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue284 ===
+Exception: java.lang.RuntimeException: java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1687 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Control Flow] Branch Info: Line: 1687, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1698->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1698 -> com.google.javascript.jscomp.AstChangeProxy.replaceWith
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dFUNCTION  1 [source_file: i0]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1687 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Control Flow] Branch Info: Line: 1687, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1698->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1698 -> com.google.javascript.jscomp.AstChangeProxy.replaceWith
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1654->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1654 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1666->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1666 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1682->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1682 -> com.google.common.collect.Lists.newArrayList
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> com.google.javascript.jscomp.NameAnalyzer.getRhsSubexpressions
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.List.iterator
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dGETPROP 1 [source_file: i0]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dFUNCTION  1 [source_file: i0]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes
+
+=== Debug Info for Test: com.google.javascript.jscomp.NameAnalyzerTest::testIssue284 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1687 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Control Flow] Branch Info: Line: 1687, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1698->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1698 -> com.google.javascript.jscomp.AstChangeProxy.replaceWith
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1687 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1687->[Control Flow] Branch Info: Line: 1687, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1698->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1698 -> com.google.javascript.jscomp.AstChangeProxy.replaceWith
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1654->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1654 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1666->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1666 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1682->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1682 -> com.google.common.collect.Lists.newArrayList
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> com.google.javascript.jscomp.NameAnalyzer.getRhsSubexpressions
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.List.iterator
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> java.util.List.addAll
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Loop Info: Line: 1683, Description: while at line 1683
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Control Flow] Branch Info: Line: 1683, Condition: if (expr != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1683 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1683->[Local Variables] "{rhs\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:replaceTopLevelExpressionWithRhs:1684->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.replaceTopLevelExpressionWithRhs:1684 -> com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.evaluatesToLocalValue",
+    "doc": "/**\n   * @return Whether the node is known to be a value that is not referenced\n   * elsewhere.\n   */",
+    "code": "static boolean evaluatesToLocalValue(Node value) {\n    return evaluatesToLocalValue(value, Predicates.<Node>alwaysFalse());\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasOneChild",
+    "doc": "/**\n   * Check for one child more efficiently than by iterating over all the\n   * children as is done with Node.getChildCount().\n   *\n   * @return Whether the node has exactly one child.\n   */",
+    "code": "public boolean hasOneChild() {\n    return first != null && first == last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isNoSideEffectsCall",
+    "doc": "/**\n   * Returns true if this node is a function or constructor call that\n   * has no side effects.\n   */",
+    "code": "public boolean isNoSideEffectsCall() {\n    return areBitFlagsSet(getSideEffectFlags(), NO_SIDE_EFFECTS);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isOnlyModifiesThisCall",
+    "doc": "/**\n   * @return Whether the only side-effect is \"modifies this\"\n   */",
+    "code": "public boolean isOnlyModifiesThisCall() {\n    return areBitFlagsSet(\n        getSideEffectFlags() & Node.NO_SIDE_EFFECTS,\n        Node.FLAG_GLOBAL_STATE_UNMODIFIED\n            | Node.FLAG_ARGUMENTS_UNMODIFIED\n            | Node.FLAG_NO_THROWS);\n  }"
+  }
+]

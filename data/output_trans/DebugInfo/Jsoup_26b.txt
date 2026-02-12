@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: org.jsoup.safety.CleanerTest::handlesFramesets ===
+Exception: java.lang.NullPointerException
+
+org.jsoup.safety.Cleaner:clean:42->[Local Variables] "{TransVarDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cscript\u003e\u003c/script\u003e\n  \u003cnoscript\u003e\u003c/noscript\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:clean:43->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:43 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:clean:45->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:45 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:clean:45->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:45 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:clean:45->[Local Variables] "{TransVarCleanDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:clean:42->[Local Variables] "{TransVarDocument\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cscript\u003e\u003c/script\u003e\n  \u003cnoscript\u003e\u003c/noscript\u003e\n \u003c/head\u003e\n \u003cframeset\u003e\n  \u003cframe src\u003d\"foo\" /\u003e\n  \u003cframe src\u003d\"foo\" /\u003e\n \u003c/frameset\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:clean:43->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:43 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:clean:45->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:45 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:clean:45->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:45 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:clean:46->[Method Call] Call Stack: org.jsoup.safety.Cleaner.clean:46 -> org.jsoup.safety.Cleaner.copySafeNodes

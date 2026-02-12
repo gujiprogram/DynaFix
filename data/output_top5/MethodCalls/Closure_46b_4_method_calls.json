@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isEquivalentTo",
+    "doc": "/**\n   * Checks if two types are equivalent.\n   */",
+    "code": "public boolean isEquivalentTo(JSType jsType) {\n    if (jsType instanceof ProxyObjectType) {\n      return jsType.isEquivalentTo(this);\n    }\n    return this == jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.getPropertyNode",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.getPropertyType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.hasProperty",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordTypeBuilder.addProperty",
+    "doc": "/**\n   * Adds a property with the given name and type to the record type.\n   * @param name the name of the new property\n   * @param type the JSType of the new property\n   * @param propertyNode the node that holds this property definition\n   * @return The builder itself for chaining purposes, or null if there's\n   *          a duplicate.\n   */",
+    "code": "public RecordTypeBuilder addProperty(String name, JSType type, Node\n      propertyNode) {\n    isEmpty = false;\n    if (properties.containsKey(name)) {\n      return null;\n    }\n    properties.put(name, new RecordProperty(type, propertyNode));\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordTypeBuilder.build",
+    "doc": "/**\n   * Creates a record.\n   * @return The record type.\n   */",
+    "code": "public JSType build() {\n    if (isEmpty) {\n       return registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE);\n    }\n\n    return registry.createRecordType(Collections.unmodifiableMap(properties));\n  }"
+  }
+]

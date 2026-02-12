@@ -1,0 +1,118 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_832 ===
+Exception: junit.framework.AssertionFailedError: Parsed dates should be equal expected:<null> but was:<Fri Jan 02 21:00:00 PST 1970>
+
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:276 -> java.text.ParsePosition.getIndex
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.util.regex.Pattern.matcher
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:278 -> java.util.regex.Matcher.lookingAt
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Control Flow] Branch Info: Line: 278, Condition: if (java.util.regex.Matcher.lookingAt() == 0), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:281->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[0,2,1,2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":0,"last":2,"oldLast":2,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:282 -> java.util.Calendar.getInstance
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Local Variables] {"cal":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":4,"minute":57,"second":46}}
+org.apache.commons.lang3.time.FastDateParser:parse:283->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:283 -> java.util.Calendar.clear
+org.apache.commons.lang3.time.FastDateParser:parse:284->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: true
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Local Variables] {"i":0}
+org.apache.commons.lang3.time.FastDateParser:parse:286->[Local Variables] {"i":1}
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> java.util.regex.Matcher.group
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> org.apache.commons.lang3.time.FastDateParser$Strategy.setCalendar
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":3,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Loop Info: Line: 285, Description: while at line 285
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.util.regex.Matcher.end
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.text.ParsePosition.setIndex
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Local Variables] {"pos":{"index":2,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:290->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:290 -> java.util.Calendar.getTime
+org.apache.commons.lang3.time.FastDateParser:parse:251->[Control Flow] Branch Info: Line: 251, Condition: if (date == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:249->[Local Variables] {"source":"d3"}
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:250 -> java.text.ParsePosition.<init>
+org.apache.commons.lang3.time.FastDateParser:parse:275->[Local Variables] {"pos":{"index":0,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:276 -> java.text.ParsePosition.getIndex
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Local Variables] {"offset":0}
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.util.regex.Pattern.matcher
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:278 -> java.util.regex.Matcher.lookingAt
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Control Flow] Branch Info: Line: 278, Condition: if (java.util.regex.Matcher.lookingAt() == 0), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:281->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[0,2,1,2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":0,"last":2,"oldLast":2,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:282 -> java.util.Calendar.getInstance
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Local Variables] {"cal":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":4,"minute":57,"second":46}}
+org.apache.commons.lang3.time.FastDateParser:parse:283->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:283 -> java.util.Calendar.clear
+org.apache.commons.lang3.time.FastDateParser:parse:284->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: true
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Local Variables] {"i":0}
+org.apache.commons.lang3.time.FastDateParser:parse:286->[Local Variables] {"i":1,"strategy":{"field":5}}
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> java.util.regex.Matcher.group
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> org.apache.commons.lang3.time.FastDateParser$Strategy.setCalendar
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":3,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Loop Info: Line: 285, Description: while at line 285
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.util.regex.Matcher.end
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.text.ParsePosition.setIndex
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Local Variables] {"pos":{"index":2,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:290->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:290 -> java.util.Calendar.getTime
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Local Variables] {"date":"Jan 2, 1970, 9:00:00 PM"}
+org.apache.commons.lang3.time.FastDateParser:parse:251->[Control Flow] Branch Info: Line: 251, Condition: if (date == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:250 -> java.text.ParsePosition.<init>
+org.apache.commons.lang3.time.FastDateParser:parse:275->[Local Variables] {"pos":{"index":0,"errorIndex":-1}}
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateParserTest::testLANG_832 ===
+Exception: junit.framework.AssertionFailedError: Expected FDF failure, but got Fri Jan 02 21:00:00 PST 1970 for ['d'd',d3] using d(\p{IsNd}++)
+
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:276 -> java.text.ParsePosition.getIndex
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.util.regex.Pattern.matcher
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:278 -> java.util.regex.Matcher.lookingAt
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Control Flow] Branch Info: Line: 278, Condition: if (java.util.regex.Matcher.lookingAt() == 0), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:281->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[0,2,1,2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":0,"last":2,"oldLast":2,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:282 -> java.util.Calendar.getInstance
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Local Variables] {"cal":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":4,"minute":57,"second":49}}
+org.apache.commons.lang3.time.FastDateParser:parse:283->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:283 -> java.util.Calendar.clear
+org.apache.commons.lang3.time.FastDateParser:parse:284->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: true
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Local Variables] {"i":0}
+org.apache.commons.lang3.time.FastDateParser:parse:286->[Local Variables] {"i":1}
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> java.util.regex.Matcher.group
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> org.apache.commons.lang3.time.FastDateParser$Strategy.setCalendar
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":3,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Loop Info: Line: 285, Description: while at line 285
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.util.regex.Matcher.end
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.text.ParsePosition.setIndex
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Local Variables] {"pos":{"index":2,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:290->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:290 -> java.util.Calendar.getTime
+org.apache.commons.lang3.time.FastDateParser:parse:251->[Control Flow] Branch Info: Line: 251, Condition: if (date == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:249->[Local Variables] {"source":"d3"}
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:250 -> java.text.ParsePosition.<init>
+org.apache.commons.lang3.time.FastDateParser:parse:275->[Local Variables] {"pos":{"index":0,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:276 -> java.text.ParsePosition.getIndex
+org.apache.commons.lang3.time.FastDateParser:parse:276->[Local Variables] {"offset":0}
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:277 -> java.util.regex.Pattern.matcher
+org.apache.commons.lang3.time.FastDateParser:parse:277->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:278 -> java.util.regex.Matcher.lookingAt
+org.apache.commons.lang3.time.FastDateParser:parse:278->[Control Flow] Branch Info: Line: 278, Condition: if (java.util.regex.Matcher.lookingAt() == 0), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:281->[Local Variables] {"matcher":{"parentPattern":{"pattern":"d(\\p{IsNd}++)","flags":0},"groups":[0,2,1,2,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":2,"lookbehindTo":0,"text":"d3","acceptMode":0,"first":0,"last":2,"oldLast":2,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:282 -> java.util.Calendar.getInstance
+org.apache.commons.lang3.time.FastDateParser:parse:282->[Local Variables] {"cal":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":4,"minute":57,"second":49}}
+org.apache.commons.lang3.time.FastDateParser:parse:283->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:283 -> java.util.Calendar.clear
+org.apache.commons.lang3.time.FastDateParser:parse:284->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: true
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Local Variables] {"i":0}
+org.apache.commons.lang3.time.FastDateParser:parse:286->[Local Variables] {"i":1,"strategy":{"field":5}}
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> java.util.regex.Matcher.group
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:287 -> org.apache.commons.lang3.time.FastDateParser$Strategy.setCalendar
+org.apache.commons.lang3.time.FastDateParser:parse:287->[Local Variables] {"cal":{"year":1970,"month":0,"dayOfMonth":3,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Loop Info: Line: 285, Description: while at line 285
+org.apache.commons.lang3.time.FastDateParser:parse:285->[Control Flow] Branch Info: Line: 285, Condition: if (this.strategies < this.strategies), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.util.regex.Matcher.end
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:289 -> java.text.ParsePosition.setIndex
+org.apache.commons.lang3.time.FastDateParser:parse:289->[Local Variables] {"pos":{"index":2,"errorIndex":-1}}
+org.apache.commons.lang3.time.FastDateParser:parse:290->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:290 -> java.util.Calendar.getTime
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Local Variables] {"date":"Jan 2, 1970, 9:00:00 PM"}
+org.apache.commons.lang3.time.FastDateParser:parse:251->[Control Flow] Branch Info: Line: 251, Condition: if (date == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:parse:250->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.parse:250 -> java.text.ParsePosition.<init>
+org.apache.commons.lang3.time.FastDateParser:parse:275->[Local Variables] {"pos":{"index":0,"errorIndex":-1}}

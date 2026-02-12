@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments16 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1364->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@4fd4cae3, n\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1365->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1365 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1365->[Local Variables] "{child\u003dNAME g 1 [sourcename: [testcode]] : function (...[number]): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1366->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1366 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1366->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1366 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1367->[Local Variables] "{childType\u003dfunction (...[number]): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1368->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1368 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1368->[Control Flow] Branch Info: Line: 1368, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1376->[Control Flow] Branch Info: Line: 1376, Condition: if (childType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1379->[Local Variables] "{functionType\u003dfunction (...[number]): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1380->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1380 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1380->[Control Flow] Branch Info: Line: 1380, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1381->[Control Flow] Branch Info: Line: 1381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1385->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1385 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1386->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1386 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1386->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1386 -> com.google.javascript.jscomp.TypeCheck.ensureTyped

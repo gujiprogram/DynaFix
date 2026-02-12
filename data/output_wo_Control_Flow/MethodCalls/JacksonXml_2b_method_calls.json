@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream._collectUntilTag",
+    "doc": "/**********************************************************************\n     */",
+    "code": "private final String _collectUntilTag() throws XMLStreamException\n    {\n        String text = null;\n        while (true) {\n            switch (_xmlReader.next()) {\n            case XMLStreamConstants.START_ELEMENT:\n            case XMLStreamConstants.END_ELEMENT:\n            case XMLStreamConstants.END_DOCUMENT:\n                return text;\n            case XMLStreamConstants.CHARACTERS:\n            case XMLStreamConstants.CDATA:\n                if (text == null) {\n                    text = _xmlReader.getText();\n                } else { // can be optimized in future, if need be:\n                    text += _xmlReader.getText();\n                }\n                break;\n            default:\n            }\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream._handleEndElement",
+    "doc": "/**********************************************************************\n     */",
+    "code": "return _handleEndElement();"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream._initStartElement",
+    "doc": "/**********************************************************************\n     */",
+    "code": "return _initStartElement();\n            }\n            if (text != null) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream._skipUntilTag",
+    "doc": "/**********************************************************************\n     */",
+    "code": "private final int _skipUntilTag() throws XMLStreamException\n    {\n        while (_xmlReader.hasNext()) {\n            int type;\n            switch (type = _xmlReader.next()) {\n            case XMLStreamConstants.START_ELEMENT:\n            case XMLStreamConstants.END_ELEMENT:\n            case XMLStreamConstants.END_DOCUMENT:\n                return type;\n            default:\n            }\n        }\n        throw new IllegalStateException(\"Expected to find a tag, instead reached end of input\");\n    }"
+  },
+  {
+    "method": "org.codehaus.stax2.XMLStreamReader2.getAttributeLocalName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.codehaus.stax2.XMLStreamReader2.getAttributeNamespace",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.codehaus.stax2.XMLStreamReader2.getAttributeValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.codehaus.stax2.XMLStreamReader2.getEventType",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

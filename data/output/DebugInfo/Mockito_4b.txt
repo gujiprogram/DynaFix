@@ -1,0 +1,40 @@
+
+=== Debug Info for Test: org.mockito.exceptions.ReporterTest::can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted_in_order ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.mockito.exceptions.verification.VerificationInOrderFailure> but was<java.lang.ClassCastException>
+
+org.mockito.exceptions.Reporter:noMoreInteractionsWantedInOrder:431->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWantedInOrder:431 -> org.mockito.internal.debugging.LocationImpl.<init>
+org.mockito.exceptions.Reporter:noMoreInteractionsWantedInOrder:431->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWantedInOrder:431 -> java.lang.StringBuilder.append
+org.mockito.exceptions.Reporter:noMoreInteractionsWantedInOrder:434->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWantedInOrder:434 -> org.mockito.invocation.Invocation.getMock
+org.mockito.exceptions.Reporter:noMoreInteractionsWantedInOrder:434->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWantedInOrder:434 -> java.lang.StringBuilder.append
+
+=== Debug Info for Test: org.mockito.exceptions.ReporterTest::can_use_print_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_injection_failure ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.mockito.exceptions.base.MockitoException> but was<java.lang.NullPointerException>
+
+org.mockito.exceptions.Reporter:exceptionCauseMessageIfAvailable:676->[Local Variables] {"details":{"stackTrace":[],"suppressedExceptions":[]}}
+org.mockito.exceptions.Reporter:exceptionCauseMessageIfAvailable:677->[Method Call] Call Stack: org.mockito.exceptions.Reporter.exceptionCauseMessageIfAvailable:677 -> java.lang.Exception.getCause
+org.mockito.exceptions.Reporter:exceptionCauseMessageIfAvailable:677->[Method Call] Call Stack: org.mockito.exceptions.Reporter.exceptionCauseMessageIfAvailable:677 -> java.lang.Throwable.getMessage
+
+=== Debug Info for Test: org.mockito.exceptions.ReporterTest::can_use_mock_name_even_when_mock_bogus_default_answer_and_when_reporting_no_more_interaction_wanted ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.mockito.exceptions.verification.NoInteractionsWanted> but was<java.lang.ClassCastException>
+
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:417->[Local Variables] {"invocations":[]}
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:418->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:418 -> org.mockito.internal.exceptions.util.ScenarioPrinter.<init>
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:418->[Local Variables] {"scenarioPrinter":{}}
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:419->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:419 -> org.mockito.internal.exceptions.util.ScenarioPrinter.print
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:420->[Local Variables] {"scenario":"***\nFor your reference, here is the list of all invocations ([?] - means unverified).\n"}
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:421->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:421 -> org.mockito.internal.debugging.LocationImpl.<init>
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:421->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:421 -> java.lang.StringBuilder.append
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:424->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:424 -> org.mockito.invocation.Invocation.getMock
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:424->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:424 -> java.lang.StringBuilder.append
+
+=== Debug Info for Test: org.mockitousage.bugs.ClassCastExOnVerifyZeroInteractionsTest::should_not_throw_a_ClassCastException ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.mockito.exceptions.verification.NoInteractionsWanted> but was<java.lang.ClassCastException>
+
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:418->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:418 -> org.mockito.internal.exceptions.util.ScenarioPrinter.<init>
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:418->[Local Variables] {"scenarioPrinter":{}}
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:419->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:419 -> org.mockito.internal.exceptions.util.ScenarioPrinter.print
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:420->[Local Variables] {"scenario":"Actually, above is the only interaction with this mock."}
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:421->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:421 -> org.mockito.internal.debugging.LocationImpl.<init>
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:421->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:421 -> java.lang.StringBuilder.append
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:424->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:424 -> org.mockito.invocation.Invocation.getMock
+org.mockito.exceptions.Reporter:noMoreInteractionsWanted:424->[Method Call] Call Stack: org.mockito.exceptions.Reporter.noMoreInteractionsWanted:424 -> java.lang.StringBuilder.append

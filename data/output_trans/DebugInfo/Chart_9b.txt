@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testBug1864222 ===
+Exception: java.lang.IllegalArgumentException: Requires start <= end.
+
+org.jfree.data.time.TimeSeries:createCopy:923->[Local Variables] {"TransVarEndTime":{"serialDate":{"serial":38735,"day":18,"month":1,"year":2006},"firstMillisecond":1137571200000,"lastMillisecond":1137657599999},"TransVarStartTime":{"serialDate":{"serial":38687,"day":1,"month":12,"year":2005},"firstMillisecond":1133424000000,"lastMillisecond":1133510399999}}
+org.jfree.data.time.TimeSeries:createCopy:924->[Control Flow] Branch Info: Line: 924, Condition: if (TransVarStartTime == null), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:930->[Control Flow] Branch Info: Line: 930, Condition: if (TransVarEndTime == null), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:936->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:936 -> org.jfree.data.time.RegularTimePeriod.compareTo
+org.jfree.data.time.TimeSeries:createCopy:936->[Control Flow] Branch Info: Line: 936, Condition: if (org.jfree.data.time.RegularTimePeriod.compareTo() > 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:940->[Local Variables] {"TransVarTimeRange":false}
+org.jfree.data.time.TimeSeries:createCopy:941->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:941 -> org.jfree.data.time.TimeSeries.getIndex
+org.jfree.data.time.TimeSeries:createCopy:941->[Local Variables] {"TransVarStartIndex2":-2}
+org.jfree.data.time.TimeSeries:createCopy:942->[Control Flow] Branch Info: Line: 942, Condition: if (TransVarStartIndex2 < 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:943->[Local Variables] {"TransVarStartIndex2":1}
+org.jfree.data.time.TimeSeries:createCopy:944->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:944 -> java.util.List.size
+org.jfree.data.time.TimeSeries:createCopy:942->[Control Flow] Branch Info: Line: 942, Condition: if (TransVarStartIndex2 < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:944->[Control Flow] Branch Info: Line: 944, Condition: if (this.data == this.data), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:948->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:948 -> org.jfree.data.time.TimeSeries.getIndex
+org.jfree.data.time.TimeSeries:createCopy:948->[Local Variables] {"TransVarEnd":-2}
+org.jfree.data.time.TimeSeries:createCopy:949->[Control Flow] Branch Info: Line: 949, Condition: if (TransVarEnd < 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:950->[Local Variables] {"TransVarEnd":1}
+org.jfree.data.time.TimeSeries:createCopy:949->[Control Flow] Branch Info: Line: 949, Condition: if (TransVarEnd < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:952->[Local Variables] {"TransVarEnd":0}
+org.jfree.data.time.TimeSeries:createCopy:953->[Control Flow] Branch Info: Line: 953, Condition: if (TransVarEnd < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:956->[Control Flow] Branch Info: Line: 956, Condition: if (TransVarTimeRange != 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:878->[Local Variables] {"start":1,"end":0}
+org.jfree.data.time.TimeSeries:createCopy:879->[Control Flow] Branch Info: Line: 879, Condition: if (start < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:882->[Control Flow] Branch Info: Line: 882, Condition: if (start < start), Executed: true

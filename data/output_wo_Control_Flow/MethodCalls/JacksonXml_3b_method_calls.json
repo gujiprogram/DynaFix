@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.getText",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public String getText() { return _textValue; }\n    public String getLocalName() { return _localName; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.next",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public int next() throws IOException\n    {\n        int n = next0();\n        switch (n) {\n        case XML_START_ELEMENT:\n            System.out.println(\" XML-token: XML_START_ELEMENT '\"+_localName+\"'\");\n            break;\n        case XML_END_ELEMENT:\n            System.out.println(\" XML-token: XML_END_ELEMENT '\"+_localName+\"'\");\n            break;\n        case XML_ATTRIBUTE_NAME:\n            System.out.println(\" XML-token: XML_ATTRIBUTE_NAME '\"+_localName+\"'\");\n            break;\n        case XML_ATTRIBUTE_VALUE:\n            System.out.println(\" XML-token: XML_ATTRIBUTE_VALUE '\"+_textValue+\"'\");\n            break;\n        case XML_TEXT:\n            System.out.println(\" XML-token: XML_TEXT '\"+_textValue+\"'\");\n            break;\n        case XML_END:\n            System.out.println(\" XML-token: XML_END\");\n            break;\n        default:\n            throw new IllegalStateException();\n        }\n        return n;\n    }"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.SourceFile.getCode",
+    "doc": "/**\n   * Construct a new abstract source file.\n   *\n   * @param fileName The file name of the source file. It does not necessarily\n   *     need to correspond to a real path. But it should be unique. Will\n   *     appear in warning messages emitted by the compiler.\n   */",
+    "code": "public String getCode();\n  }\n\n  private static final int SOURCE_EXCERPT_REGION_LENGTH = 5;\n\n  private final String fileName;\n  private boolean isExternFile = false;\n\n  private String originalPath = null;\n\n  private int[] lineOffsets = null;\n\n  private int lastOffset;\n  private int lastLine;\n\n  private String code = null;\n\n  public SourceFile(String fileName) {"
+  }
+]

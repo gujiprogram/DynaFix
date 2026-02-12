@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.TestJavaType::testGenericSignature1195 ===
+Exception: junit.framework.ComparisonFailure: expected:<...e<Ljava/lang/String;[>];> but was:<...e<Ljava/lang/String;[];>
+
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:155->[Local Variables] {"TransVarStringBuilder":""}
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:156->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.getGenericSignature:156 -> com.fasterxml.jackson.databind.type.ReferenceType._classSignature
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:156->[Local Variables] {"TransVarStringBuilder":"Ljava/util/concurrent/atomic/AtomicReference"}
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:157->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.getGenericSignature:157 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:157->[Local Variables] {"TransVarStringBuilder":"Ljava/util/concurrent/atomic/AtomicReference\u003c"}
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:158->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.getGenericSignature:158 -> com.fasterxml.jackson.databind.JavaType.getGenericSignature
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:158->[Local Variables] {"TransVarStringBuilder":"Ljava/util/concurrent/atomic/AtomicReference\u003cLjava/lang/String;"}
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:159->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.ReferenceType.getGenericSignature:159 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.databind.type.ReferenceType:getGenericSignature:159->[Local Variables] {"TransVarStringBuilder":"Ljava/util/concurrent/atomic/AtomicReference\u003cLjava/lang/String;;"}

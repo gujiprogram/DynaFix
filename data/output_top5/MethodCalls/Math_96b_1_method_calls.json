@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.Complex.isNaN",
+    "doc": "/**\n     * Returns true if either or both parts of this complex number is NaN;\n     * false otherwise\n     *\n     * @return  true if either or both parts of this complex number is NaN;\n     * false otherwise\n     */",
+    "code": "public boolean isNaN() {\n        return Double.isNaN(real) || Double.isNaN(imaginary);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.MathUtils.hash",
+    "doc": "/**\n     * Returns an integer hash code representing the given double value.\n     *\n     * @param value the value to be hashed\n     * @return the hash code\n     */",
+    "code": "public static int hash(double value) {\n        long bits = Double.doubleToLongBits(value);\n        return (int)(bits ^ (bits >>> 32));\n    }"
+  }
+]

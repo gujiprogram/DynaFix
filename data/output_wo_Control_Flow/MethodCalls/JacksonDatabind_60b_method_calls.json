@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JsonSerializer.serializeWithType",
+    "doc": "/**\n     * Method that can be called to ask implementation to serialize\n     * values of type this serializer handles, using specified type serializer\n     * for embedding necessary type information.\n     *<p>\n     * Default implementation will throw {@link UnsupportedOperationException}\n     * to indicate that proper type handling needs to be implemented.\n     *<p>\n     * For simple datatypes written as a single scalar value (JSON String, Number, Boolean),\n     * implementation would look like:\n     *<pre>\n     *  // note: method to call depends on whether this type is serialized as JSON scalar, object or Array!\n     *  typeSer.writeTypePrefixForScalar(value, gen);\n     *  serialize(value, gen, provider);\n     *  typeSer.writeTypeSuffixForScalar(value, gen);\n     *</pre>\n     * and implementations for type serialized as JSON Arrays or Objects would differ slightly,\n     * as <code>START-ARRAY</code>/<code>END-ARRAY</code> and\n     * <code>START-OBJECT</code>/<code>END-OBJECT</code> pairs\n     * need to be properly handled with respect to serializing of contents.\n     *\n     * @param value Value to serialize; can <b>not</b> be null.\n     * @param gen Generator used to output resulting Json content\n     * @param serializers Provider that can be used to get serializers for\n     *   serializing Objects value contains, if any.\n     * @param typeSer Type serializer to use for including type information\n     */",
+    "code": "public void serializeWithType(T value, JsonGenerator gen, SerializerProvider serializers,\n            TypeSerializer typeSer)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer",
+    "doc": "/**\n     * Method called to get hold of a serializer for a value of given type;\n     * or if no such serializer can be found, a default handler (which\n     * may do a best-effort generic serialization or just simply\n     * throw an exception when invoked).\n     *<p>\n     * Note: this method is only called for non-null values; not for keys\n     * or null values. For these, check out other accessor methods.\n     *<p>\n     * Note that serializers produced should NOT handle polymorphic serialization\n     * aspects; separate {@link TypeSerializer} is to be constructed by caller\n     * if and as necessary.\n     *\n     * @throws JsonMappingException if there are fatal problems with\n     *   accessing suitable serializer; including that of not\n     *   finding any serializer\n     */",
+    "code": "public JsonSerializer<Object> findValueSerializer(Class<?> valueType, BeanProperty property)\n        throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getValue",
+    "doc": "/********************************************************\n     */",
+    "code": "public Object getValue(Object pojo) throws IllegalArgumentException\n    {\n        try {\n            return _method.invoke(pojo);\n        } catch (IllegalAccessException e) {\n            throw new IllegalArgumentException(\"Failed to getValue() with method \"\n                    +getFullName()+\": \"+e.getMessage(), e);\n        } catch (InvocationTargetException e) {\n            throw new IllegalArgumentException(\"Failed to getValue() with method \"\n                    +getFullName()+\": \"+e.getMessage(), e);\n        }\n    }"
+  }
+]

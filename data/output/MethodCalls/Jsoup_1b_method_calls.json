@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.body",
+    "doc": "/**\n     Accessor to the document's {@code body} element.\n     @return {@code body}\n     */",
+    "code": "public Element body() {\n        return getElementsByTag(\"body\").first();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.appendChild",
+    "doc": "/**\n     * Add a node to the last child of this element.\n     *\n     * @param child node to add. Must not already have a parent.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element appendChild(Node child) {\n        Validate.notNull(child);\n\n        child.setParentNode(this);\n        childNodes.add(child);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.removeChild",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.TextNode.isBlank",
+    "doc": "/**\n     Test if this text node is blank -- that is, empty or only whitespace (including newlines).\n     @return true if this document is empty or only whitespace, false if it contains any text content.\n     */",
+    "code": "public boolean isBlank() {\n        return StringUtils.isBlank(normaliseWhitespace(getWholeText()));\n    }"
+  }
+]

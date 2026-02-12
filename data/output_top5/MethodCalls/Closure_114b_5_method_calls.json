@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getCodingConvention",
+    "doc": "/**\n   * Gets the current coding convention.\n   */",
+    "code": "public abstract CodingConvention getCodingConvention();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodingConvention.isExported",
+    "doc": "/**\n   * Checks whether a global variable or function name should be treated as\n   * exported, or externally referenceable.\n   *\n   * @param name A global variable or function name.\n   * @param local {@code true} if the name is a local variable.\n   * @return {@code true} if the name should be considered exported.\n   */",
+    "code": "public boolean isExported(String name, boolean local);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isLocal",
+    "doc": "/**\n     * Returns whether this is a local variable.\n     */",
+    "code": "public boolean isLocal() {\n      return scope.isLocal();\n    }"
+  }
+]

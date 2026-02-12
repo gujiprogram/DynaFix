@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testSimpleFunctionCall ===
+
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:212->[Control Flow] Branch Info: Line: 212, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:220->[Control Flow] Branch Info: Line: 220, Condition: if (value != null), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:220->[Local Variables] {"value":{"str":"hello","type":40,"propListHead":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"var a \u003d String(\u0027hello\u0027, bar());"},"propType":51},"sourcePosition":4111}}
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:223->[Local Variables] "{value\u003dSTRING hello 1 [source_file: testcode], addition\u003dADD}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:224->[Local Variables] "{addition\u003dADD 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:210->[Local Variables] "{callTarget\u003dNAME bar 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (callTarget != null), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (callTarget != null), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:212->[Control Flow] Branch Info: Line: 212, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:220->[Control Flow] Branch Info: Line: 220, Condition: if (value != null), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:210->[Local Variables] "{callTarget\u003dNAME String 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (callTarget != null), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldSimpleFunctionCall:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true

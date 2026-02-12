@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.collections.ExtendedProperties.setProperty",
+    "doc": "/**\n     * Set a property, this will replace any previously\n     * set values. Set values is implicitly a call\n     * to clearProperty(key), addProperty(key,value).\n     *\n     * @param key  the key to set\n     * @param value  the value to set\n     */",
+    "code": "public void setProperty(String key, Object value) {\n        clearProperty(key);\n        addProperty(key, value);\n    }"
+  }
+]

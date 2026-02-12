@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.getImaginaryCharacter",
+    "doc": "/**\n     * Access the imaginaryCharacter.\n     * @return the imaginaryCharacter.\n     */",
+    "code": "public String getImaginaryCharacter() {\n        return imaginaryCharacter;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.getRealFormat",
+    "doc": "/**\n     * Access the realFormat.\n     * @return the realFormat.\n     */",
+    "code": "public NumberFormat getRealFormat() {\n        return realFormat;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.parseAndIgnoreWhitespace",
+    "doc": "/**\n     * Parses <code>source</code> until a non-whitespace character is found.\n     *\n     * @param source the string to parse\n     * @param pos input/ouput parsing parameter.  On output, <code>pos</code>\n     *        holds the index of the next non-whitespace character.\n     */",
+    "code": "private void parseAndIgnoreWhitespace(String source, ParsePosition pos) {\n        parseNextCharacter(source, pos);\n        pos.setIndex(pos.getIndex() - 1);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.parseNextCharacter",
+    "doc": "/**\n     * Parses <code>source</code> until a non-whitespace character is found.\n     *\n     * @param source the string to parse\n     * @param pos input/ouput parsing parameter.\n     * @return the first non-whitespace character.\n     */",
+    "code": "private char parseNextCharacter(String source, ParsePosition pos) {\n         int index = pos.getIndex();\n         int n = source.length();\n         char ret = 0;\n\n         if (index < n) {\n             char c;\n             do {\n                 c = source.charAt(index++);\n             } while (Character.isWhitespace(c) && index < n);\n             pos.setIndex(index);\n\n             if (index < n) {\n                 ret = c;\n             }\n         }\n\n         return ret;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.parseNumber",
+    "doc": "/**\n     * Parses <code>source</code> for a special double values.  These values\n     * include Double.NaN, Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY.\n     *\n     * @param source the string to parse\n     * @param value the special value to parse.\n     * @param pos input/ouput parsing parameter.\n     * @return the special number.\n     */",
+    "code": "private Number parseNumber(String source, double value, ParsePosition pos) {\n        Number ret = null;\n\n        StringBuffer sb = new StringBuffer();\n        sb.append('(');\n        sb.append(value);\n        sb.append(')');\n\n        int n = sb.length();\n        int startIndex = pos.getIndex();\n        int endIndex = startIndex + n;\n        if (endIndex < source.length()) {\n            if (source.substring(startIndex, endIndex).compareTo(sb.toString()) == 0) {\n                ret = new Double(value);\n                pos.setIndex(endIndex);\n            }\n        }\n\n        return ret;\n    }"
+  }
+]

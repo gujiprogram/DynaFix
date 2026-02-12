@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testIssue925 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:986->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:987->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isReturnExpressBlock:987 -> com.google.javascript.rhino.Node.isBlock
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:987->[Control Flow] Branch Info: Line: 987, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:988->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isReturnExpressBlock:988 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:988->[Control Flow] Branch Info: Line: 988, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:989->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isReturnExpressBlock:989 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:989->[Local Variables] "{first\u003dEXPR_RESULT 2 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:990->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isReturnExpressBlock:990 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:987->[Control Flow] Branch Info: Line: 987, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:988->[Control Flow] Branch Info: Line: 988, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:isReturnExpressBlock:990->[Control Flow] Branch Info: Line: 990, Condition: if (com.google.javascript.rhino.Node.isReturn() != 0), Executed: false

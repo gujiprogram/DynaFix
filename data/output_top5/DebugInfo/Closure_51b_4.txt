@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue582 ===
+Exception: java.lang.NoClassDefFoundError: com/google/javascript/jscomp/mozilla/rhino/ScriptRuntime
+
+=== stdout ===
+Failing tests: 1
+  - com.google.javascript.jscomp.CodePrinterTest::testIssue582
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+com.google.javascript.jscomp.CodeConsumer:addOp:203->[Local Variables] {"op":"\u003d","binOp":true}
+com.google.javascript.jscomp.CodeConsumer:addOp:204->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:204 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:addOp:206->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:206 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:addOp:206->[Local Variables] {"first":"\u003d"}
+com.google.javascript.jscomp.CodeConsumer:addOp:207->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:207 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:addOp:208->[Local Variables] {"prev":"x"}
+com.google.javascript.jscomp.CodeConsumer:addOp:209->[Control Flow] Branch Info: Line: 209, Condition: if (first != first), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addOp:209->[Control Flow] Branch Info: Line: 209, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:209->[Control Flow] Branch Info: Line: 209, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:213->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:213 -> java.lang.Character.isLetter
+com.google.javascript.jscomp.CodeConsumer:addOp:213->[Control Flow] Branch Info: Line: 213, Condition: if (first != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:214->[Control Flow] Branch Info: Line: 214, Condition: if (prev != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:217->[Control Flow] Branch Info: Line: 217, Condition: if (prev == prev), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:217->[Control Flow] Branch Info: Line: 217, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:223->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:223 -> com.google.javascript.jscomp.CodeConsumer.appendOp
+com.google.javascript.jscomp.CodeConsumer:addOp:228->[Control Flow] Branch Info: Line: 228, Condition: if (binOp != 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addOp:229->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:229 -> com.google.javascript.jscomp.CodeConsumer.maybeCutLine
+com.google.javascript.jscomp.CodeConsumer:addOp:228->[Control Flow] Branch Info: Line: 228, Condition: if (binOp != 0), Executed: false

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.cli.Option.hasArg",
+    "doc": "/**\n     * Query to see if this Option requires an argument\n     *\n     * @return boolean flag indicating if an argument is required\n     */",
+    "code": "public boolean hasArg()\n    {\n        return (this.numberOfArgs > 0) || (numberOfArgs == UNLIMITED_VALUES);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Options.getOption",
+    "doc": "/**\n     * Retrieve the named {@link Option}\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return the option represented by opt\n     */",
+    "code": "public Option getOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        if (shortOpts.containsKey(opt))\n        {\n            return (Option) shortOpts.get(opt);\n        }\n\n        return (Option) longOpts.get(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member\n     * of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  }
+]

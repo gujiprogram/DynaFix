@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:88->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:88 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:88->[Control Flow] Branch Info: Line: 88, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:71->[Local Variables] "{subtree\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:72 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Control Flow] Branch Info: Line: 72, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:72 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:76->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:76 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:76->[Local Variables] "{callTarget\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:77->[Control Flow] Branch Info: Line: 77, Condition: if (callTarget == null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:81->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:81 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:81->[Control Flow] Branch Info: Line: 81, Condition: if (callTarget == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:85->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:85 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:85->[Local Variables] "{stringNode\u003dARRAYLIT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:86->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:86 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:87->[Local Variables] "{functionName\u003dSTRING join 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:88->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:88 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:88->[Control Flow] Branch Info: Line: 88, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:72 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Control Flow] Branch Info: Line: 72, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:72->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:72 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:76->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:76 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:77->[Control Flow] Branch Info: Line: 77, Condition: if (callTarget == null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:81->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:81 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:81->[Control Flow] Branch Info: Line: 81, Condition: if (callTarget == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:85->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:85 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldKnownStringMethods:86->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownStringMethods:86 -> com.google.javascript.rhino.Node.getNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin ===
+Exception: junit.framework.AssertionFailedError:
+

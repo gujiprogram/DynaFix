@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.TestJsonPointer::testWonkyNumber173 ===
+Exception: java.lang.NumberFormatException: For input string: "1e0"
+
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:185->[Local Variables] {"str":"1e0"}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:186->[Method Call] Call Stack: com.fasterxml.jackson.core.JsonPointer._parseIndex:186 -> java.lang.String.length
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:188->[Local Variables] {"len":3}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:189->[Control Flow] Branch Info: Line: 189, Condition: if (len != 0), Executed: true
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:189->[Control Flow] Branch Info: Line: 189, Condition: if (len > len), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Control Flow] Branch Info: Line: 192, Condition: if (len < len), Executed: true
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Local Variables] {"i":0}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:193->[Method Call] Call Stack: com.fasterxml.jackson.core.JsonPointer._parseIndex:193 -> java.lang.String.charAt
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:193->[Local Variables] {"c":"1","i":1}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:194->[Control Flow] Branch Info: Line: 194, Condition: if (c <= c), Executed: true
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:194->[Control Flow] Branch Info: Line: 194, Condition: if (c < c), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Control Flow] Loop Info: Line: 192, Description: while at line 192
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Control Flow] Branch Info: Line: 192, Condition: if (len < len), Executed: true
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Local Variables] {"i":2}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:193->[Method Call] Call Stack: com.fasterxml.jackson.core.JsonPointer._parseIndex:193 -> java.lang.String.charAt
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:193->[Local Variables] {"c":"0","i":3}
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:194->[Control Flow] Branch Info: Line: 194, Condition: if (c <= c), Executed: true
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:194->[Control Flow] Branch Info: Line: 194, Condition: if (c < c), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Control Flow] Loop Info: Line: 192, Description: while at line 192
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:192->[Control Flow] Branch Info: Line: 192, Condition: if (len < len), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:198->[Control Flow] Branch Info: Line: 198, Condition: if (len == len), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:200->[Control Flow] Branch Info: Line: 200, Condition: if (l > 0), Executed: false
+com.fasterxml.jackson.core.JsonPointer:_parseIndex:204->[Method Call] Call Stack: com.fasterxml.jackson.core.JsonPointer._parseIndex:204 -> com.fasterxml.jackson.core.io.NumberInput.parseInt

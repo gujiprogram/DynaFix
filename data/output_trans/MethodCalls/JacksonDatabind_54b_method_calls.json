@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Include.ordinal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Value.getValueInclusion",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonInclude$Value.withOverrides",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findNullSerializer",
+    "doc": "/**\n     * Method for getting a serializer definition for serializer to use\n     * for nulls (null values) of associated property or type.\n     *\n     * @since 2.3\n     */",
+    "code": "public Object findNullSerializer(Annotated am) {\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findUnwrappingNameTransformer",
+    "doc": "/**\n     * Method called to check whether given property is marked to be \"unwrapped\"\n     * when being serialized (and appropriately handled in reverse direction,\n     * i.e. expect unwrapped representation during deserialization).\n     * Return value is the name transformation to use, if wrapping/unwrapping\n     * should  be done, or null if not -- note that transformation may simply\n     * be identity transformation (no changes).\n     */",
+    "code": "public NameTransformer findUnwrappingNameTransformer(AnnotatedMember member) { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.getClassAnnotations",
+    "doc": "/**\n     * Method for accessing collection of annotations the bean\n     * class has.\n     */",
+    "code": "public abstract Annotations getClassAnnotations();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isReferenceType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.findInclusion",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.PropertyBuilder.findSerializationType",
+    "doc": "/**\n     * Method that will try to determine statically defined type of property\n     * being serialized, based on annotations (for overrides), and alternatively\n     * declared type (if static typing for serialization is enabled).\n     * If neither can be used (no annotations, dynamic typing), returns null.\n     */",
+    "code": "protected JavaType findSerializationType(Annotated a, boolean useStaticTyping, JavaType declaredType)\n        throws JsonMappingException"
+  }
+]

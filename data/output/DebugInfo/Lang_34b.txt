@@ -1,0 +1,783 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testObjectCycle ===
+Exception: java.lang.StackOverflowError
+
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionHierarchy ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"b"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"a"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"b"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"a"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"b"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"a"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycle ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@9816741}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1,2]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[5]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayArrayCycle ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@163370c2}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[[Ljava.lang.Object;@9816741}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@5f20155b}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[[Ljava.lang.Object;@9816741}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1.0}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2.9876}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3.00001}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4.3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1.0,2.29686]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[D@6aa8e115}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":true}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":false}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionyteArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionDoubleArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1.0}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2.9876}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3.00001}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4.3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1,2]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[5]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionLongArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionhortArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1,2]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[5]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":5}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[3,6]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionObjectCycle ===
+Exception: java.lang.StackOverflowError
+
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionBooleanArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[true,false]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[false]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[true,false]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[false]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testSimpleReflectionObjectCycle ===
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionByteArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1,2]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[5]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayCycleLevel2 ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@163370c2}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@9816741}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[Ljava.lang.Object;@163370c2}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionArrayAndObjectCycle ===
+Exception: java.lang.StackOverflowError
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":["A","B"]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":["p"]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionShortArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionIntArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":1}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":2}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":-3}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":4}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionCharArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"A"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"2"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"_"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":"D"}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+
+=== Debug Info for Test: org.apache.commons.lang3.builder.ToStringBuilderTest::testReflectionFloatArrayArray ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: {}
+
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] {"value":[1.0,2.29686]}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Local Variables] {"m":{}}
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:162->[Local Variables] "{value\u003d[F@6aa8e115}"
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:163->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:163 -> org.apache.commons.lang3.builder.ToStringStyle.getRegistry
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: true
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:isRegistered:164->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.isRegistered:164 -> java.util.Map.containsKey
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.lang.ThreadLocal.get
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Control Flow] Branch Info: Line: 148, Condition: if (java.lang.ThreadLocal.get() != null), Executed: false
+org.apache.commons.lang3.builder.ToStringStyle:getRegistry:148->[Method Call] Call Stack: org.apache.commons.lang3.builder.ToStringStyle.getRegistry:148 -> java.util.Collections.emptyMap

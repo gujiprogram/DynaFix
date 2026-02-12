@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang.StringUtils.isEmpty",
+    "doc": "/**\n     * <p>Checks if a String is empty (\"\") or null.</p>\n     *\n     * <pre>\n     * StringUtils.isEmpty(null)      = true\n     * StringUtils.isEmpty(\"\")        = true\n     * StringUtils.isEmpty(\" \")       = false\n     * StringUtils.isEmpty(\"bob\")     = false\n     * StringUtils.isEmpty(\"  bob  \") = false\n     * </pre>\n     *\n     * <p>NOTE: This method changed in Lang version 2.0.\n     * It no longer trims the String.\n     * That functionality is available in isBlank().</p>\n     *\n     * @param str  the String to check, may be null\n     * @return <code>true</code> if the String is empty or null\n     */",
+    "code": "public static boolean isEmpty(String str) {\n        return str == null || str.length() == 0;\n    }"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.autoboxesTo",
+    "doc": "/**\n   * Gets the type to which this type auto-boxes.\n   *\n   * @return the auto-boxed type or {@code null} if this type does not auto-box\n   */",
+    "code": "public JSType autoboxesTo() {\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.findPropertyType",
+    "doc": "/**\n   * Sets the docInfo for the specified property from the\n   * {@link JSDocInfo} on its definition.\n   * @param info {@code JSDocInfo} for the property definition. May be\n   *        {@code null}.\n   * @param inExterns {@code true} if this property was defined in an externs\n   *        file. TightenTypes assumes that any function passed to an externs\n   *        property could be called, so setting this incorrectly could result\n   *        in live code being removed.\n   */",
+    "code": "public JSType findPropertyType(String propertyName) {\n    return hasProperty(propertyName) ?\n        getPropertyType(propertyName) : null;\n  }"
+  }
+]

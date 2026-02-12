@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass ===
+Exception: junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:172->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:172 -> com.google.javascript.jscomp.AbstractCompiler.report
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Control Flow] Loop Info: Line: 162, Description: while at line 162
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:162 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:161->[Control Flow] Branch Info: Line: 161, Condition: if (com.google.javascript.jscomp.CheckLevel.isOn() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Control Flow] Branch Info: Line: 162, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:150->[Local Variables] "{root\u003dBLOCK [synthetic: 1], externs\u003dnull}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:151->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:151 -> com.google.javascript.jscomp.NodeTraversal.<init>
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:151->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:151 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:153->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:153 -> java.util.List.iterator
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:153->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:153 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:153->[Control Flow] Branch Info: Line: 153, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:157 -> java.util.Map.values
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:157 -> java.util.Collection.iterator
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:157 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Control Flow] Branch Info: Line: 157, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:157 -> java.util.Iterator.next
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Local Variables] {"pn":{"namespace":"goog"}}
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:158->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:158 -> com.google.javascript.jscomp.ProcessClosurePrimitives$ProvidedName.replace
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Control Flow] Loop Info: Line: 157, Description: while at line 157
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:157 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:157->[Control Flow] Branch Info: Line: 157, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:161->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:161 -> com.google.javascript.jscomp.CheckLevel.isOn
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:161->[Control Flow] Branch Info: Line: 161, Condition: if (com.google.javascript.jscomp.CheckLevel.isOn() != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:162 -> java.util.List.iterator
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:162 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Control Flow] Branch Info: Line: 162, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:162->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:162 -> java.util.Iterator.next
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:163->[Local Variables] "{r\u003dcom.google.javascript.jscomp.ProcessClosurePrimitives$UnrecognizedRequire@1682c08c}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:164->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:164 -> java.util.Map.get
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:165->[Control Flow] Branch Info: Line: 165, Condition: if (expectedName != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:165->[Control Flow] Branch Info: Line: 165, Condition: if (expectedName != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:171->[Local Variables] {"error":{"key":"JSC_MISSING_PROVIDE_ERROR","format":{"locale":"zh_CN","pattern":"required \"\" namespace never provided","formats":[null,null,null,null,null,null,null,null,null,null],"offsets":[10,0,0,0,0,0,0,0,0,0],"argumentNumbers":[0,0,0,0,0,0,0,0,0,0],"maxOffset":0},"defaultLevel":"ERROR","level":"ERROR"}}
+com.google.javascript.jscomp.ProcessClosurePrimitives:process:172->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.process:172 -> com.google.javascript.jscomp.JSError.make

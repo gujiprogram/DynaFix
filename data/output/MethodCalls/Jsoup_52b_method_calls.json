@@ -1,0 +1,62 @@
+[
+  {
+    "method": "org.jsoup.helper.DataUtil.validateCharset",
+    "doc": "/**\n     * Parse out a charset from a content type header. If the charset is not supported, returns null (so the default\n     * will kick in.)\n     * @param contentType e.g. \"text/html; charset=EUC-JP\"\n     * @return \"EUC-JP\", or null if not found. Charset is trimmed and uppercased.\n     */",
+    "code": "return validateCharset(charset);\n        }\n        return null;\n    }\n\n    private static String validateCharset(String cs) {\n        if (cs == null || cs.length() == 0) return null;\n        cs = cs.trim().replaceAll(\"[\\\"']\", \"\");\n        try {"
+  },
+  {
+    "method": "org.jsoup.nodes.Attributes.get",
+    "doc": "/**\n     Get an attribute value by key.\n     @param key the attribute key\n     @return the attribute value if set; or empty string if not set.\n     @see #hasKey(String)\n     */",
+    "code": "public String get(String key) {\n        Validate.notEmpty(key);\n\n        if (attributes == null)\n            return \"\";\n\n        Attribute attr = attributes.get(key.toLowerCase());\n        return attr != null ? attr.getValue() : \"\";\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Attributes.size",
+    "doc": "/**\n     Get the number of attributes in this set.\n     @return size\n     */",
+    "code": "public int size() {\n        if (attributes == null)\n            return 0;\n        return attributes.size();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Comment.baseUri",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Comment.getData",
+    "doc": "/**\n     Get the contents of the comment.\n     @return comment content\n     */",
+    "code": "public String getData() {\n        return attributes.get(COMMENT_KEY);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.XmlDeclaration.name",
+    "doc": "/**\n     * Get the name of this declaration.\n     * @return name of this declaration.\n     */",
+    "code": "public String name() {\n        return name;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.valueOf",
+    "doc": "/**\n     * Get a Tag by name. If not previously defined (unknown), returns a new generic tag, that can do anything.\n     * <p>\n     * Pre-defined tags (P, DIV etc) will be ==, but unknown tags are not registered and will only .equals().\n     * </p>\n     *\n     * @param tagName Name of tag, e.g. \"p\". Case insensitive.\n     * @return The tag, either defined or new generic.\n     */",
+    "code": "public static Tag valueOf(String tagName) {\n        Validate.notNull(tagName);\n        Tag tag = tags.get(tagName);\n\n        if (tag == null) {\n            tagName = tagName.trim().toLowerCase();\n            Validate.notEmpty(tagName);\n            tag = tags.get(tagName);\n\n            if (tag == null) {\n                tag = new Tag(tagName);\n                tag.isBlock = false;\n                tag.canContainBlock = true;\n            }\n        }\n        return tag;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$Comment.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.isSelfClosing",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.name",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.XmlTreeBuilder.insertNode",
+    "doc": "/**\n * Use the {@code XmlTreeBuilder} when you want to parse XML without any of the HTML DOM rules being applied to the\n * document.\n * <p>Usage example: {@code Document xmlDoc = Jsoup.parse(html, baseUrl, Parser.xmlParser());}</p>\n *\n * @author Jonathan Hedley\n */",
+    "code": "private void insertNode(Node node) {\n        currentElement().appendChild(node);\n    }"
+  }
+]

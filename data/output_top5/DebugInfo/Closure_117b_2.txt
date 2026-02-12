@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1047 ===
+Exception: junit.framework.ComparisonFailure: expected:<...p never defined on C[2]> but was:<...p never defined on C[3.c2_]>
+
+com.google.javascript.jscomp.TypeValidator:getJSType:783->[Local Variables] "{n\u003dTHIS 16 [source_file: [testcode]] : C3}"
+com.google.javascript.jscomp.TypeValidator:getJSType:784->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getJSType:784 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeValidator:getJSType:784->[Local Variables] "{jsType\u003dC3}"
+com.google.javascript.jscomp.TypeValidator:getJSType:785->[Control Flow] Branch Info: Line: 785, Condition: if (jsType == null), Executed: false

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkNotNull",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getBestLValue",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getBestLValueName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasReferenceName",
+    "doc": "/**\n   * Returns true if the object is named.\n   * @return true if the object is named, false if it is anonymous\n   */",
+    "code": "public boolean hasReferenceName() {\n    return false;\n  }"
+  }
+]

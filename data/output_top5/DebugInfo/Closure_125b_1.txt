@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1002 ===
+Exception: java.lang.IllegalStateException
+
+com.google.javascript.jscomp.TypeCheck:visit:503->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:503 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visit:591->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:591 -> com.google.javascript.jscomp.TypeCheck.visitNew
+com.google.javascript.jscomp.TypeCheck:visit:669->[Local Variables] "{rightTypeRestricted\u003dfunction (new:B): undefined}"
+com.google.javascript.jscomp.TypeCheck:visit:670->[Local Variables] {"result":"UNKNOWN"}
+com.google.javascript.jscomp.TypeCheck:visit:671->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:671 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visit:671->[Control Flow] Branch Info: Line: 671, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:671->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:671 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visit:671->[Control Flow] Branch Info: Line: 671, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:678->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:678 -> com.google.javascript.rhino.jstype.JSType.canTestForShallowEqualityWith
+com.google.javascript.jscomp.TypeCheck:visit:673->[Control Flow] Branch Info: Line: 673, Condition: if (com.google.javascript.rhino.Node.isNE() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:678->[Control Flow] Branch Info: Line: 678, Condition: if (com.google.javascript.rhino.jstype.JSType.canTestForShallowEqualityWith() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:685->[Control Flow] Branch Info: Line: 685, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:689->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:689 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visit:516->[Control Flow] Branch Info: Line: 516, Condition: if (com.google.javascript.rhino.Node.isObjectLit() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:854->[Control Flow] Branch Info: Line: 854, Condition: if (com.google.javascript.rhino.Node.isObjectLit() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:869->[Control Flow] Branch Info: Line: 869, Condition: if (typeable != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:869->[Control Flow] Branch Info: Line: 869, Condition: if (this.inExterns == false), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:871->[Control Flow] Branch Info: Line: 871, Condition: if (typeable != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:872->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:872 -> com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting
+com.google.javascript.jscomp.TypeCheck:visit:871->[Control Flow] Branch Info: Line: 871, Condition: if (typeable != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:875->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:875 -> com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection
+com.google.javascript.jscomp.TypeCheck:visit:500->[Local Variables] "{parent\u003dNEW 1 [source_file: [testcode]], n\u003dNAME B 1 [source_file: [testcode]] : function (...[*]): None}"
+com.google.javascript.jscomp.TypeCheck:visit:503->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:503 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visit:522->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:522 -> com.google.javascript.jscomp.TypeCheck.visitName
+com.google.javascript.jscomp.TypeCheck:visit:516->[Control Flow] Branch Info: Line: 516, Condition: if (com.google.javascript.rhino.Node.isObjectLit() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:854->[Control Flow] Branch Info: Line: 854, Condition: if (com.google.javascript.rhino.Node.isObjectLit() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:869->[Control Flow] Branch Info: Line: 869, Condition: if (typeable != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:869->[Control Flow] Branch Info: Line: 869, Condition: if (this.inExterns == false), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:871->[Control Flow] Branch Info: Line: 871, Condition: if (typeable != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visit:872->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:872 -> com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting
+com.google.javascript.jscomp.TypeCheck:visit:871->[Control Flow] Branch Info: Line: 871, Condition: if (typeable != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visit:875->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visit:875 -> com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection
+com.google.javascript.jscomp.TypeCheck:visit:500->[Local Variables] "{parent\u003dEXPR_RESULT 1 [source_file: [testcode]], n\u003dNEW 1 [source_file: [testcode]]}"

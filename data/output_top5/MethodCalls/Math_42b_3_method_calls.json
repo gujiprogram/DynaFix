@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumArtificialVariables",
+    "doc": "/**\n     * Get the number of artificial variables.\n     * @return number of artificial variables\n     */",
+    "code": "protected final int getNumArtificialVariables() {\n        return numArtificialVariables;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions",
+    "doc": "/**\n     * Get the number of objective functions in this tableau.\n     * @return 2 for Phase 1.  1 for Phase 2.\n     */",
+    "code": "protected final int getNumObjectiveFunctions() {\n        return this.numArtificialVariables > 0 ? 2 : 1;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumSlackVariables",
+    "doc": "/**\n     * Get the number of slack variables.\n     * @return number of slack variables\n     */",
+    "code": "protected final int getNumSlackVariables() {\n        return numSlackVariables;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getOriginalNumDecisionVariables",
+    "doc": "/**\n     * Get the original number of decision variables.\n     * @return original number of decision variables\n     * @see #getNumDecisionVariables()\n     */",
+    "code": "protected final int getOriginalNumDecisionVariables() {\n        return f.getCoefficients().getDimension();\n    }"
+  }
+]

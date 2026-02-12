@@ -1,0 +1,78 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop ===
+Exception: java.lang.RuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:              looooong description
+
+=== stdout ===
+Failing tests: 1
+  - org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Local Variables] {"TransVarStringBuffer":" -h,--help   This is\n             a\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:826->[Control Flow] Loop Info: Line: 826, Description: while at line 826
+org.apache.commons.cli.HelpFormatter:renderWrappedText:832->[Local Variables] {"TransVarPos":14}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Local Variables] {"TransVarWord":"             looooong description"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Local Variables] {"TransVarPosition":12}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Control Flow] Branch Info: Line: 835, Condition: if (TransVarPosition == TransVarPosition), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:838->[Control Flow] Branch Info: Line: 838, Condition: if (TransVarPos == TransVarPos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Local Variables] {"TransVarStringBuffer":" -h,--help   This is\n             a\n\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:826->[Control Flow] Loop Info: Line: 826, Description: while at line 826
+org.apache.commons.cli.HelpFormatter:renderWrappedText:832->[Local Variables] {"TransVarPos":12}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Control Flow] Branch Info: Line: 835, Condition: if (TransVarPosition == TransVarPosition), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:838->[Control Flow] Branch Info: Line: 838, Condition: if (TransVarPos == TransVarPos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.toString
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines ===
+Exception: java.lang.RuntimeException: Text too long for line - throwing exception to avoid infinite loop [CLI-162]:                              used if omited. Example: -e "Runs such and such"
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:811 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Control Flow] Branch Info: Line: 813, Condition: if (TransVarPosition == TransVarPosition), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:818 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:818 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Local Variables] {"TransVarWord":" -d,--driver \u003carg\u003e           JDBC driver class name"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:811 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Control Flow] Branch Info: Line: 813, Condition: if (TransVarPosition == TransVarPosition), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:818 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:818 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Local Variables] {"TransVarWord":" -e,--description \u003carg\u003e      SFMD description. A default description is used if omited. Example: -e \"Runs such and such\""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:811 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:812->[Local Variables] {"TransVarPosition":71}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Control Flow] Branch Info: Line: 813, Condition: if (TransVarPosition == TransVarPosition), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:826->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:826 -> org.apache.commons.cli.HelpFormatter.createPadding
+org.apache.commons.cli.HelpFormatter:renderWrappedText:832->[Local Variables] {"TransVarPos":71}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:833 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:833->[Local Variables] {"TransVarWord":"                             used if omited. Example: -e \"Runs such and such\""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Control Flow] Branch Info: Line: 835, Condition: if (TransVarPosition == TransVarPosition), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:838->[Control Flow] Branch Info: Line: 838, Condition: if (TransVarPos == TransVarPos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.append

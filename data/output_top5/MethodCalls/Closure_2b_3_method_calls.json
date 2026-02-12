@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getType",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isDeclared",
+    "doc": "/**\n   * Returns true if a variable is declared.\n   */",
+    "code": "public boolean isDeclared(String name, boolean recurse) {\n    Scope scope = this;\n    if (scope.vars.containsKey(name))\n      return true;\n\n    if (scope.parent != null && recurse) {\n      return scope.parent.isDeclared(name, recurse);\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

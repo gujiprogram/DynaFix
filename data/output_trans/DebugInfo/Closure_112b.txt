@@ -1,0 +1,89 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1058 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Control Flow] Branch Info: Line: 1190, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1199->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1199 -> com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1203->[Local Variables] "{TransVarTemplateTypes\u003d{CLASS\u003d(number|string)}}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1204->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1204 -> com.google.javascript.jscomp.TypeInference$TemplateTypeReplacer.<init>
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1205->[Local Variables] "{TransVarTemplateTypeReplacer\u003dcom.google.javascript.jscomp.TypeInference$TemplateTypeReplacer@1305c126}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1206->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1206 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1207->[Local Variables] "{TransVarTarget\u003dGETPROP 19 [source_file: [testcode]] : function (this:Class, function (CLASS): CLASS): ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1208->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1208 -> com.google.javascript.rhino.jstype.FunctionType.visit
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1209 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Local Variables] "{TransVarReplacementFnType1\u003dfunction (this:Class, function ((number|string)): (number|string)): ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1210->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1210 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1212 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Local Variables] "{TransVarTarget\u003dGETPROP 19 [source_file: [testcode]] : function (this:Class, function ((number|string)): (number|string)): ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1187->[Local Variables] "{TransVarFunctionType\u003dfunction (new:Class): undefined, TransVarNode\u003dNEW 19 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1188->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1188 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1189 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Local Variables] "{TransVarTemplateKeys\u003d[CLASS]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1190 -> com.google.common.collect.ImmutableList.isEmpty
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Control Flow] Branch Info: Line: 1190, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1199->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1199 -> com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1203->[Local Variables] {"TransVarTemplateTypes":{}}
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1204->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1204 -> com.google.javascript.jscomp.TypeInference$TemplateTypeReplacer.<init>
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1205->[Local Variables] "{TransVarTemplateTypeReplacer\u003dcom.google.javascript.jscomp.TypeInference$TemplateTypeReplacer@27d33393}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1206->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1206 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1207->[Local Variables] "{TransVarTarget\u003dNAME Class 19 [source_file: [testcode]] : function (new:Class): undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1208->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1208 -> com.google.javascript.rhino.jstype.FunctionType.visit
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1209 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Local Variables] "{TransVarReplacementFnType1\u003dfunction (new:Class): undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1210->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1210 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1212 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1214->[Local Variables] "{TransVarNode\u003dNEW 19 [source_file: [testcode]] : undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1187->[Local Variables] "{TransVarFunctionType\u003dfunction (this:Class, function (CLASS): CLASS): ?, TransVarNode\u003dCALL 19 [source_file: [testcode]] : ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1188->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1188 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1189 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Local Variables] "{TransVarTemplateKeys\u003d[T]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1190 -> com.google.common.collect.ImmutableList.isEmpty
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTemplatized11 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Control Flow] Branch Info: Line: 1190, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1199->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1199 -> com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1203->[Local Variables] "{TransVarTemplateTypes\u003d{K\u003dnumber, T\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1204->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1204 -> com.google.javascript.jscomp.TypeInference$TemplateTypeReplacer.<init>
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1205->[Local Variables] "{TransVarTemplateTypeReplacer\u003dcom.google.javascript.jscomp.TypeInference$TemplateTypeReplacer@97d0c06}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1206->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1206 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1207->[Local Variables] "{TransVarTarget\u003dGETPROP 14 [source_file: [testcode]] : function (this:C, (K|T)): T}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1208->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1208 -> com.google.javascript.rhino.jstype.FunctionType.visit
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1209 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Local Variables] "{TransVarReplacementFnType1\u003dfunction (this:C, number): number}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1210->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1210 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1212 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Local Variables] "{TransVarTarget\u003dGETPROP 14 [source_file: [testcode]] : function (this:C, number): number}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1214->[Local Variables] "{TransVarNode\u003dCALL 14 [source_file: [testcode]] : number}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1187->[Local Variables] "{TransVarFunctionType\u003dfunction (new:C): undefined, TransVarNode\u003dNEW 14 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1188->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1188 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1189 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Local Variables] "{TransVarTemplateKeys\u003d[T]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1190 -> com.google.common.collect.ImmutableList.isEmpty
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Control Flow] Branch Info: Line: 1190, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1199->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1199 -> com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1203->[Local Variables] {"TransVarTemplateTypes":{}}
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1204->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1204 -> com.google.javascript.jscomp.TypeInference$TemplateTypeReplacer.<init>
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1205->[Local Variables] "{TransVarTemplateTypeReplacer\u003dcom.google.javascript.jscomp.TypeInference$TemplateTypeReplacer@3cd9aa64}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1206->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1206 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1207->[Local Variables] "{TransVarTarget\u003dNAME C 14 [source_file: [testcode]] : function (new:C): undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1208->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1208 -> com.google.javascript.rhino.jstype.FunctionType.visit
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1209 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1209->[Local Variables] "{TransVarReplacementFnType1\u003dfunction (new:C): undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1210->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1210 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1212->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1212 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1213->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1213 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1214->[Local Variables] "{TransVarNode\u003dNEW 14 [source_file: [testcode]] : undefined}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1187->[Local Variables] "{TransVarFunctionType\u003dfunction (this:C, (K|T)): T, TransVarNode\u003dCALL 14 [source_file: [testcode]] : T}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1188->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1188 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1189 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1189->[Local Variables] "{TransVarTemplateKeys\u003d[K]}"
+com.google.javascript.jscomp.TypeInference:inferTemplatedTypesForCall:1190->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplatedTypesForCall:1190 -> com.google.common.collect.ImmutableList.isEmpty

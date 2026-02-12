@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGet",
+    "doc": "/**\n   * Is this a GETPROP or GETELEM node?\n   */",
+    "code": "static boolean isGet(Node n) {\n    return n.getType() == Token.GETPROP\n        || n.getType() == Token.GETELEM;\n  }"
+  }
+]

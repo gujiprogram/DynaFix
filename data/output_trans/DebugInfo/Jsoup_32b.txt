@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::testClonesClassnames ===
+Exception: junit.framework.AssertionFailedError
+
+org.jsoup.nodes.Element:clone:1140->[Method Call] Call Stack: org.jsoup.nodes.Element.clone:1140 -> org.jsoup.nodes.Node.clone
+org.jsoup.nodes.Element:clone:1140->[Local Variables] {"TransVarCloneElement":{"tag":{"tagName":"div","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false},"classNames":["one","two"],"childNodes":[],"attributes":{"attributes":{"class":{"key":"class","value":"one two"}}},"baseUri":"","siblingIndex":0}}
+org.jsoup.nodes.Element:clone:1141->[Method Call] Call Stack: org.jsoup.nodes.Element.clone:1141 -> org.jsoup.nodes.Element.classNames

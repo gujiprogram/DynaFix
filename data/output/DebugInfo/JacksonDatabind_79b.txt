@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest::testIssue1607 ===
+Exception: junit.framework.ComparisonFailure: expected:<{"alwaysClass":[1],"alwaysProp":2}> but was:<{"alwaysClass":[{"id":1,"value":13}],"alwaysProp":2}>
+
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:433->[Local Variables] {"objectIdInfo":{"_propertyName":{"_simpleName":"#object-ref"},"_resolver":"class com.fasterxml.jackson.annotation.SimpleObjectIdResolver","_alwaysAsId":true}}
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:434->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:434 -> com.fasterxml.jackson.databind.introspect.ObjectIdInfo.getAlwaysAsId
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:434->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:434 -> com.fasterxml.jackson.databind.ser.impl.ObjectIdWriter.withAlwaysAsId
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:431->[Control Flow] Branch Info: Line: 431, Condition: if (oiw != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:485->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:485 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findFilterId
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:426->[Control Flow] Branch Info: Line: 426, Condition: if (accessor != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:486->[Control Flow] Branch Info: Line: 486, Condition: if (ser != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:488->[Control Flow] Branch Info: Line: 488, Condition: if (java.lang.Object.equals() == 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:495->[Control Flow] Branch Info: Line: 495, Condition: if (oiw != null), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:496->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:496 -> com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:497->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:497 -> com.fasterxml.jackson.databind.ser.impl.ObjectIdWriter.withSerializer
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:498->[Control Flow] Branch Info: Line: 498, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:499->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:499 -> com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.withObjectIdWriter
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:495->[Control Flow] Branch Info: Line: 495, Condition: if (oiw != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:498->[Control Flow] Branch Info: Line: 498, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:503->[Control Flow] Branch Info: Line: 503, Condition: if (ignorals != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:503->[Control Flow] Branch Info: Line: 503, Condition: if (ignorals != 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:506->[Control Flow] Branch Info: Line: 506, Condition: if (newFilterId != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:509->[Control Flow] Branch Info: Line: 509, Condition: if (shape == null), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:509->[Control Flow] Branch Info: Line: 509, Condition: if (shape == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:512->[Control Flow] Branch Info: Line: 512, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:397->[Control Flow] Branch Info: Line: 397, Condition: if (accessor != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:400->[Control Flow] Branch Info: Line: 400, Condition: if (oiw != null), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:403->[Control Flow] Branch Info: Line: 403, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:404->[Control Flow] Branch Info: Line: 404, Condition: if (java.lang.Class.isEnum() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:426->[Control Flow] Branch Info: Line: 426, Condition: if (accessor != null), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:427->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:427 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findPropertiesToIgnore
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:428->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:428 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findObjectIdInfo
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:429->[Control Flow] Branch Info: Line: 429, Condition: if (contextual == null), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:431->[Control Flow] Branch Info: Line: 431, Condition: if (oiw != null), Executed: true
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:432->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:432 -> com.fasterxml.jackson.databind.introspect.ObjectIdInfo.<init>
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:28->[Local Variables] {"name":{"_simpleName":"#object-ref"}}
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:51->[Local Variables] {"prop":{"_simpleName":"#object-ref"}}
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:57->[Control Flow] Branch Info: Line: 57, Condition: if (resolver == null), Executed: true
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:57->[Control Flow] Branch Info: Line: 57, Condition: if (resolver == null), Executed: false
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:59->[Local Variables] {"resolver":"class com.fasterxml.jackson.annotation.SimpleObjectIdResolver"}
+com.fasterxml.jackson.databind.ser.std.BeanSerializerBase:createContextual:432->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.createContextual:432 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findObjectReferenceInfo
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:577->[Local Variables] {"ann":{},"objectIdInfo":{"_propertyName":{"_simpleName":"#object-ref"},"_resolver":"class com.fasterxml.jackson.annotation.SimpleObjectIdResolver","_alwaysAsId":false}}
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:578->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.findObjectReferenceInfo:578 -> com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector._findAnnotation
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:578->[Local Variables] {"ref":{"h":{"type":"interface com.fasterxml.jackson.annotation.JsonIdentityReference","memberValues":{"alwaysAsId":true}}}}
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:579->[Control Flow] Branch Info: Line: 579, Condition: if (ref != null), Executed: true
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:580->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.findObjectReferenceInfo:580 -> com.fasterxml.jackson.annotation.JsonIdentityReference.alwaysAsId
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:580->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector.findObjectReferenceInfo:580 -> com.fasterxml.jackson.databind.introspect.ObjectIdInfo.withAlwaysAsId
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:51->[Local Variables] {"resolver":"class com.fasterxml.jackson.annotation.SimpleObjectIdResolver","alwaysAsId":true}
+com.fasterxml.jackson.databind.introspect.ObjectIdInfo:<init>:57->[Control Flow] Branch Info: Line: 57, Condition: if (resolver == null), Executed: false
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:579->[Control Flow] Branch Info: Line: 579, Condition: if (ref != null), Executed: false
+com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector:findObjectReferenceInfo:581->[Local Variables] {"objectIdInfo":{"_propertyName":{"_simpleName":"#object-ref"},"_resolver":"class com.fasterxml.jackson.annotation.SimpleObjectIdResolver","_alwaysAsId":true}}

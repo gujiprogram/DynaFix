@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyNames",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the property type of the property whose name is given. If the\n   * underlying object does not have this property, the Unknown type is\n   * returned to indicate that no information is available on this property.\n   *\n   * @return the property's type or {@link UnknownType}. This method never\n   *         returns {@code null}.\n   */",
+    "code": "public abstract JSType getPropertyType(String propertyName);"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isRecordType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.defineInferredProperty",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty",
+    "doc": "/**\n   * Gets the number of properties of this object.\n   */",
+    "code": "public boolean hasProperty(String propertyName) {\n    return isUnknownType() || getSlot(propertyName) != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared",
+    "doc": "/**\n   * Gets the number of properties of this object.\n   */",
+    "code": "public boolean isPropertyTypeDeclared(String property) {\n    StaticSlot<JSType> slot = getSlot(property);\n    if (slot == null) {\n      return false;\n    }\n    return !slot.isTypeInferred();\n  }"
+  }
+]

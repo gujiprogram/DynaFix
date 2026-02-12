@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math3.distribution.HypergeometricDistribution.calculateNumericalVariance",
+    "doc": "/**\n     * Used by {@link #getNumericalVariance()}.\n     *\n     * @return the variance of this distribution\n     */",
+    "code": "protected double calculateNumericalVariance() {\n        final double N = getPopulationSize();\n        final double m = getNumberOfSuccesses();\n        final double n = getSampleSize();\n        return (n * m * (N - n) * (N - m)) / (N * N * (N - 1));\n    }"
+  }
+]

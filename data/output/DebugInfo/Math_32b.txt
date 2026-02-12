@@ -1,0 +1,55 @@
+
+=== Debug Info for Test: org.apache.commons.math3.geometry.euclidean.threed.PolyhedronsSetTest::testIssue780 ===
+Exception: java.lang.ClassCastException: class org.apache.commons.math3.geometry.partitioning.BoundaryAttribute cannot be cast to class java.lang.Boolean (org.apache.commons.math3.geometry.partitioning.BoundaryAttribute is in unnamed module of loader org.apache.tools.ant.loader.AntClassLoader5 @757529a4; java.lang.Boolean is in module java.base of loader 'bootstrap')
+
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Local Variables] {"x1":-1.000000506639352}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:162->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:162 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getY
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:162->[Local Variables] {"y1":1.0000000000000002}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:163->[Local Variables] {"factor":-1.0132784480365586E-6}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:164->[Local Variables] {"sum":4.000000000000513}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:165->[Local Variables] {"sumX":-4.000006079671715}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Loop Info: Line: 158, Description: while at line 158
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Branch Info: Line: 158, Condition: if (var17 < var17), Executed: false
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:155->[Control Flow] Loop Info: Line: 155, Description: while at line 155
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:155->[Control Flow] Branch Info: Line: 155, Condition: if (var9 < var9), Executed: false
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:170->[Control Flow] Branch Info: Line: 170, Condition: if (sum < 0), Executed: false
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:175->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:175 -> org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.setSize
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:176->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:176 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.<init>
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:176->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:176 -> org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.setBarycenter
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:132->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:132 -> org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.getVertices
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:133->[Local Variables] {"v":[]}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:134->[Control Flow] Branch Info: Line: 134, Condition: if (v == 0), Executed: true
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:135->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:135 -> org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.getTree
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:135->[Local Variables] "{tree\u003dorg.apache.commons.math3.geometry.partitioning.BSPTree@1f387978}"
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:136->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:136 -> org.apache.commons.math3.geometry.partitioning.BSPTree.getAttribute
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:156->[Local Variables] {"x1":-1.000000506639352}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:157->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:157 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getY
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Branch Info: Line: 158, Condition: if (var17 < var17), Executed: true
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Local Variables] {"point":{"x":-1.0000005066393525,"y":-1.0}}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:159->[Local Variables] {"x0":-1.000000506639352}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:160->[Local Variables] {"y0":1.0000000000000002}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:161 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getX
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Local Variables] {"x1":-1.0000005066393525}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:162->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:162 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getY
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:162->[Local Variables] {"y1":-1.0}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:163->[Local Variables] {"factor":2.0000010132787045}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:164->[Local Variables] {"sum":2.0000010132787045}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:165->[Local Variables] {"sumX":-4.000004053115845}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:157->[Local Variables] {"sumY":4.440894348431322E-16}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Loop Info: Line: 158, Description: while at line 158
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Branch Info: Line: 158, Condition: if (var17 < var17), Executed: true
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Local Variables] {"point":{"x":0.9999994933609038,"y":-1.0}}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:159->[Local Variables] {"x0":-1.0000005066393525}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:160->[Local Variables] {"y0":-1.0}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:161 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getX
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Local Variables] {"x1":0.9999994933609038}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:162->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:162 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getY
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:163->[Local Variables] {"factor":2.0000000000002562}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:164->[Local Variables] {"sum":4.000001013278961}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:165->[Local Variables] {"sumX":-4.000006079672742}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:157->[Local Variables] {"sumY":-4.000000000000512}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Loop Info: Line: 158, Description: while at line 158
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Control Flow] Branch Info: Line: 158, Condition: if (var17 < var17), Executed: true
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:158->[Local Variables] {"point":{"x":-1.000000506639352,"y":1.0000000000000002}}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:159->[Local Variables] {"x0":0.9999994933609038}
+org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet:computeGeometricalProperties:161->[Method Call] Call Stack: org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.computeGeometricalProperties:161 -> org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getX

@@ -1,0 +1,77 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.reportCodeChange",
+    "doc": "/**\n   * All passes should call reportCodeChange() when they alter\n   * the JS tree structure. This is verified by CompilerTestCase.\n   * This allows us to optimize to a fixed point.\n   */",
+    "code": "public void reportCodeChange() {\n    for (CodeChangeHandler handler : codeChangeHandlers) {\n      handler.reportChange();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MakeDeclaredNamesUnique$Renamer.addDeclaredName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.MakeDeclaredNamesUnique$Renamer.forChildScope",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.MakeDeclaredNamesUnique$Renamer.stripConstIfReplaced",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.MakeDeclaredNamesUnique.findDeclaredNames",
+    "doc": "/**\n   * Traverses the current scope and collects declared names.  Does not\n   * decent into functions or add CATCH exceptions.\n   */",
+    "code": "private void findDeclaredNames(Node n, Node parent, Renamer renamer) {\n    if (parent == null\n        || parent.getType() != Token.FUNCTION\n        || n == parent.getFirstChild()) {\n      if (NodeUtil.isVarDeclaration(n)) {\n        renamer.addDeclaredName(n.getString());\n      } else if (NodeUtil.isFunctionDeclaration(n)) {\n        Node nameNode = n.getFirstChild();\n        renamer.addDeclaredName(nameNode.getString());\n      }\n\n      for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {\n        findDeclaredNames(c, n, renamer);\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MakeDeclaredNamesUnique.getReplacementName",
+    "doc": "/**\n   * Walks the stack of name maps and finds the replacement name for the\n   * current scope.\n   */",
+    "code": "private String getReplacementName(String oldName) {\n    for (Renamer names : nameStack) {\n      String newName = names.getReplacementName(oldName);\n      if (newName != null) {\n        return newName;\n      }\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getCompiler",
+    "doc": "/**\n   * Gets the compiler.\n   */",
+    "code": "public Compiler getCompiler() {\n    return (Compiler) compiler;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScopeRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeProp",
+    "doc": "/**\n   * Clone the properties from the provided node without copying\n   * the property object.  The recieving node may not have any\n   * existing properties.\n   * @param other The node to clone properties from.\n   * @return this node.\n   */",
+    "code": "public void removeProp(int propType) {\n    PropListItem result = removeProp(propListHead, propType);\n    if (result != propListHead) {\n      propListHead = result;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setString",
+    "doc": "/**\n     * sets the string content.\n     * @param str the new value.  Non null.\n     */",
+    "code": "public void setString(String str) {\n      if (null == str) {\n        throw new IllegalArgumentException(\"StringNode: str is null\");\n      }\n      this.str = str;\n    }"
+  }
+]

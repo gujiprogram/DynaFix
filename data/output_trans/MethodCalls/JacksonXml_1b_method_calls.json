@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser._isEmpty",
+    "doc": "/**\n     * Method called to release internal buffers owned by the base\n     * parser.\n     */",
+    "code": "protected boolean _isEmpty(String str)\n    {\n        int len = (str == null) ? 0 : str.length();\n        if (len > 0) {\n            for (int i = 0; i < len; ++i) {\n                if (str.charAt(i) > ' ') {\n                    return false;\n                }\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext.getNamesToWrap",
+    "doc": "/**\n     * @return Location pointing to the point where the context\n     *   start marker was found\n     */",
+    "code": "public Set<String> getNamesToWrap() {\n        return _namesToWrap;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext.getParent",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final XmlReadContext getParent() { return _parent; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlReadContext.inArray",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.getText",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public String getText() { return _textValue; }\n    public String getLocalName() { return _localName; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.next",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public int next() throws IOException\n    {\n        int n = next0();\n        switch (n) {\n        case XML_START_ELEMENT:\n            System.out.println(\" XML-token: XML_START_ELEMENT '\"+_localName+\"'\");\n            break;\n        case XML_END_ELEMENT:\n            System.out.println(\" XML-token: XML_END_ELEMENT '\"+_localName+\"'\");\n            break;\n        case XML_ATTRIBUTE_NAME:\n            System.out.println(\" XML-token: XML_ATTRIBUTE_NAME '\"+_localName+\"'\");\n            break;\n        case XML_ATTRIBUTE_VALUE:\n            System.out.println(\" XML-token: XML_ATTRIBUTE_VALUE '\"+_textValue+\"'\");\n            break;\n        case XML_TEXT:\n            System.out.println(\" XML-token: XML_TEXT '\"+_textValue+\"'\");\n            break;\n        case XML_END:\n            System.out.println(\" XML-token: XML_END\");\n            break;\n        default:\n            throw new IllegalStateException();\n        }\n        return n;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.skipEndElement",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public void skipEndElement() throws IOException\n    {\n        int type = next();\n        if (type != XML_END_ELEMENT) {\n            throw new IOException(\"Expected END_ELEMENT, got event of type \"+type);\n        }\n    }"
+  }
+]

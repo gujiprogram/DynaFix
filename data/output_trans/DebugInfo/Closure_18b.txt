@@ -1,0 +1,62 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testDependencySorting ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1338 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Local Variables] "{TransVarAstNode\u003dSCRIPT 1 [synthetic: 1] [source_file: input1] [input_id: InputId: input1]}"
+com.google.javascript.jscomp.Compiler:parseInputs:1339->[Control Flow] Branch Info: Line: 1339, Condition: if (TransVarAstNode == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1343->[Control Flow] Branch Info: Line: 1343, Condition: if (TransVarDevModeValue != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1345->[Control Flow] Branch Info: Line: 1345, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Loop Info: Line: 1337, Description: while at line 1337
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Branch Info: Line: 1337, Condition: if (TransVarMissingProvideException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Local Variables] "{TransVarNewInput\u003dinput2}"
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1338 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Local Variables] {"TransVarAstNode":{"type":132,"propListHead":{"objectValue":{"id":"input2"},"next":{"objectValue":{"fileName":"input2","isExternFile":false,"code":""},"next":{"intValue":1,"propType":38},"propType":51},"propType":53},"sourcePosition":4096}}
+com.google.javascript.jscomp.Compiler:parseInputs:1339->[Control Flow] Branch Info: Line: 1339, Condition: if (TransVarAstNode == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1343->[Control Flow] Branch Info: Line: 1343, Condition: if (TransVarDevModeValue != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1345->[Control Flow] Branch Info: Line: 1345, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Loop Info: Line: 1337, Description: while at line 1337
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Branch Info: Line: 1337, Condition: if (TransVarMissingProvideException != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1363->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1363 -> com.google.javascript.jscomp.Compiler.hasErrors
+com.google.javascript.jscomp.Compiler:parseInputs:1363->[Control Flow] Branch Info: Line: 1363, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1368->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1368 -> com.google.javascript.jscomp.Compiler.stopTracer
+com.google.javascript.jscomp.Compiler:parseInputs:1280->[Control Flow] Loop Info: Line: 1280, Description: while at line 1280
+com.google.javascript.jscomp.Compiler:parseInputs:1280->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1280 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1280->[Control Flow] Branch Info: Line: 1280, Condition: if (TransVarStaleInput != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1289->[Control Flow] Branch Info: Line: 1289, Condition: if (this.transformAMDToCJSModules == false), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1289->[Control Flow] Branch Info: Line: 1289, Condition: if (this.processCommonJSModules != false), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1293->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1293 -> com.google.javascript.jscomp.Compiler.hoistExterns
+com.google.javascript.jscomp.Compiler:parseInputs:1297->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1297 -> com.google.javascript.jscomp.DependencyOptions.needsManagement
+com.google.javascript.jscomp.Compiler:parseInputs:1297->[Control Flow] Branch Info: Line: 1297, Condition: if (com.google.javascript.jscomp.DependencyOptions.needsManagement() != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1297->[Control Flow] Branch Info: Line: 1297, Condition: if (com.google.javascript.jscomp.DependencyOptions.needsManagement() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1297->[Control Flow] Branch Info: Line: 1297, Condition: if (this.closurePass != false), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1324->[Control Flow] Branch Info: Line: 1324, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1330->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1330 -> com.google.javascript.jscomp.Compiler.hoistNoCompileFiles
+com.google.javascript.jscomp.Compiler:parseInputs:1332->[Control Flow] Branch Info: Line: 1332, Condition: if (TransVarStaleInput != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.List.iterator
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Branch Info: Line: 1337, Condition: if (TransVarMissingProvideException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Local Variables] "{TransVarNewInput\u003dinput0}"
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1338 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1338->[Local Variables] "{TransVarAstNode\u003dSCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]}"
+com.google.javascript.jscomp.Compiler:parseInputs:1339->[Control Flow] Branch Info: Line: 1339, Condition: if (TransVarAstNode == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1343->[Control Flow] Branch Info: Line: 1343, Condition: if (TransVarDevModeValue != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1345->[Control Flow] Branch Info: Line: 1345, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1350->[Control Flow] Branch Info: Line: 1350, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Loop Info: Line: 1337, Description: while at line 1337
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Control Flow] Branch Info: Line: 1337, Condition: if (TransVarMissingProvideException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1337 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1337->[Local Variables] "{TransVarNewInput\u003dinput1}"

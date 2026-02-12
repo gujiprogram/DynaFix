@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.match",
+    "doc": "/**\n   * Tests whether the next symbol of the token stream matches the specific\n   * token.\n   */",
+    "code": "private boolean match(JsDocToken token) {\n    unreadToken = next();\n    return unreadToken == token;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.next",
+    "doc": "/**\n   * Gets the next token of the token stream or the buffered token if a matching\n   * was previously made.\n   */",
+    "code": "private JsDocToken next() {\n    if (unreadToken == NO_UNREAD_TOKEN) {\n      return stream.getJsDocToken();\n    } else {\n      return current();\n    }\n  }"
+  }
+]

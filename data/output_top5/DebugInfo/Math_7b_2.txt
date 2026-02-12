@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest::testEventsScheduling ===
+Exception: junit.framework.AssertionFailedError
+
+=== stdout ===
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+Cannot open test result file (/home/common/huangzhili/defects4j_buggy/Math_7_buggy/failing_tests): No such file or directory at /home/common/huangzhili/defects4j/framework/core/Utils.pm line 720.
+Compilation failed in require at /home/common/huangzhili/defects4j/framework/bin/defects4j line 195.
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:126->[Local Variables] {"handler":{"index":0,"tMin":0.0},"convergence":1.0E-7,"maxCheckInterval":0.01,"maxIterationCount":100}
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:127->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:127 -> org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:137->[Local Variables] {"solver":{"maximalOrder":5,"allowed":"ANY_SIDE","functionValueAccuracy":1.0E-15,"absoluteAccuracy":1.0E-7,"relativeAccuracy":1.0E-14,"evaluations":{"maximalCount":0,"count":0},"searchMin":0.0,"searchMax":0.0,"searchStart":0.0}}
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:138->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:138 -> org.apache.commons.math3.ode.events.EventState.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:138->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:138 -> java.util.Collection.add
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:126->[Local Variables] {"handler":{"index":1,"tMin":0.0}}
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:127->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:127 -> org.apache.commons.math3.analysis.solvers.BracketingNthOrderBrentSolver.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:138->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:138 -> org.apache.commons.math3.ode.events.EventState.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:addEventHandler:138->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.addEventHandler:138 -> java.util.Collection.add

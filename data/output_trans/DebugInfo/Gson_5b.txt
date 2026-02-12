@@ -1,0 +1,40 @@
+
+=== Debug Info for Test: com.google.gson.DefaultDateTypeAdapterTest::testDateDeserializationISO8601 ===
+=== stdout ===
+Failing tests: 0
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+com.google.gson.internal.bind.util.ISO8601Utils:parse:206->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:206 -> com.google.gson.internal.bind.util.ISO8601Utils.checkOffset
+com.google.gson.internal.bind.util.ISO8601Utils:parse:185->[Control Flow] Branch Info: Line: 185, Condition: if (hasT != 0), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:198->[Control Flow] Branch Info: Line: 198, Condition: if (input > input), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:200->[Control Flow] Branch Info: Line: 200, Condition: if (timezone != timezone), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:200->[Control Flow] Branch Info: Line: 200, Condition: if (timezone != timezone), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:200->[Control Flow] Branch Info: Line: 200, Condition: if (timezone != timezone), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:206->[Control Flow] Branch Info: Line: 206, Condition: if (input != 0), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:229->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:229 -> java.lang.String.length
+com.google.gson.internal.bind.util.ISO8601Utils:parse:229->[Control Flow] Branch Info: Line: 229, Condition: if (input <= input), Executed: false
+com.google.gson.internal.bind.util.ISO8601Utils:parse:234->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:234 -> java.lang.String.charAt
+com.google.gson.internal.bind.util.ISO8601Utils:parse:235->[Local Variables] {"timezoneIndicator":"Z"}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:236->[Control Flow] Branch Info: Line: 236, Condition: if (timezoneIndicator == timezoneIndicator), Executed: true
+com.google.gson.internal.bind.util.ISO8601Utils:parse:237->[Local Variables] {"timezone":{"rawOffset":0,"rawOffsetDiff":0,"checksum":0,"dstSavings":0,"willGMTOffsetChange":false,"ID":"UTC"}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:281->[Local Variables] {"offset":20}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:282->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:282 -> java.util.GregorianCalendar.<init>
+com.google.gson.internal.bind.util.ISO8601Utils:parse:282->[Local Variables] {"calendar":{"year":2026,"month":0,"dayOfMonth":15,"hourOfDay":9,"minute":5,"second":57}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:283->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:283 -> java.util.Calendar.setLenient
+com.google.gson.internal.bind.util.ISO8601Utils:parse:284->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:284 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:284->[Local Variables] {"calendar":{"year":1970,"month":0,"dayOfMonth":15,"hourOfDay":9,"minute":5,"second":57}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:285->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:285 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:286->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:286 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:286->[Local Variables] {"calendar":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":9,"minute":5,"second":57}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:287->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:287 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:287->[Local Variables] {"calendar":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":5,"second":57}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:288->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:288 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:288->[Local Variables] {"calendar":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":57}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:289->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:289 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:289->[Local Variables] {"calendar":{"year":1970,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:290->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:290 -> java.util.Calendar.set
+com.google.gson.internal.bind.util.ISO8601Utils:parse:292->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:292 -> java.text.ParsePosition.setIndex
+com.google.gson.internal.bind.util.ISO8601Utils:parse:292->[Local Variables] {"pos":{"index":20,"errorIndex":-1}}
+com.google.gson.internal.bind.util.ISO8601Utils:parse:293->[Method Call] Call Stack: com.google.gson.internal.bind.util.ISO8601Utils.parse:293 -> java.util.Calendar.getTime

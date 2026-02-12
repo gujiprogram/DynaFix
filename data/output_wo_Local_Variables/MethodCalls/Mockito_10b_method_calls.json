@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.mockito.internal.InternalMockHandler.getInvocationContainer",
+    "doc": "[No documentation]",
+    "code": "InvocationContainer getInvocationContainer();"
+  },
+  {
+    "method": "org.mockito.internal.MockitoCore.mock",
+    "doc": "[No documentation]",
+    "code": "public <T> T mock(Class<T> typeToMock, MockSettings settings) {\n        if (!MockSettingsImpl.class.isInstance(settings)) {\n            throw new IllegalArgumentException(\n                    \"Unexpected implementation of '\" + settings.getClass().getCanonicalName() + \"'\\n\"\n                    + \"At the moment, you cannot provide your own implementations that class.\");\n        }\n        MockSettingsImpl impl = MockSettingsImpl.class.cast(settings);\n        MockCreationSettings<T> creationSettings = impl.confirm(typeToMock);\n        T mock = mockUtil.createMock(creationSettings);\n        mockingProgress.mockingStarted(mock, typeToMock);\n        return mock;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.InvocationContainerImpl.getStubbedInvocations",
+    "doc": "[No documentation]",
+    "code": "public List<StubbedInvocationMatcher> getStubbedInvocations() {\n        return stubbed;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.mockitoCore",
+    "doc": "/**\n     * Creates a mock using the Generics Metadata.\n     *\n     * <li>Finally as we want to mock the actual type, but we want to pass along the contextual generics meta-data\n     * that was resolved for the current return type, for this to happen we associate to the mock an new instance of\n     * {@link ReturnsDeepStubs} answer in which we will store the returned type generic metadata.\n     *\n     * @param returnTypeGenericMetadata The metadata to use to create the new mock.\n     * @param parentMock The parent of the current deep stub mock.\n     * @return The mock\n     */",
+    "code": "return mockitoCore().mock(\n                returnTypeGenericMetadata.rawType(),"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.newDeepStubMock",
+    "doc": "/**\n     * Creates a mock using the Generics Metadata.\n     *\n     * <li>Finally as we want to mock the actual type, but we want to pass along the contextual generics meta-data\n     * that was resolved for the current return type, for this to happen we associate to the mock an new instance of\n     * {@link ReturnsDeepStubs} answer in which we will store the returned type generic metadata.\n     *\n     * @param returnTypeGenericMetadata The metadata to use to create the new mock.\n     * @param parentMock The parent of the current deep stub mock.\n     * @return The mock\n     */",
+    "code": "private Object newDeepStubMock(GenericMetadataSupport returnTypeGenericMetadata) {\n        return mockitoCore().mock(\n                returnTypeGenericMetadata.rawType(),\n                withSettingsUsing(returnTypeGenericMetadata)\n        );\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.withSettingsUsing",
+    "doc": "/**\n     * Creates a mock using the Generics Metadata.\n     *\n     * <li>Finally as we want to mock the actual type, but we want to pass along the contextual generics meta-data\n     * that was resolved for the current return type, for this to happen we associate to the mock an new instance of\n     * {@link ReturnsDeepStubs} answer in which we will store the returned type generic metadata.\n     *\n     * @param returnTypeGenericMetadata The metadata to use to create the new mock.\n     * @param parentMock The parent of the current deep stub mock.\n     * @return The mock\n     */",
+    "code": "private MockSettings withSettingsUsing(GenericMetadataSupport returnTypeGenericMetadata) {\n        MockSettings mockSettings = returnTypeGenericMetadata.hasRawExtraInterfaces() ?\n                withSettings().extraInterfaces(returnTypeGenericMetadata.rawExtraInterfaces())\n                : withSettings();\n\n        return mockSettings.serializable()\n                .defaultAnswer(returnsDeepStubsAnswerUsing(returnTypeGenericMetadata));\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.MockUtil.getMockHandler",
+    "doc": "[No documentation]",
+    "code": "public <T> InternalMockHandler<T> getMockHandler(T mock) {\n        if (mock == null) {\n            throw new NotAMockException(\"Argument should be a mock, but is null!\");\n        }\n\n        if (isMockitoMock(mock)) {\n            MockHandler handler = mockMaker.getHandler(mock);\n            return (InternalMockHandler) handler;\n        } else {\n            throw new NotAMockException(\"Argument should be a mock, but is: \" + mock.getClass());\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.reflection.GenericMetadataSupport.rawType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.mockito.invocation.InvocationOnMock.getMock",
+    "doc": "/**\n     * returns the mock object\n     *\n     * @return mock object\n     */",
+    "code": "Object getMock();"
+  }
+]

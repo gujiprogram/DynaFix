@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchChomp",
+    "doc": "/**\n     * Tests if the queue matches the sequence (as with match), and if they do, removes the matched string from the\n     * queue.\n     * @param seq String to search for, and if found, remove from queue.\n     * @return true if found and removed, false if not found.\n     */",
+    "code": "public boolean matchChomp(String seq) {\n        if (matches(seq)) {\n            pos += seq.length();\n            return true;\n        } else {\n            return false;\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matches",
+    "doc": "/**\n     * Tests if the next characters on the queue match the sequence. Case insensitive.\n     * @param seq String to check queue for.\n     * @return true if the next characters match.\n     */",
+    "code": "public boolean matches(String seq) {\n        return queue.regionMatches(true, pos, seq, 0, seq.length());\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.remainder",
+    "doc": "/**\n     * Pulls a string off the queue, up to but exclusive of the match sequence, or to the queue running out.\n     * @param seq String to end on (and not include in return, but leave on queue). <b>Case sensitive.</b>\n     * @return The matched data consumed from queue.\n     */",
+    "code": "return remainder();\n        }\n    }\n\n    public String consumeToIgnoreCase(String seq) {\n        int start = pos;\n        String first = seq.substring(0, 1);\n        boolean canScan = first.toLowerCase().equals(first.toUpperCase()); // if first is not cased, use index of\n        while (!isEmpty()) {"
+  }
+]

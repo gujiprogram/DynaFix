@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass ===
+Exception: junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:387->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@111d5c97, n\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:388->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleTypedefDefinition:388 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:388->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleTypedefDefinition:388 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:389->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleTypedefDefinition:389 -> com.google.javascript.jscomp.NodeTraversal.inGlobalScope
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:389->[Control Flow] Branch Info: Line: 389, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:389->[Control Flow] Branch Info: Line: 389, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:389->[Control Flow] Branch Info: Line: 389, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:389->[Control Flow] Branch Info: Line: 389, Condition: if (com.google.javascript.rhino.JSDocInfo.hasTypedefType() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:391->[Control Flow] Branch Info: Line: 391, Condition: if (name != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleTypedefDefinition:393->[Control Flow] Branch Info: Line: 393, Condition: if (pn != null), Executed: false

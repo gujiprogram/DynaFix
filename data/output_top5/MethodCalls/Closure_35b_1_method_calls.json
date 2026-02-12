@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined",
+    "doc": "/**\n   * If this is a union type, returns a union type that does not include\n   * the null or undefined type.\n   */",
+    "code": "public JSType restrictByNotNullOrUndefined() {\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isRecordType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

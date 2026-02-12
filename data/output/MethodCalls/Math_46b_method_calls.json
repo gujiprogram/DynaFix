@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.Complex.createComplex",
+    "doc": "/**\n     * Returns a {@code Complex} whose value is\n     * {@code (this + addend)}.\n     * Uses the definitional formula\n     * <pre>\n     *  <code>\n     *   (a + bi) + (c + di) = (a+c) + (b+d)i\n     *  </code>\n     * </pre>\n     * <br/>\n     * If either {@code this} or {@code addend} has a {@code NaN} value in\n     * either part, {@link #NaN} is returned; otherwise {@code Infinite}\n     * and {@code NaN} values are returned in the parts of the result\n     * according to the rules for {@link java.lang.Double} arithmetic.\n     *\n     * @param  addend Value to be added to this {@code Complex}.\n     * @return {@code this + addend}.\n     * @throws NullArgumentException if {@code addend} is {@code null}.\n     */",
+    "code": "return createComplex(real + addend.getReal(),\n                             imaginary + addend.getImaginary());"
+  },
+  {
+    "method": "org.apache.commons.math.complex.Complex.getImaginary",
+    "doc": "/**\n     * Access the imaginary part.\n     *\n     * @return the imaginary part.\n     */",
+    "code": "public double getImaginary() {\n        return imaginary;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.Complex.getReal",
+    "doc": "/**\n     * Access the real part.\n     *\n     * @return the real part.\n     */",
+    "code": "public double getReal() {\n        return real;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.Complex.isInfinite",
+    "doc": "/**\n     * Checks whether either the real or imaginary part of this complex number\n     * takes an infinite value (either {@code Double.POSITIVE_INFINITY} or\n     * {@code Double.NEGATIVE_INFINITY}) and neither part\n     * is {@code NaN}.\n     *\n     * @return true if one or both parts of this complex number are infinite\n     * and neither part is {@code NaN}.\n     */",
+    "code": "public boolean isInfinite() {\n        return isInfinite;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.abs",
+    "doc": "/**\n     * Absolute value.\n     * @param x number from which absolute value is requested\n     * @return abs(x)\n     */",
+    "code": "public static int abs(final int x) {\n        return (x < 0) ? -x : x;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.MathUtils.checkNotNull",
+    "doc": "/**\n     * Checks that an object is not null.\n     *\n     * @param o Object to be checked.\n     * @param pattern Message pattern.\n     * @param args Arguments to replace the placeholders in {@code pattern}.\n     * @throws NullArgumentException if {@code o} is {@code null}.\n     */",
+    "code": "public static void checkNotNull(Object o,\n                                    Localizable pattern,"
+  }
+]

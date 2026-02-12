@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.joda.time.chrono.TestGJChronology::testLeapYearRulesConstruction ===
+Exception: org.joda.time.IllegalFieldValueException: Value 29 for dayOfMonth must be in the range [1,28]
+
+org.joda.time.chrono.GJChronology:getDateTimeMillis:358->[Local Variables] {"TransVarMillis":0,"TransVarMinute":0,"TransVarSecond":0,"TransVarYearOfBirth":1500,"TransVarMonth":2,"TransVarHour":0,"TransVarDay":29}
+org.joda.time.chrono.GJChronology:getDateTimeMillis:359->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getDateTimeMillis:359 -> org.joda.time.chrono.GJChronology.getBase
+org.joda.time.chrono.GJChronology:getDateTimeMillis:359->[Control Flow] Branch Info: Line: 359, Condition: if (org.joda.time.chrono.GJChronology.getBase() != null), Executed: false
+org.joda.time.chrono.GJChronology:getDateTimeMillis:371->[Method Call] Call Stack: org.joda.time.chrono.GJChronology.getDateTimeMillis:371 -> org.joda.time.chrono.GregorianChronology.getDateTimeMillis

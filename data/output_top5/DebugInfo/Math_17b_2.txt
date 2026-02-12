@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: org.apache.commons.math3.dfp.DfpTest::testMultiply ===
+Exception: junit.framework.AssertionFailedError: assersion failed Multiply #37 x = NaN flags = 1
+
+org.apache.commons.math3.dfp.Dfp:multiply:1553->[Local Variables] {"r":3217838}
+org.apache.commons.math3.dfp.Dfp:multiply:1554->[Local Variables] {"rh":321}
+org.apache.commons.math3.dfp.Dfp:multiply:1550->[Control Flow] Loop Info: Line: 1550, Description: while at line 1550
+org.apache.commons.math3.dfp.Dfp:multiply:1550->[Control Flow] Branch Info: Line: 1550, Condition: if (this.mant < this.mant), Executed: true
+org.apache.commons.math3.dfp.Dfp:multiply:1550->[Local Variables] {"j":3}
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1616->[Control Flow] Branch Info: Line: 1616, Condition: if (org.apache.commons.math3.dfp.Dfp.isNaN() != 0), Executed: true
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1611->[Local Variables] {"x":10000}
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1612->[Method Call] Call Stack: org.apache.commons.math3.dfp.Dfp.multiplyFast:1612 -> org.apache.commons.math3.dfp.Dfp.newInstance
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1614->[Local Variables] "{result\u003d1.}"
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1615->[Control Flow] Branch Info: Line: 1615, Condition: if (this.nans != false), Executed: false
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1625->[Control Flow] Branch Info: Line: 1625, Condition: if (this.nans == this.nans), Executed: false
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1625->[Control Flow] Branch Info: Line: 1625, Condition: if (x == 0), Executed: false
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1635->[Control Flow] Branch Info: Line: 1635, Condition: if (x >= 0), Executed: true
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1635->[Control Flow] Branch Info: Line: 1635, Condition: if (x >= x), Executed: true
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1635->[Control Flow] Branch Info: Line: 1635, Condition: if (x >= 0), Executed: false
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1636->[Method Call] Call Stack: org.apache.commons.math3.dfp.Dfp.multiplyFast:1636 -> org.apache.commons.math3.dfp.DfpField.setIEEEFlagsBits
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1637->[Method Call] Call Stack: org.apache.commons.math3.dfp.Dfp.multiplyFast:1637 -> org.apache.commons.math3.dfp.Dfp.getZero
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1637->[Method Call] Call Stack: org.apache.commons.math3.dfp.Dfp.multiplyFast:1637 -> org.apache.commons.math3.dfp.Dfp.newInstance
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1637->[Local Variables] "{result\u003d0.}"
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1638->[Local Variables] "{result\u003dNaN}"
+org.apache.commons.math3.dfp.Dfp:multiplyFast:1639->[Method Call] Call Stack: org.apache.commons.math3.dfp.Dfp.multiplyFast:1639 -> org.apache.commons.math3.dfp.Dfp.dotrap

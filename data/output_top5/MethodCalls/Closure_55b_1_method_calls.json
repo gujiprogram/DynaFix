@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.common.collect.Multimap.get",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getNodeForCodeInsertion",
+    "doc": "/**\n   * Gets a suitable SCRIPT node to serve as a parent for code insertion. If\n   * {@code module} contains any inputs, the returned node will be the SCRIPT\n   * node corresponding to its first input. If {@code module} is empty, on the\n   * other hand, then the returned node will be the first SCRIPT node in a\n   * non-empty module that {@code module} depends on (the deepest one possible).\n   *\n   * @param module A module. If null, will return the first SCRIPT node of all\n   *     modules.\n   * @return A SCRIPT node (never null).\n   */",
+    "code": "abstract Node getNodeForCodeInsertion(JSModule module);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionRewriter$Reduction.apply",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionRewriter$Reduction.estimateSavings",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionRewriter.parseHelperCode",
+    "doc": "/**\n   * Parse helper code needed by a reducer.\n   *\n   * @return Helper code root.  If parse fails, return null.\n   */",
+    "code": "public Node parseHelperCode(Reducer reducer) {\n    Node root = compiler.parseSyntheticCode(\n        reducer.getClass().toString() + \":helper\", reducer.getHelperSource());\n    return (root != null) ? root.removeFirstChild() : null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.InlineCostEstimator.getCost",
+    "doc": "/**\n   * Determines the size of the js code.\n   */",
+    "code": "static int getCost(Node root) {\n    return getCost(root, Integer.MAX_VALUE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildrenToFront",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildrenToFront(Node children) {\n    for (Node child = children; child != null; child = child.next) {\n      Preconditions.checkArgument(child.parent == null);\n      child.parent = this;\n    }\n    Node lastSib = children.getLastSibling();\n    lastSib.next = first;\n    first = children;\n    if (last == null) {\n      last = lastSib;\n    }\n  }"
+  }
+]

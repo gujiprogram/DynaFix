@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getValueAsString",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.weirdStringException",
+    "doc": "/**\n     * Method that deserializers should call if they encounter a String value\n     * that can not be converted to expected key of a {@link java.util.Map}\n     * valued property.\n     * Default implementation will try to call {@link DeserializationProblemHandler#handleWeirdNumberValue}\n     * on configured handlers, if any, to allow for recovery; if recovery does not\n     * succeed, will throw {@link InvalidFormatException} with given message.\n     *\n     * @param keyClass Expected type for key\n     * @param keyValue String value from which to deserialize key\n     * @param msg Error message template caller wants to use if exception is to be thrown\n     * @param msgArgs Optional arguments to use for message, if any\n     *\n     * @return Key value to use\n     *\n     * @throws IOException To indicate unrecoverable problem, usually based on <code>msg</code>\n     *\n     * @since 2.8\n     */",
+    "code": "throw weirdStringException(keyValue, keyClass, String.format(\n                        \"DeserializationProblemHandler.handleWeirdStringValue() for type %s returned value of type %s\","
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.FromStringDeserializer._deserialize",
+    "doc": "/**********************************************************\n     */",
+    "code": "return _deserialize(TransVarInputText, TransVarContext);\n            }\n            } catch (IllegalArgumentException TransVarIaeLocal) {\n                TransVarException = TransVarIaeLocal;\n            } catch (MalformedURLException TransVarMalformedUrl) {\n                TransVarException = TransVarMalformedUrl;\n                }\n            String TransVarTextualRep = \"not a valid textual representation\";\n            if (!(!(TransVarException != null))) {\n                String TransVarMessage = TransVarException.getMessage();\n                if (!(!(TransVarMessage != null))) {"
+  }
+]

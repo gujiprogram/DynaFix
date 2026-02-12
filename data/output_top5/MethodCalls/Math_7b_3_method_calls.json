@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math3.ode.AbstractIntegrator.setStateInitialized",
+    "doc": "/** Set the stateInitialized flag.\n     * <p>This method must be called by integrators with the value\n     * {@code false} before they start integration, so a proper lazy\n     * initialization is done automatically on the first step.</p>\n     * @param stateInitialized new value for the flag\n     * @since 2.2\n     */",
+    "code": "protected void setStateInitialized(final boolean stateInitialized) {\n        this.statesInitialized = stateInitialized;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.ode.events.EventHandler.init",
+    "doc": "/** Initialize event handler at the start of an ODE integration.\n     * <p>\n     * This method is called once at the start of the integration. It\n     * may be used by the event handler to initialize some internal data\n     * if needed.\n     * </p>\n     * @param t0 start value of the independent <i>time</i> variable\n     * @param y0 array containing the start value of the state vector\n     * @param t target time for the integration\n     */",
+    "code": "void init(double t0, double[] y0, double t);"
+  },
+  {
+    "method": "org.apache.commons.math3.ode.events.EventState.getEventHandler",
+    "doc": "/** Get the underlying event handler.\n     * @return underlying event handler\n     */",
+    "code": "public EventHandler getEventHandler() {\n        return handler;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.ode.sampling.StepHandler.init",
+    "doc": "/** Initialize step handler at the start of an ODE integration.\n     * <p>\n     * This method is called once at the start of the integration. It\n     * may be used by the step handler to initialize some internal data\n     * if needed.\n     * </p>\n     * @param t0 start value of the independent <i>time</i> variable\n     * @param y0 array containing the start value of the state vector\n     * @param t target time for the integration\n     */",
+    "code": "void init(double t0, double[] y0, double t);"
+  },
+  {
+    "method": "org.apache.commons.math3.util.Incrementor.resetCount",
+    "doc": "/**\n     * Resets the counter to 0.\n     */",
+    "code": "public void resetCount() {\n        count = 0;\n    }"
+  }
+]

@@ -1,0 +1,85 @@
+
+=== Debug Info for Test: org.jsoup.select.ElementsTest::hasClassCaseInsensitive ===
+Exception: junit.framework.AssertionFailedError
+
+org.jsoup.nodes.Element:hasClass:1091->[Local Variables] {"className":"One"}
+org.jsoup.nodes.Element:hasClass:1092->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1092 -> org.jsoup.nodes.Attributes.get
+org.jsoup.nodes.Element:hasClass:1092->[Local Variables] {"classAttr":""}
+org.jsoup.nodes.Element:hasClass:1093->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1093 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1093->[Local Variables] {"len":0}
+org.jsoup.nodes.Element:hasClass:1094->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1094 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1095->[Local Variables] {"wantLen":3}
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (len != 0), Executed: false
+
+=== Debug Info for Test: org.jsoup.select.SelectorTest::testByClassCaseInsensitive ===
+Exception: junit.framework.AssertionFailedError: expected:<3> but was:<1>
+
+org.jsoup.nodes.Element:hasClass:1110->[Control Flow] Branch Info: Line: 1110, Condition: if (inClass != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (inClass == 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Loop Info: Line: 1108, Description: while at line 1108
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Branch Info: Line: 1108, Condition: if (len < len), Executed: true
+org.jsoup.nodes.Element:hasClass:1108->[Local Variables] {"i":2}
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.String.charAt
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.Character.isWhitespace
+org.jsoup.nodes.Element:hasClass:1109->[Control Flow] Branch Info: Line: 1109, Condition: if (java.lang.String.charAt() != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1110->[Control Flow] Branch Info: Line: 1110, Condition: if (inClass != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (inClass == 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Loop Info: Line: 1108, Description: while at line 1108
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Branch Info: Line: 1108, Condition: if (len < len), Executed: true
+org.jsoup.nodes.Element:hasClass:1108->[Local Variables] {"i":3}
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.String.charAt
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.Character.isWhitespace
+org.jsoup.nodes.Element:hasClass:1109->[Control Flow] Branch Info: Line: 1109, Condition: if (java.lang.String.charAt() != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1110->[Control Flow] Branch Info: Line: 1110, Condition: if (inClass != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (inClass == 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Loop Info: Line: 1108, Description: while at line 1108
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Branch Info: Line: 1108, Condition: if (len < len), Executed: false
+org.jsoup.nodes.Element:hasClass:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (inClass != 0), Executed: true
+org.jsoup.nodes.Element:hasClass:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (inClass != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (wantLen == wantLen), Executed: false
+org.jsoup.nodes.Element:hasClass:1091->[Local Variables] {"className":"Foo"}
+org.jsoup.nodes.Element:hasClass:1092->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1092 -> org.jsoup.nodes.Attributes.get
+org.jsoup.nodes.Element:hasClass:1092->[Local Variables] {"classAttr":""}
+org.jsoup.nodes.Element:hasClass:1093->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1093 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1093->[Local Variables] {"len":0}
+org.jsoup.nodes.Element:hasClass:1094->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1094 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1095->[Local Variables] {"wantLen":3}
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (len != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1092->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1092 -> org.jsoup.nodes.Attributes.get
+org.jsoup.nodes.Element:hasClass:1093->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1093 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1094->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1094 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (len != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1092->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1092 -> org.jsoup.nodes.Attributes.get
+org.jsoup.nodes.Element:hasClass:1092->[Local Variables] {"classAttr":"FOO"}
+org.jsoup.nodes.Element:hasClass:1093->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1093 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1093->[Local Variables] {"len":3}
+org.jsoup.nodes.Element:hasClass:1094->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1094 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (len != 0), Executed: true
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (wantLen < wantLen), Executed: false
+org.jsoup.nodes.Element:hasClass:1101->[Control Flow] Branch Info: Line: 1101, Condition: if (wantLen == wantLen), Executed: true
+org.jsoup.nodes.Element:hasClass:1102->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1102 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Element:hasClass:1092->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1092 -> org.jsoup.nodes.Attributes.get
+org.jsoup.nodes.Element:hasClass:1092->[Local Variables] {"classAttr":"farp"}
+org.jsoup.nodes.Element:hasClass:1093->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1093 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1093->[Local Variables] {"len":4}
+org.jsoup.nodes.Element:hasClass:1094->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1094 -> java.lang.String.length
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (len != 0), Executed: true
+org.jsoup.nodes.Element:hasClass:1096->[Control Flow] Branch Info: Line: 1096, Condition: if (wantLen < wantLen), Executed: false
+org.jsoup.nodes.Element:hasClass:1101->[Control Flow] Branch Info: Line: 1101, Condition: if (wantLen == wantLen), Executed: false
+org.jsoup.nodes.Element:hasClass:1106->[Local Variables] {"inClass":false}
+org.jsoup.nodes.Element:hasClass:1107->[Local Variables] {"start":0}
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Branch Info: Line: 1108, Condition: if (len < len), Executed: true
+org.jsoup.nodes.Element:hasClass:1108->[Local Variables] {"i":0}
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.String.charAt
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.Character.isWhitespace
+org.jsoup.nodes.Element:hasClass:1109->[Control Flow] Branch Info: Line: 1109, Condition: if (java.lang.String.charAt() != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (inClass == 0), Executed: true
+org.jsoup.nodes.Element:hasClass:1120->[Local Variables] {"inClass":true}
+org.jsoup.nodes.Element:hasClass:1110->[Control Flow] Branch Info: Line: 1110, Condition: if (inClass != 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (inClass == 0), Executed: false
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Loop Info: Line: 1108, Description: while at line 1108
+org.jsoup.nodes.Element:hasClass:1108->[Control Flow] Branch Info: Line: 1108, Condition: if (len < len), Executed: true
+org.jsoup.nodes.Element:hasClass:1108->[Local Variables] {"i":1}
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.String.charAt
+org.jsoup.nodes.Element:hasClass:1109->[Method Call] Call Stack: org.jsoup.nodes.Element.hasClass:1109 -> java.lang.Character.isWhitespace
+org.jsoup.nodes.Element:hasClass:1109->[Control Flow] Branch Info: Line: 1109, Condition: if (java.lang.String.charAt() != 0), Executed: false

@@ -1,0 +1,72 @@
+
+=== Debug Info for Test: org.jsoup.safety.CleanerTest::testIsValidBodyHtml ===
+
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eNot OK\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.Jsoup:isValid:249->[Local Variables] {"bodyHtml":"\u003chtml\u003e\u003chead\u003eFoo\u003c/head\u003e\u003cbody\u003e\u003cb\u003eOK\u003c/b\u003e\u003c/body\u003e\u003c/html\u003e"}
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.<init>
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.Jsoup.parseBodyFragment
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.isValid
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  Foo\n  \u003cb\u003eOK\u003c/b\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{numDiscarded\u003d0, clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  Foo\n  \u003cb\u003eOK\u003c/b\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003e\u003cscript\u003e\u003c/script\u003eNot \u003cb\u003eOK\u003c/b\u003e\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{numDiscarded\u003d1, clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eNot \u003cb\u003eOK\u003c/b\u003e\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.Jsoup:isValid:249->[Local Variables] {"bodyHtml":"\u003cp align\u003dright\u003eTest Not \u003cb\u003eOK\u003c/b\u003e\u003c/p\u003e"}
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.<init>
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.Jsoup.parseBodyFragment
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.isValid
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp align\u003d\"right\"\u003eTest Not \u003cb\u003eOK\u003c/b\u003e\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eTest Not \u003cb\u003eOK\u003c/b\u003e\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.Jsoup:isValid:249->[Local Variables] {"bodyHtml":"\u003c!-- comment --\u003e\u003cp\u003eNot OK\u003c/p\u003e"}
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.<init>
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.Jsoup.parseBodyFragment
+org.jsoup.Jsoup:isValid:250->[Method Call] Call Stack: org.jsoup.Jsoup.isValid:250 -> org.jsoup.safety.Cleaner.isValid
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003c!-- comment --\u003e\n  \u003cp\u003eNot OK\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+
+=== Debug Info for Test: org.jsoup.safety.CleanerTest::testIsValidDocument ===
+
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eHello\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{numDiscarded\u003d0, clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eHello\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:73->[Local Variables] "{dirtyDocument\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cscript\u003ewoops\u003c/script\u003e\n  \u003ctitle\u003eHello\u003c/title\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eHello\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:74->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:74 -> org.jsoup.helper.Validate.notNull
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.baseUri
+org.jsoup.safety.Cleaner:isValid:76->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:76 -> org.jsoup.nodes.Document.createShell
+org.jsoup.safety.Cleaner:isValid:76->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.nodes.Document.body
+org.jsoup.safety.Cleaner:isValid:77->[Method Call] Call Stack: org.jsoup.safety.Cleaner.isValid:77 -> org.jsoup.safety.Cleaner.copySafeNodes
+org.jsoup.safety.Cleaner:isValid:77->[Local Variables] "{clean\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  \u003cp\u003eHello\u003c/p\u003e\n \u003c/body\u003e\n\u003c/html\u003e}"

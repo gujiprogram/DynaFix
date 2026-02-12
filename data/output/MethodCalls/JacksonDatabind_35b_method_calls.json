@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.canReadTypeId",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.wrongTokenException",
+    "doc": "/**\n     * Helper method for indicating that the current token was expected to be another\n     * token.\n     */",
+    "code": "public JsonMappingException wrongTokenException(JsonParser p, JsonToken expToken, String msg0) {\n        String msg = \"Unexpected token (\"+p.getCurrentToken()+\"), expected \"+expToken;\n        if (msg0 != null) {\n            msg = msg + \": \"+msg0;\n        }\n        return JsonMappingException.from(p, msg);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer.baseTypeName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

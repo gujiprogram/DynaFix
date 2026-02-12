@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.collections.keyvalue.MultiKey.calculateHashCode",
+    "doc": "/**\n\t * Calculate the hash code of the instance using the provided keys.\n\t * @param keys\n\t */",
+    "code": "private void calculateHashCode(Object[] keys)\n\t{\n\t\tint total = 0;\n        for (int i = 0; i < keys.length; i++) {\n            if (keys[i] != null) {\n                total ^= keys[i].hashCode();\n            }\n        }\n        hashCode = total;\n\t}"
+  }
+]

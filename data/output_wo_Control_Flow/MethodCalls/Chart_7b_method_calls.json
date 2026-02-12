@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jfree.data.time.TimePeriod.getEnd",
+    "doc": "/**\n     * Returns the end date/time.  This will always be on or after the\n     * start date.\n     *\n     * @return The end date/time (never <code>null</code>).\n     */",
+    "code": "public Date getEnd();"
+  },
+  {
+    "method": "org.jfree.data.time.TimePeriod.getStart",
+    "doc": "/**\n     * Returns the start date/time.  This will always be on or before the\n     * end date.\n     *\n     * @return The start date/time (never <code>null</code>).\n     */",
+    "code": "public Date getStart();"
+  },
+  {
+    "method": "org.jfree.data.time.TimePeriodValue.getPeriod",
+    "doc": "/**\n     * Returns the time period.\n     *\n     * @return The time period (never <code>null</code>).\n     */",
+    "code": "public TimePeriod getPeriod() {\n        return this.period;\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimePeriodValues.getDataItem",
+    "doc": "/**\n     * Returns one data item for the series.\n     *\n     * @param index  the item index (in the range <code>0</code> to\n     *     <code>getItemCount() - 1</code>).\n     *\n     * @return One data item for the series.\n     */",
+    "code": "public TimePeriodValue getDataItem(int index) {\n        return (TimePeriodValue) this.data.get(index);\n    }"
+  }
+]

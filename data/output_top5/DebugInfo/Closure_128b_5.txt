@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue942 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x={[0]:1}> but was:<var x={["0"]:1}>
+
+com.google.javascript.jscomp.CodeGenerator:addJsString:975->[Local Variables] "{n\u003dSTRING_KEY 0 1 [quoted: 1] [source_file: [testcode]]}"
+com.google.javascript.jscomp.CodeGenerator:addJsString:976->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:976 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:addJsString:976->[Local Variables] {"s":"0"}
+com.google.javascript.jscomp.CodeGenerator:addJsString:977->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:977 -> com.google.javascript.rhino.Node.getBooleanProp
+com.google.javascript.jscomp.CodeGenerator:addJsString:977->[Local Variables] {"useSlashV":false}
+com.google.javascript.jscomp.CodeGenerator:addJsString:978->[Control Flow] Branch Info: Line: 978, Condition: if (useSlashV != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:addJsString:981->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:981 -> java.util.Map.get
+com.google.javascript.jscomp.CodeGenerator:addJsString:982->[Control Flow] Branch Info: Line: 982, Condition: if (cached == null), Executed: true
+com.google.javascript.jscomp.CodeGenerator:addJsString:983->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:983 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:addJsString:983->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:983 -> com.google.javascript.jscomp.CodeGenerator.jsString
+com.google.javascript.jscomp.CodeGenerator:addJsString:983->[Local Variables] {"cached":"\"0\""}
+com.google.javascript.jscomp.CodeGenerator:addJsString:984->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:984 -> java.util.Map.put
+com.google.javascript.jscomp.CodeGenerator:addJsString:982->[Control Flow] Branch Info: Line: 982, Condition: if (cached == null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:addJsString:986->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:986 -> com.google.javascript.jscomp.CodeGenerator.add

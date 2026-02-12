@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.inference.ChiSquareTestImpl.isNonNegative",
+    "doc": "/**\n     * Returns true iff all entries of the input array are >= 0.\n     * Returns true if the array is non-null, but empty\n     *\n     * @param in array to be tested\n     * @return true if all entries of the array are non-negative\n     * @throws NullPointerException if input array is null\n     */",
+    "code": "private boolean isNonNegative(long[] in) {\n        for (int i = 0; i < in.length; i ++) {\n            if (in[i] < 0) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.stat.inference.ChiSquareTestImpl.isPositive",
+    "doc": "/**\n     * Returns true iff all entries of the input array are > 0.\n     * Returns true if the array is non-null, but empty\n     *\n     * @param in array to be tested\n     * @return true if all entries of the array are positive\n     * @throws NullPointerException if input array is null\n     */",
+    "code": "private boolean isPositive(double[] in) {\n        for (int i = 0; i < in.length; i ++) {\n            if (in[i] <= 0) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  }
+]

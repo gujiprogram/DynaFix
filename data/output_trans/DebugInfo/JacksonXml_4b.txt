@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.dataformat.xml.misc.RootNameTest::testDynamicRootName ===
+Exception: junit.framework.ComparisonFailure: expected:<<[rudy]/>> but was:<<[null]/>>
+
+com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:_serializeXmlNull:206->[Local Variables] "{TransVarJGenerator\u003dcom.fasterxml.jackson.dataformat.xml.ser.ToXmlGenerator@5dafbe45}"
+com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:_serializeXmlNull:207->[Control Flow] Branch Info: Line: 207, Condition: if (TransVarJGenerator != 0), Executed: true
+com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:_serializeXmlNull:211->[Method Call] Call Stack: com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._serializeXmlNull:211 -> com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._initWithRootName
+com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:_serializeXmlNull:207->[Control Flow] Branch Info: Line: 207, Condition: if (TransVarJGenerator != 0), Executed: false
+com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider:_serializeXmlNull:213->[Method Call] Call Stack: com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._serializeXmlNull:213 -> com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue

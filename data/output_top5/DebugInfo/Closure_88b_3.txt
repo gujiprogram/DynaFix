@@ -1,0 +1,245 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testIssue297 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dRETURN 1 [sourcename: input0]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1,1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: input0]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297a ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dFUNCTION  1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1,1]},"out":{"liveSet":[1,1]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dFUNCTION  1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dFUNCTION  1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297c ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297d ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[1]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297e ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[1]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dRETURN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:143 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:144->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:144 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297f ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[]}}}
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:124 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:124->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:125->[Control Flow] Branch Info: Line: 125, Condition: if (n == null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:128->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:128 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:150->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:150 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Loop Info: Line: 121, Description: while at line 121
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:135->[Control Flow] Branch Info: Line: 135, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Control Flow] Branch Info: Line: 121, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:121 -> java.util.Iterator.next
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:121->[Local Variables] "{cfgNode\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments:123 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation
+com.google.javascript.jscomp.DeadAssignmentsElimination:tryRemoveDeadAssignments:123->[Local Variables] {"state":{"in":{"liveSet":[1]},"out":{"liveSet":[1]}}}

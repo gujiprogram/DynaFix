@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.QName.getName",
+    "doc": "/**\n * A qualified name: a combination of an optional namespace prefix\n * and an local name.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getName() {\n        return name;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.QName.getPrefix",
+    "doc": "/**\n * A qualified name: a combination of an optional namespace prefix\n * and an local name.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getPrefix() {\n        return prefix;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.NodeNameTest.getNamespaceURI",
+    "doc": "/**\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getNamespaceURI() {\n        return namespaceURI;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.NodeNameTest.getNodeName",
+    "doc": "/**\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public QName getNodeName() {\n        return qname;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.NodeNameTest.isWildcard",
+    "doc": "/**\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public boolean isWildcard() {\n        return qname.getName().equals(\"*\");\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.equalStrings",
+    "doc": "/**\n * A Pointer that points to a DOM node.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "return equalStrings(namespaceURI, nodeNS);\n            }\n            return false;\n        }\n        if (test instanceof NodeTypeTest) {\n            int nodeType = node.getNodeType();\n            switch (((NodeTypeTest) test).getNodeType()) {"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getLocalName",
+    "doc": "/**\n     * Sets contents of the node to the specified value. If the value is\n     * a String, the contents of the node are replaced with this text.\n     * If the value is an Element or Document, the children of the\n     * node are replaced with the children of the passed node.\n     */",
+    "code": "public static String getLocalName(Node node) {\n        String localName = node.getLocalName();\n        if (localName != null) {\n            return localName;\n        }\n\n        String name = node.getNodeName();\n        int index = name.lastIndexOf(':');\n        return index < 0 ? name : name.substring(index + 1);\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI",
+    "doc": "/**\n * A Pointer that points to a DOM node.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public String getNamespaceURI() {\n        return getNamespaceURI(node);\n    }"
+  },
+  {
+    "method": "org.w3c.dom.Node.getNodeType",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

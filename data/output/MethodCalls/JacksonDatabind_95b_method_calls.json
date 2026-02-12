@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeBindings.create",
+    "doc": "/**\n     * Factory method for constructing bindings for given class using specified type\n     * parameters.\n     */",
+    "code": "public static TypeBindings create(Class<?> erasedType, List<JavaType> typeList)\n    {\n        JavaType[] types = (typeList == null || typeList.isEmpty()) ?\n                NO_TYPES : typeList.toArray(new JavaType[typeList.size()]);\n        return create(erasedType, types);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory._fromClass",
+    "doc": "/**\n     * Method for constructing a type instance with specified parameterization.\n     *\n     * @since 2.6\n     *\n     * @deprecated Since 2.7\n     */",
+    "code": "return _fromClass(null, rawType, TypeBindings.create(rawType, parameterTypes));\n    }\n\n    @Deprecated\n    public JavaType constructSimpleType(Class<?> rawType, Class<?> parameterTarget,\n            JavaType[] parameterTypes)\n    {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeParser$MyTokenizer.hasMoreTokens",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeParser$MyTokenizer.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeParser.findClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

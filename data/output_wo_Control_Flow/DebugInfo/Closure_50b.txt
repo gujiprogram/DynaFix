@@ -1,0 +1,74 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd ===
+
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:423->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:423 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:425->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:425 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:425->[Local Variables] {"foldedSize":10}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:427->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:427 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:427->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:427 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:427->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:427 -> com.google.javascript.rhino.Node.copyInformationFrom
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:426->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:426 -> java.util.List.add
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:429->[Local Variables] "{arrayFoldedChildren\u003d[STRING a 1 [source_file: testcode], NAME foo 1 [source_file: testcode], STRING b,c 1 [source_file: testcode]]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:430->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:430 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:431->[Local Variables] {"foldedSize":12}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:432->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:432 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:432->[Local Variables] {"originalSize":22}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:433->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:433 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:458->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:458 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:458->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:458 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:408->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:408 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:410->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:410 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:410->[Local Variables] {"foldedSize":3}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:412->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:412 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:412->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:412 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:412->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:412 -> com.google.javascript.rhino.Node.copyInformationFrom
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:411->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:411 -> java.util.List.add
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:412->[Local Variables] {"arrayFoldedChildren":[{"str":"a","type":40,"propListHead":{"objectValue":{"referenced":{"fileName":"testcode","isExternFile":false,"originalPath":"testcode","lastOffset":0,"lastLine":1,"code":"x \u003d [\u0027a\u0027, foo, \u0027b\u0027, \u0027c\u0027].join(\u0027,\u0027)"},"fileName":"testcode","isExternFile":false,"lastOffset":0,"lastLine":1},"propType":51},"sourcePosition":4101}]}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:415->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:415 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:415->[Local Variables] {"foldedSize":5}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:416->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:416 -> java.util.List.add
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:417->[Local Variables] "{arrayFoldedChildren\u003d[STRING a 1 [source_file: testcode], NAME foo 1 [source_file: testcode]]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:418->[Local Variables] "{prev\u003dNAME foo 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:419->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:419 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:397->[Local Variables] "{elem\u003dSTRING b,c 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:399->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:399 -> com.google.javascript.jscomp.NodeUtil.isImmutableValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:404->[Local Variables] {"sb":""}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:405->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:405 -> com.google.javascript.jscomp.NodeUtil.getArrayElementStringValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:405->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:405 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:417->[Local Variables] {"sb":"b,c"}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:418->[Local Variables] "{prev\u003dSTRING b,c 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:419->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:419 -> com.google.javascript.rhino.Node.getNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin ===
+
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:430->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:430 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:431->[Local Variables] {"foldedSize":-1}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:432->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:432 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:432->[Local Variables] {"originalSize":12}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:433->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:433 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:435->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:435 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:435->[Local Variables] {"emptyStringNode":{"str":"","type":40,"sourcePosition":-1}}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:436->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:436 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:436->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:436 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:436->[Local Variables] "{emptyStringNode\u003dSTRING  1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:437->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:437 -> com.google.javascript.jscomp.PeepholeReplaceKnownMethods.reportCodeChange
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:367->[Local Variables] "{n\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:368->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:368 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:369->[Local Variables] "{callTarget\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:370->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:370 -> com.google.javascript.jscomp.NodeUtil.isGetProp
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:374->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:374 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:374->[Local Variables] "{right\u003dSTRING , 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:376->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:376 -> com.google.javascript.jscomp.NodeUtil.isImmutableValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:381->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:381 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:381->[Local Variables] "{arrayNode\u003dARRAYLIT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:382->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:382 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:383->[Local Variables] "{functionName\u003dSTRING join 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:384->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:384 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:385->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:385 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:385->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:385 -> java.lang.String.equals
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:391->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:391 -> com.google.javascript.jscomp.NodeUtil.getStringValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:391->[Local Variables] {"joinString":","}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:392->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:392 -> com.google.common.collect.Lists.newLinkedList
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:392->[Local Variables] {"arrayFoldedChildren":[]}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:394->[Local Variables] {"foldedSize":0}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:396->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:396 -> com.google.javascript.rhino.Node.getFirstChild

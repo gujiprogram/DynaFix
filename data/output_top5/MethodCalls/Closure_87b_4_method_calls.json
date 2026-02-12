@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isEquivalentTo",
+    "doc": "/**\n * This class implements the root of the intermediate representation.\n *\n */",
+    "code": "public boolean isEquivalentTo(Node node) {\n      return (node instanceof NumberNode\n          && getDouble() == ((NumberNode) node).getDouble());\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newNumber",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public static Node newNumber(double number) {\n    return new NumberNode(number);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

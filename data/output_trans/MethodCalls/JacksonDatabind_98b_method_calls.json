@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex",
+    "doc": "/**\n     * Method for accessing index of the creator property: for other\n     * types of properties will simply return -1.\n     *\n     * @since 2.1\n     */",
+    "code": "public int getCreatorIndex() {\n        throw new IllegalStateException(String.format(\n                \"Internal error: no creator index for property '%s' (of type %s)\",\n                this.getName(), getClass().getName()));\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty.getProperty",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty.getTypeProperty",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler._deserialize",
+    "doc": "/**\n     * Variant called when creation of the POJO involves buffering of creator properties\n     * as well as property-based creator.\n     */",
+    "code": "protected final Object _deserialize(JsonParser p, DeserializationContext ctxt,\n            int index, String typeId) throws IOException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.build",
+    "doc": "/**\n     * Method called when starting to build a bean instance.\n     *\n     * @since 2.1 (added ObjectIdReader parameter -- existed in previous versions without)\n     */",
+    "code": "public Object build(DeserializationContext ctxt, PropertyValueBuffer buffer) throws IOException\n    {\n        Object bean = _valueInstantiator.createFromObjectWith(ctxt,\n                _allProperties, buffer);\n        if (bean != null) {\n            bean = buffer.handleIdValue(ctxt, bean);\n\n            for (PropertyValue pv = buffer.buffered(); pv != null; pv = pv.next) {\n                pv.assign(bean);\n            }\n        }\n        return bean;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter",
+    "doc": "/**\n     * Method called to buffer value for given property, as well as check whether\n     * we now have values for all (creator) properties that we expect to get values for.\n     *\n     * @return True if we have received all creator parameters\n     *\n     * @since 2.6\n     */",
+    "code": "public boolean assignParameter(SettableBeanProperty prop, Object value)\n    {\n        final int ix = prop.getCreatorIndex();\n        _creatorParameters[ix] = value;\n        if (_paramsSeenBig == null) {\n            int old = _paramsSeen;\n            int newValue = (old | (1 << ix));\n            if (old != newValue) {\n                _paramsSeen = newValue;\n                if (--_paramsNeeded <= 0) {\n                    return (_objectIdReader == null) || (_idValue != null);\n                }\n            }\n        } else {\n            if (!_paramsSeenBig.get(ix)) {\n                _paramsSeenBig.set(ix);\n                if (--_paramsNeeded <= 0) {\n                }\n            }\n        }\n        return false;\n    }"
+  }
+]

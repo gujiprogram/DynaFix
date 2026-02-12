@@ -1,0 +1,35 @@
+
+=== Debug Info for Test: org.apache.commons.codec.language.bm.PhoneticEngineRegressionTest::testCompatibilityWithOriginalVersion ===
+Exception: junit.framework.AssertionFailedError: expected:<...dzn|bntsn|bnzn|vndzn[]> but was:<...dzn|bntsn|bnzn|vndzn[|vntsn]>
+
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:340->[Control Flow] Loop Info: Line: 340, Description: while at line 340
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:340->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:340 -> java.util.Iterator.hasNext
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:340->[Control Flow] Branch Info: Line: 340, Condition: if (var4 != 0), Executed: false
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:364->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:364 -> org.apache.commons.codec.language.bm.PhoneticEngine$PhonemeBuilder.<init>
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:350->[Control Flow] Branch Info: Line: 350, Condition: if (found == 0), Executed: true
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:352->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:352 -> java.lang.String.subSequence
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:352->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:352 -> org.apache.commons.codec.language.bm.PhoneticEngine$PhonemeBuilder.append
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:350->[Control Flow] Branch Info: Line: 350, Condition: if (found == 0), Executed: false
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:354->[Local Variables] {"subBuilder":{"phonemes":[{"phonemeText":"bnz","languages":{"languages":["polish"]}}]}}
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:355->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:355 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.getI
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:355->[Local Variables] {"i":3}
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Control Flow] Loop Info: Line: 344, Description: while at line 344
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:344 -> java.lang.String.length
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Control Flow] Branch Info: Line: 344, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:345->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:345 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.<init>
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:346->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:346 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.invoke
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:347->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:347 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.isFound
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:348->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:348 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.getPhonemeBuilder
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:350->[Control Flow] Branch Info: Line: 350, Condition: if (found == 0), Executed: true
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:352->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:352 -> java.lang.String.subSequence
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:352->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:352 -> org.apache.commons.codec.language.bm.PhoneticEngine$PhonemeBuilder.append
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:350->[Control Flow] Branch Info: Line: 350, Condition: if (found == 0), Executed: false
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:354->[Local Variables] {"subBuilder":{"phonemes":[{"phonemeText":"bnzn","languages":{"languages":["polish"]}}]}}
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:355->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:355 -> org.apache.commons.codec.language.bm.PhoneticEngine$RulesApplication.getI
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:355->[Local Variables] {"i":4}
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Control Flow] Loop Info: Line: 344, Description: while at line 344
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:344 -> java.lang.String.length
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:344->[Control Flow] Branch Info: Line: 344, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:361->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:361 -> org.apache.commons.codec.language.bm.PhoneticEngine$PhonemeBuilder.getPhonemes
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:361->[Method Call] Call Stack: org.apache.commons.codec.language.bm.PhoneticEngine.applyFinalRules:361 -> java.util.Set.addAll
+org.apache.commons.codec.language.bm.PhoneticEngine:applyFinalRules:361->[Local Variables] {"phonemes":[{"phonemeText":"bndzn","languages":{"languages":["greek","german","spanish","russian","hebrew","italian","greeklatin","hungarian","any","cyrillic","dutch","arabic","turkish","english","portuguese","polish","romanian","french","czech"]}},{"phonemeText":"bntsn","languages":{"languages":["german"]}},{"phonemeText":"bnzn","languages":{"languages":["polish"]}},{"phonemeText":"vndzn","languages":{"languages":["spanish"]}}]}

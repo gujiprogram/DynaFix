@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.RandomStringUtilsTest::testLANG807 ===
+Exception: junit.framework.AssertionFailedError: Message (bound must be positive) must contain 'start'
+
+org.apache.commons.lang3.RandomStringUtils:random:162->[Local Variables] {"count":3,"start":5,"numbers":false,"end":5,"letters":false}
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarNewStart":5,"TransVarBool":false,"TransVarRan":{"seed":138523665344710,"nextNextGaussian":0.0,"haveNextNextGaussian":false},"TransVarSum":3,"TransVarStart":false,"TransVarNewEnd":5}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarSum == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarSum < 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:239->[Control Flow] Branch Info: Line: 239, Condition: if (TransVarCharList != null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:239->[Control Flow] Branch Info: Line: 239, Condition: if (TransVarCharList == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:243->[Control Flow] Branch Info: Line: 243, Condition: if (TransVarNewStart == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:243->[Control Flow] Branch Info: Line: 243, Condition: if (TransVarNewEnd == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:256->[Local Variables] {"TransVarBuffer1":["\u0000","\u0000","\u0000"]}
+org.apache.commons.lang3.RandomStringUtils:random:258->[Local Variables] {"TransVarNewGap":0}
+org.apache.commons.lang3.RandomStringUtils:random:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarSum != 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:260->[Local Variables] {"TransVarSum":2}
+org.apache.commons.lang3.RandomStringUtils:random:261->[Control Flow] Branch Info: Line: 261, Condition: if (TransVarCharList == null), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:262->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:262 -> java.util.Random.nextInt

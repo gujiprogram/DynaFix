@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass ===
+Exception: junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:404->[Local Variables] "{parent\u003dGETPROP 1 [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@74f827ad, n\u003dNAME goog 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:405->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleCandidateProvideDefinition:405 -> com.google.javascript.jscomp.NodeTraversal.inGlobalScope
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:407->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleCandidateProvideDefinition:407 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:407->[Control Flow] Branch Info: Line: 407, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:407->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleCandidateProvideDefinition:407 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:407->[Control Flow] Branch Info: Line: 407, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:407->[Control Flow] Branch Info: Line: 407, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:409->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.handleCandidateProvideDefinition:409 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:409->[Control Flow] Branch Info: Line: 409, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isExprResult() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:414->[Control Flow] Branch Info: Line: 414, Condition: if (name != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:handleCandidateProvideDefinition:419->[Control Flow] Branch Info: Line: 419, Condition: if (pn != null), Executed: false

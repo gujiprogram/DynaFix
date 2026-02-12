@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored ===
+Exception: junit.framework.ComparisonFailure: Long arguments did not split as expected expected:<...
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:817->[Local Variables] {"sb":"Footer"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Local Variables] {"text":"                     g."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:836->[Local Variables] {"pos":20}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:837->[Control Flow] Branch Info: Line: 837, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:844 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (width > width), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (nextLineTabStop == nextLineTabStop), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (width > width), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (nextLineTabStop == nextLineTabStop), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Local Variables] {"pos":22}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:849->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:849 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:849->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:849 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:849->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:849 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:849->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:849 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:830->[Control Flow] Loop Info: Line: 830, Description: while at line 830
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:834 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Local Variables] {"text":"                     ."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:835->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:835 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:836->[Local Variables] {"pos":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:837->[Control Flow] Branch Info: Line: 837, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:839 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:811->[Local Variables] {"nextLineTabStop":0,"text":"Footer","sb":""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:812->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:812 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:814->[Control Flow] Branch Info: Line: 814, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:816->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:816 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:816->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:816 -> java.lang.StringBuffer.append

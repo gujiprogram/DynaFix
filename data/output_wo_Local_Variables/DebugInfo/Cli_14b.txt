@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: org.apache.commons.cli2.bug.BugCLI144Test::testFileValidator ===
+
+org.apache.commons.cli2.option.GroupImpl:validate:245->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:245 -> java.util.List.iterator
+org.apache.commons.cli2.option.GroupImpl:validate:245->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:245 -> java.util.Iterator.hasNext
+org.apache.commons.cli2.option.GroupImpl:validate:245->[Control Flow] Branch Info: Line: 245, Condition: if (i != 0), Executed: true
+org.apache.commons.cli2.option.GroupImpl:validate:246->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:246 -> java.util.Iterator.next
+org.apache.commons.cli2.option.GroupImpl:validate:249->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:249 -> org.apache.commons.cli2.Option.isRequired
+org.apache.commons.cli2.option.GroupImpl:validate:249->[Control Flow] Branch Info: Line: 249, Condition: if (option == 0), Executed: false
+org.apache.commons.cli2.option.GroupImpl:validate:250->[Control Flow] Branch Info: Line: 250, Condition: if (validate != 0), Executed: true
+org.apache.commons.cli2.option.GroupImpl:validate:251->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:251 -> org.apache.commons.cli2.Option.validate
+org.apache.commons.cli2.option.GroupImpl:validate:250->[Control Flow] Branch Info: Line: 250, Condition: if (validate != 0), Executed: false
+org.apache.commons.cli2.option.GroupImpl:validate:255->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:255 -> org.apache.commons.cli2.WriteableCommandLine.hasOption
+org.apache.commons.cli2.option.GroupImpl:validate:255->[Control Flow] Branch Info: Line: 255, Condition: if (option != 0), Executed: true
+org.apache.commons.cli2.option.GroupImpl:validate:256->[Control Flow] Branch Info: Line: 256, Condition: if (this.maximum > this.maximum), Executed: false
+org.apache.commons.cli2.option.GroupImpl:validate:262->[Method Call] Call Stack: org.apache.commons.cli2.option.GroupImpl.validate:262 -> org.apache.commons.cli2.Option.validate

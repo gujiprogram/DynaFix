@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsExtendsLoop ===
+Exception: junit.framework.AssertionFailedError: unexpected warning(s) : JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 2 : 29, JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 3 : 26 expected:<1> but was:<2>
+
+com.google.javascript.rhino.jstype.NamedType:setValidator:368->[Local Variables] {"validator":{}}
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setValidator:369 -> com.google.javascript.rhino.jstype.NamedType.isResolved
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Control Flow] Branch Info: Line: 369, Condition: if (com.google.javascript.rhino.jstype.NamedType.isResolved() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsLoop ===
+Exception: junit.framework.AssertionFailedError: expected:<[Parse error. Cycle detected in inheritance chain of type T]> but was:<[can only implement interfaces]>
+
+com.google.javascript.rhino.jstype.NamedType:setValidator:368->[Local Variables] {"validator":{}}
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setValidator:369 -> com.google.javascript.rhino.jstype.NamedType.isResolved
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Control Flow] Branch Info: Line: 369, Condition: if (com.google.javascript.rhino.jstype.NamedType.isResolved() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testConversionFromInterfaceToRecursiveConstructor ===
+Exception: java.lang.StackOverflowError
+
+com.google.javascript.rhino.jstype.NamedType:setValidator:368->[Local Variables] {"validator":{}}
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.setValidator:369 -> com.google.javascript.rhino.jstype.NamedType.isResolved
+com.google.javascript.rhino.jstype.NamedType:setValidator:369->[Control Flow] Branch Info: Line: 369, Condition: if (com.google.javascript.rhino.jstype.NamedType.isResolved() != 0), Executed: false

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.documentBlock",
+    "doc": "/**\n   * Documents the block-level comment/description.\n   *\n   * @param description the description\n   */",
+    "code": "boolean documentBlock(String description) {\n    if (!lazyInitDocumentation()) {\n      return true;\n    }\n\n    if (documentation.blockDescription != null) {\n      return false;\n    }\n\n    documentation.blockDescription = description;\n    return true;\n  }"
+  }
+]

@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: org.jsoup.parser.XmlTreeBuilderTest::handlesLTinScript ===
+Exception: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+
+org.jsoup.nodes.Comment:asXmlDeclaration:78->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:78 -> org.jsoup.nodes.Comment.getData
+org.jsoup.nodes.Comment:asXmlDeclaration:78->[Local Variables] {"TransVarDataFromServer":"?\"; var b\u003d\"?"}
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.String.length
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.String.substring
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> java.lang.StringBuilder.toString
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> org.jsoup.nodes.Comment.baseUri
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> org.jsoup.parser.Parser.xmlParser
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:79 -> org.jsoup.Jsoup.parse
+org.jsoup.nodes.Comment:asXmlDeclaration:79->[Local Variables] "{TransVarDocument\u003d\u0026lt;\"; var b\u003d\"\u0026gt;}"
+org.jsoup.nodes.Comment:asXmlDeclaration:81->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:81 -> org.jsoup.nodes.Document.childNodeSize
+org.jsoup.nodes.Comment:asXmlDeclaration:81->[Control Flow] Branch Info: Line: 81, Condition: if (org.jsoup.nodes.Document.childNodeSize() > 0), Executed: true
+org.jsoup.nodes.Comment:asXmlDeclaration:85->[Method Call] Call Stack: org.jsoup.nodes.Comment.asXmlDeclaration:85 -> org.jsoup.nodes.Document.child

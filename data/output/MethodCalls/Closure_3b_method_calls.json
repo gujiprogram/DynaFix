@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.collect.Lists.newLinkedList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.getCfg",
+    "doc": "/**\n   * Constructor.\n   *\n   * @param compiler Compiler instance.\n   * @param shouldTraverseFunctions Whether functions should be traversed (true\n   *    by default).\n   * @param edgeAnnotations Whether to allow edge annotations. By default,\n   *    only node annotations are allowed.\n   */",
+    "code": "ControlFlowGraph<Node> getCfg() {\n    return cfg;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.process",
+    "doc": "/**\n   * Constructor.\n   *\n   * @param compiler Compiler instance.\n   * @param shouldTraverseFunctions Whether functions should be traversed (true\n   *    by default).\n   * @param edgeAnnotations Whether to allow edge annotations. By default,\n   *    only node annotations are allowed.\n   */",
+    "code": "public void process(Node externs, Node root) {\n    this.root = root;\n    astPositionCounter = 0;\n    astPosition = Maps.newHashMap();\n    nodePriorities = Maps.newHashMap();\n    cfg = new AstControlFlowGraph(computeFallThrough(root), nodePriorities,\n                                  edgeAnnotations);\n    NodeTraversal.traverse(compiler, root, this);\n    astPosition.put(null, ++astPositionCounter); // the implicit return is last.\n\n    priorityCounter = 0;\n    DiGraphNode<Node, Branch> entry = cfg.getEntry();\n    prioritizeFromEntryNode(entry);\n\n    if (shouldTraverseFunctions) {\n      for (DiGraphNode<Node, Branch> candidate : cfg.getDirectedGraphNodes()) {\n        Node value = candidate.getValue();\n        if (value != null && value.isFunction()) {\n          Preconditions.checkState(\n              !nodePriorities.containsKey(candidate) || candidate == entry);\n          prioritizeFromEntryNode(candidate);\n        }\n      }\n    }\n\n    for (DiGraphNode<Node, Branch> candidate : cfg.getDirectedGraphNodes()) {\n      if (!nodePriorities.containsKey(candidate)) {\n        nodePriorities.put(candidate, ++priorityCounter);\n      }\n    }\n\n    nodePriorities.put(cfg.getImplicitReturn(), ++priorityCounter);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.MaybeReachingVariableUse.analyze",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MustBeReachingVariableDef.analyze",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScopeRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.inGlobalScope",
+    "doc": "/**\n   * Determines whether the traversal is currently in the global scope.\n   */",
+    "code": "boolean inGlobalScope() {\n    return getScopeDepth() <= 1;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      inputId = NodeUtil.getInputId(root);\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVarCount",
+    "doc": "/**\n   * Returns number of variables in this scope\n   */",
+    "code": "public int getVarCount() {\n    return vars.size();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

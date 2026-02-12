@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.codec.binary.Base64.containsBase64Byte",
+    "doc": "/**\n     * Tests a given byte array to see if it contains only valid characters within the Base64 alphabet.\n     *\n     * @param arrayOctet\n     *            byte array to test\n     * @return <code>true</code> if any byte is a valid character in the Base64 alphabet; false herwise\n     */",
+    "code": "private static boolean containsBase64Byte(byte[] arrayOctet) {\n        for (int i = 0; i < arrayOctet.length; i++) {\n            if (isBase64(arrayOctet[i])) {\n                return true;\n            }\n        }\n        return false;\n    }"
+  }
+]

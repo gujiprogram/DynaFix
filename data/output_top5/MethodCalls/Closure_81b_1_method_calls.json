@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.mozilla.rhino.ast.AstNode.getAbsolutePosition",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.mozilla.rhino.ast.AstNode.getLineno",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.handleJsDoc",
+    "doc": "/**\n   * @return true if the jsDocParser represents a fileoverview.\n   */",
+    "code": "private JSDocInfo handleJsDoc(AstNode node) {\n    Comment comment = node.getJsDocNode();\n    if (comment != null) {\n      JsDocInfoParser jsDocParser = createJsDocInfoParser(comment);\n      comment.setParsed(true);\n      if (!handlePossibleFileOverviewJsDoc(jsDocParser)) {\n        return jsDocParser.retrieveAndResetParsedJSDocInfo();\n      }\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.justTransform",
+    "doc": "/**\n   * Creates a JsDocInfoParser and parses the JsDoc string.\n   *\n   * Used both for handling individual JSDoc comments and for handling\n   * file-level JSDoc comments (@fileoverview and @license).\n   *\n   * @param node The JsDoc Comment node to parse.\n   * @return A JSDocInfoParser. Will contain either fileoverview jsdoc, or\n   *     normal jsdoc, or no jsdoc (if the method parses to the wrong level).\n   */",
+    "code": "private Node justTransform(AstNode node) {\n    return transformDispatcher.process(node);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.position2charno",
+    "doc": "/**\n   * Creates a JsDocInfoParser and parses the JsDoc string.\n   *\n   * Used both for handling individual JSDoc comments and for handling\n   * file-level JSDoc comments (@fileoverview and @license).\n   *\n   * @param node The JsDoc Comment node to parse.\n   * @return A JSDocInfoParser. Will contain either fileoverview jsdoc, or\n   *     normal jsdoc, or no jsdoc (if the method parses to the wrong level).\n   */",
+    "code": "private int position2charno(int position) {\n    int lineIndex = sourceString.lastIndexOf('\\n', position);\n    if (lineIndex == -1) {\n      return position;\n    } else {\n      return position - lineIndex - 1;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getCharno",
+    "doc": "/**\n   * Returns the integer value for the property, or 0 if the property\n   * is not defined.\n   */",
+    "code": "public int getCharno() {\n    return extractCharno(sourcePosition);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLineno",
+    "doc": "/**\n   * Returns the integer value for the property, or 0 if the property\n   * is not defined.\n   */",
+    "code": "public int getLineno() {\n    return extractLineno(sourcePosition);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setCharno",
+    "doc": "/**\n   * Source position of this node. The position is encoded with the\n   * column number in the low 12 bits of the integer, and the line\n   * number in the rest.  Create some handy constants so we can change this\n   * size if we want.\n   */",
+    "code": "public void setCharno(int charno) {\n      sourcePosition = mergeLineCharNo(getLineno(), charno);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setLineno",
+    "doc": "/**\n   * Source position of this node. The position is encoded with the\n   * column number in the low 12 bits of the integer, and the line\n   * number in the rest.  Create some handy constants so we can change this\n   * size if we want.\n   */",
+    "code": "public void setLineno(int lineno) {\n      int charno = getCharno();\n      if (charno == -1) {\n        charno = 0;\n      }\n      sourcePosition = mergeLineCharNo(lineno, charno);\n  }"
+  }
+]

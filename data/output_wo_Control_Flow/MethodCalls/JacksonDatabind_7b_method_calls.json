@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void copyCurrentStructure(JsonParser jp) throws IOException, JsonProcessingException\n    {\n        JsonToken t = jp.getCurrentToken();\n\n        if (t == JsonToken.FIELD_NAME) {\n            if (_mayHaveNativeIds) {\n                _checkNativeIds(jp);\n            }\n            writeFieldName(jp.getCurrentName());\n            t = jp.nextToken();\n        }\n\n        if (_mayHaveNativeIds) {\n            _checkNativeIds(jp);\n        }\n\n        switch (t) {\n        case START_ARRAY:\n            writeStartArray();\n            while (jp.nextToken() != JsonToken.END_ARRAY) {\n                copyCurrentStructure(jp);\n            }\n            writeEndArray();\n            break;\n        case START_OBJECT:\n            writeStartObject();\n            while (jp.nextToken() != JsonToken.END_OBJECT) {\n                copyCurrentStructure(jp);\n            }\n            writeEndObject();\n            break;\n        default: // others are simple:\n            copyCurrentEvent(jp);\n        }\n    }"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jfree.data.DataUtilities.createNumberArray2D",
+    "doc": "/**\n     * Constructs an array of arrays of <code>Number</code> objects from a\n     * corresponding structure containing <code>double</code> primitives.\n     *\n     * @param data  the data (<code>null</code> not permitted).\n     *\n     * @return An array of <code>Double</code>.\n     */",
+    "code": "public static Number[][] createNumberArray2D(double[][] data) {\n        if (data == null) {\n            throw new IllegalArgumentException(\"Null 'data' argument.\");\n        }\n        int l1 = data.length;\n        Number[][] result = new Number[l1][];\n        for (int i = 0; i < l1; i++) {\n            result[i] = createNumberArray(data[i]);\n        }\n        return result;\n    }"
+  }
+]

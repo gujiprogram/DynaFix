@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMark ===
+
+org.jsoup.helper.DataUtil:parseByteData:76->[Control Flow] Branch Info: Line: 76, Condition: if (charsetName == null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:91->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:91 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:94->[Control Flow] Branch Info: Line: 94, Condition: if (doc == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:99->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:99 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:100->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:100 -> org.jsoup.nodes.Document.outputSettings
+org.jsoup.helper.DataUtil:parseByteData:100->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:100 -> org.jsoup.nodes.Document$OutputSettings.charset
+org.jsoup.helper.DataUtil:parseByteData:94->[Control Flow] Branch Info: Line: 94, Condition: if (doc == null), Executed: false

@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI252Test::testExactOptionNameMatch ===
+Exception: org.apache.commons.cli.AmbiguousOptionException: Ambiguous option: '--prefix'  (could be: 'prefix', 'prefixplusplus')
+
+org.apache.commons.cli.Options:getMatchingOptions:237->[Local Variables] {"TransVarOption":"--prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:238->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:238 -> org.apache.commons.cli.Util.stripLeadingHyphens
+org.apache.commons.cli.Options:getMatchingOptions:239->[Local Variables] {"TransVarOption":"prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:240->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:240 -> java.util.ArrayList.<init>
+org.apache.commons.cli.Options:getMatchingOptions:243->[Local Variables] {"TransVarOptionsList":[]}
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Map.keySet
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Set.iterator
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Options:getMatchingOptions:244->[Control Flow] Branch Info: Line: 244, Condition: if (var3 != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Iterator.next
+org.apache.commons.cli.Options:getMatchingOptions:248->[Local Variables] {"TransVarLongOption":"prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:249->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:249 -> java.lang.String.startsWith
+org.apache.commons.cli.Options:getMatchingOptions:249->[Control Flow] Branch Info: Line: 249, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:254->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:254 -> java.util.List.add
+org.apache.commons.cli.Options:getMatchingOptions:249->[Control Flow] Branch Info: Line: 249, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Options:getMatchingOptions:255->[Local Variables] {"TransVarOptionsList":["prefix"]}
+org.apache.commons.cli.Options:getMatchingOptions:244->[Control Flow] Loop Info: Line: 244, Description: while at line 244
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Options:getMatchingOptions:244->[Control Flow] Branch Info: Line: 244, Condition: if (var3 != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Iterator.next
+org.apache.commons.cli.Options:getMatchingOptions:248->[Local Variables] {"TransVarLongOption":"prefixplusplus"}
+org.apache.commons.cli.Options:getMatchingOptions:249->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:249 -> java.lang.String.startsWith
+org.apache.commons.cli.Options:getMatchingOptions:249->[Control Flow] Branch Info: Line: 249, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:254->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:254 -> java.util.List.add
+org.apache.commons.cli.Options:getMatchingOptions:249->[Control Flow] Branch Info: Line: 249, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Options:getMatchingOptions:255->[Local Variables] {"TransVarOptionsList":["prefix","prefixplusplus"]}
+org.apache.commons.cli.Options:getMatchingOptions:244->[Control Flow] Loop Info: Line: 244, Description: while at line 244
+org.apache.commons.cli.Options:getMatchingOptions:244->[Method Call] Call Stack: org.apache.commons.cli.Options.getMatchingOptions:244 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Options:getMatchingOptions:244->[Control Flow] Branch Info: Line: 244, Condition: if (var3 != 0), Executed: false

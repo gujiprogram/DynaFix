@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.mockito.internal.util.reflection.GenericMetadataSupport.boundsOf",
+    "doc": "/**\n     * @param typeParameter The TypeVariable parameter\n     * @return A {@link BoundedType} for easy bound information, if first bound is a TypeVariable\n     *         then retrieve BoundedType of this TypeVariable\n     */",
+    "code": "private BoundedType boundsOf(TypeVariable typeParameter) {\n        if (typeParameter.getBounds()[0] instanceof TypeVariable) {\n            return boundsOf((TypeVariable) typeParameter.getBounds()[0]);\n        }\n        return new TypeVarBoundedType(typeParameter);\n    }"
+  }
+]

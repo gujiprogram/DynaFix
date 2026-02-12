@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math3.distribution.MultivariateNormalDistribution.getMeans",
+    "doc": "/**\n     * Gets the mean vector.\n     *\n     * @return the mean vector.\n     */",
+    "code": "public double[] getMeans() {\n        return MathArrays.copyOf(means);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.preMultiply",
+    "doc": "/**\n     * Returns the result of premultiplying {@code this} by {@code m}.\n     *\n     * @param m matrix to premultiply by\n     * @return {@code m * this}\n     * @throws DimensionMismatchException if\n     * {@code rowDimension(this) != columnDimension(m)}\n     */",
+    "code": "RealMatrix preMultiply(RealMatrix m)\n        throws DimensionMismatchException;"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.exp",
+    "doc": "/**\n     * Exponential function.\n     *\n     * Computes exp(x), function result is nearly rounded.   It will be correctly\n     * rounded to the theoretical value for 99.9% of input values, otherwise it will\n     * have a 1 UPL error.\n     *\n     * Method:\n     *    Lookup intVal = exp(int(x))\n     *    Lookup fracVal = exp(int(x-int(x) / 1024.0) * 1024.0 );\n     *    Compute z as the exponential of the remaining bits by a polynomial minus one\n     *    exp(x) = intVal * fracVal * (1 + z)\n     *\n     * Accuracy:\n     *    Calculation is done with 63 bits of precision, so result should be correctly\n     *    rounded for 99.9% of input values, with less than 1 ULP error otherwise.\n     *\n     * @param x   a double\n     * @return double e<sup>x</sup>\n     */",
+    "code": "public static double exp(double x) {\n        return exp(x, 0.0, null);\n    }"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jsoup.helper.HttpConnection$KeyVal.create",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.nodes.Element.attr",
+    "doc": "/**\n     * Set an attribute value on this element. If this element already has an attribute with the\n     * key, its value is updated; otherwise, a new attribute is added.\n     *\n     * @return this element\n     */",
+    "code": "public Element attr(String attributeKey, String attributeValue) {\n        super.attr(attributeKey, attributeValue);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.hasAttr",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.normalName",
+    "doc": "/**\n     * Get the normalized name of this Element's tag. This will always be the lowercased version of the tag, regardless\n     * of the tag case preserving setting of the parser.\n     * @return\n     */",
+    "code": "public String normalName() {\n        return tag.normalName();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.tag",
+    "doc": "/**\n     * Get the Tag for this element.\n     *\n     * @return the tag object\n     */",
+    "code": "public Tag tag() {\n        return tag;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.val",
+    "doc": "/**\n     * Get the value of a form element (input, textarea, etc).\n     * @return the value of the form element, or empty string if not set.\n     */",
+    "code": "public String val() {\n        if (tagName().equals(\"textarea\"))\n            return text();\n        else\n            return attr(\"value\");\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.isFormSubmittable",
+    "doc": "/**\n     * Get if this tag represents an element that should be submitted with a form. E.g. input, option\n     * @return if submittable with a form\n     */",
+    "code": "public boolean isFormSubmittable() {\n        return formSubmit;\n    }"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes",
+    "doc": "/**\n   * For functions with function parameters, type inference will set the type of\n   * a function literal argument from the function parameter type.\n   */",
+    "code": "private void maybeResolveTemplateTypeFromNodes(\n      Iterable<Node> declParams,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.resolvedTemplateType",
+    "doc": "/**\n   * For functions with function parameters, type inference will set the type of\n   * a function literal argument from the function parameter type.\n   */",
+    "code": "private static void resolvedTemplateType(\n      Map<TemplateType, JSType> map, TemplateType template, JSType resolved) {\n    JSType previous = map.get(template);\n    if (!resolved.isUnknownType()) {\n      if (previous == null) {\n        map.put(template, resolved);\n      } else {\n        JSType join = previous.getLeastSupertype(resolved);\n        map.put(template, join);\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getParameters",
+    "doc": "/**\n   * When a class B inherits from A and A is annotated as a dict, then B\n   * automatically gets the annotation, even if B's constructor is not\n   * explicitly annotated.\n   */",
+    "code": "public Iterable<Node> getParameters() {\n    Node n = getParametersNode();\n    if (n != null) {\n      return n.children();\n    } else {\n      return Collections.emptySet();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getReturnType",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public JSType getReturnType() {\n    return call.returnType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "public JSType getTypeOfThis() {\n    return typeOfThis.isEmptyType() ?\n        registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE) : typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isSubtype",
+    "doc": "/**\n   * A function is a subtype of another if their call methods are related via\n   * subtyping and {@code this} is a subtype of {@code that} with regard to\n   * the prototype chain.\n   */",
+    "code": "public boolean isSubtype(JSType that) {\n    if (JSType.isSubtypeHelper(this, that)) {\n      return true;\n    }\n\n    if (that.isFunctionType()) {\n      FunctionType other = that.toMaybeFunctionType();\n      if (other.isInterface()) {\n        return true;\n      }\n      if (isInterface()) {\n        return false;\n      }\n\n      boolean treatThisTypesAsCovariant =\n        (other.typeOfThis.toObjectType() != null &&\n             other.typeOfThis.toObjectType().getConstructor() != null &&\n             other.typeOfThis.toObjectType().getConstructor().isInterface()) ||\n\n        other.typeOfThis.isSubtype(this.typeOfThis) ||\n        this.typeOfThis.isSubtype(other.typeOfThis);\n      return treatThisTypesAsCovariant && this.call.isSubtype(other.call);\n    }\n\n    return getNativeType(JSTypeNative.FUNCTION_PROTOTYPE).isSubtype(that);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isFunctionType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isTemplateType",
+    "doc": "/**\n   * Null-safe version of toMaybeTemplatizedType().\n   */",
+    "code": "public final boolean isTemplateType() {\n    return toMaybeTemplateType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isTemplatizedType",
+    "doc": "/**\n   * Downcasts this to a RecordType, or returns null if this is not\n   * a RecordType.\n   */",
+    "code": "public final boolean isTemplatizedType() {\n    return toMaybeTemplatizedType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnionType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public final boolean isUnionType() {\n    return toMaybeUnionType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeTemplateType",
+    "doc": "/**\n   * Downcasts this to a TemplateType, or returns null if this is not\n   * a function.\n   */",
+    "code": "return toMaybeTemplateType() != null;\n  }\n\n  public TemplateType toMaybeTemplateType() {"
+  }
+]

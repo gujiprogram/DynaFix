@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkNotNull",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.collect.ImmutableList.isEmpty",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public void setJSType(JSType jsType) {\n      this.jsType = jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getReturnType",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public JSType getReturnType() {\n    return call.returnType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.visit",
+    "doc": "/**\n   * A function is a subtype of another if their call methods are related via\n   * subtyping and {@code this} is a subtype of {@code that} with regard to\n   * the prototype chain.\n   */",
+    "code": "public <T> T visit(Visitor<T> visitor) {\n    return visitor.caseFunctionType(this);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType",
+    "doc": "/**\n   * Downcasts this to a FunctionType, or returns null if this is not\n   * a function.\n   *\n   * For the purposes of this function, we define a MaybeFunctionType as any\n   * type in the sub-lattice\n   * { x | LEAST_FUNCTION_TYPE <= x <= GREATEST_FUNCTION_TYPE }\n   * This definition excludes bottom types like NoType and NoObjectType.\n   *\n   * This definition is somewhat arbitrary and axiomatic, but this is the\n   * definition that makes the most sense for the most callers.\n   */",
+    "code": "public FunctionType toMaybeFunctionType() {\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys",
+    "doc": "/**\n   * Returns a list of all template keys.\n   */",
+    "code": "public ImmutableList<TemplateType> getTemplateKeys() {\n    return templateKeys;\n  }"
+  }
+]

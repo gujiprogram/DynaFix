@@ -1,0 +1,203 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testIssue297 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@1ff0ab23}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@4e406237}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@7c3969e9}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@721bd0cb}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@6f473b27}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: input0]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@187dbc6a}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@1e1aa57a}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@15b052fc}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297a ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@66971f6b}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@2f2bf0e2}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@19b30c92}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@61edc883}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@3bffddff}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@3bd7f8dc}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@5e77f0f4}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@5cc5b667}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297c ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@5dcbb60}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@60cf80e7}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@21ec5d87}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@64c2b546}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297d ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@5dcbb60}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@60cf80e7}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@21ec5d87}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@5fe8b721}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297e ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@5dcbb60}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@60cf80e7}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@21ec5d87}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@5fe8b721}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297f ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:70->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@5dcbb60}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@60cf80e7}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:71->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:71 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:74->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@21ec5d87}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:75 -> com.google.javascript.jscomp.Scope.isGlobal
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:75->[Control Flow] Branch Info: Line: 75, Condition: if (com.google.javascript.jscomp.Scope.isGlobal() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:82 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:82->[Local Variables] "{fnBlock\u003dBLOCK 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:83 -> com.google.javascript.jscomp.NodeUtil.containsFunction
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:83->[Control Flow] Branch Info: Line: 83, Condition: if (fnBlock != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:90->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:90 -> com.google.common.base.Predicates.alwaysTrue
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:89 -> com.google.javascript.jscomp.NodeUtil.has
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:89->[Control Flow] Branch Info: Line: 89, Condition: if (fnBlock == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:95 -> com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:95->[Local Variables] "{cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@5fe8b721}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:96->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:96 -> com.google.javascript.jscomp.LiveVariablesAnalysis.<init>
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:97->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:97 -> com.google.javascript.jscomp.LiveVariablesAnalysis.analyze
+com.google.javascript.jscomp.DeadAssignmentsElimination:enterScope:98->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.enterScope:98 -> com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments

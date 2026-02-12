@@ -1,0 +1,61 @@
+
+=== Debug Info for Test: org.apache.commons.math.ode.nonstiff.ClassicalRungeKuttaIntegratorTest::testMissedEndEvent ===
+
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:193->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:193 -> java.lang.System.arraycopy
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:194->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:194 -> org.apache.commons.math.ode.events.CombinedEventsManager.stepAccepted
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:195->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:195 -> org.apache.commons.math.ode.events.CombinedEventsManager.stop
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:198->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:198 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.storeTime
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:199->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:199 -> java.util.Collection.iterator
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:199->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:199 -> java.util.Iterator.hasNext
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:199->[Control Flow] Branch Info: Line: 199, Condition: if (sum != 0), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:204->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:204 -> org.apache.commons.math.ode.events.CombinedEventsManager.reset
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.apache.commons.math.ode.events.CombinedEventsManager.reset() != 0), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:204->[Control Flow] Branch Info: Line: 204, Condition: if (lastStep == 0), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:211->[Control Flow] Branch Info: Line: 211, Condition: if (forward != 0), Executed: true
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:134->[Control Flow] Loop Info: Line: 134, Description: while at line 134
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:137->[Control Flow] Branch Info: Line: 137, Condition: if (lastStep == 0), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:164->[Control Flow] Branch Info: Line: 164, Condition: if (stages < stages), Executed: true
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:164->[Control Flow] Branch Info: Line: 164, Condition: if (stages < stages), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:162->[Control Flow] Loop Info: Line: 162, Description: while at line 162
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:162->[Control Flow] Branch Info: Line: 162, Condition: if (y0 < y0), Executed: false
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:171->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:171 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.storeTime
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:172->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:172 -> org.apache.commons.math.ode.events.CombinedEventsManager.evaluateStep
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:172->[Control Flow] Branch Info: Line: 172, Condition: if (org.apache.commons.math.ode.events.CombinedEventsManager.evaluateStep() != 0), Executed: true
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:173->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:173 -> org.apache.commons.math.ode.events.CombinedEventsManager.getEventTime
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:174->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:174 -> java.lang.Math.abs
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:174->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator.integrate:174 -> java.lang.Math.ulp
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:174->[Control Flow] Branch Info: Line: 174, Condition: if (this.stepStart <= 0), Executed: true
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:141->[Control Flow] Loop Info: Line: 141, Description: while at line 141
+org.apache.commons.math.ode.nonstiff.RungeKuttaIntegrator:integrate:141->[Control Flow] Branch Info: Line: 141, Condition: if (stopTime != 0), Executed: false
+
+=== Debug Info for Test: org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest::testMissedEndEvent ===
+
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:328->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:328 -> java.util.Collection.iterator
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:328->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:328 -> java.util.Iterator.hasNext
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:328->[Control Flow] Branch Info: Line: 328, Condition: if (factor != 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:333->[Control Flow] Branch Info: Line: 333, Condition: if (this.fsal != false), Executed: true
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:335->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:335 -> java.lang.System.arraycopy
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:333->[Control Flow] Branch Info: Line: 333, Condition: if (this.fsal != false), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:338->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:338 -> org.apache.commons.math.ode.events.CombinedEventsManager.reset
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:338->[Control Flow] Branch Info: Line: 338, Condition: if (org.apache.commons.math.ode.events.CombinedEventsManager.reset() != 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:338->[Control Flow] Branch Info: Line: 338, Condition: if (lastStep == 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:344->[Control Flow] Branch Info: Line: 344, Condition: if (lastStep == 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:229->[Control Flow] Loop Info: Line: 229, Description: while at line 229
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:232->[Control Flow] Branch Info: Line: 232, Condition: if (lastStep == 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:363->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:363 -> org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.resetInternalState
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:288->[Control Flow] Branch Info: Line: 288, Condition: if (stopTime <= 0), Executed: true
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:291->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:291 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.storeTime
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:292->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:292 -> org.apache.commons.math.ode.events.CombinedEventsManager.evaluateStep
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:292->[Control Flow] Branch Info: Line: 292, Condition: if (org.apache.commons.math.ode.events.CombinedEventsManager.evaluateStep() != 0), Executed: true
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:293->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:293 -> org.apache.commons.math.ode.events.CombinedEventsManager.getEventTime
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:294->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:294 -> java.lang.Math.abs
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:294->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:294 -> java.lang.Math.ulp
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:294->[Control Flow] Branch Info: Line: 294, Condition: if (this.stepStart <= 0), Executed: true
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:237->[Control Flow] Loop Info: Line: 237, Description: while at line 237
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:237->[Control Flow] Branch Info: Line: 237, Condition: if (nextStep != 0), Executed: false
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:322->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:322 -> java.lang.System.arraycopy
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:323->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:323 -> org.apache.commons.math.ode.events.CombinedEventsManager.stepAccepted
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:324->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:324 -> org.apache.commons.math.ode.events.CombinedEventsManager.stop
+org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator:integrate:327->[Method Call] Call Stack: org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.integrate:327 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.storeTime

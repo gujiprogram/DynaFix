@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.collections4.list.AbstractSerializableListDecorator.subList",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.collections4.list.SetUniqueList.createSetBasedOnList",
+    "doc": "/**\n     * Create a new {@link Set} with the same type as the provided {@code set}\n     * and populate it with all elements of {@code list}.\n     *\n     * @param set\n     *            the {@link Set} to be used as return type, must not be null\n     * @param list\n     *            the {@link List} to populate the {@link Set}\n     * @return a new {@link Set} populated with all elements of the provided\n     *         {@link List}\n     */",
+    "code": "protected Set<E> createSetBasedOnList(final Set<E> set, final List<E> list) {\n        Set<E> subSet;\n        if (set.getClass().equals(HashSet.class)) {\n            subSet = new HashSet<E>(list.size());\n        } else {\n            try {\n                subSet = set.getClass().newInstance();\n            } catch (final InstantiationException ie) {\n                subSet = new HashSet<E>();\n            } catch (final IllegalAccessException iae) {\n                subSet = new HashSet<E>();\n            }\n        }\n        subSet.addAll(list);\n        return subSet;\n    }"
+  }
+]

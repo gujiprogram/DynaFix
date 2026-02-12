@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.appendOp",
+    "doc": "/**\n   * This is to be called when we're in a statement. If the prev statement\n   * needs to be ended, add a ';'.\n   */",
+    "code": "void appendOp(String op, boolean binOp) {\n    append(op);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.getLastChar",
+    "doc": "/**\n   * Retrieve the last character of the last string sent to append.\n   */",
+    "code": "abstract char getLastChar();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.maybeCutLine",
+    "doc": "/**\n   * Appends a string to the code, keeping track of the current line length.\n   *\n   * NOTE: the string must be a complete token--partial strings or\n   * partial regexes will run the risk of being split across lines.\n   *\n   * Do not directly append newlines with this method. Instead use\n   * {@link #startNewLine}.\n   */",
+    "code": "void maybeCutLine() {\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.maybeEndStatement",
+    "doc": "/**\n   * This is to be called when we're in a statement. If the prev statement\n   * needs to be ended, add a ';'.\n   */",
+    "code": "void maybeEndStatement() {\n    if (statementNeedsEnded) {\n      append(\";\");\n      maybeLineBreak();\n      endLine();\n      statementNeedsEnded = false;\n    }\n    statementStarted = true;\n  }"
+  }
+]

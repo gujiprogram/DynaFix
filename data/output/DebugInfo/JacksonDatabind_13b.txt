@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.struct.TestObjectIdDeserialization::testNullObjectId ===
+Exception: com.fasterxml.jackson.databind.JsonMappingException: (was java.lang.NullPointerException) (through reference chain: com.fasterxml.jackson.databind.struct.Identifiable["id"])
+
+com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty:deserializeSetAndReturn:84->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@2de366bb, instance\u003dcom.fasterxml.jackson.databind.struct.TestObjectIdDeserialization$Identifiable@3f093abe, jp\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@61a002b1}"
+com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty:deserializeSetAndReturn:85->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty.deserializeSetAndReturn:85 -> com.fasterxml.jackson.databind.JsonDeserializer.deserialize
+com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty:deserializeSetAndReturn:93->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty.deserializeSetAndReturn:93 -> com.fasterxml.jackson.databind.DeserializationContext.findObjectId
+com.fasterxml.jackson.databind.deser.DefaultDeserializationContext:findObjectId:87->[Local Variables] {"gen":{"_scope":"class java.lang.Object"},"resolverType":{}}
+com.fasterxml.jackson.databind.deser.DefaultDeserializationContext:findObjectId:88->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.findObjectId:88 -> com.fasterxml.jackson.annotation.ObjectIdGenerator.key

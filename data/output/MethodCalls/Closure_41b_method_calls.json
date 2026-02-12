@@ -1,0 +1,87 @@
+[
+  {
+    "method": "com.google.common.collect.Sets.newHashSet",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionTypeBuilder.addParameter",
+    "doc": "/**\n   * Add a parameter to the param list.\n   * @param builder A builder.\n   * @param paramType The parameter type.\n   * @param warnedAboutArgList Whether we've already warned about arg ordering\n   *     issues (like if optional args appeared before required ones).\n   * @param isOptional Is this an optional parameter?\n   * @param isVarArgs Is this a var args parameter?\n   * @return Whether a warning was emitted.\n   */",
+    "code": "private boolean addParameter(FunctionParamBuilder builder,\n      JSType paramType, boolean warnedAboutArgList,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionTypeBuilder.isOptionalParameter",
+    "doc": "/**\n   * @return Whether the given param is an optional param.\n   */",
+    "code": "private boolean isOptionalParameter(\n      Node param, @Nullable JSDocInfo info) {\n    if (codingConvention.isOptionalParameter(param)) {\n      return true;\n    }\n\n    String paramName = param.getString();\n    return info != null && info.hasParameterType(paramName) &&\n        info.getParameterType(paramName).isOptionalArg();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionTypeBuilder.isVarArgsParameter",
+    "doc": "/**\n   * Determine whether this is a var args parameter.\n   * @return Whether the given param is a var args param.\n   */",
+    "code": "private boolean isVarArgsParameter(\n      Node param, @Nullable JSDocInfo info) {\n    if (codingConvention.isVarArgsParameter(param)) {\n      return true;\n    }\n\n    String paramName = param.getString();\n    return info != null && info.hasParameterType(paramName) &&\n        info.getParameterType(paramName).isVarArgs();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.getParameterNames",
+    "doc": "/**\n   * Returns the set of names of the defined parameters. The iteration order\n   * of the returned set is not the order in which parameters are defined.\n   *\n   * @return the set of names of the defined parameters. The returned set is\n   *     immutable.\n   */",
+    "code": "public Set<String> getParameterNames() {\n    if (info == null || info.parameters == null) {\n      return ImmutableSet.of();\n    }\n    return ImmutableSet.copyOf(info.parameters.keySet());\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.hasParameterType",
+    "doc": "/**\n   * Returns whether the parameter has an attached type.\n   *\n   * @return {@code true} if the parameter has an attached type, {@code false}\n   *     if the parameter has no attached type or does not exist.\n   */",
+    "code": "public boolean hasParameterType(String parameter) {\n    return getParameterType(parameter) != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this nodes's children.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node child : n.children()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> children() {\n    if (first == null) {\n      return Collections.emptySet();\n    } else {\n      return new SiblingNodeIterable(first);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isOptionalArg",
+    "doc": "/**\n   * Returns whether this node is an optional argument node. This\n   * method's return value is meaningful only on {@link Token#NAME} nodes\n   * used to define a {@link Token#FUNCTION}'s argument list.\n   */",
+    "code": "public boolean isOptionalArg() {\n    return getBooleanProp(OPT_ARG_NAME);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVarArgs",
+    "doc": "/**\n   * Returns whether this node is a variable length argument node. This\n   * method's return value is meaningful only on {@link Token#NAME} nodes\n   * used to define a {@link Token#FUNCTION}'s argument list.\n   */",
+    "code": "public boolean isVarArgs() {\n    return getBooleanProp(VAR_ARGS_NAME);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionParamBuilder.build",
+    "doc": "/**\n   * Copies the parameter specification from the given node.\n   */",
+    "code": "public Node build() {\n    return root;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getParameters",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getReturnType",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public JSType getReturnType() {\n    return call.returnType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isReturnTypeInferred",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public boolean isReturnTypeInferred() {\n    return call.returnTypeInferred;\n  }"
+  }
+]

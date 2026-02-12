@@ -1,0 +1,88 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToLongFailing ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (9223372036854775817) out of range of long (-9223372036854775808 - 9223372036854775807)
+
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:577->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:577 -> com.fasterxml.jackson.core.base.ParserMinimalBase.getText
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:581->[Local Variables] {"numDesc":"9223372036854775817"}
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> com.fasterxml.jackson.core.base.ParserMinimalBase._longIntegerDesc
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> java.lang.Long.valueOf
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> java.lang.Long.valueOf
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:582->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:582 -> java.lang.String.format
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:582->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:582 -> com.fasterxml.jackson.core.base.ParserMinimalBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.async.AsyncNumberCoercionTest::testToIntFailing ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (2147483648) out of range of int
+
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:883->[Control Flow] Branch Info: Line: 883, Condition: if (this._numTypesValid != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:885->[Local Variables] {"result":-2147483648}
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:886->[Control Flow] Branch Info: Line: 886, Condition: if (this._numberLong != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase.getText
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberCoercionTest::testToLongFailing ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (9223372036854775817) out of range of long (-9223372036854775808 - 9223372036854775807)
+
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:577->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:577 -> com.fasterxml.jackson.core.base.ParserMinimalBase.getText
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:581->[Local Variables] {"numDesc":"9223372036854775817"}
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> com.fasterxml.jackson.core.base.ParserMinimalBase._longIntegerDesc
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> java.lang.Long.valueOf
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:583->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:583 -> java.lang.Long.valueOf
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:582->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:582 -> java.lang.String.format
+com.fasterxml.jackson.core.base.ParserMinimalBase:reportOverflowLong:582->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserMinimalBase.reportOverflowLong:582 -> com.fasterxml.jackson.core.base.ParserMinimalBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberCoercionTest::testToIntFailing ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (2147483648) out of range of int
+
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:883->[Control Flow] Branch Info: Line: 883, Condition: if (this._numTypesValid != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:885->[Local Variables] {"result":-2147483648}
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:886->[Control Flow] Branch Info: Line: 886, Condition: if (this._numberLong != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase.getText
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousLongOverflow ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value ([Integer with 199999 digits]) out of range of long
+
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:868->[Local Variables] {"expType":2}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:869 -> com.fasterxml.jackson.core.base.ParserBase._longIntegerDesc
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Local Variables] {"numDesc":"[Integer with 199999 digits]"}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:871->[Control Flow] Branch Info: Line: 871, Condition: if (expType == expType), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:870->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:870 -> com.fasterxml.jackson.core.base.ParserBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberOverflowTest::testSimpleLongOverflow ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (-9223372036854775809) out of range of long
+
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:868->[Local Variables] {"rawNum":"-9223372036854775809","expType":2}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:869 -> com.fasterxml.jackson.core.base.ParserBase._longIntegerDesc
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Local Variables] {"numDesc":"-9223372036854775809"}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:871->[Control Flow] Branch Info: Line: 871, Condition: if (expType == expType), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:870->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:870 -> com.fasterxml.jackson.core.base.ParserBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberOverflowTest::testMaliciousIntOverflow ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value ([Integer with 199999 digits]) out of range of int
+
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:868->[Local Variables] {"expType":1}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:869 -> com.fasterxml.jackson.core.base.ParserBase._longIntegerDesc
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:869->[Local Variables] {"numDesc":"[Integer with 199999 digits]"}
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:871->[Control Flow] Branch Info: Line: 871, Condition: if (expType == expType), Executed: false
+com.fasterxml.jackson.core.base.ParserBase:_reportTooLongIntegral:870->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase._reportTooLongIntegral:870 -> com.fasterxml.jackson.core.base.ParserBase._reportError
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NumberParsingTest::testSimpleLong ===
+Exception: com.fasterxml.jackson.core.JsonParseException: Numeric value (12345678907) out of range of int
+
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:883->[Control Flow] Branch Info: Line: 883, Condition: if (this._numTypesValid != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:885->[Local Variables] {"result":-539222981}
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:886->[Control Flow] Branch Info: Line: 886, Condition: if (this._numberLong != false), Executed: true
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase.getText
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.append
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.core.base.ParserBase:convertNumberToInt:887->[Method Call] Call Stack: com.fasterxml.jackson.core.base.ParserBase.convertNumberToInt:887 -> com.fasterxml.jackson.core.base.ParserBase._reportError

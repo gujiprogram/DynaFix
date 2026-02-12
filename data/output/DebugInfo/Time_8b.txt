@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int ===
+Exception: java.lang.IllegalArgumentException: Minutes out of range: -15
+
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:279->[Control Flow] Branch Info: Line: 279, Condition: if (minutesOffset >= 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.toString
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:285->[Control Flow] Branch Info: Line: 285, Condition: if (ex < 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Local Variables] {"minutesOffset":120}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:290->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:290 -> org.joda.time.field.FieldUtils.safeMultiply
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:292->[Local Variables] {"offset":7200000}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:294->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:294 -> org.joda.time.DateTimeZone.forOffsetMillis
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:272->[Local Variables] {"minutesOffset":-15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (minutesOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset >= hoursOffset), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset > hoursOffset), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:279->[Control Flow] Branch Info: Line: 279, Condition: if (minutesOffset >= 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:280->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:280 -> java.lang.StringBuilder.toString
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:272->[Local Variables] {"hoursOffset":0,"minutesOffset":15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (minutesOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset >= hoursOffset), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset > hoursOffset), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:279->[Control Flow] Branch Info: Line: 279, Condition: if (minutesOffset >= 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:279->[Control Flow] Branch Info: Line: 279, Condition: if (minutesOffset > minutesOffset), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:283->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:284->[Local Variables] {"hoursInMinutes":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:285->[Control Flow] Branch Info: Line: 285, Condition: if (ex < 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:290->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:290 -> org.joda.time.field.FieldUtils.safeMultiply
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:292->[Local Variables] {"offset":900000}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:294->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:294 -> org.joda.time.DateTimeZone.forOffsetMillis
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:272->[Local Variables] {"minutesOffset":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (minutesOffset == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:272->[Local Variables] {"minutesOffset":-15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (hoursOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:273->[Control Flow] Branch Info: Line: 273, Condition: if (minutesOffset == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset >= hoursOffset), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (hoursOffset > hoursOffset), Executed: false

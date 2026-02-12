@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodingConvention.defineDelegateProxyPrototypeProperties",
+    "doc": "/**\n   * Defines the delegate proxy prototype properties. Their types depend on\n   * properties of the delegate base methods.\n   *\n   * @param delegateProxyPrototypes List of delegate proxy prototypes.\n   */",
+    "code": "public void defineDelegateProxyPrototypeProperties(\n      JSTypeRegistry registry, Scope scope,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator.createInitialScope",
+    "doc": "/**\n   * Create the outermost scope. This scope contains native binding such as\n   * {@code Object}, {@code Date}, etc.\n   */",
+    "code": "Scope createInitialScope(Node root) {\n\n    NodeTraversal.traverse(\n        compiler, root, new DiscoverEnumsAndTypedefs(typeRegistry));\n\n    Scope s = new Scope(root, compiler);\n    declareNativeFunctionType(s, ARRAY_FUNCTION_TYPE);\n    declareNativeFunctionType(s, BOOLEAN_OBJECT_FUNCTION_TYPE);\n    declareNativeFunctionType(s, DATE_FUNCTION_TYPE);\n    declareNativeFunctionType(s, ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, EVAL_ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, FUNCTION_FUNCTION_TYPE);\n    declareNativeFunctionType(s, NUMBER_OBJECT_FUNCTION_TYPE);\n    declareNativeFunctionType(s, OBJECT_FUNCTION_TYPE);\n    declareNativeFunctionType(s, RANGE_ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, REFERENCE_ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, REGEXP_FUNCTION_TYPE);\n    declareNativeFunctionType(s, STRING_OBJECT_FUNCTION_TYPE);\n    declareNativeFunctionType(s, SYNTAX_ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, TYPE_ERROR_FUNCTION_TYPE);\n    declareNativeFunctionType(s, URI_ERROR_FUNCTION_TYPE);\n    declareNativeValueType(s, \"undefined\", VOID_TYPE);\n\n    declareNativeValueType(s, LEGACY_TYPEDEF, NO_TYPE);\n\n    declareNativeValueType(s, \"ActiveXObject\", NO_OBJECT_TYPE);\n\n    return s;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Copies source file and name information from the other node to the\n   * entire tree rooted at this node.\n   * @return this\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "public ObjectType getTypeOfThis() {\n    return typeOfThis.isNoObjectType() ?\n        registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE) : typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isUnknownType",
+    "doc": "/**\n   * We treat this as the unknown type if any of its implicit prototype\n   * properties is unknown.\n   */",
+    "code": "public boolean isUnknownType() {\n    if (unknown) {\n      ObjectType implicitProto = getImplicitPrototype();\n      if (implicitProto == null ||\n          implicitProto.isNativeObjectType()) {\n        unknown = false;\n        for (ObjectType interfaceType : getCtorExtendedInterfaces()) {\n          if (interfaceType.isUnknownType()) {\n            unknown = true;\n            break;\n          }\n        }\n      } else {\n        unknown = implicitProto.isUnknownType();\n      }\n    }\n    return unknown;\n  }"
+  }
+]

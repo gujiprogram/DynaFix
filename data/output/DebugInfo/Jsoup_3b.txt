@@ -1,0 +1,164 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::testAppendRowToTable ===
+Exception: junit.framework.AssertionFailedError: expected:<...tr><td>1</td></tr><t[r><td>2</td></tr]></table>> but was:<...tr><td>1</td></tr><t[able><tr><td>2</td></tr></table]></table>>
+
+org.jsoup.nodes.Element:append:271->[Local Variables] "{node\u003d\n \u003ctable\u003e\n  \u003ctr\u003e\n   \u003ctd\u003e\n    2\n   \u003c/td\u003e\n  \u003c/tr\u003e\n \u003c/table\u003e}"
+org.jsoup.nodes.Element:append:272->[Local Variables] "{node\u003d\n\u003ctable\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n 2\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e, fragment\u003d\n\u003cbody\u003e\n\u003ctable\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n 2\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/body\u003e}"
+org.jsoup.nodes.Element:append:273->[Method Call] Call Stack: org.jsoup.nodes.Element.append:273 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.nodes.Element:append:273->[Local Variables] "{fragment\u003d\n\u003cbody\u003e\n  \u003ctable\u003e\n   \u003ctr\u003e\n    \u003ctd\u003e\n     2\n    \u003c/td\u003e\n   \u003c/tr\u003e\n  \u003c/table\u003e\n\u003c/body\u003e}"
+org.jsoup.nodes.Element:append:271->[Control Flow] Loop Info: Line: 271, Description: while at line 271
+org.jsoup.nodes.Element:append:271->[Method Call] Call Stack: org.jsoup.nodes.Element.append:271 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Element:append:271->[Control Flow] Branch Info: Line: 271, Condition: if (var3 != 0), Executed: false
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: true
+org.jsoup.parser.Parser:parse:83->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:83 -> org.jsoup.parser.Parser.parseEndTag
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: true
+org.jsoup.parser.Parser:parse:83->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:83 -> org.jsoup.parser.Parser.parseEndTag
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parse:90->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:90 -> org.jsoup.nodes.Document.normalise
+org.jsoup.nodes.Element:append:270->[Method Call] Call Stack: org.jsoup.nodes.Element.append:270 -> org.jsoup.nodes.Document.body
+org.jsoup.nodes.Element:append:270->[Local Variables] "{fragment\u003d\n\u003cbody\u003e\n \u003ctable\u003e\n  \u003ctr\u003e\n   \u003ctd\u003e\n    2\n   \u003c/td\u003e\n  \u003c/tr\u003e\n \u003c/table\u003e\n\u003c/body\u003e}"
+org.jsoup.nodes.Element:append:271->[Method Call] Call Stack: org.jsoup.nodes.Element.append:271 -> org.jsoup.nodes.Element.childNodes
+org.jsoup.nodes.Element:append:271->[Method Call] Call Stack: org.jsoup.nodes.Element.append:271 -> java.util.List.iterator
+org.jsoup.nodes.Element:append:271->[Method Call] Call Stack: org.jsoup.nodes.Element.append:271 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Element:append:271->[Control Flow] Branch Info: Line: 271, Condition: if (var3 != 0), Executed: true
+org.jsoup.nodes.Element:append:271->[Method Call] Call Stack: org.jsoup.nodes.Element.append:271 -> java.util.Iterator.next
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::testPrependRowToTable ===
+Exception: junit.framework.AssertionFailedError: expected:<<table><t[r><td>2</td></tr]><tr><td>1</td></tr>...> but was:<<table><t[able><tr><td>2</td></tr></table]><tr><td>1</td></tr>...>
+
+org.jsoup.nodes.Element:prepend:289->[Local Variables] {"i":0}
+org.jsoup.nodes.Element:prepend:290->[Method Call] Call Stack: org.jsoup.nodes.Element.prepend:290 -> java.util.List.get
+org.jsoup.nodes.Element:prepend:290->[Local Variables] "{node\u003d\n \u003ctable\u003e\n  \u003ctr\u003e\n   \u003ctd\u003e\n    2\n   \u003c/td\u003e\n  \u003c/tr\u003e\n \u003c/table\u003e}"
+org.jsoup.nodes.Element:prepend:291->[Local Variables] "{node\u003d\n\u003ctable\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n 2\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e, fragment\u003d\n\u003cbody\u003e\n\u003ctable\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n 2\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e\n\u003c/body\u003e, nodes\u003d[\n\u003ctable\u003e\n\u003ctr\u003e\n\u003ctd\u003e\n 2\n\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/table\u003e]}"
+org.jsoup.nodes.Element:prepend:292->[Method Call] Call Stack: org.jsoup.nodes.Element.prepend:292 -> org.jsoup.nodes.Element.prependChild
+org.jsoup.nodes.Element:prepend:288->[Local Variables] "{fragment\u003d\n\u003cbody\u003e\n  \u003ctable\u003e\n   \u003ctr\u003e\n    \u003ctd\u003e\n     2\n    \u003c/td\u003e\n   \u003c/tr\u003e\n  \u003c/table\u003e\n\u003c/body\u003e, nodes\u003d[\n  \u003ctable\u003e\n   \u003ctr\u003e\n    \u003ctd\u003e\n     2\n    \u003c/td\u003e\n   \u003c/tr\u003e\n  \u003c/table\u003e]}"
+org.jsoup.nodes.Element:prepend:289->[Control Flow] Loop Info: Line: 289, Description: while at line 289
+org.jsoup.nodes.Element:prepend:289->[Control Flow] Branch Info: Line: 289, Condition: if (i >= 0), Executed: false
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: true
+org.jsoup.parser.Parser:parse:83->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:83 -> org.jsoup.parser.Parser.parseEndTag
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: true
+org.jsoup.parser.Parser:parse:83->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:83 -> org.jsoup.parser.Parser.parseEndTag
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parse:90->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:90 -> org.jsoup.nodes.Document.normalise
+org.jsoup.nodes.Element:prepend:287->[Method Call] Call Stack: org.jsoup.nodes.Element.prepend:287 -> org.jsoup.nodes.Document.body
+org.jsoup.nodes.Element:prepend:287->[Local Variables] "{fragment\u003d\n\u003cbody\u003e\n \u003ctable\u003e\n  \u003ctr\u003e\n   \u003ctd\u003e\n    2\n   \u003c/td\u003e\n  \u003c/tr\u003e\n \u003c/table\u003e\n\u003c/body\u003e}"
+org.jsoup.nodes.Element:prepend:288->[Method Call] Call Stack: org.jsoup.nodes.Element.prepend:288 -> org.jsoup.nodes.Element.childNodes
+org.jsoup.nodes.Element:prepend:288->[Local Variables] "{nodes\u003d[\n \u003ctable\u003e\n  \u003ctr\u003e\n   \u003ctd\u003e\n    2\n   \u003c/td\u003e\n  \u003c/tr\u003e\n \u003c/table\u003e]}"
+org.jsoup.nodes.Element:prepend:289->[Method Call] Call Stack: org.jsoup.nodes.Element.prepend:289 -> java.util.List.size
+org.jsoup.nodes.Element:prepend:289->[Control Flow] Branch Info: Line: 289, Condition: if (i >= 0), Executed: true
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::handlesNestedImplicitTable ===
+Exception: junit.framework.AssertionFailedError: expected:<...> <tr><td> <table><t[r><td>3</td> <td>4</td></tr></table> </td></tr><tr><td>5]</td></tr></table>> but was:<...> <tr><td> <table><t[d>3</td> <td>4</td></table> <tr><td>5</td></tr>]</td></tr></table>>
+
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:84->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:84 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:84->[Control Flow] Branch Info: Line: 84, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:87->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:87 -> org.jsoup.parser.Parser.parseTextNode
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:82->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:82 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: true
+org.jsoup.parser.Parser:parse:83->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:83 -> org.jsoup.parser.Parser.parseEndTag
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parse:90->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:90 -> org.jsoup.nodes.Document.normalise
+org.jsoup.parser.Tag:canContain:84->[Method Call] Call Stack: org.jsoup.parser.Tag.canContain:84 -> java.lang.String.equals
+org.jsoup.parser.Tag:canContain:84->[Control Flow] Branch Info: Line: 84, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Tag:canContain:93->[Method Call] Call Stack: org.jsoup.parser.Tag.canContain:93 -> java.lang.String.equals
+org.jsoup.parser.Tag:canContain:93->[Control Flow] Branch Info: Line: 93, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Tag:canContain:93->[Control Flow] Branch Info: Line: 93, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Tag:canContain:95->[Method Call] Call Stack: org.jsoup.parser.Tag.canContain:95 -> java.lang.String.equals
+org.jsoup.parser.Tag:canContain:95->[Control Flow] Branch Info: Line: 95, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Tag:canContain:95->[Control Flow] Branch Info: Line: 95, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Parser:addChildToParent:220->[Local Variables] "{parent\u003d\n    \u003ctr\u003e\n    \u003c/tr\u003e}"
+org.jsoup.parser.Parser:addChildToParent:221->[Method Call] Call Stack: org.jsoup.parser.Parser.addChildToParent:221 -> org.jsoup.nodes.Element.tag
+org.jsoup.parser.Parser:addChildToParent:222->[Method Call] Call Stack: org.jsoup.parser.Parser.addChildToParent:222 -> org.jsoup.parser.Parser.stackHasValidParent
+org.jsoup.parser.Parser:stackHasValidParent:250->[Method Call] Call Stack: org.jsoup.parser.Parser.stackHasValidParent:250 -> java.util.LinkedList.size
+org.jsoup.parser.Parser:stackHasValidParent:250->[Control Flow] Branch Info: Line: 250, Condition: if (java.util.LinkedList.size() == java.util.LinkedList.size()), Executed: false
+org.jsoup.parser.Parser:stackHasValidParent:250->[Control Flow] Branch Info: Line: 250, Condition: if (org.jsoup.parser.Tag.equals() != 0), Executed: false
+org.jsoup.parser.Parser:stackHasValidParent:255->[Method Call] Call Stack: org.jsoup.parser.Parser.stackHasValidParent:255 -> java.util.LinkedList.size
+org.jsoup.parser.Parser:stackHasValidParent:255->[Control Flow] Branch Info: Line: 255, Condition: if (i >= 0), Executed: true
+org.jsoup.parser.Parser:stackHasValidParent:255->[Local Variables] {"i":6}
+org.jsoup.parser.Parser:stackHasValidParent:256->[Method Call] Call Stack: org.jsoup.parser.Parser.stackHasValidParent:256 -> java.util.LinkedList.get
+org.jsoup.parser.Parser:stackHasValidParent:256->[Local Variables] "{el\u003d\n    \u003ctr\u003e\n    \u003c/tr\u003e}"
+org.jsoup.parser.Parser:stackHasValidParent:257->[Method Call] Call Stack: org.jsoup.parser.Parser.stackHasValidParent:257 -> org.jsoup.nodes.Element.tag
+org.jsoup.parser.Parser:stackHasValidParent:258->[Method Call] Call Stack: org.jsoup.parser.Parser.stackHasValidParent:258 -> org.jsoup.parser.Tag.isValidParent
+org.jsoup.parser.Parser:stackHasValidParent:258->[Control Flow] Branch Info: Line: 258, Condition: if (org.jsoup.parser.Tag.isValidParent() != 0), Executed: true
+org.jsoup.parser.Parser:addChildToParent:224->[Control Flow] Branch Info: Line: 224, Condition: if (validAncestor == 0), Executed: false
+org.jsoup.parser.Parser:addChildToParent:242->[Method Call] Call Stack: org.jsoup.parser.Parser.addChildToParent:242 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.parser.Parser:addChildToParent:243->[Local Variables] "{parent\u003d\n    \u003ctr\u003e\n     \u003ctd\u003e\n     \u003c/td\u003e\n    \u003c/tr\u003e, child\u003d\n     \u003ctd\u003e\n     \u003c/td\u003e}"
+org.jsoup.parser.Parser:addChildToParent:244->[Control Flow] Branch Info: Line: 244, Condition: if (isEmptyElement == 0), Executed: true
+org.jsoup.parser.Parser:addChildToParent:245->[Method Call] Call Stack: org.jsoup.parser.Parser.addChildToParent:245 -> java.util.LinkedList.addLast
+org.jsoup.parser.Parser:addChildToParent:244->[Control Flow] Branch Info: Line: 244, Condition: if (isEmptyElement == 0), Executed: false
+org.jsoup.parser.Parser:parse:75->[Control Flow] Loop Info: Line: 75, Description: while at line 75
+org.jsoup.parser.Parser:parse:75->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:75 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parse:76->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:76 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:76->[Control Flow] Branch Info: Line: 76, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:78->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:78 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:78->[Control Flow] Branch Info: Line: 78, Condition: if (org.jsoup.parser.TokenQueue.matches() != 0), Executed: false
+org.jsoup.parser.Parser:parse:80->[Method Call] Call Stack: org.jsoup.parser.Parser.parse:80 -> org.jsoup.parser.TokenQueue.matches
+org.jsoup.parser.Parser:parse:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.jsoup.parser.TokenQueue.matches() == 0), Executed: true

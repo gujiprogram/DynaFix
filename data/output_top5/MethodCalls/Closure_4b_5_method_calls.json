@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.getType",
+    "doc": "/**\n   * Looks up a type by name.\n   *\n   * @param jsTypeName The name string.\n   * @return the corresponding JSType object or {@code null} it cannot be found\n   */",
+    "code": "public JSType getType(String jsTypeName) {\n    TemplateType templateType = templateTypes.get(jsTypeName);\n    if (templateType != null) {\n      return templateType;\n    }\n    return namesToTypes.get(jsTypeName);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType",
+    "doc": "/**\n   * Resolves a type by looking up its first component in the scope, and\n   * subsequent components as properties. The scope must have been fully\n   * parsed and a symbol table constructed.\n   * @return The type of the symbol, or null if the type could not be found.\n   */",
+    "code": "private void setReferencedAndResolvedType(JSType type, ErrorReporter t,\n      StaticScope<JSType> enclosing) {\n    if (validator != null) {\n      validator.apply(type);\n    }\n    setReferencedType(type);\n    checkEnumElementCycle(t);\n    setResolvedTypeInternal(getReferencedType());\n  }"
+  }
+]

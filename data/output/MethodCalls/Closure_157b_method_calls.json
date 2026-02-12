@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.add",
+    "doc": "/**\n   * This is to be called when we're in a statement. If the prev statement\n   * needs to be ended, add a ';'.\n   */",
+    "code": "void add(String newcode) {\n    maybeEndStatement();\n\n    if (newcode.length() == 0) {\n      return;\n    }\n\n    char c = newcode.charAt(0);\n    if ((isWordChar(c) || c == '\\\\') &&\n        isWordChar(getLastChar())) {\n      append(\" \");\n    }\n\n    append(newcode);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.endSourceMapping",
+    "doc": "/**\n   * Finishes the source mapping for the given\n   * node at the current position.\n   */",
+    "code": "void endSourceMapping(Node node) {\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.endStatement",
+    "doc": "/**\n   * Indicates the end of a statement and a ';' may need to be added.\n   * But we don't add it now, in case we're at the end of a block (in which\n   * case we don't have to add the ';').\n   * See maybeEndStatement()\n   */",
+    "code": "void endStatement() {\n    endStatement(false);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.notePreferredLineBreak",
+    "doc": "/**\n   * Appends a string to the code, keeping track of the current line length.\n   *\n   * NOTE: the string must be a complete token--partial strings or\n   * partial regexes will run the risk of being split across lines.\n   *\n   * Do not directly append newlines with this method. Instead use\n   * {@link #startNewLine}.\n   */",
+    "code": "void notePreferredLineBreak() {\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

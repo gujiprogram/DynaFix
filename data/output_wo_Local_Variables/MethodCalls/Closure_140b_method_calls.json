@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.checkFirstModule",
+    "doc": "/**\n   * Verifies that at least one module has been provided and that the first one\n   * has at least one source code input.\n   */",
+    "code": "private void checkFirstModule(JSModule[] modules) {\n    if (modules.length == 0) {\n      report(JSError.make(EMPTY_MODULE_LIST_ERROR));\n    } else if (modules[0].getInputs().isEmpty()) {\n      report(JSError.make(EMPTY_ROOT_MODULE_ERROR,\n          modules[0].getName()));\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.getAllInputsFromModules",
+    "doc": "/**\n   * Builds a single list of all module inputs. Verifies that it contains no\n   * duplicates.\n   */",
+    "code": "private CompilerInput[] getAllInputsFromModules() {\n    List<CompilerInput> inputs = new ArrayList<CompilerInput>();\n    Map<String, JSModule> inputMap = new HashMap<String, JSModule>();\n    for (JSModule module : modules) {\n      for (CompilerInput input : module.getInputs()) {\n        String inputName = input.getName();\n        JSModule firstModule = inputMap.get(inputName);\n        if (firstModule == null) {\n          inputs.add(input);\n          inputMap.put(inputName, module);\n        } else {\n          report(JSError.make(DUPLICATE_INPUT_IN_MODULES,\n              firstModule.getName(), module.getName(), inputName));\n        }\n      }\n    }\n    if (hasErrors()) {\n\n      return new CompilerInput[0];\n    }\n\n    return inputs.toArray(new CompilerInput[inputs.size()]);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.getModuleGraph",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initBasedOnOptions",
+    "doc": "/**\n   * Do any initialization that is dependent on the compiler options.\n   */",
+    "code": "private void initBasedOnOptions() {\n    if (options.sourceMapOutputPath != null) {\n      sourceMap = new SourceMap();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initInputsByNameMap",
+    "doc": "/**\n   * Creates a map to make looking up an input by name fast. Also checks for\n   * duplicate inputs.\n   */",
+    "code": "void initInputsByNameMap() {\n    inputsByName = new HashMap<String, CompilerInput>();\n    for (CompilerInput input : externs) {\n      String name = input.getName();\n      if (!inputsByName.containsKey(name)) {\n        inputsByName.put(name, input);\n      } else {\n        report(JSError.make(DUPLICATE_EXTERN_INPUT, name));\n      }\n    }\n    for (CompilerInput input : inputs) {\n      String name = input.getName();\n      if (!inputsByName.containsKey(name)) {\n        inputsByName.put(name, input);\n      } else {\n        report(JSError.make(DUPLICATE_INPUT, name));\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initOptions",
+    "doc": "/**\n   * Initialize the compiler options. Only necessary if you're not doing\n   * a normal compile() job.\n   */",
+    "code": "public void initOptions(CompilerOptions options) {\n    this.options = options;\n    if (errorManager == null) {\n      if (outStream == null) {\n        setErrorManager(\n            new LoggerErrorManager(createMessageFormatter(), logger));\n      } else {\n        PrintStreamErrorManager printer =\n            new PrintStreamErrorManager(createMessageFormatter(), outStream);\n        printer.setSummaryDetailLevel(options.summaryDetailLevel);\n        setErrorManager(printer);\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.makeCompilerInput",
+    "doc": "/**\n   * Do any initialization that is dependent on the compiler options.\n   */",
+    "code": "private CompilerInput[] makeCompilerInput(\n      JSSourceFile[] files, boolean isExtern) {\n    CompilerInput [] inputs = new CompilerInput[files.length];\n    for (int i = 0; i < files.length; ++i) {\n      inputs[i] = new CompilerInput(files[i], isExtern);\n    }\n    return inputs;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.getAstRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.JSModule.getInputs",
+    "doc": "/**\n   * Gets this module's list of source code inputs.\n   *\n   * @return A list that may be empty but not null\n   */",
+    "code": "public List<CompilerInput> getInputs() {\n    return inputs;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.JSModuleGraph.getTransitiveDepsDeepestFirst",
+    "doc": "/**\n   * Creates an iterable over the transitive dependencies of module {@code m}\n   * in a non-increasing depth ordering. The result does not include the module\n   * {@code m}.\n   *\n   * @param m A module in this graph\n   * @return The transitive dependencies of module {@code m}\n   */",
+    "code": "Set<JSModule> getTransitiveDepsDeepestFirst(JSModule m) {\n    Set<JSModule> deps = dependencyMap.get(m);\n    if (deps != null) {\n      return deps;\n    }\n    deps = new TreeSet<JSModule>(new InverseDepthComparator());\n    addDeps(deps, m);\n    dependencyMap.put(m, deps);\n    return deps;\n  }"
+  }
+]

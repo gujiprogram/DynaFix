@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.getValueTypeDeserializer",
+    "doc": "/**********************************************************\n     */",
+    "code": "public TypeDeserializer getValueTypeDeserializer() { return _valueTypeDeserializer; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.hasValueTypeDeserializer",
+    "doc": "/**********************************************************\n     */",
+    "code": "public boolean hasValueTypeDeserializer() { return (_valueTypeDeserializer != null); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateUsingArrayDelegate",
+    "doc": "/**\n     * Method that can be called to check whether a array-delegate-based creator\n     * (single-arg constructor or factory method)\n     * is available for this instantiator\n     */",
+    "code": "public boolean canCreateUsingArrayDelegate() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateUsingDelegate",
+    "doc": "/**\n     * Method that can be called to check whether a delegate-based creator (single-arg\n     * constructor or factory method)\n     * is available for this instantiator\n     */",
+    "code": "public boolean canCreateUsingDelegate() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.remove",
+    "doc": "/**\n     * Specialized method for removing specified existing entry.\n     * NOTE: entry MUST exist, otherwise an exception is thrown.\n     */",
+    "code": "public void remove(SettableBeanProperty propToRm) {\n        ArrayList<SettableBeanProperty> props = new ArrayList<SettableBeanProperty>(_size);\n        String key = getPropertyName(propToRm);\n        boolean found = false;\n\n        for (int i = 1, end = _hashArea.length; i < end; i += 2) {\n            SettableBeanProperty prop = (SettableBeanProperty) _hashArea[i];\n            if (prop == null) {\n                continue;\n            }\n            if (!found) {\n                found = key.equals(prop.getName());\n                if (found) {\n                    _propsInOrder[_findFromOrdered(prop)] = null;\n                    continue;\n                }\n            }\n            props.add(prop);\n        }\n        if (!found) {\n            throw new NoSuchElementException(\"No entry '\"+propToRm.getName()+\"' found, can't remove\");\n        }\n        init(props);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.replace",
+    "doc": "/**\n     * Specialized method that can be used to replace an existing entry\n     * (note: entry MUST exist; otherwise exception is thrown) with\n     * specified replacement.\n     */",
+    "code": "public void replace(SettableBeanProperty newProp)\n    {\n        String key = getPropertyName(newProp);\n        int ix = _findIndexInHash(key);\n\n        if (ix >= 0) {\n            SettableBeanProperty prop = (SettableBeanProperty) _hashArea[ix];\n            _hashArea[ix] = newProp;\n            _propsInOrder[_findFromOrdered(prop)] = newProp;\n            return;\n        }\n\n        throw new NoSuchElementException(\"No entry '\"+key+\"' found, can't replace\");\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$Builder.addExternal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$Builder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.construct",
+    "doc": "/**\n     * Factory method used for building actual instances: resolves deserializers\n     * and checks for \"null values\".\n     */",
+    "code": "public static PropertyBasedCreator construct(DeserializationContext ctxt,\n            ValueInstantiator valueInstantiator, SettableBeanProperty[] srcProps)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.TypeDeserializer.getTypeInclusion",
+    "doc": "/**\n     * Accessor for type information inclusion method\n     * that deserializer uses; indicates how type information\n     * is (expected to be) embedded in JSON input.\n     */",
+    "code": "public abstract As getTypeInclusion();"
+  }
+]

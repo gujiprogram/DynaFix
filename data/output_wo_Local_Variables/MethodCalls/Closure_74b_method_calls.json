@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * the name a is not.\n   *\n   * Function literals do not meet this definition, because they\n   * lexically capture variables. For example, if you have\n   * <code>\n   * function() { return a; }\n   * </code>\n   * If it is evaluated in a different scope, then it\n   * captures a different variable. Even if the function did not read\n   * any captured vairables directly, it would still fail this definition,\n   * because it affects the lifecycle of variables in the enclosing scope.\n   *\n   * However, a function literal with respect to a particular scope is\n   * a literal.\n   *\n   * @param includeFunctions If true, all function expressions will be\n   *     treated as literals.\n   */",
+    "code": "static boolean isLiteralValue(Node n, boolean includeFunctions) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (child.getType() != Token.EMPTY\n              && !isLiteralValue(child, includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child, includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.OBJECTLIT:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child.getFirstChild(), includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.FUNCTION:\n        return includeFunctions && !NodeUtil.isFunctionDeclaration(n);\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.compareToUndefined",
+    "doc": "/**\n   * @param value The value to compare to \"undefined\"\n   * @param op The boolean op to compare with\n   * @return Whether the boolean op is true or false\n   */",
+    "code": "private boolean compareToUndefined(Node value, int op) {\n    boolean valueUndefined = ((Token.NAME == value.getType()\n        && value.getString().equals(\"undefined\"))\n        || (Token.VOID == value.getType()\n            && NodeUtil.isLiteralValue(value.getFirstChild(), false)));\n    boolean valueNull = (Token.NULL == value.getType());\n    boolean equivalent = valueUndefined || valueNull;\n    switch (op) {\n      case Token.EQ:\n        return equivalent;\n      case Token.NE:\n        return !equivalent;\n      case Token.SHEQ:\n        return valueUndefined;\n      case Token.SHNE:\n        return !valueUndefined;\n      case Token.LT:\n      case Token.GT:\n      case Token.LE:\n      case Token.GE:\n        return false;\n      default:\n        throw new IllegalStateException(\"unexpected.\");\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

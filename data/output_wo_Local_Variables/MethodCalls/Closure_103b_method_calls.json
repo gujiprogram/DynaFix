@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode",
+    "doc": "/**\n   * @return True if n should be represented by a new CFG node in the control\n   * flow graph.\n   */",
+    "code": "public static boolean isEnteringNewCfgNode(Node n) {\n    Node parent = n.getParent();\n    switch (parent.getType()) {\n      case Token.BLOCK:\n      case Token.SCRIPT:\n      case Token.TRY:\n      case Token.FINALLY:\n        return true;\n      case Token.FUNCTION:\n        return n != parent.getFirstChild().getNext();\n      case Token.WHILE:\n      case Token.DO:\n      case Token.IF:\n        return NodeUtil.getConditionExpression(parent) != n;\n\n      case Token.FOR:\n        if (NodeUtil.isForIn(parent)) {\n          return n == parent.getLastChild();\n        } else {\n          return NodeUtil.getConditionExpression(parent) != n;\n        }\n      case Token.SWITCH:\n      case Token.CASE:\n      case Token.CATCH:\n      case Token.WITH:\n        return n != parent.getFirstChild();\n      default:\n        return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getNext() {\n        return next;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

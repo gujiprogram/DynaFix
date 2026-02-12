@@ -1,0 +1,160 @@
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType2 ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: string}|{b: string, c: string, e: number})
+
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeA\u003d{b: string, c: string, e: number}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:268->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:268 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:269->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:269 -> com.google.javascript.rhino.jstype.RecordType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:270 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:270 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:271->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:271 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared
+com.google.javascript.rhino.jstype.RecordType:isSubtype:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared() != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:272 -> com.google.javascript.rhino.jstype.JSType.isEquivalentTo
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Control Flow] Branch Info: Line: 272, Condition: if (com.google.javascript.rhino.jstype.JSType.isEquivalentTo() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:276->[Control Flow] Branch Info: Line: 276, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Loop Info: Line: 263, Description: while at line 263
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:272 -> com.google.javascript.rhino.jstype.JSType.isEquivalentTo
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Control Flow] Branch Info: Line: 272, Condition: if (com.google.javascript.rhino.jstype.JSType.isEquivalentTo() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:276->[Control Flow] Branch Info: Line: 276, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Loop Info: Line: 263, Description: while at line 263
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Local Variables] {"property":"c"}
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:223->[Local Variables] "{that\u003d{b: string}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:224 -> com.google.javascript.rhino.jstype.JSType.isSubtypeHelper
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Control Flow] Branch Info: Line: 224, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:229->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:229 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeObjectType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:230 -> com.google.javascript.rhino.jstype.ObjectType.isSubtype
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeB\u003d{b: string}, typeA\u003dObject}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Local Variables] {"property":"b"}
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Control Flow] Branch Info: Line: 230, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:237 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Control Flow] Branch Info: Line: 237, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:241->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:241 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType3 ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: string}|{d: number, e: string, f: string})
+
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:230 -> com.google.javascript.rhino.jstype.ObjectType.isSubtype
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeB\u003d{d: number, e: string, f: string}, typeA\u003dObject}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Local Variables] {"property":"d"}
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Control Flow] Branch Info: Line: 230, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:237 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Control Flow] Branch Info: Line: 237, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:241->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:241 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeA\u003d{a: number, b: string}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:223->[Local Variables] "{that\u003d{a: number, b: string}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:224 -> com.google.javascript.rhino.jstype.JSType.isSubtypeHelper
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Control Flow] Branch Info: Line: 224, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:229->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:229 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeObjectType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:230 -> com.google.javascript.rhino.jstype.ObjectType.isSubtype
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeB\u003d{a: number, b: string}, typeA\u003dObject}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Local Variables] {"property":"a"}
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Control Flow] Branch Info: Line: 230, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:237 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Control Flow] Branch Info: Line: 237, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:241->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:241 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeA\u003d{d: number, e: string, f: string}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:223->[Local Variables] "{that\u003d{d: number, e: string, f: string}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:224 -> com.google.javascript.rhino.jstype.JSType.isSubtypeHelper
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Control Flow] Branch Info: Line: 224, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:229->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:229 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeObjectType
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testSupAndInf ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: number}|{b: number, c: number})
+
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:270 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:271->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:271 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared
+com.google.javascript.rhino.jstype.RecordType:isSubtype:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared() != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:272 -> com.google.javascript.rhino.jstype.JSType.isEquivalentTo
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Control Flow] Branch Info: Line: 270, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Control Flow] Branch Info: Line: 272, Condition: if (com.google.javascript.rhino.jstype.JSType.isEquivalentTo() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:276->[Control Flow] Branch Info: Line: 276, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Loop Info: Line: 263, Description: while at line 263
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:223->[Local Variables] "{that\u003d{b: number}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:224 -> com.google.javascript.rhino.jstype.JSType.isSubtypeHelper
+com.google.javascript.rhino.jstype.RecordType:isSubtype:224->[Control Flow] Branch Info: Line: 224, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:229->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:229 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeObjectType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:230 -> com.google.javascript.rhino.jstype.ObjectType.isSubtype
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeB\u003d{b: number}, typeA\u003dObject}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Local Variables] {"property":"b"}
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:230->[Control Flow] Branch Info: Line: 230, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:237 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:237->[Control Flow] Branch Info: Line: 237, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:241->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:241 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:262->[Local Variables] "{typeA\u003d{a: number, b: number, c: number}}"
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Control Flow] Branch Info: Line: 263, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:isSubtype:263->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:263 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:264 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:isSubtype:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:268->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:268 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:269->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:269 -> com.google.javascript.rhino.jstype.RecordType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:270->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:270 -> com.google.javascript.rhino.jstype.JSType.isUnknownType

@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode",
+    "doc": "/**\n   * Determines if n matches the type and name for the following types of\n   * \"exits\":\n   *    - return without values\n   *    - continues and breaks with or without names.\n   * @param n The node to inspect.\n   * @param type The Token type to look for.\n   * @param labelName The name that must be associated with the exit type.\n   * @nullable labelName non-null only for breaks associated with labels.\n   * @return Whether the node matches the specified block-exit type.\n   */",
+    "code": "private static boolean matchingExitNode(Node n, int type, String labelName) {\n    if (n.getType() == type) {\n      if (type == Token.RETURN) {\n        return !n.hasChildren();\n      } else {\n        if (labelName == null) {\n          return !n.hasChildren();\n        } else {\n          return n.hasChildren()\n            && labelName.equals(n.getFirstChild().getString());\n        }\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.removeChild",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this node's children.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node child : n.children()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> children() {\n    if (first == null) {\n      return Collections.emptySet();\n    } else {\n      return new SiblingNodeIterable(first);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isBlock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isIf",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isLabel",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isTry",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

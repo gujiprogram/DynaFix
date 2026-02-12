@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserializeAndSet",
+    "doc": "/**\n     * Method called to deserialize appropriate value, given parser (and\n     * context), and set it using appropriate mechanism.\n     * Pre-condition is that passed parser must point to the first token\n     * that should be consumed to produce the value (the only value for\n     * scalars, multiple for Objects and Arrays).\n     */",
+    "code": "public abstract void deserializeAndSet(JsonParser p,\n    \t\tDeserializationContext ctxt, Object instance) throws IOException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty.getProperty",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.asParser",
+    "doc": "/**\n     * Method used to create a {@link JsonParser} that can read contents\n     * stored in this buffer. Will use default <code>_objectCodec</code> for\n     * object conversions.\n     *<p>\n     * Note: instances are not synchronized, that is, they are not thread-safe\n     * if there are concurrent appends to the underlying buffer.\n     *\n     * @return Parser that can be used for reading contents stored in this buffer\n     */",
+    "code": "public JsonParser asParser()\n    {\n        return asParser(_objectCodec);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void copyCurrentStructure(JsonParser jp) throws IOException\n    {\n        JsonToken t = jp.getCurrentToken();\n\n        if (t == JsonToken.FIELD_NAME) {\n            if (_mayHaveNativeIds) {\n                _checkNativeIds(jp);\n            }\n            writeFieldName(jp.getCurrentName());\n            t = jp.nextToken();\n        }\n\n        if (_mayHaveNativeIds) {\n            _checkNativeIds(jp);\n        }\n\n        switch (t) {\n        case START_ARRAY:\n            writeStartArray();\n            while (jp.nextToken() != JsonToken.END_ARRAY) {\n                copyCurrentStructure(jp);\n            }\n            writeEndArray();\n            break;\n        case START_OBJECT:\n            writeStartObject();\n            while (jp.nextToken() != JsonToken.END_OBJECT) {\n                copyCurrentStructure(jp);\n            }\n            writeEndObject();\n            break;\n        default: // others are simple:\n            copyCurrentEvent(jp);\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeEndArray",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final void writeEndArray() throws IOException\n    {\n        _append(JsonToken.END_ARRAY);\n        JsonWriteContext c = _writeContext.getParent();\n        if (c != null) {\n            _writeContext = c;\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeStartArray",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final void writeStartArray() throws IOException\n    {\n        _append(JsonToken.START_ARRAY);\n        _writeContext = _writeContext.createChildArrayContext();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeString",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void writeString(String text) throws IOException {\n        if (text == null) {\n            writeNull();\n        } else {\n            _append(JsonToken.VALUE_STRING, text);\n        }\n    }"
+  }
+]

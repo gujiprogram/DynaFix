@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testIssue794b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:290->[Local Variables] "{name\u003dx, defNode\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:291 -> com.google.javascript.jscomp.MaybeReachingVariableUse.getCfg
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:291 -> com.google.javascript.jscomp.ControlFlowGraph.getNode
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Local Variables] "{n\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:292->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:292 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:293->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:293 -> com.google.javascript.jscomp.graph.GraphNode.getAnnotation
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:293->[Local Variables] {"state":{"in":{"mayUseMap":{}},"out":{"mayUseMap":{}}}}
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.javascript.jscomp.DataFlowAnalysis$FlowState.getOut
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:290->[Local Variables] "{defNode\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:291 -> com.google.javascript.jscomp.MaybeReachingVariableUse.getCfg
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:291 -> com.google.javascript.jscomp.ControlFlowGraph.getNode
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:291->[Local Variables] "{n\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:292->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:292 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:293->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:293 -> com.google.javascript.jscomp.graph.GraphNode.getAnnotation
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.javascript.jscomp.DataFlowAnalysis$FlowState.getOut
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MaybeReachingVariableUse:getUses:294->[Method Call] Call Stack: com.google.javascript.jscomp.MaybeReachingVariableUse.getUses:294 -> com.google.common.collect.Multimap.get

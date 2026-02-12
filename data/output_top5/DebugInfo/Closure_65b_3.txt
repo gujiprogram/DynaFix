@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testZero ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="\0[00]"> but was:<var x="\0[]">
+
+com.google.javascript.jscomp.CodeGenerator:addJsString:947->[Local Variables] {"s":"\u0000"}
+com.google.javascript.jscomp.CodeGenerator:addJsString:948->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:948 -> java.util.Map.get
+com.google.javascript.jscomp.CodeGenerator:addJsString:949->[Control Flow] Branch Info: Line: 949, Condition: if (cached == null), Executed: true
+com.google.javascript.jscomp.CodeGenerator:addJsString:950->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:950 -> com.google.javascript.jscomp.CodeGenerator.jsString
+com.google.javascript.jscomp.CodeGenerator:addJsString:950->[Local Variables] {"cached":"\"\\0\""}
+com.google.javascript.jscomp.CodeGenerator:addJsString:951->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:951 -> java.util.Map.put
+com.google.javascript.jscomp.CodeGenerator:addJsString:949->[Control Flow] Branch Info: Line: 949, Condition: if (cached == null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:addJsString:953->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addJsString:953 -> com.google.javascript.jscomp.CodeGenerator.add

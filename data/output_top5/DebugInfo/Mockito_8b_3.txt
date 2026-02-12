@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type ===
+Exception: java.lang.StackOverflowError
+
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:87->[Control Flow] Branch Info: Line: 87, Condition: if (var3 < var3), Executed: true
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:88->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeParametersOn:88 -> org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariableIfNotPresent
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:86->[Local Variables] "{typeParameters\u003d[Ljava.lang.reflect.TypeVariable;@3e10dc6}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:87->[Control Flow] Loop Info: Line: 87, Description: while at line 87
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:87->[Control Flow] Branch Info: Line: 87, Condition: if (var3 < var3), Executed: false
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:86->[Local Variables] {"typeParameters":[]}
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeParametersOn:87->[Control Flow] Branch Info: Line: 87, Condition: if (var3 < var3), Executed: false

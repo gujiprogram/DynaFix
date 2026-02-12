@@ -1,0 +1,26 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue ===
+Exception: junit.framework.AssertionFailedError: expected:<class com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators$Bean1385> but was:<class [B>
+
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:199->[Local Variables] "{gen\u003dcom.fasterxml.jackson.core.json.WriterBasedJsonGenerator@3113a37, provider\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@213e3629, typeSer0\u003dcom.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeSerializer@4e9658b5, bean\u003dcom.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators$Bean1385@2a7b6f69}"
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:202->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:202 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getValue
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:203->[Local Variables] {"value":[1,2,3,4,5]}
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:204->[Control Flow] Branch Info: Line: 204, Condition: if (value == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:208->[Local Variables] {"ser":{"_handledType":"class [B"}}
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:209->[Control Flow] Branch Info: Line: 209, Condition: if (e == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:216->[Control Flow] Branch Info: Line: 216, Condition: if (this._forceTypeInformation != false), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:226->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:226 -> com.fasterxml.jackson.databind.JsonSerializer.serializeWithType
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest::testWithAsValue ===
+Exception: junit.framework.ComparisonFailure: expected:<...alue":12345,"type":"[thingy]"}> but was:<...alue":12345,"type":"[date]"}>
+
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:199->[Local Variables] "{gen\u003dcom.fasterxml.jackson.core.json.WriterBasedJsonGenerator@47747fb9, provider\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@3113a37, typeSer0\u003dcom.fasterxml.jackson.databind.jsontype.impl.AsExternalTypeSerializer@213e3629, bean\u003dcom.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest$AsValueThingy@4e9658b5}"
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:202->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:202 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getValue
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:203->[Local Variables] {"value":"Dec 31, 1969, 4:00:12 PM"}
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:204->[Control Flow] Branch Info: Line: 204, Condition: if (value == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:209->[Control Flow] Branch Info: Line: 209, Condition: if (e == null), Executed: true
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:211 -> java.lang.Object.getClass
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:211 -> com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:216->[Control Flow] Branch Info: Line: 216, Condition: if (this._forceTypeInformation != false), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:225->[Local Variables] {"ser":{"_handledType":"class java.util.Date"}}
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:226->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:226 -> com.fasterxml.jackson.databind.JsonSerializer.serializeWithType

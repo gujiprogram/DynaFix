@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatterBuilder::test_printParseZoneDawsonCreek ===
+Exception: java.lang.IllegalArgumentException: Invalid format: "2007-03-04 12:30 America/Dawson_Creek" is malformed at "_Creek"
+
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:447->[Local Variables] {"minDigits":4,"maxDigits":9,"fieldType":{"iOrdinal":5,"iName":"year"}}
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:448->[Control Flow] Branch Info: Line: 448, Condition: if (fieldType == null), Executed: false
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:451->[Control Flow] Branch Info: Line: 451, Condition: if (minDigits < minDigits), Executed: false
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:454->[Control Flow] Branch Info: Line: 454, Condition: if (minDigits >= 0), Executed: true
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:454->[Control Flow] Branch Info: Line: 454, Condition: if (maxDigits <= 0), Executed: false
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:457->[Control Flow] Branch Info: Line: 457, Condition: if (minDigits <= minDigits), Executed: false
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal:460 -> org.joda.time.format.DateTimeFormatterBuilder$PaddedNumber.<init>
+org.joda.time.format.DateTimeFormatterBuilder:appendSignedDecimal:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatterBuilder.appendSignedDecimal:460 -> org.joda.time.format.DateTimeFormatterBuilder.append0

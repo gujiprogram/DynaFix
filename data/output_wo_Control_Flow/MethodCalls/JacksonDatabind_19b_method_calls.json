@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.type.MapType.construct",
+    "doc": "/**********************************************************\n     */",
+    "code": "public static MapType construct(Class<?> rawType, JavaType keyT, JavaType valueT) {\n        return new MapType(rawType, keyT, valueT, null, null, false);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory.findTypeParameters",
+    "doc": "/**\n     * Method that is to figure out actual type parameters that given\n     * class binds to generic types defined by given (generic)\n     * interface or class.\n     * This could mean, for example, trying to figure out\n     * key and value types for Map implementations.\n     *\n     * @param type Sub-type (leaf type) that implements <code>expType</code>\n     */",
+    "code": "public JavaType[] findTypeParameters(JavaType type, Class<?> expType)\n    {\n         * from generic type (usually via TypeReference); and in those case\n         * types have been resolved. Alternative is that the leaf type is type-erased\n         * class, in which case this has not been done.\n         * For now simplest way to handle this is to split processing in two: latter\n         * case actually fully works; and former mostly works. In future may need to\n         * rewrite former part, which requires changes to JavaType as well.\n        if (expType == type.getParameterSource()) {\n            int count = type.containedTypeCount();\n            if (count == 0) return null;\n            JavaType[] result = new JavaType[count];\n            for (int i = 0; i < count; ++i) {\n                result[i] = type.containedType(i);\n            }\n            return result;\n        }\n         * we get generic type; ideally JavaType/SimpleType would retain information\n         * about generic declaration at main level... but let's worry about that\n         * if/when there are problems; current handling is an improvement over earlier\n         * code.\n        Class<?> raw = type.getRawClass();\n        return findTypeParameters(raw, expType, new TypeBindings(this, type));\n    }"
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "method": "[D.clone",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.linear.DecompositionSolver.solve",
+    "doc": "/** Solve the linear equation A &times; X = B for matrices A.\n     * <p>The A matrix is implicit, it is provided by the underlying\n     * decomposition algorithm.</p>\n     * @param b right-hand side of the equation A &times; X = B\n     * @return a vector X that minimizes the two norm of A &times; X - B\n     * @throws org.apache.commons.math3.exception.DimensionMismatchException\n     * if the matrices dimensions do not match.\n     * @throws SingularMatrixException\n     * if the decomposed matrix is singular.\n     */",
+    "code": "RealVector solve(final RealVector b);"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.LUDecomposition.getSolver",
+    "doc": "/**\n     * Get a solver for finding the A &times; X = B solution in exact linear\n     * sense.\n     * @return a solver\n     */",
+    "code": "public DecompositionSolver getSolver() {\n        return new Solver(lu, pivot, singular);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.getColumn",
+    "doc": "/**\n     * Get the entries at the given column index as an array. Column indices\n     * start at 0.\n     *\n     * @param column Column to be fetched.\n     * @return the array of entries in the column.\n     * @throws OutOfRangeException if the specified column index is not valid.\n     */",
+    "code": "double[] getColumn(int column) throws OutOfRangeException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.getRow",
+    "doc": "/**\n     * Get the entries at the given row index. Row indices start at 0.\n     *\n     * @param row Row to be fetched.\n     * @return the array of entries in the row.\n     * @throws OutOfRangeException if the specified row index is not valid.\n     */",
+    "code": "double[] getRow(int row) throws OutOfRangeException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.multiply",
+    "doc": "/**\n     * Returns the result of postmultiplying {@code this} by {@code m}.\n     *\n     * @param m matrix to postmultiply by\n     * @return {@code this * m}\n     * @throws DimensionMismatchException if\n     * {@code columnDimension(this) != rowDimension(m)}\n     */",
+    "code": "RealMatrix multiply(RealMatrix m)\n        throws DimensionMismatchException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealVector.toArray",
+    "doc": "/**\n     * Convert the vector to an array of {@code double}s.\n     * The array is independent from this vector data: the elements\n     * are copied.\n     *\n     * @return an array containing a copy of the vector elements.\n     */",
+    "code": "public double[] toArray() {\n        int dim = getDimension();\n        double[] values = new double[dim];\n        for (int i = 0; i < dim; i++) {\n            values[i] = getEntry(i);\n        }\n        return values;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.ConvergenceChecker.converged",
+    "doc": "/**\n     * Check if the optimization algorithm has converged.\n     *\n     * @param iteration Current iteration.\n     * @param previous Best point in the previous iteration.\n     * @param current Best point in the current iteration.\n     * @return {@code true} if the algorithm is considered to have converged.\n     */",
+    "code": "boolean converged(int iteration, PAIR previous, PAIR current);\n}"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer$Formula.ordinal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer.computeObjectiveGradient",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer.computeObjectiveValue",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.gradient.Preconditioner.precondition",
+    "doc": "/**\n     * Precondition a search direction.\n     * <p>\n     * The returned preconditioned search direction must be computed fast or\n     * the algorithm performances will drop drastically. A classical approach\n     * is to compute only the diagonal elements of the hessian and to divide\n     * the raw search direction by these elements if they are all positive.\n     * If at least one of them is negative, it is safer to return a clone of\n     * the raw search direction as if the hessian was the identity matrix. The\n     * rationale for this simplified choice is that a negative diagonal element\n     * means the current point is far from the optimum and preconditioning will\n     * not be efficient anyway in this case.\n     * </p>\n     * @param point current point at which the search direction was computed\n     * @param r raw search direction (i.e. opposite of the gradient)\n     * @return approximation of H<sup>-1</sup>r where H is the objective function hessian\n     */",
+    "code": "double[] precondition(double[] point, double[] r);\n}"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplex.getPoint",
+    "doc": "/**\n     * Get the simplex point stored at the requested {@code index}.\n     *\n     * @param index Location.\n     * @return the point at location {@code index}.\n     */",
+    "code": "public PointValuePair getPoint(int index) {\n        if (index < 0 ||\n            index >= simplex.length) {\n            throw new OutOfRangeException(index, 0, simplex.length - 1);\n        }\n        return simplex[index];\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplex.getPoints",
+    "doc": "/**\n     * Get the points of the simplex.\n     *\n     * @return all the simplex points.\n     */",
+    "code": "public PointValuePair[] getPoints() {\n        final PointValuePair[] copy = new PointValuePair[simplex.length];\n        System.arraycopy(simplex, 0, copy, 0, simplex.length);\n        return copy;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplex.getSize",
+    "doc": "/**\n     * Get simplex size.\n     * After calling the {@link #build(double[]) build} method, this method will\n     * will be equivalent to {@code getDimension() + 1}.\n     *\n     * @return the size of the simplex.\n     */",
+    "code": "public int getSize() {\n        return simplex.length;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.AbstractSimplex.iterate",
+    "doc": "/**\n     * Compute the next simplex of the algorithm.\n     *\n     * @param evaluationFunction Evaluation function.\n     * @param comparator Comparator to use to sort simplex vertices from best\n     * to worst.\n     * @throws org.apache.commons.math3.exception.TooManyEvaluationsException\n     * if the algorithm fails to converge.\n     */",
+    "code": "public abstract void iterate(final MultivariateFunction evaluationFunction,\n                                 final Comparator<PointValuePair> comparator);"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$FitnessFunction.access$000",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer$FitnessFunction.value",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.copyColumn",
+    "doc": "/**\n     * Copies a column from m1 to m2.\n     *\n     * @param m1 Source matrix.\n     * @param col1 Source column.\n     * @param m2 Target matrix.\n     * @param col2 Target column.\n     */",
+    "code": "private static void copyColumn(final RealMatrix m1, int col1,\n                                   RealMatrix m2, int col2) {\n        for (int i = 0; i < m1.getRowDimension(); i++) {\n            m2.setEntry(i, col2, m1.getEntry(i, col1));\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.getConvergenceChecker",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.max",
+    "doc": "/**\n     * @param m Input matrix.\n     * @return the maximum of the matrix element values.\n     */",
+    "code": "private static double max(final RealMatrix m) {\n        double max = -Double.MAX_VALUE;\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                double e = m.getEntry(r, c);\n                if (max < e) {\n                    max = e;\n                }\n            }\n        }\n        return max;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.min",
+    "doc": "/**\n     * @param m Input matrix.\n     * @return the minimum of the matrix element values.\n     */",
+    "code": "private static double min(final RealMatrix m) {\n        double min = Double.MAX_VALUE;\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                double e = m.getEntry(r, c);\n                if (min > e) {\n                    min = e;\n                }\n            }\n        }\n        return min;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.selectColumns",
+    "doc": "/**\n     * @param m Input matrix.\n     * @param cols Columns to select.\n     * @return Matrix representing the selected columns.\n     */",
+    "code": "private static RealMatrix selectColumns(final RealMatrix m, final int[] cols) {\n        final double[][] d = new double[m.getRowDimension()][cols.length];\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < cols.length; c++) {\n                d[r][c] = m.getEntry(r, cols[c]);\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.sortedIndices",
+    "doc": "/**\n     * Sorts fitness values.\n     *\n     * @param doubles Array of values to be sorted.\n     * @return a sorted array of indices pointing into doubles.\n     */",
+    "code": "private int[] sortedIndices(final double[] doubles) {\n        final DoubleIndex[] dis = new DoubleIndex[doubles.length];\n        for (int i = 0; i < doubles.length; i++) {\n            dis[i] = new DoubleIndex(doubles[i], i);\n        }\n        Arrays.sort(dis);\n        final int[] indices = new int[doubles.length];\n        for (int i = 0; i < doubles.length; i++) {\n            indices[i] = dis[i].index;\n        }\n        return indices;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.updateCovariance",
+    "doc": "/**\n     * Update of the covariance matrix C.\n     *\n     * @param hsig Flag indicating a small correction.\n     * @param bestArx Fitness-sorted matrix of the argument vectors producing the\n     * current offspring.\n     * @param arz Unsorted matrix containing the gaussian random values of the\n     * current offspring.\n     * @param arindex Indices indicating the fitness-order of the current offspring.\n     * @param xold xmean matrix of the previous generation.\n     */",
+    "code": "private void updateCovariance(boolean hsig, final RealMatrix bestArx,\n                                  final RealMatrix arz, final int[] arindex,"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer.updateEvolutionPaths",
+    "doc": "/**\n     * Update of the evolution paths ps and pc.\n     *\n     * @param zmean Weighted row matrix of the gaussian random numbers generating\n     * the current offspring.\n     * @param xold xmean matrix of the previous generation.\n     * @return hsig flag indicating a small correction.\n     */",
+    "code": "private boolean updateEvolutionPaths(RealMatrix zmean, RealMatrix xold) {\n        ps = ps.scalarMultiply(1 - cs).add(\n                B.multiply(zmean).scalarMultiply(\n                        Math.sqrt(cs * (2 - cs) * mueff)));\n        normps = ps.getFrobeniusNorm();\n        final boolean hsig = normps /\n            Math.sqrt(1 - Math.pow(1 - cs, 2 * iterations)) /\n            chiN < 1.4 + 2 / ((double) dimension + 1);\n        pc = pc.scalarMultiply(1 - cc);\n        if (hsig) {\n            pc = pc.add(xmean.subtract(xold).scalarMultiply(Math.sqrt(cc * (2 - cc) * mueff) / sigma));\n        }\n        return hsig;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer$LineSearch.search",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer.newPointAndDirection",
+    "doc": "/**\n     * Compute a new point (in the original space) and a new direction\n     * vector, resulting from the line search.\n     *\n     * @param p Point used in the line search.\n     * @param d Direction used in the line search.\n     * @param optimum Optimum found by the line search.\n     * @return a 2-element array containing the new point (at index 0) and\n     * the new direction (at index 1).\n     */",
+    "code": "private double[][] newPointAndDirection(double[] p,\n                                            double[] d,"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer.computeCost",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer.computeWeightedJacobian",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer.setCost",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer.setCost",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.univariate.UnivariatePointValuePair.getPoint",
+    "doc": "/**\n     * Get the point.\n     *\n     * @return the point.\n     */",
+    "code": "public double getPoint() {\n        return point;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optim.univariate.UnivariatePointValuePair.getValue",
+    "doc": "/**\n     * Get the value of the objective function.\n     *\n     * @return the stored value of the objective function.\n     */",
+    "code": "public double getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.abs",
+    "doc": "/**\n     * Absolute value.\n     * @param x number from which absolute value is requested\n     * @return abs(x)\n     */",
+    "code": "public static int abs(final int x) {\n        return (x < 0) ? -x : x;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.min",
+    "doc": "/** Compute the minimum of two values\n     * @param a first value\n     * @param b second value\n     * @return a if a is lesser or equal to b, b otherwise\n     */",
+    "code": "public static int min(final int a, final int b) {\n        return (a <= b) ? a : b;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.MathArrays.copyOf",
+    "doc": "/**\n     * Creates a copy of the {@code source} array.\n     *\n     * @param source Array to be copied.\n     * @return the copied array.\n     */",
+    "code": "public static int[] copyOf(int[] source) {\n         return copyOf(source, source.length);\n     }"
+  }
+]

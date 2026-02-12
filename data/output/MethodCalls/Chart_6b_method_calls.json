@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jfree.chart.util.AbstractObjectList.equals",
+    "doc": "/**\n     * Tests this list for equality with another object.\n     *\n     * @param obj  the object to test.\n     *\n     * @return A boolean.\n     */",
+    "code": "public boolean equals(Object obj) {\n\n        if (obj == null) {\n            return false;\n        }\n\n        if (obj == this) {\n            return true;\n        }\n\n        if (!(obj instanceof AbstractObjectList)) {\n            return false;\n        }\n\n        AbstractObjectList other = (AbstractObjectList) obj;\n        int listSize = size();\n        for (int i = 0; i < listSize; i++) {\n           if (!ObjectUtilities.equal(get(i), other.get(i))) {\n               return false;\n           }\n        }\n        return true;\n    }"
+  }
+]

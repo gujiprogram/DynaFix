@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.codec.language.Soundex.map",
+    "doc": "/**\n     * Maps the given upper-case character to its Soundex code.\n     *\n     * @param ch\n     *                  An upper-case character.\n     * @return A Soundex code.\n     * @throws IllegalArgumentException\n     *                  Thrown if <code>ch</code> is not mapped.\n     */",
+    "code": "private char map(final char ch) {\n        final int index = ch - 'A';\n        if (index < 0 || index >= this.getSoundexMapping().length) {\n            throw new IllegalArgumentException(\"The character is not mapped: \" + ch);\n        }\n        return this.getSoundexMapping()[index];\n    }"
+  }
+]

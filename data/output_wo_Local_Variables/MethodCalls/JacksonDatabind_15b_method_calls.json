@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.findSerializationConverter",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.getClassInfo",
+    "doc": "/**\n     * Method for accessing low-level information about Class this\n     * item describes.\n     */",
+    "code": "public abstract AnnotatedClass getClassInfo();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.hasRawClass",
+    "doc": "/**\n     * Method that can be used to check whether this type has\n     * specified Class as its type erasure. Put another way, returns\n     * true if instantiation of this Type is given (type-erased) Class.\n     */",
+    "code": "public final boolean hasRawClass(Class<?> clz) { return _class == clz; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JsonSerializer.serialize",
+    "doc": "/**\n     * Method that can be called to ask implementation to serialize\n     * values of type this serializer handles.\n     *\n     * @param value Value to serialize; can <b>not</b> be null.\n     * @param gen Generator used to output resulting Json content\n     * @param serializers Provider that can be used to get serializers for\n     *   serializing Objects value contains, if any.\n     */",
+    "code": "public abstract void serialize(T value, JsonGenerator gen, SerializerProvider serializers)\n        throws IOException, JsonProcessingException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializationConfig.introspect",
+    "doc": "/**\n     * Method that will introspect full bean properties for the purpose\n     * of building a bean serializer\n     */",
+    "code": "public <T extends BeanDescription> T introspect(JavaType type) {\n        return (T) getClassIntrospector().forSerialization(this, type, this);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.getConfig",
+    "doc": "/**\n     * Method for accessing configuration for the serialization processing.\n     */",
+    "code": "public final SerializationConfig getConfig() { return _config; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.getTypeFactory",
+    "doc": "/**\n     * Method for accessing configuration for the serialization processing.\n     */",
+    "code": "public final TypeFactory getTypeFactory() {\n        return _config.getTypeFactory();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerFromAnnotation",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.modifyTypeByAnnotation",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer.convertValue",
+    "doc": "/**\n     * Method called to convert from source Java value into delegate\n     * value (which will be serialized using standard Jackson serializer for delegate type)\n     *<P>\n     * The default implementation uses configured {@link Converter} to do\n     * conversion.\n     *\n     * @param value Value to convert\n     *\n     * @return Result of conversion\n     */",
+    "code": "protected Object convertValue(Object value) {\n        return _converter.convert(value);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.Converter.getOutputType",
+    "doc": "/**\n     * Method that can be used to find out actual output (target) type; this\n     * usually can be determined from type parameters, but may need\n     * to be implemented differently from programmatically defined\n     * converters (which can not change static type parameter bindings).\n     *\n     * @since 2.2\n     */",
+    "code": "public JavaType getOutputType(TypeFactory typeFactory);"
+  }
+]

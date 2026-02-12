@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang.StringUtils.contains",
+    "doc": "/**\n     * <p>Checks if String contains a search character, handling <code>null</code>.\n     * This method uses {@link String#indexOf(int)}.</p>\n     *\n     * <p>A <code>null</code> or empty (\"\") String will return <code>false</code>.</p>\n     *\n     * <pre>\n     * StringUtils.contains(null, *)    = false\n     * StringUtils.contains(\"\", *)      = false\n     * StringUtils.contains(\"abc\", 'a') = true\n     * StringUtils.contains(\"abc\", 'z') = false\n     * </pre>\n     *\n     * @param str  the String to check, may be null\n     * @param searchChar  the character to find\n     * @return true if the String contains the search character,\n     *  false if not or <code>null</code> string input\n     * @since 2.0\n     */",
+    "code": "public static boolean contains(String str, char searchChar) {\n        if (isEmpty(str)) {\n            return false;\n        }\n        return str.indexOf(searchChar) >= 0;\n    }"
+  }
+]

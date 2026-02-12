@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.joda.time.format.PeriodFormatter.getParser",
+    "doc": "/**\n     * Gets the internal parser object that performs the real parsing work.\n     *\n     * @return the internal parser\n     */",
+    "code": "public PeriodParser getParser() {\n        return iParser;\n    }"
+  },
+  {
+    "method": "org.joda.time.format.PeriodFormatter.getPrinter",
+    "doc": "/**\n     * Gets the internal printer object that performs the real printing work.\n     *\n     * @return the internal printer\n     */",
+    "code": "public PeriodPrinter getPrinter() {\n        return iPrinter;\n    }"
+  },
+  {
+    "method": "org.joda.time.format.PeriodFormatterBuilder.append0",
+    "doc": "/**\n     * Append a separator, which is output if fields are printed both before\n     * and after the separator.\n     * <p>\n     * This method changes the separator depending on whether it is the last separator\n     * to be output.\n     * <p>\n     * For example, <code>builder.appendDays().appendSeparator(\",\", \"&\").appendHours().appendSeparator(\",\", \"&\").appendMinutes()</code>\n     * will output '1,2&3' if all three fields are output, '1&2' if two fields are output\n     * and '1' if just one field is output.\n     * <p>\n     * The text will be parsed case-insensitively.\n     * <p>\n     * Note: appending a separator discontinues any further work on the latest\n     * appended field.\n     *\n     * @param text  the text to use as a separator\n     * @param finalText  the text used used if this is the final separator to be printed\n     * @param variants  set of text values which are also acceptable when parsed\n     * @return this PeriodFormatterBuilder\n     * @throws IllegalStateException if this separator follows a previous one\n     */",
+    "code": "private PeriodFormatterBuilder append0(PeriodPrinter printer, PeriodParser parser) {\n        iElementPairs.add(printer);\n        iElementPairs.add(parser);\n        iNotPrinter |= (printer == null);\n        iNotParser |= (parser == null);\n        return this;\n    }"
+  },
+  {
+    "method": "org.joda.time.format.PeriodFormatterBuilder.clearPrefix",
+    "doc": "/**\n     * Append a separator, which is output if fields are printed both before\n     * and after the separator.\n     * <p>\n     * This method changes the separator depending on whether it is the last separator\n     * to be output.\n     * <p>\n     * For example, <code>builder.appendDays().appendSeparator(\",\", \"&\").appendHours().appendSeparator(\",\", \"&\").appendMinutes()</code>\n     * will output '1,2&3' if all three fields are output, '1&2' if two fields are output\n     * and '1' if just one field is output.\n     * <p>\n     * The text will be parsed case-insensitively.\n     * <p>\n     * Note: appending a separator discontinues any further work on the latest\n     * appended field.\n     *\n     * @param text  the text to use as a separator\n     * @param finalText  the text used used if this is the final separator to be printed\n     * @param variants  set of text values which are also acceptable when parsed\n     * @return this PeriodFormatterBuilder\n     * @throws IllegalStateException if this separator follows a previous one\n     */",
+    "code": "private void clearPrefix() throws IllegalStateException {\n        if (iPrefix != null) {\n            throw new IllegalStateException(\"Prefix not followed by field\");\n        }\n        iPrefix = null;\n    }"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.gobble",
+    "doc": "/**\n     * Adds the remaining tokens to the processed tokens list.\n     *\n     * @param iter An iterator over the remaining tokens\n     */",
+    "code": "private void gobble(Iterator iter)\n    {\n        if (eatTheRest)\n        {\n            while (iter.hasNext())\n            {\n                tokens.add(iter.next());\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.init",
+    "doc": "/**\n     * Resets the members to their original state i.e. remove\n     * all of <code>tokens</code> entries and set <code>eatTheRest</code>\n     * to false.\n     */",
+    "code": "private void init()\n    {\n        eatTheRest = false;\n        tokens.clear();\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.processNonOptionToken",
+    "doc": "/**\n     * Add the special token \"<b>--</b>\" and the current <code>value</code>\n     * to the processed tokens list. Then add all the remaining\n     * <code>argument</code> values to the processed tokens list.\n     *\n     * @param value The current token\n     */",
+    "code": "private void processNonOptionToken(String value)\n    {\n            eatTheRest = true;\n            tokens.add(\"--\");\n\n        tokens.add(value);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.processOptionToken",
+    "doc": "/**\n     * <p>If an {@link Option} exists for <code>token</code> then\n     * add the token to the processed list.</p>\n     *\n     * <p>If an {@link Option} does not exist and <code>stopAtNonOption</code>\n     * is set then add the remaining tokens to the processed tokens list\n     * directly.</p>\n     *\n     * @param token The current option token\n     * @param stopAtNonOption Specifies whether flattening should halt\n     * at the first non option.\n     */",
+    "code": "private void processOptionToken(String token, boolean stopAtNonOption)\n    {\n        if (stopAtNonOption && !options.hasOption(token))\n        {\n            eatTheRest = true;\n        }\n\n\n        tokens.add(token);\n    }"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isGetProp",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isInterface",
+    "doc": "/**\n   * Two function types are equal if their signatures match. Since they don't\n   * have signatures, two interfaces are equal if their names match.\n   */",
+    "code": "return isInterface() ? getReferenceName().hashCode() : call.hashCode();\n  }\n\n  public boolean hasEqualCallType(FunctionType otherType) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.dereference",
+    "doc": "/**\n   * Dereference a type for property access.\n   *\n   * Filters null/undefined, autoboxes the resulting type, and returns it\n   * iff it's an object.\n   */",
+    "code": "public final ObjectType dereference() {\n    return autobox().toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getConstructor",
+    "doc": "/**\n   * Gets this object's constructor.\n   * @return this object's constructor or {@code null} if it is a native\n   * object (constructed natively v.s. by instantiation of a function)\n   */",
+    "code": "public abstract FunctionType getConstructor();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasOwnProperty",
+    "doc": "/**\n   * Checks whether the property whose name is given is present directly on\n   * the object.  Returns false even if it is declared on a supertype.\n   */",
+    "code": "public boolean hasOwnProperty(String propertyName) {\n    return getOwnSlot(propertyName) != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.toString",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

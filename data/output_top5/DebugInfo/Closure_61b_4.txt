@@ -1,0 +1,62 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall1 ===
+=== stdout ===
+
+=== stderr ===
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /home/common/huangzhili/defects4j_buggy/Closure_61_buggy && /home/common/huangzhili/defects4j/major/bin/ant -f /home/common/huangzhili/defects4j/framework/projects/defects4j.build.xml -Dd4j.home=/home/common/huangzhili/defects4j -Dd4j.dir.projects=/home/common/huangzhili/defects4j/framework/projects -Dbasedir=/home/common/huangzhili/defects4j_buggy/Closure_61_buggy  compile.tests 2>&1
+Buildfile: /home/common/huangzhili/defects4j/framework/projects/defects4j.build.xml
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+    [javac] /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/lib/rhino/src/mozilla/js/rhino/src/build.xml:68: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-jdk15:
+    [javac] /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/lib/rhino/src/mozilla/js/rhino/src/build.xml:87: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+properties:
+
+compile:
+    [javac] /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/lib/rhino/src/mozilla/js/rhino/toolsrc/build.xml:55: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+xmlimplsrc-compile:
+     [echo] Calling /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/lib/rhino/src/mozilla/js/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+    [javac] /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/lib/rhino/src/mozilla/js/rhino/deprecatedsrc/build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+jar:
+
+rhino-jarjar:
+   [jarjar] Updating jar: /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/build/lib/rhino.jar
+
+BUILD FAILED
+/home/common/huangzhili/defects4j_buggy/Closure_61_buggy/build.xml:86: Problem reading /home/common/huangzhili/defects4j_buggy/Closure_61_buggy/build/lib/zip1200583138.tmp
+
+Total time: 3 seconds
+Cannot compile test suite! at /home/common/huangzhili/defects4j/framework/bin/d4j/d4j-test line 134.
+Compilation failed in require at /home/common/huangzhili/defects4j/framework/bin/defects4j line 195.
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall2 ===
+Exception: java.lang.NoClassDefFoundError: com/google/javascript/jscomp/mozilla/rhino/ScriptRuntime
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testRemoveUselessOps ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:precedence:1094->[Local Variables] {"type":37}
+com.google.javascript.jscomp.NodeUtil:precedence:1094->[Local Variables] {"type":33}
+com.google.javascript.jscomp.NodeUtil:precedence:1094->[Local Variables] {"type":38}

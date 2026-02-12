@@ -1,0 +1,56 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NodeUtilTest::testLocalValue1 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNAME x 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dCALL 1 [sourcename:  [testcode] ] [free_call: 1]}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2458->[Control Flow] Branch Info: Line: 2458, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2459->[Control Flow] Branch Info: Line: 2459, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2460->[Control Flow] Branch Info: Line: 2460, Condition: if (value != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dTHIS 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNAME arguments 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename:  [testcode] ]}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects8 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNAME a 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects9 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNAME a 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2452->[Control Flow] Branch Info: Line: 2452, Condition: if (value != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new4 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] [side_effect_flags: 15] : externObjSEThis}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new6 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] : externObjSEThis}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] [side_effect_flags: 15] : externObjSEThis}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303b ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dTHIS 1 [sourcename: testcode] : F}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] [parenthesized: true] : F}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] [parenthesized: true] [side_effect_flags: 24] : F}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303 ===
+
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dTHIS 1 [sourcename: testcode] : F}"
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2424->[Local Variables] {"locals":"ALWAYS_FALSE"}
+com.google.javascript.jscomp.NodeUtil:evaluatesToLocalValue:2415->[Local Variables] "{value\u003dNEW 1 [sourcename: testcode] [parenthesized: true] [side_effect_flags: 24] : F}"

@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testCheckGlobalThisOff ===
+=== stdout ===
+
+=== stderr ===
+Running ant (compile.tests)................................................ FAIL
+Executed command:  cd /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy && /home/guji/ReflectFix_Add/defects4j_trans/major/bin/ant -f /home/guji/ReflectFix_Add/defects4j_trans/framework/projects/defects4j.build.xml -Dd4j.home=/home/guji/ReflectFix_Add/defects4j_trans -Dd4j.dir.projects=/home/guji/ReflectFix_Add/defects4j_trans/framework/projects -Dbasedir=/home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy -Dbuild.compiler=javac1.7  compile.tests 2>&1
+Buildfile: /home/guji/ReflectFix_Add/defects4j_trans/framework/projects/defects4j.build.xml
+
+rhino:
+
+properties:
+
+init:
+
+compile:
+
+compile-most:
+    [javac] /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/lib/rhino/src/mozilla/js/rhino/src/build.xml:68: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-jdk15:
+    [javac] /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/lib/rhino/src/mozilla/js/rhino/src/build.xml:87: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile:
+
+properties:
+
+compile:
+    [javac] /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/lib/rhino/src/mozilla/js/rhino/toolsrc/build.xml:55: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+xmlimplsrc-compile:
+     [echo] Calling /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/lib/rhino/src/mozilla/js/rhino/xmlimplsrc/build.xml
+
+compile:
+
+compile-all:
+
+compile:
+    [javac] /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/lib/rhino/src/mozilla/js/rhino/deprecatedsrc/build.xml:49: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+jar:
+
+rhino-jarjar:
+   [jarjar] error while reading original manifest in file: /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/build/lib/rhino.jar due to error in opening zip file
+
+BUILD FAILED
+/home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/build.xml:95: Problem reading /home/guji/ReflectFix/defects4j_buggy_trans/Closure_59_buggy/build/lib/rhino.jar
+
+Total time: 0 seconds
+Cannot compile test suite! at /home/guji/ReflectFix_Add/defects4j_trans/framework/bin/d4j/d4j-test line 134.
+Compilation failed in require at /home/guji/ReflectFix_Add/defects4j_trans/framework/bin/defects4j line 195.

@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarUtilsTest::testParseOctal ===
+Exception: java.lang.IllegalArgumentException: Invalid byte 55 at offset 11 in '777777777777' len=12
+
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:105->[Local Variables] {"TransVarLength2":12,"TransVarOffset1":0,"TransVarBuffer2":[55,55,55,55,55,55,55,55,55,55,55,55]}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Local Variables] {"TransVarResult1":0}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:107->[Local Variables] {"TransVarStart":12}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:109->[Local Variables] {"TransVarStart1":0}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarLength2 < TransVarLength2), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:117->[Control Flow] Branch Info: Line: 117, Condition: if (TransVarStart1 == 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarStart < TransVarStart), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarStart < TransVarStart), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:125->[Control Flow] Branch Info: Line: 125, Condition: if (TransVarStart1 == TransVarStart1), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:136->[Local Variables] {"TransVarTrailer1":55}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:137->[Control Flow] Branch Info: Line: 137, Condition: if (TransVarTrailer1 != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:137->[Control Flow] Branch Info: Line: 137, Condition: if (TransVarTrailer1 == TransVarTrailer1), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:141->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal:141 -> org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage

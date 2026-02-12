@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.mockito.MockSettings.defaultAnswer",
+    "doc": "/**\n     * Specifies default answers to interactions.\n     * It's quite advanced feature and typically you don't need it to write decent tests.\n     * However it can be helpful when working with legacy systems.\n     * <p>\n     * It is the default answer so it will be used <b>only when you don't</b> stub the method call.\n     *\n     * <pre>\n     *   Foo mock = mock(Foo.class, withSettings().defaultAnswer(RETURNS_SMART_NULLS));\n     *   Foo mockTwo = mock(Foo.class, withSettings().defaultAnswer(new YourOwnAnswer()));\n     *\n     *   //Below does exactly the same:\n     *   Foo mockTwo = mock(Foo.class, new YourOwnAnswer());\n     * </pre>\n     *\n     * @param defaultAnswer default answer to be used by mock when not stubbed\n     * @return settings instance so that you can fluently specify other settings\n     */",
+    "code": "MockSettings defaultAnswer(Answer defaultAnswer);"
+  },
+  {
+    "method": "org.mockito.Mockito.withSettings",
+    "doc": "/**\n     * Allows mock creation with additional mock settings.\n     * <p>\n     * Don't use it too often.\n     * Consider writing simple tests that use simple mocks.\n     * Repeat after me: simple tests push simple, KISSy, readable & maintainable code.\n     * If you cannot write a test in a simple way - refactor the code under test.\n     * <p>\n     * Examples of mock settings:\n     * <pre>\n     *   //Creates mock with different default answer & name\n     *   Foo mock = mock(Foo.class, withSettings()\n     *       .defaultAnswer(RETURNS_SMART_NULLS)\n     *       .name(\"cool mockie\"));\n     *\n     *   //Creates mock with different default answer, descriptive name and extra interfaces\n     *   Foo mock = mock(Foo.class, withSettings()\n     *       .defaultAnswer(RETURNS_SMART_NULLS)\n     *       .name(\"cool mockie\")\n     *       .extraInterfaces(Bar.class));\n     * </pre>\n     * {@link MockSettings} has been introduced for two reasons.\n     * Firstly, to make it easy to add another mock settings when the demand comes.\n     * Secondly, to enable combining different mock settings without introducing zillions of overloaded mock() methods.\n     * <p>\n     * See javadoc for {@link MockSettings} to learn about possible mock settings.\n     * <p>\n     *\n     * @return mock settings instance with defaults.\n     */",
+    "code": "public static MockSettings withSettings() {\n        return new MockSettingsImpl().defaultAnswer(RETURNS_DEFAULTS);\n    }"
+  },
+  {
+    "method": "org.mockito.internal.MockitoCore.mock",
+    "doc": "[No documentation]",
+    "code": "public <T> T mock(Class<T> classToMock, MockSettings mockSettings, boolean shouldResetOngoingStubbing) { return mock(classToMock, mockSettings); }\n    public <T> T mock(Class<T> classToMock, MockSettings mockSettings) {\n        mockingProgress.validateState();\n            mockingProgress.resetOngoingStubbing();\n        return mockUtil.createMock(classToMock, (MockSettingsImpl) mockSettings);\n    }"
+  }
+]

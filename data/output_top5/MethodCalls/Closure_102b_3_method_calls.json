@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isStatementBlock",
+    "doc": "/**\n   * @return Whether the node is of a type that contain other statements.\n   */",
+    "code": "static boolean isStatementBlock(Node n) {\n    return n.getType() == Token.SCRIPT || n.getType() == Token.BLOCK;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

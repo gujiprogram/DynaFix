@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testRecordInference ===
+Exception: junit.framework.ComparisonFailure: expected:<{[a: (boolean|undefined), b: (string|undefined)]}> but was:<{[]}>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:560->[Local Variables] "{TransVarConstraintType\u003d({a: (boolean|undefined)}|{b: (string|undefined)})}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:561->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:561 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:561->[Control Flow] Branch Info: Line: 561, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:577 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Control Flow] Branch Info: Line: 577, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testIssue785 ===
+Exception: junit.framework.ComparisonFailure: expected:<{[prop: (string|undefined)]}> but was:<{[]}>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:560->[Local Variables] "{TransVarConstraintType\u003d(string|{prop: (string|undefined)})}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:561->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:561 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:561->[Control Flow] Branch Info: Line: 561, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:577 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Control Flow] Branch Info: Line: 577, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false

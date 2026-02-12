@@ -1,0 +1,72 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.MinimizeExitPointsTest::testDontRemoveBreakInTryFinally ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:280 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Control Flow] Branch Info: Line: 280, Condition: if (com.google.javascript.rhino.Node.hasChildren() == 0), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{type\u003d116, labelName\u003db, n\u003dTRY 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dTHROW 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBREAK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:278->[Control Flow] Branch Info: Line: 278, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:282->[Control Flow] Branch Info: Line: 282, Condition: if (labelName == null), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:285->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:285 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:285->[Control Flow] Branch Info: Line: 285, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:286->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:286 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:286->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:286 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:286->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:286 -> java.lang.String.equals
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{type\u003d4, labelName\u003dnull, n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:278->[Control Flow] Branch Info: Line: 278, Condition: if (type == type), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.MinimizeExitPointsTest::testFunctionReturnOptimization ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Control Flow] Branch Info: Line: 280, Condition: if (com.google.javascript.rhino.Node.hasChildren() == 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dTRY 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:278->[Control Flow] Branch Info: Line: 278, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:280 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Control Flow] Branch Info: Line: 280, Condition: if (com.google.javascript.rhino.Node.hasChildren() == 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dTHROW 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:276->[Local Variables] "{n\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:277 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:278->[Control Flow] Branch Info: Line: 278, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:matchingExitNode:280->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode:280 -> com.google.javascript.rhino.Node.hasChildren

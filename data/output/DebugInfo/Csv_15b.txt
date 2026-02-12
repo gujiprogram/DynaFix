@@ -1,0 +1,79 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testDontQuoteEuroFirstChar ===
+Exception: junit.framework.AssertionFailedError: expected:<[€],Deux
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (quoteChar != quoteChar), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (delimChar == delimChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1195->[Control Flow] Loop Info: Line: 1195, Description: while at line 1195
+org.apache.commons.csv.CSVFormat:printAndQuote:1191->[Control Flow] Branch Info: Line: 1191, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1196->[Local Variables] {"pos":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1197->[Control Flow] Branch Info: Line: 1197, Condition: if (end < end), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1198 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Local Variables] {"c":"u"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (quoteChar != quoteChar), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (delimChar == delimChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1195->[Control Flow] Loop Info: Line: 1195, Description: while at line 1195
+org.apache.commons.csv.CSVFormat:printAndQuote:1191->[Control Flow] Branch Info: Line: 1191, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1196->[Local Variables] {"pos":3}
+org.apache.commons.csv.CSVFormat:printAndQuote:1197->[Control Flow] Branch Info: Line: 1197, Condition: if (end < end), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1198 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Local Variables] {"c":"x"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (quoteChar != quoteChar), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (delimChar == delimChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1195->[Control Flow] Loop Info: Line: 1195, Description: while at line 1195
+org.apache.commons.csv.CSVFormat:printAndQuote:1191->[Control Flow] Branch Info: Line: 1191, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1196->[Local Variables] {"pos":4}
+org.apache.commons.csv.CSVFormat:printAndQuote:1197->[Control Flow] Branch Info: Line: 1197, Condition: if (end < end), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Control Flow] Branch Info: Line: 1206, Condition: if (quote == 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1207->[Local Variables] {"pos":3}
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1208 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1183->[Control Flow] Branch Info: Line: 1183, Condition: if (newRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Control Flow] Branch Info: Line: 1206, Condition: if (quote == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1211->[Control Flow] Branch Info: Line: 1211, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1218->[Control Flow] Branch Info: Line: 1218, Condition: if (quote == 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1220->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1220 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1220->[Local Variables] {"out":{"buf":"\"€\",Deux","lock":"\"€\",Deux"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1241->[Control Flow] Branch Info: Line: 1241, Condition: if (quoteChar == quoteChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1250->[Local Variables] {"pos":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1235->[Control Flow] Loop Info: Line: 1235, Description: while at line 1235
+org.apache.commons.csv.CSVFormat:printAndQuote:1239->[Control Flow] Branch Info: Line: 1239, Condition: if (end < end), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1254->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1254 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1254->[Local Variables] {"out":{"buf":"\"€","lock":"\"€"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1255->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1255 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1255->[Local Variables] {"out":{"buf":"\"€\"","lock":"\"€\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1152->[Local Variables] {"len":4,"value":"Deux","newRecord":false,"object":"Deux","out":{"buf":"\"€\",","lock":"\"€\","}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1153->[Local Variables] {"quote":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1155->[Local Variables] {"pos":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1157->[Local Variables] {"end":4}
+org.apache.commons.csv.CSVFormat:printAndQuote:1158->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1158 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1159->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1159 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1159->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1159 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1161->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1161 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1162->[Control Flow] Branch Info: Line: 1162, Condition: if (quoteModePolicy == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1162->[Control Flow] Branch Info: Line: 1162, Condition: if (quoteModePolicy == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1164->[Local Variables] {"quoteModePolicy":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1165->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1165 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1178->[Control Flow] Branch Info: Line: 1178, Condition: if (len <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1187->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1187 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1188->[Local Variables] {"c":"D"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1189->[Control Flow] Branch Info: Line: 1189, Condition: if (newRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1189->[Control Flow] Branch Info: Line: 1189, Condition: if (c > c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1191->[Control Flow] Branch Info: Line: 1191, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1197->[Control Flow] Branch Info: Line: 1197, Condition: if (end < end), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1198 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (quoteChar != quoteChar), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (delimChar == delimChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1195->[Control Flow] Loop Info: Line: 1195, Description: while at line 1195
+org.apache.commons.csv.CSVFormat:printAndQuote:1191->[Control Flow] Branch Info: Line: 1191, Condition: if (c <= c), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1196->[Local Variables] {"pos":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1197->[Control Flow] Branch Info: Line: 1197, Condition: if (end < end), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1198 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1198->[Local Variables] {"c":"e"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1199->[Control Flow] Branch Info: Line: 1199, Condition: if (c != c), Executed: true

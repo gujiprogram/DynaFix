@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVParserTest::testHeaderMissingWithNull ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.csv.CSVParser:initializeHeader:361->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:361 -> org.apache.commons.csv.CSVFormat.getHeader
+org.apache.commons.csv.CSVParser:initializeHeader:361->[Local Variables] {"formatHeader":[]}
+org.apache.commons.csv.CSVParser:initializeHeader:362->[Control Flow] Branch Info: Line: 362, Condition: if (formatHeader != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:363->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:363 -> java.util.LinkedHashMap.<init>
+org.apache.commons.csv.CSVParser:initializeHeader:364->[Local Variables] {"hdrMap":{}}
+org.apache.commons.csv.CSVParser:initializeHeader:366->[Control Flow] Branch Info: Line: 366, Condition: if (formatHeader == 0), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:368->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:368 -> org.apache.commons.csv.CSVParser.nextRecord
+org.apache.commons.csv.CSVParser:initializeHeader:368->[Local Variables] {"nextRecord":{"recordNumber":1,"values":["a",null,"c",null,"d"]}}
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Control Flow] Branch Info: Line: 369, Condition: if (i != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:370->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:370 -> org.apache.commons.csv.CSVRecord.values
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Control Flow] Branch Info: Line: 369, Condition: if (i != null), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Local Variables] {"headerRecord":["a",null,"c",null,"d"]}
+org.apache.commons.csv.CSVParser:initializeHeader:380->[Control Flow] Branch Info: Line: 380, Condition: if (headerRecord != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Branch Info: Line: 381, Condition: if (headerRecord < headerRecord), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Local Variables] {"i":0}
+org.apache.commons.csv.CSVParser:initializeHeader:382->[Local Variables] {"header":"a"}
+org.apache.commons.csv.CSVParser:initializeHeader:383->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:383 -> java.util.Map.containsKey
+org.apache.commons.csv.CSVParser:initializeHeader:383->[Local Variables] {"containsHeader":false}
+org.apache.commons.csv.CSVParser:initializeHeader:384->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:384 -> java.lang.String.trim
+org.apache.commons.csv.CSVParser:initializeHeader:384->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:384 -> java.lang.String.isEmpty
+org.apache.commons.csv.CSVParser:initializeHeader:384->[Local Variables] {"emptyHeader":false}
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (containsHeader != 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (emptyHeader != 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (org.apache.commons.csv.CSVFormat.getIgnoreEmptyHeaders() == 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:389->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:389 -> java.lang.Integer.valueOf
+org.apache.commons.csv.CSVParser:initializeHeader:389->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:389 -> java.util.Map.put
+org.apache.commons.csv.CSVParser:initializeHeader:380->[Local Variables] {"hdrMap":{"a":0}}
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Loop Info: Line: 381, Description: while at line 381
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Branch Info: Line: 381, Condition: if (headerRecord < headerRecord), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Local Variables] {"i":1}
+org.apache.commons.csv.CSVParser:initializeHeader:383->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:383 -> java.util.Map.containsKey
+org.apache.commons.csv.CSVParser:initializeHeader:384->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:384 -> java.lang.String.trim

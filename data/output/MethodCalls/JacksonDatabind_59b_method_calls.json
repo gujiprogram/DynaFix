@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getBindings",
+    "doc": "/**\n     * @since 2.7\n     */",
+    "code": "public abstract TypeBindings getBindings();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getKeyType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getKeyType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isContainerType",
+    "doc": "/**\n     * @return True if type represented is a container type; this includes\n     *    array, Map and Collection types.\n     */",
+    "code": "public abstract boolean isContainerType();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isMapLikeType",
+    "doc": "/**\n     * @return True if type is either true {@link java.util.Map} type,\n     *    or something similar (meaning it has at least two type parameter;\n     *    first one describing key type, second value type)\n     */",
+    "code": "public boolean isMapLikeType() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeBindings.create",
+    "doc": "/**\n     * Factory method for constructing bindings for given class using specified type\n     * parameters.\n     */",
+    "code": "public static TypeBindings create(Class<?> erasedType, List<JavaType> typeList)\n    {\n        JavaType[] types = (typeList == null || typeList.isEmpty()) ?\n                NO_TYPES : typeList.toArray(new JavaType[typeList.size()]);\n        return create(erasedType, types);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeBindings.isEmpty",
+    "doc": "/**\n     * Find type bound to specified name, if there is one; returns bound type if so, null if not.\n     */",
+    "code": "public boolean isEmpty() {\n        return (_types.length == 0);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory._fromClass",
+    "doc": "/**\n     * Method for constructing a type instance with specified parameterization.\n     *\n     * @since 2.6\n     *\n     * @deprecated Since 2.7\n     */",
+    "code": "return _fromClass(null, rawType, TypeBindings.create(rawType, parameterTypes));\n    }\n\n    @Deprecated\n    public JavaType constructSimpleType(Class<?> rawType, Class<?> parameterTarget,\n            JavaType[] parameterTypes)\n    {"
+  }
+]

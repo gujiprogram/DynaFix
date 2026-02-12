@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationConfig.introspectClassAnnotations",
+    "doc": "/**\n     * Accessor for getting bean description that only contains class\n     * annotations: useful if no getter/setter/creator information is needed.\n     */",
+    "code": "public BeanDescription introspectClassAnnotations(JavaType type) {\n        return getClassIntrospector().forClassAnnotations(this, type, this);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.getConfig",
+    "doc": "/**********************************************************\n     */",
+    "code": "public DeserializationConfig getConfig() { return _config; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isEnumType",
+    "doc": "/**\n     * Convenience method for checking whether underlying Java type\n     * is a concrete class or not: abstract classes and interfaces\n     * are not.\n     */",
+    "code": "public final boolean isEnumType() { return _class.isEnum(); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig.hasKeyDeserializers",
+    "doc": "/**\n     * Fluent/factory method used to construct a configuration object that\n     * has same configuration as this instance plus specified additional\n     * value instantiator provider object.\n     * Added instantiator provider has the highest priority (that is, it\n     * gets called before any already registered resolver).\n     *\n     * @param instantiators Object that can provide {@link com.fasterxml.jackson.databind.deser.ValueInstantiator}s for\n     *    constructing POJO values during deserialization\n     */",
+    "code": "public boolean hasKeyDeserializers() { return _additionalKeyDeserializers.length > 0; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig.keyDeserializers",
+    "doc": "/**\n     * Fluent/factory method used to construct a configuration object that\n     * has same configuration as this instance plus specified additional\n     * value instantiator provider object.\n     * Added instantiator provider has the highest priority (that is, it\n     * gets called before any already registered resolver).\n     *\n     * @param instantiators Object that can provide {@link com.fasterxml.jackson.databind.deser.ValueInstantiator}s for\n     *    constructing POJO values during deserialization\n     */",
+    "code": "public Iterable<KeyDeserializers> keyDeserializers() {\n        return new ArrayIterator<KeyDeserializers>(_additionalKeyDeserializers);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory._createEnumKeyDeserializer",
+    "doc": "/**********************************************************\n     */",
+    "code": "return _createEnumKeyDeserializer(TransVarDeserializationContext, TransVarTypeObject);\n            }\n            TransVarKeyDeserializer = StdKeyDeserializers.findStringBasedKeyDeserializer(TransVarConfig1, TransVarTypeObject);\n        }\n        if (!(!(TransVarKeyDeserializer != null))) {\n            if (!(!(_factoryConfig.hasDeserializerModifiers()))) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.KeyDeserializers.findKeyDeserializer",
+    "doc": "/**\n * Interface that defines API for simple extensions that can provide additional deserializers\n * for deserializer Map keys of various types, from JSON property names.\n * Access is by a single callback method; instance is to either return\n * a configured {@link KeyDeserializer} for specified type, or null to indicate that it\n * does not support handling of the type. In latter case, further calls can be made\n * for other providers; in former case returned key deserializer is used for handling of\n * key instances of specified type.\n */",
+    "code": "public KeyDeserializer findKeyDeserializer(JavaType type, DeserializationConfig config, BeanDescription beanDesc) throws JsonMappingException;\n}"
+  }
+]

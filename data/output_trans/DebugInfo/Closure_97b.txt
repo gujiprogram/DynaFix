@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldBitShifts ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:702->[Control Flow] Branch Info: Line: 702, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:702->[Control Flow] Branch Info: Line: 702, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:706 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:707->[Local Variables] {"TransBreakFlag0":false}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:706->[Control Flow] Branch Info: Line: 706, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:709->[Local Variables] {"TransVarRightNode":-1.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:710->[Control Flow] Branch Info: Line: 710, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:710->[Control Flow] Branch Info: Line: 710, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:710->[Control Flow] Branch Info: Line: 710, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:715->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:715 -> com.google.javascript.rhino.Node.newNumber
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:715->[Local Variables] {"TransVarNewNode":{"number":-1.0,"type":39,"sourcePosition":-1}}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:716 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:716 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Local Variables] "{TransVarNewNode\u003dNUMBER -1.0 1 [sourcefile: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:717->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:717 -> com.google.javascript.jscomp.PeepholeFoldConstants.reportCodeChange
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:716 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:716 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:716->[Local Variables] "{TransVarNewNode\u003dNUMBER 2.147483647E9 1 [sourcefile: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:717->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:717 -> com.google.javascript.jscomp.PeepholeFoldConstants.reportCodeChange
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:655->[Local Variables] "{TransVarNewRight\u003dNUMBER 0.0 1 [sourcefile: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:656->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:656 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:656->[Control Flow] Branch Info: Line: 656, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:656->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:656 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:656->[Control Flow] Branch Info: Line: 656, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:661->[Local Variables] {"TransVarRightNode":0.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:662->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:662 -> com.google.javascript.rhino.Node.getDouble
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:663->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:663 -> com.google.javascript.rhino.Node.getDouble
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:666->[Local Variables] {"TransVarLeftRval":0.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:667->[Control Flow] Branch Info: Line: 667, Condition: if (TransVarNewLval >= 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:667->[Control Flow] Branch Info: Line: 667, Condition: if (TransVarNewLval > 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:677->[Control Flow] Branch Info: Line: 677, Condition: if (TransVarLeftRval >= 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:677->[Control Flow] Branch Info: Line: 677, Condition: if (TransVarLeftRval >= 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:684->[Control Flow] Branch Info: Line: 684, Condition: if (TransVarNewLval != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:689->[Local Variables] {"TransVarRvalInteger":0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:690->[Control Flow] Branch Info: Line: 690, Condition: if (TransVarLeftRval != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:697->[Local Variables] {"TransBreakFlag0":true}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:698->[Control Flow] Branch Info: Line: 698, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:698->[Control Flow] Branch Info: Line: 698, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:698->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:698 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:698->[Control Flow] Branch Info: Line: 698, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:698->[Control Flow] Branch Info: Line: 698, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:702->[Control Flow] Branch Info: Line: 702, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:702->[Control Flow] Branch Info: Line: 702, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldShift:702->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldShift:702 -> com.google.javascript.rhino.Node.getType

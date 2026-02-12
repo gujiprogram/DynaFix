@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.ensurePropertyDeclaredHelper",
+    "doc": "/**\n   * Declares a property on its owner, if necessary.\n   * @return True if a property was declared.\n   */",
+    "code": "private boolean ensurePropertyDeclaredHelper(\n      Node getprop, ObjectType objectType) {\n    String propName = getprop.getLastChild().getString();\n    String qName = getprop.getQualifiedName();\n    if (qName != null) {\n      Var var = syntacticScope.getVar(qName);\n      if (var != null && !var.isTypeInferred()) {\n        if (propName.equals(\"prototype\") ||\n            (!objectType.hasOwnProperty(propName) &&\n             (!objectType.isInstanceType() ||\n                 (var.isExtern() && !objectType.isNativeObjectType())))) {\n          return objectType.defineDeclaredProperty(\n              propName, var.getType(), getprop);\n        }\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined",
+    "doc": "/**\n   * If this is a union type, returns a union type that does not include\n   * the null or undefined type.\n   */",
+    "code": "public JSType restrictByNotNullOrUndefined() {\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.defineInferredProperty",
+    "doc": "/**\n   * Defines a property whose type is inferred.\n   * @param propertyName the property's name\n   * @param type the type\n   * @param propertyNode the node corresponding to the inferred definition of\n   *        property that might later be accessed using {@code getPropertyNode}.\n   */",
+    "code": "public final boolean defineInferredProperty(String propertyName,\n      JSType type, Node propertyNode) {\n    if (hasProperty(propertyName)) {\n      JSType originalType = getPropertyType(propertyName);\n      type = originalType == null ? type :\n          originalType.getLeastSupertype(type);\n    }\n\n    boolean result = defineProperty(propertyName, type, true,\n        propertyNode);\n\n    registry.registerPropertyOnType(propertyName, this);\n\n    return result;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasProperty",
+    "doc": "/**\n   * Sets the docInfo for the specified property from the\n   * {@link JSDocInfo} on its definition.\n   * @param info {@code JSDocInfo} for the property definition. May be\n   *        {@code null}.\n   */",
+    "code": "return hasProperty(propertyName) ?\n        getPropertyType(propertyName) : null;"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isInstanceType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared",
+    "doc": "/**\n   * Checks whether the property's type is declared.\n   */",
+    "code": "public abstract boolean isPropertyTypeDeclared(String propertyName);"
+  }
+]

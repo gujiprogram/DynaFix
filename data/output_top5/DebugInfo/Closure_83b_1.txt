@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testVersionFlag2 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:424->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:424 -> java.util.List.add
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:410->[Local Variables] {"processedArgs":["--js","/path/to/input0.js"]}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:411->[Control Flow] Loop Info: Line: 411, Description: while at line 411
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:411->[Control Flow] Branch Info: Line: 411, Condition: if (config < config), Executed: true
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:411->[Local Variables] {"arg":"--version"}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:412->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:412 -> java.util.regex.Pattern.matcher
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:412->[Local Variables] {"matcher":{"parentPattern":{"pattern":"(--[a-zA-Z_]+)\u003d(.*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":9,"lookbehindTo":0,"text":"--version","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1,-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:413->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:413 -> java.util.regex.Matcher.matches
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:413->[Control Flow] Branch Info: Line: 413, Condition: if (java.util.regex.Matcher.matches() != 0), Executed: false
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:423->[Local Variables] {"matcher":{"parentPattern":{"pattern":"(--[a-zA-Z_]+)\u003d(.*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":9,"lookbehindTo":0,"text":"--version","acceptMode":1,"first":-1,"last":0,"oldLast":0,"lastAppendPosition":0,"locals":[-1,-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:424->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:424 -> java.util.List.add
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:410->[Local Variables] {"processedArgs":["--js","/path/to/input0.js","--version"]}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:411->[Control Flow] Loop Info: Line: 411, Description: while at line 411
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:411->[Control Flow] Branch Info: Line: 411, Condition: if (config < config), Executed: false
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:428->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:428 -> org.kohsuke.args4j.CmdLineParser.<init>
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:428->[Local Variables] "{parser\u003dorg.kohsuke.args4j.CmdLineParser@40bffbca}"
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:431->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:431 -> java.util.List.toArray
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:431->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:431 -> org.kohsuke.args4j.CmdLineParser.parseArgument
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:432->[Local Variables] {"e":{"detailMessage":"Option \"--version\" takes an operand","stackTrace":[],"suppressedExceptions":[]}}
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:433->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:433 -> org.kohsuke.args4j.CmdLineException.getMessage
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:433->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:433 -> java.io.PrintStream.println
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:437->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:437 -> com.google.javascript.jscomp.CommandLineRunner$Flags.access$100
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:437->[Control Flow] Branch Info: Line: 437, Condition: if (this.flags != false), Executed: false
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:446->[Control Flow] Branch Info: Line: 446, Condition: if (this.isConfigValid != false), Executed: false
+com.google.javascript.jscomp.CommandLineRunner:initConfigFromFlags:448->[Method Call] Call Stack: com.google.javascript.jscomp.CommandLineRunner.initConfigFromFlags:448 -> org.kohsuke.args4j.CmdLineParser.printUsage

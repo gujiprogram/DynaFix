@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member\n     * of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.burstToken",
+    "doc": "/**\n     * <p>Breaks <code>token</code> into its constituent parts\n     * using the following algorithm.\n     * <ul>\n     *  <li>ignore the first character (\"<b>-</b>\")</li>\n     *  <li>foreach remaining character check if an {@link Option}\n     *  exists with that id.</li>\n     *  <li>if an {@link Option} does exist then add that character\n     *  prepended with \"<b>-</b>\" to the list of processed tokens.</li>\n     *  <li>if the {@link Option} can have an argument value and there\n     *  are remaining characters in the token then add the remaining\n     *  characters as a token to the list of processed tokens.</li>\n     *  <li>if an {@link Option} does <b>NOT</b> exist <b>AND</b>\n     *  <code>stopAtNonOption</code> <b>IS</b> set then add the special token\n     *  \"<b>--</b>\" followed by the remaining characters and also\n     *  the remaining tokens directly to the processed tokens list.</li>\n     *  <li>if an {@link Option} does <b>NOT</b> exist <b>AND</b>\n     *  <code>stopAtNonOption</code> <b>IS NOT</b> set then add that\n     *  character prepended with \"<b>-</b>\".</li>\n     * </ul>\n     * </p>\n     *\n     * @param token The current token to be <b>burst</b>\n     * @param stopAtNonOption Specifies whether to stop processing\n     * at the first non-Option encountered.\n     */",
+    "code": "protected void burstToken(String token, boolean stopAtNonOption)\n    {\n        for (int i = 1; i < token.length(); i++)\n        {\n            String ch = String.valueOf(token.charAt(i));\n\n            if (options.hasOption(ch))\n            {\n                tokens.add(\"-\" + ch);\n                currentOption = options.getOption(ch);\n\n                if (currentOption.hasArg() && (token.length() != (i + 1)))\n                {\n                    tokens.add(token.substring(i + 1));\n\n                    break;\n                }\n            }\n            else if (stopAtNonOption)\n            {\n                process(token.substring(i));\n                break;\n            }\n            else\n            {\n                tokens.add(token);\n                break;\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.gobble",
+    "doc": "/**\n     * Adds the remaining tokens to the processed tokens list.\n     *\n     * @param iter An iterator over the remaining tokens\n     */",
+    "code": "private void gobble(Iterator iter)\n    {\n        if (eatTheRest)\n        {\n            while (iter.hasNext())\n            {\n                tokens.add(iter.next());\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.init",
+    "doc": "/**\n     * Resets the members to their original state i.e. remove\n     * all of <code>tokens</code> entries, set <code>eatTheRest</code>\n     * to false and set <code>currentOption</code> to null.\n     */",
+    "code": "private void init()\n    {\n        eatTheRest = false;\n        tokens.clear();\n        currentOption = null;\n    }"
+  }
+]

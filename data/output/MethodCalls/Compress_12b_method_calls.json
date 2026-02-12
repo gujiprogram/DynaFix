@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getRecord",
+    "doc": "/**\n     * Get the next record in this tar archive. This will skip\n     * over any remaining data in the current entry, if there\n     * is one, and place the input stream at the header of the\n     * next entry.\n     * If there are no more entries in the archive, null will\n     * be returned to indicate that the end of the archive has\n     * been reached.\n     *\n     * @return The next header in the archive, or null.\n     * @throws IOException on error\n     */",
+    "code": "private byte[] getRecord() throws IOException {\n        if (hasHitEOF) {\n            return null;\n        }\n\n        byte[] headerBuf = buffer.readRecord();\n\n        if (headerBuf == null) {\n            hasHitEOF = true;\n        } else if (buffer.isEOFRecord(headerBuf)) {\n            hasHitEOF = true;\n        }\n\n        return hasHitEOF ? null : headerBuf;\n    }"
+  }
+]

@@ -1,0 +1,52 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass ===
+Exception: junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:285->[Control Flow] Branch Info: Line: 285, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:202->[Local Variables] "{parent\u003dBLOCK [synthetic: 1], n\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:203->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:203 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:207->[Control Flow] Branch Info: Line: 207, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:272->[Control Flow] Branch Info: Line: 272, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:282->[Control Flow] Branch Info: Line: 282, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:283->[Control Flow] Branch Info: Line: 283, Condition: if (com.google.javascript.rhino.Node.isCall() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:284->[Control Flow] Branch Info: Line: 284, Condition: if (com.google.javascript.rhino.Node.isAssign() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:285->[Control Flow] Branch Info: Line: 285, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:202->[Local Variables] "{parent\u003dnull, n\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:203->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:203 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:207->[Control Flow] Branch Info: Line: 207, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:272->[Control Flow] Branch Info: Line: 272, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:282->[Control Flow] Branch Info: Line: 282, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:283->[Control Flow] Branch Info: Line: 283, Condition: if (com.google.javascript.rhino.Node.isCall() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:284->[Control Flow] Branch Info: Line: 284, Condition: if (com.google.javascript.rhino.Node.isAssign() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:285->[Control Flow] Branch Info: Line: 285, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:214->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:214 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:214->[Local Variables] {"methodName":"require"}
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:215 -> java.lang.String.equals
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:215->[Control Flow] Branch Info: Line: 215, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:217->[Control Flow] Branch Info: Line: 217, Condition: if (isExpr == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:220->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:220 -> java.lang.String.equals
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:220->[Control Flow] Branch Info: Line: 220, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:222->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:222 -> java.lang.String.equals
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:222->[Control Flow] Branch Info: Line: 222, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:223->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:223 -> com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:209->[Control Flow] Branch Info: Line: 209, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:210->[Control Flow] Branch Info: Line: 210, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:250->[Control Flow] Branch Info: Line: 250, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:207->[Control Flow] Branch Info: Line: 207, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:272->[Control Flow] Branch Info: Line: 272, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:282->[Control Flow] Branch Info: Line: 282, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:283->[Control Flow] Branch Info: Line: 283, Condition: if (com.google.javascript.rhino.Node.isCall() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:284->[Control Flow] Branch Info: Line: 284, Condition: if (com.google.javascript.rhino.Node.isAssign() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:285->[Control Flow] Branch Info: Line: 285, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:202->[Local Variables] "{parent\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode], n\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:203->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:203 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:265->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.visit:265 -> com.google.javascript.jscomp.ProcessClosurePrimitives.handleTypedefDefinition
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:207->[Control Flow] Branch Info: Line: 207, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:272->[Control Flow] Branch Info: Line: 272, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:282->[Control Flow] Branch Info: Line: 282, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:283->[Control Flow] Branch Info: Line: 283, Condition: if (com.google.javascript.rhino.Node.isCall() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:visit:284->[Control Flow] Branch Info: Line: 284, Condition: if (com.google.javascript.rhino.Node.isAssign() == 0), Executed: false

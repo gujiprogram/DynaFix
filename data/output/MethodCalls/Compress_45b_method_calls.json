@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary",
+    "doc": "/**\n     * Write an long integer into a buffer as an octal string if this\n     * will fit, or as a binary number otherwise.\n     *\n     * Uses {@link #formatUnsignedOctalString} to format\n     * the value as an octal string with leading zeros.\n     * The converted number is followed by a space.\n     *\n     * @param value The value to write into the buffer.\n     * @param buf The destination buffer.\n     * @param offset The starting offset into the buffer.\n     * @param length The length of the buffer.\n     * @return The updated offset.\n     * @throws IllegalArgumentException if the value (and trailer)\n     * will not fit in the buffer.\n     * @since 1.4\n     */",
+    "code": "private static void formatBigIntegerBinary(final long value, final byte[] buf,\n                                               final int offset,"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary",
+    "doc": "/**\n     * Write an long integer into a buffer as an octal string if this\n     * will fit, or as a binary number otherwise.\n     *\n     * Uses {@link #formatUnsignedOctalString} to format\n     * the value as an octal string with leading zeros.\n     * The converted number is followed by a space.\n     *\n     * @param value The value to write into the buffer.\n     * @param buf The destination buffer.\n     * @param offset The starting offset into the buffer.\n     * @param length The length of the buffer.\n     * @return The updated offset.\n     * @throws IllegalArgumentException if the value (and trailer)\n     * will not fit in the buffer.\n     * @since 1.4\n     */",
+    "code": "private static void formatLongBinary(final long value, final byte[] buf,\n                                         final int offset, final int length,"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes",
+    "doc": "/**\n     * Write an octal long integer into a buffer.\n     *\n     * Uses {@link #formatUnsignedOctalString} to format\n     * the value as an octal string with leading zeros.\n     * The converted number is followed by a space.\n     *\n     * @param value The value to write as octal\n     * @param buf The destinationbuffer.\n     * @param offset The starting offset into the buffer.\n     * @param length The length of the buffer\n     * @return The updated offset\n     * @throws IllegalArgumentException if the value (and trailer) will not fit in the buffer\n     */",
+    "code": "public static int formatLongOctalBytes(final long value, final byte[] buf, final int offset, final int length) {\n\n        final int idx=length-1; // For space\n\n        formatUnsignedOctalString(value, buf, offset, idx);\n        buf[offset + idx] = (byte) ' '; // Trailing space\n\n        return offset + length;\n    }"
+  }
+]

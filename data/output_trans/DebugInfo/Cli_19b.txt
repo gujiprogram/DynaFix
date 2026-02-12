@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.apache.commons.cli.PosixParserTest::testUnrecognizedOption2 ===
+Exception: junit.framework.AssertionFailedError: UnrecognizedOptionException wasn't thrown
+
+org.apache.commons.cli.PosixParser:processOptionToken:231->[Local Variables] {"TransVarStopAtNonOptionValue":false,"TransVarStringToken":"-z"}
+org.apache.commons.cli.PosixParser:processOptionToken:232->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.processOptionToken:232 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.PosixParser:processOptionToken:232->[Control Flow] Branch Info: Line: 232, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.PosixParser:processOptionToken:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarStopAtNonOptionValue != 0), Executed: false

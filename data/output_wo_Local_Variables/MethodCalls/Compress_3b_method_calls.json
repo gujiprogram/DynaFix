@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writeEOFRecord",
+    "doc": "/**\n     * Write an EOF (end of archive) record to the tar archive.\n     * An EOF record consists of a record of all zeros.\n     */",
+    "code": "private void writeEOFRecord() throws IOException {\n        for (int i = 0; i < recordBuf.length; ++i) {\n            recordBuf[i] = 0;\n        }\n\n        buffer.writeRecord(recordBuf);\n    }"
+  }
+]

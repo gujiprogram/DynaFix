@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper",
+    "doc": "/**\n   * Checks if two types are invariant.\n   * @see EquivalenceMethod\n   */",
+    "code": "return checkEquivalenceHelper(that, false);\n  }\n\n  public final boolean isInvariant(JSType that) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isFunctionType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isNominalType",
+    "doc": "/**\n   * Whether this type is a nominal type (a named instance object or\n   * a named enum).\n   */",
+    "code": "public boolean isNominalType() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isRecordType",
+    "doc": "/**\n   * Downcasts this to an EnumType, or returns null if this is not an EnumType.\n   */",
+    "code": "public boolean isRecordType() {\n    return toMaybeRecordType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnionType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public final boolean isUnionType() {\n    return toMaybeUnionType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeParameterizedType",
+    "doc": "/**\n   * Downcasts this to a ParameterizedType, or returns null if this is not\n   * a function.\n   */",
+    "code": "return toMaybeParameterizedType() != null;\n  }\n\n  public ParameterizedType toMaybeParameterizedType() {"
+  }
+]

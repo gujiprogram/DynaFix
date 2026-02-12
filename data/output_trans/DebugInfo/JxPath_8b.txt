@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.compiler.CoreOperationTest::testNan ===
+Exception: junit.framework.AssertionFailedError: Evaluating <$nan > $nan> expected:<false> but was:<true>
+
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:86->[Control Flow] Branch Info: Line: 86, Condition: if (TransVarRightDouble < 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:86->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:86 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.evaluateCompare
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:59->[Local Variables] "{TransVarRight2\u003dExpression context [0] $nan, TransVarLeft1\u003dExpression context [0] $nan}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:60->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:60 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.reduce
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:61->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:61 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.reduce
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:63->[Control Flow] Branch Info: Line: 63, Condition: if (TransVarLeft1 != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:67->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:67 -> org.apache.commons.jxpath.ri.axes.InitialContext.reset
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:63->[Control Flow] Branch Info: Line: 63, Condition: if (TransVarLeft1 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:69->[Control Flow] Branch Info: Line: 69, Condition: if (TransVarRight2 != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:73->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:73 -> org.apache.commons.jxpath.ri.axes.InitialContext.reset
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:69->[Control Flow] Branch Info: Line: 69, Condition: if (TransVarRight2 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:75->[Control Flow] Branch Info: Line: 75, Condition: if (TransVarLeft1 != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:75->[Control Flow] Branch Info: Line: 75, Condition: if (TransVarRight2 != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:76->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:76 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.findMatch
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:59->[Local Variables] "{TransVarRight2\u003d$nan, TransVarLeft1\u003d$nan}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:60->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:60 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.reduce
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:61->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:61 -> org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.reduce
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:63->[Control Flow] Branch Info: Line: 63, Condition: if (TransVarLeft1 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:69->[Control Flow] Branch Info: Line: 69, Condition: if (TransVarRight2 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:75->[Control Flow] Branch Info: Line: 75, Condition: if (TransVarLeft1 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:75->[Control Flow] Branch Info: Line: 75, Condition: if (TransVarRight2 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:78->[Control Flow] Branch Info: Line: 78, Condition: if (TransVarLeft1 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:81->[Control Flow] Branch Info: Line: 81, Condition: if (TransVarRight2 != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:84->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:84 -> org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:84->[Local Variables] "{TransVarLeftDouble\u003dNaN}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:85->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression.compute:85 -> org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:85->[Local Variables] "{TransVarRightDouble\u003dNaN}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationRelationalExpression:compute:86->[Control Flow] Branch Info: Line: 86, Condition: if (TransVarRightDouble == 0), Executed: false

@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormatTest::testLang538 ===
+Exception: junit.framework.ComparisonFailure: dateTime expected:<2009-10-16T[16]:42:16.000Z> but was:<2009-10-16T[08]:42:16.000Z>
+
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Local Variables] {"i":25}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:592->[Local Variables] {"indexRef":[25]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:593 -> org.apache.commons.lang3.time.FastDateFormat.parseToken
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Local Variables] {"indexRef":[28],"token":"\u0027Z"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:595->[Local Variables] {"i":28}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:596 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Local Variables] {"tokenLen":2}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:597->[Control Flow] Branch Info: Line: 597, Condition: if (tokenLen == 0), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:602->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:602 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:603->[Local Variables] {"c":"\u0027"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:683 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Local Variables] {"sub":"Z"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:684 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Control Flow] Branch Info: Line: 684, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:685->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:685 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:685->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:685 -> org.apache.commons.lang3.time.FastDateFormat$CharacterLiteral.<init>
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:693->[Local Variables] {"rule":{"mValue":"Z"}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":1,"mSize":4},{"mValue":"-"},{},{"mValue":"-"},{"mField":5},{"mValue":"T"},{"mField":11},{"mValue":":"},{"mField":12},{"mValue":":"},{"mField":13},{"mValue":"."},{"mField":14,"mSize":3},{"mValue":"Z"}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:592->[Local Variables] {"indexRef":[21]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:593 -> org.apache.commons.lang3.time.FastDateFormat.parseToken
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Local Variables] {"token":"\u0027."}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:596 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:597->[Control Flow] Branch Info: Line: 597, Condition: if (tokenLen == 0), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:602->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:602 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:603->[Local Variables] {"c":"\u0027"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:683 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Local Variables] {"sub":"."}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:684 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Control Flow] Branch Info: Line: 684, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:685->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:685 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:685->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:685 -> org.apache.commons.lang3.time.FastDateFormat$CharacterLiteral.<init>
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:693->[Local Variables] {"rule":{"mValue":"."}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":1,"mSize":4},{"mValue":"-"},{},{"mValue":"-"},{"mField":5},{"mValue":"T"},{"mField":11},{"mValue":":"},{"mField":12},{"mValue":":"},{"mField":13},{"mValue":"."}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Local Variables] {"i":22}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:592->[Local Variables] {"indexRef":[22]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:593 -> org.apache.commons.lang3.time.FastDateFormat.parseToken
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Local Variables] {"indexRef":[24],"token":"SSS"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:595->[Local Variables] {"i":24}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:596 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Local Variables] {"tokenLen":3}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:597->[Control Flow] Branch Info: Line: 597, Condition: if (tokenLen == 0), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:602->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:602 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:603->[Local Variables] {"c":"S"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:642->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:642 -> org.apache.commons.lang3.time.FastDateFormat.selectNumberRule
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:642->[Local Variables] {"rule":{"mField":14,"mSize":3}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":1,"mSize":4},{"mValue":"-"},{},{"mValue":"-"},{"mField":5},{"mValue":"T"},{"mField":11},{"mValue":":"},{"mField":12},{"mValue":":"},{"mField":13},{"mValue":"."},{"mField":14,"mSize":3}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: true

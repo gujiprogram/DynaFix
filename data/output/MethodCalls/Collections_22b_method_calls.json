@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.collections4.map.ListOrderedMap.put",
+    "doc": "/**\n     * Gets the previous key to the one specified using insert order.\n     * This method performs a list search to find the key and is O(n).\n     *\n     * @param key  the key to find previous for\n     * @return the previous key, null if no match or at start\n     */",
+    "code": "public V put(final K key, final V value) {\n        if (decorated().containsKey(key)) {\n            return decorated().put(key, value);\n        } else {\n            final V result = decorated().put(key, value);\n            insertOrder.add(key);\n            return result;\n        }\n    }"
+  }
+]

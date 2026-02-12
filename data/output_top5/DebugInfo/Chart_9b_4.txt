@@ -1,0 +1,68 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testBug1864222 ===
+Exception: java.lang.IllegalArgumentException: Requires start <= end.
+
+org.jfree.data.time.TimeSeries:add:574->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:574 -> org.jfree.data.time.TimeSeriesDataItem.<init>
+org.jfree.data.time.TimeSeries:add:574->[Local Variables] {"item":{"period":{"serialDate":{"serial":38748,"day":31,"month":1,"year":2006},"firstMillisecond":1138694400000,"lastMillisecond":1138780799999},"value":1.0}}
+org.jfree.data.time.TimeSeries:add:491->[Control Flow] Branch Info: Line: 491, Condition: if (item == null), Executed: false
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> java.lang.Object.getClass
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> java.lang.Object.equals
+org.jfree.data.time.TimeSeries:add:494->[Control Flow] Branch Info: Line: 494, Condition: if (java.lang.Object.equals() == 0), Executed: false
+org.jfree.data.time.TimeSeries:add:506->[Local Variables] {"added":false}
+org.jfree.data.time.TimeSeries:add:507->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:507 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:507->[Local Variables] {"count":1}
+org.jfree.data.time.TimeSeries:add:508->[Control Flow] Branch Info: Line: 508, Condition: if (count == 0), Executed: false
+org.jfree.data.time.TimeSeries:add:513->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:513 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:513->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:513 -> org.jfree.data.time.TimeSeries.getTimePeriod
+org.jfree.data.time.TimeSeries:add:513->[Local Variables] {"last":{"serialDate":{"serial":38583,"day":19,"month":8,"year":2005},"firstMillisecond":1124434800000,"lastMillisecond":1124521199999}}
+org.jfree.data.time.TimeSeries:add:514->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:514 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:514->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:514 -> org.jfree.data.time.RegularTimePeriod.compareTo
+org.jfree.data.time.TimeSeries:add:514->[Control Flow] Branch Info: Line: 514, Condition: if (org.jfree.data.time.RegularTimePeriod.compareTo() > 0), Executed: true
+org.jfree.data.time.TimeSeries:add:515->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:515 -> java.util.List.add
+org.jfree.data.time.TimeSeries:add:535->[Local Variables] {"added":true}
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:538->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:538 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:538->[Control Flow] Branch Info: Line: 538, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.time.TimeSeries:add:542->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:542 -> org.jfree.data.time.TimeSeries.removeAgedItems
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:546->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:546 -> org.jfree.data.time.TimeSeries.fireSeriesChanged
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:513->[Local Variables] {"last":{"year":2000,"firstMillisecond":946713600000,"lastMillisecond":978335999999}}
+org.jfree.data.time.TimeSeries:add:514->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:514 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:514->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:514 -> org.jfree.data.time.RegularTimePeriod.compareTo
+org.jfree.data.time.TimeSeries:add:514->[Control Flow] Branch Info: Line: 514, Condition: if (org.jfree.data.time.RegularTimePeriod.compareTo() > 0), Executed: true
+org.jfree.data.time.TimeSeries:add:515->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:515 -> java.util.List.add
+org.jfree.data.time.TimeSeries:add:535->[Local Variables] {"added":true}
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:538->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:538 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:538->[Control Flow] Branch Info: Line: 538, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.time.TimeSeries:add:542->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:542 -> org.jfree.data.time.TimeSeries.removeAgedItems
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:546->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:546 -> org.jfree.data.time.TimeSeries.fireSeriesChanged
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:560->[Local Variables] {"period":{"serialDate":{"serial":38583,"day":19,"month":8,"year":2005},"firstMillisecond":1124434800000,"lastMillisecond":1124521199999},"value":1.0}
+org.jfree.data.time.TimeSeries:add:574->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:574 -> org.jfree.data.time.TimeSeriesDataItem.<init>
+org.jfree.data.time.TimeSeries:add:574->[Local Variables] {"item":{"period":{"serialDate":{"serial":38583,"day":19,"month":8,"year":2005},"firstMillisecond":1124434800000,"lastMillisecond":1124521199999},"value":1.0}}
+org.jfree.data.time.TimeSeries:add:491->[Control Flow] Branch Info: Line: 491, Condition: if (item == null), Executed: false
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> java.lang.Object.getClass
+org.jfree.data.time.TimeSeries:add:494->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:494 -> java.lang.Object.equals
+org.jfree.data.time.TimeSeries:add:494->[Control Flow] Branch Info: Line: 494, Condition: if (java.lang.Object.equals() == 0), Executed: false
+org.jfree.data.time.TimeSeries:add:506->[Local Variables] {"added":false}
+org.jfree.data.time.TimeSeries:add:507->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:507 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:507->[Local Variables] {"count":0}
+org.jfree.data.time.TimeSeries:add:508->[Control Flow] Branch Info: Line: 508, Condition: if (count == 0), Executed: true
+org.jfree.data.time.TimeSeries:add:509->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:509 -> java.util.List.add
+org.jfree.data.time.TimeSeries:add:535->[Local Variables] {"added":true}
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:538->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:538 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:538->[Control Flow] Branch Info: Line: 538, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.time.TimeSeries:add:542->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:542 -> org.jfree.data.time.TimeSeries.removeAgedItems
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:546->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:546 -> org.jfree.data.time.TimeSeries.fireSeriesChanged
+org.jfree.data.time.TimeSeries:add:536->[Control Flow] Branch Info: Line: 536, Condition: if (added != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:545->[Control Flow] Branch Info: Line: 545, Condition: if (notify != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:560->[Local Variables] {"period":{"serialDate":{"serial":38748,"day":31,"month":1,"year":2006},"firstMillisecond":1138694400000,"lastMillisecond":1138780799999}}

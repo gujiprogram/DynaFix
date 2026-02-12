@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isInterface",
+    "doc": "/**\n   * Two function types are equal if their signatures match. Since they don't\n   * have signatures, two interfaces are equal if their names match.\n   */",
+    "code": "return isInterface() ? getReferenceName().hashCode() : call.hashCode();\n  }\n\n  public boolean hasEqualCallType(FunctionType otherType) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isRecordType",
+    "doc": "/**\n   * Downcasts this to an EnumType, or returns null if this is not an EnumType.\n   */",
+    "code": "public boolean isRecordType() {\n    return toMaybeRecordType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isSubtypeHelper",
+    "doc": "/**\n   * Whether this type is meaningfully different from {@code that} type.\n   * This is a trickier check than pure equality, because it has to properly\n   * handle unknown types.\n   *\n   * @see <a href=\"http://www.youtube.com/watch?v=_RpSv3HjpEw\">Unknown\n   *     unknowns</a>\n   */",
+    "code": "return isSubtypeHelper(this, that);\n  }\n\n  public boolean differsFrom(JSType that) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnionType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public final boolean isUnionType() {\n    return toMaybeUnionType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeRecordType",
+    "doc": "/**\n   * Downcasts this to a RecordType, or returns null if this is not\n   * a RecordType.\n   */",
+    "code": "return toMaybeRecordType() != null;\n  }\n\n  RecordType toMaybeRecordType() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toObjectType",
+    "doc": "/**\n   * Casts this to an ObjectType, or returns null if this is not an ObjectType.\n   *\n   * Does not change the underlying JS type. If you want to simulate JS\n   * autoboxing or dereferencing, you should use autoboxesTo() or dereference().\n   * Those methods may change the underlying JS type.\n   */",
+    "code": "public ObjectType toObjectType() {\n    return this instanceof ObjectType ? (ObjectType) this : null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getConstructor",
+    "doc": "/**\n   * Gets this object's constructor.\n   * @return this object's constructor or {@code null} if it is a native\n   * object (constructed natively v.s. by instantiation of a function)\n   */",
+    "code": "public abstract FunctionType getConstructor();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.getConstructor",
+    "doc": "/**\n   * Given the name of a native object property, checks whether the property is\n   * present on the object and different from the native one.\n   */",
+    "code": "public FunctionType getConstructor() {\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.implicitPrototypeChainIsUnknown",
+    "doc": "/**\n   * This should only be reset on the FunctionPrototypeType, only to fix an\n   * incorrectly established prototype chain due to the user having a mismatch\n   * in super class declaration, and only before properties on that type are\n   * processed.\n   */",
+    "code": "private boolean implicitPrototypeChainIsUnknown() {\n    ObjectType p = getImplicitPrototype();\n    while (p != null) {\n      if (p.isUnknownType()) {\n        return true;\n      }\n      p = p.getImplicitPrototype();\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.isImplicitPrototype",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.isUnknownType",
+    "doc": "/**\n   * Gets the number of properties of this object.\n   */",
+    "code": "return isUnknownType() || getSlot(propertyName) != null;\n  }\n\n  @Override\n  public boolean hasOwnProperty(String propertyName) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.isSubtype",
+    "doc": "/**\n   * Creates a record type.\n   *\n   * @param registry The type registry under which this type lives.\n   * @param properties A map of all the properties of this record type.\n   * @throws IllegalStateException if the {@code RecordProperty} associated\n   *         with a property is null.\n   */",
+    "code": "public boolean isSubtype(JSType that) {\n    if (JSType.isSubtypeHelper(this, that)) {\n      return true;\n    }\n\n    if (registry.getNativeObjectType(\n            JSTypeNative.OBJECT_TYPE).isSubtype(that)) {\n      return true;\n    }\n\n    if (!that.isRecordType()) {\n      return false;\n    }\n\n    return RecordType.isSubtype(this, that.toMaybeRecordType());\n  }"
+  }
+]

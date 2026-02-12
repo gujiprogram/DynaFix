@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype",
+    "doc": "/**\n   * Given a constructor or an interface type, find out whether the unknown\n   * type is a supertype of the current type.\n   */",
+    "code": "private static boolean hasUnknownOrEmptySupertype(FunctionType ctor) {\n    Preconditions.checkArgument(ctor.isConstructor() || ctor.isInterface());\n    Preconditions.checkArgument(!ctor.isUnknownType());\n\n    while (true) {\n      ObjectType maybeSuperInstanceType =\n          ctor.getPrototype().getImplicitPrototype();\n      if (maybeSuperInstanceType == null) {\n        return false;\n      }\n      if (maybeSuperInstanceType.isUnknownType() ||\n          maybeSuperInstanceType.isEmptyType()) {\n        return true;\n      }\n      ctor = maybeSuperInstanceType.getConstructor();\n      if (ctor == null) {\n        return false;\n      }\n      Preconditions.checkState(ctor.isConstructor() || ctor.isInterface());\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionPrototypeType.hasProperty",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getAllImplementedInterfaces",
+    "doc": "/**\n   * Returns all interfaces implemented by a class or its superclass and any\n   * superclasses for any of those interfaces. If this is called before all\n   * types are resolved, it may return an incomplete set.\n   */",
+    "code": "public Iterable<ObjectType> getAllImplementedInterfaces() {\n    Set<ObjectType> interfaces = Sets.newLinkedHashSet();\n\n    for (ObjectType type : getImplementedInterfaces()) {\n      addRelatedInterfaces(type, interfaces);\n    }\n    return interfaces;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getPrototype",
+    "doc": "/**\n   * Gets the {@code prototype} property of this function type. This is\n   * equivalent to {@code (ObjectType) getPropertyType(\"prototype\")}.\n   */",
+    "code": "public FunctionPrototypeType getPrototype() {\n    if (prototype == null) {\n      setPrototype(new FunctionPrototypeType(registry, this, null));\n    }\n    return prototype;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor",
+    "doc": "/**\n   * Given a constructor or an interface type, get its superclass constructor\n   * or {@code null} if none exists.\n   */",
+    "code": "public FunctionType getSuperClassConstructor() {\n    Preconditions.checkArgument(isConstructor() || isInterface());\n    ObjectType maybeSuperInstanceType = getPrototype().getImplicitPrototype();\n    if (maybeSuperInstanceType == null) {\n      return null;\n    }\n    return maybeSuperInstanceType.getConstructor();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  public ObjectType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isInterface",
+    "doc": "/**\n   * Two function types are equal if their signatures match. Since they don't\n   * have signatures, two interfaces are equal if their names match.\n   */",
+    "code": "return isInterface() ? getReferenceName().hashCode() : call.hashCode();\n  }\n\n  public boolean hasEqualCallType(FunctionType otherType) {"
+  }
+]

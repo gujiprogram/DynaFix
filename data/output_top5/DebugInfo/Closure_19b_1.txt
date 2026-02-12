@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testNoThisInference ===
+Exception: java.lang.IllegalArgumentException: Node cannot be refined.
+
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:157->[Local Variables] "{node\u003dTHIS 1 [source_file: [testcode]] : Object, scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@76e9f00b, type\u003dnull}"
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:158->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope:158 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:175->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope:175 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:176->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope:176 -> com.google.javascript.rhino.Node.toStringTree
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:176->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope:176 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:declareNameInScope:176->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.declareNameInScope:176 -> java.lang.StringBuilder.toString

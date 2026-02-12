@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.filter.ProblemHandlerTest::testWeirdStringHandling ===
+
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:107->[Local Variables] "{p\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@425357dd, ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@2102a4d5}"
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:108->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:108 -> com.fasterxml.jackson.core.JsonParser.getValueAsString
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:108->[Local Variables] {"text":"not a uuid!"}
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:110->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:110 -> java.lang.String.length
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:110->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:110 -> java.lang.String.trim
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:110->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:110 -> java.lang.String.length
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:119->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:119 -> com.fasterxml.jackson.databind.deser.std.FromStringDeserializer._deserialize
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:127->[Local Variables] {"msg":"not a valid textual representation"}
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:135->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:135 -> com.fasterxml.jackson.databind.DeserializationContext.weirdStringException
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:135->[Local Variables] {"e":{"_value":"not a uuid!","_targetType":"class java.util.UUID","_location":{"_totalBytes":-1,"_totalChars":0,"_lineNr":1,"_columnNr":1},"detailMessage":"Can not deserialize value of type java.util.UUID from String \"not a uuid!\": not a valid textual representation","stackTrace":[],"suppressedExceptions":[]}}

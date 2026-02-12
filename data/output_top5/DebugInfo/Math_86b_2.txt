@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.apache.commons.math.linear.CholeskyDecompositionImplTest::testMath274 ===
+Exception: junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixException
+
+
+=== Debug Info for Test: org.apache.commons.math.linear.CholeskyDecompositionImplTest::testNotPositiveDefinite ===
+Exception: junit.framework.AssertionFailedError: Expected exception: org.apache.commons.math.linear.NotPositiveDefiniteMatrixException
+
+org.apache.commons.math.linear.CholeskyDecompositionImpl:getL:155->[Control Flow] Branch Info: Line: 155, Condition: if (this.cachedL == null), Executed: true
+org.apache.commons.math.linear.CholeskyDecompositionImpl:getL:156->[Method Call] Call Stack: org.apache.commons.math.linear.CholeskyDecompositionImpl.getL:156 -> org.apache.commons.math.linear.CholeskyDecompositionImpl.getLT
+org.apache.commons.math.linear.CholeskyDecompositionImpl:getL:156->[Method Call] Call Stack: org.apache.commons.math.linear.CholeskyDecompositionImpl.getL:156 -> org.apache.commons.math.linear.RealMatrix.transpose
+org.apache.commons.math.linear.CholeskyDecompositionImpl:getL:155->[Control Flow] Branch Info: Line: 155, Condition: if (this.cachedL == null), Executed: false

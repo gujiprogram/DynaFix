@@ -1,0 +1,26 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::handlesTextAfterData ===
+
+org.jsoup.parser.Parser:parseStartTag:144->[Local Variables] "{child\u003d\n \u003cscript\u003e\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:145->[Control Flow] Branch Info: Line: 145, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: true
+org.jsoup.parser.Parser:parseStartTag:146->[Local Variables] {"data":"inner"}
+org.jsoup.parser.Parser:parseStartTag:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.jsoup.parser.Tag.equals() == 0), Executed: true
+org.jsoup.parser.Parser:parseStartTag:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.jsoup.parser.Tag.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:153->[Local Variables] {"dataNode":{"childNodes":[],"attributes":{"attributes":{"data":{"key":"data","value":"inner"}}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:145->[Control Flow] Branch Info: Line: 145, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:157->[Local Variables] "{child\u003d\n \u003cscript\u003einner\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:158->[Control Flow] Branch Info: Line: 158, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:160->[Control Flow] Branch Info: Line: 160, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:133->[Local Variables] {"tag":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]}}
+org.jsoup.parser.Parser:parseStartTag:135->[Local Variables] {"child":{"tag":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]},"childNodes":[],"attributes":{"attributes":{}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:137->[Control Flow] Branch Info: Line: 137, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:144->[Local Variables] "{child\u003d\n\u003cbody\u003e\n\u003c/body\u003e}"
+org.jsoup.parser.Parser:parseStartTag:145->[Control Flow] Branch Info: Line: 145, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:158->[Control Flow] Branch Info: Line: 158, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:160->[Control Flow] Branch Info: Line: 160, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:119->[Local Variables] {"tagName":"script"}
+org.jsoup.parser.Parser:parseStartTag:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.length() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:137->[Control Flow] Branch Info: Line: 137, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CheckLevel.isOn",
+    "doc": "/**\n * Controls checking levels of certain options.  For all checks going\n * forward, this should be used instead of booleans, so teams and\n * individuals can control which checks are off, which produce only warnings,\n * and which produce errors, without everyone having to agree.\n */",
+    "code": "boolean isOn() {\n    return this != OFF;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.JSError.getDefaultLevel",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.WarningsGuard.level",
+    "doc": "/**\n   * Returns a new check level for a given error. OFF - suppress it, ERROR -\n   * report as error. null means that this guard does not know what to do\n   * with the error. Null is extremely helpful when you have a chain of\n   * guards. If current guard returns null, then the next in the chain should\n   * process it.\n   *\n   * @param error a reported error.\n   * @return what level given error should have.\n   */",
+    "code": "public abstract CheckLevel level(JSError error);"
+  }
+]

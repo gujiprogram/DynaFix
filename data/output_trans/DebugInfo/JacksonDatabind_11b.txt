@@ -1,0 +1,26 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.TestJavaType::testLocalType728 ===
+Exception: junit.framework.AssertionFailedError: expected:<interface java.lang.CharSequence> but was:<class java.lang.Object>
+
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:894->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:894 -> java.lang.reflect.TypeVariable.getName
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:895->[Local Variables] {"TransVarClassNameObject":"C"}
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:896->[Control Flow] Branch Info: Line: 896, Condition: if (TransVarObjectType2 == null), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:901->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:901 -> com.fasterxml.jackson.databind.type.TypeFactory._unknownType
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.type.TestLocalType609::testLocalPartialType609 ===
+Exception: com.fasterxml.jackson.databind.JsonMappingException: Type variable 'T' can not be resolved (with context of class com.fasterxml.jackson.databind.type.TestLocalType609$EntityContainer)
+
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:893->[Local Variables] "{TransVarObjectType2\u003d[TypeBindings for [simple type, class com.fasterxml.jackson.databind.type.TestLocalType609$EntityContainer]: {T\u003d[simple type, class com.fasterxml.jackson.databind.type.TestLocalType609$RuleForm]}]}"
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:894->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:894 -> java.lang.reflect.TypeVariable.getName
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:895->[Local Variables] {"TransVarClassNameObject":"T"}
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:896->[Control Flow] Branch Info: Line: 896, Condition: if (TransVarObjectType2 == null), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:911->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:911 -> com.fasterxml.jackson.databind.type.TypeBindings.findType
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:911->[Local Variables] {"TransVarClassType":{"_class":"class com.fasterxml.jackson.databind.type.TestLocalType609$RuleForm","_hash":-198645149,"_asStatic":false}}
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:912->[Control Flow] Branch Info: Line: 912, Condition: if (TransVarTypeBounds != null), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:894->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:894 -> java.lang.reflect.TypeVariable.getName
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:896->[Control Flow] Branch Info: Line: 896, Condition: if (TransVarObjectType2 == null), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:901->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:901 -> com.fasterxml.jackson.databind.type.TypeFactory._unknownType
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:893->[Local Variables] "{TransVarObjectType2\u003d[TypeBindings for [simple type, class com.fasterxml.jackson.databind.type.TestLocalType609$EntityContainer]: {}]}"
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:894->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:894 -> java.lang.reflect.TypeVariable.getName
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:896->[Control Flow] Branch Info: Line: 896, Condition: if (TransVarObjectType2 == null), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:_fromVariable:911->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory._fromVariable:911 -> com.fasterxml.jackson.databind.type.TypeBindings.findType

@@ -1,0 +1,55 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::workaroundForBrokenTimeHeader ===
+Exception: java.io.IOException: Error detected parsing the header
+
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:83->[Control Flow] Branch Info: Line: 83, Condition: if (TransVarBNUL != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:87->[Control Flow] Branch Info: Line: 87, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:87->[Control Flow] Branch Info: Line: 87, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:88->[Control Flow] Branch Info: Line: 88, Condition: if (TransVarOffset3 == TransVarOffset3), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:97->[Local Variables] {"TransVarTrailerByte":32}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarTrailerByte != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarTrailerByte != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:104->[Local Variables] {"TransVarOffset2":147}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:105->[Local Variables] {"TransVarTrailerByte":54}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:111->[Local Variables] {"TransVarByteValue":0}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue >= TransVarByteValue), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:113->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.parseOctal:113 -> org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue >= TransVarByteValue), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue > TransVarByteValue), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:117->[Local Variables] {"TransVarOffset3":133}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue >= TransVarByteValue), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue > TransVarByteValue), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:117->[Local Variables] {"TransVarOffset3":134}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue >= TransVarByteValue), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarByteValue > TransVarByteValue), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:117->[Local Variables] {"TransVarOffset3":135}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarTrailerByte == TransVarTrailerByte), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:59->[Local Variables] {"TransVarOffset1":136}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:61->[Local Variables] {"TransVarOffset2":148}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:63->[Local Variables] {"TransVarOffset3":136}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:64->[Control Flow] Branch Info: Line: 64, Condition: if (TransVarOffset < TransVarOffset), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:71->[Local Variables] {"TransVarBNUL":true}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:72->[Local Variables] {"TransVarIndex":136}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:77->[Control Flow] Branch Info: Line: 77, Condition: if (TransVarIndex != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:72->[Control Flow] Loop Info: Line: 72, Description: while at line 72
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:72->[Local Variables] {"TransVarIndex":137}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:77->[Control Flow] Branch Info: Line: 77, Condition: if (TransVarIndex != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:78->[Local Variables] {"TransVarBNUL":false}
+org.apache.commons.compress.archivers.tar.TarUtils:parseOctal:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarOffset2 < TransVarOffset2), Executed: false

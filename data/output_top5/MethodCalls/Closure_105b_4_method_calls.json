@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * function() { return a; } is not.\n   */",
+    "code": "static boolean isLiteralValue(Node n) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n      case Token.OBJECTLIT:\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child)) {\n            return false;\n          }\n        }\n        return true;\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  }
+]

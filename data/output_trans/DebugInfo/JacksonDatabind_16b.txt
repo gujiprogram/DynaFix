@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.mixins.MixinsWithBundlesTest::testMixinWithBundles ===
+Exception: junit.framework.ComparisonFailure: expected:<{"[bar]":"result"}> but was:<{"[stuff]":"result"}>
+
+=== stdout ===
+Failing tests: 1
+  - com.fasterxml.jackson.databind.mixins.MixinsWithBundlesTest::testMixinWithBundles
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:110->[Local Variables] {"TransVarAnnotation":{"h":{"type":"interface com.fasterxml.jackson.databind.mixins.MixinsWithBundlesTest$ExposeStuff","memberValues":{}}}}
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: true
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:115->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:115 -> java.util.HashMap.<init>
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.lang.annotation.Annotation.annotationType
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.util.HashMap.put
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarPreviousAnnotation != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarAnnotation != 0), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:110->[Local Variables] {"TransVarAnnotation":{"h":{"type":"interface com.fasterxml.jackson.annotation.JacksonAnnotationsInside","memberValues":{}}}}
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.lang.annotation.Annotation.annotationType
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.util.HashMap.put
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarPreviousAnnotation != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarAnnotation != 0), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:110->[Local Variables] {"TransVarAnnotation":{"h":{"type":"interface com.fasterxml.jackson.annotation.JsonProperty","memberValues":{"index":-1,"value":"bar","required":false,"defaultValue":""}}}}
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.lang.annotation.Annotation.annotationType
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.util.HashMap.put
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarPreviousAnnotation != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarAnnotation != 0), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:110->[Local Variables] {"TransVarAnnotation":{"h":{"type":"interface com.fasterxml.jackson.databind.mixins.MixinsWithBundlesTest$ExposeStuff","memberValues":{}}}}
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: true
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:115->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:115 -> java.util.HashMap.<init>
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:111->[Control Flow] Branch Info: Line: 111, Condition: if (this._annotations == null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.lang.annotation.Annotation.annotationType
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:117->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotationMap._add:117 -> java.util.HashMap.put
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarPreviousAnnotation != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotationMap:_add:118->[Control Flow] Branch Info: Line: 118, Condition: if (TransVarAnnotation != 0), Executed: false

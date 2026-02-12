@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.setWholeFormat",
+    "doc": "/**\n     * Modify the whole format.\n     * @param format The new whole format value.\n     * @throws IllegalArgumentException if <code>format</code> is\n     *         <code>null</code>.\n     */",
+    "code": "public void setWholeFormat(NumberFormat format) {\n        if (format == null) {\n            throw new IllegalArgumentException(\n                \"whole format can not be null.\");\n        }\n        this.wholeFormat = format;\n    }"
+  }
+]

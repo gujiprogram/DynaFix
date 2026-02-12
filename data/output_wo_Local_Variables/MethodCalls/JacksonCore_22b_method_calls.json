@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentName",
+    "doc": "/**\n     * Method that can be called to get the name associated with\n     * the current token: for {@link JsonToken#FIELD_NAME}s it will\n     * be the same as what {@link #getText} returns;\n     * for field values it will be preceding field name;\n     * and for others (array values, root-level values) null.\n     */",
+    "code": "public abstract String getCurrentName() throws IOException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "/**\n     * Main iteration method, which will advance stream enough\n     * to determine type of the next token, if any. If none\n     * remaining (stream has no content other than possible\n     * white space before ending), null will be returned.\n     *\n     * @return Next token from the stream, if any found, or null\n     *   to indicate end-of-input\n     */",
+    "code": "public abstract JsonToken nextToken() throws IOException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonToken.id",
+    "doc": "/**\n     * @param token representation for this token, if there is a\n     *   single static representation; null otherwise\n     */",
+    "code": "public final int id() { return _id; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonToken.isScalarValue",
+    "doc": "/**\n     * Method that can be used to check whether this token represents\n     * a valid non-structured value. This means all tokens other than\n     * Object/Array start/end markers all field names.\n     */",
+    "code": "public final boolean isScalarValue() { return _isScalar; }\n    public final boolean isBoolean() { return _isBoolean; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextToken2",
+    "doc": "/**\n     * Offlined handling for cases where there was no buffered token to\n     * return, and the token read next could not be returned as-is,\n     * at least not yet, but where we have not yet established that\n     * buffering is needed.\n     */",
+    "code": "return _nextToken2();\n    }\n\n    protected final JsonToken _nextToken2() throws IOException\n    {"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextTokenWithBuffering",
+    "doc": "/**\n     * Method called when a new potentially included context is found.\n     */",
+    "code": "protected final JsonToken _nextTokenWithBuffering(final TokenFilterContext buffRoot)\n        throws IOException"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilter.filterFinishArray",
+    "doc": "/**\n     * Method called to indicate that output of non-filtered Array (one that may\n     * have been included either completely, or in part) is completed,\n     * in cases where filter other that {@link #INCLUDE_ALL} was returned.\n     * This occurs when {@link JsonGenerator#writeEndArray()} is called.\n     */",
+    "code": "public void filterFinishArray() { }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilter.includeProperty",
+    "doc": "/**\n     * Method called to check whether property value with specified name,\n     * at current output location, should be included in output.\n     * Three kinds of return values may be used as follows:\n     *<ul>\n     * <li><code>null</code> to indicate that the property and its value should be skipped\n     *   </li>\n     * <li>{@link #INCLUDE_ALL} to indicate that the property and its value should be included\n     * completely in output\n     *   </li>\n     * <li>Any other {@link TokenFilter} implementation (possibly this one) to mean\n     *  that further inclusion calls on returned filter object need to be made\n     *  as necessary, to determine inclusion.\n     *   </li>\n     * </ul>\n     *<p>\n     * The default implementation simply returns <code>this</code> to continue calling\n     * methods on this filter object, without full inclusion or exclusion.\n     *\n     * @return TokenFilter to use for further calls within property value, unless return value\n     *   is <code>null</code> or {@link #INCLUDE_ALL} (which have simpler semantics)\n     */",
+    "code": "public TokenFilter includeProperty(String name) {\n        return this;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilter.includeValue",
+    "doc": "/**\n     * Call made when verifying whether a scaler value is being\n     * read from a parser.\n     *<p>\n     * Default action is to call <code>_includeScalar()</code> and return\n     * whatever it indicates.\n     */",
+    "code": "public boolean includeValue(JsonParser p) throws IOException {\n        return _includeScalar();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilterContext.checkValue",
+    "doc": "/**\n     * Method called to check whether value is to be included at current output\n     * position, either as Object property, Array element, or root value.\n     */",
+    "code": "public TokenFilter checkValue(TokenFilter filter) {\n        if (_type == TYPE_OBJECT) {\n            return filter;\n        }\n        int ix = ++_index;\n        if (_type == TYPE_ARRAY) {\n            return filter.includeElement(ix);\n        }\n        return filter.includeRootValue(ix);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilterContext.getFilter",
+    "doc": "/**********************************************************\n     */",
+    "code": "public TokenFilter getFilter() { return _filter; }\n    public boolean isStartHandled() { return _startHandled; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilterContext.getParent",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled",
+    "doc": "/**********************************************************\n     */",
+    "code": "public boolean isStartHandled() { return _startHandled; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.filter.TokenFilterContext.setFieldName",
+    "doc": "/**********************************************************\n     */",
+    "code": "public TokenFilter setFieldName(String name) throws JsonProcessingException {\n        _currentName = name;\n        _needToHandleName = true;\n        return _filter;\n    }"
+  }
+]

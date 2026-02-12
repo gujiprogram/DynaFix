@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.MatrixUtils.createRealMatrix",
+    "doc": "/**\n     * Returns a {@link RealMatrix} with specified dimensions.\n     * <p>The matrix elements are all set to 0.0.</p>\n     * @param rows number of rows of the matrix\n     * @param columns number of columns of the matrix\n     * @return  RealMatrix with specified dimensions\n     * @see #createRealMatrix(double[][])\n     */",
+    "code": "public static RealMatrix createRealMatrix(final int rows, final int columns) {\n        return new DenseRealMatrix(rows, columns);\n    }"
+  }
+]

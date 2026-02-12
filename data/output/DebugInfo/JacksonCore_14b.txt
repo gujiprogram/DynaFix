@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.io.TestIOContext::testAllocations ===
+Exception: junit.framework.AssertionFailedError: Expected an exception with one of substrings ([smaller than original]): got one with message "Trying to release buffer not owned by the context"
+
+com.fasterxml.jackson.core.io.IOContext:_verifyRelease:273->[Local Variables] {"toRelease":[0],"src":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+com.fasterxml.jackson.core.io.IOContext:_verifyRelease:274->[Control Flow] Branch Info: Line: 274, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.core.io.IOContext:_verifyRelease:274->[Control Flow] Branch Info: Line: 274, Condition: if (src <= src), Executed: true
+com.fasterxml.jackson.core.io.IOContext:_verifyRelease:274->[Method Call] Call Stack: com.fasterxml.jackson.core.io.IOContext._verifyRelease:274 -> com.fasterxml.jackson.core.io.IOContext.wrongBuf

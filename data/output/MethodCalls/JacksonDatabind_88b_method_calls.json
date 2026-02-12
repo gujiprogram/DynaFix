@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DatabindContext.getTypeFactory",
+    "doc": "/**\n     * Convenience method for constructing subtypes, retaining generic\n     * type parameter (if any)\n     */",
+    "code": "return getTypeFactory().constructType(type);\n    }\n\n    public JavaType constructSpecializedType(JavaType baseType, Class<?> subclass) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory.constructFromCanonical",
+    "doc": "/**\n     * Factory method for constructing a {@link JavaType} out of its canonical\n     * representation (see {@link JavaType#toCanonical()}).\n     *\n     * @param canonical Canonical string representation of a type\n     *\n     * @throws IllegalArgumentException If canonical representation is malformed,\n     *   or class that type represents (including its generic parameters) is\n     *   not found\n     */",
+    "code": "public JavaType constructFromCanonical(String canonical) throws IllegalArgumentException\n    {\n        return _parser.parse(canonical);\n    }"
+  }
+]

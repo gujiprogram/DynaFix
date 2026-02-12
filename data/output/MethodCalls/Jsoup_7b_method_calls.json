@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.body",
+    "doc": "/**\n     Accessor to the document's {@code body} element.\n     @return {@code body}\n     */",
+    "code": "public Element body() {\n        return findFirstElementByTagName(\"body\", this);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.findFirstElementByTagName",
+    "doc": "/**\n     Accessor to the document's {@code body} element.\n     @return {@code body}\n     */",
+    "code": "return findFirstElementByTagName(\"head\", this);\n    }\n\n    public Element body() {"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.head",
+    "doc": "/**\n     Accessor to the document's {@code head} element.\n     @return {@code head}\n     */",
+    "code": "public Element head() {\n        return findFirstElementByTagName(\"head\", this);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.normaliseTextNodes",
+    "doc": "/**\n     Normalise the document. This happens after the parse phase so generally does not need to be called.\n     Moves any text content that is not in the body element into the body.\n     @return this document after normalisation\n     */",
+    "code": "private void normaliseTextNodes(Element element) {\n        List<Node> toMove = new ArrayList<Node>();\n        for (Node node: element.childNodes) {\n            if (node instanceof TextNode) {\n                TextNode tn = (TextNode) node;\n                if (!tn.isBlank())\n                    toMove.add(tn);\n            }\n        }\n\n        for (int i = toMove.size()-1; i >= 0; i--) {\n            Node node = toMove.get(i);\n            element.removeChild(node);\n            body().prependChild(new TextNode(\" \", \"\"));\n            body().prependChild(node);\n        }\n    }"
+  }
+]

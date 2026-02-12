@@ -1,0 +1,35 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testElementDOM ===
+Exception: org.apache.commons.jxpath.JXPathNotFoundException: No value for xpath: /ElementA/B:ElementB
+
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:101 -> org.w3c.dom.Node.getNodeType
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Control Flow] Branch Info: Line: 101, Condition: if (TransVarNode2 != TransVarNode2), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:97->[Control Flow] Branch Info: Line: 97, Condition: if (TransVarNode != 0), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:101 -> org.w3c.dom.Node.getNodeType
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Control Flow] Branch Info: Line: 101, Condition: if (TransVarNode2 != TransVarNode2), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:90->[Local Variables] "{TransVarNode2\u003d[B:ElementB: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarNode == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:97->[Control Flow] Branch Info: Line: 97, Condition: if (TransVarNode != 0), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:101 -> org.w3c.dom.Node.getNodeType
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:101->[Control Flow] Branch Info: Line: 101, Condition: if (TransVarNode2 != TransVarNode2), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:105->[Local Variables] {"TransVarNode3":{"qname":{"prefix":"B","name":"ElementB","qualifiedName":"B:ElementB"},"namespaceURI":"bar"}}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:106->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:106 -> org.apache.commons.jxpath.ri.compiler.NodeNameTest.getNodeName
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:106->[Local Variables] {"TransVarTestQName":{"prefix":"B","name":"ElementB","qualifiedName":"B:ElementB"}}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:107->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:107 -> org.apache.commons.jxpath.ri.compiler.NodeNameTest.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:107->[Local Variables] {"TransVarNamespaceURI1":"bar"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:108->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:108 -> org.apache.commons.jxpath.ri.compiler.NodeNameTest.isWildcard
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:109->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:109 -> org.apache.commons.jxpath.ri.QName.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:109->[Local Variables] {"TransVarPrefix":"B"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarIsWildCard != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:110->[Control Flow] Branch Info: Line: 110, Condition: if (TransVarPrefix == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Control Flow] Branch Info: Line: 113, Condition: if (TransVarIsWildCard == 0), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:113 -> org.apache.commons.jxpath.ri.QName.getName
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:113 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getLocalName
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:113 -> java.lang.String.equals
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Control Flow] Branch Info: Line: 113, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:113->[Control Flow] Branch Info: Line: 113, Condition: if (TransVarIsWildCard == 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:114->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:114 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:115->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.testNode:115 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.equalStrings
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:90->[Local Variables] "{TransVarNode2\u003d[#text: \n]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarNode == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:testNode:97->[Control Flow] Branch Info: Line: 97, Condition: if (TransVarNode != 0), Executed: true

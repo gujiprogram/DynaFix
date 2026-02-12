@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.special.Erf.erf",
+    "doc": "/**\n     * Returns the error function erf(x).\n     *\n     * The implementation of this method is based on:\n     * <ul>\n     * <li>\n     * <a href=\"http://mathworld.wolfram.com/Erf.html\">\n     * Erf</a>, equation (3).</li>\n     * </ul>\n     *\n     * @param x the value.\n     * @return the error function erf(x)\n     * @throws MathException if the algorithm fails to converge.\n     */",
+    "code": "public static double erf(double x) throws MathException {\n        double ret = Gamma.regularizedGammaP(0.5, x * x, 1.0e-15, 10000);\n        if (x < 0) {\n            ret = -ret;\n        }\n        return ret;\n    }"
+  }
+]

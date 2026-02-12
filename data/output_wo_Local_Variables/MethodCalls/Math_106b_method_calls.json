@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math.fraction.FractionFormat.parse",
+    "doc": "/**\n     * Parses a string to produce a {@link Fraction} object.\n     * @param source the string to parse\n     * @return the parsed {@link Fraction} object.\n     * @exception ParseException if the beginning of the specified string\n     *            cannot be parsed.\n     */",
+    "code": "public Fraction parse(String source) throws ParseException {\n        ParsePosition parsePosition = new ParsePosition(0);\n        Fraction result = parse(source, parsePosition);\n        if (parsePosition.getIndex() == 0) {\n            throw new ParseException(\"Unparseable fraction number: \\\"\" +\n                source + \"\\\"\", parsePosition.getErrorIndex());\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.getDenominatorFormat",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.getNumeratorFormat",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.getWholeFormat",
+    "doc": "/**\n     * Access the whole format.\n     * @return the whole format.\n     */",
+    "code": "public NumberFormat getWholeFormat() {\n        return wholeFormat;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.parseAndIgnoreWhitespace",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.fraction.ProperFractionFormat.parseNextCharacter",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.util.MathUtils.sign",
+    "doc": "/**\n     * Returns the <a href=\"http://mathworld.wolfram.com/Sign.html\"> sign</a>\n     * for byte value <code>x</code>.\n     * <p>\n     * For a byte value x, this method returns (byte)(+1) if x > 0, (byte)(0) if\n     * x = 0, and (byte)(-1) if x < 0.\n     *\n     * @param x the value, a byte\n     * @return (byte)(+1), (byte)(0), or (byte)(-1), depending on the sign of x\n     */",
+    "code": "public static byte sign(final byte x) {\n        return (x == ZB) ? ZB : (x > ZB) ? PB : NB;\n    }"
+  }
+]

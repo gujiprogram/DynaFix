@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member\n     * of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.gobble",
+    "doc": "/**\n     * Adds the remaining tokens to the processed tokens list.\n     *\n     * @param iter An iterator over the remaining tokens\n     */",
+    "code": "private void gobble(Iterator iter)\n    {\n        if (eatTheRest)\n        {\n            while (iter.hasNext())\n            {\n                tokens.add(iter.next());\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.init",
+    "doc": "/**\n     * Resets the members to their original state i.e. remove\n     * all of <code>tokens</code> entries, set <code>eatTheRest</code>\n     * to false and set <code>currentOption</code> to null.\n     */",
+    "code": "private void init()\n    {\n        eatTheRest = false;\n        tokens.clear();\n        currentOption = null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.processOptionToken",
+    "doc": "/**\n     * <p>If an {@link Option} exists for <code>token</code> then\n     * set the current option and add the token to the processed\n     * list.</p>\n     *\n     * <p>If an {@link Option} does not exist and <code>stopAtNonOption</code>\n     * is set then ignore the current token and add the remaining tokens\n     * to the processed tokens list directly.</p>\n     *\n     * @param token The current option token\n     * @param stopAtNonOption Specifies whether flattening should halt\n     * at the first non option.\n     */",
+    "code": "private void processOptionToken(String token, boolean stopAtNonOption)\n    {\n        if (options.hasOption(token))\n        {\n            currentOption = options.getOption(token);\n            tokens.add(token);\n        }\n        else if (stopAtNonOption)\n        {\n            eatTheRest = true;\n        }\n    }"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jfree.data.time.TimeSeries.createCopy",
+    "doc": "/**\n     * Creates a new timeseries by copying a subset of the data in this time\n     * series.\n     *\n     * @param start  the index of the first time period to copy.\n     * @param end  the index of the last time period to copy.\n     *\n     * @return A series containing a copy of this times series from start until\n     *         end.\n     *\n     * @throws CloneNotSupportedException if there is a cloning problem.\n     */",
+    "code": "public TimeSeries createCopy(int start, int end)\n        throws CloneNotSupportedException {\n\n        if (start < 0) {\n            throw new IllegalArgumentException(\"Requires start >= 0.\");\n        }\n        if (end < start) {\n            throw new IllegalArgumentException(\"Requires start <= end.\");\n        }\n        TimeSeries copy = (TimeSeries) super.clone();\n\n        copy.data = new java.util.ArrayList();\n        if (this.data.size() > 0) {\n            for (int index = start; index <= end; index++) {\n                TimeSeriesDataItem item\n                    = (TimeSeriesDataItem) this.data.get(index);\n                TimeSeriesDataItem clone = (TimeSeriesDataItem) item.clone();\n                try {\n                    copy.add(clone);\n                }\n                catch (SeriesException e) {\n                    e.printStackTrace();\n                }\n            }\n        }\n        return copy;\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getItemCount",
+    "doc": "/**\n     * Returns the number of items in the series.\n     *\n     * @return The item count.\n     */",
+    "code": "public int getItemCount() {\n        return this.data.size();\n    }"
+  }
+]

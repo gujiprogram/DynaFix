@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1047 ===
+Exception: junit.framework.ComparisonFailure: expected:<...p never defined on C[2]> but was:<...p never defined on C[3.c2_]>
+
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:260 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Control Flow] Branch Info: Line: 260, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:261->[Control Flow] Branch Info: Line: 261, Condition: if (type == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:258->[Local Variables] "{type\u003d(C2|null), n\u003dGETPROP 16 [source_file: [testcode]] : ?}"
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:260 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Control Flow] Branch Info: Line: 260, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:261->[Control Flow] Branch Info: Line: 261, Condition: if (type == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:258->[Local Variables] "{type\u003dArguments.prototype, n\u003dGETPROP 20 [jsdoc_info: JSDocInfo] [source_file: [externs]] : number}"
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:260 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Control Flow] Branch Info: Line: 260, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:261->[Control Flow] Branch Info: Line: 261, Condition: if (type == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:258->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@9ab310b, type\u003dC3, n\u003dGETPROP 14 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : (C2|null)}"
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:260 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:260->[Control Flow] Branch Info: Line: 260, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:261->[Control Flow] Branch Info: Line: 261, Condition: if (type == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:258->[Local Variables] "{n\u003dGETPROP 16 [source_file: [testcode]] : (C2|null)}"
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isNoType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined:259 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeValidator:expectNotNullOrUndefined:259->[Control Flow] Branch Info: Line: 259, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true

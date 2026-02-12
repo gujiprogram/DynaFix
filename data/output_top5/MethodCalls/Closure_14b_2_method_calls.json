@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.common.collect.Multimap.put",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough",
+    "doc": "/**\n   * Computes the follow() node of a given node and its parent. There is a side\n   * effect when calling this function. If this function computed an edge that\n   * exists a FINALLY, it'll attempt to connect the fromNode to the outer\n   * FINALLY according to the finallyMap.\n   *\n   * @param fromNode The original source node since {@code node} is changed\n   *        during recursion.\n   * @param node The node that follow() should compute.\n   */",
+    "code": "return computeFallThrough(parent.getLastChild());\n          } else { // and have no FINALLY."
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode",
+    "doc": "/**\n   * Given an entry node, find all the nodes reachable from that node\n   * and prioritize them.\n   */",
+    "code": "static Node computeFollowNode(Node node, ControlFlowAnalysis cfa) {\n    return computeFollowNode(node, node, cfa);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.isBreakTarget",
+    "doc": "/**\n   * Checks if target is actually the break target of labeled continue. The\n   * label can be null if it is an unlabeled break.\n   */",
+    "code": "public static boolean isBreakTarget(Node target, String label) {\n    return isBreakStructure(target, label != null) &&\n      matchLabel(target.getParent(), label);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isTry",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

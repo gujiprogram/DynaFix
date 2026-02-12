@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.joda.time.Period.getPeriodType",
+    "doc": "/**\n     * Gets the months field part of the period.\n     *\n     * @return the number of months in the period, zero if unsupported\n     */",
+    "code": "return getPeriodType().getIndexedField(this, PeriodType.YEAR_INDEX);\n    }\n\n    public int getMonths() {"
+  },
+  {
+    "method": "org.joda.time.Period.getValues",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.joda.time.PeriodType.setIndexedField",
+    "doc": "/**\n     * Sets the indexed field part of the period.\n     *\n     * @param period  the period to query\n     * @param index  the index to use\n     * @param values  the array to populate\n     * @param newValue  the value to set\n     * @throws UnsupportedOperationException if not supported\n     */",
+    "code": "boolean setIndexedField(ReadablePeriod period, int index, int[] values, int newValue) {\n        int realIndex = iIndices[index];\n        if (realIndex == -1) {\n            throw new UnsupportedOperationException(\"Field is not supported\");\n        }\n        values[realIndex] = newValue;\n        return true;\n    }"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getPrefix",
+    "doc": "/**\n     * Get any prefix from the specified node.\n     * @param node the node to check\n     * @return String xml prefix\n     */",
+    "code": "public static String getPrefix(Node node) {\n        String prefix = node.getPrefix();\n        if (prefix != null) {\n            return prefix;\n        }\n\n        String name = node.getNodeName();\n        int index = name.lastIndexOf(':');\n        return index < 0 ? null : name.substring(0, index);\n    }"
+  },
+  {
+    "method": "org.w3c.dom.Attr.getValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.w3c.dom.Element.getAttributeNode",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.w3c.dom.Element.getNamespaceURI",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.w3c.dom.Node.getNodeType",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

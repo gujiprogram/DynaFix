@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace",
+    "doc": "/**\n   * Gets the value of a node as a Number, or null if it cannot be converted.\n   * When it returns a non-null Double, this method effectively emulates the\n   * <code>Number()</code> JavaScript cast function.\n   */",
+    "code": "static String trimJsWhiteSpace(String s) {\n    int start = 0;\n    int end = s.length();\n    while (end > 0\n        && isStrWhiteSpaceChar(s.charAt(end - 1)) == TernaryValue.TRUE) {\n      end--;\n    }\n    while (start < end\n        && isStrWhiteSpaceChar(s.charAt(start)) == TernaryValue.TRUE) {\n      start++;\n    }\n    return s.substring(start, end);\n  }"
+  }
+]

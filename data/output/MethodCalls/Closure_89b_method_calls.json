@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getCodingConvention",
+    "doc": "/**\n   * Gets the current coding convention.\n   */",
+    "code": "public abstract CodingConvention getCodingConvention();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.fullName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.copyNameAnnotations",
+    "doc": "/**\n   * Copy any annotations that follow a named value.\n   * @param source\n   * @param destination\n   */",
+    "code": "static void copyNameAnnotations(Node source, Node destination) {\n    if (source.getBooleanProp(Node.IS_CONSTANT_NAME)) {\n      destination.putBooleanProp(Node.IS_CONSTANT_NAME, true);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.newName",
+    "doc": "/**\n   * Creates a node representing a qualified name.\n   *\n   * @param name A qualified name (e.g. \"foo\" or \"foo.bar.baz\")\n   * @param lineno The source line offset.\n   * @param charno The source character offset from start of the line.\n   * @return A NAME or GETPROP node\n   */",
+    "code": "return newName(convention, name, lineno, charno);\n    }\n    Node node = newName(\n        convention, name.substring(0, endPos), lineno, charno);\n    int startPos;\n    do {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildToFront",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildToFront(Node child) {\n    Preconditions.checkArgument(child.parent == null);\n    Preconditions.checkArgument(child.next == null);\n    child.parent = this;\n    child.next = first;\n    first = child;\n    if (last == null) {\n      last = child;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeChild",
+    "doc": "/**\n   * Detach a child from its parent and siblings.\n   */",
+    "code": "public void removeChild(Node child) {\n    Node prev = getChildBefore(child);\n    if (prev == null)\n        first = first.next;\n    else\n        prev.next = child.next;\n    if (child == last) last = prev;\n    child.next = null;\n    child.parent = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

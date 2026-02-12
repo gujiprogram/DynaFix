@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.apache.commons.cli.OptionsTest::testMissingOptionsException ===
+Exception: junit.framework.ComparisonFailure: expected:<[Missing required options: ]fx> but was:<[]fx>
+
+org.apache.commons.cli.Parser:checkRequiredOptions:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:295 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:295->[Control Flow] Branch Info: Line: 295, Condition: if (this.requiredOptions > 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:297->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:297 -> java.util.List.iterator
+org.apache.commons.cli.Parser:checkRequiredOptions:297->[Local Variables] {"iter":{"cursor":0,"lastRet":-1,"expectedModCount":2}}
+org.apache.commons.cli.Parser:checkRequiredOptions:301->[Local Variables] {"buff":""}
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:302 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Control Flow] Branch Info: Line: 302, Condition: if (iter != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:298->[Control Flow] Loop Info: Line: 298, Description: while at line 298
+org.apache.commons.cli.Parser:checkRequiredOptions:301->[Local Variables] {"iter":{"cursor":1,"lastRet":0,"expectedModCount":2},"buff":"f"}
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:302 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Control Flow] Branch Info: Line: 302, Condition: if (iter != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:298->[Control Flow] Loop Info: Line: 298, Description: while at line 298
+org.apache.commons.cli.Parser:checkRequiredOptions:301->[Local Variables] {"iter":{"cursor":2,"lastRet":1,"expectedModCount":2},"buff":"fx"}
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:302 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Control Flow] Branch Info: Line: 302, Condition: if (iter != 0), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:307->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:307 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.Parser:checkRequiredOptions:307->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:307 -> org.apache.commons.cli.MissingOptionException.<init>
+
+=== Debug Info for Test: org.apache.commons.cli.OptionsTest::testMissingOptionException ===
+Exception: junit.framework.ComparisonFailure: expected:<[Missing required option: ]f> but was:<[]f>
+
+org.apache.commons.cli.Parser:checkRequiredOptions:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:295 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:295->[Control Flow] Branch Info: Line: 295, Condition: if (this.requiredOptions > 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:297->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:297 -> java.util.List.iterator
+org.apache.commons.cli.Parser:checkRequiredOptions:297->[Local Variables] {"iter":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.apache.commons.cli.Parser:checkRequiredOptions:301->[Local Variables] {"buff":""}
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:302 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Control Flow] Branch Info: Line: 302, Condition: if (iter != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:304->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:304 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:298->[Control Flow] Loop Info: Line: 298, Description: while at line 298
+org.apache.commons.cli.Parser:checkRequiredOptions:301->[Local Variables] {"iter":{"cursor":1,"lastRet":0,"expectedModCount":1},"buff":"f"}
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:302 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:302->[Control Flow] Branch Info: Line: 302, Condition: if (iter != 0), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:307->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:307 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.Parser:checkRequiredOptions:307->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:307 -> org.apache.commons.cli.MissingOptionException.<init>

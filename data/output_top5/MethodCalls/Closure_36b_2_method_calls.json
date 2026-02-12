@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.InlineVariables.getFilterForMode",
+    "doc": "/**\n * Using the infrastructure provided by VariableReferencePass, identify\n * variables that are used only once and in a way that is safe to move, and then\n * inline them.\n *\n * This pass has two \"modes.\" One mode only inlines variables declared as\n * constants, for legacy compiler clients. The second mode inlines any\n * variable that we can provably inline. Note that the second mode is a\n * superset of the first mode. We only support the first mode for\n * backwards-compatibility with compiler clients that don't want\n * --inline_variables.\n *\n * The approach of this pass is similar to {@link CrossModuleCodeMotion}\n *\n * @author kushal@google.com (Kushal Dave)\n * @author nicksantos@google.com (Nick Santos)\n */",
+    "code": "private Predicate<Var> getFilterForMode() {\n    switch (mode) {\n      case ALL:\n        return Predicates.<Var>alwaysTrue();\n      case LOCALS_ONLY:\n        return new IdentifyLocals();\n      case CONSTANTS_ONLY:\n        return new IdentifyConstants();\n      default:\n        throw new IllegalStateException();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback.process",
+    "doc": "/**\n   * Convenience method for running this pass over a tree with this\n   * class as a callback.\n   */",
+    "code": "public void process(Node externs, Node root) {\n    NodeTraversal.traverseRoots(\n        compiler, Lists.newArrayList(externs, root), this);\n  }"
+  }
+]

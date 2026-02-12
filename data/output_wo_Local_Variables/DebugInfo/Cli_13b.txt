@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: org.apache.commons.cli2.bug.BugLoopingOptionLookAlikeTest::testLoopingOptionLookAlike2 ===
+
+org.apache.commons.cli2.option.ArgumentImpl:processValues:158->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:158 -> org.apache.commons.cli2.WriteableCommandLine.looksLikeOption
+org.apache.commons.cli2.option.ArgumentImpl:processValues:158->[Control Flow] Branch Info: Line: 158, Condition: if (allValuesQuoted != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:164->[Control Flow] Branch Info: Line: 164, Condition: if (this.subsequentSplit != false), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:186->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:186 -> org.apache.commons.cli2.WriteableCommandLine.addValue
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (arguments != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (this.maximum < this.maximum), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:144->[Control Flow] Loop Info: Line: 144, Description: while at line 144
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:146 -> java.util.ListIterator.hasNext
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (arguments != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (this.maximum < this.maximum), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:186->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:186 -> org.apache.commons.cli2.WriteableCommandLine.addValue
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (arguments != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (this.maximum < this.maximum), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:144->[Control Flow] Loop Info: Line: 144, Description: while at line 144
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:146 -> java.util.ListIterator.hasNext
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (arguments != 0), Executed: true
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (arguments != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (this.maximum < this.maximum), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:146 -> java.util.ListIterator.hasNext
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (arguments != 0), Executed: true
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (this.maximum < this.maximum), Executed: true
+org.apache.commons.cli2.option.ArgumentImpl:processValues:147->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:147 -> java.util.ListIterator.next
+org.apache.commons.cli2.option.ArgumentImpl:processValues:148->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:148 -> org.apache.commons.cli2.option.ArgumentImpl.stripBoundaryQuotes
+org.apache.commons.cli2.option.ArgumentImpl:processValues:151->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:151 -> java.lang.String.equals
+org.apache.commons.cli2.option.ArgumentImpl:processValues:151->[Control Flow] Branch Info: Line: 151, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:158->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:158 -> org.apache.commons.cli2.WriteableCommandLine.looksLikeOption
+org.apache.commons.cli2.option.ArgumentImpl:processValues:158->[Control Flow] Branch Info: Line: 158, Condition: if (allValuesQuoted != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:164->[Control Flow] Branch Info: Line: 164, Condition: if (this.subsequentSplit != false), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:186->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:186 -> org.apache.commons.cli2.WriteableCommandLine.addValue
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (arguments != 0), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:152->[Control Flow] Branch Info: Line: 152, Condition: if (this.maximum < this.maximum), Executed: false
+org.apache.commons.cli2.option.ArgumentImpl:processValues:144->[Control Flow] Loop Info: Line: 144, Description: while at line 144
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:146 -> java.util.ListIterator.hasNext
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (arguments != 0), Executed: true
+org.apache.commons.cli2.option.ArgumentImpl:processValues:146->[Control Flow] Branch Info: Line: 146, Condition: if (this.maximum < this.maximum), Executed: true
+org.apache.commons.cli2.option.ArgumentImpl:processValues:147->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:147 -> java.util.ListIterator.next
+org.apache.commons.cli2.option.ArgumentImpl:processValues:148->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:148 -> org.apache.commons.cli2.option.ArgumentImpl.stripBoundaryQuotes
+org.apache.commons.cli2.option.ArgumentImpl:processValues:151->[Method Call] Call Stack: org.apache.commons.cli2.option.ArgumentImpl.processValues:151 -> java.lang.String.equals
+org.apache.commons.cli2.option.ArgumentImpl:processValues:151->[Control Flow] Branch Info: Line: 151, Condition: if (java.lang.String.equals() != 0), Executed: false

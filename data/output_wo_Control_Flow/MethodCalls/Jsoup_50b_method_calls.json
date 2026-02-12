@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.select",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseInput",
+    "doc": "/**\n     * Create a new Parser, using the specified TreeBuilder\n     * @param treeBuilder TreeBuilder to use to parse input into Documents.\n     */",
+    "code": "public Document parseInput(String html, String baseUri) {\n        errors = isTrackErrors() ? ParseErrorList.tracking(maxErrors) : ParseErrorList.noTracking();\n        return treeBuilder.parse(html, baseUri, errors);\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Elements.first",
+    "doc": "/**\n     * Get the form element's value of the first matched element.\n     * @return The form element's value, or empty if not set.\n     * @see Element#val()\n     */",
+    "code": "return first().val();\n        else"
+  }
+]

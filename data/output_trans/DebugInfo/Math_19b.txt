@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testBoundaryRangeTooLarge ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.apache.commons.math3.exception.NumberIsTooLargeException> but was<org.apache.commons.math3.exception.MathIllegalStateException>
+
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:508->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:508 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getStartPoint
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:508->[Local Variables] {"TransVarFinalInit":[0.0]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:509->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:509 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getLowerBound
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:509->[Local Variables] {"TransVarLowerBound":[-8.98846567431158E307]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:510->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:510 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getUpperBound
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:512->[Local Variables] {"TransVarUB2":[8.98846567431158E307]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:513->[Local Variables] {"TransVarHasLowerBounds":false}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:514->[Local Variables] {"TransVarSum":0}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:515->[Control Flow] Branch Info: Line: 515, Condition: if (TransVarLowerBound < TransVarLowerBound), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:519->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:519 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:519->[Control Flow] Branch Info: Line: 519, Condition: if (TransVarSum != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:523->[Local Variables] {"TransVarHasLowerBounds":true}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:515->[Control Flow] Branch Info: Line: 515, Condition: if (TransVarLowerBound < TransVarLowerBound), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:529->[Local Variables] {"TransVarHasUpperBounds":false}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:530->[Control Flow] Branch Info: Line: 530, Condition: if (TransVarHasLowerBounds != 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:531->[Local Variables] {"TransVarInit":0}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:532->[Control Flow] Branch Info: Line: 532, Condition: if (TransVarLowerBound < TransVarLowerBound), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:533->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:533 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:533->[Control Flow] Branch Info: Line: 533, Condition: if (TransVarJ == 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:534->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:534 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:534->[Control Flow] Branch Info: Line: 534, Condition: if (TransVarJ != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:531->[Control Flow] Loop Info: Line: 531, Description: while at line 531
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:531->[Local Variables] {"TransVarInit":1}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:532->[Control Flow] Branch Info: Line: 532, Condition: if (TransVarLowerBound < TransVarLowerBound), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:541->[Control Flow] Branch Info: Line: 541, Condition: if (TransVarHasUpperBounds != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:558->[Control Flow] Branch Info: Line: 558, Condition: if (this.inputSigma != null), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:563->[Control Flow] Branch Info: Line: 563, Condition: if (TransVarFinalInit < TransVarFinalInit), Executed: false

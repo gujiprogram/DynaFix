@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FunctionRewriterTest::testIssue538 ===
+Exception: java.lang.IllegalStateException: Expected function but was call Reference node CALL 4 [free_call: 1] [source_file: testcode]
+
+com.google.javascript.jscomp.FunctionRewriter:process:85->[Local Variables] {"helperCodeCost":37}
+com.google.javascript.jscomp.FunctionRewriter:process:86->[Local Variables] {"savings":0}
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:87 -> java.util.Collection.iterator
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:87 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Control Flow] Branch Info: Line: 87, Condition: if (addingRoot != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:87 -> java.util.Iterator.next
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Local Variables] "{reduction\u003dcom.google.javascript.jscomp.FunctionRewriter$Reduction@c017175}"
+com.google.javascript.jscomp.FunctionRewriter:process:88->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:88 -> com.google.javascript.jscomp.FunctionRewriter$Reduction.estimateSavings
+com.google.javascript.jscomp.FunctionRewriter:process:88->[Local Variables] {"savings":11}
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Control Flow] Loop Info: Line: 87, Description: while at line 87
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:87 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:87->[Control Flow] Branch Info: Line: 87, Condition: if (addingRoot != 0), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:93->[Control Flow] Branch Info: Line: 93, Condition: if (helperCodeCost > helperCodeCost), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Loop Info: Line: 72, Description: while at line 72
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Branch Info: Line: 72, Condition: if (var5 != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.next
+com.google.javascript.jscomp.FunctionRewriter:process:73->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:73 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.FunctionRewriter:process:73->[Local Variables] {"reductions":[]}
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:74 -> java.util.Collection.isEmpty
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Control Flow] Branch Info: Line: 74, Condition: if (reductions != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Loop Info: Line: 72, Description: while at line 72
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Branch Info: Line: 72, Condition: if (var5 != 0), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Control Flow] Branch Info: Line: 94, Condition: if (addingRoot != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:94 -> java.util.Iterator.next
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Local Variables] "{reduction\u003dcom.google.javascript.jscomp.FunctionRewriter$Reduction@4f3faa70}"
+com.google.javascript.jscomp.FunctionRewriter:process:95->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:95 -> com.google.javascript.jscomp.FunctionRewriter$Reduction.apply
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Control Flow] Loop Info: Line: 94, Description: while at line 94
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:94 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:94->[Control Flow] Branch Info: Line: 94, Condition: if (addingRoot != 0), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:98->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:98 -> com.google.javascript.jscomp.AbstractCompiler.getNodeForCodeInsertion
+com.google.javascript.jscomp.FunctionRewriter:process:98->[Local Variables] "{addingRoot\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.FunctionRewriter:process:99->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:99 -> com.google.javascript.rhino.Node.addChildrenToFront
+com.google.javascript.jscomp.FunctionRewriter:process:100->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:100 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.FunctionRewriter:process:93->[Control Flow] Branch Info: Line: 93, Condition: if (helperCodeCost > helperCodeCost), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Loop Info: Line: 72, Description: while at line 72
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Branch Info: Line: 72, Condition: if (var5 != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.next
+com.google.javascript.jscomp.FunctionRewriter:process:73->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:73 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:74 -> java.util.Collection.isEmpty
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Control Flow] Branch Info: Line: 74, Condition: if (reductions != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Loop Info: Line: 72, Description: while at line 72
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Control Flow] Branch Info: Line: 72, Condition: if (var5 != 0), Executed: true
+com.google.javascript.jscomp.FunctionRewriter:process:72->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:72 -> java.util.Iterator.next
+com.google.javascript.jscomp.FunctionRewriter:process:73->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:73 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.FunctionRewriter:process:73->[Local Variables] "{reductions\u003d[com.google.javascript.jscomp.FunctionRewriter$Reduction@c017175]}"
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:74 -> java.util.Collection.isEmpty
+com.google.javascript.jscomp.FunctionRewriter:process:74->[Control Flow] Branch Info: Line: 74, Condition: if (reductions != 0), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:78->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:78 -> com.google.javascript.jscomp.FunctionRewriter.parseHelperCode
+com.google.javascript.jscomp.FunctionRewriter:process:78->[Local Variables] "{helperCode\u003dFUNCTION JSCompiler_emptyFn 1 [source_file: class com.google.javascript.jscomp.FunctionRewriter$EmptyFunctionReducer:helper]}"
+com.google.javascript.jscomp.FunctionRewriter:process:79->[Control Flow] Branch Info: Line: 79, Condition: if (helperCode == null), Executed: false
+com.google.javascript.jscomp.FunctionRewriter:process:83->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionRewriter.process:83 -> com.google.javascript.jscomp.InlineCostEstimator.getCost

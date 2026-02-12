@@ -1,0 +1,56 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.deser.TestDateDeserialization::testISO8601MissingSeconds ===
+
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:432->[Local Variables] "{df\u003djava.text.SimpleDateFormat@8a9df5fb}"
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:433->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:433 -> java.text.DateFormat.parse
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:368->[Local Variables] {"dateStr":"1997-07-16T19:20+01:00","pos":{"index":0,"errorIndex":-1}}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:369->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:369 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:369->[Local Variables] {"len":22}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:370->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:370 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:373->[Local Variables] {"c":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:392->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:392 -> com.fasterxml.jackson.databind.util.StdDateFormat.hasTimeZone
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:393->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:393 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:393->[Local Variables] {"c":":"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:396->[Local Variables] {"sb":"1997-07-16T19:20+01:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:397->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:397 -> java.lang.StringBuilder.delete
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:397->[Local Variables] {"sb":"1997-07-16T19:20+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:398->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:398 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:398->[Local Variables] {"dateStr":"1997-07-16T19:20+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:404->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:404 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:405->[Local Variables] {"len":21}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:406 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Local Variables] {"c":"9"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:407 -> java.lang.Character.isDigit
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:409->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:409 -> java.lang.StringBuilder.insert
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:409->[Local Variables] {"sb":"1997-07-16T19:20.000+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:410->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:410 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:411->[Local Variables] {"dateStr":"1997-07-16T19:20.000+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:414->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:414 -> com.fasterxml.jackson.databind.util.StdDateFormat._cloneFormat
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.deser.TestDateDeserialization::testISO8601PartialMilliseconds ===
+
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:432->[Local Variables] "{df\u003djava.text.SimpleDateFormat@8a9df5fb}"
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:433->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:433 -> java.text.DateFormat.parse
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:368->[Local Variables] {"dateStr":"2014-10-03T18:00:00.6-05:00","pos":{"index":0,"errorIndex":-1}}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:369->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:369 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:369->[Local Variables] {"len":27}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:370->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:370 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:373->[Local Variables] {"c":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:392->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:392 -> com.fasterxml.jackson.databind.util.StdDateFormat.hasTimeZone
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:393->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:393 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:393->[Local Variables] {"c":":"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:396->[Local Variables] {"sb":"2014-10-03T18:00:00.6-05:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:397->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:397 -> java.lang.StringBuilder.delete
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:397->[Local Variables] {"sb":"2014-10-03T18:00:00.6-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:398->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:398 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:398->[Local Variables] {"dateStr":"2014-10-03T18:00:00.6-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:404->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:404 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:405->[Local Variables] {"len":26}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:406 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Local Variables] {"c":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:407 -> java.lang.Character.isDigit
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:409->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:409 -> java.lang.StringBuilder.insert
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:409->[Local Variables] {"sb":"2014-10-03T18:00:00.6.000-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:410->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:410 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:411->[Local Variables] {"dateStr":"2014-10-03T18:00:00.6.000-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:414->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:414 -> com.fasterxml.jackson.databind.util.StdDateFormat._cloneFormat

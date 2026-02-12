@@ -1,0 +1,87 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkNotNull",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.collect.Lists.newLinkedList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.InlineCostEstimator.getCost",
+    "doc": "/**\n   * Determines the size of the js code.\n   */",
+    "code": "static int getCost(Node root) {\n    return getCost(root, Integer.MAX_VALUE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getArrayElementStringValue",
+    "doc": "/**\n   * When converting arrays to string using Array.prototype.toString or\n   * Array.prototype.join, the rules for conversion to String are different\n   * than converting each element individually.  Specifically, \"null\" and\n   * \"undefined\" are converted to an empty string.\n   * @param n A node that is a member of an Array.\n   * @return The string representation.\n   */",
+    "code": "static String getArrayElementStringValue(Node n) {\n    return (NodeUtil.isNullOrUndefined(n) || n.getType() == Token.EMPTY)\n        ? \"\" : getStringValue(n);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getStringValue",
+    "doc": "/**\n   * Gets the value of a node as a String, or null if it cannot be converted.\n   * When it returns a non-null String, this method effectively emulates the\n   * <code>String()</code> JavaScript cast function.\n   */",
+    "code": "static String getStringValue(Node n) {\n    switch (n.getType()) {\n      case Token.STRING:\n        return n.getString();\n\n      case Token.NAME:\n        String name = n.getString();\n        if (\"undefined\".equals(name)\n            || \"Infinity\".equals(name)\n            || \"NaN\".equals(name)) {\n          return name;\n        }\n        break;\n\n      case Token.NUMBER:\n        return getStringValue(n.getDouble());\n\n      case Token.FALSE:\n      case Token.TRUE:\n      case Token.NULL:\n        return Node.tokenToName(n.getType());\n\n      case Token.VOID:\n        return \"undefined\";\n\n      case Token.NOT:\n        TernaryValue child = getPureBooleanValue(n.getFirstChild());\n        if (child != TernaryValue.UNKNOWN) {\n          return child.toBoolean(true) ? \"false\" : \"true\"; // reversed.\n        }\n        break;\n\n      case Token.ARRAYLIT:\n        return arrayToString(n);\n\n      case Token.OBJECTLIT:\n        return \"[object Object]\";\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGetProp",
+    "doc": "/**\n   * Is this a GETPROP node?\n   */",
+    "code": "static boolean isGetProp(Node n) {\n    return n.getType() == Token.GETPROP;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isImmutableValue",
+    "doc": "/**\n   * Returns true if this is an immutable value.\n   */",
+    "code": "static boolean isImmutableValue(Node n) {\n    switch (n.getType()) {\n      case Token.STRING:\n      case Token.NUMBER:\n      case Token.NULL:\n      case Token.TRUE:\n      case Token.FALSE:\n        return true;\n      case Token.NOT:\n        return isImmutableValue(n.getFirstChild());\n      case Token.VOID:\n      case Token.NEG:\n        return isImmutableValue(n.getFirstChild());\n      case Token.NAME:\n        String name = n.getString();\n        return \"undefined\".equals(name)\n            || \"Infinity\".equals(name)\n            || \"NaN\".equals(name);\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeReplaceKnownMethods.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.copyInformationFrom",
+    "doc": "/**\n   * Copies source file and name information from the other\n   * node given to the current node. Used for maintaining\n   * debug information across node append and remove operations.\n   * @return this\n   */",
+    "code": "public Node copyInformationFrom(Node other) {\n    if (getProp(ORIGINALNAME_PROP) == null) {\n      putProp(ORIGINALNAME_PROP, other.getProp(ORIGINALNAME_PROP));\n    }\n\n    if (getProp(STATIC_SOURCE_FILE) == null) {\n      putProp(STATIC_SOURCE_FILE, other.getProp(STATIC_SOURCE_FILE));\n      sourcePosition = other.sourcePosition;\n    } else if (getProp(SOURCENAME_PROP) == null) {\n      putProp(SOURCENAME_PROP, other.getProp(SOURCENAME_PROP));\n      sourcePosition = other.sourcePosition;\n    }\n\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public int getChildCount() {\n    int c = 0;\n    for (Node n = first; n != null; n = n.next)\n      c++;\n\n    return c;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newString",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public static Node newString(String str) {\n    return new StringNode(Token.STRING, str);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CoalesceVariableNames.computeVariableNamesInterferenceGraph",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.LiveVariablesAnalysis.analyze",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.LiveVariablesAnalysis.getEscapedLocals",
+    "doc": "/**\n     * @param numVars Number of all local variables.\n     */",
+    "code": "public Set<Var> getEscapedLocals() {\n    return escaped;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isGlobal",
+    "doc": "/**\n     * Returns whether this is a global variable.\n     */",
+    "code": "public boolean isGlobal() {\n      return scope.isGlobal();\n    }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.GraphColoring.color",
+    "doc": "/**\n   * Annotates the graph with {@link Color} objects using\n   * {@link GraphNode#setAnnotation(Annotation)}.\n   *\n   * @return The number of unique colors need.\n   */",
+    "code": "public abstract int color();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.next",
+    "doc": "/**\n   * Gets the next token of the token stream or the buffered token if a matching\n   * was previously made.\n   */",
+    "code": "private JsDocToken next() {\n    if (unreadToken == NO_UNREAD_TOKEN) {\n      return stream.getJsDocToken();\n    } else {\n      return current();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocToken.ordinal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getCharno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getCharno() {\n    return lineno == initLineno? initCharno + charno : charno;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getLineno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getLineno() { return lineno; }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getRemainingJSDocLine",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "String getRemainingJSDocLine() {\n    int c;\n    for (;;) {\n      c = getChar();\n      switch (c) {\n        case '*':\n          if (peekChar() != '/') {\n            addToString(c);\n            break;\n          }\n        case EOF_CHAR:\n        case '\\n':\n          ungetChar(c);\n          this.string = getStringFromBuffer();\n          stringBufferTop = 0;\n          return this.string;\n\n        default:\n          addToString(c);\n          break;\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.update",
+    "doc": "/**\n   * Allows the JSDocParser to update the character offset\n   * so that getCharno() returns a valid character position.\n   */",
+    "code": "void update() {\n    charno = getOffset();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.markText",
+    "doc": "/**\n   * Adds a textual block to the current marker.\n   */",
+    "code": "public void markText(String text, int startLineno, int startCharno, int endLineno,\n                int endCharno) {\n    if (currentMarker != null) {\n      currentMarker.description = new JSDocInfo.StringPosition();\n      currentMarker.description.setItem(text);\n      currentMarker.description.setPositionInformation(startLineno, startCharno,\n                                                       endLineno, endCharno);\n    }\n  }"
+  }
+]

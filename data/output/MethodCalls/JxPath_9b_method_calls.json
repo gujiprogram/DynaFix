@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.reset",
+    "doc": "/**\n     * Sets current position = 0, which is the pre-iteration state.\n     */",
+    "code": "public void reset() {\n        position = 0;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.findMatch",
+    "doc": "/**\n     * Compares two values\n     */",
+    "code": "return findMatch((Iterator) l, (Iterator) r);\n        }\n        if (l instanceof Iterator) {"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.CoreOperationEqual.equal",
+    "doc": "/**\n * Implementation of Expression for the operation \"=\".\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "return equal(context, args[0], args[1]) ? Boolean.TRUE : Boolean.FALSE;\n    }\n    public String getSymbol() {"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.Expression.compute",
+    "doc": "/**\n     * Evaluates the expression. If the result is a node set, returns\n     * the first element of the node set.\n     */",
+    "code": "public abstract Object compute(EvalContext context);"
+  }
+]

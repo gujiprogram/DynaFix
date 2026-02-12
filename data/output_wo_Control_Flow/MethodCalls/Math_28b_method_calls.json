@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getBasicRow",
+    "doc": "/**\n     * Checks whether the given column is basic.\n     * @param col index of the column to check\n     * @return the row that the variable is basic in.  null if the column is not basic\n     */",
+    "code": "protected Integer getBasicRow(final int col) {\n        Integer row = null;\n        for (int i = 0; i < getHeight(); i++) {\n            final double entry = getEntry(i, col);\n            if (Precision.equals(entry, 1d, maxUlps) && (row == null)) {\n                row = i;\n            } else if (!Precision.equals(entry, 0d, maxUlps)) {\n                return null;\n            }\n        }\n        return row;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth",
+    "doc": "/**\n     * Get the width of the tableau.\n     * @return width of the tableau\n     */",
+    "code": "protected final int getWidth() {\n        return tableau.getColumnDimension();\n    }"
+  }
+]

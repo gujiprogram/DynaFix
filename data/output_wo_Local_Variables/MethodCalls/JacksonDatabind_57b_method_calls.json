@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonFactory.createParser",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._bindAndReadValues",
+    "doc": "/**\n     * Overloaded version of {@link #readValue(InputStream)}.\n     */",
+    "code": "return _bindAndReadValues(_considerFilter(_parserFactory.createParser(src), true));\n    }\n\n    @SuppressWarnings(\"resource\")\n    public <T> MappingIterator<T> readValues(Reader src)\n        throws IOException, JsonProcessingException\n    {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._considerFilter",
+    "doc": "/**\n     * Consider filter when creating JsonParser.\n     */",
+    "code": "protected JsonParser _considerFilter(final JsonParser p, boolean multiValue) {\n        return ((_filter == null) || FilteringParserDelegate.class.isInstance(p))\n                ? p : new FilteringParserDelegate(p, _filter, false, multiValue);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer",
+    "doc": "/**\n     * Method called to locate deserializer for the passed root-level value.\n     */",
+    "code": "protected JsonDeserializer<Object> _findRootDeserializer(DeserializationContext ctxt)\n        throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._initForMultiRead",
+    "doc": "/**\n     * Alternative to {@link #_initForReading(JsonParser)} used in cases where reading\n     * of multiple values means that we may or may not want to advance the stream,\n     * but need to do other initialization.\n     *<p>\n     * Base implementation only sets configured {@link FormatSchema}, if any, on parser.\n     *\n     * @since 2.5\n     */",
+    "code": "protected void _initForMultiRead(JsonParser p) throws IOException {\n        if (_schema != null) {\n            p.setSchema(_schema);\n        }\n        _config.initialize(p); // since 2.5\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._newIterator",
+    "doc": "/**\n     * Factory method used to create {@link MappingIterator} instances;\n     * either default, or custom subtype.\n     *\n     * @since 2.5\n     */",
+    "code": "protected <T> MappingIterator<T> _newIterator(JsonParser p, DeserializationContext ctxt,\n            JsonDeserializer<?> deser, boolean parserManaged)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader.createDeserializationContext",
+    "doc": "/**\n     * Internal helper method called to create an instance of {@link DeserializationContext}\n     * for deserializing a single root value.\n     * Can be overridden if a custom context is needed.\n     */",
+    "code": "protected DefaultDeserializationContext createDeserializationContext(JsonParser p) {\n        return _context.createInstance(_config, p, _injectableValues);\n    }"
+  }
+]

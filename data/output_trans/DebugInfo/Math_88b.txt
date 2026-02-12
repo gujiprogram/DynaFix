@@ -1,0 +1,40 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath272 ===
+Exception: junit.framework.AssertionFailedError: expected:<1.0> but was:<0.0>
+
+=== stdout ===
+Failing tests: 1
+  - org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath272
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Control Flow] Branch Info: Line: 339, Condition: if (this.restrictToNonNegative != false), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Local Variables] {"TransVarCoeffs":[0.0,1.0,1.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:340->[Control Flow] Branch Info: Line: 340, Condition: if (TransVarBasicColumn != null), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:344 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Local Variables] {"TransVarColumn":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:345 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Control Flow] Branch Info: Line: 345, Condition: if (TransVarJ < TransVarJ), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:346 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:346 -> org.apache.commons.math.linear.RealMatrix.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Control Flow] Branch Info: Line: 346, Condition: if (TransVarColumn == 0), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Control Flow] Branch Info: Line: 346, Condition: if (TransVarColumn == 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:348->[Local Variables] {"TransVarCoeffs":[0.0,1.0,0.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Control Flow] Loop Info: Line: 344, Description: while at line 344
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Local Variables] {"TransVarColumn":2}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:345 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Control Flow] Branch Info: Line: 345, Condition: if (TransVarJ < TransVarJ), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:346 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:346 -> org.apache.commons.math.linear.RealMatrix.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:346->[Control Flow] Branch Info: Line: 346, Condition: if (TransVarColumn == 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Control Flow] Loop Info: Line: 344, Description: while at line 344
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:344->[Local Variables] {"TransVarColumn":3}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:345 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:340->[Control Flow] Branch Info: Line: 340, Condition: if (TransVarBasicColumn != null), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:345->[Control Flow] Branch Info: Line: 345, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:332->[Control Flow] Loop Info: Line: 332, Description: while at line 332
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:332->[Local Variables] {"TransVarJ":3}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:333->[Control Flow] Branch Info: Line: 333, Condition: if (TransVarCoeffs < TransVarCoeffs), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:354->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:354 -> org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:354->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:354 -> org.apache.commons.math.optimization.RealPointValuePair.<init>

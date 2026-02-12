@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.add",
+    "doc": "/**\n   * This is to be called when we're in a statement. If the prev statement\n   * needs to be ended, add a ';'.\n   */",
+    "code": "void add(String newcode) {\n    maybeEndStatement();\n\n    if (newcode.length() == 0) {\n      return;\n    }\n\n    char c = newcode.charAt(0);\n    if ((isWordChar(c) || c == '\\\\') &&\n        isWordChar(getLastChar())) {\n      append(\" \");\n    }\n\n    append(newcode);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.getLastChar",
+    "doc": "/**\n   * Retrieve the last character of the last string sent to append.\n   */",
+    "code": "abstract char getLastChar();"
+  }
+]

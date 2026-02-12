@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.ZipFileTest::testExcessDataInZip64ExtraField ===
+Exception: java.util.zip.ZipException: central directory zip64 extended information extra field's length doesn't match central directory data.  Expected length 16 but is 28
+
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:256->[Local Variables] {"TransVarHasHeader":false,"TransVarIsCompressed":true,"TransVarCompressed":true,"TransVarRelativeHeaderOffset":false}
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:257->[Control Flow] Branch Info: Line: 257, Condition: if (this.rawCentralDirectoryData != null), Executed: true
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:261->[Control Flow] Branch Info: Line: 261, Condition: if (TransVarCompressed != 0), Executed: true
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:261->[Control Flow] Branch Info: Line: 261, Condition: if (TransVarIsCompressed != 0), Executed: true
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:261->[Control Flow] Branch Info: Line: 261, Condition: if (TransVarRelativeHeaderOffset != 0), Executed: false
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:261->[Control Flow] Branch Info: Line: 261, Condition: if (TransVarHasHeader != 0), Executed: false
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:264->[Local Variables] {"TransVarTotalLength":16}
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:265->[Control Flow] Branch Info: Line: 265, Condition: if (TransVarTotalLength != TransVarTotalLength), Executed: true
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.lang.StringBuilder.toString
+org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField:reparseCentralDirectoryData:269->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.Zip64ExtendedInformationExtraField.reparseCentralDirectoryData:269 -> java.util.zip.ZipException.<init>

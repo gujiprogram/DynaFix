@@ -1,0 +1,105 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_MISSING_RETURN_STATEMENT. Missing return statement. Function expected to return number. at testcode line 1 : 24 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> java.util.Deque.isEmpty
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:832->[Local Variables] "{lastJump\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Deque.iterator
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Iterator.next
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:834->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:834 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:834->[Control Flow] Branch Info: Line: 834, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dRETURN 1 [source_file: testcode], target\u003dNUMBER 2.0 1 [source_file: testcode] : number}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:840->[Control Flow] Branch Info: Line: 840, Condition: if (catchBlock == 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:841->[Control Flow] Branch Info: Line: 841, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:842->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:842 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:842->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:842 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:854->[Local Variables] "{lastJump\u003dTRY 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Loop Info: Line: 833, Description: while at line 833
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Iterator.next
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Local Variables] "{handler\u003dFUNCTION foo 1 [jsdoc_info: JSDocInfo] [source_file: testcode] : function (): number}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:834->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:834 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:834->[Control Flow] Branch Info: Line: 834, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dRETURN 1 [source_file: testcode], target\u003dNUMBER 1.0 1 [source_file: testcode] : number}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dIF 1 [source_file: testcode], target\u003dGT 1 [source_file: testcode] : boolean}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dEXPR_RESULT 1 [source_file: testcode], target\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dEXPR_RESULT 1 [source_file: cfgtest], target\u003dEXPR_RESULT 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> java.util.Deque.isEmpty
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:841->[Control Flow] Branch Info: Line: 841, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:844->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:844 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:844->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:844 -> com.google.common.collect.Multimap.put
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Loop Info: Line: 833, Description: while at line 833
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:833 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dEXPR_RESULT 1 [source_file: cfgtest], target\u003dEXPR_RESULT 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dVAR 1 [source_file: cfgtest], target\u003dVAR 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dEXPR_RESULT 1 [source_file: cfgtest], target\u003dEXPR_RESULT 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dIF 1 [source_file: cfgtest], target\u003dNAME a 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedBreakwithFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dVAR 1 [source_file: cfgtest], target\u003dVAR 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{cfgNode\u003dWHILE 1 [source_file: cfgtest], target\u003dNUMBER 2.0 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:830->[Local Variables] "{target\u003dNUMBER 1.0 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler:831 -> com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (target != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:831->[Control Flow] Branch Info: Line: 831, Condition: if (this.exceptionHandler == false), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:connectToPossibleExceptionHandler:833->[Control Flow] Branch Info: Line: 833, Condition: if (var4 != 0), Executed: false

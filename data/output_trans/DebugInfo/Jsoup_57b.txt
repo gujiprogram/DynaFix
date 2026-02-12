@@ -1,0 +1,58 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::testChainedRemoveAttributes ===
+Exception: java.util.ConcurrentModificationException
+
+org.jsoup.nodes.Attributes:removeIgnoreCase:122->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:122 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.nodes.Attributes:removeIgnoreCase:123->[Control Flow] Branch Info: Line: 123, Condition: if (this.attributes == null), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:125 -> java.util.LinkedHashMap.keySet
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:125 -> java.util.Set.iterator
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Local Variables] "{TransVarIterator\u003djava.util.LinkedHashMap$LinkedKeyIterator@38102d01}"
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Local Variables] {"TransVarKey":"one"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:131 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:132->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:132 -> java.util.LinkedHashMap.remove
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Control Flow] Loop Info: Line: 125, Description: while at line 125
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:121->[Local Variables] {"TransVarKeyValue":"zero"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:122->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:122 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.nodes.Attributes:removeIgnoreCase:123->[Control Flow] Branch Info: Line: 123, Condition: if (this.attributes == null), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:125 -> java.util.LinkedHashMap.keySet
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:125 -> java.util.Set.iterator
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Local Variables] "{TransVarIterator\u003djava.util.LinkedHashMap$LinkedKeyIterator@c86b9e3}"
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Local Variables] {"TransVarKey":"one"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:131 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Control Flow] Loop Info: Line: 125, Description: while at line 125
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Local Variables] {"TransVarKey":"two"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:131 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Control Flow] Loop Info: Line: 125, Description: while at line 125
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Local Variables] {"TransVarKey":"three"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:131 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Control Flow] Loop Info: Line: 125, Description: while at line 125
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: true
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:130 -> java.util.Iterator.next
+org.jsoup.nodes.Attributes:removeIgnoreCase:130->[Local Variables] {"TransVarKey":"four"}
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:131 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.Attributes:removeIgnoreCase:131->[Control Flow] Branch Info: Line: 131, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:125->[Control Flow] Loop Info: Line: 125, Description: while at line 125
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Method Call] Call Stack: org.jsoup.nodes.Attributes.removeIgnoreCase:126 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Attributes:removeIgnoreCase:126->[Control Flow] Branch Info: Line: 126, Condition: if (TransVarIterator != 0), Executed: false
+org.jsoup.nodes.Attributes:removeIgnoreCase:121->[Local Variables] {"TransVarKeyValue":"one"}

@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.ser.DateSerializationTest::testFormatWithoutPattern ===
+Exception: junit.framework.ComparisonFailure: expected:<{"date":"1970-01-01[X01:00:]00"}> but was:<{"date":"1970-01-01[T01:00:00.000+01]00"}>
+
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:81->[Local Variables] {"TransVarPatternOfDate":"yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSSZ"}
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:82->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:82 -> com.fasterxml.jackson.annotation.JsonFormat$Value.hasLocale
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:82->[Control Flow] Branch Info: Line: 82, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasLocale() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:84->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:84 -> com.fasterxml.jackson.databind.SerializerProvider.getLocale
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:84->[Local Variables] {"TransVarLocale":"en"}
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:85->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:85 -> java.text.SimpleDateFormat.<init>
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:85->[Local Variables] "{TransVarS\u003djava.text.SimpleDateFormat@8a9df5fb}"
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:86->[Control Flow] Branch Info: Line: 86, Condition: if (TransVarTimeZone == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:89->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:89 -> java.text.SimpleDateFormat.setTimeZone
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:90->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:90 -> com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.withFormat
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:54->[Local Variables] "{TransVarProvider\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@c5ee75e}"
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:55->[Control Flow] Branch Info: Line: 55, Condition: if (TransVarPropertyOfBean == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:61->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:61 -> com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.handledType
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:61->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:61 -> com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.findFormatOverrides
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:61->[Local Variables] {"TransVarFormat1":{"_pattern":"","_shape":"ANY","_timezoneStr":"CET","_features":{"_enabled":0,"_disabled":0}}}
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarFormat1 == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:69->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:69 -> com.fasterxml.jackson.annotation.JsonFormat$Value.getShape
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:69->[Local Variables] {"TransVarShapeType":"ANY"}
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:70->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:70 -> com.fasterxml.jackson.annotation.JsonFormat$Shape.isNumeric
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:70->[Control Flow] Branch Info: Line: 70, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Shape.isNumeric() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:76->[Control Flow] Branch Info: Line: 76, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:76->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:76 -> com.fasterxml.jackson.annotation.JsonFormat$Value.hasPattern
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:76->[Control Flow] Branch Info: Line: 76, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasPattern() == 0), Executed: true
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:77->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:77 -> com.fasterxml.jackson.annotation.JsonFormat$Value.hasLocale
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:77->[Control Flow] Branch Info: Line: 77, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasLocale() == 0), Executed: true
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:77->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:77 -> com.fasterxml.jackson.annotation.JsonFormat$Value.hasTimeZone
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:77->[Control Flow] Branch Info: Line: 77, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasTimeZone() != 0), Executed: true
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:76->[Control Flow] Branch Info: Line: 76, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:76->[Control Flow] Branch Info: Line: 76, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasPattern() == 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:77->[Control Flow] Branch Info: Line: 77, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasLocale() == 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:78->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:78 -> com.fasterxml.jackson.annotation.JsonFormat$Value.getTimeZone
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:79->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase.createContextual:79 -> com.fasterxml.jackson.annotation.JsonFormat$Value.hasPattern
+com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase:createContextual:79->[Control Flow] Branch Info: Line: 79, Condition: if (com.fasterxml.jackson.annotation.JsonFormat$Value.hasPattern() != 0), Executed: false

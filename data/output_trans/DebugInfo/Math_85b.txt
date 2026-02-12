@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.apache.commons.math.distribution.NormalDistributionTest::testMath280 ===
+Exception: org.apache.commons.math.MathException: org.apache.commons.math.ConvergenceException: number of iterations=1, maximum iterations=2,147,483,647, initial=1, lower bound=0, upper bound=179,769,313,486,231,570,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000, final a value=0, final b value=2, f(a)=-0.477, f(b)=0
+
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> org.apache.commons.math.ConvergenceException.<init>
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:126->[Local Variables] {"initial":1.0,"upperBound":1.7976931348623157E308,"lowerBound":0.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:172->[Local Variables] {"TransVarMaxIterations":2147483647,"TransVarLower":0.0,"TransVarLowerBound":1.7976931348623157E308,"TransVarVariable":1.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:173->[Control Flow] Branch Info: Line: 173, Condition: if (TransVarFunctionOfVariable == null), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:179->[Control Flow] Branch Info: Line: 179, Condition: if (TransVarMaxIterations <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarLower >= 0), Executed: true
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarLowerBound <= 0), Executed: true
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarLowerBound >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:192->[Local Variables] {"TransVarInitial":1.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:195->[Local Variables] {"TransVarVariableOfB":1.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarLower <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarLowerBound >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:198->[Local Variables] {"TransVarNumIteration":0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:199->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:199 -> java.lang.Math.max
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:199->[Local Variables] {"TransVarInitial":0.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:200->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:200 -> java.lang.Math.min
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:200->[Local Variables] {"TransVarVariableOfB":2.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:201->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:201 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:202->[Local Variables] {"TransVarFunction":-0.4772498680518209}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:203->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:203 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:203->[Local Variables] {"TransVarFunctionOfB":0.0}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:204->[Local Variables] {"TransVarNumIteration":1}
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarFunctionOfB > 0), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarMaxIterations < TransVarMaxIterations), Executed: false
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:208->[Control Flow] Branch Info: Line: 208, Condition: if (TransVarFunctionOfB >= 0), Executed: true
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:213->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:213 -> java.lang.Integer.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:213->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:213 -> java.lang.Integer.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:213->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:213 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf
+org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils:bracket:214->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.bracket:214 -> java.lang.Double.valueOf

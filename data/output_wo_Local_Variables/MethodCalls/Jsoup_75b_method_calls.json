@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jsoup.nodes.Attribute.isBooleanAttribute",
+    "doc": "/**\n     * @deprecated\n     */",
+    "code": "protected boolean isBooleanAttribute() {\n        return Arrays.binarySearch(booleanAttributes, key) >= 0 || val == null;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document$OutputSettings.syntax",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.nodes.Entities.escape",
+    "doc": "/**\n     * HTML escape an input string. That is, {@code <} is returned as {@code &lt;}\n     *\n     * @param string the un-escaped string to escape\n     * @param out the output settings to use\n     * @return the escaped string\n     */",
+    "code": "public static String escape(String string, Document.OutputSettings out) {\n        if (string == null)\n            return \"\";\n        StringBuilder accum = new StringBuilder(string.length() * 2);\n        try {\n            escape(accum, string, out, false, false, false);\n        } catch (IOException e) {\n            throw new SerializationException(e); // doesn't happen\n        }\n        return accum.toString();\n    }"
+  }
+]

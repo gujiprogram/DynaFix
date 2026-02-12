@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.joda.time.Chronology.dayOfMonth",
+    "doc": "/**\n     * Get the day of month field for this chronology.\n     *\n     * @return DateTimeField or UnsupportedDateTimeField if unsupported\n     */",
+    "code": "public abstract DateTimeField dayOfMonth();"
+  },
+  {
+    "method": "org.joda.time.Chronology.getDateTimeMillis",
+    "doc": "/**\n     * Returns a datetime millisecond instant, formed from the given year,\n     * month, day, and millisecond values. The set of given values must refer\n     * to a valid datetime, or else an IllegalArgumentException is thrown.\n     * <p>\n     * The default implementation calls upon separate DateTimeFields to\n     * determine the result. Subclasses are encouraged to provide a more\n     * efficient implementation.\n     *\n     * @param year year to use\n     * @param monthOfYear month to use\n     * @param dayOfMonth day of month to use\n     * @param millisOfDay millisecond to use\n     * @return millisecond instant from 1970-01-01T00:00:00Z\n     * @throws IllegalArgumentException if the values are invalid\n     */",
+    "code": "public abstract long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth, int millisOfDay);"
+  },
+  {
+    "method": "org.joda.time.Chronology.millisOfDay",
+    "doc": "/**\n     * Get the millis of day field for this chronology.\n     *\n     * @return DateTimeField or UnsupportedDateTimeField if unsupported\n     */",
+    "code": "public abstract DateTimeField millisOfDay();"
+  },
+  {
+    "method": "org.joda.time.Chronology.monthOfYear",
+    "doc": "/**\n     * Get the month of year field for this chronology.\n     *\n     * @return DateTimeField or UnsupportedDateTimeField if unsupported\n     */",
+    "code": "public abstract DateTimeField monthOfYear();"
+  },
+  {
+    "method": "org.joda.time.Chronology.year",
+    "doc": "/**\n     * Get the year field for this chronology.\n     *\n     * @return DateTimeField or UnsupportedDateTimeField if unsupported\n     */",
+    "code": "public abstract DateTimeField year();"
+  },
+  {
+    "method": "org.joda.time.DateTimeField.get",
+    "doc": "/**\n     * Get the value of this field from the milliseconds.\n     *\n     * @param instant  the milliseconds from 1970-01-01T00:00:00Z to query\n     * @return the value of the field, in the units of the field\n     */",
+    "code": "public abstract int get(long instant);"
+  }
+]

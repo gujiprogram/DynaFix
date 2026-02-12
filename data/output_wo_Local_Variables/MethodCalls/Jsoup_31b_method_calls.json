@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jsoup.helper.DescendableLinkedList.add",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.valueOf",
+    "doc": "/**\n     * Get a Tag by name. If not previously defined (unknown), returns a new generic tag, that can do anything.\n     * <p/>\n     * Pre-defined tags (P, DIV etc) will be ==, but unknown tags are not registered and will only .equals().\n     *\n     * @param tagName Name of tag, e.g. \"p\". Case insensitive.\n     * @return The tag, either defined or new generic.\n     */",
+    "code": "public static Tag valueOf(String tagName) {\n        Validate.notNull(tagName);\n        Tag tag = tags.get(tagName);\n\n        if (tag == null) {\n            tagName = tagName.trim().toLowerCase();\n            Validate.notEmpty(tagName);\n            tag = tags.get(tagName);\n\n            if (tag == null) {\n                tag = new Tag(tagName);\n                tag.isBlock = false;\n                tag.canContainBlock = true;\n            }\n        }\n        return tag;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$Comment.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.isSelfClosing",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.name",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.XmlTreeBuilder.insertNode",
+    "doc": "/**\n * @author Jonathan Hedley\n */",
+    "code": "private void insertNode(Node node) {\n        currentElement().appendChild(node);\n    }"
+  }
+]

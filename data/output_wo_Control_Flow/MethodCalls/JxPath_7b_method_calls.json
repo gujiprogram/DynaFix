@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.InfoSetUtil.doubleValue",
+    "doc": "/**\n     * Converts the supplied object to double\n     */",
+    "code": "public static double doubleValue(Object object) {\n        if (object instanceof Number) {\n            return ((Number) object).doubleValue();\n        }\n        if (object instanceof Boolean) {\n            return ((Boolean) object).booleanValue() ? 0.0 : 1.0;\n        }\n        if (object instanceof String) {\n            if (object.equals(\"\")) {\n                return 0.0;\n            }\n            try {\n                return Double.parseDouble((String) object);\n            }\n            catch (NumberFormatException ex) {\n                return Double.NaN;\n            }\n        }\n        if (object instanceof NodePointer) {\n            return doubleValue(((NodePointer) object).getValue());\n        }\n        if (object instanceof EvalContext) {\n            EvalContext ctx = (EvalContext) object;\n            Pointer ptr = ctx.getSingleNodePointer();\n            return ptr == null ? Double.NaN : doubleValue(ptr);\n        }\n        return doubleValue(stringValue(object));\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.Expression.computeValue",
+    "doc": "/**\n     * Evaluates the expression. If the result is a node set, returns\n     * the first element of the node set.\n     */",
+    "code": "public abstract Object computeValue(EvalContext context);\n    public abstract Object compute(EvalContext context);"
+  }
+]

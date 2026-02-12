@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NodeUtilTest::testValidDefine ===
+Exception: junit.framework.AssertionFailedError
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.ProcessDefinesTest::testOverridingString1 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_INVALID_DEFINE_INIT_ERROR. illegal initialization of @define variable DEF_OVERRIDE_STRING at testcode line 1 : 54 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2186->[Local Variables] "{nameNode\u003dNAME DEF_OVERRIDE_STRING 1 [sourcename: testcode] [is_constant_name: 1]}"
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2189->[Control Flow] Branch Info: Line: 2189, Condition: if (nameNode != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2190->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2190 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2191->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2191 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2189->[Control Flow] Branch Info: Line: 2189, Condition: if (nameNode != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2193->[Local Variables] "{parent\u003dVAR 1 [sourcename: testcode] [jsdoc_info: JSDocInfo]}"
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (info == null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2195 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Control Flow] Branch Info: Line: 2195, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2195 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Control Flow] Branch Info: Line: 2195, Condition: if (com.google.javascript.rhino.Node.hasOneChild() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2197->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2197 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (info == null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2196->[Control Flow] Branch Info: Line: 2196, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2198->[Local Variables] {"info":{"sourceName":"testcode","visibility":"INHERITED","bitset":536870916,"type":{"root":{"str":"string","type":40,"sourcePosition":4109},"sourceName":"testcode"},"includeDocumentation":false}}
+
+=== Debug Info for Test: com.google.javascript.jscomp.ProcessDefinesTest::testOverridingString3 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_INVALID_DEFINE_INIT_ERROR. illegal initialization of @define variable DEF_OVERRIDE_STRING at testcode line 1 : 54 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2186->[Local Variables] "{nameNode\u003dNAME DEF_OVERRIDE_STRING 1 [sourcename: testcode] [is_constant_name: 1]}"
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2189->[Control Flow] Branch Info: Line: 2189, Condition: if (nameNode != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2190->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2190 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2191->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2191 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2189->[Control Flow] Branch Info: Line: 2189, Condition: if (nameNode != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2193->[Local Variables] "{parent\u003dVAR 1 [sourcename: testcode] [jsdoc_info: JSDocInfo]}"
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (info == null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2195 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Control Flow] Branch Info: Line: 2195, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2195 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2195->[Control Flow] Branch Info: Line: 2195, Condition: if (com.google.javascript.rhino.Node.hasOneChild() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2197->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getInfoForNameNode:2197 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (info == null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2194->[Control Flow] Branch Info: Line: 2194, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2196->[Control Flow] Branch Info: Line: 2196, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getInfoForNameNode:2198->[Local Variables] {"info":{"sourceName":"testcode","visibility":"INHERITED","bitset":536870916,"type":{"root":{"str":"string","type":40,"sourcePosition":4109},"sourceName":"testcode"},"includeDocumentation":false}}

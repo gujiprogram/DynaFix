@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: org.apache.commons.math.ode.events.EventStateTest::closeEvents ===
+Exception: org.apache.commons.math.MathRuntimeException$4: function values at endpoints do not have different signs.  Endpoints: [89.999, 153.1], Values: [-0.066, -1,142.11]
+
+=== stdout ===
+Failing tests: 1
+  - org.apache.commons.math.ode.events.EventStateTest::closeEvents
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+org.apache.commons.math.ode.events.EventState:evaluateStep:184->[Local Variables] {"TransVarGa2":-0.06552747210136982}
+org.apache.commons.math.ode.events.EventState:evaluateStep:185->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:185 -> org.apache.commons.math.ode.sampling.StepInterpolator.isForward
+org.apache.commons.math.ode.events.EventState:evaluateStep:185->[Control Flow] Branch Info: Line: 185, Condition: if (TransVarInterpolator1 != 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:185->[Local Variables] {"TransVarTb2":90.09854388107068}
+org.apache.commons.math.ode.events.EventState:evaluateStep:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarNumCheckPoints < TransVarNumCheckPoints), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:191->[Local Variables] {"TransVarTb2":153.1}
+org.apache.commons.math.ode.events.EventState:evaluateStep:192->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:192 -> org.apache.commons.math.ode.sampling.StepInterpolator.setInterpolatedTime
+org.apache.commons.math.ode.events.EventState:evaluateStep:192->[Local Variables] {"TransVarInterpolator1":{"previousTime":112.5,"currentTime":153.0,"h":40.5,"currentState":[],"interpolatedTime":153.1,"interpolatedState":[],"interpolatedDerivatives":[],"finalized":false,"forward":true,"dirtyState":true}}
+org.apache.commons.math.ode.events.EventState:evaluateStep:193->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:193 -> org.apache.commons.math.ode.sampling.StepInterpolator.getInterpolatedState
+org.apache.commons.math.ode.events.EventState:evaluateStep:193->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:193 -> org.apache.commons.math.ode.events.EventHandler.g
+org.apache.commons.math.ode.events.EventState:evaluateStep:193->[Local Variables] {"TransVarGb1":-1142.1099999999994,"TransVarInterpolator1":{"previousTime":112.5,"currentTime":153.0,"h":40.5,"currentState":[],"interpolatedTime":153.1,"interpolatedState":[],"interpolatedDerivatives":[],"finalized":false,"forward":true,"dirtyState":false}}
+org.apache.commons.math.ode.events.EventState:evaluateStep:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarGb1 >= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarGb1 != 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarGa2 >= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:196->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:196 -> org.apache.commons.math.ode.events.EventState$1.<init>
+org.apache.commons.math.ode.events.EventState:evaluateStep:208->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:208 -> org.apache.commons.math.analysis.solvers.BrentSolver.<init>
+org.apache.commons.math.ode.events.EventState:evaluateStep:208->[Local Variables] {"TransVarSolver2":{"functionValueAccuracy":1.0E-15,"defaultFunctionValueAccuracy":1.0E-15,"resultComputed":false,"result":0.0,"functionValue":0.0,"absoluteAccuracy":1.0E-6,"relativeAccuracy":1.0E-14,"maximalIterationCount":100,"defaultAbsoluteAccuracy":1.0E-6,"defaultRelativeAccuracy":1.0E-14,"defaultMaximalIterationCount":100,"iterationCount":0}}
+org.apache.commons.math.ode.events.EventState:evaluateStep:209->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:209 -> org.apache.commons.math.analysis.solvers.BrentSolver.setAbsoluteAccuracy
+org.apache.commons.math.ode.events.EventState:evaluateStep:209->[Local Variables] {"TransVarSolver2":{"functionValueAccuracy":1.0E-15,"defaultFunctionValueAccuracy":1.0E-15,"resultComputed":false,"result":0.0,"functionValue":0.0,"absoluteAccuracy":0.1,"relativeAccuracy":1.0E-14,"maximalIterationCount":100,"defaultAbsoluteAccuracy":1.0E-6,"defaultRelativeAccuracy":1.0E-14,"defaultMaximalIterationCount":100,"iterationCount":0}}
+org.apache.commons.math.ode.events.EventState:evaluateStep:210->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:210 -> org.apache.commons.math.analysis.solvers.BrentSolver.setMaximalIterationCount
+org.apache.commons.math.ode.events.EventState:evaluateStep:210->[Local Variables] {"TransVarSolver2":{"functionValueAccuracy":1.0E-15,"defaultFunctionValueAccuracy":1.0E-15,"resultComputed":false,"result":0.0,"functionValue":0.0,"absoluteAccuracy":0.1,"relativeAccuracy":1.0E-14,"maximalIterationCount":10,"defaultAbsoluteAccuracy":1.0E-6,"defaultRelativeAccuracy":1.0E-14,"defaultMaximalIterationCount":100,"iterationCount":0}}
+org.apache.commons.math.ode.events.EventState:evaluateStep:211->[Control Flow] Branch Info: Line: 211, Condition: if (TransVarTb2 <= 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:211->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:211 -> org.apache.commons.math.analysis.solvers.BrentSolver.solve

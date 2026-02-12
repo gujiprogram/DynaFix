@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jfree.data.time.RegularTimePeriod.compareTo",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getIndex",
+    "doc": "/**\n     * Returns the index for the item (if any) that corresponds to a time\n     * period.\n     *\n     * @param period  the time period (<code>null</code> not permitted).\n     *\n     * @return The index.\n     */",
+    "code": "public int getIndex(RegularTimePeriod period) {\n        if (period == null) {\n            throw new IllegalArgumentException(\"Null 'period' argument.\");\n        }\n        TimeSeriesDataItem dummy = new TimeSeriesDataItem(\n              period, Integer.MIN_VALUE);\n        return Collections.binarySearch(this.data, dummy);\n    }"
+  }
+]

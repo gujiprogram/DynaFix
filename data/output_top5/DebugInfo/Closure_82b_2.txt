@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue301 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:617->[Local Variables] "{that\u003dfunction (...[?]): string}"
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:618->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:618 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:618->[Control Flow] Branch Info: Line: 618, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:629->[Local Variables] "{thatType\u003dfunction (...[?]): string, thisType\u003dString.prototype}"
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:630->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:630 -> com.google.javascript.rhino.jstype.JSType.isEquivalentTo
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:630->[Control Flow] Branch Info: Line: 630, Condition: if (com.google.javascript.rhino.jstype.JSType.isEquivalentTo() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:632->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:632 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:632->[Control Flow] Branch Info: Line: 632, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:632->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:632 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:632->[Control Flow] Branch Info: Line: 632, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:637->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:637 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:637->[Control Flow] Branch Info: Line: 637, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:639->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:639 -> com.google.javascript.rhino.jstype.JSType.isSubtype
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:639->[Control Flow] Branch Info: Line: 639, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:641->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:641 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:641->[Control Flow] Branch Info: Line: 641, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:643->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:643 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:643->[Control Flow] Branch Info: Line: 643, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:645->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:645 -> com.google.javascript.rhino.jstype.JSType.isObject
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:645->[Control Flow] Branch Info: Line: 645, Condition: if (com.google.javascript.rhino.jstype.JSType.isObject() != 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:645->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:645 -> com.google.javascript.rhino.jstype.JSType.isObject
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:645->[Control Flow] Branch Info: Line: 645, Condition: if (com.google.javascript.rhino.jstype.JSType.isObject() != 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:getGreatestSubtype:646->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.getGreatestSubtype:646 -> com.google.javascript.rhino.jstype.JSType.getNativeType
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.FunctionTypeTest::testEmptyFunctionTypes ===
+Exception: junit.framework.AssertionFailedError
+

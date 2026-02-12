@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isRecordType",
+    "doc": "/**\n   * Downcasts this to an EnumType, or returns null if this is not an EnumType.\n   */",
+    "code": "public boolean isRecordType() {\n    return toMaybeRecordType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName",
+    "doc": "/**\n   * This should only be reset on the FunctionPrototypeType, only to fix an\n   * incorrectly established prototype chain due to the user having a mismatch\n   * in super class declaration, and only before properties on that type are\n   * processed.\n   */",
+    "code": "public boolean hasReferenceName() {\n    return className != null || ownerFunction != null;\n  }"
+  }
+]

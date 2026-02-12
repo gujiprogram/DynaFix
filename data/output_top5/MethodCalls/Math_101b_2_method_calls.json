@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.getDefaultNumberFormat",
+    "doc": "/**\n     * Create a default number format.  The default number format is based on\n     * {@link NumberFormat#getInstance()} with the only customizing is the\n     * maximum number of fraction digits, which is set to 2.\n     * @return the default number format.\n     */",
+    "code": "private static NumberFormat getDefaultNumberFormat() {\n        return getDefaultNumberFormat(Locale.getDefault());\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.setImaginaryCharacter",
+    "doc": "/**\n     * Modify the imaginaryCharacter.\n     * @param imaginaryCharacter The new imaginaryCharacter value.\n     * @throws IllegalArgumentException if <code>imaginaryCharacter</code> is\n     *         <code>null</code> or an empty string.\n     */",
+    "code": "public void setImaginaryCharacter(String imaginaryCharacter) {\n        if (imaginaryCharacter == null || imaginaryCharacter.length() == 0) {\n            throw new IllegalArgumentException(\n                \"imaginaryCharacter must be a non-empty string.\");\n        }\n        this.imaginaryCharacter = imaginaryCharacter;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.setImaginaryFormat",
+    "doc": "/**\n     * Modify the imaginaryFormat.\n     * @param imaginaryFormat The new imaginaryFormat value.\n     * @throws IllegalArgumentException if <code>imaginaryFormat</code> is\n     *         <code>null</code>.\n     */",
+    "code": "public void setImaginaryFormat(NumberFormat imaginaryFormat) {\n        if (imaginaryFormat == null) {\n            throw new IllegalArgumentException(\n                \"imaginaryFormat can not be null.\");\n        }\n        this.imaginaryFormat = imaginaryFormat;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.setRealFormat",
+    "doc": "/**\n     * Modify the realFormat.\n     * @param realFormat The new realFormat value.\n     * @throws IllegalArgumentException if <code>realFormat</code> is\n     *         <code>null</code>.\n     */",
+    "code": "public void setRealFormat(NumberFormat realFormat) {\n        if (realFormat == null) {\n            throw new IllegalArgumentException(\n                \"realFormat can not be null.\");\n        }\n        this.realFormat = realFormat;\n    }"
+  }
+]

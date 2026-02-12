@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testIssue821 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:331->[Local Variables] {"rawJsString":"1"}
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:332->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:332 -> java.lang.String.contains
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:332->[Control Flow] Branch Info: Line: 332, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:337->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:337 -> com.google.javascript.jscomp.NodeUtil.trimJsWhiteSpace
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:338->[Local Variables] {"s":"1"}
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:339->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:339 -> java.lang.String.length
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:339->[Control Flow] Branch Info: Line: 339, Condition: if (java.lang.String.length() == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:343->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:343 -> java.lang.String.length
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:343->[Control Flow] Branch Info: Line: 343, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:344->[Control Flow] Branch Info: Line: 344, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:345->[Control Flow] Branch Info: Line: 345, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:354->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:354 -> java.lang.String.length
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:354->[Control Flow] Branch Info: Line: 354, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:355->[Control Flow] Branch Info: Line: 355, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:356->[Control Flow] Branch Info: Line: 356, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:357->[Control Flow] Branch Info: Line: 357, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:364->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:364 -> java.lang.String.equals
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:364->[Control Flow] Branch Info: Line: 364, Condition: if (java.lang.String.equals() == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:365->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:365 -> java.lang.String.equals
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:365->[Control Flow] Branch Info: Line: 365, Condition: if (java.lang.String.equals() == 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:366->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:366 -> java.lang.String.equals
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:366->[Control Flow] Branch Info: Line: 366, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:371->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:371 -> java.lang.Double.parseDouble
+com.google.javascript.jscomp.NodeUtil:getStringNumberValue:371->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.getStringNumberValue:371 -> java.lang.Double.valueOf

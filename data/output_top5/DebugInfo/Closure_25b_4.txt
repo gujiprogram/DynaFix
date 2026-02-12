@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+Exception: junit.framework.ComparisonFailure: expected:<{[foo: (number|undefined)]}> but was:<{[]}>
+
+com.google.javascript.jscomp.TypeInference:traverseName:627->[Control Flow] Branch Info: Line: 627, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (unflowable == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (nonLocalInferredSlot == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:630 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.jscomp.TypeInference:traverseName:630->[Local Variables] "{type\u003d{}}"
+com.google.javascript.jscomp.TypeInference:traverseName:611->[Control Flow] Branch Info: Line: 611, Condition: if (var != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (unflowable == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (nonLocalInferredSlot == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:631->[Control Flow] Branch Info: Line: 631, Condition: if (type == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:637->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:637 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:traverseName:637->[Local Variables] "{n\u003dNAME y 4 [source_file: [testcode]] : {}}"
+com.google.javascript.jscomp.TypeInference:traverseName:630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:630 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.jscomp.TypeInference:traverseName:630->[Local Variables] "{type\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseName:611->[Control Flow] Branch Info: Line: 611, Condition: if (var != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (unflowable == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:629->[Control Flow] Branch Info: Line: 629, Condition: if (nonLocalInferredSlot == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:631->[Control Flow] Branch Info: Line: 631, Condition: if (type == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:637->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:637 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:traverseName:637->[Local Variables] "{n\u003dNAME F 4 [source_file: [testcode]] : function (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseName:600->[Local Variables] "{n\u003dNAME y 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseName:601->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:601 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeInference:traverseName:601->[Local Variables] {"varName":"y"}
+com.google.javascript.jscomp.TypeInference:traverseName:602->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:602 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseName:603->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:603 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeInference:traverseName:604->[Control Flow] Branch Info: Line: 604, Condition: if (value != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:610->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:610 -> com.google.javascript.jscomp.type.FlowScope.getSlot
+com.google.javascript.jscomp.TypeInference:traverseName:610->[Local Variables] "{var\u003dcom.google.javascript.jscomp.LinkedFlowScope$LinkedFlowSlot@4f2d995e}"
+com.google.javascript.jscomp.TypeInference:traverseName:611->[Control Flow] Branch Info: Line: 611, Condition: if (var != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:617->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:617 -> com.google.javascript.rhino.jstype.StaticSlot.isTypeInferred
+com.google.javascript.jscomp.TypeInference:traverseName:617->[Local Variables] {"isInferred":true}
+com.google.javascript.jscomp.TypeInference:traverseName:618->[Control Flow] Branch Info: Line: 618, Condition: if (isInferred != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:619->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:619 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeInference:traverseName:619->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:619 -> com.google.javascript.jscomp.TypeInference.isUnflowable
+com.google.javascript.jscomp.TypeInference:traverseName:618->[Control Flow] Branch Info: Line: 618, Condition: if (isInferred != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:619->[Control Flow] Branch Info: Line: 619, Condition: if (com.google.javascript.jscomp.Scope.getVar() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:624->[Control Flow] Branch Info: Line: 624, Condition: if (isInferred != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:626->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:626 -> com.google.javascript.jscomp.Scope.getParent
+com.google.javascript.jscomp.TypeInference:traverseName:626->[Control Flow] Branch Info: Line: 626, Condition: if (com.google.javascript.jscomp.Scope.getParent() != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseName:627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:627 -> com.google.javascript.jscomp.Scope.getParent
+com.google.javascript.jscomp.TypeInference:traverseName:627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseName:627 -> com.google.javascript.jscomp.Scope.getSlot
+com.google.javascript.jscomp.TypeInference:traverseName:624->[Control Flow] Branch Info: Line: 624, Condition: if (isInferred != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseName:626->[Control Flow] Branch Info: Line: 626, Condition: if (com.google.javascript.jscomp.Scope.getParent() != null), Executed: false

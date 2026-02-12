@@ -1,0 +1,52 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.lang3.math.NumberUtils:createNumber:586->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:586 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:586->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:586 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:589->[Local Variables] {"TransVarExpString":"+38"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:590->[Control Flow] Branch Info: Line: 590, Condition: if (TransVarDecimal == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:590->[Control Flow] Branch Info: Line: 590, Condition: if (TransVarExpString == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:606->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:606 -> org.apache.commons.lang3.math.NumberUtils.isAllZeros
+org.apache.commons.lang3.math.NumberUtils:createNumber:606->[Control Flow] Branch Info: Line: 606, Condition: if (TransVarMantissa != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:606->[Control Flow] Branch Info: Line: 606, Condition: if (TransVarExpString != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:608->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:608 -> org.apache.commons.lang3.math.NumberUtils.createFloat
+org.apache.commons.lang3.math.NumberUtils:createNumber:608->[Local Variables] {"TransVarValue":3.4028235E38}
+org.apache.commons.lang3.math.NumberUtils:createNumber:609->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:609 -> java.lang.Float.isInfinite
+org.apache.commons.lang3.math.NumberUtils:createNumber:609->[Control Flow] Branch Info: Line: 609, Condition: if (java.lang.Float.isInfinite() == 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:609->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:609 -> java.lang.Float.floatValue
+org.apache.commons.lang3.math.NumberUtils:createNumber:609->[Control Flow] Branch Info: Line: 609, Condition: if (java.lang.Float.floatValue() == 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Control Flow] Branch Info: Line: 469, Condition: if (TransVarMantissa < TransVarMantissa), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Local Variables] {"TransVarPrefix":"-#","i$":5}
+org.apache.commons.lang3.math.NumberUtils:createNumber:470->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:470 -> java.lang.String.startsWith
+org.apache.commons.lang3.math.NumberUtils:createNumber:470->[Control Flow] Branch Info: Line: 470, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Control Flow] Loop Info: Line: 469, Description: while at line 469
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Control Flow] Branch Info: Line: 469, Condition: if (TransVarMantissa < TransVarMantissa), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:475->[Control Flow] Branch Info: Line: 475, Condition: if (TransVarPfxL > 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:485->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:485 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:485->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:485 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:createNumber:488->[Local Variables] {"TransVarLastCharater":"8"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:489->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:489 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:490->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:490 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:490->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:490 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:493->[Local Variables] {"TransVarExp":10}
+org.apache.commons.lang3.math.NumberUtils:createNumber:494->[Local Variables] {"TransVarNumDecimalsInFraction":0}
+org.apache.commons.lang3.math.NumberUtils:createNumber:495->[Control Flow] Branch Info: Line: 495, Condition: if (TransVarDecPosi > TransVarDecPosi), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:497->[Control Flow] Branch Info: Line: 497, Condition: if (TransVarExp > TransVarExp), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (TransVarDecPosi >= TransVarDecPosi), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:498 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:501->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:501 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:504->[Local Variables] {"TransVarDecimal":"40282354"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:505->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:505 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:505->[Local Variables] {"TransVarMantissa":"3"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:506->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:506 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:517->[Local Variables] {"TransVarNumDecimalsInFraction":8}
+org.apache.commons.lang3.math.NumberUtils:createNumber:518->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:518 -> java.lang.Character.isDigit
+org.apache.commons.lang3.math.NumberUtils:createNumber:518->[Control Flow] Branch Info: Line: 518, Condition: if (TransVarLastCharater == 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:518->[Control Flow] Branch Info: Line: 518, Condition: if (TransVarLastCharater != TransVarLastCharater), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:578->[Control Flow] Branch Info: Line: 578, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:578->[Control Flow] Branch Info: Line: 578, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:585->[Control Flow] Branch Info: Line: 585, Condition: if (TransVarExp > TransVarExp), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:585->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:585 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:585->[Control Flow] Branch Info: Line: 585, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true

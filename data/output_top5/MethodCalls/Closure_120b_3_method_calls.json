@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback.isBlockBoundary",
+    "doc": "/**\n   * @return true if this node marks the start of a new basic block\n   */",
+    "code": "private static boolean isBlockBoundary(Node n, Node parent) {\n    if (parent != null) {\n      switch (parent.getType()) {\n        case Token.DO:\n        case Token.FOR:\n        case Token.TRY:\n        case Token.WHILE:\n        case Token.WITH:\n          return true;\n        case Token.AND:\n        case Token.HOOK:\n        case Token.IF:\n        case Token.OR:\n          return n != parent.getFirstChild();\n\n      }\n    }\n\n    return n.isCase();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

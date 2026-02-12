@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FoldConstantsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1019->[Local Variables] "{parent\u003dASSIGN 1, t\u003dcom.google.javascript.jscomp.NodeTraversal@36676c1a, left\u003dSTRING , right\u003dNAME foo 1, n\u003dADD 1}"
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1020->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldLeftChildAdd:1020 -> com.google.javascript.jscomp.NodeUtil.isLiteralValue
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1020->[Control Flow] Branch Info: Line: 1020, Condition: if (right != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1021->[Control Flow] Branch Info: Line: 1021, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1022->[Control Flow] Branch Info: Line: 1022, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1035->[Control Flow] Branch Info: Line: 1035, Condition: if (leftString != null), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldLeftChildAdd:1035->[Control Flow] Branch Info: Line: 1035, Condition: if (rightString != null), Executed: false

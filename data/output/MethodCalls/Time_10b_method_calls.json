@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.joda.time.Chronology.get",
+    "doc": "/**\n     * Gets the values of a partial from an instant.\n     *\n     * @param partial  the partial instant to use\n     * @param instant  the instant to query\n     * @return the values of this partial extracted from the instant\n     */",
+    "code": "public abstract int[] get(ReadablePartial partial, long instant);"
+  },
+  {
+    "method": "org.joda.time.Chronology.set",
+    "doc": "/**\n     * Sets the partial into the instant.\n     *\n     * @param partial  the partial instant to use\n     * @param instant  the instant to update\n     * @return the updated instant\n     */",
+    "code": "public abstract long set(ReadablePartial partial, long instant);"
+  },
+  {
+    "method": "org.joda.time.Chronology.withUTC",
+    "doc": "/**\n     * Returns an instance of this Chronology that operates in the UTC time\n     * zone. Chronologies that do not operate in a time zone or are already\n     * UTC must return themself.\n     *\n     * @return a version of this chronology that ignores time zones\n     */",
+    "code": "public abstract Chronology withUTC();"
+  },
+  {
+    "method": "org.joda.time.DateTimeUtils.getChronology",
+    "doc": "/**\n     * Gets the chronology handling null.\n     * <p>\n     * If the chronology is <code>null</code>, {@link ISOChronology#getInstance()}\n     * will be returned. Otherwise, the chronology is returned.\n     *\n     * @param chrono  the chronology to use, null means ISO in the default zone\n     * @return the chronology, never null\n     */",
+    "code": "public static final Chronology getChronology(Chronology chrono) {\n        if (chrono == null) {\n            return ISOChronology.getInstance();\n        }\n        return chrono;\n    }"
+  },
+  {
+    "method": "org.joda.time.DateTimeUtils.isContiguous",
+    "doc": "/**\n     * Checks whether the partial is contiguous.\n     * <p>\n     * A partial is contiguous if one field starts where another ends.\n     * <p>\n     * For example <code>LocalDate</code> is contiguous because DayOfMonth has\n     * the same range (Month) as the unit of the next field (MonthOfYear), and\n     * MonthOfYear has the same range (Year) as the unit of the next field (Year).\n     * <p>\n     * Similarly, <code>LocalTime</code> is contiguous, as it consists of\n     * MillisOfSecond, SecondOfMinute, MinuteOfHour and HourOfDay (note how\n     * the names of each field 'join up').\n     * <p>\n     * However, a Year/HourOfDay partial is not contiguous because the range\n     * field Day is not equal to the next field Year.\n     * Similarly, a DayOfWeek/DayOfMonth partial is not contiguous because\n     * the range Month is not equal to the next field Day.\n     *\n     * @param partial  the partial to check\n     * @return true if the partial is contiguous\n     * @throws IllegalArgumentException if the partial is null\n     * @since 1.1\n     */",
+    "code": "public static final boolean isContiguous(ReadablePartial partial) {\n        if (partial == null) {\n            throw new IllegalArgumentException(\"Partial must not be null\");\n        }\n        DurationFieldType lastType = null;\n        for (int i = 0; i < partial.size(); i++) {\n            DateTimeField loopField = partial.getField(i);\n            if (i > 0) {\n                if (loopField.getRangeDurationField().getType() != lastType) {\n                    return false;\n                }\n            }\n            lastType = loopField.getDurationField().getType();\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.joda.time.ReadablePartial.getChronology",
+    "doc": "/**\n     * Gets the chronology of the partial which is never null.\n     * <p>\n     * The {@link Chronology} is the calculation engine behind the partial and\n     * provides conversion and validation of the fields in a particular calendar system.\n     *\n     * @return the chronology, never null\n     */",
+    "code": "Chronology getChronology();"
+  },
+  {
+    "method": "org.joda.time.ReadablePartial.getFieldType",
+    "doc": "/**\n     * Gets the field type at the specified index.\n     *\n     * @param index  the index to retrieve\n     * @return the field at the specified index\n     * @throws IndexOutOfBoundsException if the index is invalid\n     */",
+    "code": "DateTimeFieldType getFieldType(int index);"
+  },
+  {
+    "method": "org.joda.time.ReadablePartial.size",
+    "doc": "/**\n     * Gets the number of fields that this partial supports.\n     *\n     * @return the number of fields supported\n     */",
+    "code": "int size();"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.report",
+    "doc": "/**\n   * Report an error or warning.\n   */",
+    "code": "public abstract void report(JSError error);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CheckAccessControls.normalizeClassType",
+    "doc": "/**\n   * Determines whether the given name is visible in the current context.\n   * @param t The current traversal.\n   * @param name The name node.\n   */",
+    "code": "return normalizeClassType(lValue.getFirstChild().getJSType());\n          }\n        } else {\n          return normalizeClassType(lValue.getJSType());\n        }\n      }\n    } else if (NodeUtil.isFunctionDeclaration(n) ||\n               parent.getType() == Token.NAME) {\n      return normalizeClassType(n.getJSType());\n    }\n\n    return null;\n  }\n\n  private JSType normalizeClassType(JSType type) {\n    if (type == null || type.isUnknownType()) {\n      return type;\n    } else if (type.isConstructor()) {\n      return ((FunctionType) type).getInstanceType();\n    } else if (type.isFunctionPrototypeType()) {\n      FunctionType owner = ((FunctionPrototypeType) type).getOwnerFunction();\n      if (owner.isConstructor()) {\n        return owner.getInstanceType();\n      }\n    }\n    return type;\n  }\n\n  public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {\n    return true;\n  }\n\n  public void visit(NodeTraversal t, Node n, Node parent) {\n    switch (n.getType()) {\n      case Token.NAME:\n        checkNameDeprecation(t, n, parent);\n        checkNameVisibility(t, n, parent);\n        break;\n      case Token.GETPROP:\n        checkPropertyDeprecation(t, n, parent);\n        checkPropertyVisibility(t, n, parent);\n        checkConstantProperty(t, n);\n        break;\n      case Token.NEW:\n        checkConstructorDeprecation(t, n, parent);\n        break;\n    }\n  }\n\n  private void checkConstructorDeprecation(NodeTraversal t, Node n,\n      Node parent) {\n    JSType type = n.getJSType();\n\n    if (type != null) {\n      String deprecationInfo = getTypeDeprecationInfo(type);\n\n      if (deprecationInfo != null &&\n          shouldEmitDeprecationWarning(t, n, parent)) {\n\n        if (!deprecationInfo.isEmpty()) {\n            compiler.report(\n                t.makeError(n, DEPRECATED_CLASS_REASON,\n                    type.toString(), deprecationInfo));\n        } else {\n          compiler.report(\n              t.makeError(n, DEPRECATED_CLASS, type.toString()));\n        }\n      }\n    }\n  }\n\n  private void checkNameDeprecation(NodeTraversal t, Node n, Node parent) {\n    if (parent.getType() == Token.FUNCTION || parent.getType() == Token.VAR ||\n        parent.getType() == Token.NEW) {\n      return;\n    }\n\n    Scope.Var var = t.getScope().getVar(n.getString());\n    JSDocInfo docInfo = var == null ? null : var.getJSDocInfo();\n\n    if (docInfo != null && docInfo.isDeprecated() &&\n        shouldEmitDeprecationWarning(t, n, parent)) {\n\n      if (docInfo.getDeprecationReason() != null) {\n        compiler.report(\n            t.makeError(n, DEPRECATED_NAME_REASON, n.getString(),\n                docInfo.getDeprecationReason()));\n      } else {\n        compiler.report(\n            t.makeError(n, DEPRECATED_NAME, n.getString()));\n      }\n    }\n  }\n\n  private void checkPropertyDeprecation(NodeTraversal t, Node n, Node parent) {\n    if (parent.getType() == Token.NEW) {\n      return;\n    }\n\n    ObjectType objectType =\n        ObjectType.cast(dereference(n.getFirstChild().getJSType()));\n    String propertyName = n.getLastChild().getString();\n\n    if (objectType != null) {\n      String deprecationInfo\n          = getPropertyDeprecationInfo(objectType, propertyName);\n\n      if (deprecationInfo != null &&\n          shouldEmitDeprecationWarning(t, n, parent)) {\n\n        if (!deprecationInfo.isEmpty()) {\n          compiler.report(\n              t.makeError(n, DEPRECATED_PROP_REASON, propertyName,\n                  validator.getReadableJSTypeName(n.getFirstChild(), true),\n                  deprecationInfo));\n        } else {\n          compiler.report(\n              t.makeError(n, DEPRECATED_PROP, propertyName,\n                  validator.getReadableJSTypeName(n.getFirstChild(), true)));\n        }\n      }\n    }\n  }\n\n  private void checkNameVisibility(NodeTraversal t, Node name, Node parent) {\n    Var var = t.getScope().getVar(name.getString());\n    if (var != null) {\n      JSDocInfo docInfo = var.getJSDocInfo();\n      if (docInfo != null) {\n        Visibility visibility = docInfo.getVisibility();\n        if (visibility == Visibility.PRIVATE &&\n            !t.getInput().getName().equals(docInfo.getSourceName())) {\n          if (docInfo.isConstructor() &&\n              isValidPrivateConstructorAccess(parent)) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.getName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getInput",
+    "doc": "/**\n   * Gets the current input source.\n   */",
+    "code": "public CompilerInput getInput() {\n    return compiler.getInput(sourceName);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.inGlobalScope",
+    "doc": "/**\n   * Determines whether the traversal is currently in the global scope.\n   */",
+    "code": "boolean inGlobalScope() {\n    return getScopeDepth() <= 1;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.makeError",
+    "doc": "/**\n   * Creates a JSError during NodeTraversal.\n   *\n   * @param n Determines the line and char position within the source file name\n   * @param type The DiagnosticType\n   * @param arguments Arguments to be incorporated into the message\n   */",
+    "code": "public JSError makeError(Node n, CheckLevel level, DiagnosticType type,\n      String... arguments) {\n    return JSError.make(getSourceName(), n, level, type, arguments);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.getSourceName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.getVisibility",
+    "doc": "/**\n   * Gets the visibility specified by {@code @private}, {@code @protected} or\n   * {@code @public} annotation. If no visibility is specified, visibility\n   * is inherited from the base class.\n   */",
+    "code": "public Visibility getVisibility() {\n    return visibility;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype",
+    "doc": "/**\n   * Gets the docInfo for this type.\n   */",
+    "code": "return getImplicitPrototype().getJSDocInfo();\n    } else {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo",
+    "doc": "/**\n   * Gets the docInfo on the specified property on this type.  This should not\n   * be done implemented recursively, as you generally need to know exactly on\n   * which type in the prototype chain the JSDocInfo exists.\n   */",
+    "code": "public JSDocInfo getOwnPropertyJSDocInfo(String propertyName) {\n    return null;\n  }"
+  }
+]

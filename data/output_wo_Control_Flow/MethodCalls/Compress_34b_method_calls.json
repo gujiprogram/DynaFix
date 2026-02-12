@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.X7875_NewUnix.getLocalFileDataLength",
+    "doc": "/**\n     * Length of the extra field in the local file data - without\n     * Header-ID or length specifier.\n     *\n     * @return a <code>ZipShort</code> for the length of the data of this extra field\n     */",
+    "code": "public ZipShort getLocalFileDataLength() {\n        int uidSize = trimLeadingZeroesForceMinLength(uid.toByteArray()).length;\n        int gidSize = trimLeadingZeroesForceMinLength(gid.toByteArray()).length;\n\n        return new ZipShort(3 + uidSize + gidSize);\n    }"
+  }
+]

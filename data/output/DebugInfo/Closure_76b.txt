@@ -1,0 +1,150 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testInExpression2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:310->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:310 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:312->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:313->[Control Flow] Branch Info: Line: 313, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:312->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:313->[Control Flow] Branch Info: Line: 313, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Local Variables] {"state":"MAYBE_LIVE"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:294 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:294 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:307->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:307 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:307->[Control Flow] Branch Info: Line: 307, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:308->[Local Variables] "{sibling\u003dNAME a 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:309->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:309 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:309->[Control Flow] Branch Info: Line: 309, Condition: if (sibling == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dREAD, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:312->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:313->[Control Flow] Branch Info: Line: 313, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:358->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:358 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:370 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dMAYBE_LIVE, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true], child\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:371 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Control Flow] Loop Info: Line: 370, Description: while at line 370
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Local Variables] "{child\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:372 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384c ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dREAD, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:312->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:313->[Control Flow] Branch Info: Line: 313, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:358->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:358 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:370 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dMAYBE_LIVE, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true], child\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:371 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Control Flow] Loop Info: Line: 370, Description: while at line 370
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Local Variables] "{child\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:372 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue384d ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:342 -> com.google.javascript.jscomp.NodeUtil.isLhs
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dREAD, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:312->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:313->[Control Flow] Branch Info: Line: 313, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:358->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:358 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:370 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:373->[Local Variables] "{state\u003dMAYBE_LIVE, n\u003dASSIGN 2 [sourcename: testcode] [parenthesized: true], child\u003dNAME a 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:374->[Control Flow] Branch Info: Line: 374, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:371 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Control Flow] Loop Info: Line: 370, Description: while at line 370
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:370->[Local Variables] "{child\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:371->[Control Flow] Branch Info: Line: 371, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:372 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:372->[Control Flow] Branch Info: Line: 372, Condition: if (child == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:340->[Local Variables] "{n\u003dNAME b 2 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.jscomp.NodeUtil.isName
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (n != 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill:341 -> java.lang.String.equals
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableReadBeforeKill:341->[Control Flow] Branch Info: Line: 341, Condition: if (java.lang.String.equals() != 0), Executed: true

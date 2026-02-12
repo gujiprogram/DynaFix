@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.VarCheckTest::testNoUndeclaredVarWhenUsingClosurePass ===
+Exception: junit.framework.AssertionFailedError: There should be one error. required "namespace.Class1" namespace never provided
+
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:298->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@20ab3e3a, TransVarParentNode\u003dEXPR_RESULT 1 [source_file: testcode], TransVarNode\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:299->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:299 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:299->[Local Variables] "{TransVarLeftChild\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:300->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:300 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:300->[Local Variables] "{TransVarChildNode\u003dSTRING namespace.Class1 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:301->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:301 -> com.google.javascript.jscomp.ProcessClosurePrimitives.verifyLastArgumentIsString
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:301->[Control Flow] Branch Info: Line: 301, Condition: if (TransVarChildNode != 0), Executed: true
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:305->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:305 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:305->[Local Variables] {"TransVarNamespace":"namespace.Class1"}
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:306->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:306 -> java.util.Map.get
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:307->[Control Flow] Branch Info: Line: 307, Condition: if (TransVarName != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:311->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:311 -> com.google.javascript.jscomp.NodeTraversal.getSourceName
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:311->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:311 -> com.google.javascript.jscomp.ProcessClosurePrimitives$UnrecognizedRequire.<init>
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:311->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:311 -> java.util.List.add
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:320->[Control Flow] Branch Info: Line: 320, Condition: if (this.moduleGraph != null), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:320->[Control Flow] Branch Info: Line: 320, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:320->[Control Flow] Branch Info: Line: 320, Condition: if (com.google.javascript.jscomp.JSModuleGraph.dependsOn() == 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:329->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:329 -> com.google.javascript.jscomp.ProcessClosurePrimitives.maybeAddToSymbolTable
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:330->[Method Call] Call Stack: com.google.javascript.jscomp.ProcessClosurePrimitives.processRequireCall:330 -> com.google.javascript.jscomp.ProcessClosurePrimitives.maybeAddStringNodeToSymbolTable
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:301->[Control Flow] Branch Info: Line: 301, Condition: if (TransVarChildNode != 0), Executed: false
+com.google.javascript.jscomp.ProcessClosurePrimitives:processRequireCall:337->[Control Flow] Branch Info: Line: 337, Condition: if (TransVarName != null), Executed: false

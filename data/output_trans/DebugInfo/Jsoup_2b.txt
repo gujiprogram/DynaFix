@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::handlesTextAfterData ===
+Exception: junit.framework.AssertionFailedError: expected:<...dy>pre <script>inner[</script> aft]</body></html>> but was:<...dy>pre <script>inner[ aft</script>]</body></html>>
+
+org.jsoup.parser.Parser:parseStartTag:149->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:149 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:151->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:151 -> org.jsoup.parser.Parser.addChildToParent
+org.jsoup.parser.Parser:parseStartTag:153->[Local Variables] "{TransVarNewChild\u003d\n \u003cscript\u003e\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:154->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:154 -> org.jsoup.parser.Tag.isData
+org.jsoup.parser.Parser:parseStartTag:154->[Control Flow] Branch Info: Line: 154, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: true
+org.jsoup.parser.Parser:parseStartTag:155->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:155 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseStartTag:155->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:155 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseStartTag:155->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:155 -> java.lang.StringBuilder.toString
+org.jsoup.parser.Parser:parseStartTag:155->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:155 -> org.jsoup.parser.TokenQueue.chompTo
+org.jsoup.parser.Parser:parseStartTag:155->[Local Variables] {"TransVarString":"inner"}
+org.jsoup.parser.Parser:parseStartTag:156->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:156 -> org.jsoup.parser.TokenQueue.chompTo
+org.jsoup.parser.Parser:parseStartTag:159->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:159 -> org.jsoup.parser.Tag.equals
+org.jsoup.parser.Parser:parseStartTag:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.jsoup.parser.Tag.equals() == 0), Executed: true
+org.jsoup.parser.Parser:parseStartTag:159->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:159 -> org.jsoup.parser.Tag.equals
+org.jsoup.parser.Parser:parseStartTag:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.jsoup.parser.Tag.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:162->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:162 -> org.jsoup.nodes.DataNode.<init>
+org.jsoup.parser.Parser:parseStartTag:162->[Local Variables] {"TransVarNode":{"childNodes":[],"attributes":{"attributes":{"data":{"key":"data","value":"inner"}}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:163->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:163 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.parser.Parser:parseStartTag:154->[Control Flow] Branch Info: Line: 154, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:166->[Local Variables] "{TransVarNewChild\u003d\n \u003cscript\u003einner\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:167->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:167 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.Parser:parseStartTag:167->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:167 -> java.lang.String.equals
+org.jsoup.parser.Parser:parseStartTag:167->[Control Flow] Branch Info: Line: 167, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:169->[Control Flow] Branch Info: Line: 169, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:133->[Control Flow] Branch Info: Line: 133, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:142->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:142 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.Parser:parseStartTag:142->[Local Variables] {"TransVarTagNameObject":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]}}
+org.jsoup.parser.Parser:parseStartTag:143->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:143 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.Parser:parseStartTag:144->[Local Variables] {"TransVarNewChild":{"tag":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]},"childNodes":[],"attributes":{"attributes":{}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:145->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:145 -> org.jsoup.parser.Tag.isEmpty
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:146->[Control Flow] Branch Info: Line: 146, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:149->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:149 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:151->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:151 -> org.jsoup.parser.Parser.addChildToParent
+org.jsoup.parser.Parser:parseStartTag:153->[Local Variables] "{TransVarNewChild\u003d\n\u003cbody\u003e\n\u003c/body\u003e}"
+org.jsoup.parser.Parser:parseStartTag:154->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:154 -> org.jsoup.parser.Tag.isData
+org.jsoup.parser.Parser:parseStartTag:154->[Control Flow] Branch Info: Line: 154, Condition: if (org.jsoup.parser.Tag.isData() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:167->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:167 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.Parser:parseStartTag:167->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:167 -> java.lang.String.equals
+org.jsoup.parser.Parser:parseStartTag:167->[Control Flow] Branch Info: Line: 167, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:169->[Control Flow] Branch Info: Line: 169, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:120->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:120 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseStartTag:121->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:121 -> org.jsoup.parser.TokenQueue.consumeWord
+org.jsoup.parser.Parser:parseStartTag:122->[Local Variables] {"TransVarTag":"script"}
+org.jsoup.parser.Parser:parseStartTag:123->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:123 -> java.lang.String.length
+org.jsoup.parser.Parser:parseStartTag:123->[Control Flow] Branch Info: Line: 123, Condition: if (java.lang.String.length() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:132->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:132 -> org.jsoup.nodes.Attributes.<init>
+org.jsoup.parser.Parser:parseStartTag:133->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:133 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseStartTag:133->[Control Flow] Branch Info: Line: 133, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:133->[Control Flow] Branch Info: Line: 133, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseStartTag:142->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:142 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.Parser:parseStartTag:143->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:143 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.Parser:parseStartTag:145->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:145 -> org.jsoup.parser.Tag.isEmpty
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:146->[Control Flow] Branch Info: Line: 146, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false

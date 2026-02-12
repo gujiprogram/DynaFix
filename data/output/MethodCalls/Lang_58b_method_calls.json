@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.lang.StringUtils.isBlank",
+    "doc": "/**\n     * <p>Checks if a String is whitespace, empty (\"\") or null.</p>\n     *\n     * <pre>\n     * StringUtils.isBlank(null)      = true\n     * StringUtils.isBlank(\"\")        = true\n     * StringUtils.isBlank(\" \")       = true\n     * StringUtils.isBlank(\"bob\")     = false\n     * StringUtils.isBlank(\"  bob  \") = false\n     * </pre>\n     *\n     * @param str  the String to check, may be null\n     * @return <code>true</code> if the String is null, empty or whitespace\n     * @since 2.0\n     */",
+    "code": "public static boolean isBlank(String str) {\n        int strLen;\n        if (str == null || (strLen = str.length()) == 0) {\n            return true;\n        }\n        for (int i = 0; i < strLen; i++) {\n            if ((Character.isWhitespace(str.charAt(i)) == false)) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang.math.NumberUtils.createLong",
+    "doc": "/**\n     * <p>Turns a string value into a java.lang.Number.</p>\n     *\n     * <p>First, the value is examined for a type qualifier on the end\n     * (<code>'f','F','d','D','l','L'</code>).  If it is found, it starts\n     * trying to create successively larger types from the type specified\n     * until one is found that can represent the value.</p>\n     *\n     * <p>If a type specifier is not found, it will check for a decimal point\n     * and then try successively larger types from <code>Integer</code> to\n     * <code>BigInteger</code> and from <code>Float</code> to\n     * <code>BigDecimal</code>.</p>\n     *\n     * <p>If the string starts with <code>0x</code> or <code>-0x</code>, it\n     * will be interpreted as a hexadecimal integer.  Values with leading\n     * <code>0</code>'s will not be interpreted as octal.</p>\n     *\n     * <p>Returns <code>null</code> if the string is <code>null</code>.</p>\n     *\n     * <p>This method does not trim the input string, i.e., strings with leading\n     * or trailing spaces will generate NumberFormatExceptions.</p>\n     *\n     * @param str  String containing a number, may be null\n     * @return Number created from the string\n     * @throws NumberFormatException if the value cannot be converted\n     */",
+    "code": "return createLong(numeric);\n                        } catch (NumberFormatException nfe) {"
+  },
+  {
+    "method": "org.apache.commons.lang.math.NumberUtils.isAllZeros",
+    "doc": "/**\n     * <p>Utility method for {@link #createNumber(java.lang.String)}.</p>\n     *\n     * <p>Returns <code>true</code> if s is <code>null</code>.</p>\n     *\n     * @param str  the String to check\n     * @return if it is all zeros or <code>null</code>\n     */",
+    "code": "private static boolean isAllZeros(String str) {\n        if (str == null) {\n            return true;\n        }\n        for (int i = str.length() - 1; i >= 0; i--) {\n            if (str.charAt(i) != '0') {\n                return false;\n            }\n        }\n        return str.length() > 0;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang.math.NumberUtils.isDigits",
+    "doc": "/**\n     * <p>Checks whether the <code>String</code> contains only\n     * digit characters.</p>\n     *\n     * <p><code>Null</code> and empty String will return\n     * <code>false</code>.</p>\n     *\n     * @param str  the <code>String</code> to check\n     * @return <code>true</code> if str contains only unicode numeric\n     */",
+    "code": "public static boolean isDigits(String str) {\n        if (StringUtils.isEmpty(str)) {\n            return false;\n        }\n        for (int i = 0; i < str.length(); i++) {\n            if (!Character.isDigit(str.charAt(i))) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  }
+]

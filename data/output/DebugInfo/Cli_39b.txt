@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern ===
+Exception: junit.framework.AssertionFailedError: option g not FileInputStream
+
+org.apache.commons.cli.TypeHandler:createValue:50->[Local Variables] {"str":"src/test/resources/existing-readable.file","obj":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:65->[Local Variables] {"clazz":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:66->[Control Flow] Branch Info: Line: 66, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:70->[Control Flow] Branch Info: Line: 70, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:74->[Control Flow] Branch Info: Line: 74, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:78->[Control Flow] Branch Info: Line: 78, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:82->[Control Flow] Branch Info: Line: 82, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:86->[Control Flow] Branch Info: Line: 86, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:90->[Control Flow] Branch Info: Line: 90, Condition: if (unknown_condition_166), Executed: true
+org.apache.commons.cli.TypeHandler:createValue:92->[Method Call] Call Stack: org.apache.commons.cli.TypeHandler.createValue:92 -> org.apache.commons.cli.TypeHandler.createFile
+
+=== Debug Info for Test: org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePatternFileNotExist ===
+Exception: junit.framework.AssertionFailedError: option f parsed expected null, but was:<non-existing.file>
+
+org.apache.commons.cli.TypeHandler:createValue:50->[Local Variables] {"str":"non-existing.file","obj":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:65->[Local Variables] {"clazz":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:66->[Control Flow] Branch Info: Line: 66, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:70->[Control Flow] Branch Info: Line: 70, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:74->[Control Flow] Branch Info: Line: 74, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:78->[Control Flow] Branch Info: Line: 78, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:82->[Control Flow] Branch Info: Line: 82, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:86->[Control Flow] Branch Info: Line: 86, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.cli.TypeHandler:createValue:90->[Control Flow] Branch Info: Line: 90, Condition: if (unknown_condition_166), Executed: true
+org.apache.commons.cli.TypeHandler:createValue:92->[Method Call] Call Stack: org.apache.commons.cli.TypeHandler.createValue:92 -> org.apache.commons.cli.TypeHandler.createFile

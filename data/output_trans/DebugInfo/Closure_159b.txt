@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testIssue423 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:766->[Local Variables] {"changed":["$"]}
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:795->[Local Variables] "{TransVarChild\u003dSTRING call 8 [sourcename: testcode], TransVarNode2\u003dGETPROP 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:796->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:796 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Control Flow] Loop Info: Line: 793, Description: while at line 793
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:795->[Local Variables] "{TransVarChild\u003dGETPROP 8 [sourcename: testcode], TransVarNode2\u003dCALL 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:796->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:796 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Control Flow] Loop Info: Line: 793, Description: while at line 793
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Local Variables] "{TransVarChild\u003dTHIS 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: true
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:777->[Local Variables] "{TransVarNode2\u003dTHIS 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:778->[Control Flow] Branch Info: Line: 778, Condition: if (TransVarNode != null), Executed: true
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:778->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:778 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:780->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:780 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:780->[Control Flow] Branch Info: Line: 780, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:785->[Control Flow] Branch Info: Line: 785, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:793 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:795->[Local Variables] "{TransVarChild\u003dTHIS 8 [sourcename: testcode], TransVarNode2\u003dCALL 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:796->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:796 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Control Flow] Loop Info: Line: 793, Description: while at line 793
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:795->[Local Variables] "{TransVarChild\u003dCALL 8 [sourcename: testcode], TransVarNode2\u003dEXPR_RESULT 8 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:796->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:796 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Control Flow] Loop Info: Line: 793, Description: while at line 793
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: false
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:795->[Local Variables] "{TransVarChild\u003dEXPR_RESULT 8 [sourcename: testcode], TransVarNode2\u003dBLOCK 6 [sourcename: testcode]}"
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:796->[Method Call] Call Stack: com.google.javascript.jscomp.InlineFunctions.findCalledFunctions:796 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:793->[Control Flow] Loop Info: Line: 793, Description: while at line 793
+com.google.javascript.jscomp.InlineFunctions:findCalledFunctions:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarChild != null), Executed: false

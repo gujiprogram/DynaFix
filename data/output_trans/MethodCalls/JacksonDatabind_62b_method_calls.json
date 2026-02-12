@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer",
+    "doc": "/**\n     * Method for finding a value deserializer, and creating a contextual\n     * version if necessary, for value reached via specified property.\n     */",
+    "code": "public final JsonDeserializer<Object> findContextualValueDeserializer(JavaType type,\n            BeanProperty prop) throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateUsingDelegate",
+    "doc": "/**\n     * Method that can be called to check whether a delegate-based creator (single-arg\n     * constructor or factory method)\n     * is available for this instantiator\n     */",
+    "code": "public boolean canCreateUsingDelegate() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.findConvertingContentDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.findFormatFeature",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.withResolved",
+    "doc": "/**\n     * Fluent-factory method call to construct contextual instance.\n     *\n     * @since 2.7\n     */",
+    "code": "protected CollectionDeserializer withResolved(JsonDeserializer<?> dd,\n            JsonDeserializer<?> vd, TypeDeserializer vtd,"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.TypeDeserializer.forProperty",
+    "doc": "/**\n     * Method called to create contextual version, to be used for\n     * values of given property. This may be the type itself\n     * (as is the case for bean properties), or values contained\n     * (for {@link java.util.Collection} or {@link java.util.Map}\n     * valued properties).\n     */",
+    "code": "public abstract TypeDeserializer forProperty(BeanProperty prop);"
+  }
+]

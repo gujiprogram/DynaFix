@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormatTest::testLang538 ===
+Exception: junit.framework.ComparisonFailure: dateTime expected:<2009-10-16T[16]:42:16.000Z> but was:<2009-10-16T[08]:42:16.000Z>
+
+org.apache.commons.lang3.time.FastDateFormat:getInstance:181->[Local Variables] {"pattern":"yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSS\u0027Z\u0027","timeZone":{"rawOffset":0,"rawOffsetDiff":0,"checksum":0,"dstSavings":0,"willGMTOffsetChange":false,"ID":"GMT"}}
+org.apache.commons.lang3.time.FastDateFormat:getInstance:213->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:213 -> org.apache.commons.lang3.time.FastDateFormat.<init>
+org.apache.commons.lang3.time.FastDateFormat:getInstance:213->[Local Variables] {"emptyFormat":{"mPattern":"yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSS\u0027Z\u0027","mTimeZone":{"rawOffset":0,"rawOffsetDiff":0,"checksum":0,"dstSavings":0,"willGMTOffsetChange":false,"ID":"GMT"},"mTimeZoneForced":true,"mLocale":"zh_CN","mLocaleForced":false}}
+org.apache.commons.lang3.time.FastDateFormat:getInstance:214->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:214 -> java.util.Map.get
+org.apache.commons.lang3.time.FastDateFormat:getInstance:215->[Control Flow] Branch Info: Line: 215, Condition: if (format == null), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:getInstance:216->[Local Variables] {"format":{"mPattern":"yyyy-MM-dd\u0027T\u0027HH:mm:ss.SSS\u0027Z\u0027","mTimeZone":{"rawOffset":0,"rawOffsetDiff":0,"checksum":0,"dstSavings":0,"willGMTOffsetChange":false,"ID":"GMT"},"mTimeZoneForced":true,"mLocale":"zh_CN","mLocaleForced":false}}
+org.apache.commons.lang3.time.FastDateFormat:getInstance:217->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:217 -> org.apache.commons.lang3.time.FastDateFormat.init
+org.apache.commons.lang3.time.FastDateFormat:getInstance:218->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:218 -> java.util.Map.put
+org.apache.commons.lang3.time.FastDateFormat:getInstance:215->[Control Flow] Branch Info: Line: 215, Condition: if (format == null), Executed: false

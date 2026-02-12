@@ -1,0 +1,40 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode ===
+Exception: java.io.IOException: request to write '15' bytes exceeds size in header of '0' bytes for entry './PaxHeaders.X/fvv/'
+
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:488->[Local Variables] {"TransVarWriter":{"buf":"15 path\u003dföö/\n","lock":"15 path\u003dföö/\n"}}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:472->[Control Flow] Loop Info: Line: 472, Description: while at line 472
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:472->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:472 -> java.util.Iterator.hasNext
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:472->[Control Flow] Branch Info: Line: 472, Condition: if (TransVarB != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:490->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:490 -> java.io.StringWriter.toString
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:490->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:490 -> java.lang.String.getBytes
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:490->[Local Variables] {"TransVarB":[49,53,32,112,97,116,104,61,102,-61,-74,-61,-74,47,10]}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:491->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:491 -> org.apache.commons.compress.archivers.tar.TarArchiveEntry.setSize
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:491->[Local Variables] {"TransVarPexEntry":{"name":"./PaxHeaders.X/fvv/","mode":16877,"userId":0,"groupId":0,"size":15,"modTime":1768467946,"checkSumOK":false,"linkFlag":120,"linkName":"","magic":"ustar\u0000","version":"00","userName":"","groupName":"","devMajor":0,"devMinor":0,"isExtended":false,"realSize":0}}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:492->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:492 -> org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.putArchiveEntry
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:493->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:493 -> org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.write
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:480->[Local Variables] {"TransVarLength":13}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:481 -> java.lang.StringBuilder.toString
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Local Variables] {"TransVarEntryLine":"13 path\u003dföö/\n"}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:482->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:482 -> java.lang.String.getBytes
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:482->[Local Variables] {"TransVarActualLen":15}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarActualLen != TransVarActualLen), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:484->[Local Variables] {"TransVarLength":15}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.append
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:485 -> java.lang.StringBuilder.toString
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:485->[Local Variables] {"TransVarEntryLine":"15 path\u003dföö/\n"}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:486->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:486 -> java.lang.String.getBytes
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:482->[Control Flow] Loop Info: Line: 482, Description: while at line 482
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarActualLen != TransVarActualLen), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:488->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.writePaxHeaders:488 -> java.io.StringWriter.write

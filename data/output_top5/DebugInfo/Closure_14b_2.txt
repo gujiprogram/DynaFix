@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_MISSING_RETURN_STATEMENT. Missing return statement. Function expected to return number. at testcode line 1 : 24 expected:<0> but was:<1>
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedBreakwithFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:597->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:597 -> com.google.common.collect.Multimap.put
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Control Flow] Branch Info: Line: 573, Condition: if (cur != 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:574->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:574 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:574->[Control Flow] Branch Info: Line: 574, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:575->[Control Flow] Branch Info: Line: 575, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:579->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:579 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:579->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:579 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:579->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:579 -> com.google.common.collect.Multimap.put
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Control Flow] Branch Info: Line: 573, Condition: if (com.google.javascript.rhino.Node.isTry() != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Control Flow] Branch Info: Line: 573, Condition: if (cur != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:574->[Control Flow] Branch Info: Line: 574, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:583->[Control Flow] Branch Info: Line: 583, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Local Variables] "{previous\u003dTRY 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:572->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:572 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:570->[Control Flow] Loop Info: Line: 570, Description: while at line 570
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:570->[Local Variables] "{cur\u003dBLOCK 1 [source_file: cfgtest], parent\u003dWHILE 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:571 -> com.google.javascript.jscomp.ControlFlowAnalysis.isBreakTarget
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Control Flow] Branch Info: Line: 571, Condition: if (label == 0), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:573 -> com.google.javascript.rhino.Node.isTry
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Control Flow] Branch Info: Line: 573, Condition: if (com.google.javascript.rhino.Node.isTry() != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:573->[Control Flow] Branch Info: Line: 573, Condition: if (cur != 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:574->[Control Flow] Branch Info: Line: 574, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:583->[Control Flow] Branch Info: Line: 583, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Local Variables] "{previous\u003dBLOCK 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:572->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:572 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:570->[Control Flow] Loop Info: Line: 570, Description: while at line 570
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:570->[Local Variables] "{cur\u003dWHILE 1 [source_file: cfgtest], parent\u003dLABEL 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:571 -> com.google.javascript.jscomp.ControlFlowAnalysis.isBreakTarget
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:571->[Control Flow] Branch Info: Line: 571, Condition: if (label == 0), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:594->[Control Flow] Branch Info: Line: 594, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.ControlFlowAnalysis:handleBreak:597->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleBreak:597 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode

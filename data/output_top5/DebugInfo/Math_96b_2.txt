@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexTest::testMath221 ===
+Exception: junit.framework.AssertionFailedError: expected:<org.apache.commons.math.complex.Complex@98b00000> but was:<org.apache.commons.math.complex.Complex@18b00000>
+
+org.apache.commons.math.complex.Complex:equals:247->[Local Variables] {"other":{"imaginary":-1.0,"real":-0.0}}
+org.apache.commons.math.complex.Complex:equals:248->[Control Flow] Branch Info: Line: 248, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.math.complex.Complex:equals:250->[Control Flow] Branch Info: Line: 250, Condition: if (other == null), Executed: false
+org.apache.commons.math.complex.Complex:equals:254->[Local Variables] {"rhs":{"imaginary":-1.0,"real":-0.0}}
+org.apache.commons.math.complex.Complex:equals:255->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:255 -> org.apache.commons.math.complex.Complex.isNaN
+org.apache.commons.math.complex.Complex:equals:255->[Control Flow] Branch Info: Line: 255, Condition: if (org.apache.commons.math.complex.Complex.isNaN() != 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:258->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:258 -> java.lang.Double.doubleToRawLongBits
+org.apache.commons.math.complex.Complex:equals:258->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:258 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:equals:258->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:258 -> java.lang.Double.doubleToRawLongBits
+org.apache.commons.math.complex.Complex:equals:258->[Control Flow] Branch Info: Line: 258, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:258->[Control Flow] Branch Info: Line: 258, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:262->[Local Variables] {"ret":false}

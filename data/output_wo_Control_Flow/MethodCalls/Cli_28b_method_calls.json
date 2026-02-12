@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.cli.CommandLine.addOption",
+    "doc": "/**\n     * Add an option to the command line.  The values of the option are stored.\n     *\n     * @param opt the processed option\n     */",
+    "code": "void addOption(Option opt)\n    {\n        options.add(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.CommandLine.hasOption",
+    "doc": "/**\n     * Query to see if an option has been set.\n     *\n     * @param opt Short name of the option\n     * @return true if set, false if not\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        return options.contains(resolveOption(opt));\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.hasArg",
+    "doc": "/**\n     * Query to see if this Option requires an argument\n     *\n     * @return boolean flag indicating if an argument is required\n     */",
+    "code": "public boolean hasArg()\n    {\n        return numberOfArgs > 0 || numberOfArgs == UNLIMITED_VALUES;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Options.getOption",
+    "doc": "/**\n     * Retrieve the {@link Option} matching the long or short name specified.\n     * The leading hyphens in the name are ignored (up to 2).\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return the option represented by opt\n     */",
+    "code": "public Option getOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        if (shortOpts.containsKey(opt))\n        {\n            return (Option) shortOpts.get(opt);\n        }\n\n        return (Option) longOpts.get(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Parser.getOptions",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

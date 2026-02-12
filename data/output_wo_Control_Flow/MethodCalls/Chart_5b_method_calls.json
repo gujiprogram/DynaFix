@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jfree.data.xy.XYSeries.fireSeriesChanged",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.xy.XYSeries.getItemCount",
+    "doc": "/**\n     * Returns the number of items in the series.\n     *\n     * @return The item count.\n     */",
+    "code": "public int getItemCount() {\n        return this.data.size();\n    }"
+  },
+  {
+    "method": "org.jfree.data.xy.XYSeries.indexOf",
+    "doc": "/**\n     * Returns the index of the item with the specified x-value, or a negative\n     * index if the series does not contain an item with that x-value.  Be\n     * aware that for an unsorted series, the index is found by iterating\n     * through all items in the series.\n     *\n     * @param x  the x-value (<code>null</code> not permitted).\n     *\n     * @return The index.\n     */",
+    "code": "public int indexOf(Number x) {\n        if (this.autoSort) {\n            return Collections.binarySearch(this.data, new XYDataItem(x, null));\n        }\n        else {\n            for (int i = 0; i < this.data.size(); i++) {\n                XYDataItem item = (XYDataItem) this.data.get(i);\n                if (item.getX().equals(x)) {\n                    return i;\n                }\n            }\n            return -1;\n        }\n    }"
+  }
+]

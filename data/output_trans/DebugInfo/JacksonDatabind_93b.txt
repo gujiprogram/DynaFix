@@ -1,0 +1,35 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest::testJDKTypes1872 ===
+Exception: java.lang.NullPointerException
+
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:97->[Control Flow] Branch Info: Line: 97, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:100->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:100 -> java.lang.Class.getSuperclass
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:93->[Control Flow] Loop Info: Line: 93, Description: while at line 93
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:94->[Control Flow] Branch Info: Line: 94, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:95->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:95 -> java.lang.Class.getSimpleName
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:73->[Local Variables] "{TransVarDctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@2e554a3b, TransVarCtx\u003d[simple type, class com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$Authentication1872]}"
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:74->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:74 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:74->[Local Variables] {"TransVarRawClass":"class com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$Authentication1872"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:75->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:75 -> java.lang.Class.getName
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:81->[Local Variables] {"TransVarFullClassName":"com.fasterxml.jackson.databind.interop.IllegalTypesCheckTest$Authentication1872"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:82->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:82 -> java.util.Set.contains
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:82->[Control Flow] Branch Info: Line: 82, Condition: if (TransVarFullClassName != 0), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:92->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:92 -> java.lang.String.startsWith
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:92->[Control Flow] Branch Info: Line: 92, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:94->[Control Flow] Branch Info: Line: 94, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:73->[Local Variables] "{TransVarCtx\u003d[simple type, class org.springframework.jacksontest.GrantedAuthority]}"
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:74->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:74 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:74->[Local Variables] {"TransVarRawClass":"interface org.springframework.jacksontest.GrantedAuthority"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:75->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:75 -> java.lang.Class.getName
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:81->[Local Variables] {"TransVarFullClassName":"org.springframework.jacksontest.GrantedAuthority"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:82->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:82 -> java.util.Set.contains
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:82->[Control Flow] Branch Info: Line: 82, Condition: if (TransVarFullClassName != 0), Executed: false
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:92->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:92 -> java.lang.String.startsWith
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:92->[Control Flow] Branch Info: Line: 92, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:93->[Local Variables] {"TransVarClazz":"interface org.springframework.jacksontest.GrantedAuthority"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:94->[Control Flow] Branch Info: Line: 94, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:95->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:95 -> java.lang.Class.getSimpleName
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:95->[Local Variables] {"TransVarSimpleClassName":"GrantedAuthority"}
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:96->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:96 -> java.lang.String.equals
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:96->[Control Flow] Branch Info: Line: 96, Condition: if (java.lang.String.equals() == 0), Executed: true
+com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator:validateSubType:97->[Method Call] Call Stack: com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator.validateSubType:97 -> java.lang.String.equals

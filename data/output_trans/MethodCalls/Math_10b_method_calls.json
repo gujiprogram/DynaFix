@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.add",
+    "doc": "/** Perform addition of two derivative structures.\n     * @param lhs array holding left hand side of addition\n     * @param lhsOffset offset of the left hand side in its array\n     * @param rhs array right hand side of addition\n     * @param rhsOffset offset of the right hand side in its array\n     * @param result array where result must be stored (it may be\n     * one of the input arrays)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void add(final double[] lhs, final int lhsOffset,\n                    final double[] rhs, final int rhsOffset,"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.atan",
+    "doc": "/** Compute arc tangent of a derivative structure.\n     * @param operand array holding the operand\n     * @param operandOffset offset of the operand in its array\n     * @param result array where result must be stored (for\n     * arc tangent the result array <em>cannot</em> be the input\n     * array)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void atan(final double[] operand, final int operandOffset,\n                     final double[] result, final int resultOffset) {\n\n        double[] function = new double[1 + order];\n        final double x = operand[operandOffset];\n        function[0] = FastMath.atan(x);\n        if (order > 0) {\n            final double[] q = new double[order];\n            q[0] = 1;\n            final double x2    = x * x;\n            final double f     = 1.0 / (1 + x2);\n            double coeff = f;\n            function[1] = coeff * q[0];\n            for (int n = 2; n <= order; ++n) {\n\n                double v = 0;\n                q[n - 1] = -n * q[n - 2];\n                for (int k = n - 1; k >= 0; k -= 2) {\n                    v = v * x2 + q[k];\n                    if (k > 2) {\n                        q[k - 2] = (k - 1) * q[k - 1] + (k - 1 - 2 * n) * q[k - 3];\n                    } else if (k == 2) {\n                        q[0] = q[1];\n                    }\n                }\n                if ((n & 0x1) == 0) {\n                    v *= x;\n                }\n\n                coeff *= f;\n                function[n] = coeff * v;\n\n            }\n        }\n\n        compose(operand, operandOffset, function, result, resultOffset);\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.divide",
+    "doc": "/** Perform division of two derivative structures.\n     * @param lhs array holding left hand side of division\n     * @param lhsOffset offset of the left hand side in its array\n     * @param rhs array right hand side of division\n     * @param rhsOffset offset of the right hand side in its array\n     * @param result array where result must be stored (for\n     * division the result array <em>cannot</em> be one of\n     * the input arrays)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void divide(final double[] lhs, final int lhsOffset,\n                       final double[] rhs, final int rhsOffset,"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.getSize",
+    "doc": "/** Get the array size required for holding partial derivatives data.\n     * <p>\n     * This number includes the single 0 order derivative element, which is\n     * guaranteed to be stored in the first element of the array.\n     * </p>\n     * @return array size required for holding partial derivatives data\n     */",
+    "code": "public int getSize() {\n        return sizes[parameters][order];\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.multiply",
+    "doc": "/** Perform multiplication of two derivative structures.\n     * @param lhs array holding left hand side of multiplication\n     * @param lhsOffset offset of the left hand side in its array\n     * @param rhs array right hand side of multiplication\n     * @param rhsOffset offset of the right hand side in its array\n     * @param result array where result must be stored (for\n     * multiplication the result array <em>cannot</em> be one of\n     * the input arrays)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void multiply(final double[] lhs, final int lhsOffset,\n                         final double[] rhs, final int rhsOffset,"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.rootN",
+    "doc": "/** Compute n<sup>th</sup> root of a derivative structure.\n     * @param operand array holding the operand\n     * @param operandOffset offset of the operand in its array\n     * @param n order of the root\n     * @param result array where result must be stored (for\n     * n<sup>th</sup> root the result array <em>cannot</em> be the input\n     * array)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void rootN(final double[] operand, final int operandOffset, final int n,\n                      final double[] result, final int resultOffset) {\n\n        double[] function = new double[1 + order];\n        double xk;\n        if (n == 2) {\n            function[0] = FastMath.sqrt(operand[operandOffset]);\n            xk          = 0.5 / function[0];\n        } else if (n == 3) {\n            function[0] = FastMath.cbrt(operand[operandOffset]);\n            xk          = 1.0 / (3.0 * function[0] * function[0]);\n        } else {\n            function[0] = FastMath.pow(operand[operandOffset], 1.0 / n);\n            xk          = 1.0 / (n * FastMath.pow(function[0], n - 1));\n        }\n        final double nReciprocal = 1.0 / n;\n        final double xReciprocal = 1.0 / operand[operandOffset];\n        for (int i = 1; i <= order; ++i) {\n            function[i] = xk;\n            xk *= xReciprocal * (nReciprocal - i);\n        }\n\n        compose(operand, operandOffset, function, result, resultOffset);\n\n    }"
+  }
+]

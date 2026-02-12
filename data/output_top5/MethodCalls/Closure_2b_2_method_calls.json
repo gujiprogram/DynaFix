@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkInterfaceConflictProperties",
+    "doc": "/**\n   * Check whether there's any property conflict for for a particular super\n   * interface\n   * @param t The node traversal object that supplies context\n   * @param n The node being visited\n   * @param functionName The function name being checked\n   * @param properties The property names in the super interfaces that have\n   * been visited\n   * @param currentProperties The property names in the super interface\n   * that have been visited\n   * @param interfaceType The super interface that is being visited\n   */",
+    "code": "private void checkInterfaceConflictProperties(NodeTraversal t, Node n,\n      String functionName, HashMap<String, ObjectType> properties,"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfaces",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfacesCount",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  @Override\n  public JSType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isInterface",
+    "doc": "/**\n   * Two function types are equal if their signatures match. Since they don't\n   * have signatures, two interfaces are equal if their names match.\n   */",
+    "code": "return isInterface() ? getReferenceName().hashCode() : call.hashCode();\n  }\n\n  public boolean hasEqualCallType(FunctionType otherType) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType",
+    "doc": "/**\n   * Downcasts this to a FunctionType, or returns null if this is not\n   * a function.\n   *\n   * For the purposes of this function, we define a MaybeFunctionType as any\n   * type in the sub-lattice\n   * { x | LEAST_FUNCTION_TYPE <= x <= GREATEST_FUNCTION_TYPE }\n   * This definition excludes bottom types like NoType and NoObjectType.\n   *\n   * This definition is somewhat arbitrary and axiomatic, but this is the\n   * definition that makes the most sense for the most callers.\n   */",
+    "code": "public FunctionType toMaybeFunctionType() {\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getConstructor",
+    "doc": "/**\n   * Gets this object's constructor.\n   * @return this object's constructor or {@code null} if it is a native\n   * object (constructed natively v.s. by instantiation of a function)\n   */",
+    "code": "public abstract FunctionType getConstructor();"
+  }
+]

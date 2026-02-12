@@ -1,0 +1,47 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.VerifyingWithAnExtraCallToADifferentMockTest::shouldAllowVerifyingWhenOtherMockCallIsInTheSameLine ===
+Exception: junit.framework.AssertionFailedError
+
+org.mockito.internal.MockHandler:handle:71->[Local Variables] "{TransVarInvocation1\u003dmockTwo.simpleMethod(\"foo\");}"
+org.mockito.internal.MockHandler:handle:72->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:72 -> org.mockito.internal.progress.MockingProgress.pullVerificationMode
+org.mockito.internal.MockHandler:handle:114->[Local Variables] "{TransVarInvocation1\u003dmockTwo.finalize();}"
+org.mockito.internal.MockHandler:handle:74->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:74 -> org.mockito.internal.progress.MockingProgress.getArgumentMatcherStorage
+org.mockito.internal.MockHandler:handle:74->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:74 -> org.mockito.internal.invocation.MatchersBinder.bindMatchers
+org.mockito.internal.MockHandler:handle:76->[Local Variables] "{TransVarInvocationMatcherForPull\u003dmockTwo.simpleMethod(\"foo\");}"
+org.mockito.internal.MockHandler:handle:77->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:77 -> org.mockito.internal.progress.MockingProgress.validateState
+org.mockito.internal.MockHandler:handle:80->[Control Flow] Branch Info: Line: 80, Condition: if (TransVarVerificationModeForPull != null), Executed: false
+org.mockito.internal.MockHandler:handle:86->[Control Flow] Branch Info: Line: 86, Condition: if (TransVarVerificationModeForPull != 0), Executed: false
+org.mockito.internal.MockHandler:handle:88->[Control Flow] Branch Info: Line: 88, Condition: if (unknown_condition_166), Executed: false
+org.mockito.internal.MockHandler:handle:97->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:97 -> org.mockito.internal.stubbing.InvocationContainerImpl.setInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:98->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:98 -> org.mockito.internal.stubbing.OngoingStubbingImpl.<init>
+org.mockito.internal.MockHandler:handle:98->[Local Variables] "{TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@60b73425}"
+org.mockito.internal.MockHandler:handle:99->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:99 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:101->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:101 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:103->[Control Flow] Branch Info: Line: 103, Condition: if (TransVarStubbedInvocationMatcher != null), Executed: false
+org.mockito.internal.MockHandler:handle:107->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:107 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:107->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:107 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:114->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:114 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:80->[Control Flow] Branch Info: Line: 80, Condition: if (TransVarVerificationModeForPull != null), Executed: false
+org.mockito.internal.MockHandler:handle:86->[Control Flow] Branch Info: Line: 86, Condition: if (TransVarVerificationModeForPull != 0), Executed: false
+org.mockito.internal.MockHandler:handle:88->[Control Flow] Branch Info: Line: 88, Condition: if (unknown_condition_166), Executed: false
+org.mockito.internal.MockHandler:handle:97->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:97 -> org.mockito.internal.stubbing.InvocationContainerImpl.setInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:97->[Local Variables] "{TransVarInvocation1\u003dmockTwo.finalize();, TransVarInvocationMatcherForPull\u003dmockTwo.finalize();, TransVarVerificationModeForPull\u003dnull}"
+org.mockito.internal.MockHandler:handle:98->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:98 -> org.mockito.internal.stubbing.OngoingStubbingImpl.<init>
+org.mockito.internal.MockHandler:handle:102->[Local Variables] "{TransVarInvocation1\u003dmock.otherMethod();, TransVarInvocationMatcherForPull\u003dmock.otherMethod();, TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@1e7544bc, TransVarVerificationModeForPull\u003dorg.mockito.internal.verification.MockAwareVerificationMode@5922338f, TransVarStubbedInvocationMatcher\u003dmock.otherMethod(); stubbed with: [Returns: foo]}"
+org.mockito.internal.MockHandler:handle:103->[Control Flow] Branch Info: Line: 103, Condition: if (TransVarStubbedInvocationMatcher != null), Executed: true
+org.mockito.internal.MockHandler:handle:98->[Local Variables] "{TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@48c407e}"
+org.mockito.internal.MockHandler:handle:99->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:99 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:103->[Local Variables] "{TransVarInvocation1\u003dmock.otherMethod();, TransVarInvocationMatcherForPull\u003dmock.otherMethod();, TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@1e7544bc, TransVarVerificationModeForPull\u003dorg.mockito.internal.verification.MockAwareVerificationMode@5922338f}"
+org.mockito.internal.MockHandler:handle:104->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:104 -> org.mockito.internal.stubbing.StubbedInvocationMatcher.captureArgumentsFrom
+org.mockito.internal.MockHandler:handle:100->[Local Variables] "{TransVarInvocation1\u003dmockTwo.finalize();, TransVarInvocationMatcherForPull\u003dmockTwo.finalize();, TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@48c407e, TransVarVerificationModeForPull\u003dnull}"
+org.mockito.internal.MockHandler:handle:101->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:101 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:103->[Control Flow] Branch Info: Line: 103, Condition: if (TransVarStubbedInvocationMatcher != null), Executed: false
+org.mockito.internal.MockHandler:handle:104->[Local Variables] "{TransVarInvocation1\u003dmock.otherMethod();, TransVarInvocationMatcherForPull\u003dmock.otherMethod();, TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@1e7544bc, TransVarVerificationModeForPull\u003dorg.mockito.internal.verification.MockAwareVerificationMode@5922338f, TransVarStubbedInvocationMatcher\u003dmock.otherMethod(); stubbed with: [Returns: foo]}"
+org.mockito.internal.MockHandler:handle:105->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:105 -> org.mockito.internal.stubbing.StubbedInvocationMatcher.answer
+org.mockito.internal.MockHandler:handle:106->[Local Variables] "{TransVarInvocation1\u003dmockTwo.finalize();, TransVarInvocationMatcherForPull\u003dmockTwo.finalize();, TransVarStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@48c407e, TransVarVerificationModeForPull\u003dnull, TransVarStubbedInvocationMatcher\u003dnull}"
+org.mockito.internal.MockHandler:handle:107->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:107 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:107->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:107 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:114->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:114 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:61->[Local Variables] "{TransVarInvocation1\u003dmockTwo.simpleMethod(\"foo\");}"
+org.mockito.internal.MockHandler:handle:62->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:62 -> org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing
+org.mockito.internal.MockHandler:handle:62->[Control Flow] Branch Info: Line: 62, Condition: if (org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing() != 0), Executed: false

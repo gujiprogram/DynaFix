@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::supportsXmlCharsetDeclaration ===
+
+org.jsoup.helper.DataUtil:parseInputStream:116->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:116 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseInputStream:119->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:119 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseInputStream:121->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:121 -> org.jsoup.select.Elements.iterator
+org.jsoup.helper.DataUtil:parseInputStream:121->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:121 -> java.util.Iterator.hasNext
+org.jsoup.helper.DataUtil:parseInputStream:121->[Control Flow] Branch Info: Line: 121, Condition: if (first != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (foundCharset == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:131->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:131 -> org.jsoup.nodes.Document.childNodeSize
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (org.jsoup.nodes.Document.childNodeSize() > 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:132->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:132 -> org.jsoup.nodes.Document.childNode
+org.jsoup.helper.DataUtil:parseInputStream:134->[Control Flow] Branch Info: Line: 134, Condition: if (first != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (foundCharset == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (org.jsoup.nodes.Document.childNodeSize() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:136->[Control Flow] Branch Info: Line: 136, Condition: if (decl != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:137->[Control Flow] Branch Info: Line: 137, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:141->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:141 -> org.jsoup.helper.DataUtil.validateCharset
+org.jsoup.helper.DataUtil:parseInputStream:142->[Control Flow] Branch Info: Line: 142, Condition: if (foundCharset != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:142->[Control Flow] Branch Info: Line: 142, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:146->[Control Flow] Branch Info: Line: 146, Condition: if (fullyRead == 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:152->[Control Flow] Branch Info: Line: 152, Condition: if (doc == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:166->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:166 -> java.io.InputStream.close
+org.jsoup.helper.DataUtil:parseInputStream:96->[Control Flow] Branch Info: Line: 96, Condition: if (input == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:98->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:98 -> org.jsoup.internal.ConstrainableInputStream.wrap
+org.jsoup.helper.DataUtil:parseInputStream:104->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:104 -> java.io.InputStream.mark
+org.jsoup.helper.DataUtil:parseInputStream:105->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:105 -> org.jsoup.helper.DataUtil.readToByteBuffer
+org.jsoup.helper.DataUtil:parseInputStream:106->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:106 -> java.io.InputStream.read
+org.jsoup.helper.DataUtil:parseInputStream:106->[Control Flow] Branch Info: Line: 106, Condition: if (java.io.InputStream.read() == java.io.InputStream.read()), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:107->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:107 -> java.io.InputStream.reset
+org.jsoup.helper.DataUtil:parseInputStream:110->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:110 -> org.jsoup.helper.DataUtil.detectCharsetFromBom
+org.jsoup.helper.DataUtil:parseInputStream:111->[Control Flow] Branch Info: Line: 111, Condition: if (bomCharset != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:114->[Control Flow] Branch Info: Line: 114, Condition: if (charsetName == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:115->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:115 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseInputStream:115->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:115 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseInputStream:115->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:115 -> java.nio.CharBuffer.toString

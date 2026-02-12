@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.joda.time.DateTimeZone.fixedOffsetZone",
+    "doc": "/**\n     * Gets a time zone instance for the specified offset to UTC in hours and minutes.\n     * This method assumes 60 minutes in an hour, and standard length minutes.\n     * <p>\n     * This factory is a convenient way of constructing zones with a fixed offset.\n     * The minutes value is always positive and in the range 0 to 59.\n     * If constructed with the values (-2, 30), the resulting zone is '-02:30'.\n     *\n     * @param hoursOffset  the offset in hours from UTC, from -23 to +23\n     * @param minutesOffset  the offset in minutes from UTC, must be between 0 and 59 inclusive\n     * @return the DateTimeZone object for the offset\n     * @throws IllegalArgumentException if the offset or minute is too large or too small\n     */",
+    "code": "return fixedOffsetZone(id, offset);\n            }\n        }\n        throw new IllegalArgumentException(\"The datetime zone id '\" + id + \"' is not recognised\");\n    }\n\n    public static DateTimeZone forOffsetHours(int hoursOffset) throws IllegalArgumentException {\n        return forOffsetHoursMinutes(hoursOffset, 0);\n    }\n\n    public static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) throws IllegalArgumentException {\n        if (hoursOffset == 0 && minutesOffset == 0) {\n            return DateTimeZone.UTC;\n        }\n        if (minutesOffset < 0 || minutesOffset > 59) {\n            throw new IllegalArgumentException(\"Minutes out of range: \" + minutesOffset);\n        }\n        int offset = 0;\n        try {\n            int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, 60);\n            if (hoursInMinutes < 0) {"
+  },
+  {
+    "method": "org.joda.time.DateTimeZone.forOffsetMillis",
+    "doc": "/**\n     * Gets a time zone instance for the specified offset to UTC in milliseconds.\n     *\n     * @param millisOffset  the offset in millis from UTC, from -23:59:59.999 to +23:59:59.999\n     * @return the DateTimeZone object for the offset\n     */",
+    "code": "return forOffsetMillis(offset);\n    }\n\n    public static DateTimeZone forOffsetMillis(int millisOffset) {"
+  },
+  {
+    "method": "org.joda.time.DateTimeZone.printOffset",
+    "doc": "/**\n     * Formats a timezone offset string.\n     * <p>\n     * This method is kept separate from the formatting classes to speed and\n     * simplify startup and classloading.\n     *\n     * @param offset  the offset in milliseconds\n     * @return the time zone string\n     */",
+    "code": "private static String printOffset(int offset) {\n        StringBuffer buf = new StringBuffer();\n        if (offset >= 0) {\n            buf.append('+');\n        } else {\n            buf.append('-');\n            offset = -offset;\n        }\n\n        int hours = offset / DateTimeConstants.MILLIS_PER_HOUR;\n        FormatUtils.appendPaddedInteger(buf, hours, 2);\n        offset -= hours * (int) DateTimeConstants.MILLIS_PER_HOUR;\n\n        int minutes = offset / DateTimeConstants.MILLIS_PER_MINUTE;\n        buf.append(':');\n        FormatUtils.appendPaddedInteger(buf, minutes, 2);\n        offset -= minutes * DateTimeConstants.MILLIS_PER_MINUTE;\n        if (offset == 0) {\n            return buf.toString();\n        }\n\n        int seconds = offset / DateTimeConstants.MILLIS_PER_SECOND;\n        buf.append(':');\n        FormatUtils.appendPaddedInteger(buf, seconds, 2);\n        offset -= seconds * DateTimeConstants.MILLIS_PER_SECOND;\n        if (offset == 0) {\n            return buf.toString();\n        }\n\n        buf.append('.');\n        FormatUtils.appendPaddedInteger(buf, offset, 3);\n        return buf.toString();\n    }"
+  },
+  {
+    "method": "org.joda.time.field.FieldUtils.safeAdd",
+    "doc": "/**\n     * Add two values throwing an exception if overflow occurs.\n     *\n     * @param val1  the first value\n     * @param val2  the second value\n     * @return the new total\n     * @throws ArithmeticException if the value is too big or too small\n     */",
+    "code": "public static int safeAdd(int val1, int val2) {\n        int sum = val1 + val2;\n        if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {\n            throw new ArithmeticException\n                (\"The calculation caused an overflow: \" + val1 + \" + \" + val2);\n        }\n        return sum;\n    }"
+  },
+  {
+    "method": "org.joda.time.field.FieldUtils.safeMultiply",
+    "doc": "/**\n     * Multiply two values throwing an exception if overflow occurs.\n     *\n     * @param val1  the first value\n     * @param val2  the second value\n     * @return the new total\n     * @throws ArithmeticException if the value is too big or too small\n     * @since 1.2\n     */",
+    "code": "public static int safeMultiply(int val1, int val2) {\n        long total = (long) val1 * (long) val2;\n        if (total < Integer.MIN_VALUE || total > Integer.MAX_VALUE) {\n          throw new ArithmeticException(\"Multiplication overflows an int: \" + val1 + \" * \" + val2);\n        }\n        return (int) total;\n    }"
+  }
+]

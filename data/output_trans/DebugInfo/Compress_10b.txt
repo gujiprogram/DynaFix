@@ -1,0 +1,52 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.UTF8ZipFilesTest::testReadWinZipArchive ===
+Exception: junit.framework.AssertionFailedError: InputStream is null
+
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:837->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:837 -> org.apache.commons.compress.archivers.zip.ZipFile$OffsetEntry.access$002
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:839->[Local Variables] {"TransVarOffset":{"headerOffset":170,"dataOffset":209}}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:840->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:840 -> java.util.Map.containsKey
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:840->[Control Flow] Branch Info: Line: 840, Condition: if (TransVarEntry != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:841->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:841 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getName
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:841->[Local Variables] {"TransVarEntryName":"ascii.txt"}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:842->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:842 -> java.util.Map.get
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:842->[Local Variables] {"TransVarNameComment":{"name":[97,115,99,105,105,46,116,120,116],"comment":[]}}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:843->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:843 -> org.apache.commons.compress.archivers.zip.ZipFile$NameAndComment.access$400
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:844->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:844 -> org.apache.commons.compress.archivers.zip.ZipFile$NameAndComment.access$500
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:843->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:843 -> org.apache.commons.compress.archivers.zip.ZipUtil.setNameAndCommentFromExtraFields
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:845->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:845 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getName
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:845->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:845 -> java.lang.String.equals
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:840->[Control Flow] Branch Info: Line: 840, Condition: if (TransVarEntry != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:845->[Control Flow] Branch Info: Line: 845, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Control Flow] Loop Info: Line: 811, Description: while at line 811
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:811 -> java.util.Iterator.hasNext
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Control Flow] Branch Info: Line: 811, Condition: if (var2 != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Control Flow] Loop Info: Line: 811, Description: while at line 811
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:811 -> java.util.Iterator.hasNext
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Control Flow] Branch Info: Line: 811, Condition: if (var2 != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:811->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:811 -> java.util.Iterator.next
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:814->[Local Variables] "{TransVarEntry\u003dascii.txt}"
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:815->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:815 -> java.util.Map.get
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:815->[Local Variables] {"TransVarOffset":{"headerOffset":170,"dataOffset":-1}}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:816->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:816 -> org.apache.commons.compress.archivers.zip.ZipFile$OffsetEntry.access$200
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:816->[Local Variables] {"TransVarOffset1":170}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:817->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:817 -> java.io.RandomAccessFile.seek
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:818->[Local Variables] {"TransVarC":[0,0]}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:819->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:819 -> java.io.RandomAccessFile.readFully
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:819->[Local Variables] {"TransVarC":[9,0]}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:820->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:820 -> org.apache.commons.compress.archivers.zip.ZipShort.getValue
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:820->[Local Variables] {"TransVarFileNameLength":9}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:821->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:821 -> java.io.RandomAccessFile.readFully
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:821->[Local Variables] {"TransVarC":[0,0]}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:822->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:822 -> org.apache.commons.compress.archivers.zip.ZipShort.getValue
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:822->[Local Variables] {"TransVarExtraFieldLen1":0}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:823->[Local Variables] {"TransVarLenToSkip1":9}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:824->[Control Flow] Branch Info: Line: 824, Condition: if (TransVarLenToSkip1 > 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:828->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:828 -> java.io.RandomAccessFile.skipBytes
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:828->[Local Variables] {"TransVarBytesSkipped":9}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:829->[Control Flow] Branch Info: Line: 829, Condition: if (TransVarExtraData <= 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:832->[Local Variables] {"TransVarLenToSkip1":0}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:823->[Control Flow] Loop Info: Line: 823, Description: while at line 823
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:824->[Control Flow] Branch Info: Line: 824, Condition: if (TransVarLenToSkip1 > 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:834->[Local Variables] {"TransVarExtraData":[]}
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:835->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:835 -> java.io.RandomAccessFile.readFully
+org.apache.commons.compress.archivers.zip.ZipFile:resolveLocalFileHeaderData:836->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipFile.resolveLocalFileHeaderData:836 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.setExtra

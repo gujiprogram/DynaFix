@@ -1,0 +1,67 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.Array2DRowRealMatrix.getDataRef",
+    "doc": "/**\n     * Get a reference to the underlying data array.\n     *\n     * @return 2-dimensional array of entries.\n     */",
+    "code": "public double[][] getDataRef() {\n        return data;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.linear.Array2DRowRealMatrix.getRowVector",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.linear.Array2DRowRealMatrix.setEntry",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.linear.Array2DRowRealMatrix.setRowVector",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealVector.subtract",
+    "doc": "/**\n     * Subtract {@code v} from this vector.\n     * Returns a new vector. Does not change instance data.\n     *\n     * @param v Vector to be subtracted.\n     * @return {@code this} - {@code v}.\n     * @throws org.apache.commons.math.exception.DimensionMismatchException\n     * if {@code v} is not the same size as this vector.\n     */",
+    "code": "public RealVector subtract(RealVector v) {\n        RealVector result = v.copy();\n        Iterator<Entry> it = sparseIterator();\n        Entry e;\n        while (it.hasNext() && (e = it.next()) != null) {\n            final int index = e.getIndex();\n            result.setEntry(index, e.getValue() - result.getEntry(index));\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealVector.toArray",
+    "doc": "/**\n     * Convert the vector to an array of {@code double}s.\n     * The array is independent from this vector data: the elements\n     * are copied.\n     *\n     * @return an array containing a copy of the vector elements.\n     */",
+    "code": "public double[] toArray() {\n        int dim = getDimension();\n        double[] values = new double[dim];\n        for (int i = 0; i < dim; i++) {\n            values[i] = getEntry(i);\n        }\n        return values;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getCoefficients",
+    "doc": "/**\n     * Get the coefficients of the constraint (left hand side).\n     * @return coefficients of the constraint (left hand side)\n     */",
+    "code": "public RealVector getCoefficients() {\n        return coefficients;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getRelationship",
+    "doc": "/**\n     * Get the relationship between left and right hand sides.\n     * @return relationship between left and right hand sides\n     */",
+    "code": "public Relationship getRelationship() {\n        return relationship;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getValue",
+    "doc": "/**\n     * Get the value of the constraint (right hand side).\n     * @return value of the constraint (right hand side)\n     */",
+    "code": "public double getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getConstantTerm",
+    "doc": "/**\n     * Get the constant of the linear equation being optimized.\n     * @return constant of the linear equation being optimized\n     */",
+    "code": "public double getConstantTerm() {\n        return constantTerm;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.copyArray",
+    "doc": "/**\n     * @param src the source array\n     * @param dest the destination array\n     */",
+    "code": "private void copyArray(final double[] src, final double[] dest) {\n        System.arraycopy(src, 0, dest, getNumObjectiveFunctions(), src.length);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getArtificialVariableOffset",
+    "doc": "/**\n     * Get the offset of the first artificial variable.\n     * @return offset of the first artificial variable\n     */",
+    "code": "protected final int getArtificialVariableOffset() {\n        return getNumObjectiveFunctions() + numDecisionVariables + numSlackVariables;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions",
+    "doc": "/**\n     * Get the number of objective functions in this tableau.\n     * @return 2 for Phase 1.  1 for Phase 2.\n     */",
+    "code": "protected final int getNumObjectiveFunctions() {\n        return this.numArtificialVariables > 0 ? 2 : 1;\n    }"
+  }
+]

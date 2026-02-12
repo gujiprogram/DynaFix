@@ -1,0 +1,77 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.StreamCompressor.getTotalBytesWritten",
+    "doc": "/**\n     * The total number of bytes written to the output for all files\n     *\n     * @return The number of bytes, never negative\n     */",
+    "code": "public long getTotalBytesWritten() {\n        return totalWrittenToOutputStream;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getCompressedSize",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getCrc",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getMethod",
+    "doc": "/**\n     * Returns the compression method of this entry, or -1 if the\n     * compression method has not been specified.\n     *\n     * @return compression method\n     *\n     * @since 1.1\n     */",
+    "code": "public int getMethod() {\n        return method;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getSize",
+    "doc": "/**\n     * Gets the uncompressed size of the entry data.\n     *\n     * <p><b>Note</b>: {@link ZipArchiveInputStream} may create\n     * entries that return {@link #SIZE_UNKNOWN SIZE_UNKNOWN} as long\n     * as the entry hasn't been read completely.</p>\n     *\n     * @return the entry size\n     */",
+    "code": "public long getSize() {\n        return size;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getTime",
+    "doc": "/**\n     * Wraps {@link java.util.zip.ZipEntry#getTime} with a {@link Date} as the\n     * entry's last modified date.\n     *\n     * <p>Changes to the implementation of {@link java.util.zip.ZipEntry#getTime}\n     * leak through and the returned value may depend on your local\n     * time zone as well as your version of Java.</p>\n     */",
+    "code": "return getTime() == other.getTime()\n            && myComment.equals(otherComment)"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream$CurrentEntry.access$002",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream$CurrentEntry.access$200",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream$CurrentEntry.access$402",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.hasZip64Extra",
+    "doc": "/**\n     * Is there a ZIP64 extended information extra field for the\n     * entry?\n     *\n     * @since 1.3\n     */",
+    "code": "private boolean hasZip64Extra(final ZipArchiveEntry ze) {\n        return ze.getExtraField(Zip64ExtendedInformationExtraField\n                                .HEADER_ID)\n            != null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.usesDataDescriptor",
+    "doc": "/**\n     * Write bytes to output or random access file.\n     * @param data the byte array to write\n     * @param offset the start position to write from\n     * @param length the number of bytes to write\n     * @throws IOException on error\n     */",
+    "code": "private boolean usesDataDescriptor(final int zipMethod) {\n        return zipMethod == DEFLATED && channel == null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.writeCounted",
+    "doc": "/**\n     * Write bytes to output or random access file.\n     * @param data the byte array to write\n     * @throws IOException on error\n     */",
+    "code": "private void writeCounted(final byte[] data) throws IOException {\n        streamCompressor.writeCounted(data);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipLong.putLong",
+    "doc": "/**\n     * put the value as four bytes in big endian byte order.\n     * @param value the Java long to convert to bytes\n     * @param buf the output buffer\n     * @param  offset\n     *         The offset within the output buffer of the first byte to be written.\n     *         must be non-negative and no larger than <tt>buf.length-4</tt>\n     */",
+    "code": "public static void putLong(final long value, final byte[] buf, int offset) {\n        ByteUtils.toLittleEndian(buf, value, offset, 4);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipShort.putShort",
+    "doc": "/**\n     * put the value as two bytes in big endian byte order.\n     * @param value the Java int to convert to bytes\n     * @param buf the output buffer\n     * @param  offset\n     *         The offset within the output buffer of the first byte to be written.\n     *         must be non-negative and no larger than <tt>buf.length-2</tt>\n     */",
+    "code": "public static void putShort(final int value, final byte[] buf, final int offset) {\n        ByteUtils.toLittleEndian(buf, value, offset, 2);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipUtil.toDosTime",
+    "doc": "/**\n     * Convert a Date object to a DOS date/time field.\n     * @param time the <code>Date</code> to convert\n     * @return the date as a <code>ZipLong</code>\n     */",
+    "code": "public static ZipLong toDosTime(final Date time) {\n        return new ZipLong(toDosTime(time.getTime()));\n    }"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.csv.Assertions.notNull",
+    "doc": "/**\n * Utility class for input parameter validation\n *\n * @version $Id$\n */",
+    "code": "public static void notNull(final Object parameter, final String parameterName) {\n        if (parameter == null) {\n            throw new IllegalArgumentException(\"Parameter '\" + parameterName + \"' must not be null!\");\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVFormat.validate",
+    "doc": "/**\n     * Verifies the consistency of the parameters and throws an IllegalStateException if necessary.\n     *\n     * @throws IllegalStateException\n     */",
+    "code": "void validate() throws IllegalStateException {\n        if (quoteChar != null && delimiter == quoteChar.charValue()) {\n            throw new IllegalStateException(\n                    \"The quoteChar character and the delimiter cannot be the same ('\" + quoteChar + \"')\");\n        }\n\n        if (escape != null && delimiter == escape.charValue()) {\n            throw new IllegalStateException(\n                    \"The escape character and the delimiter cannot be the same ('\" + escape + \"')\");\n        }\n\n        if (commentStart != null && delimiter == commentStart.charValue()) {\n            throw new IllegalStateException(\n                    \"The comment start character and the delimiter cannot be the same ('\" + commentStart + \"')\");\n        }\n\n        if (quoteChar != null && quoteChar.equals(commentStart)) {\n            throw new IllegalStateException(\n                    \"The comment start character and the quoteChar cannot be the same ('\" + commentStart + \"')\");\n        }\n\n        if (escape != null && escape.equals(commentStart)) {\n            throw new IllegalStateException(\n                    \"The comment start and the escape character cannot be the same ('\" + commentStart + \"')\");\n        }\n\n        if (escape == null && quotePolicy == Quote.NONE) {\n            throw new IllegalStateException(\"No quotes mode set but no escape character is set\");\n        }\n\n    }"
+  }
+]

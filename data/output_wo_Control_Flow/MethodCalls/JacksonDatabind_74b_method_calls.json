@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.reportWrongTokenException",
+    "doc": "/**\n     * Method for deserializers to call\n     * when the token encountered was of type different than what <b>should</b>\n     * be seen at that position, usually within a sequence of expected tokens.\n     * Note that this method will throw a {@link JsonMappingException} and no\n     * recovery is attempted (via {@link DeserializationProblemHandler}, as\n     * problem is considered to be difficult to recover from, in general.\n     *\n     * @since 2.8\n     */",
+    "code": "public void reportWrongTokenException(JsonParser p,\n            JsonToken expToken, String msg, Object... msgArgs)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.TypeDeserializer.deserializeIfNatural",
+    "doc": "/**\n     * Helper method used to check if given parser might be pointing to\n     * a \"natural\" value, and one that would be acceptable as the\n     * result value (compatible with declared base type)\n     */",
+    "code": "public static Object deserializeIfNatural(JsonParser p, DeserializationContext ctxt, JavaType baseType) throws IOException {\n        return deserializeIfNatural(p, ctxt, baseType.getRawClass());\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer._findDefaultImplDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.baseTypeName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

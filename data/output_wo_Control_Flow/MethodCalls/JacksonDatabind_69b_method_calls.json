@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCollector._fixAccess",
+    "doc": "/**********************************************************\n     */",
+    "code": "private <T extends AnnotatedMember> T _fixAccess(T member)\n    {\n        if (member != null && _canFixAccess) {\n            ClassUtil.checkAndFixAccess((Member) member.getAnnotated(), _forceAccess);\n        }\n        return member;\n    }"
+  }
+]

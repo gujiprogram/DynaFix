@@ -1,0 +1,17 @@
+[
+  {
+    "method": "[Ljava.lang.String;.clone",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.csv.CSVFormat.isLineBreak",
+    "doc": "/**\n     * Returns true if the given character is a line break character.\n     *\n     * @param c\n     *            the character to check\n     *\n     * @return true if <code>c</code> is a line break character\n     */",
+    "code": "private static boolean isLineBreak(final char c) {\n        return c == LF || c == CR;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVFormat.validate",
+    "doc": "/**\n     * Verifies the consistency of the parameters and throws an IllegalArgumentException if necessary.\n     *\n     * @throws IllegalArgumentException\n     */",
+    "code": "private void validate() throws IllegalArgumentException {\n        if (quoteCharacter != null && delimiter == quoteCharacter.charValue()) {\n            throw new IllegalArgumentException(\n                    \"The quoteChar character and the delimiter cannot be the same ('\" + quoteCharacter + \"')\");\n        }\n\n        if (escapeCharacter != null && delimiter == escapeCharacter.charValue()) {\n            throw new IllegalArgumentException(\n                    \"The escape character and the delimiter cannot be the same ('\" + escapeCharacter + \"')\");\n        }\n\n        if (commentMarker != null && delimiter == commentMarker.charValue()) {\n            throw new IllegalArgumentException(\n                    \"The comment start character and the delimiter cannot be the same ('\" + commentMarker + \"')\");\n        }\n\n        if (quoteCharacter != null && quoteCharacter.equals(commentMarker)) {\n            throw new IllegalArgumentException(\n                    \"The comment start character and the quoteChar cannot be the same ('\" + commentMarker + \"')\");\n        }\n\n        if (escapeCharacter != null && escapeCharacter.equals(commentMarker)) {\n            throw new IllegalArgumentException(\n                    \"The comment start and the escape character cannot be the same ('\" + commentMarker + \"')\");\n        }\n\n        if (escapeCharacter == null && quoteMode == QuoteMode.NONE) {\n            throw new IllegalArgumentException(\"No quotes mode set but no escape character is set\");\n        }\n    }"
+  }
+]

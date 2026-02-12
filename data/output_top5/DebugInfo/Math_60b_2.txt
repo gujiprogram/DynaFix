@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.apache.commons.math.distribution.NormalDistributionTest::testExtremeValues ===
+Exception: org.apache.commons.math.ConvergenceException: Continued fraction diverged to NaN for value ∞
+
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:59->[Local Variables] {"sd":1.4,"mean":2.1}
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:72->[Local Variables] {"inverseCumAccuracy":1.0E-9}
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:73->[Method Call] Call Stack: org.apache.commons.math.distribution.NormalDistributionImpl.<init>:73 -> org.apache.commons.math.distribution.AbstractContinuousDistribution.<init>
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:74->[Control Flow] Branch Info: Line: 74, Condition: if (sd <= 0), Executed: false
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:59->[Local Variables] {"sd":1.0,"mean":0.0}
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:73->[Method Call] Call Stack: org.apache.commons.math.distribution.NormalDistributionImpl.<init>:73 -> org.apache.commons.math.distribution.AbstractContinuousDistribution.<init>
+org.apache.commons.math.distribution.NormalDistributionImpl:<init>:74->[Control Flow] Branch Info: Line: 74, Condition: if (sd <= 0), Executed: false

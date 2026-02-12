@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.parser.TokenQueue.consumeToAny",
+    "doc": "/**\n     Consumes to the first sequence provided, or to the end of the queue. Leaves the terminator on the queue.\n     @param seq any number of terminators to consume to. <b>Case insensitive.</b>\n     @return consumed string\n     */",
+    "code": "public String consumeToAny(String... seq) {\n        int start = pos;\n        while (!isEmpty() && !matchesAny(seq)) {\n            pos++;\n        }\n\n        String data = queue.substring(start, pos);\n        return data;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.consumeWhitespace",
+    "doc": "/**\n     * Pulls the next run of whitespace characters of the queue.\n     */",
+    "code": "public boolean consumeWhitespace() {\n        boolean seen = false;\n        while (matchesWhitespace()) {\n            pos++;\n            seen = true;\n        }\n        return seen;\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Selector.filterForDescendants",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "private static Elements filterForDescendants(Collection<Element> parents, Collection<Element> candidates) {\n        Elements children = new Elements();\n        CHILD: for (Element c : candidates) {\n            for (Element p : parents) {\n                if (c.equals(p)) {\n                    continue CHILD;\n                }\n            }\n            children.add(c);\n        }\n        return children;\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Selector.select",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param root root element to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "public static Elements select(String query, Element root) {\n        return new Selector(query, root).select();\n    }"
+  }
+]

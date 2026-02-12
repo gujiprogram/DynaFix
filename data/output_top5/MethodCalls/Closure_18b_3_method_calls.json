@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.putCompilerInput",
+    "doc": "/**\n   * Removes an input file from AST.\n   * @param id The id of the input to be removed.\n   */",
+    "code": "private CompilerInput putCompilerInput(InputId id, CompilerInput input) {\n    input.setCompiler(this);\n    return inputsById.put(id, input);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.getInputId",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceAst.getAstRoot",
+    "doc": "/**\n   * Gets the root node of the AST for the source file this represents. The AST\n   * is lazily instantiated and cached.\n   */",
+    "code": "public Node getAstRoot(AbstractCompiler compiler);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceAst.getInputId",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildToFront",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildToFront(Node child) {\n    Preconditions.checkArgument(child.parent == null);\n    Preconditions.checkArgument(child.next == null);\n    child.parent = this;\n    child.next = first;\n    first = child;\n    if (last == null) {\n      last = child;\n    }\n  }"
+  }
+]

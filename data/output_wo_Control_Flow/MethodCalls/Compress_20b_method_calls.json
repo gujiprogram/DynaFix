@@ -1,0 +1,67 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.getHeaderPadCount",
+    "doc": "/**\n     * Get the number of bytes needed to pad the header to the alignment boundary.\n     *\n     * @return the number of bytes needed to pad the header (0,1,2,3)\n     */",
+    "code": "public int getHeaderPadCount(){\n        if (this.alignmentBoundary == 0) { return 0; }\n        int size = this.headerSize+this.name.length()+1; // Name has terminating null\n        int remain = size % this.alignmentBoundary;\n        if (remain > 0){\n            return this.alignmentBoundary - remain;\n        }\n        return 0;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setChksum",
+    "doc": "/**\n     * Set the checksum. The checksum is calculated by adding all bytes of a\n     * file to transfer (crc += buf[pos] & 0xFF).\n     *\n     * @param chksum\n     *            The checksum to set.\n     */",
+    "code": "public void setChksum(final long chksum) {\n        checkNewFormat();\n        this.chksum = chksum;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setDeviceMaj",
+    "doc": "/**\n     * Set major device id.\n     *\n     * @param maj\n     *            The major device id to set.\n     */",
+    "code": "public void setDeviceMaj(final long maj) {\n        checkNewFormat();\n        this.maj = maj;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setDeviceMin",
+    "doc": "/**\n     * Set the minor device id\n     *\n     * @param min\n     *            The minor device id to set.\n     */",
+    "code": "public void setDeviceMin(final long min) {\n        checkNewFormat();\n        this.min = min;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setInode",
+    "doc": "/**\n     * Set the inode.\n     *\n     * @param inode\n     *            The inode to set.\n     */",
+    "code": "public void setInode(final long inode) {\n        this.inode = inode;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setMode",
+    "doc": "/**\n     * Set the mode of this entry (e.g. directory, regular file).\n     *\n     * @param mode\n     *            The mode to set.\n     */",
+    "code": "public void setMode(final long mode) {\n        final long maskedMode = mode & S_IFMT;\n        switch ((int) maskedMode) {\n        case C_ISDIR:\n        case C_ISLNK:\n        case C_ISREG:\n        case C_ISFIFO:\n        case C_ISCHR:\n        case C_ISBLK:\n        case C_ISSOCK:\n        case C_ISNWK:\n            break;\n        default:\n            throw new IllegalArgumentException(\n                                               \"Unknown mode. \"\n                                               + \"Full: \" + Long.toHexString(mode)\n                                               + \" Masked: \" + Long.toHexString(maskedMode));\n        }\n\n        this.mode = mode;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setName",
+    "doc": "/**\n     * Set the name.\n     *\n     * @param name\n     *            The name to set.\n     */",
+    "code": "public void setName(final String name) {\n        this.name = name;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setRemoteDeviceMaj",
+    "doc": "/**\n     * Set the remote major device id.\n     *\n     * @param rmaj\n     *            The remote major device id to set.\n     * @throws UnsupportedOperationException\n     *             if this method is called for a CPIOArchiveEntry with an old\n     *             format.\n     */",
+    "code": "public void setRemoteDeviceMaj(final long rmaj) {\n        checkNewFormat();\n        this.rmaj = rmaj;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setRemoteDeviceMin",
+    "doc": "/**\n     * Set the remote minor device id.\n     *\n     * @param rmin\n     *            The remote minor device id to set.\n     * @throws UnsupportedOperationException\n     *             if this method is called for a CPIOArchiveEntry with an old\n     *             format.\n     */",
+    "code": "public void setRemoteDeviceMin(final long rmin) {\n        checkNewFormat();\n        this.rmin = rmin;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveEntry.setSize",
+    "doc": "/**\n     * Set the filesize.\n     *\n     * @param size\n     *            The filesize to set.\n     */",
+    "code": "public void setSize(final long size) {\n        if (size < 0 || size > 0xFFFFFFFFL) {\n            throw new IllegalArgumentException(\"invalid entry size <\" + size\n                                               + \">\");\n        }\n        this.filesize = size;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.readAsciiLong",
+    "doc": "/**\n     * Reads from the current CPIO entry into an array of bytes. Blocks until\n     * some input is available.\n     *\n     * @param b\n     *            the buffer into which the data is read\n     * @param off\n     *            the start offset of the data\n     * @param len\n     *            the maximum number of bytes read\n     * @return the actual number of bytes read, or -1 if the end of the entry is\n     *         reached\n     * @throws IOException\n     *             if an I/O error has occurred or if a CPIO file error has\n     *             occurred\n     */",
+    "code": "private long readAsciiLong(final int length, final int radix)\n            throws IOException {\n        byte tmpBuffer[] = new byte[length];\n        readFully(tmpBuffer, 0, tmpBuffer.length);\n        return Long.parseLong(ArchiveUtils.toAsciiString(tmpBuffer), radix);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.readCString",
+    "doc": "/**\n     * Reads from the current CPIO entry into an array of bytes. Blocks until\n     * some input is available.\n     *\n     * @param b\n     *            the buffer into which the data is read\n     * @param off\n     *            the start offset of the data\n     * @param len\n     *            the maximum number of bytes read\n     * @return the actual number of bytes read, or -1 if the end of the entry is\n     *         reached\n     * @throws IOException\n     *             if an I/O error has occurred or if a CPIO file error has\n     *             occurred\n     */",
+    "code": "private String readCString(final int length) throws IOException {\n        byte tmpBuffer[] = new byte[length];\n        readFully(tmpBuffer, 0, tmpBuffer.length);\n        return new String(tmpBuffer, 0, tmpBuffer.length - 1); // TODO default charset?\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.skip",
+    "doc": "/**\n     * Reads the next CPIO file entry and positions stream at the beginning of\n     * the entry data.\n     *\n     * @return the CPIOArchiveEntry just read\n     * @throws IOException\n     *             if an I/O error has occurred or if a CPIO file error has\n     *             occurred\n     */",
+    "code": "private void skip(int bytes) throws IOException{\n        if (bytes > 0) {\n            readFully(FOUR_BYTES_BUF, 0, bytes);\n        }\n    }"
+  }
+]

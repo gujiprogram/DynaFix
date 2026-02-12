@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getType",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.isTypeInferred",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkEnumAlias",
+    "doc": "/**\n   * <p>Checks enum aliases.\n   *\n   * <p>We verify that the enum element type of the enum used\n   * for initialization is a subtype of the enum element type of\n   * the enum the value is being copied in.</p>\n   *\n   * <p>Example:</p>\n   * <pre>var myEnum = myOtherEnum;</pre>\n   *\n   * <p>Enum aliases are irregular, so we need special code for this :(</p>\n   *\n   * @param value the value used for initialization of the enum\n   */",
+    "code": "private void checkEnumAlias(\n      NodeTraversal t, JSDocInfo declInfo, Node value) {\n    if (declInfo == null || !declInfo.hasEnumParameterType()) {\n      return;\n    }\n\n    JSType valueType = getJSType(value);\n    if (!valueType.isEnumType()) {\n      return;\n    }\n\n    EnumType valueEnumType = valueType.toMaybeEnumType();\n    JSType valueEnumPrimitiveType =\n        valueEnumType.getElementsType().getPrimitiveType();\n    validator.expectCanAssignTo(t, value, valueEnumPrimitiveType,\n        declInfo.getEnumParameterType().evaluate(t.getScope(), typeRegistry),\n        \"incompatible enum element types\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectCanAssignTo",
+    "doc": "/**\n   * Expect that the first type can be assigned to a symbol of the second\n   * type.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param rightType The type on the RHS of the assign.\n   * @param leftType The type of the symbol on the LHS of the assign.\n   * @param msg An extra message for the mismatch warning, if necessary.\n   * @return True if the types matched, false otherwise.\n   */",
+    "code": "boolean expectCanAssignTo(NodeTraversal t, Node n, JSType rightType,\n      JSType leftType, String msg) {\n    if (!rightType.isSubtype(leftType)) {\n      mismatch(t, n, msg, rightType, leftType);\n      return false;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this node's children.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node child : n.children()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> children() {\n    if (first == null) {\n      return Collections.emptySet();\n    } else {\n      return new SiblingNodeIterable(first);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasOneChild",
+    "doc": "/**\n   * Check for one child more efficiently than by iterating over all the\n   * children as is done with Node.getChildCount().\n   *\n   * @return Whether the node has exactly one child.\n   */",
+    "code": "public boolean hasOneChild() {\n    return first != null && first == last;\n  }"
+  }
+]

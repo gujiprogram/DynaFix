@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1058 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1145->[Local Variables] "{template\u003dCLASS, map\u003d{}, resolved\u003dstring}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1146 -> java.util.Map.get
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1147 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1148->[Control Flow] Branch Info: Line: 1148, Condition: if (previous == null), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1149 -> java.util.Map.put
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1154->[Local Variables] "{map\u003d{CLASS\u003dstring}}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1145->[Local Variables] "{resolved\u003dnumber}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1146 -> java.util.Map.get
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1146->[Local Variables] "{previous\u003dstring}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1147 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1148->[Control Flow] Branch Info: Line: 1148, Condition: if (previous == null), Executed: false
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1151->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1151 -> com.google.javascript.rhino.jstype.JSType.getLeastSupertype
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1151->[Local Variables] "{join\u003d(number|string)}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1152->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1152 -> java.util.Map.put
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1154->[Local Variables] "{map\u003d{CLASS\u003d(number|string)}}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTemplatized11 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1145->[Local Variables] "{template\u003dT, map\u003d{}, resolved\u003dnumber}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1146 -> java.util.Map.get
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1147 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1148->[Control Flow] Branch Info: Line: 1148, Condition: if (previous == null), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1149 -> java.util.Map.put
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1154->[Local Variables] "{map\u003d{T\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1145->[Local Variables] "{template\u003dK}"
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1146 -> java.util.Map.get
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1147 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1148->[Control Flow] Branch Info: Line: 1148, Condition: if (previous == null), Executed: true
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.resolvedTemplateType:1149 -> java.util.Map.put
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1147->[Control Flow] Branch Info: Line: 1147, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:resolvedTemplateType:1154->[Local Variables] "{map\u003d{K\u003dnumber, T\u003dnumber}}"

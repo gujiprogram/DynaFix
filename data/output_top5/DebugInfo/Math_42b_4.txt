@@ -1,0 +1,50 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath713NegativeVariable ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:223->[Control Flow] Branch Info: Line: 223, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:225->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:225 -> org.apache.commons.math.optimization.linear.LinearConstraint.getRelationship
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:225->[Control Flow] Branch Info: Line: 225, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:230->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:230 -> org.apache.commons.math.optimization.linear.LinearConstraint.getRelationship
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:230->[Control Flow] Branch Info: Line: 230, Condition: if (unknown_condition_165), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:232->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:232 -> org.apache.commons.math.optimization.linear.SimplexTableau.getArtificialVariableOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:232->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:232 -> org.apache.commons.math.linear.Array2DRowRealMatrix.setEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:232->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,1.0,0.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,1.0,0.0,0.0,1.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:233->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:233 -> org.apache.commons.math.optimization.linear.SimplexTableau.getArtificialVariableOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:233->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:233 -> org.apache.commons.math.linear.Array2DRowRealMatrix.setEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:233->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,1.0,0.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,1.0,0.0,1.0,1.0]]},"artificialVar":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:234->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:234 -> org.apache.commons.math.linear.Array2DRowRealMatrix.getRowVector
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:234->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:234 -> org.apache.commons.math.linear.Array2DRowRealMatrix.getRowVector
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:234->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:234 -> org.apache.commons.math.linear.RealVector.subtract
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:234->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:234 -> org.apache.commons.math.linear.Array2DRowRealMatrix.setRowVector
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:231->[Control Flow] Branch Info: Line: 231, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:205->[Local Variables] {"matrix":{"data":[[-1.0,0.0,-1.0,0.0,0.0,-1.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,1.0,0.0,1.0,1.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Control Flow] Loop Info: Line: 206, Description: while at line 206
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:206 -> java.util.List.size
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Control Flow] Branch Info: Line: 206, Condition: if (this.constraints < this.constraints), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:194->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:194 -> org.apache.commons.math.optimization.linear.SimplexTableau.copyArray
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:194->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,0.0,0.0],[0.0,-1.0,1.0,1.0,0.0,0.0],[0.0,0.0,0.0,0.0,0.0,0.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:196->[Control Flow] Branch Info: Line: 196, Condition: if (maximize != 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:196->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:196 -> org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getConstantTerm
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:195->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:195 -> org.apache.commons.math.linear.Array2DRowRealMatrix.setEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:197->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,0.0,0.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,0.0,0.0,0.0,0.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:198->[Control Flow] Branch Info: Line: 198, Condition: if (this.restrictToNonNegative == false), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:204->[Local Variables] {"slackVar":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:205->[Local Variables] {"artificialVar":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:206 -> java.util.List.size
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Control Flow] Branch Info: Line: 206, Condition: if (this.constraints < this.constraints), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:206->[Local Variables] {"i":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:207->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:207 -> java.util.List.get
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:207->[Local Variables] {"constraint":{"relationship":"EQ","value":1.0}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:208->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:208 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:210->[Local Variables] {"row":2}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:211->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:211 -> org.apache.commons.math.optimization.linear.LinearConstraint.getCoefficients
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:211->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:211 -> org.apache.commons.math.linear.RealVector.toArray
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:211->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:211 -> org.apache.commons.math.linear.Array2DRowRealMatrix.getDataRef
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:211->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:211 -> org.apache.commons.math.optimization.linear.SimplexTableau.copyArray
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:213->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,0.0,0.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,1.0,0.0,0.0,0.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:214->[Control Flow] Branch Info: Line: 214, Condition: if (this.restrictToNonNegative == false), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:220->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:220 -> org.apache.commons.math.optimization.linear.LinearConstraint.getValue
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:220->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:220 -> org.apache.commons.math.linear.Array2DRowRealMatrix.setEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:222->[Local Variables] {"matrix":{"data":[[-1.0,0.0,0.0,0.0,0.0,0.0],[0.0,-1.0,1.0,1.0,0.0,-0.0],[0.0,0.0,1.0,0.0,0.0,1.0]]}}
+org.apache.commons.math.optimization.linear.SimplexTableau:createTableau:223->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.createTableau:223 -> org.apache.commons.math.optimization.linear.LinearConstraint.getRelationship

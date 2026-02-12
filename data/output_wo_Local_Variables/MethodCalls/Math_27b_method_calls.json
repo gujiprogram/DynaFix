@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math3.fraction.Fraction.doubleValue",
+    "doc": "/**\n     * Gets the fraction as a <tt>double</tt>. This calculates the fraction as\n     * the numerator divided by denominator.\n     * @return the fraction as a <tt>double</tt>\n     */",
+    "code": "public double doubleValue() {\n        return (double)numerator / (double)denominator;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.fraction.Fraction.multiply",
+    "doc": "/**\n     * <p>Multiplies the value of this fraction by another, returning the\n     * result in reduced form.</p>\n     *\n     * @param fraction  the fraction to multiply by, must not be {@code null}\n     * @return a {@code Fraction} instance with the resulting values\n     * @throws NullArgumentException if the fraction is {@code null}\n     * @throws MathArithmeticException if the resulting numerator or denominator exceeds\n     *  {@code Integer.MAX_VALUE}\n     */",
+    "code": "public Fraction multiply(Fraction fraction) {\n        if (fraction == null) {\n            throw new NullArgumentException(LocalizedFormats.FRACTION);\n        }\n        if (numerator == 0 || fraction.numerator == 0) {\n            return ZERO;\n        }\n        int d1 = ArithmeticUtils.gcd(numerator, fraction.denominator);\n        int d2 = ArithmeticUtils.gcd(fraction.numerator, denominator);\n        return getReducedFraction\n        (ArithmeticUtils.mulAndCheck(numerator/d1, fraction.numerator/d2),\n                ArithmeticUtils.mulAndCheck(denominator/d2, fraction.denominator/d1));\n    }"
+  }
+]

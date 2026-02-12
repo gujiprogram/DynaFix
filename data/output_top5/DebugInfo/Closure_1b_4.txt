@@ -1,0 +1,310 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:723->[Local Variables] {"changes":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":0}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var a{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:737->[Local Variables] {"hasPropertyAssign":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:748->[Local Variables] {"assignedToUnknownValue":true}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:749->[Local Variables] {"maybeEscaped":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:723->[Local Variables] {"changes":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":0}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var x$$1{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:737->[Local Variables] {"hasPropertyAssign":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:748->[Local Variables] {"assignedToUnknownValue":true}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:749->[Local Variables] {"maybeEscaped":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:723->[Local Variables] {"changes":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":0}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var a{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:737->[Local Variables] {"hasPropertyAssign":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:748->[Local Variables] {"assignedToUnknownValue":true}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:749->[Local Variables] {"maybeEscaped":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue787 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:723->[Local Variables] {"changes":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":0}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var content{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:737->[Local Variables] {"hasPropertyAssign":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:748->[Local Variables] {"assignedToUnknownValue":true}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:749->[Local Variables] {"maybeEscaped":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":1}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var z{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.NodeUtil.isForIn
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:740->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:740 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:741->[Control Flow] Branch Info: Line: 741, Condition: if (maybeEscaped != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:742->[Control Flow] Branch Info: Line: 742, Condition: if (maybeEscaped == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":1}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var z{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.NodeUtil.isForIn
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:740->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:740 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:741->[Control Flow] Branch Info: Line: 741, Condition: if (maybeEscaped != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:742->[Control Flow] Branch Info: Line: 742, Condition: if (maybeEscaped == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal3 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":1}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var z{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:739 -> com.google.javascript.jscomp.NodeUtil.isForIn
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:740->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:740 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:741->[Control Flow] Branch Info: Line: 741, Condition: if (maybeEscaped != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:742->[Control Flow] Branch Info: Line: 742, Condition: if (maybeEscaped == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testIssue168b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:723->[Local Variables] {"changes":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Local Variables] {"current":0}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:730 -> java.util.List.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:730->[Local Variables] "{var\u003dScope.Var x{null}}"
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:731 -> java.util.Set.contains
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:731->[Control Flow] Branch Info: Line: 731, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:735->[Local Variables] {"assignedToUnknownValue":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:737->[Local Variables] {"hasPropertyAssign":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.jscomp.Scope$Var.getParentNode
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:738 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:738->[Control Flow] Branch Info: Line: 738, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:739->[Control Flow] Branch Info: Line: 739, Condition: if (com.google.javascript.rhino.Node.getParent() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:748->[Local Variables] {"assignedToUnknownValue":true}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:749->[Local Variables] {"maybeEscaped":false}
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:750 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:750->[Control Flow] Branch Info: Line: 750, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (assignedToUnknownValue == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (maybeEscaped != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:762->[Control Flow] Branch Info: Line: 762, Condition: if (hasPropertyAssign != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Loop Info: Line: 729, Description: while at line 729
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.interpretAssigns:729 -> java.util.List.size
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:729->[Control Flow] Branch Info: Line: 729, Condition: if (this.maybeUnreferenced < this.maybeUnreferenced), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:interpretAssigns:769->[Control Flow] Branch Info: Line: 769, Condition: if (changes == 0), Executed: true

@@ -1,0 +1,96 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine1 ===
+Exception: junit.framework.ComparisonFailure: expected:<...ion here
+
+com.google.javascript.jscomp.LightweightMessageFormatter:format:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarSource != null), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:99->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:99 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:99->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR - error description here\nassert (1;"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:100->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:100 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:100->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR - error description here\nassert (1;\n"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:101->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:101 -> com.google.javascript.jscomp.JSError.getCharno
+com.google.javascript.jscomp.LightweightMessageFormatter:format:105->[Local Variables] {"TransVarCharNum":10}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:106 -> com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals() != 0), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarCharNum <= TransVarCharNum), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:106 -> java.lang.String.length
+com.google.javascript.jscomp.LightweightMessageFormatter:format:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarSource != null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals() != 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarCharNum <= TransVarCharNum), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:120->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:120 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.LightweightMessageFormatter:format:70->[Local Variables] {"TransVarWarningObject":false,"TransVarErrorObject":{"type":{"key":"TEST_FOO","format":{"locale":"en","pattern":"error description here","formats":[null,null,null,null,null,null,null,null,null,null],"offsets":[0,0,0,0,0,0,0,0,0,0],"argumentNumbers":[0,0,0,0,0,0,0,0,0,0],"maxOffset":-1},"defaultLevel":"ERROR","level":"ERROR"},"description":"error description here","sourceName":"javascript/complex.js","lineNumber":1,"level":"ERROR","charno":10}}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:71->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:71 -> com.google.javascript.jscomp.LightweightMessageFormatter.getSource
+com.google.javascript.jscomp.LightweightMessageFormatter:format:72->[Control Flow] Branch Info: Line: 72, Condition: if (TransVarSourceProvider == null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:73->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:73 -> com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.get
+com.google.javascript.jscomp.LightweightMessageFormatter:format:76->[Local Variables] {"TransVarSource":"assert (1;"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:77->[Local Variables] {"TransVarBuffer":""}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:78->[Control Flow] Branch Info: Line: 78, Condition: if (this.sourceName != null), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:82->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:82 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:82->[Local Variables] {"TransVarBuffer":"javascript/complex.js"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:83->[Control Flow] Branch Info: Line: 83, Condition: if (this.lineNumber > 0), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:87->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:87 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:87->[Local Variables] {"TransVarBuffer":"javascript/complex.js:"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:88->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:88 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:83->[Control Flow] Branch Info: Line: 83, Condition: if (this.lineNumber > 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:89->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:90->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:90 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:78->[Control Flow] Branch Info: Line: 78, Condition: if (this.sourceName != null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:92->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: "}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarWarningObject != 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:93 -> com.google.javascript.jscomp.LightweightMessageFormatter.getLevelName
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:93 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:94->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:94 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:95->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR - "}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:96->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:96 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:96->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR - error description here"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:97->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:97 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:97->[Local Variables] {"TransVarBuffer":"javascript/complex.js:1: ERROR - error description here\n"}
+
+=== Debug Info for Test: com.google.javascript.jscomp.LightweightMessageFormatterTest::testFormatErrorSpaceEndOfLine2 ===
+Exception: junit.framework.ComparisonFailure: expected:<...iption here
+
+com.google.javascript.jscomp.LightweightMessageFormatter:format:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarSource != null), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:99->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:99 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:99->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR - error description here\nif (foo"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:100->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:100 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:100->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR - error description here\nif (foo\n"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:101->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:101 -> com.google.javascript.jscomp.JSError.getCharno
+com.google.javascript.jscomp.LightweightMessageFormatter:format:105->[Local Variables] {"TransVarCharNum":7}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:106 -> com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals() != 0), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarCharNum <= TransVarCharNum), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:106 -> java.lang.String.length
+com.google.javascript.jscomp.LightweightMessageFormatter:format:98->[Control Flow] Branch Info: Line: 98, Condition: if (TransVarSource != null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.equals() != 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (TransVarCharNum <= TransVarCharNum), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:106->[Control Flow] Branch Info: Line: 106, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:120->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:120 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.LightweightMessageFormatter:format:70->[Local Variables] {"TransVarWarningObject":false,"TransVarErrorObject":{"type":{"key":"TEST_FOO","format":{"locale":"en","pattern":"error description here","formats":[null,null,null,null,null,null,null,null,null,null],"offsets":[0,0,0,0,0,0,0,0,0,0],"argumentNumbers":[0,0,0,0,0,0,0,0,0,0],"maxOffset":-1},"defaultLevel":"ERROR","level":"ERROR"},"description":"error description here","sourceName":"javascript/complex.js","lineNumber":6,"level":"ERROR","charno":7}}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:71->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:71 -> com.google.javascript.jscomp.LightweightMessageFormatter.getSource
+com.google.javascript.jscomp.LightweightMessageFormatter:format:72->[Control Flow] Branch Info: Line: 72, Condition: if (TransVarSourceProvider == null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:73->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:73 -> com.google.javascript.jscomp.SourceExcerptProvider$SourceExcerpt.get
+com.google.javascript.jscomp.LightweightMessageFormatter:format:76->[Local Variables] {"TransVarSource":"if (foo"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:77->[Local Variables] {"TransVarBuffer":""}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:78->[Control Flow] Branch Info: Line: 78, Condition: if (this.sourceName != null), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:82->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:82 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:82->[Local Variables] {"TransVarBuffer":"javascript/complex.js"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:83->[Control Flow] Branch Info: Line: 83, Condition: if (this.lineNumber > 0), Executed: true
+com.google.javascript.jscomp.LightweightMessageFormatter:format:87->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:87 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:87->[Local Variables] {"TransVarBuffer":"javascript/complex.js:"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:88->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:88 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:83->[Control Flow] Branch Info: Line: 83, Condition: if (this.lineNumber > 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:89->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:90->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:90 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:78->[Control Flow] Branch Info: Line: 78, Condition: if (this.sourceName != null), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:92->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: "}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarWarningObject != 0), Executed: false
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:93 -> com.google.javascript.jscomp.LightweightMessageFormatter.getLevelName
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:93 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:93->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:94->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:94 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:95->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR - "}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:96->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:96 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:96->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR - error description here"}
+com.google.javascript.jscomp.LightweightMessageFormatter:format:97->[Method Call] Call Stack: com.google.javascript.jscomp.LightweightMessageFormatter.format:97 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.LightweightMessageFormatter:format:97->[Local Variables] {"TransVarBuffer":"javascript/complex.js:6: ERROR - error description here\n"}

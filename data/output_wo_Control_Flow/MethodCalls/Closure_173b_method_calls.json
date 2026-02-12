@@ -1,0 +1,92 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.addNumber",
+    "doc": "/**\n   * This is to be called when we're in a statement. If the prev statement\n   * needs to be ended, add a ';'.\n   */",
+    "code": "void addNumber(double x) {\n    char prev = getLastChar();\n    boolean negativeZero = isNegativeZero(x);\n    if ((x < 0 || negativeZero) && prev == '-') {\n      add(\" \");\n    }\n\n    if (negativeZero) {\n      addConstant(\"-0\");\n    } else if ((long) x == x) {\n      long value = (long) x;\n      long mantissa = value;\n      int exp = 0;\n      if (Math.abs(x) >= 100) {\n        while (mantissa / 10 * Math.pow(10, exp + 1) == value) {\n          mantissa /= 10;\n          exp++;\n        }\n      }\n      if (exp > 2) {\n        addConstant(Long.toString(mantissa) + \"E\" + Integer.toString(exp));\n      } else {\n        long valueAbs = Math.abs(value);\n        if (Long.toHexString(valueAbs).length() + 2 <\n            Long.toString(valueAbs).length()) {\n          addConstant((value < 0 ? \"-\" : \"\") + \"0x\" +\n              Long.toHexString(valueAbs));\n        } else {\n          addConstant(Long.toString(value));\n        }\n      }\n    } else {\n      addConstant(String.valueOf(x).replace(\".0E\", \"E\"));\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.continueProcessing",
+    "doc": "/**\n   * Provides a means of interrupting the CodeGenerator. Derived classes should\n   * return false to stop further processing.\n   */",
+    "code": "boolean continueProcessing() {\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.endSourceMapping",
+    "doc": "/**\n   * Finishes the source mapping for the given\n   * node at the current position.\n   */",
+    "code": "void endSourceMapping(Node node) {\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.endStatement",
+    "doc": "/**\n   * Indicates the end of a statement and a ';' may need to be added.\n   * But we don't add it now, in case we're at the end of a block (in which\n   * case we don't have to add the ';').\n   * See maybeEndStatement()\n   */",
+    "code": "void endStatement() {\n    endStatement(false);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.notePreferredLineBreak",
+    "doc": "/**\n   * Appends a string to the code, keeping track of the current line length.\n   *\n   * NOTE: the string must be a complete token--partial strings or\n   * partial regexes will run the risk of being split across lines.\n   *\n   * Do not directly append newlines with this method. Instead use\n   * {@link #startNewLine}.\n   */",
+    "code": "void notePreferredLineBreak() {\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.startSourceMapping",
+    "doc": "/**\n   * Starts the source mapping for the given\n   * node at the current position.\n   */",
+    "code": "void startSourceMapping(Node node) {\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.addIdentifier",
+    "doc": "/**\n   * Insert a ECMASCRIPT 5 strict annotation.\n   */",
+    "code": "private void addIdentifier(String identifier) {\n    cc.addIdentifier(identifierEscape(identifier));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.opToStr",
+    "doc": "/**\n   * Converts an operator's token value (see {@link Token}) to a string\n   * representation.\n   *\n   * @param operator the operator's token value to convert\n   * @return the string representation or {@code null} if the token value is\n   * not an operator\n   */",
+    "code": "static String opToStr(int operator) {\n    switch (operator) {\n      case Token.BITOR: return \"|\";\n      case Token.OR: return \"||\";\n      case Token.BITXOR: return \"^\";\n      case Token.AND: return \"&&\";\n      case Token.BITAND: return \"&\";\n      case Token.SHEQ: return \"===\";\n      case Token.EQ: return \"==\";\n      case Token.NOT: return \"!\";\n      case Token.NE: return \"!=\";\n      case Token.SHNE: return \"!==\";\n      case Token.LSH: return \"<<\";\n      case Token.IN: return \"in\";\n      case Token.LE: return \"<=\";\n      case Token.LT: return \"<\";\n      case Token.URSH: return \">>>\";\n      case Token.RSH: return \">>\";\n      case Token.GE: return \">=\";\n      case Token.GT: return \">\";\n      case Token.MUL: return \"*\";\n      case Token.DIV: return \"/\";\n      case Token.MOD: return \"%\";\n      case Token.BITNOT: return \"~\";\n      case Token.ADD: return \"+\";\n      case Token.SUB: return \"-\";\n      case Token.POS: return \"+\";\n      case Token.NEG: return \"-\";\n      case Token.ASSIGN: return \"=\";\n      case Token.ASSIGN_BITOR: return \"|=\";\n      case Token.ASSIGN_BITXOR: return \"^=\";\n      case Token.ASSIGN_BITAND: return \"&=\";\n      case Token.ASSIGN_LSH: return \"<<=\";\n      case Token.ASSIGN_RSH: return \">>=\";\n      case Token.ASSIGN_URSH: return \">>>=\";\n      case Token.ASSIGN_ADD: return \"+=\";\n      case Token.ASSIGN_SUB: return \"-=\";\n      case Token.ASSIGN_MUL: return \"*=\";\n      case Token.ASSIGN_DIV: return \"/=\";\n      case Token.ASSIGN_MOD: return \"%=\";\n      case Token.VOID: return \"void\";\n      case Token.TYPEOF: return \"typeof\";\n      case Token.INSTANCEOF: return \"instanceof\";\n      default: return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public int getChildCount() {\n    int c = 0;\n    for (Node n = first; n != null; n = n.next) {\n      c++;\n    }\n    return c;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getDouble",
+    "doc": "/**\n * This class implements the root of the intermediate representation.\n *\n */",
+    "code": "public double getDouble() {\n      return this.number;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVar",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.MultivariateNormalDistributionTest::testUnivariateDistribution ===
+Exception: junit.framework.AssertionFailedError: expected:<0.04998342118616823> but was:<0.12528985680803945>
+
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:228->[Local Variables] {"values":[0.5381979156154202]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:229->[Local Variables] {"centered":[0.0]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:230->[Control Flow] Branch Info: Line: 230, Condition: if (centered < centered), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:230->[Local Variables] {"i":0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:231->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.getExponentTerm:231 -> org.apache.commons.math3.distribution.MultivariateNormalDistribution.getMeans
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:229->[Local Variables] {"centered":[2.03819791561542]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:230->[Control Flow] Loop Info: Line: 230, Description: while at line 230
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:230->[Control Flow] Branch Info: Line: 230, Condition: if (centered < centered), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:233->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.getExponentTerm:233 -> org.apache.commons.math3.linear.RealMatrix.preMultiply
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:233->[Local Variables] {"preMultiplied":[2.03819791561542]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:234->[Local Variables] {"sum":0.0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:235->[Control Flow] Branch Info: Line: 235, Condition: if (preMultiplied < preMultiplied), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:234->[Local Variables] {"sum":4.154250743219044}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:235->[Control Flow] Loop Info: Line: 235, Description: while at line 235
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:235->[Control Flow] Branch Info: Line: 235, Condition: if (preMultiplied < preMultiplied), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:getExponentTerm:238->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.getExponentTerm:238 -> org.apache.commons.math3.util.FastMath.exp

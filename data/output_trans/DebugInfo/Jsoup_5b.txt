@@ -1,0 +1,50 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::parsesQuiteRoughAttributes ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 14
+
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:207->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:207 -> java.lang.StringBuilder.toString
+org.jsoup.parser.Parser:parseAttribute:208->[Local Variables] {"TransVarAttributeValue":"a"}
+org.jsoup.parser.Parser:parseAttribute:209->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:209 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:189->[Control Flow] Branch Info: Line: 189, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:211->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:211 -> java.lang.String.length
+org.jsoup.parser.Parser:parseAttribute:211->[Control Flow] Branch Info: Line: 211, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:214->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:214 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseAttribute:186->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:186 -> org.jsoup.parser.TokenQueue.consumeAttributeKey
+org.jsoup.parser.Parser:parseAttribute:186->[Local Variables] {"TransVarAttributeKey":"One"}
+org.jsoup.parser.Parser:parseAttribute:187->[Local Variables] {"TransVarAttributeValue":""}
+org.jsoup.parser.Parser:parseAttribute:188->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:188 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:189->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:189 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:189->[Control Flow] Branch Info: Line: 189, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:211->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:211 -> java.lang.String.length
+org.jsoup.parser.Parser:parseAttribute:211->[Control Flow] Branch Info: Line: 211, Condition: if (java.lang.String.length() != 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:212->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:212 -> org.jsoup.nodes.Attribute.createFromEncoded
+org.jsoup.parser.Parser:parseAttribute:185->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:185 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:186->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:186 -> org.jsoup.parser.TokenQueue.consumeAttributeKey
+org.jsoup.parser.Parser:parseAttribute:186->[Local Variables] {"TransVarAttributeKey":""}
+org.jsoup.parser.Parser:parseAttribute:188->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:188 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:189->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:189 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:189->[Control Flow] Branch Info: Line: 189, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:193->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:193 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:195->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:195 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:195->[Control Flow] Branch Info: Line: 195, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:200->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:200 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:200->[Control Flow] Branch Info: Line: 200, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:203->[Local Variables] {"TransVarValue":""}
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.matchesWhitespace
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:205->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:205 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseAttribute:205->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:205 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseAttribute:203->[Control Flow] Loop Info: Line: 203, Description: while at line 203
+org.jsoup.parser.Parser:parseAttribute:203->[Local Variables] {"TransVarValue":"a"}
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.parser.TokenQueue.matchesWhitespace
+org.jsoup.parser.Parser:parseAttribute:204->[Control Flow] Branch Info: Line: 204, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: true

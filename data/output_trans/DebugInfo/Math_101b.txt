@@ -1,0 +1,102 @@
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexFormatTest::testForgottenImaginaryCharacter ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 6
+
+org.apache.commons.math.complex.ComplexFormat:parse:374->[Local Variables] {"TransVarNewParsePos":{"index":4,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:375 -> org.apache.commons.math.complex.ComplexFormat.getRealFormat
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:375 -> org.apache.commons.math.complex.ComplexFormat.parseNumber
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Local Variables] {"TransVarIm2":1,"TransVarNewParsePos":{"index":5,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:376->[Control Flow] Branch Info: Line: 376, Condition: if (TransVarIm2 == null), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:385 -> org.apache.commons.math.complex.ComplexFormat.getImaginaryCharacter
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:385 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Local Variables] {"TransVarImaginary":1}
+org.apache.commons.math.complex.ComplexFormat:parse:386->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:386 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:386->[Local Variables] {"TransVarNewStartIndex":5}
+org.apache.commons.math.complex.ComplexFormat:parse:387->[Local Variables] {"TransVarNewEndIndex":6}
+org.apache.commons.math.complex.ComplexFormat:parse:389->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:389 -> java.lang.String.substring
+org.apache.commons.math.complex.ComplexFormat:parse:323->[Local Variables] {"TransVarNewParsePos":{"index":0,"errorIndex":-1},"TransVarNewSource":"1 + 1"}
+org.apache.commons.math.complex.ComplexFormat:parse:324->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:324 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:326->[Local Variables] {"TransVarNewSourceIndex":0}
+org.apache.commons.math.complex.ComplexFormat:parse:327->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:327 -> org.apache.commons.math.complex.ComplexFormat.parseAndIgnoreWhitespace
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:330 -> org.apache.commons.math.complex.ComplexFormat.getRealFormat
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:330 -> org.apache.commons.math.complex.ComplexFormat.parseNumber
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Local Variables] {"TransVarRe1":1,"TransVarNewParsePos":{"index":1,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:331->[Control Flow] Branch Info: Line: 331, Condition: if (TransVarRe1 == null), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:343->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:343 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:343->[Local Variables] {"TransVarNewStartIndex":1}
+org.apache.commons.math.complex.ComplexFormat:parse:344->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:344 -> org.apache.commons.math.complex.ComplexFormat.parseNextCharacter
+org.apache.commons.math.complex.ComplexFormat:parse:344->[Local Variables] {"TransVarNewParsePos":{"index":3,"errorIndex":-1},"TransVarCh":"+"}
+org.apache.commons.math.complex.ComplexFormat:parse:345->[Local Variables] {"TransVarSign1":0}
+org.apache.commons.math.complex.ComplexFormat:parse:346->[Local Variables] {"TransFallThroughFlag0":false}
+org.apache.commons.math.complex.ComplexFormat:parse:351->[Local Variables] {"TransBreakFlag0":true}
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransVarCh == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransVarCh == TransVarCh), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransVarCh == TransVarCh), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:361->[Local Variables] {"TransBreakFlag0":false}
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransVarCh == TransVarCh), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:363->[Local Variables] {"TransVarSign1":1}
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:372->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:372 -> org.apache.commons.math.complex.ComplexFormat.parseAndIgnoreWhitespace
+
+=== Debug Info for Test: org.apache.commons.math.complex.FrenchComplexFormatTest::testForgottenImaginaryCharacter ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 6
+
+org.apache.commons.math.complex.ComplexFormat:parse:374->[Local Variables] {"TransVarNewParsePos":{"index":4,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:375 -> org.apache.commons.math.complex.ComplexFormat.getRealFormat
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:375 -> org.apache.commons.math.complex.ComplexFormat.parseNumber
+org.apache.commons.math.complex.ComplexFormat:parse:375->[Local Variables] {"TransVarIm2":1,"TransVarNewParsePos":{"index":5,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:376->[Control Flow] Branch Info: Line: 376, Condition: if (TransVarIm2 == null), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:385 -> org.apache.commons.math.complex.ComplexFormat.getImaginaryCharacter
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:385 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parse:385->[Local Variables] {"TransVarImaginary":1}
+org.apache.commons.math.complex.ComplexFormat:parse:386->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:386 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:386->[Local Variables] {"TransVarNewStartIndex":5}
+org.apache.commons.math.complex.ComplexFormat:parse:387->[Local Variables] {"TransVarNewEndIndex":6}
+org.apache.commons.math.complex.ComplexFormat:parse:389->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:389 -> java.lang.String.substring
+org.apache.commons.math.complex.ComplexFormat:parse:323->[Local Variables] {"TransVarNewParsePos":{"index":0,"errorIndex":-1},"TransVarNewSource":"1 + 1"}
+org.apache.commons.math.complex.ComplexFormat:parse:324->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:324 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:326->[Local Variables] {"TransVarNewSourceIndex":0}
+org.apache.commons.math.complex.ComplexFormat:parse:327->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:327 -> org.apache.commons.math.complex.ComplexFormat.parseAndIgnoreWhitespace
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:330 -> org.apache.commons.math.complex.ComplexFormat.getRealFormat
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:330 -> org.apache.commons.math.complex.ComplexFormat.parseNumber
+org.apache.commons.math.complex.ComplexFormat:parse:330->[Local Variables] {"TransVarRe1":1,"TransVarNewParsePos":{"index":1,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parse:331->[Control Flow] Branch Info: Line: 331, Condition: if (TransVarRe1 == null), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:343->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:343 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parse:343->[Local Variables] {"TransVarNewStartIndex":1}
+org.apache.commons.math.complex.ComplexFormat:parse:344->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:344 -> org.apache.commons.math.complex.ComplexFormat.parseNextCharacter
+org.apache.commons.math.complex.ComplexFormat:parse:344->[Local Variables] {"TransVarNewParsePos":{"index":3,"errorIndex":-1},"TransVarCh":"+"}
+org.apache.commons.math.complex.ComplexFormat:parse:345->[Local Variables] {"TransVarSign1":0}
+org.apache.commons.math.complex.ComplexFormat:parse:346->[Local Variables] {"TransFallThroughFlag0":false}
+org.apache.commons.math.complex.ComplexFormat:parse:351->[Local Variables] {"TransBreakFlag0":true}
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:352->[Control Flow] Branch Info: Line: 352, Condition: if (TransVarCh == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:356->[Control Flow] Branch Info: Line: 356, Condition: if (TransVarCh == TransVarCh), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransVarCh == TransVarCh), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:361->[Local Variables] {"TransBreakFlag0":false}
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:360->[Control Flow] Branch Info: Line: 360, Condition: if (TransVarCh == TransVarCh), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:363->[Local Variables] {"TransVarSign1":1}
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:364->[Control Flow] Branch Info: Line: 364, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parse:372->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parse:372 -> org.apache.commons.math.complex.ComplexFormat.parseAndIgnoreWhitespace

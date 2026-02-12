@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::handlesKnownEmptyBlocks ===
+
+org.jsoup.parser.HtmlTreeBuilder:insert:160->[Local Variables] "{el\u003d\u003cdiv id\u003d\"1\"\u003e\u003c/div\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:161->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:161 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.parser.Token$EndTag.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.parser.Tokeniser.emit
+org.jsoup.parser.HtmlTreeBuilder:insert:158->[Local Variables] {"startTag":{"tagName":"script","pendingAttributeValue":"","selfClosing":true,"attributes":{"attributes":{"src":{"key":"src","value":"/foo"}}},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:159->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:159 -> org.jsoup.parser.Token$StartTag.isSelfClosing
+org.jsoup.parser.HtmlTreeBuilder:insert:160->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:160 -> org.jsoup.parser.HtmlTreeBuilder.insertEmpty
+org.jsoup.parser.HtmlTreeBuilder:insert:160->[Local Variables] "{el\u003d\u003cscript src\u003d\"/foo\"\u003e\u003c/script\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:161->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:161 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.parser.Token$EndTag.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:162->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:162 -> org.jsoup.parser.Tokeniser.emit
+org.jsoup.parser.HtmlTreeBuilder:insert:215->[Local Variables] {"characterToken":{"data":"\u003cdiv id\u003d2\u003e\u003cimg /\u003e\u003cimg\u003e\u003c/div\u003e\u003ca id\u003d3 /\u003e\u003ci /\u003e\u003cfoo /\u003e\u003cfoo\u003eOne\u003c/foo\u003e \u003chr /\u003e hr text \u003chr\u003e hr text two","type":"Character"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:216->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:216 -> org.jsoup.parser.HtmlTreeBuilder.currentElement
+org.jsoup.parser.HtmlTreeBuilder:insert:216->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:216 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.HtmlTreeBuilder:insert:216->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:216 -> org.jsoup.helper.StringUtil.in
+org.jsoup.parser.HtmlTreeBuilder:insert:219->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:219 -> org.jsoup.parser.Token$Character.getData
+org.jsoup.parser.HtmlTreeBuilder:insert:219->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:219 -> org.jsoup.nodes.TextNode.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:219->[Local Variables] {"node":{"text":"\u003cdiv id\u003d2\u003e\u003cimg /\u003e\u003cimg\u003e\u003c/div\u003e\u003ca id\u003d3 /\u003e\u003ci /\u003e\u003cfoo /\u003e\u003cfoo\u003eOne\u003c/foo\u003e \u003chr /\u003e hr text \u003chr\u003e hr text two","childNodes":[],"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:220->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:220 -> org.jsoup.parser.HtmlTreeBuilder.currentElement
+org.jsoup.parser.HtmlTreeBuilder:insert:220->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:220 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.parser.HtmlTreeBuilder:insert:220->[Local Variables] "{node\u003d\u0026lt;div id\u003d2\u0026gt;\u0026lt;img /\u0026gt;\u0026lt;img\u0026gt;\u0026lt;/div\u0026gt;\u0026lt;a id\u003d3 /\u0026gt;\u0026lt;i /\u0026gt;\u0026lt;foo /\u0026gt;\u0026lt;foo\u0026gt;One\u0026lt;/foo\u0026gt; \u0026lt;hr /\u0026gt; hr text \u0026lt;hr\u0026gt; hr text two}"
+org.jsoup.parser.HtmlTreeBuilder:insert:171->[Local Variables] {"startTagName":"html"}
+org.jsoup.parser.HtmlTreeBuilder:insert:172->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:172 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.HtmlTreeBuilder:insert:172->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:172 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:172->[Local Variables] {"el":{"tag":{"tagName":"html","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:178 -> org.jsoup.parser.HtmlTreeBuilder.insertNode
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Local Variables] "{el\u003d\u003chtml\u003e\u003c/html\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:179->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:179 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.HtmlTreeBuilder:insert:158->[Local Variables] {"startTag":{"tagName":"head","selfClosing":false,"attributes":{},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:159->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:159 -> org.jsoup.parser.Token$StartTag.isSelfClosing
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.parser.Token$StartTag.name
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Local Variables] {"el":{"tag":{"tagName":"head","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:178 -> org.jsoup.parser.HtmlTreeBuilder.insertNode
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Local Variables] "{el\u003d\u003chead\u003e\u003c/head\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:179->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:179 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.HtmlTreeBuilder:insert:158->[Local Variables] {"startTag":{"tagName":"body","selfClosing":false,"attributes":{},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:159->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:159 -> org.jsoup.parser.Token$StartTag.isSelfClosing
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.parser.Token$StartTag.name
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:166 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.HtmlTreeBuilder:insert:166->[Local Variables] {"el":{"tag":{"tagName":"body","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:178 -> org.jsoup.parser.HtmlTreeBuilder.insertNode
+org.jsoup.parser.HtmlTreeBuilder:insert:178->[Local Variables] "{el\u003d\u003cbody\u003e\u003c/body\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:179->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:179 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.HtmlTreeBuilder:insert:158->[Local Variables] {"startTag":{"tagName":"div","pendingAttributeValue":"","selfClosing":true,"attributes":{"attributes":{"id":{"key":"id","value":"1"}}},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:159->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:159 -> org.jsoup.parser.Token$StartTag.isSelfClosing
+org.jsoup.parser.HtmlTreeBuilder:insert:160->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.insert:160 -> org.jsoup.parser.HtmlTreeBuilder.insertEmpty

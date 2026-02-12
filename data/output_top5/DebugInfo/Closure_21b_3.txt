@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode ===
+Exception: junit.framework.AssertionFailedError: There should be one warning, repeated 1 time(s). expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:160->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:160 -> com.google.javascript.rhino.Node.putBooleanProp
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:160->[Local Variables] {"name":{"str":"JSCOMPILER_PRESERVE","type":38,"propListHead":{"intValue":1,"next":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"var a, b; a \u003d (5, 6)"},"propType":51},"propType":43},"sourcePosition":4111}}
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:161 -> com.google.javascript.rhino.IR.call
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:161 -> com.google.javascript.rhino.Node.srcref
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Local Variables] "{name\u003dNAME JSCOMPILER_PRESERVE 1 [is_constant_name: 1] [source_file: testcode], replacement\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:162->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:162 -> com.google.javascript.rhino.Node.putBooleanProp
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:162->[Local Variables] "{replacement\u003dCALL 1 [free_call: 1] [source_file: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:163 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:163 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Local Variables] {"n":{"number":5.0,"type":39,"propListHead":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"var a, b; a \u003d (5, 6)"},"propType":51},"sourcePosition":4111}}
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:164->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:164 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Control Flow] Loop Info: Line: 158, Description: while at line 158
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:158 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Control Flow] Branch Info: Line: 158, Condition: if (var1 != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:166->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:166 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Control Flow] Branch Info: Line: 156, Condition: if (this.problemNodes == false), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:156 -> java.util.List.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Control Flow] Branch Info: Line: 156, Condition: if (this.problemNodes == false), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:160->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:160 -> com.google.javascript.rhino.Node.putBooleanProp
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:160->[Local Variables] {"name":{"str":"JSCOMPILER_PRESERVE","type":38,"propListHead":{"intValue":1,"next":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"var a, b; a \u003d 5, b \u003d\u003d 6"},"propType":51},"propType":43},"sourcePosition":4113}}
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:161 -> com.google.javascript.rhino.IR.call
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:161 -> com.google.javascript.rhino.Node.srcref
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:161->[Local Variables] "{name\u003dNAME JSCOMPILER_PRESERVE 1 [is_constant_name: 1] [source_file: testcode], replacement\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:162->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:162 -> com.google.javascript.rhino.Node.putBooleanProp
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:162->[Local Variables] "{replacement\u003dCALL 1 [free_call: 1] [source_file: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:163 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:163 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:164->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:164 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Control Flow] Loop Info: Line: 158, Description: while at line 158
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:158 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Control Flow] Branch Info: Line: 158, Condition: if (var1 != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:166->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:166 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Control Flow] Branch Info: Line: 156, Condition: if (this.problemNodes == false), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:156 -> java.util.List.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:156->[Control Flow] Branch Info: Line: 156, Condition: if (this.problemNodes == false), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:157->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:157 -> com.google.javascript.jscomp.CheckSideEffects.addExtern
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:158 -> java.util.List.iterator
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:158 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Control Flow] Branch Info: Line: 158, Condition: if (var1 != 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:158 -> java.util.Iterator.next
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:158->[Local Variables] "{n\u003dNUMBER 5.0 1 [source_file: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:159->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:159 -> com.google.javascript.rhino.IR.name
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:159->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:159 -> com.google.javascript.rhino.Node.srcref
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:159->[Local Variables] {"name":{"str":"JSCOMPILER_PRESERVE","type":38,"propListHead":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"var a, b; a \u003d (5, 6)"},"propType":51},"sourcePosition":4111}}

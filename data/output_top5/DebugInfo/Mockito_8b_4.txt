@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type ===
+Exception: java.lang.StackOverflowError
+
+=== stdout ===
+Failing tests: 1
+  - org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:93->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariableIfNotPresent:93 -> java.util.Map.containsKey
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:93->[Control Flow] Branch Info: Line: 93, Condition: if (typeVariable == 0), Executed: true
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:94->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariableIfNotPresent:94 -> org.mockito.internal.util.reflection.GenericMetadataSupport.boundsOf
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:94->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariableIfNotPresent:94 -> java.util.Map.put
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:93->[Control Flow] Branch Info: Line: 93, Condition: if (typeVariable == 0), Executed: false
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariableIfNotPresent:96->[Local Variables] "{typeVariable\u003dT}"

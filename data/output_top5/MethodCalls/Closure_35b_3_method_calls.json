@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newArrayListWithCapacity",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowGraph$Branch.ordinal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowGraph.getOutEdges",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FlowScope.optimize",
+    "doc": "/**\n   * Optimize this scope and return a new FlowScope with faster lookup.\n   */",
+    "code": "FlowScope optimize();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.flowThrough",
+    "doc": "/**\n * Type inference within a script node or a function body, using the data-flow\n * analysis framework.\n *\n */",
+    "code": "FlowScope flowThrough(Node n, FlowScope input) {\n    if (input == bottomScope) {\n      return input;\n    }\n\n    FlowScope output = input.createChildFlowScope();\n    output = traverse(n, output);\n    return output;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getCfg",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphEdge.getValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

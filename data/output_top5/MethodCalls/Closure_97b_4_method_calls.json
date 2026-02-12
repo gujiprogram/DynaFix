@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator",
+    "doc": "/**\n * Peephole optimization to fold constants (e.g. x + 1 + 7 --> x + 8).\n *\n*\n*\n */",
+    "code": "return tryFoldBinaryOperator(subtree);\n    }\n  }\n\n  private Node tryFoldBinaryOperator(Node subtree) {\n    Node left = subtree.getFirstChild();\n\n    if (left == null) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

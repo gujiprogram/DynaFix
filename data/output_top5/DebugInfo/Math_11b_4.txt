@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.MultivariateNormalDistributionTest::testUnivariateDistribution ===
+Exception: junit.framework.AssertionFailedError: expected:<5.8482155001296825E-5> but was:<1.4659302328760338E-4>
+
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:140->[Control Flow] Branch Info: Line: 140, Condition: if (dim < dim), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:140->[Local Variables] {"v":0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:141->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:141 -> org.apache.commons.math3.linear.EigenDecomposition.getEigenvector
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:141->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:141 -> org.apache.commons.math3.linear.RealVector.toArray
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:141->[Local Variables] {"evec":[1.0]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:142->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:142 -> org.apache.commons.math3.linear.Array2DRowRealMatrix.setColumn
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:139->[Local Variables] {"covMatEigenvectors":{"data":[[1.0]]}}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:140->[Control Flow] Loop Info: Line: 140, Description: while at line 140
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:140->[Control Flow] Branch Info: Line: 140, Condition: if (dim < dim), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:145->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:145 -> org.apache.commons.math3.linear.Array2DRowRealMatrix.transpose
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:147->[Local Variables] {"tmpMatrix":{"data":[[1.0]]}}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:148->[Control Flow] Branch Info: Line: 148, Condition: if (dim < dim), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:148->[Local Variables] {"row":0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:149->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:149 -> org.apache.commons.math3.util.FastMath.sqrt
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:149->[Local Variables] {"factor":1.0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:150->[Control Flow] Branch Info: Line: 150, Condition: if (dim < dim), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:150->[Local Variables] {"col":0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:151->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:151 -> org.apache.commons.math3.linear.RealMatrix.multiplyEntry
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:150->[Control Flow] Loop Info: Line: 150, Description: while at line 150
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:150->[Control Flow] Branch Info: Line: 150, Condition: if (dim < dim), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:148->[Control Flow] Loop Info: Line: 148, Description: while at line 148
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:148->[Control Flow] Branch Info: Line: 148, Condition: if (dim < dim), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:155->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:155 -> org.apache.commons.math3.linear.Array2DRowRealMatrix.multiply
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:75->[Local Variables] {"means":[-1.5],"covariances":[[1.0]]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:76->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:76 -> org.apache.commons.math3.random.Well19937c.<init>
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:102->[Local Variables] "{rng\u003dorg.apache.commons.math3.random.Well19937c@3491e86e}"
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:103->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:103 -> org.apache.commons.math3.distribution.AbstractMultivariateRealDistribution.<init>
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:106->[Local Variables] {"dim":1}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:107->[Control Flow] Branch Info: Line: 107, Condition: if (dim != dim), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:111->[Control Flow] Branch Info: Line: 111, Condition: if (dim < dim), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:111->[Local Variables] {"i":0}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:112->[Control Flow] Branch Info: Line: 112, Condition: if (covMatDec != covMatDec), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:111->[Control Flow] Loop Info: Line: 111, Description: while at line 111
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:111->[Control Flow] Branch Info: Line: 111, Condition: if (dim < dim), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:117->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:117 -> org.apache.commons.math3.util.MathArrays.copyOf
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:119->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:119 -> org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:122->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:122 -> org.apache.commons.math3.linear.EigenDecomposition.<init>
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:124->[Local Variables] {"covMatDec":{"maxIter":30,"main":[1.0],"secondary":[],"transformer":{"householderVectors":[[1.0]],"main":[1.0],"secondary":[],"cachedQ":{"data":[[1.0]]},"cachedQt":{"data":[[1.0]]}},"realEigenvalues":[1.0],"imagEigenvalues":[0.0],"eigenvectors":[{"data":[1.0]}],"isSymmetric":true}}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:125->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:125 -> org.apache.commons.math3.linear.EigenDecomposition.getSolver
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:125->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:125 -> org.apache.commons.math3.linear.DecompositionSolver.getInverse
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:127->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:127 -> org.apache.commons.math3.linear.EigenDecomposition.getDeterminant
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:130->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:130 -> org.apache.commons.math3.linear.EigenDecomposition.getRealEigenvalues
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:131->[Local Variables] {"covMatEigenvalues":[1.0]}
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:132->[Control Flow] Branch Info: Line: 132, Condition: if (covMatEigenvalues < covMatEigenvalues), Executed: true
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:133->[Control Flow] Branch Info: Line: 133, Condition: if (covMatEigenvectors < 0), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:132->[Control Flow] Loop Info: Line: 132, Description: while at line 132
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:132->[Control Flow] Branch Info: Line: 132, Condition: if (covMatEigenvalues < covMatEigenvalues), Executed: false
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:139->[Method Call] Call Stack: org.apache.commons.math3.distribution.MultivariateNormalDistribution.<init>:139 -> org.apache.commons.math3.linear.Array2DRowRealMatrix.<init>
+org.apache.commons.math3.distribution.MultivariateNormalDistribution:<init>:139->[Local Variables] {"covMatEigenvectors":{"data":[[0.0]]}}

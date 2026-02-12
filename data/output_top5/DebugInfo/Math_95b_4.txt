@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.apache.commons.math.distribution.FDistributionTest::testSmallDegreesOfFreedom ===
+Exception: java.lang.IllegalArgumentException: Invalid endpoint parameters:  lowerBound=0.0 initial=-1.0 upperBound=1.7976931348623157E308
+
+org.apache.commons.math.distribution.FDistributionImpl:inverseCumulativeProbability:99->[Local Variables] {"p":0.4959706533253018}
+org.apache.commons.math.distribution.FDistributionImpl:inverseCumulativeProbability:100->[Control Flow] Branch Info: Line: 100, Condition: if (p == 0), Executed: false
+org.apache.commons.math.distribution.FDistributionImpl:inverseCumulativeProbability:103->[Control Flow] Branch Info: Line: 103, Condition: if (p == 0), Executed: false
+org.apache.commons.math.distribution.FDistributionImpl:inverseCumulativeProbability:106->[Method Call] Call Stack: org.apache.commons.math.distribution.FDistributionImpl.inverseCumulativeProbability:106 -> org.apache.commons.math.distribution.AbstractContinuousDistribution.inverseCumulativeProbability

@@ -1,0 +1,86 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.deser.TestDateDeserialization::testISO8601MissingSeconds ===
+Exception: com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not construct instance of java.util.Date from String value '1997-07-16T19:20+01:00': not a valid representation (error: Failed to parse Date value '1997-07-16T19:20+01:00': Can not parse date "1997-07-16T19:20+01:00": not compatible with any of standard forms ("yyyy-MM-dd'T'HH:mm:ss.SSSZ", "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", "EEE, dd MMM yyyy HH:mm:ss zzz", "yyyy-MM-dd"))
+
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:422->[Control Flow] Branch Info: Line: 422, Condition: if (this._formatISO8601 == null), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:423->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:423 -> com.fasterxml.jackson.databind.util.StdDateFormat._cloneFormat
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:382->[Control Flow] Branch Info: Line: 382, Condition: if (TransVarFormatter == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:394->[Control Flow] Branch Info: Line: 394, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:422->[Control Flow] Branch Info: Line: 422, Condition: if (this._formatISO8601 == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:436->[Control Flow] Branch Info: Line: 436, Condition: if (TransVarFormatter == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:441->[Local Variables] "{TransVarFormatter\u003djava.text.SimpleDateFormat@8a9df5fb}"
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:442->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:442 -> java.text.DateFormat.parse
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:371->[Local Variables] {"TransVarParsePosition":{"index":0,"errorIndex":-1},"TransVarDateString":"1997-07-16T19:20+01:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:372->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:372 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:372->[Local Variables] {"TransVarLenOfDateStr":22}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:373->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:373 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:376->[Local Variables] {"TransVarLastChar":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:377->[Control Flow] Branch Info: Line: 377, Condition: if (TransVarLenOfDateStr <= TransVarLenOfDateStr), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:377->[Control Flow] Branch Info: Line: 377, Condition: if (TransVarLastChar != 0), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:388->[Control Flow] Branch Info: Line: 388, Condition: if (TransVarLastChar == TransVarLastChar), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:401->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:401 -> com.fasterxml.jackson.databind.util.StdDateFormat.hasTimeZone
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:401->[Control Flow] Branch Info: Line: 401, Condition: if (TransVarDateString != 0), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:402->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:402 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:402->[Local Variables] {"TransVarLastChar":":"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:403->[Control Flow] Branch Info: Line: 403, Condition: if (TransVarLastChar == TransVarLastChar), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:405->[Local Variables] {"TransVarStringBuilder":"1997-07-16T19:20+01:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:406 -> java.lang.StringBuilder.delete
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Local Variables] {"TransVarStringBuilder":"1997-07-16T19:20+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:407 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Local Variables] {"TransVarDateString":"1997-07-16T19:20+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:408->[Control Flow] Branch Info: Line: 408, Condition: if (TransVarLastChar == TransVarLastChar), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:413->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:413 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:414->[Local Variables] {"TransVarLenOfDateStr":21}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:415->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:415 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:415->[Local Variables] {"TransVarLastChar":"9"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:416 -> java.lang.Character.isDigit
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarLastChar != 0), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:417->[Local Variables] {"TransVarSBuilder":"1997-07-16T19:20+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:418->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:418 -> java.lang.StringBuilder.insert
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:418->[Local Variables] {"TransVarSBuilder":"1997-07-16T19:20.000+0100"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:419->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:419 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarLastChar != 0), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:420->[Local Variables] {"TransVarDateString":"1997-07-16T19:20.000+0100"}
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.deser.TestDateDeserialization::testISO8601PartialMilliseconds ===
+Exception: com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not construct instance of java.util.Date from String value '2014-10-03T18:00:00.6-05:00': not a valid representation (error: Failed to parse Date value '2014-10-03T18:00:00.6-05:00': Can not parse date "2014-10-03T18:00:00.6-05:00": not compatible with any of standard forms ("yyyy-MM-dd'T'HH:mm:ss.SSSZ", "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", "EEE, dd MMM yyyy HH:mm:ss zzz", "yyyy-MM-dd"))
+
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:422->[Control Flow] Branch Info: Line: 422, Condition: if (this._formatISO8601 == null), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:423->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:423 -> com.fasterxml.jackson.databind.util.StdDateFormat._cloneFormat
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:382->[Control Flow] Branch Info: Line: 382, Condition: if (TransVarFormatter == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:394->[Control Flow] Branch Info: Line: 394, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:422->[Control Flow] Branch Info: Line: 422, Condition: if (this._formatISO8601 == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:436->[Control Flow] Branch Info: Line: 436, Condition: if (TransVarFormatter == null), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:441->[Local Variables] "{TransVarFormatter\u003djava.text.SimpleDateFormat@8a9df5fb}"
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:442->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:442 -> java.text.DateFormat.parse
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:371->[Local Variables] {"TransVarParsePosition":{"index":0,"errorIndex":-1},"TransVarDateString":"2014-10-03T18:00:00.6-05:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:372->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:372 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:372->[Local Variables] {"TransVarLenOfDateStr":27}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:373->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:373 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:376->[Local Variables] {"TransVarLastChar":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:377->[Control Flow] Branch Info: Line: 377, Condition: if (TransVarLenOfDateStr <= TransVarLenOfDateStr), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:377->[Control Flow] Branch Info: Line: 377, Condition: if (TransVarLastChar != 0), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:388->[Control Flow] Branch Info: Line: 388, Condition: if (TransVarLastChar == TransVarLastChar), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:401->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:401 -> com.fasterxml.jackson.databind.util.StdDateFormat.hasTimeZone
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:401->[Control Flow] Branch Info: Line: 401, Condition: if (TransVarDateString != 0), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:402->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:402 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:402->[Local Variables] {"TransVarLastChar":":"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:403->[Control Flow] Branch Info: Line: 403, Condition: if (TransVarLastChar == TransVarLastChar), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:405->[Local Variables] {"TransVarStringBuilder":"2014-10-03T18:00:00.6-05:00"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:406 -> java.lang.StringBuilder.delete
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:406->[Local Variables] {"TransVarStringBuilder":"2014-10-03T18:00:00.6-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:407 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:407->[Local Variables] {"TransVarDateString":"2014-10-03T18:00:00.6-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:408->[Control Flow] Branch Info: Line: 408, Condition: if (TransVarLastChar == TransVarLastChar), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:413->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:413 -> java.lang.String.length
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:414->[Local Variables] {"TransVarLenOfDateStr":26}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:415->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:415 -> java.lang.String.charAt
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:415->[Local Variables] {"TransVarLastChar":"0"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:416 -> java.lang.Character.isDigit
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarLastChar != 0), Executed: true
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:417->[Local Variables] {"TransVarSBuilder":"2014-10-03T18:00:00.6-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:418->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:418 -> java.lang.StringBuilder.insert
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:418->[Local Variables] {"TransVarSBuilder":"2014-10-03T18:00:00.6.000-0500"}
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:419->[Method Call] Call Stack: com.fasterxml.jackson.databind.util.StdDateFormat.parseAsISO8601:419 -> java.lang.StringBuilder.toString
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarLastChar != 0), Executed: false
+com.fasterxml.jackson.databind.util.StdDateFormat:parseAsISO8601:420->[Local Variables] {"TransVarDateString":"2014-10-03T18:00:00.6.000-0500"}

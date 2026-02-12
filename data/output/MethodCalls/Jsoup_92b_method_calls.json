@@ -1,0 +1,62 @@
+[
+  {
+    "method": "org.jsoup.nodes.Attributes.checkCapacity",
+    "doc": "/**\n * The attributes of an Element.\n * <p>\n * Attributes are treated as a map: there can be only one value associated with an attribute key/name.\n * </p>\n * <p>\n * Attribute name and value comparisons are  generally <b>case sensitive</b>. By default for HTML, attribute names are\n * normalized to lower-case on parsing. That means you should use lower-case strings when referring to attributes by\n * name.\n * </p>\n *\n * @author Jonathan Hedley, jonathan@hedley.net\n */",
+    "code": "private void checkCapacity(int minNewSize) {\n        Validate.isTrue(minNewSize >= size);\n        int curSize = keys.length;\n        if (curSize >= minNewSize)\n            return;\n\n        int newSize = curSize >= InitialCapacity ? size * GrowthFactor : InitialCapacity;\n        if (minNewSize > newSize)\n            newSize = minNewSize;\n\n        keys = copyOf(keys, newSize);\n        vals = copyOf(vals, newSize);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.appendChild",
+    "doc": "/**\n     * Add a node child node to this element.\n     *\n     * @param child node to add.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element appendChild(Node child) {\n        Validate.notNull(child);\n\n        reparentChild(child);\n        ensureChildNodes();\n        childNodes.add(child);\n        child.setSiblingIndex(childNodes.size() - 1);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.tagName",
+    "doc": "/**\n     * Get the name of the tag for this element. E.g. {@code div}. If you are using {@link ParseSettings#preserveCase\n     * case preserving parsing}, this will return the source's original case.\n     *\n     * @return the tag name\n     */",
+    "code": "public String tagName() {\n        return tag.getName();\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.currentElement",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.insertNode",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "private void insertNode(Node node) {\n        if (stack.isEmpty())\n            doc.appendChild(node);\n        else if (isFosterInserts())\n            insertInFosterParent(node);\n        else\n            currentElement().appendChild(node);\n\n        if (node instanceof Element && ((Element) node).tag().isFormListed()) {\n            if (formElement != null)\n                formElement.addElement((Element) node);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.ParseSettings.normalizeAttributes",
+    "doc": "/**\n     * Normalizes an attribute according to the case preservation setting.\n     */",
+    "code": "Attributes normalizeAttributes(Attributes attributes) {\n        if (!preserveAttributeCase) {\n            attributes.normalize();\n        }\n        return attributes;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.valueOf",
+    "doc": "/**\n     * Get a Tag by name. If not previously defined (unknown), returns a new generic tag, that can do anything.\n     * <p>\n     * Pre-defined tags (P, DIV etc) will be ==, but unknown tags are not registered and will only .equals().\n     * </p>\n     *\n     * @param tagName Name of tag, e.g. \"p\". Case insensitive.\n     * @param settings used to control tag name sensitivity\n     * @return The tag, either defined or new generic.\n     */",
+    "code": "public static Tag valueOf(String tagName, ParseSettings settings) {\n        Validate.notNull(tagName);\n        Tag tag = tags.get(tagName);\n\n        if (tag == null) {\n            tagName = settings.normalizeTag(tagName);\n            Validate.notEmpty(tagName);\n            tag = tags.get(tagName);\n\n            if (tag == null) {\n                tag = new Tag(tagName);\n                tag.isBlock = false;\n            }\n        }\n        return tag;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.isCData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.isSelfClosing",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.name",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.XmlTreeBuilder.insertNode",
+    "doc": "/**\n * Use the {@code XmlTreeBuilder} when you want to parse XML without any of the HTML DOM rules being applied to the\n * document.\n * <p>Usage example: {@code Document xmlDoc = Jsoup.parse(html, baseUrl, Parser.xmlParser());}</p>\n *\n * @author Jonathan Hedley\n */",
+    "code": "private void insertNode(Node node) {\n        currentElement().appendChild(node);\n    }"
+  }
+]

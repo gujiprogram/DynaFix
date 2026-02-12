@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NameAnalyzerTest::testAssignWithCall ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1516->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1516 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1516->[Local Variables] "{v\u003dScope.Var x{null}}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (rootName != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1518->[Control Flow] Branch Info: Line: 1518, Condition: if (v != null), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1518->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1518 -> com.google.javascript.jscomp.Scope$Var.isGlobal
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1518->[Control Flow] Branch Info: Line: 1518, Condition: if (com.google.javascript.jscomp.Scope$Var.isGlobal() == 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1518->[Control Flow] Branch Info: Line: 1518, Condition: if (isExtern == 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1519->[Local Variables] {"isGlobalRef":true}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1520->[Control Flow] Branch Info: Line: 1520, Condition: if (isGlobalRef == 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1524->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1524 -> com.google.javascript.jscomp.NameAnalyzer$NameInformation.<init>
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1526->[Local Variables] {"nameInfo":{"isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1527->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1527 -> java.lang.String.indexOf
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1528->[Control Flow] Branch Info: Line: 1528, Condition: if (idx != idx), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1535->[Local Variables] {"nameInfo":{"name":"x","isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1536->[Control Flow] Branch Info: Line: 1536, Condition: if (isExtern == 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1537->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1537 -> com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1537->[Control Flow] Branch Info: Line: 1537, Condition: if (name != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1519->[Local Variables] {"isGlobalRef":false}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1520->[Control Flow] Branch Info: Line: 1520, Condition: if (isGlobalRef == 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1401->[Local Variables] "{n\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1402->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1402 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1404->[Local Variables] "{parent\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1406->[Local Variables] "{rootNameNode\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1409->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1409 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1409->[Control Flow] Branch Info: Line: 1409, Condition: if (rootNameNode != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1419->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1419 -> com.google.javascript.jscomp.NodeUtil.isObjectLitKey
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1419->[Control Flow] Branch Info: Line: 1419, Condition: if (rootNameNode != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1444->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1444 -> com.google.javascript.rhino.Node.isCall
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1444->[Control Flow] Branch Info: Line: 1444, Condition: if (com.google.javascript.rhino.Node.isCall() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1444->[Control Flow] Branch Info: Line: 1444, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1457->[Control Flow] Branch Info: Line: 1457, Condition: if (singletonGetterClass != null), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1465->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1465 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1469->[Control Flow] Branch Info: Line: 1469, Condition: if (bNameWasShortened == 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1470->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1470 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1469->[Control Flow] Branch Info: Line: 1469, Condition: if (bNameWasShortened == 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1470->[Control Flow] Branch Info: Line: 1470, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1471->[Control Flow] Branch Info: Line: 1471, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1472->[Control Flow] Branch Info: Line: 1472, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1484->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1484 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1484->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1484 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1484->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1484 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1484->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1484 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1484->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1484 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1514->[Local Variables] {"name":"x"}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1515->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1515 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1515->[Local Variables] {"rootName":"x"}

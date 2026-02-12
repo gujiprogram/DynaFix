@@ -1,0 +1,60 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testIsNumber ===
+Exception: junit.framework.AssertionFailedError: isNumber(String) LANG-664 failed
+
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Control Flow] Branch Info: Line: 466, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:469 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:469 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:createNumber:472->[Local Variables] {"lastChar":" "}
+org.apache.commons.lang3.math.NumberUtils:createNumber:473->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:473 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:474->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:474 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:474->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:474 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:476->[Control Flow] Branch Info: Line: 476, Condition: if (decPos > decPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:488->[Control Flow] Branch Info: Line: 488, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:495->[Local Variables] {"mant":"1111 "}
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:498 -> java.lang.Character.isDigit
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (lastChar == 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (lastChar != lastChar), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:499->[Control Flow] Branch Info: Line: 499, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:499->[Control Flow] Branch Info: Line: 499, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:505->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:505 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:505->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:505 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:505->[Local Variables] {"numeric":"1111"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:506->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:506 -> org.apache.commons.lang3.math.NumberUtils.isAllZeros
+org.apache.commons.lang3.math.NumberUtils:createNumber:506->[Control Flow] Branch Info: Line: 506, Condition: if (mant != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:506->[Control Flow] Branch Info: Line: 506, Condition: if (exp != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:553->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:553 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.math.NumberUtils:createNumber:553->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:553 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.math.NumberUtils:createNumber:553->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:553 -> java.lang.StringBuilder.toString
+org.apache.commons.lang3.math.NumberUtils:createNumber:459->[Control Flow] Branch Info: Line: 459, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:466 -> java.lang.String.startsWith
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Control Flow] Branch Info: Line: 466, Condition: if (java.lang.String.startsWith() == 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:466 -> java.lang.String.startsWith
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Control Flow] Branch Info: Line: 466, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:469 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:469->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:469 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:createNumber:473->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:473 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:474->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:474 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:474->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:474 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:476->[Control Flow] Branch Info: Line: 476, Condition: if (decPos > decPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:488->[Control Flow] Branch Info: Line: 488, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:495->[Local Variables] {"mant":" 1111"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:498 -> java.lang.Character.isDigit
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (lastChar == 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:498->[Control Flow] Branch Info: Line: 498, Condition: if (lastChar != lastChar), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:559->[Control Flow] Branch Info: Line: 559, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:559->[Control Flow] Branch Info: Line: 559, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:564->[Control Flow] Branch Info: Line: 564, Condition: if (dec == null), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:564->[Control Flow] Branch Info: Line: 564, Condition: if (exp == null), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:567->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:567 -> org.apache.commons.lang3.math.NumberUtils.createInteger
+org.apache.commons.lang3.math.NumberUtils:createNumber:572->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:572 -> org.apache.commons.lang3.math.NumberUtils.createLong
+org.apache.commons.lang3.math.NumberUtils:createNumber:576->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:576 -> org.apache.commons.lang3.math.NumberUtils.createBigInteger
+org.apache.commons.lang3.math.NumberUtils:createNumber:452->[Local Variables] {"str":"1111 "}
+org.apache.commons.lang3.math.NumberUtils:createNumber:453->[Control Flow] Branch Info: Line: 453, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:456->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:456 -> org.apache.commons.lang3.StringUtils.isBlank
+org.apache.commons.lang3.math.NumberUtils:createNumber:456->[Control Flow] Branch Info: Line: 456, Condition: if (str != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:459->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:459 -> java.lang.String.startsWith
+org.apache.commons.lang3.math.NumberUtils:createNumber:459->[Control Flow] Branch Info: Line: 459, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:466 -> java.lang.String.startsWith
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Control Flow] Branch Info: Line: 466, Condition: if (java.lang.String.startsWith() == 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:createNumber:466->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:466 -> java.lang.String.startsWith

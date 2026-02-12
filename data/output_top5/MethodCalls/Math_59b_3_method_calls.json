@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math.util.FastMath.split",
+    "doc": "/** Compute split[0], split[1] such that their sum is equal to d,\n     * and split[0] has its 30 least significant bits as zero.\n     * @param d number to split\n     * @param split placeholder where to place the result\n     */",
+    "code": "private static void split(final double d, final double split[]) {\n        if (d < 8e298 && d > -8e298) {\n            final double a = d * 1073741824.0;\n            split[0] = (d + a) - a;\n            split[1] = d - split[0];\n        } else {\n            final double a = d * 9.31322574615478515625E-10;\n            split[0] = (d + a - d) * 1073741824.0;\n            split[1] = d - split[0];\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.splitAdd",
+    "doc": "/** Add two numbers in split form.\n     * @param a first term of addition\n     * @param b second term of addition\n     * @param ans placeholder where to put the result\n     */",
+    "code": "private static void splitAdd(final double a[], final double b[], final double ans[]) {\n        ans[0] = a[0] + b[0];\n        ans[1] = a[1] + b[1];\n\n        resplit(ans);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.splitMult",
+    "doc": "/** Multiply two numbers in split form.\n     * @param a first term of multiplication\n     * @param b second term of multiplication\n     * @param ans placeholder where to put the result\n     */",
+    "code": "private static void splitMult(double a[], double b[], double ans[]) {\n        ans[0] = a[0] * b[0];\n        ans[1] = a[0] * b[1] + a[1] * b[0] + a[1] * b[1];\n\n        resplit(ans);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.splitReciprocal",
+    "doc": "/** Compute the reciprocal of in.  Use the following algorithm.\n     *  in = c + d.\n     *  want to find x + y such that x+y = 1/(c+d) and x is much\n     *  larger than y and x has several zero bits on the right.\n     *\n     *  Set b = 1/(2^22),  a = 1 - b.  Thus (a+b) = 1.\n     *  Use following identity to compute (a+b)/(c+d)\n     *\n     *  (a+b)/(c+d)  =   a/c   +    (bc - ad) / (c^2 + cd)\n     *  set x = a/c  and y = (bc - ad) / (c^2 + cd)\n     *  This will be close to the right answer, but there will be\n     *  some rounding in the calculation of X.  So by carefully\n     *  computing 1 - (c+d)(x+y) we can compute an error and\n     *  add that back in.   This is done carefully so that terms\n     *  of similar size are subtracted first.\n     *  @param in initial number, in split form\n     *  @param result placeholder where to put the result\n     */",
+    "code": "private static void splitReciprocal(final double in[], final double result[]) {\n        final double b = 1.0/4194304.0;\n        final double a = 1.0 - b;\n\n        if (in[0] == 0.0) {\n            in[0] = in[1];\n            in[1] = 0.0;\n        }\n\n        result[0] = a / in[0];\n        result[1] = (b*in[0]-a*in[1]) / (in[0]*in[0] + in[0]*in[1]);\n\n        if (result[1] != result[1]) { // can happen if result[1] is NAN\n            result[1] = 0.0;\n        }\n\n        resplit(result);\n\n        for (int i = 0; i < 2; i++) {\n            double err = 1.0 - result[0] * in[0] - result[0] * in[1] -\n            result[1] * in[0] - result[1] * in[1];\n            err = err * (result[0] + result[1]);\n            result[1] += err;\n        }\n    }"
+  }
+]

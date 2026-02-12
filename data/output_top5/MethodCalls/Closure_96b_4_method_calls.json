@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkNotNull",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.check",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasChild",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public boolean hasChild(Node child) {\n    for (Node n = first; n != null; n = n.getNext()) {\n      if (child == n) {\n        return true;\n      }\n    }\n    return false;\n  }"
+  }
+]

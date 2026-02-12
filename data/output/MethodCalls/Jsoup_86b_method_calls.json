@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.jsoup.Jsoup.parse",
+    "doc": "/**\n     Parse HTML into a Document. The parser will make a sensible, balanced document tree out of any HTML.\n\n     @param html    HTML to parse\n     @param baseUri The URL where the HTML was retrieved from. Used to resolve relative URLs to absolute URLs, that occur\n     before the HTML declares a {@code <base href>} tag.\n     @return sane HTML\n     */",
+    "code": "public static Document parse(String html, String baseUri) {\n        return Parser.parse(html, baseUri);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Comment.baseUri",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Comment.getData",
+    "doc": "/**\n     Get the contents of the comment.\n     @return comment content\n     */",
+    "code": "public String getData() {\n        return coreValue();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.child",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.childNodeSize",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.xmlParser",
+    "doc": "/**\n     * Create a new XML parser. This parser assumes no knowledge of the incoming tags and does not treat it as HTML,\n     * rather creates a simple tree directly from the input.\n     * @return a new simple XML parser.\n     */",
+    "code": "public static Parser xmlParser() {\n        return new Parser(new XmlTreeBuilder());\n    }"
+  }
+]

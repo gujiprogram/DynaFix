@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4 ===
+Exception: junit.framework.ComparisonFailure: expected:<{[]}> but was:<{[a=[[Foo.prototype]]]}>
+
+com.google.javascript.jscomp.DisambiguateProperties:process:315->[Local Variables] "{root\u003dBLOCK [synthetic: 1] : global this, externs\u003dBLOCK [synthetic: 1] : global this}"
+com.google.javascript.jscomp.DisambiguateProperties:process:317->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:317 -> com.google.javascript.jscomp.AbstractCompiler.getLifeCycleStage
+com.google.javascript.jscomp.DisambiguateProperties:process:317->[Control Flow] Branch Info: Line: 317, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:process:316->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:316 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> com.google.javascript.jscomp.AbstractCompiler.getTypeValidator
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> com.google.javascript.jscomp.TypeValidator.getMismatches
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Control Flow] Branch Info: Line: 318, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:process:323->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:323 -> com.google.javascript.jscomp.DisambiguateProperties$FindExternProperties.<init>
+com.google.javascript.jscomp.DisambiguateProperties:process:323->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:323 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.DisambiguateProperties:process:324->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:324 -> com.google.javascript.jscomp.DisambiguateProperties$FindRenameableProperties.<init>
+com.google.javascript.jscomp.DisambiguateProperties:process:324->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:324 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.DisambiguateProperties:process:325->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:325 -> com.google.javascript.jscomp.DisambiguateProperties.renameProperties
+
+=== Debug Info for Test: com.google.javascript.jscomp.DisambiguatePropertiesTest::testTwoTypes4 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DisambiguateProperties:process:315->[Local Variables] "{root\u003dBLOCK [synthetic: 1] : global this, externs\u003dBLOCK [synthetic: 1] : global this}"
+com.google.javascript.jscomp.DisambiguateProperties:process:317->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:317 -> com.google.javascript.jscomp.AbstractCompiler.getLifeCycleStage
+com.google.javascript.jscomp.DisambiguateProperties:process:317->[Control Flow] Branch Info: Line: 317, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:process:316->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:316 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> com.google.javascript.jscomp.AbstractCompiler.getTypeValidator
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> com.google.javascript.jscomp.TypeValidator.getMismatches
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:318 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:process:318->[Control Flow] Branch Info: Line: 318, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:process:323->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:323 -> com.google.javascript.jscomp.DisambiguateProperties$FindExternProperties.<init>
+com.google.javascript.jscomp.DisambiguateProperties:process:323->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:323 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.DisambiguateProperties:process:324->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:324 -> com.google.javascript.jscomp.DisambiguateProperties$FindRenameableProperties.<init>
+com.google.javascript.jscomp.DisambiguateProperties:process:324->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:324 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.DisambiguateProperties:process:325->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.process:325 -> com.google.javascript.jscomp.DisambiguateProperties.renameProperties

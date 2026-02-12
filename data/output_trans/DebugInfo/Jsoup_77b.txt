@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: org.jsoup.parser.XmlTreeBuilderTest::normalizesDiscordantTags ===
+Exception: junit.framework.AssertionFailedError: expected:<<div>
+
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:138->[Control Flow] Branch Info: Line: 138, Condition: if (TransVarElement == null), Executed: false
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:141->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:141 -> java.util.ArrayList.size
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:141->[Local Variables] {"TransVarElementStackSize":2}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarElementStackSize >= 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:143->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:143 -> java.util.ArrayList.get
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:143->[Local Variables] "{TransVarNextItem\u003d\u003cp\u003e\u003c/p\u003e}"
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:144->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:144 -> java.util.ArrayList.remove
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:145->[Control Flow] Branch Info: Line: 145, Condition: if (unknown_condition_166), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarElementStackSize >= 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:119->[Local Variables] {"TransVarEndTag1":{"tagName":"DIV","normalName":"div","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"type":"EndTag"}}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:120->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:120 -> org.jsoup.parser.Token$EndTag.name
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:120->[Local Variables] {"TransVarTagName":"DIV"}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:123 -> java.util.ArrayList.size
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Local Variables] {"TransVarPosTag":1}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarPosTag >= 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:128->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:128 -> java.util.ArrayList.get
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:128->[Local Variables] "{TransVarNextElement\u003d\u003cdiv\u003e\n test\n\u003c/div\u003e}"
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> java.lang.String.equals
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Control Flow] Branch Info: Line: 129, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:136->[Local Variables] {"TransVarPosTag":0}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Control Flow] Loop Info: Line: 123, Description: while at line 123
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarPosTag >= 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:128->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:128 -> java.util.ArrayList.get
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> java.lang.String.equals
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Control Flow] Branch Info: Line: 129, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:136->[Local Variables] {"TransVarPosTag":-1}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Control Flow] Loop Info: Line: 123, Description: while at line 123
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarPosTag >= 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:138->[Control Flow] Branch Info: Line: 138, Condition: if (TransVarElement == null), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:119->[Local Variables] {"TransVarEndTag1":{"tagName":"p","normalName":"p","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"type":"EndTag"}}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:120->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:120 -> org.jsoup.parser.Token$EndTag.name
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:120->[Local Variables] {"TransVarTagName":"p"}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:123 -> java.util.ArrayList.size
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:123->[Local Variables] {"TransVarPosTag":2}
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarPosTag >= 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:128->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:128 -> java.util.ArrayList.get
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:128->[Local Variables] "{TransVarNextElement\u003d\u003cp\u003e\u003c/p\u003e}"
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.popStackToClose:129 -> java.lang.String.equals
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:129->[Control Flow] Branch Info: Line: 129, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:133->[Local Variables] "{TransVarElement\u003d\u003cp\u003e\u003c/p\u003e}"
+org.jsoup.parser.XmlTreeBuilder:popStackToClose:124->[Control Flow] Branch Info: Line: 124, Condition: if (TransVarPosTag >= 0), Executed: false

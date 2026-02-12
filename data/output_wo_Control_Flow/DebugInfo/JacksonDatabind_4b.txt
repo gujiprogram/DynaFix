@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.deser.TestCollectionDeserialization::testArrayIndexForExceptions ===
+
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:45->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@290b1b2e, jp\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@47874b25}"
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:46->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:46 -> com.fasterxml.jackson.core.JsonParser.isExpectedStartArrayToken
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:53->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:53 -> com.fasterxml.jackson.databind.DeserializationContext.leaseObjectBuffer
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:53->[Local Variables] {"buffer":{"_size":0}}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:54->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:54 -> com.fasterxml.jackson.databind.util.ObjectBuffer.resetAndStart
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:55->[Local Variables] {"chunk":[null,null,null,null,null,null,null,null,null,null,null,null]}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:58->[Local Variables] {"ix":0}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:59->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:59 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:61->[Local Variables] {"t":"VALUE_STRING"}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:63->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:63 -> com.fasterxml.jackson.core.JsonParser.getText
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:68->[Local Variables] {"value":"xyz"}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:73->[Local Variables] {"chunk":["xyz",null,null,null,null,null,null,null,null,null,null,null],"ix":1}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:59->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:59 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:61->[Local Variables] {"t":"START_OBJECT"}
+com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer:deserialize:67->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer.deserialize:67 -> com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer._parseString

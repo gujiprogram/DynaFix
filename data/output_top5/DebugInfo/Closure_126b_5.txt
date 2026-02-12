@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.MinimizeExitPointsTest::testDontRemoveBreakInTryFinally ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.MinimizeExitPointsTest::testFunctionReturnOptimization ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:227->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:227 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:234->[Local Variables] "{exitNode\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:235->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:235 -> com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:235->[Control Flow] Branch Info: Line: 235, Condition: if (labelName == 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:223->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:223 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:223->[Control Flow] Branch Info: Line: 223, Condition: if (com.google.javascript.rhino.Node.hasChildren() == 0), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:226->[Local Variables] "{exitNodeParent\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:227->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:227 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:234->[Local Variables] "{exitNode\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:235->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:235 -> com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:235->[Control Flow] Branch Info: Line: 235, Condition: if (labelName == 0), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:240->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:240 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:240->[Control Flow] Branch Info: Line: 240, Condition: if (com.google.javascript.rhino.Node.getNext() != null), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:243->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:243 -> com.google.javascript.rhino.IR.block
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:243->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:243 -> com.google.javascript.rhino.Node.srcref
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:243->[Local Variables] {"newDestBlock":{"type":125,"propListHead":{"objectValue":{"fileName":"testcode","isExternFile":false,"code":"function f(){ if (x) return; if (y) return; if (z) return; w(); }"},"propType":51},"sourcePosition":4140}}
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:244->[Control Flow] Branch Info: Line: 244, Condition: if (destBlock == null), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:246->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:246 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:259->[Local Variables] "{newDestBlock\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:260->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:260 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:260->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:260 -> com.google.javascript.jscomp.MinimizeExitPoints.moveAllFollowing
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:261->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:261 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:240->[Control Flow] Branch Info: Line: 240, Condition: if (com.google.javascript.rhino.Node.getNext() != null), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:217->[Local Variables] "{destBlock\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:222->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:222 -> com.google.javascript.rhino.Node.isBlock
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:222->[Control Flow] Branch Info: Line: 222, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: true
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:223->[Method Call] Call Stack: com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeIfBlockExits:223 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:223->[Control Flow] Branch Info: Line: 223, Condition: if (com.google.javascript.rhino.Node.hasChildren() == 0), Executed: false
+com.google.javascript.jscomp.MinimizeExitPoints:tryMinimizeIfBlockExits:226->[Local Variables] "{exitNodeParent\u003dBLOCK 1 [source_file: testcode]}"

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.type.SimpleType._bogusSuperClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.SimpleType.buildCanonicalName",
+    "doc": "/**\n     * Method that should NOT to be used by application code:\n     * it does NOT properly handle inspection of super-types, so neither parent\n     * Classes nor implemented Interfaces are accessible with resulting type\n     * instance. Instead, please use {@link TypeFactory}'s <code>constructType</code>\n     * methods which handle introspection appropriately.\n     *<p>\n     * Note that prior to 2.7, method usage was not limited and would typically\n     * have worked acceptably: the problem comes from inability to resolve super-type\n     * information, for which {@link TypeFactory} is needed.\n     *\n     * @deprecated Since 2.7\n     */",
+    "code": "protected String buildCanonicalName()\n    {\n        StringBuilder sb = new StringBuilder();\n        sb.append(_class.getName());\n\n        final int count = _bindings.size();\n        if (count > 0) {\n            sb.append('<');\n            for (int i = 0; i < count; ++i) {\n                JavaType t = containedType(i);\n                if (i > 0) {\n                    sb.append(',');\n                }\n                sb.append(t.toCanonical());\n            }\n            sb.append('>');\n        }\n        return sb.toString();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeBindings.emptyBindings",
+    "doc": "/**********************************************************************\n     */",
+    "code": "public static TypeBindings emptyBindings() {\n        return EMPTY;\n    }"
+  }
+]

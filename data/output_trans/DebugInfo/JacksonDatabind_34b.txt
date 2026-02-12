@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsonschema.NewSchemaTest::testSimpleNumbers ===
+Exception: junit.framework.ComparisonFailure: expected:<...dec([numberType=BIG_[DECIMAL]])][optProp bigInt([...> but was:<...dec([numberType=BIG_[INTEGER]])][optProp bigInt([...>
+
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:79->[Control Flow] Branch Info: Line: 79, Condition: if (this._isInt != false), Executed: false
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:88->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.NumberSerializer.acceptJsonFormatVisitor:88 -> com.fasterxml.jackson.databind.ser.std.NumberSerializer.handledType
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:88->[Local Variables] {"TransVarT":"class java.math.BigDecimal"}
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:89->[Control Flow] Branch Info: Line: 89, Condition: if (unknown_condition_166), Executed: true
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:90->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.NumberSerializer.acceptJsonFormatVisitor:90 -> com.fasterxml.jackson.databind.ser.std.NumberSerializer.visitFloatFormat
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:79->[Control Flow] Branch Info: Line: 79, Condition: if (this._isInt != false), Executed: true
+com.fasterxml.jackson.databind.ser.std.NumberSerializer:acceptJsonFormatVisitor:83->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.NumberSerializer.acceptJsonFormatVisitor:83 -> com.fasterxml.jackson.databind.ser.std.NumberSerializer.visitIntFormat

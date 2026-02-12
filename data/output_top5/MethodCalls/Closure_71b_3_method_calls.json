@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionPrototypeType.getOwnerFunction",
+    "doc": "/**\n * Represents the prototype of a {@link FunctionType}.\n * @author nicksantos@google.com (Nick Santos)\n */",
+    "code": "public FunctionType getOwnerFunction() {\n    return ownerFunction;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getInstanceType",
+    "doc": "/**\n   * Gets the type of instance of this function.\n   * @throws IllegalStateException if this function is not a constructor\n   *         (see {@link #isConstructor()}).\n   */",
+    "code": "public ObjectType getInstanceType() {\n    Preconditions.checkState(hasInstanceType());\n    return typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  public ObjectType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isConstructor",
+    "doc": "/**\n   * Whether this type is a {@link FunctionType} that is a constructor or a\n   * named type that points to such a type.\n   */",
+    "code": "public boolean isConstructor() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  }
+]

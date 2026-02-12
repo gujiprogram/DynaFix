@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalNamesTest::testGlobalCatch ===
+Exception: junit.framework.AssertionFailedError: Unexpected warning(s): JSC_UNDEFINED_NAME. e is never defined at testcode line 1 : 48
+
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:261->[Local Variables] {"name":"console"}
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:264->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:264 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:261->[Local Variables] {"name":"e"}
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Local Variables] "{v\u003dScope.Var e{null}}"
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:266 -> com.google.javascript.jscomp.Scope$Var.isLocal
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:261->[Local Variables] {"name":"Function"}
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Local Variables] "{v\u003dScope.Var Function{null}}"
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:266 -> com.google.javascript.jscomp.Scope$Var.isLocal
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:266 -> com.google.javascript.jscomp.Scope$Var.isLocal
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:261->[Local Variables] "{s\u003dcom.google.javascript.jscomp.Scope@fb49fdf, name\u003dError}"
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:264->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:264 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (com.google.javascript.jscomp.Scope$Var.isLocal() == 0), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:261->[Local Variables] {"name":"e"}
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:262 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:262->[Local Variables] "{v\u003dScope.Var e{null}}"
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:263->[Control Flow] Branch Info: Line: 263, Condition: if (this.externsScope != null), Executed: false
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Control Flow] Branch Info: Line: 266, Condition: if (v != null), Executed: true
+com.google.javascript.jscomp.GlobalNamespace:isGlobalVarReference:266->[Method Call] Call Stack: com.google.javascript.jscomp.GlobalNamespace.isGlobalVarReference:266 -> com.google.javascript.jscomp.Scope$Var.isLocal

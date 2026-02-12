@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype",
+    "doc": "/**\n   * Returns the property map that manages the set of properties for an object.\n   */",
+    "code": "return getImplicitPrototype();\n  }\n\n  PropertyMap getPropertyMap() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyNames",
+    "doc": "/**\n   * Returns the names of all the properties directly on this type.\n   *\n   * Overridden by FunctionType to add \"prototype\".\n   */",
+    "code": "public Set<String> getOwnPropertyNames() {\n    return getPropertyMap().getOwnPropertyNames();\n  }"
+  }
+]

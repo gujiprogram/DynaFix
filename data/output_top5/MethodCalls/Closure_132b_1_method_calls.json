@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isAssignmentOp",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isAssignmentOp(Node n) {\n    switch (n.getType()){\n      case Token.ASSIGN:\n      case Token.ASSIGN_BITOR:\n      case Token.ASSIGN_BITXOR:\n      case Token.ASSIGN_BITAND:\n      case Token.ASSIGN_LSH:\n      case Token.ASSIGN_RSH:\n      case Token.ASSIGN_URSH:\n      case Token.ASSIGN_ADD:\n      case Token.ASSIGN_SUB:\n      case Token.ASSIGN_MUL:\n      case Token.ASSIGN_DIV:\n      case Token.ASSIGN_MOD:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.newExpr",
+    "doc": "/**\n   * Creates an EXPR_RESULT.\n   *\n   * @param child The expression itself.\n   * @return Newly created EXPR node with the child as subexpression.\n   */",
+    "code": "static Node newExpr(Node child) {\n    return IR.exprResult(child).srcref(child);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.areNodesEqualForInlining",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.getBlockExpression",
+    "doc": "/**\n   * @return The expression node.\n   */",
+    "code": "private Node getBlockExpression(Node n) {\n    Preconditions.checkState(isFoldableExpressBlock(n));\n    return n.getFirstChild();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.mayEffectMutableState",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.hook",
+    "doc": "/**\n * An AST construction helper class\n * @author johnlenz@google.com (John Lenz)\n */",
+    "code": "public static Node hook(Node cond, Node trueval, Node falseval) {\n    Preconditions.checkState(mayBeExpression(cond));\n    Preconditions.checkState(mayBeExpression(trueval));\n    Preconditions.checkState(mayBeExpression(falseval));\n    return new Node(Token.HOOK, cond, trueval, falseval);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeChild",
+    "doc": "/**\n   * Detach a child from its parent and siblings.\n   */",
+    "code": "public void removeChild(Node child) {\n    Node prev = getChildBefore(child);\n    if (prev == null)\n        first = first.next;\n    else\n        prev.next = child.next;\n    if (child == last) last = prev;\n    child.next = null;\n    child.parent = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeFirstChild",
+    "doc": "/**\n   * Removes the first child of Node. Equivalent to:\n   * node.removeChild(node.getFirstChild());\n   *\n   * @return The removed Node.\n   */",
+    "code": "public Node removeFirstChild() {\n    Node child = first;\n    if (child != null) {\n      removeChild(child);\n    }\n    return child;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.srcref",
+    "doc": "/**\n   * Overwrite all the source information in this node with\n   * that of {@code other}.\n   */",
+    "code": "public Node srcref(Node other) {\n    return useSourceInfoFrom(other);\n  }"
+  }
+]

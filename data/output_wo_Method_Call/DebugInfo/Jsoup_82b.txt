@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode ===
+
+org.jsoup.helper.DataUtil:parseInputStream:160->[Local Variables] "{reader\u003djava.io.BufferedReader@3568f9d2}"
+org.jsoup.helper.DataUtil:parseInputStream:161->[Control Flow] Branch Info: Line: 161, Condition: if (bomCharset != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:161->[Control Flow] Branch Info: Line: 161, Condition: if (bomCharset != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:167->[Local Variables] "{input\u003dorg.jsoup.internal.ConstrainableInputStream@8ad6665, doc\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:169->[Local Variables] {"charset":{"name":"ISO-2022-CN","aliases":["ISO2022CN","csISO2022CN"]}}
+org.jsoup.helper.DataUtil:parseInputStream:157->[Control Flow] Branch Info: Line: 157, Condition: if (doc == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:118->[Local Variables] "{parser\u003dorg.jsoup.parser.Parser@30af5b6b, doc\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:119->[Local Variables] "{metaElements\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:121->[Control Flow] Branch Info: Line: 121, Condition: if (first != 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:121->[Local Variables] "{meta\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:122->[Control Flow] Branch Info: Line: 122, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:124->[Control Flow] Branch Info: Line: 124, Condition: if (foundCharset == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:124->[Control Flow] Branch Info: Line: 124, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:124->[Control Flow] Branch Info: Line: 124, Condition: if (foundCharset == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:124->[Control Flow] Branch Info: Line: 124, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:125->[Local Variables] {"foundCharset":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:126->[Control Flow] Branch Info: Line: 126, Condition: if (foundCharset != null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:121->[Control Flow] Branch Info: Line: 121, Condition: if (first != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (foundCharset == null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:131->[Control Flow] Branch Info: Line: 131, Condition: if (org.jsoup.nodes.Document.childNodeSize() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:141->[Control Flow] Branch Info: Line: 141, Condition: if (decl != null), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:142->[Control Flow] Branch Info: Line: 142, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:147->[Control Flow] Branch Info: Line: 147, Condition: if (foundCharset != null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:147->[Control Flow] Branch Info: Line: 147, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:149->[Local Variables] {"charsetName":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:151->[Control Flow] Branch Info: Line: 151, Condition: if (fullyRead == 0), Executed: false
+org.jsoup.helper.DataUtil:parseInputStream:157->[Control Flow] Branch Info: Line: 157, Condition: if (doc == null), Executed: true
+org.jsoup.helper.DataUtil:parseInputStream:158->[Control Flow] Branch Info: Line: 158, Condition: if (charsetName == null), Executed: false

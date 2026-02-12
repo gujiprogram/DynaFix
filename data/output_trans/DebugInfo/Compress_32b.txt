@@ -1,0 +1,22 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldReadBigGid ===
+Exception: java.lang.NumberFormatException: For input string: "4294967294"
+
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:495->[Local Variables] {"TransVarHeaders1":{"gid":"4294967294"}}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:496->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:496 -> java.util.Map.entrySet
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:496->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:496 -> java.util.Set.iterator
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:496->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:496 -> java.util.Iterator.hasNext
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:496->[Control Flow] Branch Info: Line: 496, Condition: if (var2 != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:496->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:496 -> java.util.Iterator.next
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:499->[Local Variables] {"TransVarHeaders":{"hash":102339,"key":"gid","value":"4294967294"}}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:500->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:500 -> java.util.Map$Entry.getKey
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:500->[Local Variables] {"TransVarHeaderKey":"gid"}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:501->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:501 -> java.util.Map$Entry.getValue
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:501->[Local Variables] {"TransVarValue":"4294967294"}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:502->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:502 -> java.lang.String.equals
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:502->[Control Flow] Branch Info: Line: 502, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:507->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:507 -> java.lang.String.equals
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:507->[Control Flow] Branch Info: Line: 507, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:509->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:509 -> java.lang.String.equals
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:509->[Control Flow] Branch Info: Line: 509, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:applyPaxHeadersToCurrentEntry:510->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.applyPaxHeadersToCurrentEntry:510 -> java.lang.Integer.parseInt

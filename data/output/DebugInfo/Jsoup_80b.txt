@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.jsoup.parser.XmlTreeBuilderTest::handlesDodgyXmlDecl ===
+Exception: java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+
+org.jsoup.parser.XmlTreeBuilder:insert:83->[Local Variables] {"commentToken":{"data":"?xml version\u003d\u00271.0\u0027","bogus":true,"type":"Comment"}}
+org.jsoup.parser.XmlTreeBuilder:insert:84->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:84 -> org.jsoup.parser.Token$Comment.getData
+org.jsoup.parser.XmlTreeBuilder:insert:84->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:84 -> org.jsoup.nodes.Comment.<init>
+org.jsoup.parser.XmlTreeBuilder:insert:84->[Local Variables] {"comment":{"value":"?xml version\u003d\u00271.0\u0027","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:85->[Local Variables] {"insert":{"value":"?xml version\u003d\u00271.0\u0027","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:86->[Control Flow] Branch Info: Line: 86, Condition: if (this.bogus != false), Executed: true
+org.jsoup.parser.XmlTreeBuilder:insert:88->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:88 -> org.jsoup.nodes.Comment.getData
+org.jsoup.parser.XmlTreeBuilder:insert:88->[Local Variables] {"data":"?xml version\u003d\u00271.0\u0027"}
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:89 -> java.lang.String.length
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Control Flow] Branch Info: Line: 89, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: true
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:89 -> java.lang.String.startsWith
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Control Flow] Branch Info: Line: 89, Condition: if (java.lang.String.startsWith() == 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:89 -> java.lang.String.startsWith
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Control Flow] Branch Info: Line: 89, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.jsoup.parser.XmlTreeBuilder:insert:89->[Control Flow] Branch Info: Line: 89, Condition: if (java.lang.String.startsWith() == 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.StringBuilder.append
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.String.length
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.String.substring
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.StringBuilder.append
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.StringBuilder.append
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> java.lang.StringBuilder.toString
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> org.jsoup.parser.Parser.xmlParser
+org.jsoup.parser.XmlTreeBuilder:insert:90->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:90 -> org.jsoup.Jsoup.parse
+org.jsoup.parser.XmlTreeBuilder:insert:91->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:91 -> org.jsoup.nodes.Document.child

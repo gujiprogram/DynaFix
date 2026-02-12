@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notEmpty",
+    "doc": "/**\n     * Validates that the string is not empty\n     * @param string the string to test\n     */",
+    "code": "public static void notEmpty(String string) {\n        if (string == null || string.length() == 0)\n            throw new IllegalArgumentException(\"String must not be empty\");\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the object is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  }
+]

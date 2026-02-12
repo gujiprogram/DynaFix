@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: org.apache.commons.lang.time.DateUtilsTest::testTruncateLang59 ===
+Exception: junit.framework.AssertionFailedError: Truncate Calendar.SECOND expected:<Sun Oct 31 01:02:03 MDT 2004> but was:<Sun Oct 31 01:02:03 MST 2004>
+
+org.apache.commons.lang.time.DateUtils:truncate:542->[Local Variables] {"date":"Oct 31, 2004, 1:02:03 AM","field":14}
+org.apache.commons.lang.time.DateUtils:truncate:543->[Control Flow] Branch Info: Line: 543, Condition: if (date == null), Executed: false
+org.apache.commons.lang.time.DateUtils:truncate:546->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:546 -> java.util.Calendar.getInstance
+org.apache.commons.lang.time.DateUtils:truncate:546->[Local Variables] {"gval":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":2,"minute":35,"second":43}}
+org.apache.commons.lang.time.DateUtils:truncate:547->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:547 -> java.util.Calendar.setTime
+org.apache.commons.lang.time.DateUtils:truncate:547->[Local Variables] {"gval":{"year":2004,"month":9,"dayOfMonth":31,"hourOfDay":1,"minute":2,"second":3}}
+org.apache.commons.lang.time.DateUtils:truncate:548->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:548 -> org.apache.commons.lang.time.DateUtils.modify
+org.apache.commons.lang.time.DateUtils:truncate:549->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:549 -> java.util.Calendar.getTime
+org.apache.commons.lang.time.DateUtils:truncate:542->[Local Variables] {"field":13}
+org.apache.commons.lang.time.DateUtils:truncate:543->[Control Flow] Branch Info: Line: 543, Condition: if (date == null), Executed: false
+org.apache.commons.lang.time.DateUtils:truncate:546->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:546 -> java.util.Calendar.getInstance
+org.apache.commons.lang.time.DateUtils:truncate:546->[Local Variables] {"gval":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":2,"minute":35,"second":43}}
+org.apache.commons.lang.time.DateUtils:truncate:547->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:547 -> java.util.Calendar.setTime
+org.apache.commons.lang.time.DateUtils:truncate:547->[Local Variables] {"gval":{"year":2004,"month":9,"dayOfMonth":31,"hourOfDay":1,"minute":2,"second":3}}
+org.apache.commons.lang.time.DateUtils:truncate:548->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:548 -> org.apache.commons.lang.time.DateUtils.modify
+org.apache.commons.lang.time.DateUtils:truncate:549->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.truncate:549 -> java.util.Calendar.getTime

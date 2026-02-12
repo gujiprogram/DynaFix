@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.select",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.attr",
+    "doc": "/**\n     * Set an attribute value on this element. If this element already has an attribute with the\n     * key, its value is updated; otherwise, a new attribute is added.\n     *\n     * @return this element\n     */",
+    "code": "public Element attr(String attributeKey, String attributeValue) {\n        super.attr(attributeKey, attributeValue);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.hasAttr",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseInput",
+    "doc": "/**\n     * Create a new Parser, using the specified TreeBuilder\n     * @param treeBuilder TreeBuilder to use to parse input into Documents.\n     */",
+    "code": "public Document parseInput(String html, String baseUri) {\n        errors = isTrackErrors() ? ParseErrorList.tracking(maxErrors) : ParseErrorList.noTracking();\n        Document doc = treeBuilder.parse(html, baseUri, errors);\n        return doc;\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Elements.first",
+    "doc": "/**\n     * Get the form element's value of the first matched element.\n     * @return The form element's value, or empty if not set.\n     * @see Element#val()\n     */",
+    "code": "return first().val();\n        else"
+  }
+]

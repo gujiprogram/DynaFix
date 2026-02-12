@@ -1,0 +1,86 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZoneCutover::test_DateTime_constructor_Moscow_Autumn ===
+Exception: junit.framework.ComparisonFailure: expected:<...10-28T02:30:00.000+0[4]:00> but was:<...10-28T02:30:00.000+0[3]:00>
+
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193538600000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:882->[Local Variables] {"offsetLocal":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193527800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:885->[Local Variables] {"offsetAdjusted":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn_overlap_mins ===
+Exception: junit.framework.ComparisonFailure: 2007-10-28T02:00:00.000+03:00 expected:<...10-28T02:00:00.000+0[4]:00> but was:<...10-28T02:00:00.000+0[3]:00>
+
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193536800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:882->[Local Variables] {"offsetLocal":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193526000000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:885->[Local Variables] {"offsetAdjusted":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZoneCutover::test_getOffsetFromLocal_Moscow_Autumn ===
+Exception: junit.framework.ComparisonFailure: 2007-10-28T02:00:00.000+03:00 expected:<...10-28T02:00:00.000+0[4]:00> but was:<...10-28T02:00:00.000+0[3]:00>
+
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193535000000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193524200000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:893->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:893 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:894->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:894 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193536800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193526000000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:885->[Local Variables] {"offsetAdjusted":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193529600000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:882->[Local Variables] {"offsetLocal":10800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193518800000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:885->[Local Variables] {"offsetAdjusted":14400000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:893->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:893 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:893->[Local Variables] {"nextLocal":1193526000000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:894->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:894 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:894->[Local Variables] {"nextAdjusted":1193526000000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193531400000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193520600000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:893->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:893 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:894->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:894 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:880->[Local Variables] {"instantLocal":1193533200000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:881->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:881 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:883->[Local Variables] {"instantAdjusted":1193522400000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:884 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: true
+org.joda.time.DateTimeZone:getOffsetFromLocal:893->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:893 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:894->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:894 -> org.joda.time.DateTimeZone.nextTransition
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Control Flow] Branch Info: Line: 886, Condition: if (offsetAdjusted != offsetAdjusted), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Control Flow] Branch Info: Line: 889, Condition: if (offsetAdjusted < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:895->[Control Flow] Branch Info: Line: 895, Condition: if (nextAdjusted != 0), Executed: false

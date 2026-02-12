@@ -1,0 +1,30 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CompilerRunnerTest::testIssue115 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:377->[Local Variables] "{functionBody\u003dBLOCK 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:379->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:379 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:379->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:379 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:379->[Control Flow] Branch Info: Line: 379, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:378->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:378 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:381->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:381 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:383->[Local Variables] "{current\u003dVAR 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:384->[Control Flow] Branch Info: Line: 384, Condition: if (current != null), Executed: true
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:384->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:384 -> com.google.javascript.jscomp.NodeUtil.isFunctionDeclaration
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:384->[Control Flow] Branch Info: Line: 384, Condition: if (current != null), Executed: false
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:384->[Control Flow] Branch Info: Line: 384, Condition: if (current != 0), Executed: false
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:391->[Control Flow] Branch Info: Line: 391, Condition: if (current != null), Executed: true
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:393->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:393 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:393->[Local Variables] "{next\u003dRETURN 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:394->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:394 -> com.google.javascript.jscomp.NodeUtil.isFunctionDeclaration
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:394->[Control Flow] Branch Info: Line: 394, Condition: if (current != 0), Executed: false
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:406->[Local Variables] "{previous\u003dVAR 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:407->[Local Variables] "{current\u003dRETURN 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:390->[Control Flow] Loop Info: Line: 390, Description: while at line 390
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:391->[Control Flow] Branch Info: Line: 391, Condition: if (current != null), Executed: true
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:393->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:393 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:394->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.moveNamedFunctions:394 -> com.google.javascript.jscomp.NodeUtil.isFunctionDeclaration
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:394->[Control Flow] Branch Info: Line: 394, Condition: if (current != 0), Executed: false
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:406->[Local Variables] "{previous\u003dRETURN 1}"
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:390->[Control Flow] Loop Info: Line: 390, Description: while at line 390
+com.google.javascript.jscomp.Normalize:moveNamedFunctions:391->[Control Flow] Branch Info: Line: 391, Condition: if (current != null), Executed: false

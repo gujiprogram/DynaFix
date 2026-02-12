@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.FlowScope.inferQualifiedSlot",
+    "doc": "/**\n   * Infer the type of a qualified name.\n   *\n   * When traversing the control flow of a function, simple names are\n   * declared at the bottom of the flow lattice. But there are far too many\n   * qualified names to be able to do this and be performant. So the bottoms\n   * of qualified names are declared lazily.\n   *\n   * Therefore, when inferring a qualified slot, we need both the \"bottom\"\n   * type of the slot when we enter the scope, and the current type being\n   * inferred.\n   */",
+    "code": "void inferQualifiedSlot(Node node, String symbol, JSType bottomType,\n      JSType inferredType);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName",
+    "doc": "/**\n   * Get the name of an object literal key.\n   *\n   * @param key A node\n   */",
+    "code": "static String getObjectLitKeyName(Node key) {\n    switch (key.getType()) {\n      case Token.STRING:\n      case Token.GETTER_DEF:\n      case Token.SETTER_DEF:\n        return key.getString();\n    }\n    throw new IllegalStateException(\"Unexpected node type: \" + key);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType",
+    "doc": "/**\n   * @param key A OBJECTLIT key node.\n   * @return The type expected when using the key.\n   */",
+    "code": "static JSType getObjectLitKeyTypeFromValueType(Node key, JSType valueType) {\n    if (valueType != null) {\n      switch (key.getType()) {\n        case Token.GETTER_DEF:\n          if (valueType.isFunctionType()) {\n            FunctionType fntype = valueType.toMaybeFunctionType();\n            valueType = fntype.getReturnType();\n          } else {\n            return null;\n          }\n          break;\n        case Token.SETTER_DEF:\n          if (valueType.isFunctionType()) {\n            FunctionType fntype = valueType.toMaybeFunctionType();\n            Node param = fntype.getParametersNode().getFirstChild();\n            valueType = param.getJSType();\n          } else {\n            return null;\n          }\n          break;\n      }\n    }\n    return valueType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getType",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.isTypeInferred",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.setType",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public StaticSlot<JSType> getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getNativeType",
+    "doc": "/**\n   * If we access a property of a symbol, then that symbol is not\n   * null or undefined.\n   */",
+    "code": "return getNativeType(CHECKED_UNKNOWN_TYPE);\n        } else {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isString",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.defineInferredProperty",
+    "doc": "/**\n   * Defines a property whose type is inferred.\n   * @param propertyName the property's name\n   * @param type the type\n   * @param propertyNode the node corresponding to the inferred definition of\n   *        property that might later be accessed using {@code getPropertyNode}.\n   */",
+    "code": "public final boolean defineInferredProperty(String propertyName,\n      JSType type, Node propertyNode) {\n    if (hasProperty(propertyName)) {\n      JSType originalType = getPropertyType(propertyName);\n      type = originalType == null ? type :\n          originalType.getLeastSupertype(type);\n    }\n\n    boolean result = defineProperty(propertyName, type, true,\n        propertyNode);\n\n    registry.registerPropertyOnType(propertyName, this);\n\n    return result;\n  }"
+  }
+]

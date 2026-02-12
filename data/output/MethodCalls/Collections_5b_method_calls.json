@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.collections.list.SetUniqueList.add",
+    "doc": "/**\n     * Adds an element to the list if it is not already present.\n     * <p>\n     * <i>(Violation)</i>\n     * The <code>List</code> interface requires that this method returns\n     * <code>true</code> always. However this class may return <code>false</code>\n     * because of the <code>Set</code> behaviour.\n     *\n     * @param object the object to add\n     * @return true if object was added\n     */",
+    "code": "public boolean add(Object object) {\n        final int sizeBefore = size();\n\n        add(size(), object);\n\n        return (sizeBefore != size());\n    }"
+  },
+  {
+    "method": "org.apache.commons.collections.list.SetUniqueList.size",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

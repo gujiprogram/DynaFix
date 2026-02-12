@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.mockito.internal.configuration.DefaultInjectionEngine.orderedInstanceFieldsFrom",
+    "doc": "/**\n     * Inject mocks in injectMocksFields, and initialize them if needed.\n     *\n     * <p>\n     * <u>Algorithm :<br></u>\n     * for each field annotated by @InjectMocks\n     *   <ul>\n     *   <li>copy mocks set\n     *   <li>initialize field annotated by @InjectMocks\n     *   <li>for each field in @InjectMocks type ordered from sub-type to super-type\n     *     <ul>\n     *     <li>find mock candidate by type\n     *     <li>if more than *one* candidate find mock candidate on name\n     *     <li>if one mock candidate then\n     *       <ul>\n     *       <li>set mock by property setter if possible\n     *       <li>else set mock by field injection\n     *       </ul>\n     *     <li>remove mock from mocks copy (mocks are just injected once)\n     *     <li>else don't fail, user will then provide dependencies\n     *     </ul>\n     *   </ul>\n     * </p>\n     *\n     * @param injectMocksFields Fields annotated by @InjectMocks\n     * @param mocks Mocks\n     * @param testClassInstance The test class instance\n     */",
+    "code": "private Field[] orderedInstanceFieldsFrom(Class<?> awaitingInjectionClazz) {\n        Field[] declaredFields = awaitingInjectionClazz.getDeclaredFields();\n        Arrays.sort(declaredFields, supertypesLast);\n        return declaredFields;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.configuration.injection.MockCandidateFilter.filterCandidate",
+    "doc": "[No documentation]",
+    "code": "OngoingInjecter filterCandidate(\n            Collection<Object> mocks,"
+  },
+  {
+    "method": "org.mockito.internal.configuration.injection.OngoingInjecter.thenInject",
+    "doc": "/**\n     * Inject the mock.\n     *\n     * <p>\n     * Please check the actual implementation.\n     * </p>\n     *\n     * @return the mock that was injected, <code>null</code> otherwise.\n     */",
+    "code": "Object thenInject();"
+  }
+]

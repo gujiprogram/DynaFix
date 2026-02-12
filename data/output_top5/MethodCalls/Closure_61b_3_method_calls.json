@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects",
+    "doc": "/**\n   * Returns true if calls to this function have side effects.\n   *\n   * @param callNode - function call node\n   */",
+    "code": "static boolean functionCallHasSideEffects(Node callNode) {\n    return functionCallHasSideEffects(callNode, null);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isAssignmentOp",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isAssignmentOp(Node n) {\n    switch (n.getType()){\n      case Token.ASSIGN:\n      case Token.ASSIGN_BITOR:\n      case Token.ASSIGN_BITXOR:\n      case Token.ASSIGN_BITAND:\n      case Token.ASSIGN_LSH:\n      case Token.ASSIGN_RSH:\n      case Token.ASSIGN_URSH:\n      case Token.ASSIGN_ADD:\n      case Token.ASSIGN_SUB:\n      case Token.ASSIGN_MUL:\n      case Token.ASSIGN_DIV:\n      case Token.ASSIGN_MOD:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

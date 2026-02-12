@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jfree.data.general.Series.clone",
+    "doc": "/**\n     * Returns a clone of the series.\n     * <P>\n     * Notes:\n     * <ul>\n     * <li>No need to clone the name or description, since String object is\n     * immutable.</li>\n     * <li>We set the listener list to empty, since the listeners did not\n     * register with the clone.</li>\n     * <li>Same applies to the PropertyChangeSupport instance.</li>\n     * </ul>\n     *\n     * @return A clone of the series.\n     *\n     * @throws CloneNotSupportedException  not thrown by this class, but\n     *         subclasses may differ.\n     */",
+    "code": "public Object clone() throws CloneNotSupportedException {\n\n        Series clone = (Series) super.clone();\n        clone.listeners = new EventListenerList();\n        clone.propertyChangeSupport = new PropertyChangeSupport(clone);\n        return clone;\n\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.add",
+    "doc": "/**\n     * Adds a data item to the series and sends a {@link SeriesChangeEvent} to\n     * all registered listeners.\n     *\n     * @param item  the (timeperiod, value) pair (<code>null</code> not\n     *              permitted).\n     */",
+    "code": "public void add(TimeSeriesDataItem item) {\n        add(item, true);\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeriesDataItem.clone",
+    "doc": "/**\n     * Clones the data item.  Note: there is no need to clone the period or\n     * value since they are immutable instances.\n     *\n     * @return A clone of the data item.\n     */",
+    "code": "public Object clone() {\n        Object clone = null;\n        try {\n            clone = super.clone();\n        }\n        catch (CloneNotSupportedException e) { // won't get here...\n            e.printStackTrace();\n        }\n        return clone;\n    }"
+  }
+]

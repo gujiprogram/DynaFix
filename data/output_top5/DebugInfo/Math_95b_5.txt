@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.apache.commons.math.distribution.FDistributionTest::testSmallDegreesOfFreedom ===
+Exception: java.lang.IllegalArgumentException: Invalid endpoint parameters:  lowerBound=0.0 initial=-1.0 upperBound=1.7976931348623157E308
+
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:71->[Local Variables] {"x":0.975}
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:72->[Control Flow] Branch Info: Line: 72, Condition: if (x <= 0), Executed: false
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:75->[Method Call] Call Stack: org.apache.commons.math.distribution.FDistributionImpl.cumulativeProbability:75 -> org.apache.commons.math.distribution.FDistributionImpl.getNumeratorDegreesOfFreedom
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:75->[Local Variables] {"n":1.0}
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:76->[Method Call] Call Stack: org.apache.commons.math.distribution.FDistributionImpl.cumulativeProbability:76 -> org.apache.commons.math.distribution.FDistributionImpl.getDenominatorDegreesOfFreedom
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:77->[Local Variables] {"m":1.0}
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:78->[Method Call] Call Stack: org.apache.commons.math.distribution.FDistributionImpl.cumulativeProbability:78 -> org.apache.commons.math.special.Beta.regularizedBeta
+org.apache.commons.math.distribution.FDistributionImpl:cumulativeProbability:81->[Local Variables] {"ret":0.4959706533253018}

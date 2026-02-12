@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FlowSensitiveInlineVariablesTest::testSimpleForIn ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Loop Info: Line: 146, Description: while at line 146
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Branch Info: Line: 146, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.next
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Local Variables] "{c\u003dcom.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate@991cbde}"
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:147 -> com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Control Flow] Branch Info: Line: 147, Condition: if (c != 0), Executed: false
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Loop Info: Line: 146, Description: while at line 146
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Branch Info: Line: 146, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.next
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Local Variables] "{c\u003dcom.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate@78d71df1}"
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:147 -> com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Control Flow] Branch Info: Line: 147, Condition: if (c != 0), Executed: false
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Loop Info: Line: 146, Description: while at line 146
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Branch Info: Line: 146, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:134->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:134 -> com.google.javascript.jscomp.MustBeReachingVariableDef.<init>
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:135->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:135 -> com.google.javascript.jscomp.MustBeReachingVariableDef.analyze
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:136->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:136 -> com.google.common.collect.Lists.newLinkedList
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:140->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:140 -> com.google.javascript.jscomp.FlowSensitiveInlineVariables$GatherCandiates.<init>
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:140->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:140 -> com.google.javascript.jscomp.NodeTraversal.<init>
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:141->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:141 -> com.google.javascript.jscomp.NodeTraversal.getScopeRoot
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:141->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:141 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:140->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:140 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:144->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:144 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:144->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:144 -> com.google.javascript.jscomp.MaybeReachingVariableUse.<init>
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:145->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:145 -> com.google.javascript.jscomp.MaybeReachingVariableUse.analyze
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.List.iterator
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Branch Info: Line: 146, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.next
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Local Variables] "{c\u003dcom.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate@26837057}"
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:147 -> com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Control Flow] Branch Info: Line: 147, Condition: if (c != 0), Executed: false
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Loop Info: Line: 146, Description: while at line 146
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Control Flow] Branch Info: Line: 146, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:146 -> java.util.Iterator.next
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:146->[Local Variables] "{c\u003dcom.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate@2dbc408c}"
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Method Call] Call Stack: com.google.javascript.jscomp.FlowSensitiveInlineVariables.enterScope:147 -> com.google.javascript.jscomp.FlowSensitiveInlineVariables$Candidate.access$100
+com.google.javascript.jscomp.FlowSensitiveInlineVariables:enterScope:147->[Control Flow] Branch Info: Line: 147, Condition: if (c != 0), Executed: false

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CollapseProperties.collapseDeclarationOfNameAndDescendants",
+    "doc": "/**\n   * Collapses definitions of the collapsible properties of a global name.\n   * Recurses on subnames that also represent JavaScript objects with\n   * collapsible properties.\n   *\n   * @param n A node representing a global name\n   * @param alias The flattened name for {@code n}\n   */",
+    "code": "private void collapseDeclarationOfNameAndDescendants(Name n, String alias) {\n    boolean canCollapseChildNames = n.canCollapseUnannotatedChildNames();\n\n    if (n.canCollapse()) {\n      updateObjLitOrFunctionDeclaration(n, alias, canCollapseChildNames);\n    }\n\n    if (n.props != null) {\n      for (Name p : n.props) {\n        collapseDeclarationOfNameAndDescendants(\n            p, appendPropForAlias(alias, p.getBaseName()));\n\n        if (!p.inExterns && canCollapseChildNames &&\n            p.getDeclaration() != null &&\n            p.canCollapse() &&\n            p.getDeclaration().node != null &&\n            p.getDeclaration().node.getParent() != null &&\n            p.getDeclaration().node.getParent().isAssign()) {\n          updateSimpleDeclaration(\n              appendPropForAlias(alias, p.getBaseName()), p, p.getDeclaration());\n        }\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.getBaseName",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

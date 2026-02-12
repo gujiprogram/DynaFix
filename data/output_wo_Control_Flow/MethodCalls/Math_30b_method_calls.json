@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math3.distribution.NormalDistribution.cumulativeProbability",
+    "doc": "/**\n     * {@inheritDoc}\n     *\n     * If {@code x} is more than 40 standard deviations from the mean, 0 or 1\n     * is returned, as in these cases the actual value is within\n     * {@code Double.MIN_VALUE} of 0 or 1.\n     */",
+    "code": "public double cumulativeProbability(double x)  {\n        final double dev = x - mean;\n        if (FastMath.abs(dev) > 40 * standardDeviation) {\n            return dev < 0 ? 0.0d : 1.0d;\n        }\n        return 0.5 * (1 + Erf.erf(dev / (standardDeviation * SQRT2)));\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.sqrt",
+    "doc": "/** Compute the square root of a number.\n     * <p><b>Note:</b> this implementation currently delegates to {@link Math#sqrt}\n     * @param a number on which evaluation is done\n     * @return square root of a\n     */",
+    "code": "public static double sqrt(final double a) {\n        return Math.sqrt(a);\n    }"
+  }
+]

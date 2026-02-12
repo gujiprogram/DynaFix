@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.lang3.math.NumberUtils:createFloat:642->[Local Variables] {"str":"1.23"}
+org.apache.commons.lang3.math.NumberUtils:createFloat:643->[Control Flow] Branch Info: Line: 643, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createFloat:646->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createFloat:646 -> java.lang.Float.valueOf
+org.apache.commons.lang3.math.NumberUtils:createFloat:642->[Local Variables] {"str":"3.40282354e+38"}
+org.apache.commons.lang3.math.NumberUtils:createFloat:643->[Control Flow] Branch Info: Line: 643, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createFloat:646->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createFloat:646 -> java.lang.Float.valueOf

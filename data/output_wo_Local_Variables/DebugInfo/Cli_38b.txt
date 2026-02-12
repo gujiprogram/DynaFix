@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions ===
+
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> java.lang.String.startsWith
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> java.lang.String.length
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:308->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:308 -> java.lang.String.indexOf
+org.apache.commons.cli.DefaultParser:isShortOption:309->[Control Flow] Branch Info: Line: 309, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:309->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:309 -> java.lang.String.substring
+org.apache.commons.cli.DefaultParser:isShortOption:310->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:310 -> org.apache.commons.cli.Options.hasShortOption

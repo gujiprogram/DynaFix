@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang.Entities.addEntities",
+    "doc": "/**\n     * <p>\n     * Adds entities to this entity.\n     * </p>\n     *\n     * @param entityArray\n     *            array of entities to be added\n     */",
+    "code": "public void addEntities(String[][] entityArray) {\n        for (int i = 0; i < entityArray.length; ++i) {\n            addEntity(entityArray[i][0], Integer.parseInt(entityArray[i][1]));\n        }\n    }"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.report",
+    "doc": "/**\n   * Report an error or warning.\n   */",
+    "code": "public abstract void report(JSError error);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CheckGlobalThis.shouldReportThis",
+    "doc": "/**\n   * Since this pass reports errors only when a global {@code this} keyword\n   * is encountered, there is no reason to traverse non global contexts.\n   */",
+    "code": "private boolean shouldReportThis(Node n, Node parent) {\n    if (assignLhsChild != null) {\n      return true;\n    }\n\n    return parent != null && NodeUtil.isGet(parent);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.makeError",
+    "doc": "/**\n   * Creates a JSError during NodeTraversal.\n   *\n   * @param n Determines the line and char position within the source file name\n   * @param type The DiagnosticType\n   * @param arguments Arguments to be incorporated into the message\n   */",
+    "code": "public JSError makeError(Node n, CheckLevel level, DiagnosticType type,\n      String... arguments) {\n    return JSError.make(getSourceName(), n.getLineno(), n.getCharno(), level,\n        type, arguments);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

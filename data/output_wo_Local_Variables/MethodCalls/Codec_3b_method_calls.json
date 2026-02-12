@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.codec.language.DoubleMetaphone$DoubleMetaphoneResult.append",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.codec.language.DoubleMetaphone.charAt",
+    "doc": "/**\n     * Handles 'S' cases\n     */",
+    "code": "return charAt(value, index + 1) == 'R' ? index + 2 : index + 1;\n    }\n\n    private int handleS(String value,\n                        DoubleMetaphoneResult result,\n                        int index,\n                        boolean slavoGermanic) {"
+  },
+  {
+    "method": "org.apache.commons.codec.language.DoubleMetaphone.contains",
+    "doc": "/**\n     * Complex condition 0 for 'M'\n     */",
+    "code": "return contains(value, index - 1, 3, \"UMB\") &&\n                ((index + 1) == value.length() - 1 || contains(value,"
+  }
+]

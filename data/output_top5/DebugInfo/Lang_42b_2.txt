@@ -1,0 +1,77 @@
+
+=== Debug Info for Test: org.apache.commons.lang.StringEscapeUtilsTest::testEscapeHtmlHighUnicode ===
+Exception: junit.framework.ComparisonFailure: High unicode was not escaped correctly expected:<&#[119650];> but was:<&#[55348;&#57186];>
+
+org.apache.commons.lang.Entities:doUnescape:930->[Local Variables] {"i":8}
+org.apache.commons.lang.Entities:doUnescape:931->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:931 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:932->[Control Flow] Branch Info: Line: 932, Condition: if (c == c), Executed: true
+org.apache.commons.lang.Entities:doUnescape:933->[Local Variables] {"nextIdx":9}
+org.apache.commons.lang.Entities:doUnescape:934->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:934 -> java.lang.String.indexOf
+org.apache.commons.lang.Entities:doUnescape:934->[Local Variables] {"semiColonIdx":15}
+org.apache.commons.lang.Entities:doUnescape:935->[Control Flow] Branch Info: Line: 935, Condition: if (semiColonIdx == semiColonIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:939->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:939 -> java.lang.String.indexOf
+org.apache.commons.lang.Entities:doUnescape:939->[Local Variables] {"amphersandIdx":-1}
+org.apache.commons.lang.Entities:doUnescape:940->[Control Flow] Branch Info: Line: 940, Condition: if (amphersandIdx != amphersandIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:940->[Control Flow] Branch Info: Line: 940, Condition: if (semiColonIdx < semiColonIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:945->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:945 -> java.lang.String.substring
+org.apache.commons.lang.Entities:doUnescape:945->[Local Variables] {"entityContent":"#57186"}
+org.apache.commons.lang.Entities:doUnescape:946->[Local Variables] {"entityValue":-1}
+org.apache.commons.lang.Entities:doUnescape:947->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:947 -> java.lang.String.length
+org.apache.commons.lang.Entities:doUnescape:948->[Control Flow] Branch Info: Line: 948, Condition: if (entityContentLen > 0), Executed: true
+org.apache.commons.lang.Entities:doUnescape:949->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:949 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:949->[Control Flow] Branch Info: Line: 949, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: true
+org.apache.commons.lang.Entities:doUnescape:951->[Control Flow] Branch Info: Line: 951, Condition: if (entityContentLen > entityContentLen), Executed: true
+org.apache.commons.lang.Entities:doUnescape:952->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:952 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:961->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:961 -> java.lang.String.substring
+org.apache.commons.lang.Entities:doUnescape:961->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:961 -> java.lang.Integer.parseInt
+org.apache.commons.lang.Entities:doUnescape:963->[Local Variables] {"entityValue":57186}
+org.apache.commons.lang.Entities:doUnescape:964->[Control Flow] Branch Info: Line: 964, Condition: if (entityValue > entityValue), Executed: false
+org.apache.commons.lang.Entities:doUnescape:948->[Control Flow] Branch Info: Line: 948, Condition: if (entityContentLen > 0), Executed: false
+org.apache.commons.lang.Entities:doUnescape:951->[Control Flow] Branch Info: Line: 951, Condition: if (entityContentLen > entityContentLen), Executed: false
+org.apache.commons.lang.Entities:doUnescape:976->[Control Flow] Branch Info: Line: 976, Condition: if (entityValue == entityValue), Executed: false
+org.apache.commons.lang.Entities:doUnescape:981->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:981 -> java.io.Writer.write
+org.apache.commons.lang.Entities:doUnescape:982->[Local Variables] {"writer":{"buf":"𝍢","lock":"𝍢"}}
+org.apache.commons.lang.Entities:doUnescape:983->[Local Variables] {"i":15}
+org.apache.commons.lang.Entities:doUnescape:930->[Control Flow] Loop Info: Line: 930, Description: while at line 930
+org.apache.commons.lang.Entities:doUnescape:930->[Control Flow] Branch Info: Line: 930, Condition: if (len < len), Executed: false
+org.apache.commons.lang.Entities:doUnescape:927->[Local Variables] {"str":"\u0026#55348;\u0026#57186;","writer":{"buf":"","lock":""},"firstAmp":0}
+org.apache.commons.lang.Entities:doUnescape:928->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:928 -> java.io.Writer.write
+org.apache.commons.lang.Entities:doUnescape:929->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:929 -> java.lang.String.length
+org.apache.commons.lang.Entities:doUnescape:929->[Local Variables] {"len":16}
+org.apache.commons.lang.Entities:doUnescape:930->[Control Flow] Branch Info: Line: 930, Condition: if (len < len), Executed: true
+org.apache.commons.lang.Entities:doUnescape:930->[Local Variables] {"i":0}
+org.apache.commons.lang.Entities:doUnescape:931->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:931 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:931->[Local Variables] {"c":"\u0026"}
+org.apache.commons.lang.Entities:doUnescape:932->[Control Flow] Branch Info: Line: 932, Condition: if (c == c), Executed: true
+org.apache.commons.lang.Entities:doUnescape:933->[Local Variables] {"nextIdx":1}
+org.apache.commons.lang.Entities:doUnescape:934->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:934 -> java.lang.String.indexOf
+org.apache.commons.lang.Entities:doUnescape:934->[Local Variables] {"semiColonIdx":7}
+org.apache.commons.lang.Entities:doUnescape:935->[Control Flow] Branch Info: Line: 935, Condition: if (semiColonIdx == semiColonIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:939->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:939 -> java.lang.String.indexOf
+org.apache.commons.lang.Entities:doUnescape:939->[Local Variables] {"amphersandIdx":8}
+org.apache.commons.lang.Entities:doUnescape:940->[Control Flow] Branch Info: Line: 940, Condition: if (amphersandIdx != amphersandIdx), Executed: true
+org.apache.commons.lang.Entities:doUnescape:940->[Control Flow] Branch Info: Line: 940, Condition: if (amphersandIdx != amphersandIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:940->[Control Flow] Branch Info: Line: 940, Condition: if (semiColonIdx < semiColonIdx), Executed: false
+org.apache.commons.lang.Entities:doUnescape:945->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:945 -> java.lang.String.substring
+org.apache.commons.lang.Entities:doUnescape:945->[Local Variables] {"entityContent":"#55348"}
+org.apache.commons.lang.Entities:doUnescape:946->[Local Variables] {"entityValue":-1}
+org.apache.commons.lang.Entities:doUnescape:947->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:947 -> java.lang.String.length
+org.apache.commons.lang.Entities:doUnescape:947->[Local Variables] {"entityContentLen":6}
+org.apache.commons.lang.Entities:doUnescape:948->[Control Flow] Branch Info: Line: 948, Condition: if (entityContentLen > 0), Executed: true
+org.apache.commons.lang.Entities:doUnescape:949->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:949 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:949->[Control Flow] Branch Info: Line: 949, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: true
+org.apache.commons.lang.Entities:doUnescape:951->[Control Flow] Branch Info: Line: 951, Condition: if (entityContentLen > entityContentLen), Executed: true
+org.apache.commons.lang.Entities:doUnescape:952->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:952 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:doUnescape:953->[Local Variables] {"isHexChar":"5"}
+org.apache.commons.lang.Entities:doUnescape:961->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:961 -> java.lang.String.substring
+org.apache.commons.lang.Entities:doUnescape:961->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:961 -> java.lang.Integer.parseInt
+org.apache.commons.lang.Entities:doUnescape:963->[Local Variables] {"entityValue":55348}
+org.apache.commons.lang.Entities:doUnescape:964->[Control Flow] Branch Info: Line: 964, Condition: if (entityValue > entityValue), Executed: false
+org.apache.commons.lang.Entities:doUnescape:948->[Control Flow] Branch Info: Line: 948, Condition: if (entityContentLen > 0), Executed: false
+org.apache.commons.lang.Entities:doUnescape:951->[Control Flow] Branch Info: Line: 951, Condition: if (entityContentLen > entityContentLen), Executed: false
+org.apache.commons.lang.Entities:doUnescape:976->[Control Flow] Branch Info: Line: 976, Condition: if (entityValue == entityValue), Executed: false
+org.apache.commons.lang.Entities:doUnescape:981->[Method Call] Call Stack: org.apache.commons.lang.Entities.doUnescape:981 -> java.io.Writer.write
+org.apache.commons.lang.Entities:doUnescape:982->[Local Variables] {"writer":{"buf":"?","lock":"?"}}
+org.apache.commons.lang.Entities:doUnescape:983->[Local Variables] {"i":7}
+org.apache.commons.lang.Entities:doUnescape:930->[Control Flow] Loop Info: Line: 930, Description: while at line 930
+org.apache.commons.lang.Entities:doUnescape:930->[Control Flow] Branch Info: Line: 930, Condition: if (len < len), Executed: true

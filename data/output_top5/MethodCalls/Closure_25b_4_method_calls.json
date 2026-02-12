@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Scope.getParent",
+    "doc": "/**\n   * Gets the container node of the scope. This is typically the FUNCTION\n   * node or the global BLOCK/SCRIPT node.\n   */",
+    "code": "public Scope getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getSlot",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "public StaticSlot<JSType> getSlot(String name) {\n    return getVar(name);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public StaticSlot<JSType> getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.isUnflowable",
+    "doc": "/**\n     * Gets the outcome scope if we do know the outcome of the entire\n     * expression.\n     */",
+    "code": "private boolean isUnflowable(Var v) {\n    return v != null && v.isLocal() && v.isMarkedEscaped() &&\n        v.getScope() == syntacticScope;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.FlowScope.getSlot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public void setJSType(JSType jsType) {\n      this.jsType = jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.getType",
+    "doc": "/**\n   * Returns the type information, if any, for this slot.\n   * @return The type or {@code null} if no type is declared for it.\n   */",
+    "code": "T getType();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.isTypeInferred",
+    "doc": "/**\n   * Returns whether the type has been inferred (as opposed to declared).\n   */",
+    "code": "boolean isTypeInferred();"
+  }
+]

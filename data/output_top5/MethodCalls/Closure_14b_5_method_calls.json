@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough",
+    "doc": "/**\n   * Computes the follow() node of a given node and its parent. There is a side\n   * effect when calling this function. If this function computed an edge that\n   * exists a FINALLY, it'll attempt to connect the fromNode to the outer\n   * FINALLY according to the finallyMap.\n   *\n   * @param fromNode The original source node since {@code node} is changed\n   *        during recursion.\n   * @param node The node that follow() should compute.\n   */",
+    "code": "return computeFallThrough(parent.getLastChild());\n          } else { // and have no FINALLY."
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode",
+    "doc": "/**\n   * Given an entry node, find all the nodes reachable from that node\n   * and prioritize them.\n   */",
+    "code": "static Node computeFollowNode(Node node, ControlFlowAnalysis cfa) {\n    return computeFollowNode(node, node, cfa);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler",
+    "doc": "/**\n   * Connects cfgNode to the proper CATCH block if target subtree might throw\n   * an exception. If there are FINALLY blocks reached before a CATCH, it will\n   * make the corresponding entry in finallyMap.\n   */",
+    "code": "private void connectToPossibleExceptionHandler(Node cfgNode, Node target) {\n    if (mayThrowException(target) && !exceptionHandler.isEmpty()) {\n      Node lastJump = cfgNode;\n      for (Node handler : exceptionHandler) {\n        if (handler.isFunction()) {\n          return;\n        }\n        Preconditions.checkState(handler.isTry());\n        Node catchBlock = NodeUtil.getCatchBlock(handler);\n\n        if (!NodeUtil.hasCatchHandler(catchBlock)) { // No catch but a FINALLY.\n          if (lastJump == cfgNode) {\n            createEdge(cfgNode, Branch.ON_EX, handler.getLastChild());\n          } else {\n            finallyMap.put(lastJump, handler.getLastChild());\n          }\n        } else { // Has a catch.\n          if (lastJump == cfgNode) {\n            createEdge(cfgNode, Branch.ON_EX, catchBlock);\n            return;\n          } else {\n            finallyMap.put(lastJump, catchBlock);\n          }\n        }\n        lastJump = handler;\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.createEdge",
+    "doc": "/**\n   * Connects the two nodes in the control flow graph.\n   *\n   * @param fromNode Source.\n   * @param toNode Destination.\n   */",
+    "code": "private void createEdge(Node fromNode, ControlFlowGraph.Branch branch,\n      Node toNode) {\n    cfg.createNode(fromNode);\n    cfg.createNode(toNode);\n    cfg.connectIfNotFound(fromNode, branch, toNode);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getConditionExpression",
+    "doc": "/**\n   * Gets the condition of an ON_TRUE / ON_FALSE CFG edge.\n   * @param n a node with an outgoing conditional CFG edge\n   * @return the condition node or null if the condition is not obviously a node\n   */",
+    "code": "static Node getConditionExpression(Node n) {\n    switch (n.getType()) {\n      case Token.IF:\n      case Token.WHILE:\n        return n.getFirstChild();\n      case Token.DO:\n        return n.getLastChild();\n      case Token.FOR:\n        switch (n.getChildCount()) {\n          case 3:\n            return null;\n          case 4:\n            return n.getFirstChild().getNext();\n        }\n        throw new IllegalArgumentException(\"malformed 'for' statement \" + n);\n      case Token.CASE:\n        return null;\n    }\n    throw new IllegalArgumentException(n + \" does not have a condition.\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  }
+]

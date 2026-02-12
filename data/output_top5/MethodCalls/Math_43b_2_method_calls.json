@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.descriptive.SummaryStatistics.checkEmpty",
+    "doc": "/**\n     * Throws IllegalStateException if n > 0.\n     */",
+    "code": "private void checkEmpty() {\n        if (n > 0) {\n            throw new MathIllegalStateException(\n                LocalizedFormats.VALUES_ADDED_BEFORE_CONFIGURING_STATISTIC, n);\n        }\n    }"
+  }
+]

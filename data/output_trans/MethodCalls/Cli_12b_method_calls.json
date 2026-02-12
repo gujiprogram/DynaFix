@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member\n     * of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Util.stripLeadingHyphens",
+    "doc": "/**\n     * <p>Remove the hyphens from the begining of <code>str</code> and\n     * return the new String.</p>\n     *\n     * @param str The string from which the hyphens should be removed.\n     *\n     * @return the new String.\n     */",
+    "code": "static String stripLeadingHyphens(String str)\n    {\n        if (str == null) {\n            return null;\n        }\n        if (str.startsWith(\"--\"))\n        {\n            return str.substring(2, str.length());\n        }\n        else if (str.startsWith(\"-\"))\n        {\n            return str.substring(1, str.length());\n        }\n\n        return str;\n    }"
+  }
+]

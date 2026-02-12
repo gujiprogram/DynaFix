@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue582 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x=[-0.]0> but was:<var x=[]0>
+
+com.google.javascript.jscomp.CodeConsumer:addNumber:235->[Local Variables] {"x":-0.0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:236->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:236 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:addNumber:236->[Local Variables] {"prev":"\u003d"}
+com.google.javascript.jscomp.CodeConsumer:addNumber:237->[Control Flow] Branch Info: Line: 237, Condition: if (x < 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:237->[Control Flow] Branch Info: Line: 237, Condition: if (prev == prev), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:241->[Control Flow] Branch Info: Line: 241, Condition: if (x == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addNumber:242->[Local Variables] {"value":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:243->[Local Variables] {"mantissa":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:244->[Local Variables] {"exp":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:245->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:245 -> java.lang.Math.abs
+com.google.javascript.jscomp.CodeConsumer:addNumber:245->[Control Flow] Branch Info: Line: 245, Condition: if (x >= 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:246->[Control Flow] Branch Info: Line: 246, Condition: if (value == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:251->[Control Flow] Branch Info: Line: 251, Condition: if (exp > exp), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:254->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:254 -> java.lang.Long.toString
+com.google.javascript.jscomp.CodeConsumer:addNumber:254->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:254 -> com.google.javascript.jscomp.CodeConsumer.add

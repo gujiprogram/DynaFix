@@ -1,0 +1,141 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue537a ===
+Exception: junit.framework.ComparisonFailure: expected:<[Function Foo.prototype.method: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s).]> but was:<[Property baz never defined on Bar]>
+
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:358->[Control Flow] Branch Info: Line: 358, Condition: if (prototype == null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:366->[Control Flow] Branch Info: Line: 366, Condition: if (prototype != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:369 -> com.google.javascript.rhino.jstype.SimpleSlot.<init>
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:370->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:370 -> com.google.javascript.rhino.jstype.PrototypeObjectType.setOwnerFunction
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:374->[Local Variables] "{prototype\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:375 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:376 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:378->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:378 -> com.google.javascript.rhino.jstype.FunctionType.addSubType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:381 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:382->[Control Flow] Branch Info: Line: 382, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:391->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:391 -> com.google.javascript.rhino.jstype.FunctionType.clearCachedValues
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Local Variables] "{baseType\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:375 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:376 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Local Variables] "{superClass\u003dfunction (new:Object, *): ?}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:378->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:378 -> com.google.javascript.rhino.jstype.FunctionType.addSubType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:381 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:382->[Control Flow] Branch Info: Line: 382, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:391->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:391 -> com.google.javascript.rhino.jstype.FunctionType.clearCachedValues
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:339->[Local Variables] "{baseType\u003d{method: function (this:Foo): undefined}}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:340->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:340 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:340->[Control Flow] Branch Info: Line: 340, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:341->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:341 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:341->[Control Flow] Branch Info: Line: 341, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:342->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:342 -> com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:343 -> com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (baseType == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:349 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:357->[Local Variables] "{prototype\u003d{method: function (this:Foo): undefined}}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue537b ===
+Exception: junit.framework.ComparisonFailure: expected:<[Function Bar.prototype.baz: called with 1 argument(s). Function requires at least 0 argument(s) and no more than 0 argument(s).]> but was:<[Property baz never defined on Bar]>
+
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:358->[Control Flow] Branch Info: Line: 358, Condition: if (prototype == null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:366->[Control Flow] Branch Info: Line: 366, Condition: if (prototype != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:369 -> com.google.javascript.rhino.jstype.SimpleSlot.<init>
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:370->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:370 -> com.google.javascript.rhino.jstype.PrototypeObjectType.setOwnerFunction
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:374->[Local Variables] "{prototype\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:375 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:376 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:378->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:378 -> com.google.javascript.rhino.jstype.FunctionType.addSubType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:381 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:382->[Control Flow] Branch Info: Line: 382, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:391->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:391 -> com.google.javascript.rhino.jstype.FunctionType.clearCachedValues
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Local Variables] "{baseType\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:375 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:376 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Local Variables] "{superClass\u003dfunction (new:Object, *): ?}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:378->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:378 -> com.google.javascript.rhino.jstype.FunctionType.addSubType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:381 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:382->[Control Flow] Branch Info: Line: 382, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:391->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:391 -> com.google.javascript.rhino.jstype.FunctionType.clearCachedValues
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:339->[Local Variables] "{baseType\u003d{method: function (this:Foo): undefined}}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:340->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:340 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:340->[Control Flow] Branch Info: Line: 340, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:341->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:341 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:341->[Control Flow] Branch Info: Line: 341, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:342->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:342 -> com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:342->[Control Flow] Branch Info: Line: 342, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:343 -> com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (baseType == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:349 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:357->[Local Variables] "{prototype\u003d{method: function (this:Foo): undefined}}"
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypedScopeCreatorTest::testPropertyOnUnknownSuperClass2 ===
+Exception: junit.framework.ComparisonFailure: expected:<[?]> but was:<[number]>
+
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Local Variables] "{baseType\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:343 -> com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:343->[Control Flow] Branch Info: Line: 343, Condition: if (baseType == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototypeBasedOn:349->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototypeBasedOn:349 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:357->[Local Variables] "{prototype\u003d{bar: number}}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:358->[Control Flow] Branch Info: Line: 358, Condition: if (prototype == null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:362 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:362->[Control Flow] Branch Info: Line: 362, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:366->[Control Flow] Branch Info: Line: 366, Condition: if (prototype != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:369->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:369 -> com.google.javascript.rhino.jstype.SimpleSlot.<init>
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:370->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:370 -> com.google.javascript.rhino.jstype.PrototypeObjectType.setOwnerFunction
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:374->[Local Variables] "{prototype\u003dFoo.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:375 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:376->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:376 -> com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:378->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:378 -> com.google.javascript.rhino.jstype.FunctionType.addSubType
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:377->[Control Flow] Branch Info: Line: 377, Condition: if (superClass != null), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:381 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:375->[Control Flow] Branch Info: Line: 375, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:382->[Control Flow] Branch Info: Line: 382, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:390->[Control Flow] Branch Info: Line: 390, Condition: if (replacedPrototype != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:setPrototype:391->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.setPrototype:391 -> com.google.javascript.rhino.jstype.FunctionType.clearCachedValues

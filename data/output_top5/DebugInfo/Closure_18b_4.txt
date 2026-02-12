@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testDependencySorting ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Compiler:report:2028->[Local Variables] "{error\u003dJSC_UNDEFINED_VARIABLE. variable goog is undeclared at i0 line 1 : 0}"
+com.google.javascript.jscomp.Compiler:report:2029->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.report:2029 -> com.google.javascript.jscomp.JSError.getDefaultLevel
+com.google.javascript.jscomp.Compiler:report:2029->[Local Variables] {"level":"ERROR"}
+com.google.javascript.jscomp.Compiler:report:2030->[Control Flow] Branch Info: Line: 2030, Condition: if (this.warningsGuard != null), Executed: true
+com.google.javascript.jscomp.Compiler:report:2031->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.report:2031 -> com.google.javascript.jscomp.WarningsGuard.level
+com.google.javascript.jscomp.Compiler:report:2031->[Local Variables] {"newLevel":"OFF"}
+com.google.javascript.jscomp.Compiler:report:2032->[Control Flow] Branch Info: Line: 2032, Condition: if (newLevel != null), Executed: true
+com.google.javascript.jscomp.Compiler:report:2030->[Control Flow] Branch Info: Line: 2030, Condition: if (this.warningsGuard != null), Executed: false
+com.google.javascript.jscomp.Compiler:report:2032->[Control Flow] Branch Info: Line: 2032, Condition: if (newLevel != null), Executed: false
+com.google.javascript.jscomp.Compiler:report:2036->[Local Variables] {"level":"OFF"}
+com.google.javascript.jscomp.Compiler:report:2037->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.report:2037 -> com.google.javascript.jscomp.CheckLevel.isOn
+com.google.javascript.jscomp.Compiler:report:2037->[Control Flow] Branch Info: Line: 2037, Condition: if (com.google.javascript.jscomp.CheckLevel.isOn() != 0), Executed: false

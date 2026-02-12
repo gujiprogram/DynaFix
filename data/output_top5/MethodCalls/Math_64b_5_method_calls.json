@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setConvergenceChecker",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setCostRelativeTolerance",
+    "doc": "/**\n     * Set the desired relative error in the sum of squares.\n     * <p>This setting is used only if the {@link #setConvergenceChecker vectorial\n     * convergence checker} is set to null.</p>\n     * @param costRelativeTolerance desired relative error in the sum of squares\n     */",
+    "code": "public void setCostRelativeTolerance(double costRelativeTolerance) {\n        this.costRelativeTolerance = costRelativeTolerance;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setInitialStepBoundFactor",
+    "doc": "/**\n     * Set the positive input variable used in determining the initial step bound.\n     * This bound is set to the product of initialStepBoundFactor and the euclidean\n     * norm of diag*x if nonzero, or else to initialStepBoundFactor itself. In most\n     * cases factor should lie in the interval (0.1, 100.0). 100.0 is a generally\n     * recommended value.\n     *\n     * @param initialStepBoundFactor initial step bound factor\n     */",
+    "code": "public void setInitialStepBoundFactor(double initialStepBoundFactor) {\n        this.initialStepBoundFactor = initialStepBoundFactor;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setMaxIterations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setOrthoTolerance",
+    "doc": "/**\n     * Set the desired max cosine on the orthogonality.\n     * <p>This setting is always used, regardless of the {@link #setConvergenceChecker\n     * vectorial convergence checker} being null or non-null.</p>\n     * @param orthoTolerance desired max cosine on the orthogonality\n     * between the function vector and the columns of the jacobian\n     */",
+    "code": "public void setOrthoTolerance(double orthoTolerance) {\n        this.orthoTolerance = orthoTolerance;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setParRelativeTolerance",
+    "doc": "/**\n     * Set the desired relative error in the approximate solution parameters.\n     * <p>This setting is used only if the {@link #setConvergenceChecker vectorial\n     * convergence checker} is set to null.</p>\n     * @param parRelativeTolerance desired relative error\n     * in the approximate solution parameters\n     */",
+    "code": "public void setParRelativeTolerance(double parRelativeTolerance) {\n        this.parRelativeTolerance = parRelativeTolerance;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.setQRRankingThreshold",
+    "doc": "/**\n     * Set the desired threshold for QR ranking.\n     * <p>\n     * If the squared norm of a column vector is smaller or equal to this threshold\n     * during QR decomposition, it is considered to be a zero vector and hence the\n     * rank of the matrix is reduced.\n     * </p>\n     * @param threshold threshold for QR ranking\n     */",
+    "code": "public void setQRRankingThreshold(final double threshold) {\n        this.qrRankingThreshold = threshold;\n    }"
+  }
+]

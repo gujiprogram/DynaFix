@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback.process",
+    "doc": "/**\n   * Convenience method for running this pass over a tree with this\n   * class as a callback.\n   */",
+    "code": "public void process(Node externs, Node root) {\n    NodeTraversal.traverseRoots(\n        compiler, Lists.newArrayList(externs, root), this);\n  }"
+  }
+]

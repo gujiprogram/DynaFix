@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexSolver.doIteration",
+    "doc": "/**\n     * Runs one iteration of the Simplex method on the given model.\n     * @param tableau simple tableau for the problem\n     * @throws OptimizationException if the maximal iteration count has been\n     * exceeded or if the model is found not to have a bounded solution\n     */",
+    "code": "protected void doIteration(final SimplexTableau tableau)\n        throws OptimizationException {\n\n        incrementIterationsCounter();\n\n        Integer pivotCol = getPivotColumn(tableau);\n        Integer pivotRow = getPivotRow(pivotCol, tableau);\n        if (pivotRow == null) {\n            throw new UnboundedSolutionException();\n        }\n\n        double pivotVal = tableau.getEntry(pivotRow, pivotCol);\n        tableau.divideRow(pivotRow, pivotVal);\n\n        for (int i = 0; i < tableau.getHeight(); i++) {\n            if (i != pivotRow) {\n                double multiplier = tableau.getEntry(i, pivotCol);\n                tableau.subtractRow(i, pivotRow, multiplier);\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexSolver.isOptimal",
+    "doc": "/**\n     * Returns whether the problem is at an optimal state.\n     * @param tableau simple tableau for the problem\n     * @return whether the model has been solved\n     */",
+    "code": "public boolean isOptimal(final SimplexTableau tableau) {\n        if (tableau.getNumArtificialVariables() > 0) {\n            return false;\n        }\n        for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {\n            if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexSolver.solvePhase1",
+    "doc": "/**\n     * Solves Phase 1 of the Simplex method.\n     * @param tableau simple tableau for the problem\n     * @exception OptimizationException if the maximal number of iterations is\n     * exceeded, or if the problem is found not to have a bounded solution, or\n     * if there is no feasible solution\n     */",
+    "code": "protected void solvePhase1(final SimplexTableau tableau)\n        throws OptimizationException {\n        if (tableau.getNumArtificialVariables() == 0) {\n            return;\n        }\n\n        while (!isPhase1Solved(tableau)) {\n            doIteration(tableau);\n        }\n\n        if (!MathUtils.equals(tableau.getEntry(0, tableau.getRhsOffset()), 0, epsilon)) {\n            throw new NoFeasibleSolutionException();\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.discardArtificialVariables",
+    "doc": "/**\n     * Removes the phase 1 objective function and artificial variables from this tableau.\n     */",
+    "code": "protected void discardArtificialVariables() {\n        if (numArtificialVariables == 0) {\n            return;\n        }\n        int width = getWidth() - numArtificialVariables - 1;\n        int height = getHeight() - 1;\n        double[][] matrix = new double[height][width];\n        for (int i = 0; i < height; i++) {\n            for (int j = 0; j < width - 1; j++) {\n                matrix[i][j] = getEntry(i + 1, j + 1);\n            }\n            matrix[i][width - 1] = getEntry(i + 1, getRhsOffset());\n        }\n        this.tableau = new Array2DRowRealMatrix(matrix);\n        this.numArtificialVariables = 0;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getSolution",
+    "doc": "/**\n     * Get the current solution.\n     *\n     * @return current solution\n     */",
+    "code": "protected RealPointValuePair getSolution() {\n      double[] coefficients = new double[getOriginalNumDecisionVariables()];\n      Integer negativeVarBasicRow = getBasicRowForSolution(getNegativeDecisionVariableOffset());\n      double mostNegative = negativeVarBasicRow == null ? 0 : getEntry(negativeVarBasicRow, getRhsOffset());\n      Set<Integer> basicRows = new HashSet<Integer>();\n      for (int i = 0; i < coefficients.length; i++) {\n          Integer basicRow = getBasicRowForSolution(getNumObjectiveFunctions() + i);\n          if (basicRows.contains(basicRow)) {\n              coefficients[i] = 0;\n          } else {\n              basicRows.add(basicRow);\n              coefficients[i] =\n                  (basicRow == null ? 0 : getEntry(basicRow, getRhsOffset())) -\n                  (restrictToNonNegative ? 0 : mostNegative);\n          }\n      }\n        return new RealPointValuePair(coefficients, f.getValue(coefficients));\n    }"
+  }
+]

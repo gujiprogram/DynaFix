@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.DiscreteRealDistributionTest::testIssue942 ===
+Exception: java.lang.ArrayStoreException: org.apache.commons.math3.distribution.DiscreteRealDistributionTest$2
+
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Control Flow] Branch Info: Line: 95, Condition: if (java.lang.Double.doubleValue() < 0), Executed: false
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:98->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:98 -> org.apache.commons.math3.util.Pair.getValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:98->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:98 -> java.lang.Double.doubleValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:91->[Local Variables] {"probs":[0.0,1.0]}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Control Flow] Loop Info: Line: 92, Description: while at line 92
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:92 -> java.util.List.size
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Control Flow] Branch Info: Line: 92, Condition: if (samples < samples), Executed: false
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:101->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:101 -> org.apache.commons.math3.util.MathArrays.normalizeArray
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:101->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:101 -> org.apache.commons.math3.util.MathArrays.normalizeArray
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:68->[Local Variables] {"samples":[{"value":0.0},{"value":1.0}]}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:69->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:69 -> org.apache.commons.math3.random.Well19937c.<init>
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:85->[Local Variables] "{rng\u003dorg.apache.commons.math3.random.Well19937c@68217d41}"
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:89->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:89 -> java.util.List.size
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:89->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:89 -> java.util.ArrayList.<init>
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:90->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:90 -> java.util.List.size
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:91->[Local Variables] {"probs":[0.0,0.0]}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:92 -> java.util.List.size
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Control Flow] Branch Info: Line: 92, Condition: if (samples < samples), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Local Variables] {"i":0}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:93->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:93 -> java.util.List.get
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:93->[Local Variables] {"sample":{"value":0.0}}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:94->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:94 -> org.apache.commons.math3.util.Pair.getKey
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:94->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:94 -> java.util.List.add
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:95 -> org.apache.commons.math3.util.Pair.getValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:95 -> java.lang.Double.doubleValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Control Flow] Branch Info: Line: 95, Condition: if (java.lang.Double.doubleValue() < 0), Executed: false
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:98->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:98 -> org.apache.commons.math3.util.Pair.getValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:98->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:98 -> java.lang.Double.doubleValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Control Flow] Loop Info: Line: 92, Description: while at line 92
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:92 -> java.util.List.size
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Control Flow] Branch Info: Line: 92, Condition: if (samples < samples), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:92->[Local Variables] {"i":1}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:93->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:93 -> java.util.List.get
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:93->[Local Variables] {"sample":{"value":1.0}}
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:94->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:94 -> org.apache.commons.math3.util.Pair.getKey
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:94->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:94 -> java.util.List.add
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:95 -> org.apache.commons.math3.util.Pair.getValue
+org.apache.commons.math3.distribution.DiscreteDistribution:<init>:95->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.<init>:95 -> java.lang.Double.doubleValue

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.ode.events.EventHandler.g",
+    "doc": "/** Compute the value of the switching function.\n\n   * <p>The discrete events are generated when the sign of this\n   * switching function changes. The integrator will take care to change\n   * the stepsize in such a way these events occur exactly at step boundaries.\n   * The switching function must be continuous in its roots neighborhood\n   * (but not necessarily smooth), as the integrator will need to find its\n   * roots to locate precisely the events.</p>\n\n   * @param t current value of the independent <i>time</i> variable\n   * @param y array containing the current value of the state vector\n   * @return value of the g switching function\n   * @exception EventException if the switching function cannot be evaluated\n   */",
+    "code": "double g(double t, double[] y) throws EventException;"
+  }
+]

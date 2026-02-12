@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.apache.commons.cli.UtilTest::testStripLeadingAndTrailingQuotes ===
+
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:64->[Local Variables] {"str":"\"foo\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:65->[Control Flow] Branch Info: Line: 65, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:65->[Control Flow] Branch Info: Line: 65, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Local Variables] {"str":"foo\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:69->[Local Variables] {"length":4}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:70->[Control Flow] Branch Info: Line: 70, Condition: if (java.lang.String.endsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:70->[Control Flow] Branch Info: Line: 70, Condition: if (java.lang.String.endsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:74->[Local Variables] {"str":"foo"}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:64->[Local Variables] {"str":"foo \"bar\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:65->[Control Flow] Branch Info: Line: 65, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:69->[Local Variables] {"length":9}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:70->[Control Flow] Branch Info: Line: 70, Condition: if (java.lang.String.endsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:70->[Control Flow] Branch Info: Line: 70, Condition: if (java.lang.String.endsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:74->[Local Variables] {"str":"foo \"bar"}

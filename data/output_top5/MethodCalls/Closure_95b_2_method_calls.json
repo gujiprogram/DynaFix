@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator.getNativeType",
+    "doc": "/**\n   * Given a node, determines whether that node names a prototype\n   * property, and if so, returns the qualfied name node representing\n   * the owner of that property. Otherwise, returns null.\n   */",
+    "code": "private JSType getNativeType(JSTypeNative nativeType) {\n    return typeRegistry.getNativeType(nativeType);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setJSType",
+    "doc": "/**\n   * Copies source file and name information from the other node to the\n   * entire tree rooted at this node.\n   * @return this\n   */",
+    "code": "public void setJSType(JSType jsType) {\n      this.jsType = jsType;\n  }"
+  }
+]

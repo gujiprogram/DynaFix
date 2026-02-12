@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.ListenersLostOnResetMockTest::listener ===
+Exception: junit.framework.AssertionFailedError:
+
+org.mockito.internal.util.MockUtil:resetMock:62->[Local Variables] "{mock\u003dMock for List, hashCode: 1244394115}"
+org.mockito.internal.util.MockUtil:resetMock:63->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:63 -> org.mockito.internal.util.MockUtil.getMockHandler
+org.mockito.internal.util.MockUtil:resetMock:63->[Local Variables] "{oldMockHandler\u003dorg.mockito.internal.InvocationNotifierHandler@33255547}"
+org.mockito.internal.util.MockUtil:resetMock:64->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:64 -> org.mockito.internal.MockHandler.<init>
+org.mockito.internal.util.MockUtil:resetMock:64->[Local Variables] "{newMockHandler\u003dorg.mockito.internal.MockHandler@32a826f}"
+org.mockito.internal.util.MockUtil:resetMock:65->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:65 -> org.mockito.Mockito.withSettings
+org.mockito.internal.util.MockUtil:resetMock:65->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:65 -> org.mockito.MockSettings.defaultAnswer
+org.mockito.internal.util.MockUtil:resetMock:65->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:65 -> org.mockito.internal.creation.MethodInterceptorFilter.<init>
+org.mockito.internal.util.MockUtil:resetMock:65->[Local Variables] "{newFilter\u003dorg.mockito.internal.creation.MethodInterceptorFilter@19321c7a}"
+org.mockito.internal.util.MockUtil:resetMock:66->[Method Call] Call Stack: org.mockito.internal.util.MockUtil.resetMock:66 -> org.mockito.cglib.proxy.Factory.setCallback

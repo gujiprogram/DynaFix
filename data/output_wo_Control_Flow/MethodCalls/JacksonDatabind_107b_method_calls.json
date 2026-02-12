@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer",
+    "doc": "/**\n     * Method for finding a value deserializer, and creating a contextual\n     * version if necessary, for value reached via specified property.\n     */",
+    "code": "public final JsonDeserializer<Object> findContextualValueDeserializer(JavaType type,\n            BeanProperty prop) throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.getTypeFactory",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final TypeFactory getTypeFactory() {\n        return _config.getTypeFactory();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.hasGenericTypes",
+    "doc": "/**********************************************************\n     */",
+    "code": "public boolean hasGenericTypes() { return containedTypeCount() > 0; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.TypeIdResolver.typeFromId",
+    "doc": "/**\n     * Method called to resolve type from given type identifier.\n     *\n     * @since 2.5 (throws clause added in 2.8)\n     */",
+    "code": "public JavaType typeFromId(DatabindContext context, String id) throws IOException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDefaultImplDeserializer",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected final JsonDeserializer<Object> _findDefaultImplDeserializer(DeserializationContext ctxt) throws IOException\n    {\n         *   {@link java.lang.Void} to mean \"serialize as null\"; as well as DeserializationFeature\n         *   to do swift mapping to null\n        if (_defaultImpl == null) {\n            if (!ctxt.isEnabled(DeserializationFeature.FAIL_ON_INVALID_SUBTYPE)) {\n                return NullifyingDeserializer.instance;\n            }\n            return null;\n        }\n        Class<?> raw = _defaultImpl.getRawClass();\n        if (ClassUtil.isBogusClass(raw)) {\n            return NullifyingDeserializer.instance;\n        }\n\n        synchronized (_defaultImpl) {\n            if (_defaultImplDeserializer == null) {\n                _defaultImplDeserializer = ctxt.findContextualValueDeserializer(\n                        _defaultImpl, _property);\n            }\n            return _defaultImplDeserializer;\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._handleUnknownTypeId",
+    "doc": "/**\n     * Helper method called when given type id cannot be resolved into\n     * concrete deserializer either directly (using given {@link  TypeIdResolver}),\n     * or using default type.\n     * Default implementation simply throws a {@link com.fasterxml.jackson.databind.JsonMappingException} to\n     * indicate the problem; sub-classes may choose\n     *\n     * @return If it is possible to resolve type id into a {@link JsonDeserializer}\n     *   should return that deserializer; otherwise throw an exception to indicate\n     *   the problem.\n     *\n     * @since 2.8\n     */",
+    "code": "protected JavaType _handleUnknownTypeId(DeserializationContext ctxt, String typeId)\n        throws IOException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType",
+    "doc": "/**\n     * Factory method for creating a subtype of given base type, as defined\n     * by specified subclass; but retaining generic type information if any.\n     * Can be used, for example, to get equivalent of \"HashMap&lt;String,Integer&gt;\"\n     * from \"Map&lt;String,Integer&gt;\" by giving <code>HashMap.class</code>\n     * as subclass.\n     */",
+    "code": "public JavaType constructSpecializedType(JavaType baseType, Class<?> subclass)\n    {\n        final Class<?> rawBase = baseType.getRawClass();\n        if (rawBase == subclass) {\n            return baseType;\n        }\n\n        JavaType newType;\n\n        do { // bogus loop to be able to break\n            if (rawBase == Object.class) {\n                newType = _fromClass(null, subclass, EMPTY_BINDINGS);\n                break;\n            }\n            if (!rawBase.isAssignableFrom(subclass)) {\n                throw new IllegalArgumentException(String.format(\n                        \"Class %s not subtype of %s\", subclass.getName(), baseType));\n            }\n\n            if (baseType.getBindings().isEmpty()) {\n                newType = _fromClass(null, subclass, EMPTY_BINDINGS);\n                break;\n            }\n            if (baseType.isContainerType()) {\n                if (baseType.isMapLikeType()) {\n                    if ((subclass == HashMap.class)\n                            || (subclass == LinkedHashMap.class)\n                            || (subclass == EnumMap.class)\n                            || (subclass == TreeMap.class)) {\n                        newType = _fromClass(null, subclass,\n                                TypeBindings.create(subclass, baseType.getKeyType(), baseType.getContentType()));\n                        break;\n                    }\n                } else if (baseType.isCollectionLikeType()) {\n                    if ((subclass == ArrayList.class)\n                            || (subclass == LinkedList.class)\n                            || (subclass == HashSet.class)\n                            || (subclass == TreeSet.class)) {\n                        newType = _fromClass(null, subclass,\n                                TypeBindings.create(subclass, baseType.getContentType()));\n                        break;\n                    }\n                    if (rawBase == EnumSet.class) {\n                        return baseType;\n                    }\n                }\n            }\n            int typeParamCount = subclass.getTypeParameters().length;\n            if (typeParamCount == 0) {\n                newType = _fromClass(null, subclass, EMPTY_BINDINGS);\n                break;\n            }\n            TypeBindings tb = _bindingsForSubtype(baseType, typeParamCount, subclass);\n            newType = _fromClass(null, subclass, tb);\n\n        } while (false);\n\n        newType = newType.withHandlersFrom(baseType);\n        return newType;\n    }"
+  }
+]

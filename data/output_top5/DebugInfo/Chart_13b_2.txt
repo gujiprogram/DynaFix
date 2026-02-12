@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint ===
+Exception: java.lang.IllegalArgumentException: Range(double, double): require lower (0.0) <= upper (-2.3000000000000007).
+
+org.jfree.chart.block.BorderArrangement:arrangeFN:303->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:303 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:305->[Local Variables] {"c3":{"width":0.0,"widthRange":{"lower":0.0,"upper":0.0},"widthConstraintType":{"name":"RectangleConstraintType.RANGE"},"height":0.0,"heightConstraintType":{"name":"LengthConstraintType.NONE"}}}
+org.jfree.chart.block.BorderArrangement:arrangeFN:306->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:306 -> org.jfree.chart.block.Block.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFN:306->[Local Variables] {"size":{"width":10.0,"height":20.0}}
+org.jfree.chart.block.BorderArrangement:arrangeFN:307->[Local Variables] {"w":[0.0,0.0,12.3,10.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:300->[Control Flow] Branch Info: Line: 300, Condition: if (this.rightBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:310->[Local Variables] {"h":[0.0,0.0,45.6,20.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:311->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:311 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:313->[Local Variables] {"h":[0.0,0.0,45.6,45.6,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:314->[Control Flow] Branch Info: Line: 314, Condition: if (this.centerBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:322->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:322 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:322->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:322 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:323->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:323 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:323->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:323 -> org.jfree.chart.block.BorderArrangement.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFN:297->[Local Variables] {"w":[0.0,0.0,12.3,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:295->[Control Flow] Branch Info: Line: 295, Condition: if (this.leftBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:299->[Local Variables] {"h":[0.0,0.0,45.6,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:300->[Control Flow] Branch Info: Line: 300, Condition: if (this.rightBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:311->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:311 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:313->[Local Variables] {"h":[0.0,0.0,45.6,45.6,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:314->[Control Flow] Branch Info: Line: 314, Condition: if (this.centerBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFN:315->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:315 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:317->[Local Variables] {"c4":{"width":-2.3000000000000007,"widthConstraintType":{"name":"LengthConstraintType.FIXED"},"height":0.0,"heightConstraintType":{"name":"LengthConstraintType.NONE"}}}
+org.jfree.chart.block.BorderArrangement:arrangeFN:318->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:318 -> org.jfree.chart.block.Block.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFN:318->[Local Variables] {"size":{"width":10.0,"height":20.0}}
+org.jfree.chart.block.BorderArrangement:arrangeFN:319->[Local Variables] {"w":[0.0,0.0,12.3,0.0,10.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:314->[Control Flow] Branch Info: Line: 314, Condition: if (this.centerBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:321->[Local Variables] {"h":[0.0,0.0,45.6,45.6,20.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:322->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:322 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:322->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:322 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:323->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:323 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:323->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:323 -> org.jfree.chart.block.BorderArrangement.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFN:277->[Local Variables] {"w":[0.0,0.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:278->[Local Variables] {"h":[0.0,0.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:279->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:279 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:282->[Control Flow] Branch Info: Line: 282, Condition: if (this.topBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:287->[Control Flow] Branch Info: Line: 287, Condition: if (this.bottomBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:292->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:292 -> org.jfree.data.Range.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:292->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:292 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFN:295->[Control Flow] Branch Info: Line: 295, Condition: if (this.leftBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFN:296->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:296 -> org.jfree.chart.block.Block.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFN:296->[Local Variables] {"size":{"width":12.3,"height":45.6}}
+org.jfree.chart.block.BorderArrangement:arrangeFN:297->[Local Variables] {"w":[0.0,0.0,12.3,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:295->[Control Flow] Branch Info: Line: 295, Condition: if (this.leftBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFN:299->[Local Variables] {"h":[0.0,0.0,45.6,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFN:300->[Control Flow] Branch Info: Line: 300, Condition: if (this.rightBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFN:301->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:301 -> java.lang.Math.max
+org.jfree.chart.block.BorderArrangement:arrangeFN:301->[Local Variables] {"maxW":0.0}
+org.jfree.chart.block.BorderArrangement:arrangeFN:303->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:303 -> java.lang.Math.min
+org.jfree.chart.block.BorderArrangement:arrangeFN:303->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFN:303 -> org.jfree.data.Range.<init>

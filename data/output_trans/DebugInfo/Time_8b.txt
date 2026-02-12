@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int ===
+Exception: java.lang.IllegalArgumentException: Minutes out of range: -15
+
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarMinutesOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 >= TransVarHoursOffset2), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 > TransVarHoursOffset2), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 >= 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.toString
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 >= 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 > TransVarMinutesOffset2), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:292->[Local Variables] {"TransVarMinutesOffset":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:294->[Control Flow] Branch Info: Line: 294, Condition: if (TransVarE < 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:298->[Local Variables] {"TransVarMinutesOffset2":120}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:299->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:299 -> org.joda.time.field.FieldUtils.safeMultiply
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:301->[Local Variables] {"TransVarMinutesOffset":7200000}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:303->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:303 -> org.joda.time.DateTimeZone.forOffsetMillis
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:275->[Local Variables] {"TransVarMinutesOffset2":-15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarMinutesOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 >= TransVarHoursOffset2), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 > TransVarHoursOffset2), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 >= 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.append
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:289->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:289 -> java.lang.StringBuilder.toString
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:275->[Local Variables] {"TransVarHoursOffset2":0,"TransVarMinutesOffset2":15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarMinutesOffset2 == 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 >= TransVarHoursOffset2), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:282->[Control Flow] Branch Info: Line: 282, Condition: if (TransVarHoursOffset2 > TransVarHoursOffset2), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 >= 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarMinutesOffset2 > TransVarMinutesOffset2), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:292->[Local Variables] {"TransVarMinutesOffset":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:293->[Local Variables] {"TransVarHoursInMinutes3":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:294->[Control Flow] Branch Info: Line: 294, Condition: if (TransVarE < 0), Executed: false
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:299->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:299 -> org.joda.time.field.FieldUtils.safeMultiply
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:301->[Local Variables] {"TransVarMinutesOffset":900000}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:303->[Method Call] Call Stack: org.joda.time.DateTimeZone.forOffsetHoursMinutes:303 -> org.joda.time.DateTimeZone.forOffsetMillis
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:275->[Local Variables] {"TransVarMinutesOffset2":0}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarMinutesOffset2 == 0), Executed: true
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:275->[Local Variables] {"TransVarMinutesOffset2":-15}
+org.joda.time.DateTimeZone:forOffsetHoursMinutes:276->[Control Flow] Branch Info: Line: 276, Condition: if (TransVarHoursOffset2 == 0), Executed: true

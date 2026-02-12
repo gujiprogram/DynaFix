@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testBug1864222 ===
+Exception: java.lang.IllegalArgumentException: Requires start <= end.
+
+org.jfree.data.time.TimeSeries:getIndex:429->[Local Variables] {"period":{"serialDate":{"serial":38687,"day":1,"month":12,"year":2005},"firstMillisecond":1133424000000,"lastMillisecond":1133510399999}}
+org.jfree.data.time.TimeSeries:getIndex:430->[Control Flow] Branch Info: Line: 430, Condition: if (period == null), Executed: false
+org.jfree.data.time.TimeSeries:getIndex:433->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.getIndex:433 -> org.jfree.data.time.TimeSeriesDataItem.<init>
+org.jfree.data.time.TimeSeries:getIndex:434->[Local Variables] {"dummy":{"period":{"serialDate":{"serial":38687,"day":1,"month":12,"year":2005},"firstMillisecond":1133424000000,"lastMillisecond":1133510399999},"value":-2.147483648E9}}
+org.jfree.data.time.TimeSeries:getIndex:435->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.getIndex:435 -> java.util.Collections.binarySearch
+org.jfree.data.time.TimeSeries:getIndex:429->[Local Variables] {"period":{"serialDate":{"serial":38735,"day":18,"month":1,"year":2006},"firstMillisecond":1137571200000,"lastMillisecond":1137657599999}}
+org.jfree.data.time.TimeSeries:getIndex:430->[Control Flow] Branch Info: Line: 430, Condition: if (period == null), Executed: false
+org.jfree.data.time.TimeSeries:getIndex:433->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.getIndex:433 -> org.jfree.data.time.TimeSeriesDataItem.<init>
+org.jfree.data.time.TimeSeries:getIndex:434->[Local Variables] {"dummy":{"period":{"serialDate":{"serial":38735,"day":18,"month":1,"year":2006},"firstMillisecond":1137571200000,"lastMillisecond":1137657599999},"value":-2.147483648E9}}
+org.jfree.data.time.TimeSeries:getIndex:435->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.getIndex:435 -> java.util.Collections.binarySearch

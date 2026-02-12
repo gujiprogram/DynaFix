@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameBytes ===
+Exception: junit.framework.AssertionFailedError: Should not have let com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeString() be used in place of 'writeFieldName()': output = {:"a"
+
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:171->[Control Flow] Branch Info: Line: 171, Condition: if (this._type == this._type), Executed: false
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:181->[Control Flow] Branch Info: Line: 181, Condition: if (this._type == this._type), Executed: false
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:193->[Control Flow] Branch Info: Line: 193, Condition: if (this._index == false), Executed: true
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:171->[Control Flow] Branch Info: Line: 171, Condition: if (this._type == this._type), Executed: true
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.GeneratorFailTest::testFailOnWritingStringNotFieldNameChars ===
+Exception: junit.framework.AssertionFailedError: Should not have let com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeString() be used in place of 'writeFieldName()': output = {:"a"
+
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:171->[Control Flow] Branch Info: Line: 171, Condition: if (this._type == this._type), Executed: false
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:181->[Control Flow] Branch Info: Line: 181, Condition: if (this._type == this._type), Executed: false
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:193->[Control Flow] Branch Info: Line: 193, Condition: if (this._index == false), Executed: true
+com.fasterxml.jackson.core.json.JsonWriteContext:writeValue:171->[Control Flow] Branch Info: Line: 171, Condition: if (this._type == this._type), Executed: true

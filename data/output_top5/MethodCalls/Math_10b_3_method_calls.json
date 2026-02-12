@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.getSize",
+    "doc": "/** Get the array size required for holding partial derivatives data.\n     * <p>\n     * This number includes the single 0 order derivative element, which is\n     * guaranteed to be stored in the first element of the array.\n     * </p>\n     * @return array size required for holding partial derivatives data\n     */",
+    "code": "public int getSize() {\n        return sizes[parameters][order];\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.multiply",
+    "doc": "/** Perform multiplication of two derivative structures.\n     * @param lhs array holding left hand side of multiplication\n     * @param lhsOffset offset of the left hand side in its array\n     * @param rhs array right hand side of multiplication\n     * @param rhsOffset offset of the right hand side in its array\n     * @param result array where result must be stored (for\n     * multiplication the result array <em>cannot</em> be one of\n     * the input arrays)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void multiply(final double[] lhs, final int lhsOffset,\n                         final double[] rhs, final int rhsOffset,"
+  },
+  {
+    "method": "org.apache.commons.math3.analysis.differentiation.DSCompiler.pow",
+    "doc": "/** Compute power of a derivative structure.\n     * @param operand array holding the operand\n     * @param operandOffset offset of the operand in its array\n     * @param p power to apply\n     * @param result array where result must be stored (for\n     * power the result array <em>cannot</em> be the input\n     * array)\n     * @param resultOffset offset of the result in its array\n     */",
+    "code": "public void pow(final double[] operand, final int operandOffset, final double p,\n                    final double[] result, final int resultOffset) {\n\n        double[] function = new double[1 + order];\n        double xk = FastMath.pow(operand[operandOffset], p - order);\n        for (int i = order; i > 0; --i) {\n            function[i] = xk;\n            xk *= operand[operandOffset];\n        }\n        function[0] = xk;\n        double coefficient = p;\n        for (int i = 1; i <= order; ++i) {\n            function[i] *= coefficient;\n            coefficient *= p - i;\n        }\n\n        compose(operand, operandOffset, function, result, resultOffset);\n\n    }"
+  }
+]

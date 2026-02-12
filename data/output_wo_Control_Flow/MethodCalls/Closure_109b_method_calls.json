@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.parseTypeName",
+    "doc": "/**\n   * TopLevelTypeExpression := TypeExpression\n   *     | TypeUnionList\n   *\n   * We made this rule up, for the sake of backwards compatibility.\n   */",
+    "code": "return parseTypeName(token);\n    }\n  }\n\n  private Node parseTopLevelTypeExpression(JsDocToken token) {\n    Node typeExpr = parseTypeExpression(token);\n    if (typeExpr != null) {"
+  }
+]

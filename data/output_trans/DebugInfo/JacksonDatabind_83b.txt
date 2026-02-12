@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.filter.ProblemHandlerTest::testWeirdStringHandling ===
+Exception: com.fasterxml.jackson.databind.exc.InvalidFormatException: Can not deserialize value of type java.util.UUID from String "not a uuid!": not a valid textual representation
+
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:110->[Local Variables] "{TransVarParser\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@32c8e539, TransVarContext\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@73dce0e6}"
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:111->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:111 -> com.fasterxml.jackson.core.JsonParser.getValueAsString
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:111->[Local Variables] {"TransVarInputText":"not a uuid!"}
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:112->[Control Flow] Branch Info: Line: 112, Condition: if (TransVarInputText != null), Executed: true
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:116->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:116 -> java.lang.String.length
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:116->[Control Flow] Branch Info: Line: 116, Condition: if (java.lang.String.length() != 0), Executed: true
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:116->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:116 -> java.lang.String.trim
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:116->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:116 -> java.lang.String.length
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:116->[Control Flow] Branch Info: Line: 116, Condition: if (java.lang.String.length() == 0), Executed: false
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:128->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:128 -> com.fasterxml.jackson.databind.deser.std.FromStringDeserializer._deserialize
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:128->[Control Flow] Branch Info: Line: 128, Condition: if (com.fasterxml.jackson.databind.deser.std.FromStringDeserializer._deserialize() != null), Executed: false
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:136->[Local Variables] {"TransVarTextualRep":"not a valid textual representation"}
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:137->[Control Flow] Branch Info: Line: 137, Condition: if (TransVarToken != null), Executed: false
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:139->[Control Flow] Branch Info: Line: 139, Condition: if (TransVarJsonMappingException != null), Executed: false
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:144->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.FromStringDeserializer.deserialize:144 -> com.fasterxml.jackson.databind.DeserializationContext.weirdStringException
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:144->[Local Variables] {"TransVarJsonMappingException":{"_value":"not a uuid!","_targetType":"class java.util.UUID","_location":{"_totalBytes":-1,"_totalChars":0,"_lineNr":1,"_columnNr":1},"detailMessage":"Can not deserialize value of type java.util.UUID from String \"not a uuid!\": not a valid textual representation","stackTrace":[],"suppressedExceptions":[]}}
+com.fasterxml.jackson.databind.deser.std.FromStringDeserializer:deserialize:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarToken != null), Executed: false

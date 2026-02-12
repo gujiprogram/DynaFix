@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodePointer.createChild",
+    "doc": "/**\n     * Called by a child pointer if that child needs to assign the value\n     * supplied in the createPath(context, value) call to a non-existent\n     * node. This method may have to expand the collection in order to assign\n     * the element.\n     */",
+    "code": "public NodePointer createChild(\n        JXPathContext context,"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodePointer.createPath",
+    "doc": "/**\n     *  Called directly by JXPathContext. Must create path and\n     *  set value.\n     */",
+    "code": "public NodePointer createPath(JXPathContext context, Object value) {\n        setValue(value);\n        return this;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.getIndex",
+    "doc": "/**\n     */",
+    "code": "return getIndex() != WHOLE_COLLECTION;\n    }\n\n    public int getPropertyCount() {"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.getName",
+    "doc": "/**\n     */",
+    "code": "public QName getName() {\n        return new QName(propertyName);\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.beans.NullPropertyPointer.isAttribute",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.beans.PropertyOwnerPointer.getPropertyPointer",
+    "doc": "/**\n     * If this is a root node pointer, throws an exception; otherwise\n     * forwards the call to the parent node.\n     */",
+    "code": "public abstract PropertyPointer getPropertyPointer();"
+  }
+]

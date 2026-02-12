@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testNumericKeys ===
+Exception: junit.framework.ComparisonFailure: expected:<var x={["010"]:1}> but was:<var x={[10]:1}>
+
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:748->[Local Variables] {"s":"8"}
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:749->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getSimpleNumber:749 -> com.google.javascript.jscomp.CodeGenerator.isSimpleNumber
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:749->[Control Flow] Branch Info: Line: 749, Condition: if (s != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:751->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getSimpleNumber:751 -> java.lang.Long.parseLong
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:751->[Local Variables] {"l":8}
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:752->[Control Flow] Branch Info: Line: 752, Condition: if (l < 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:748->[Local Variables] {"s":"010"}
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:749->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getSimpleNumber:749 -> com.google.javascript.jscomp.CodeGenerator.isSimpleNumber
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:749->[Control Flow] Branch Info: Line: 749, Condition: if (s != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:751->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getSimpleNumber:751 -> java.lang.Long.parseLong
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:751->[Local Variables] {"l":10}
+com.google.javascript.jscomp.CodeGenerator:getSimpleNumber:752->[Control Flow] Branch Info: Line: 752, Condition: if (l < 0), Executed: true

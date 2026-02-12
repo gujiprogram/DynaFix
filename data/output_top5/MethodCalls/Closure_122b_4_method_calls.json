@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.IR.number",
+    "doc": "/**\n   * \"===\"\n   */",
+    "code": "public static Node number(double d) {\n    return Node.newNumber(d);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.clonePropsFrom",
+    "doc": "/**\n   * Clone the properties from the provided node without copying\n   * the property object.  The receiving node may not have any\n   * existing properties.\n   * @param other The node to clone properties from.\n   * @return this node.\n   */",
+    "code": "public Node clonePropsFrom(Node other) {\n    Preconditions.checkState(this.propListHead == null,\n        \"Node has existing properties.\");\n    this.propListHead = other.propListHead;\n    return this;\n  }"
+  }
+]

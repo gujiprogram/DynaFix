@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MinimizeExitPoints.matchingExitNode",
+    "doc": "/**\n   * Determines if n matches the type and name for the following types of\n   * \"exits\":\n   *    - return without values\n   *    - continues and breaks with or without names.\n   * @param n The node to inspect.\n   * @param type The Token type to look for.\n   * @param labelName The name that must be associated with the exit type.\n   * @nullable labelName non-null only for breaks associated with labels.\n   * @return Whether the node matches the specified block-exit type.\n   */",
+    "code": "private static boolean matchingExitNode(Node n, int type, String labelName) {\n    if (n.getType() == type) {\n      if (type == Token.RETURN) {\n        return !n.hasChildren();\n      } else {\n        if (labelName == null) {\n          return !n.hasChildren();\n        } else {\n          return n.hasChildren()\n            && labelName.equals(n.getFirstChild().getString());\n        }\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MinimizeExitPoints.moveAllFollowing",
+    "doc": "/**\n   * Move all the child nodes following start in srcParent to the end of\n   * destParent's child list.\n   * @param start The start point in the srcParent child list.\n   * @param srcParent The parent node of start.\n   * @param destParent The destination node.\n   */",
+    "code": "private static void moveAllFollowing(\n      Node start, Node srcParent, Node destParent) {\n    for (Node n = start.getNext(); n != null; n = start.getNext()) {\n      boolean isFunctionDeclaration = NodeUtil.isFunctionDeclaration(n);\n      srcParent.removeChild(n);\n      if (isFunctionDeclaration) {\n        destParent.addChildToFront(n);\n      } else {\n        destParent.addChildToBack(n);\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.block",
+    "doc": "/**\n * An AST construction helper class\n * @author johnlenz@google.com (John Lenz)\n */",
+    "code": "public static Node block() {\n    Node block = new Node(Token.BLOCK);\n    return block;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildToBack",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildToBack(Node child) {\n    Preconditions.checkArgument(child.parent == null);\n    Preconditions.checkArgument(child.next == null);\n    child.parent = this;\n    child.next = null;\n    if (last == null) {\n      first = last = child;\n      return;\n    }\n    last.next = child;\n    last = child;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasChildren",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public boolean hasChildren() {\n    return first != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isBlock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.srcref",
+    "doc": "/**\n   * Overwrite all the source information in this node with\n   * that of {@code other}.\n   */",
+    "code": "public Node srcref(Node other) {\n    return useSourceInfoFrom(other);\n  }"
+  }
+]

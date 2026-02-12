@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CollapseProperties.appendPropForAlias",
+    "doc": "/**\n   * Adds global variable \"stubs\" for any properties of a global name that are\n   * only set in a local scope or read but never set.\n   *\n   * @param n An object representing a global name (e.g. \"a\", \"a.b.c\")\n   * @param alias The flattened name of the object whose properties we are\n   *     adding stubs for (e.g. \"a$b$c\")\n   * @param parent The node to which new global variables should be added\n   *     as children\n   * @param addAfter The child of after which new\n   *     variables should be added (may be null)\n   * @return The number of variables added\n   */",
+    "code": "private static String appendPropForAlias(String root, String prop) {\n    if (prop.indexOf('$') != -1) {\n      prop = prop.replaceAll(\"\\\\$\", \"\\\\$0\");\n    }\n    return root + '$' + prop;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.canCollapse",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.canCollapseUnannotatedChildNames",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

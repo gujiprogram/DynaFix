@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::createsStructureFromBodySnippet ===
+Exception: junit.framework.AssertionFailedError: expected:<[foo bar baz]> but was:<[bar baz foo]>
+
+org.jsoup.nodes.Document:normalise:135->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:135 -> org.jsoup.nodes.Document.body
+org.jsoup.nodes.Document:normalise:135->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:135 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.nodes.Document:normalise:135->[Local Variables] "{TransVarNodes\u003d[foo ], TransVarE\u003d\u003chtml\u003e\n\u003chead\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n \u003cb\u003ebar\u003c/b\u003e baz foo \n\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.nodes.Document:normalise:132->[Control Flow] Loop Info: Line: 132, Description: while at line 132
+org.jsoup.nodes.Document:normalise:132->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:132 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:132->[Control Flow] Branch Info: Line: 132, Condition: if (var3 != 0), Executed: false
+org.jsoup.nodes.Document:normalise:132->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:132 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:132->[Control Flow] Branch Info: Line: 132, Condition: if (var3 != 0), Executed: false
+org.jsoup.nodes.Document:normalise:116->[Local Variables] "{TransVarE\u003dfoo \n\u003chtml\u003e\n\u003chead\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n \u003cb\u003ebar\u003c/b\u003e baz\n\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.nodes.Document:normalise:117->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:117 -> java.util.ArrayList.<init>
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.List.iterator
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:118->[Control Flow] Branch Info: Line: 118, Condition: if (var3 != 0), Executed: true
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.Iterator.next
+org.jsoup.nodes.Document:normalise:121->[Local Variables] "{TransVarN\u003d\nfoo }"
+org.jsoup.nodes.Document:normalise:122->[Control Flow] Branch Info: Line: 122, Condition: if (TransVarElement != 0), Executed: true
+org.jsoup.nodes.Document:normalise:126->[Local Variables] "{TransVarTextNode\u003d\nfoo }"
+org.jsoup.nodes.Document:normalise:127->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:127 -> org.jsoup.nodes.TextNode.isBlank
+org.jsoup.nodes.Document:normalise:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.nodes.TextNode.isBlank() == 0), Executed: true
+org.jsoup.nodes.Document:normalise:128->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:128 -> java.util.List.add
+org.jsoup.nodes.Document:normalise:122->[Control Flow] Branch Info: Line: 122, Condition: if (TransVarElement != 0), Executed: false
+org.jsoup.nodes.Document:normalise:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.nodes.TextNode.isBlank() == 0), Executed: false
+org.jsoup.nodes.Document:normalise:129->[Local Variables] "{TransVarNodes\u003d[\nfoo ]}"
+org.jsoup.nodes.Document:normalise:118->[Control Flow] Loop Info: Line: 118, Description: while at line 118
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:118->[Control Flow] Branch Info: Line: 118, Condition: if (var3 != 0), Executed: true
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.Iterator.next
+org.jsoup.nodes.Document:normalise:121->[Local Variables] "{TransVarN\u003d\n\u003chtml\u003e\n\u003chead\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n \u003cb\u003ebar\u003c/b\u003e baz\n\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.nodes.Document:normalise:122->[Control Flow] Branch Info: Line: 122, Condition: if (TransVarElement != 0), Executed: false
+org.jsoup.nodes.Document:normalise:127->[Control Flow] Branch Info: Line: 127, Condition: if (org.jsoup.nodes.TextNode.isBlank() == 0), Executed: false
+org.jsoup.nodes.Document:normalise:118->[Control Flow] Loop Info: Line: 118, Description: while at line 118
+org.jsoup.nodes.Document:normalise:118->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:118 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:118->[Control Flow] Branch Info: Line: 118, Condition: if (var3 != 0), Executed: false
+org.jsoup.nodes.Document:normalise:132->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:132 -> java.util.List.iterator
+org.jsoup.nodes.Document:normalise:132->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:132 -> java.util.Iterator.hasNext
+org.jsoup.nodes.Document:normalise:132->[Control Flow] Branch Info: Line: 132, Condition: if (var3 != 0), Executed: true
+org.jsoup.nodes.Document:normalise:132->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:132 -> java.util.Iterator.next
+org.jsoup.nodes.Document:normalise:132->[Local Variables] "{TransVarElement\u003d\nfoo }"
+org.jsoup.nodes.Document:normalise:133->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:133 -> org.jsoup.nodes.Element.removeChild
+org.jsoup.nodes.Document:normalise:133->[Local Variables] "{TransVarNodes\u003d[foo ], TransVarElement\u003dfoo , TransVarE\u003d\u003chtml\u003e\n\u003chead\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n \u003cb\u003ebar\u003c/b\u003e baz\n\u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.nodes.Document:normalise:134->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:134 -> org.jsoup.nodes.Document.body
+org.jsoup.nodes.Document:normalise:134->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:134 -> org.jsoup.nodes.TextNode.<init>
+org.jsoup.nodes.Document:normalise:134->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:134 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.nodes.Document:normalise:134->[Local Variables] "{TransVarE\u003d\u003chtml\u003e\n\u003chead\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n \u003cb\u003ebar\u003c/b\u003e baz \n\u003c/body\u003e\n\u003c/html\u003e}"

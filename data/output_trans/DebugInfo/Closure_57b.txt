@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.ClosureCodingConventionTest::testRequire ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: foo
+
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:199 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:203->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:203 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:204 -> java.lang.String.equals
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Control Flow] Branch Info: Line: 204, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:205->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:205 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:205->[Local Variables] "{TransVarNextNode\u003dNAME foo 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransVarNextNode != null), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:207->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:207 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarNode != 0), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransVarCallee1 != null), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Control Flow] Branch Info: Line: 204, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransVarNextNode != null), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:211->[Local Variables] {"TransVarClassNameObject":"foo"}
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:192->[Local Variables] "{TransVarNode1\u003dCALL 1 [source_file:  [testcode] ], TransVarName\u003dgoog.require, TransVarNode\u003dEXPR_RESULT 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:194 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarNode != 0), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:198->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:198 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:198->[Local Variables] "{TransVarCallee1\u003dGETPROP 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransVarCallee1 != null), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:199 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:203->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:203 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:203->[Local Variables] {"TransVarNameNode":"goog.require"}
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:204 -> java.lang.String.equals
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Control Flow] Branch Info: Line: 204, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:205->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:205 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:205->[Local Variables] "{TransVarNextNode\u003dSTRING foo 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransVarNextNode != null), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:207->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:207 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarNode != 0), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransVarCallee1 != null), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:204->[Control Flow] Branch Info: Line: 204, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransVarNextNode != null), Executed: false
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:211->[Local Variables] {"TransVarClassNameObject":"foo"}
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:194 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:194->[Control Flow] Branch Info: Line: 194, Condition: if (TransVarNode != 0), Executed: true
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:198->[Method Call] Call Stack: com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog:198 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ClosureCodingConvention:extractClassNameIfGoog:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransVarCallee1 != null), Executed: true

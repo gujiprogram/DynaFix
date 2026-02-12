@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang.StringUtils.defaultString",
+    "doc": "/**\n     * <p>Returns either the passed in String,\n     * or if the String is <code>null</code>, an empty String (\"\").</p>\n     *\n     * <pre>\n     * StringUtils.defaultString(null)  = \"\"\n     * StringUtils.defaultString(\"\")    = \"\"\n     * StringUtils.defaultString(\"bat\") = \"bat\"\n     * </pre>\n     *\n     * @see ObjectUtils#toString(Object)\n     * @see String#valueOf(Object)\n     * @param str  the String to check, may be null\n     * @return the passed in String, or the empty String if it\n     *  was <code>null</code>\n     */",
+    "code": "public static String defaultString(String str) {\n        return str == null ? EMPTY : str;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang.StringUtils.indexOf",
+    "doc": "/**\n     * <p>Finds the first index within a String, handling <code>null</code>.\n     * This method uses {@link String#indexOf(int)}.</p>\n     *\n     * <p>A <code>null</code> or empty (\"\") String will return <code>-1</code>.</p>\n     *\n     * <pre>\n     * StringUtils.indexOf(null, *)         = -1\n     * StringUtils.indexOf(\"\", *)           = -1\n     * StringUtils.indexOf(\"aabaabaa\", 'a') = 0\n     * StringUtils.indexOf(\"aabaabaa\", 'b') = 2\n     * </pre>\n     *\n     * @param str  the String to check, may be null\n     * @param searchChar  the character to find\n     * @return the first index of the search character,\n     *  -1 if no match or <code>null</code> string input\n     * @since 2.0\n     */",
+    "code": "public static int indexOf(String str, char searchChar) {\n        if (isEmpty(str)) {\n            return -1;\n        }\n        return str.indexOf(searchChar);\n    }"
+  }
+]

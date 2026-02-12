@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.apache.commons.math3.genetics.ListPopulationTest::testIterator ===
+Exception: junit.framework.AssertionFailedError: Expected exception: java.lang.UnsupportedOperationException
+
+org.apache.commons.math3.genetics.ListPopulation:<init>:51->[Local Variables] {"populationLimit":10}
+org.apache.commons.math3.genetics.ListPopulation:<init>:52->[Method Call] Call Stack: org.apache.commons.math3.genetics.ListPopulation.<init>:52 -> java.util.Collections.emptyList
+org.apache.commons.math3.genetics.ListPopulation:<init>:63->[Local Variables] {"chromosomes":[]}
+org.apache.commons.math3.genetics.ListPopulation:<init>:65->[Control Flow] Branch Info: Line: 65, Condition: if (chromosomes == null), Executed: false
+org.apache.commons.math3.genetics.ListPopulation:<init>:68->[Control Flow] Branch Info: Line: 68, Condition: if (populationLimit <= 0), Executed: false
+org.apache.commons.math3.genetics.ListPopulation:<init>:71->[Method Call] Call Stack: org.apache.commons.math3.genetics.ListPopulation.<init>:71 -> java.util.List.size
+org.apache.commons.math3.genetics.ListPopulation:<init>:71->[Control Flow] Branch Info: Line: 71, Condition: if (populationLimit > populationLimit), Executed: false
+org.apache.commons.math3.genetics.ListPopulation:<init>:76->[Method Call] Call Stack: org.apache.commons.math3.genetics.ListPopulation.<init>:76 -> java.util.ArrayList.<init>
+org.apache.commons.math3.genetics.ListPopulation:<init>:77->[Method Call] Call Stack: org.apache.commons.math3.genetics.ListPopulation.<init>:77 -> java.util.List.addAll

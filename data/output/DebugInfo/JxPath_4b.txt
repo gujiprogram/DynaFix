@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<foo> but was:< foo >
+
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getValue:632->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getValue:632 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.stringValue
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedJDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<> but was:<foo;bar; baz >
+
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:239->[Control Flow] Branch Info: Line: 239, Condition: if (this.node != false), Executed: true
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:240->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.getValue:240 -> org.jdom.Element.getTextTrim
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsJDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<> but was:<foo;bar; baz >
+
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:239->[Control Flow] Branch Info: Line: 239, Condition: if (this.node != false), Executed: true
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:240->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.getValue:240 -> org.jdom.Element.getTextTrim
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testPreserveJDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<foo> but was:< foo >
+
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:239->[Control Flow] Branch Info: Line: 239, Condition: if (this.node != false), Executed: true
+org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer:getValue:240->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMNodePointer.getValue:240 -> org.jdom.Element.getTextTrim
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<foo
+
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getValue:632->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getValue:632 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.stringValue
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.XMLSpaceTest::testNestedWithCommentsDOM ===
+Exception: junit.framework.AssertionFailedError: expected:<foo
+
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getValue:632->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getValue:632 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.stringValue

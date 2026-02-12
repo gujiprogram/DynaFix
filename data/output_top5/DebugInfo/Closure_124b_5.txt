@@ -1,0 +1,63 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.ExploitAssignsTest::testIssue1017 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:32->[Local Variables] "{subtree\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:33 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Local Variables] "{child\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:36->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:36 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:36->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:36 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:32->[Local Variables] "{subtree\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:33 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Local Variables] "{child\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Local Variables] "{child\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Local Variables] "{next\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:38->[Local Variables] "{child\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:33 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Local Variables] "{child\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Local Variables] "{next\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:38->[Local Variables] "{child\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:34->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:34 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:35 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:35->[Control Flow] Branch Info: Line: 35, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Loop Info: Line: 33, Description: while at line 33
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:32->[Local Variables] "{subtree\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.optimizeSubtree:33 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Control Flow] Branch Info: Line: 33, Condition: if (child != null), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:optimizeSubtree:33->[Local Variables] "{child\u003dASSIGN 1 [source_file: testcode]}"

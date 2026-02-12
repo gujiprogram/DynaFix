@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.MinimizeExitPoints.tryMinimizeExits",
+    "doc": "/**\n   * Attempts to minimize the number of explicit exit points in a control\n   * structure to take advantage of the implied exit at the end of the\n   * structure.  This is accomplished by removing redundant statements, and\n   * moving statements following a qualifying IF node into that node.\n   * For example:\n   *\n   * function () {\n   *   if (x) return;\n   *   else blah();\n   *   foo();\n   * }\n   *\n   * becomes:\n   *\n   * function () {\n   *  if (x) ;\n   *  else {\n   *    blah();\n   *    foo();\n   *  }\n   *\n   * @param n The execution node of a parent to inspect.\n   * @param exitType The type of exit to look for.\n   * @param labelName If parent is a label the name of the label to look for,\n   *   null otherwise.\n   * @nullable labelName non-null only for breaks within labels.\n   */",
+    "code": "void tryMinimizeExits(Node n, int exitType, String labelName) {\n\n    if (matchingExitNode(n, exitType, labelName)) {\n      NodeUtil.removeChild(n.getParent(), n);\n      compiler.reportCodeChange();\n      return;\n    }\n\n    if (n.isIf()) {\n      Node ifBlock = n.getFirstChild().getNext();\n      tryMinimizeExits(ifBlock, exitType, labelName);\n      Node elseBlock = ifBlock.getNext();\n      if (elseBlock != null) {\n        tryMinimizeExits(elseBlock, exitType, labelName);\n      }\n      return;\n    }\n\n    if (n.isTry()) {\n      Node tryBlock = n.getFirstChild();\n      tryMinimizeExits(tryBlock, exitType, labelName);\n      Node allCatchNodes = NodeUtil.getCatchBlock(n);\n      if (NodeUtil.hasCatchHandler(allCatchNodes)) {\n        Preconditions.checkState(allCatchNodes.hasOneChild());\n        Node catchNode = allCatchNodes.getFirstChild();\n        Node catchCodeBlock = catchNode.getLastChild();\n        tryMinimizeExits(catchCodeBlock, exitType, labelName);\n      }\n       * can cause problems if it changes the completion type of the finally\n       * block. See ECMA 262 Sections 8.9 & 12.14\n      if (NodeUtil.hasFinally(n)) {\n        Node finallyBlock = n.getLastChild();\n        tryMinimizeExits(finallyBlock, exitType, labelName);\n      }\n    }\n\n    if (n.isLabel()) {\n      Node labelBlock = n.getLastChild();\n      tryMinimizeExits(labelBlock, exitType, labelName);\n    }\n\n\n    if (!n.isBlock() || n.getLastChild() == null) {\n      return;\n    }\n\n    for (Node c : n.children()) {\n\n      if (c.isIf()) {\n        Node ifTree = c;\n        Node trueBlock, falseBlock;\n\n        trueBlock = ifTree.getFirstChild().getNext();\n        falseBlock = trueBlock.getNext();\n        tryMinimizeIfBlockExits(trueBlock, falseBlock,\n            ifTree, exitType, labelName);\n\n        trueBlock = ifTree.getFirstChild().getNext();\n        falseBlock = trueBlock.getNext();\n        if (falseBlock != null) {\n          tryMinimizeIfBlockExits(falseBlock, trueBlock,\n              ifTree, exitType, labelName);\n        }\n      }\n\n      if (c == n.getLastChild()) {\n        break;\n      }\n    }\n\n    for (Node c = n.getLastChild(); c != null; c = n.getLastChild()) {\n      tryMinimizeExits(c, exitType, labelName);\n      if (c == n.getLastChild()) {\n        break;\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting",
+    "doc": "/**\n   * Counts the given node in the typed statistics.\n   * @param n a node that should be typed\n   */",
+    "code": "private void doPercentTypedAccounting(NodeTraversal t, Node n) {\n    JSType type = n.getJSType();\n    if (type == null) {\n      nullCount++;\n    } else if (type.isUnknownType()) {\n      if (reportUnknownTypes) {\n        compiler.report(t.makeError(n, UNKNOWN_EXPR_TYPE));\n      }\n      unknownCount++;\n    } else {\n      typedCount++;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitName",
+    "doc": "/**\n   * Visits a NAME node.\n   *\n   * @param t The node traversal object that supplies context, such as the\n   * scope chain to use in name lookups as well as error reporting.\n   * @param n The node being visited.\n   * @param parent The parent of the node n.\n   * @return whether the node is typeable or not\n   */",
+    "code": "boolean visitName(NodeTraversal t, Node n, Node parent) {\n    int parentNodeType = parent.getType();\n    if (parentNodeType == Token.FUNCTION ||\n        parentNodeType == Token.CATCH ||\n        parentNodeType == Token.PARAM_LIST ||\n        parentNodeType == Token.VAR) {\n      return false;\n    }\n\n    JSType type = n.getJSType();\n    if (type == null) {\n      type = getNativeType(UNKNOWN_TYPE);\n      Var var = t.getScope().getVar(n.getString());\n      if (var != null) {\n        JSType varType = var.getType();\n        if (varType != null) {\n          type = varType;\n        }\n      }\n    }\n    ensureTyped(t, n, type);\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitNew",
+    "doc": "/**\n   * Visits a NEW node.\n   */",
+    "code": "private void visitNew(NodeTraversal t, Node n) {\n    Node constructor = n.getFirstChild();\n    JSType type = getJSType(constructor).restrictByNotNullOrUndefined();\n    if (type.isConstructor() || type.isEmptyType() || type.isUnknownType()) {\n      FunctionType fnType = type.toMaybeFunctionType();\n      if (fnType != null) {\n        visitParameterList(t, n, fnType);\n        ensureTyped(t, n, fnType.getInstanceType());\n      } else {\n        ensureTyped(t, n);\n      }\n    } else {\n      report(t, n, NOT_A_CONSTRUCTOR);\n      ensureTyped(t, n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.canTestForShallowEqualityWith",
+    "doc": "/**\n   * Tests whether {@code this} and {@code that} are meaningfully\n   * comparable using shallow comparison. By meaningfully, we mean compatible\n   * types that are not rejected by step 1 of the definition of the Strict\n   * Equality Comparison Algorithm (11.9.6, page 56&ndash;57) of the\n   * ECMA-262 specification.<p>\n   */",
+    "code": "public final boolean canTestForShallowEqualityWith(JSType that) {\n    if (isEmptyType() || that.isEmptyType()) {\n      return isSubtype(that) || that.isSubtype(this);\n    }\n\n    JSType inf = getGreatestSubtype(that);\n    return !inf.isEmptyType() ||\n        inf == registry.getNativeType(JSTypeNative.LEAST_FUNCTION_TYPE);\n  }"
+  }
+]

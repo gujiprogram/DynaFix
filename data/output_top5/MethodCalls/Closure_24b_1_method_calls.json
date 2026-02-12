@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      inputId = NodeUtil.getInputId(root);\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.tryMergeBlock",
+    "doc": "/**\n   * Merge a block with its parent block.\n   * @return Whether the block was removed.\n   */",
+    "code": "static boolean tryMergeBlock(Node block) {\n    Preconditions.checkState(block.isBlock());\n    Node parent = block.getParent();\n    if (isStatementBlock(parent)) {\n      Node previous = block;\n      while (block.hasChildren()) {\n        Node child = block.removeFirstChild();\n        parent.addChildAfter(child, previous);\n        previous = child;\n      }\n      parent.removeChild(block);\n      return true;\n    } else {\n      return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ScopedAliases$Traversal.access$100",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ScopedAliases$Traversal.getAliasDefinitionsInOrder",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ScopedAliases$Traversal.getScopeCalls",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ScopedAliases$Traversal.hasErrors",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

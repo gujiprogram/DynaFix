@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ClosureCodingConvention.extractClassNameIfGoog",
+    "doc": "/**\n   * Exctracts X from goog.require('X'), if the applied Node is goog.\n   *\n   * @return The extracted class name, or null.\n   */",
+    "code": "return extractClassNameIfGoog(node, parent, \"goog.provide\");\n  }\n\n  @Override\n  public String extractClassNameIfRequire(Node node, Node parent){"
+  }
+]

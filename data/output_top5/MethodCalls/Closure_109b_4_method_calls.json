@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.match",
+    "doc": "/**\n   * Tests whether the next symbol of the token stream matches the specific\n   * token.\n   */",
+    "code": "private boolean match(JsDocToken token) {\n    unreadToken = next();\n    return unreadToken == token;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.newNode",
+    "doc": "/**\n   * TypeExpression := BasicTypeExpression\n   *     | '?' BasicTypeExpression\n   *     | '!' BasicTypeExpression\n   *     | BasicTypeExpression '?'\n   *     | BasicTypeExpression '!'\n   *     | '?'\n   */",
+    "code": "return newNode(Token.QMARK);\n      }\n\n      return wrapNode(Token.QMARK, parseBasicTypeExpression(token));\n    } else if (token == JsDocToken.BANG) {\n      return wrapNode(Token.BANG, parseBasicTypeExpression(next()));\n    } else {\n      Node basicTypeExpr = parseBasicTypeExpression(token);\n      if (basicTypeExpr != null) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.next",
+    "doc": "/**\n   * Records a marker's description if there is one available and record it in\n   * the current marker.\n   */",
+    "code": "return next();\n  }\n\n  private JsDocToken recordDescription(JsDocToken token) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.parseContextTypeExpression",
+    "doc": "/**\n   * ContextTypeExpression := BasicTypeExpression | '?'\n   * For expressions on the right hand side of a this: or new:\n   */",
+    "code": "private Node parseContextTypeExpression(JsDocToken token) {\n          return parseTypeName(token);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.skipEOLs",
+    "doc": "/**\n   * Skips all EOLs and all empty lines in the JSDoc. Call this method if you\n   * want the JSDoc entry to span multiple lines.\n   */",
+    "code": "private void skipEOLs() {\n    while (match(JsDocToken.EOL)) {\n      next();\n      if (match(JsDocToken.STAR)) {\n        next();\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getString",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final String getString() { return string; }"
+  }
+]

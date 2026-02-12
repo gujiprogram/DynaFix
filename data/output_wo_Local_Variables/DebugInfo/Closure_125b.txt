@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1002 ===
+
+com.google.javascript.jscomp.TypeCheck:visitNew:1657->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1657 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitNew:1658->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1658 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitNew:1658->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1658 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1659 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Control Flow] Branch Info: Line: 1659, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1659 -> com.google.javascript.rhino.jstype.JSType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Control Flow] Branch Info: Line: 1659, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Control Flow] Branch Info: Line: 1659, Condition: if (com.google.javascript.rhino.jstype.JSType.isEmptyType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitNew:1660->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1660 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeCheck:visitNew:1661->[Control Flow] Branch Info: Line: 1661, Condition: if (fnType != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1662 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitNew:1663->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1663 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType

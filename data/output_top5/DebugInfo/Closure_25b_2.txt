@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+Exception: junit.framework.ComparisonFailure: expected:<{[foo: (number|undefined)]}> but was:<{[]}>
+
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverse:397->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:397 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (com.google.javascript.rhino.JSDocInfo.hasType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:396->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:396 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverse:397->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:397 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (com.google.javascript.rhino.JSDocInfo.hasType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:251->[Local Variables] "{n\u003dNAME y 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverse:252->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:252 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeInference:traverse:258->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:258 -> com.google.javascript.jscomp.TypeInference.traverseName
+com.google.javascript.jscomp.TypeInference:traverse:258->[Local Variables] "{n\u003dNAME y 4 [source_file: [testcode]] : {}}"
+com.google.javascript.jscomp.TypeInference:traverse:374->[Control Flow] Branch Info: Line: 374, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:396->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:396 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverse:397->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:397 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (com.google.javascript.rhino.JSDocInfo.hasType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:288->[Local Variables] "{n\u003dNEW 4 [source_file: [testcode]] : F}"
+com.google.javascript.jscomp.TypeInference:traverse:374->[Control Flow] Branch Info: Line: 374, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:396->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:396 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverse:397->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:397 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeInference:traverse:396->[Control Flow] Branch Info: Line: 396, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:398->[Control Flow] Branch Info: Line: 398, Condition: if (com.google.javascript.rhino.JSDocInfo.hasType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:373->[Local Variables] "{n\u003dEXPR_RESULT 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverse:374->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:374 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverse:374->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:374 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.TypeInference:traverse:374->[Control Flow] Branch Info: Line: 374, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverse:396->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverse:396 -> com.google.javascript.rhino.Node.isFunction

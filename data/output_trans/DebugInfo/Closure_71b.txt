@@ -1,0 +1,75 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6 ===
+Exception: junit.framework.AssertionFailedError: Overriding private property of Foo.prototype.
+
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:464->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:464 -> com.google.javascript.jscomp.NodeTraversal.makeError
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:463->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:463 -> com.google.javascript.jscomp.AbstractCompiler.report
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:466->[Control Flow] Branch Info: Line: 466, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:466->[Control Flow] Branch Info: Line: 466, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:491->[Control Flow] Branch Info: Line: 491, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:497->[Control Flow] Branch Info: Line: 497, Condition: if (com.google.javascript.rhino.jstype.JSType.isSubtype() == 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:440->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:440 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:434->[Control Flow] Loop Info: Line: 434, Description: while at line 434
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:434->[Local Variables] "{TransVarType\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:435->[Control Flow] Branch Info: Line: 435, Condition: if (TransVarType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:436->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:436 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:436->[Local Variables] {"TransVarJsDocInfo":{"sourceName":"input0","visibility":"PRIVATE","bitset":0,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarJsDocInfo != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:437 -> com.google.javascript.rhino.JSDocInfo.getVisibility
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Control Flow] Branch Info: Line: 437, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:435->[Control Flow] Branch Info: Line: 435, Condition: if (TransVarType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:443->[Control Flow] Branch Info: Line: 443, Condition: if (TransVarType == null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.jscomp.NodeTraversal.getInput
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.jscomp.CompilerInput.getName
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> java.lang.String.equals
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Local Variables] {"TransVarIsSameName":false}
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:450->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:450 -> com.google.javascript.rhino.JSDocInfo.getVisibility
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:450->[Local Variables] {"TransVarPropVisibility":"PRIVATE"}
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:451->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:451 -> com.google.javascript.jscomp.CheckAccessControls.normalizeClassType
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:451->[Local Variables] "{TransVarClassType\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:452->[Control Flow] Branch Info: Line: 452, Condition: if (TransVarIsAssign != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:455->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:455 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:456->[Control Flow] Branch Info: Line: 456, Condition: if (TransVarOverrideInfo == null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:461->[Local Variables] {"TransVarOverridingVisibility1":"INHERITED"}
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:462->[Control Flow] Branch Info: Line: 462, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:462->[Control Flow] Branch Info: Line: 462, Condition: if (TransVarIsSameName == 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:465->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:465 -> java.lang.Object.toString
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+=== stdout ===
+Failing tests: 1
+  - com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8
+
+=== stderr ===
+Running ant (compile.tests)................................................ OK
+Running ant (run.dev.tests)................................................ OK
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:413->[Local Variables] "{TransVarType\u003dSubFoo}"
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:414->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:414 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:414->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:414 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:416->[Control Flow] Branch Info: Line: 416, Condition: if (TransVarType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:422->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:422 -> com.google.javascript.jscomp.NodeTraversal.inGlobalScope
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:422->[Control Flow] Branch Info: Line: 422, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:423->[Control Flow] Branch Info: Line: 423, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:424->[Control Flow] Branch Info: Line: 424, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:428->[Control Flow] Branch Info: Line: 428, Condition: if (TransVarIsAssign != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:435->[Control Flow] Branch Info: Line: 435, Condition: if (TransVarType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:436->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:436 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:436->[Local Variables] {"TransVarJsDocInfo":{"sourceName":"input1","visibility":"PRIVATE","bitset":0,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarJsDocInfo != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:437 -> com.google.javascript.rhino.JSDocInfo.getVisibility
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:437->[Control Flow] Branch Info: Line: 437, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:435->[Control Flow] Branch Info: Line: 435, Condition: if (TransVarType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:443->[Control Flow] Branch Info: Line: 443, Condition: if (TransVarType == null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.jscomp.NodeTraversal.getInput
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.jscomp.CompilerInput.getName
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:449->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:449 -> java.lang.String.equals
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:450->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:450 -> com.google.javascript.rhino.JSDocInfo.getVisibility
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:451->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility:451 -> com.google.javascript.jscomp.CheckAccessControls.normalizeClassType
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:451->[Local Variables] "{TransVarClassType\u003dSubFoo}"
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:452->[Control Flow] Branch Info: Line: 452, Condition: if (TransVarIsAssign != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkPropertyVisibility:474->[Control Flow] Branch Info: Line: 474, Condition: if (TransVarIsSameName != 0), Executed: true

@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue787 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:135->[Local Variables] "{TransVarNodes\u003dSCRIPT 1 [synthetic: 1] [source_file: i0] [input_id: InputId: i0], TransVarChildNode\u003dFUNCTION some_function 1 [source_file: i0], TransVarVisit\u003d0}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:136->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:136 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:133->[Control Flow] Loop Info: Line: 133, Description: while at line 133
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:134->[Control Flow] Branch Info: Line: 134, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:140->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:140 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.visit
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:142->[Local Variables] {"TransVarVisit":1}
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarVisit < TransVarVisit), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:143 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:144 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Control Flow] Branch Info: Line: 144, Condition: if (TransVarNodes == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:146->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:146 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:135->[Local Variables] "{TransVarNodes\u003dBLOCK [synthetic: 1], TransVarChildNode\u003dSCRIPT 1 [synthetic: 1] [source_file: i0] [input_id: InputId: i0], TransVarVisit\u003d0}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:136->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:136 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:133->[Control Flow] Loop Info: Line: 133, Description: while at line 133
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:134->[Control Flow] Branch Info: Line: 134, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:140->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:140 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.visit
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:142->[Local Variables] {"TransVarVisit":1}
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarVisit < TransVarVisit), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:143 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:144 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Control Flow] Branch Info: Line: 144, Condition: if (TransVarNodes == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:146->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:146 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarVisit < TransVarVisit), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:143 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:144 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Control Flow] Branch Info: Line: 144, Condition: if (TransVarNodes == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:146->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:146 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:135->[Local Variables] "{TransVarNodes\u003dBLOCK 1 [source_file: i0], TransVarChildNode\u003dRETURN 12 [source_file: i0], TransVarVisit\u003d0}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:136->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:136 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:133->[Control Flow] Loop Info: Line: 133, Description: while at line 133
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:134->[Control Flow] Branch Info: Line: 134, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:140->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:140 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.visit
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:142->[Local Variables] {"TransVarVisit":1}
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarVisit < TransVarVisit), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:143 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:144 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Control Flow] Branch Info: Line: 144, Condition: if (TransVarNodes == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:146->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:146 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:135->[Local Variables] "{TransVarNodes\u003dFUNCTION some_function 1 [source_file: i0], TransVarChildNode\u003dBLOCK 1 [source_file: i0]}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:136->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:136 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:133->[Control Flow] Loop Info: Line: 133, Description: while at line 133
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:134->[Control Flow] Branch Info: Line: 134, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:140->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:140 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.visit
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:142->[Local Variables] {"TransVarVisit":2}
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarVisit < TransVarVisit), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:143->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:143 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:144 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:144->[Control Flow] Branch Info: Line: 144, Condition: if (TransVarNodes == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:traverse:146->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.traverse:146 -> com.google.javascript.jscomp.PeepholeOptimizationsPass.exitNode

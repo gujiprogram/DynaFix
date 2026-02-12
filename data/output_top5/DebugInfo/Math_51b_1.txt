@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631 ===
+Exception: org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (3,624) exceeded: evaluations
+
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:123->[Local Variables] {"min":1.0,"max":10.0,"maxEval":3624,"startValue":5.5}
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:115->[Local Variables] {"allowedSolution":"ANY_SIDE"}
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:117->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve:117 -> org.apache.commons.math.analysis.solvers.AbstractUnivariateRealSolver.solve

@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::testSupportsNonAsciiTags ===
+Exception: junit.framework.AssertionFailedError: expected:<[Yes]> but was:<[]>
+
+org.jsoup.parser.CharacterReader:matchesLetter:297->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.matchesLetter:297 -> org.jsoup.parser.CharacterReader.isEmpty
+org.jsoup.parser.CharacterReader:matchesLetter:297->[Control Flow] Branch Info: Line: 297, Condition: if (org.jsoup.parser.CharacterReader.isEmpty() != 0), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:299->[Local Variables] {"c":"進"}
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c > c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c <= c), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:297->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.matchesLetter:297 -> org.jsoup.parser.CharacterReader.isEmpty
+org.jsoup.parser.CharacterReader:matchesLetter:297->[Control Flow] Branch Info: Line: 297, Condition: if (org.jsoup.parser.CharacterReader.isEmpty() != 0), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c > c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: true
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c >= c), Executed: false
+org.jsoup.parser.CharacterReader:matchesLetter:300->[Control Flow] Branch Info: Line: 300, Condition: if (c <= c), Executed: false

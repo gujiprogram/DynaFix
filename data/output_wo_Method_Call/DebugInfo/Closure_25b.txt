@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Control Flow] Loop Info: Line: 1059, Description: while at line 1059
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (arg != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1036->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@6a9cd0f8, n\u003dNEW 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1037->[Local Variables] "{constructor\u003dNAME F 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1038->[Local Variables] "{constructor\u003dNAME F 4 [source_file: [testcode]] : function (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1039->[Local Variables] "{constructorType\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (constructorType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1043->[Control Flow] Branch Info: Line: 1043, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1046->[Local Variables] "{ct\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1047->[Control Flow] Branch Info: Line: 1047, Condition: if (arg == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1047->[Control Flow] Branch Info: Line: 1047, Condition: if (constructorType != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (arg != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (constructorType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (arg != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseNew:1057->[Local Variables] "{type\u003dF}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1058->[Local Variables] "{n\u003dNEW 4 [source_file: [testcode]] : F}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (arg != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Local Variables] "{arg\u003dNAME y 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1058->[Local Variables] "{arg\u003dNAME y 4 [source_file: [testcode]] : {}}"

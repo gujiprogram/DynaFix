@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math3.dfp.Dfp.dotrap",
+    "doc": "/** Shift the mantissa left, and adjust the exponent to compensate.\n     */",
+    "code": "return dotrap(DfpField.FLAG_INVALID, NEW_INSTANCE_TRAP, d, result);\n        }\n\n        return new Dfp(d);\n\n    }\n\n    public Dfp newInstance(final String s) {\n        return new Dfp(field, s);\n    }\n\n    public Dfp newInstance(final byte sig, final byte code) {\n        return field.newDfp(sig, code);\n    }\n\n    public DfpField getField() {\n        return field;\n    }\n\n    public int getRadixDigits() {\n        return field.getRadixDigits();\n    }\n\n    public Dfp getZero() {\n        return field.getZero();\n    }\n\n    public Dfp getOne() {\n        return field.getOne();\n    }\n\n    public Dfp getTwo() {\n        return field.getTwo();\n    }\n\n    protected void shiftLeft() {\n        for (int i = mant.length - 1; i > 0; i--) {"
+  },
+  {
+    "method": "org.apache.commons.math3.dfp.Dfp.getZero",
+    "doc": "/** Get the constant 0.\n     * @return a Dfp with value zero\n     */",
+    "code": "public Dfp getZero() {\n        return field.getZero();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.dfp.Dfp.newInstance",
+    "doc": "/** Create an instance with a value of 0.\n     * Use this internally in preference to constructors to facilitate subclasses\n     * @return a new instance with a value of 0\n     */",
+    "code": "public Dfp newInstance() {\n        return new Dfp(getField());\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.dfp.DfpField.setIEEEFlagsBits",
+    "doc": "/** Sets some bits in the IEEE 854 status flags, without changing the already set bits.\n     * <p>\n     * Calling this method is equivalent to call {@code setIEEEFlags(getIEEEFlags() | bits)}\n     * </p>\n     * @param bits bits to set\n     * @see #getIEEEFlags()\n     * @see #clearIEEEFlags()\n     * @see #setIEEEFlags(int)\n     * @see #FLAG_INVALID\n     * @see #FLAG_DIV_ZERO\n     * @see #FLAG_OVERFLOW\n     * @see #FLAG_UNDERFLOW\n     * @see #FLAG_INEXACT\n     */",
+    "code": "public void setIEEEFlagsBits(final int bits) {\n        ieeeFlags |= bits & (FLAG_INVALID | FLAG_DIV_ZERO | FLAG_OVERFLOW | FLAG_UNDERFLOW | FLAG_INEXACT);\n    }"
+  }
+]

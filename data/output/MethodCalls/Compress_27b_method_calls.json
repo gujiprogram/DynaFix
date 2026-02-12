@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarUtils.exceptionMessage",
+    "doc": "/**\n     * Parse a boolean byte from a buffer.\n     * Leading spaces and NUL are ignored.\n     * The buffer may contain trailing spaces or NULs.\n     *\n     * @param buffer The buffer from which to parse.\n     * @param offset The offset into the buffer from which to parse.\n     * @return The boolean value of the bytes.\n     * @throws IllegalArgumentException if an invalid byte is detected.\n     */",
+    "code": "private static String exceptionMessage(byte[] buffer, final int offset,\n            final int length, int current, final byte currentByte) {\n        String string = new String(buffer, offset, length);\n\n        string=string.replaceAll(\"\\0\", \"{NUL}\"); // Replace NULs to allow string to be printed\n        final String s = \"Invalid byte \"+currentByte+\" at offset \"+(current-offset)+\" in '\"+string+\"' len=\"+length;\n        return s;\n    }"
+  }
+]

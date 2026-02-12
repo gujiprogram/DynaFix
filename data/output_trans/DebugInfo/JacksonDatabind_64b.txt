@@ -1,0 +1,41 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.filter.JsonIncludeTest::testIssue1351 ===
+Exception: junit.framework.ComparisonFailure: expected:<{[]}> but was:<{["str":null]}>
+
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:179->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:179 -> java.lang.Class.isArray
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:179->[Control Flow] Branch Info: Line: 179, Condition: if (java.lang.Class.isArray() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:188->[Control Flow] Branch Info: Line: 188, Condition: if (com.fasterxml.jackson.databind.JavaType.isReferenceType() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:204->[Control Flow] Branch Info: Line: 204, Condition: if (com.fasterxml.jackson.databind.JavaType.isContainerType() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:205->[Control Flow] Branch Info: Line: 205, Condition: if (com.fasterxml.jackson.databind.SerializationConfig.isEnabled() == 0), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:211 -> com.fasterxml.jackson.databind.BeanDescription.getClassAnnotations
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:211 -> com.fasterxml.jackson.databind.ser.BeanPropertyWriter.<init>
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:214->[Local Variables] {"TransVarBeanPropertyWriter":{"_name":{"_value":"str"},"_declaredType":{"_bindings":{"_names":[],"_types":[],"_hashCode":1},"_class":"class java.lang.String","_hash":1195259493,"_asStatic":false},"_member":{"_paramClasses":[]},"_suppressNulls":false,"_suppressableValue":"","_metadata":{}}}
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:215->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:215 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findNullSerializer
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:216->[Control Flow] Branch Info: Line: 216, Condition: if (TransVarNullSerDef != null), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:220->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:220 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findUnwrappingNameTransformer
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:221->[Control Flow] Branch Info: Line: 221, Condition: if (TransVarNameTransformer != null), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:220->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:220 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findUnwrappingNameTransformer
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:221->[Control Flow] Branch Info: Line: 221, Condition: if (TransVarNameTransformer != null), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:104->[Local Variables] {"TransVarType":{"_bindings":{"_names":[],"_types":[],"_hashCode":1},"_class":"class java.lang.String","_hash":1195259493,"_asStatic":false}}
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:105->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:105 -> com.fasterxml.jackson.databind.ser.PropertyBuilder.findSerializationType
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:114->[Control Flow] Branch Info: Line: 114, Condition: if (TransVarContentTypeSerImpl != null), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:137->[Control Flow] Branch Info: Line: 137, Condition: if (TransVarSerializationJavaType == null), Executed: true
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:141->[Local Variables] {"TransVarActualJavaType":{"_bindings":{"_names":[],"_types":[],"_hashCode":1},"_class":"class java.lang.String","_hash":1195259493,"_asStatic":false}}
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:142->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:142 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:142->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:142 -> com.fasterxml.jackson.databind.SerializationConfig.getDefaultPropertyInclusion
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:147->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:147 -> com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.findInclusion
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:147->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:147 -> com.fasterxml.jackson.annotation.JsonInclude$Value.withOverrides
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:148->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:148 -> com.fasterxml.jackson.annotation.JsonInclude$Value.getValueInclusion
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:150->[Control Flow] Branch Info: Line: 150, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:154->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:154 -> com.fasterxml.jackson.annotation.JsonInclude$Include.ordinal
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:166->[Control Flow] Branch Info: Line: 166, Condition: if (this._useRealPropertyDefaults != false), Executed: true
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:168->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:168 -> com.fasterxml.jackson.databind.SerializerProvider.isEnabled
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:168->[Control Flow] Branch Info: Line: 168, Condition: if (com.fasterxml.jackson.databind.SerializerProvider.isEnabled() != 0), Executed: true
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:169->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:169 -> com.fasterxml.jackson.databind.SerializationConfig.isEnabled
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:169->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:169 -> com.fasterxml.jackson.databind.introspect.AnnotatedMember.fixAccess
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:168->[Control Flow] Branch Info: Line: 168, Condition: if (com.fasterxml.jackson.databind.SerializerProvider.isEnabled() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:171->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:171 -> com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.getName
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:171->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:171 -> com.fasterxml.jackson.databind.ser.PropertyBuilder.getPropertyDefaultValue
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:175->[Local Variables] {"TransVarValue":""}
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:176->[Control Flow] Branch Info: Line: 176, Condition: if (TransVarValue == null), Executed: false
+com.fasterxml.jackson.databind.ser.PropertyBuilder:buildWriter:179->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.PropertyBuilder.buildWriter:179 -> java.lang.Object.getClass

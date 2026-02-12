@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isNoType",
+    "doc": "/**\n   * Checks whether the property is present on the object.\n   * @param pname The property name.\n   */",
+    "code": "public boolean isNoType() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isSubtype",
+    "doc": "/**\n   * Tests whether the type is a string (value or Object).\n   * @return {@code this &lt;: (String, string)}\n   */",
+    "code": "return isSubtype(\n        getNativeType(JSTypeNative.STRING_VALUE_OR_OBJECT_TYPE));"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  }
+]

@@ -1,0 +1,114 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testTokensSingleMatchWithPath ===
+Exception: junit.framework.AssertionFailedError: Expected token END_OBJECT, current token null
+
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:244 -> com.fasterxml.jackson.core.JsonToken.isStructEnd
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Control Flow] Branch Info: Line: 244, Condition: if (com.fasterxml.jackson.core.JsonToken.isStructEnd() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:248 -> com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:251->[Control Flow] Branch Info: Line: 251, Condition: if (com.fasterxml.jackson.core.JsonToken.isScalarValue() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() == 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:262->[Control Flow] Branch Info: Line: 262, Condition: if (TransVarExposedContext != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.inArray() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:287 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Local Variables] {"TransVarJsonToken":"FIELD_NAME"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarJsonToken == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:297->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:297 -> com.fasterxml.jackson.core.JsonToken.id
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:389->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:389 -> com.fasterxml.jackson.core.JsonParser.getCurrentName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:390->[Local Variables] {"TransVarNameOfTheVariable":"value2"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:391 -> com.fasterxml.jackson.core.filter.TokenFilterContext.setFieldName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Local Variables] {"TransVarFilter":{"_names":["value"]}}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:392->[Control Flow] Branch Info: Line: 392, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:404->[Control Flow] Branch Info: Line: 404, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:409->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:409 -> com.fasterxml.jackson.core.filter.TokenFilter.includeProperty
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:410->[Control Flow] Branch Info: Line: 410, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:416->[Control Flow] Branch Info: Line: 416, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:417->[Control Flow] Branch Info: Line: 417, Condition: if (this._includePath != false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:421->[Control Flow] Branch Info: Line: 421, Condition: if (this._includePath != false), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:422 -> com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextTokenWithBuffering
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Local Variables] {"TransVarJsonToken":"END_OBJECT"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:423->[Control Flow] Branch Info: Line: 423, Condition: if (TransVarJsonToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: true
+
+=== Debug Info for Test: com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testBasicSingleMatchFilteringWithPath ===
+Exception: junit.framework.ComparisonFailure: expected:<{"ob":{"value":3}[}]> but was:<{"ob":{"value":3}[]>
+
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:244 -> com.fasterxml.jackson.core.JsonToken.isStructEnd
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Control Flow] Branch Info: Line: 244, Condition: if (com.fasterxml.jackson.core.JsonToken.isStructEnd() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:248 -> com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:251->[Control Flow] Branch Info: Line: 251, Condition: if (com.fasterxml.jackson.core.JsonToken.isScalarValue() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() == 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:262->[Control Flow] Branch Info: Line: 262, Condition: if (TransVarExposedContext != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.inArray() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:287 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Local Variables] {"TransVarJsonToken":"FIELD_NAME"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarJsonToken == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:297->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:297 -> com.fasterxml.jackson.core.JsonToken.id
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:389->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:389 -> com.fasterxml.jackson.core.JsonParser.getCurrentName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:390->[Local Variables] {"TransVarNameOfTheVariable":"value2"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:391 -> com.fasterxml.jackson.core.filter.TokenFilterContext.setFieldName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Local Variables] {"TransVarFilter":{"_names":["value"]}}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:392->[Control Flow] Branch Info: Line: 392, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:404->[Control Flow] Branch Info: Line: 404, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:409->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:409 -> com.fasterxml.jackson.core.filter.TokenFilter.includeProperty
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:410->[Control Flow] Branch Info: Line: 410, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:416->[Control Flow] Branch Info: Line: 416, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:417->[Control Flow] Branch Info: Line: 417, Condition: if (this._includePath != false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:421->[Control Flow] Branch Info: Line: 421, Condition: if (this._includePath != false), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:422 -> com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextTokenWithBuffering
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Local Variables] {"TransVarJsonToken":"END_OBJECT"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:423->[Control Flow] Branch Info: Line: 423, Condition: if (TransVarJsonToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: true
+
+=== Debug Info for Test: com.fasterxml.jackson.core.filter.TokenVerifyingParserFiltering330Test::testSkippingForSingleWithPath ===
+Exception: junit.framework.AssertionFailedError: expected:<END_OBJECT> but was:<null>
+
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:244 -> com.fasterxml.jackson.core.JsonToken.isStructEnd
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:244->[Control Flow] Branch Info: Line: 244, Condition: if (com.fasterxml.jackson.core.JsonToken.isStructEnd() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:248 -> com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._currToken != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._exposedContext == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:248->[Control Flow] Branch Info: Line: 248, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:251->[Control Flow] Branch Info: Line: 251, Condition: if (com.fasterxml.jackson.core.JsonToken.isScalarValue() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.isStartHandled() == 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:254->[Control Flow] Branch Info: Line: 254, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:262->[Control Flow] Branch Info: Line: 262, Condition: if (TransVarExposedContext != null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:271->[Control Flow] Branch Info: Line: 271, Condition: if (com.fasterxml.jackson.core.filter.TokenFilterContext.inArray() != 0), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:287 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:287->[Local Variables] {"TransVarJsonToken":"FIELD_NAME"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:288->[Control Flow] Branch Info: Line: 288, Condition: if (TransVarJsonToken == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:297->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:297 -> com.fasterxml.jackson.core.JsonToken.id
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:389->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:389 -> com.fasterxml.jackson.core.JsonParser.getCurrentName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:390->[Local Variables] {"TransVarNameOfTheVariable":"value2"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:391 -> com.fasterxml.jackson.core.filter.TokenFilterContext.setFieldName
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:391->[Local Variables] {"TransVarFilter":{"_names":["value"]}}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:392->[Control Flow] Branch Info: Line: 392, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:404->[Control Flow] Branch Info: Line: 404, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:409->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:409 -> com.fasterxml.jackson.core.filter.TokenFilter.includeProperty
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:410->[Control Flow] Branch Info: Line: 410, Condition: if (TransVarFilter == null), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:416->[Control Flow] Branch Info: Line: 416, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:417->[Control Flow] Branch Info: Line: 417, Condition: if (this._includePath != false), Executed: false
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:421->[Control Flow] Branch Info: Line: 421, Condition: if (this._includePath != false), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Method Call] Call Stack: com.fasterxml.jackson.core.filter.FilteringParserDelegate.nextToken:422 -> com.fasterxml.jackson.core.filter.FilteringParserDelegate._nextTokenWithBuffering
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:422->[Local Variables] {"TransVarJsonToken":"END_OBJECT"}
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:423->[Control Flow] Branch Info: Line: 423, Condition: if (TransVarJsonToken != null), Executed: true
+com.fasterxml.jackson.core.filter.FilteringParserDelegate:nextToken:239->[Control Flow] Branch Info: Line: 239, Condition: if (this._allowMultipleMatches == false), Executed: true

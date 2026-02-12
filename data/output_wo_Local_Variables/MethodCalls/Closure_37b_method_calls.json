@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.popScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.pushScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverseBranch",
+    "doc": "/**\n   * Traverses a branch.\n   */",
+    "code": "private void traverseBranch(Node n, Node parent) {\n    int type = n.getType();\n    if (type == Token.SCRIPT) {\n      inputId = n.getInputId();\n      sourceName = getSourceName(n);\n    }\n\n    curNode = n;\n    if (!callback.shouldTraverse(this, n, parent)) return;\n\n    switch (type) {\n      case Token.FUNCTION:\n        traverseFunction(n, parent);\n        break;\n\n      default:\n        for (Node child = n.getFirstChild(); child != null; ) {\n          Node next = child.getNext();\n          traverseBranch(child, n);\n          child = next;\n        }\n        break;\n    }\n\n    curNode = n;\n    callback.visit(this, n, parent);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionExpression",
+    "doc": "/**\n   * Is a FUNCTION node an function expression? An function expression is one\n   * that has either no name or a name that is not added to the current scope.\n   *\n   * <p>Some examples of function expressions:\n   * <pre>\n   * (function () {})\n   * (function f() {})()\n   * [ function f() {} ]\n   * var f = function f() {};\n   * for (function f() {};;) {}\n   * </pre>\n   *\n   * <p>Some examples of functions that are <em>not</em> expressions:\n   * <pre>\n   * function f() {}\n   * if (x); else function f() {}\n   * for (;;) { function f() {} }\n   * </pre>\n   *\n   * @param n A node\n   * @return Whether n is an function used within an expression.\n   */",
+    "code": "static boolean isFunctionExpression(Node n) {\n    return n.isFunction() && !isStatement(n);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public int getChildCount() {\n    int c = 0;\n    for (Node n = first; n != null; n = n.next)\n      c++;\n\n    return c;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isBlock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

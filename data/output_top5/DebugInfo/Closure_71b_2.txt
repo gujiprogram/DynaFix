@@ -1,0 +1,86 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6 ===
+Exception: junit.framework.AssertionFailedError: Overriding private property of Foo.prototype.
+
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:367 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:379->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:379 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Control Flow] Branch Info: Line: 380, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Control Flow] Branch Info: Line: 380, Condition: if (com.google.javascript.rhino.JSDocInfo.isConstant() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:387->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:387 -> com.google.javascript.rhino.jstype.ObjectType.isInstanceType
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:364->[Control Flow] Branch Info: Line: 364, Condition: if (objectType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:387->[Control Flow] Branch Info: Line: 387, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isInstanceType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:389->[Control Flow] Branch Info: Line: 389, Condition: if (prototype != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:392->[Control Flow] Branch Info: Line: 392, Condition: if (prototypeInfo != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:392->[Control Flow] Branch Info: Line: 392, Condition: if (com.google.javascript.rhino.JSDocInfo.isConstant() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:393->[Control Flow] Branch Info: Line: 393, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:368 -> com.google.common.collect.Multimap.containsEntry
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Local Variables] "{oType\u003dObject}"
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:367 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:369->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:369 -> com.google.javascript.rhino.jstype.ObjectType.getReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:368 -> com.google.common.collect.Multimap.containsEntry
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Local Variables] "{oType\u003dObject.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:367 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:369->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:369 -> com.google.javascript.rhino.jstype.ObjectType.getReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:368 -> com.google.common.collect.Multimap.containsEntry
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Local Variables] "{oType\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:389->[Control Flow] Branch Info: Line: 389, Condition: if (prototype != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:391->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:391 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:364->[Control Flow] Branch Info: Line: 364, Condition: if (objectType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:387->[Control Flow] Branch Info: Line: 387, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isInstanceType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:389->[Control Flow] Branch Info: Line: 389, Condition: if (prototype != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:392->[Control Flow] Branch Info: Line: 392, Condition: if (prototypeInfo != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:392->[Control Flow] Branch Info: Line: 392, Condition: if (com.google.javascript.rhino.JSDocInfo.isConstant() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:393->[Control Flow] Branch Info: Line: 393, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:369->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:369 -> com.google.javascript.rhino.jstype.ObjectType.getReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:368 -> com.google.common.collect.Multimap.containsEntry
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Local Variables] "{oType\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:367 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:367->[Control Flow] Branch Info: Line: 367, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:368->[Control Flow] Branch Info: Line: 368, Condition: if (propertyName != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:376->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:376 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:365->[Control Flow] Loop Info: Line: 365, Description: while at line 365
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:366->[Control Flow] Branch Info: Line: 366, Condition: if (oType != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:379->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:379 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:379->[Local Variables] {"info":{"sourceName":"input1","visibility":"PRIVATE","bitset":0,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Control Flow] Branch Info: Line: 380, Condition: if (info != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:380 -> com.google.javascript.rhino.JSDocInfo.isConstant
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Control Flow] Branch Info: Line: 380, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:380->[Control Flow] Branch Info: Line: 380, Condition: if (com.google.javascript.rhino.JSDocInfo.isConstant() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:381->[Control Flow] Branch Info: Line: 381, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:387->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:387 -> com.google.javascript.rhino.jstype.ObjectType.isInstanceType
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:387->[Control Flow] Branch Info: Line: 387, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isInstanceType() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:388->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty:388 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:checkConstantProperty:388->[Local Variables] "{prototype\u003dSubFoo.prototype}"

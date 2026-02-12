@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormatTest::testLang645 ===
+Exception: junit.framework.ComparisonFailure: expected:<fredag, week [53]> but was:<fredag, week [01]>
+
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:654->[Local Variables] {"rule":{"mField":3}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":7,"mValues":["","söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]},{"mValue":", week "},{"mField":3}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:645->[Local Variables] {"rule":{"mField":7,"mValues":["","söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":7,"mValues":["","söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Local Variables] {"i":4}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:592->[Local Variables] {"indexRef":[4]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:593 -> org.apache.commons.lang3.time.FastDateFormat.parseToken
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Local Variables] {"indexRef":[12],"token":"\u0027, week "}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:595->[Local Variables] {"i":12}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:596 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Local Variables] {"tokenLen":8}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:597->[Control Flow] Branch Info: Line: 597, Condition: if (tokenLen == 0), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:602->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:602 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:603->[Local Variables] {"c":"\u0027"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:683 -> java.lang.String.substring
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:683->[Local Variables] {"sub":", week "}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:684 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:684->[Control Flow] Branch Info: Line: 684, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:687->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:687 -> org.apache.commons.lang3.time.FastDateFormat$StringLiteral.<init>
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:688->[Local Variables] {"rule":{"mValue":", week "}}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:694->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:694 -> java.util.List.add
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:590->[Local Variables] {"rules":[{"mField":7,"mValues":["","söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]},{"mValue":", week "}]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Loop Info: Line: 591, Description: while at line 591
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Control Flow] Branch Info: Line: 591, Condition: if (length < length), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:591->[Local Variables] {"i":13}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:592->[Local Variables] {"indexRef":[13]}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:593 -> org.apache.commons.lang3.time.FastDateFormat.parseToken
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:593->[Local Variables] {"indexRef":[14],"token":"ww"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:595->[Local Variables] {"i":14}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:596 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:596->[Local Variables] {"tokenLen":2}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:597->[Control Flow] Branch Info: Line: 597, Condition: if (tokenLen == 0), Executed: false
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:602->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:602 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:603->[Local Variables] {"c":"w"}
+org.apache.commons.lang3.time.FastDateFormat:parsePattern:654->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.parsePattern:654 -> org.apache.commons.lang3.time.FastDateFormat.selectNumberRule

@@ -1,0 +1,61 @@
+
+=== Debug Info for Test: org.jsoup.nodes.DocumentTest::testShiftJisRoundtrip ===
+Exception: junit.framework.AssertionFailedError: Should not have contained a '?'.
+
+org.jsoup.nodes.Entities:escape:92->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:92 -> java.lang.String.codePointAt
+org.jsoup.nodes.Entities:escape:93->[Local Variables] {"codePoint":114}
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: true
+org.jsoup.nodes.Entities:escape:95->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:95 -> org.jsoup.helper.StringUtil.isWhitespace
+org.jsoup.nodes.Entities:escape:95->[Control Flow] Branch Info: Line: 95, Condition: if (codePoint != 0), Executed: false
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:107->[Control Flow] Branch Info: Line: 107, Condition: if (codePoint < codePoint), Executed: true
+org.jsoup.nodes.Entities:escape:109->[Local Variables] {"c":"r"}
+org.jsoup.nodes.Entities:escape:139->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:139 -> org.jsoup.nodes.Entities.canEncode
+org.jsoup.nodes.Entities:escape:139->[Control Flow] Branch Info: Line: 139, Condition: if (encoder != 0), Executed: true
+org.jsoup.nodes.Entities:escape:140->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:140 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Entities:escape:145->[Local Variables] {"accum":"\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta http-equiv\u003d\"content-type\" content\u003d\"text/html; charset\u003dShift_JIS\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  before after"}
+org.jsoup.nodes.Entities:escape:96->[Control Flow] Branch Info: Line: 96, Condition: if (reachedNonWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:91->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:91 -> java.lang.Character.charCount
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Loop Info: Line: 91, Description: while at line 91
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Branch Info: Line: 91, Condition: if (length < length), Executed: false
+org.jsoup.nodes.Entities:escape:140->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:140 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Entities:escape:145->[Local Variables] {"accum":"\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta http-equiv\u003d\"content-type\" content\u003d\"text/html; charset\u003dShift_JIS\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  before af"}
+org.jsoup.nodes.Entities:escape:96->[Control Flow] Branch Info: Line: 96, Condition: if (reachedNonWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:91->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:91 -> java.lang.Character.charCount
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Loop Info: Line: 91, Description: while at line 91
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Branch Info: Line: 91, Condition: if (length < length), Executed: true
+org.jsoup.nodes.Entities:escape:91->[Local Variables] {"offset":9}
+org.jsoup.nodes.Entities:escape:92->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:92 -> java.lang.String.codePointAt
+org.jsoup.nodes.Entities:escape:93->[Local Variables] {"codePoint":116}
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: true
+org.jsoup.nodes.Entities:escape:95->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:95 -> org.jsoup.helper.StringUtil.isWhitespace
+org.jsoup.nodes.Entities:escape:95->[Control Flow] Branch Info: Line: 95, Condition: if (codePoint != 0), Executed: false
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:107->[Control Flow] Branch Info: Line: 107, Condition: if (codePoint < codePoint), Executed: true
+org.jsoup.nodes.Entities:escape:109->[Local Variables] {"c":"t"}
+org.jsoup.nodes.Entities:escape:139->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:139 -> org.jsoup.nodes.Entities.canEncode
+org.jsoup.nodes.Entities:escape:139->[Control Flow] Branch Info: Line: 139, Condition: if (encoder != 0), Executed: true
+org.jsoup.nodes.Entities:escape:140->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:140 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Entities:escape:145->[Local Variables] {"accum":"\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta http-equiv\u003d\"content-type\" content\u003d\"text/html; charset\u003dShift_JIS\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  before aft"}
+org.jsoup.nodes.Entities:escape:96->[Control Flow] Branch Info: Line: 96, Condition: if (reachedNonWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:91->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:91 -> java.lang.Character.charCount
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Loop Info: Line: 91, Description: while at line 91
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Branch Info: Line: 91, Condition: if (length < length), Executed: true
+org.jsoup.nodes.Entities:escape:91->[Local Variables] {"offset":10}
+org.jsoup.nodes.Entities:escape:92->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:92 -> java.lang.String.codePointAt
+org.jsoup.nodes.Entities:escape:93->[Local Variables] {"codePoint":101}
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: true
+org.jsoup.nodes.Entities:escape:95->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:95 -> org.jsoup.helper.StringUtil.isWhitespace
+org.jsoup.nodes.Entities:escape:95->[Control Flow] Branch Info: Line: 95, Condition: if (codePoint != 0), Executed: false
+org.jsoup.nodes.Entities:escape:94->[Control Flow] Branch Info: Line: 94, Condition: if (normaliseWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:107->[Control Flow] Branch Info: Line: 107, Condition: if (codePoint < codePoint), Executed: true
+org.jsoup.nodes.Entities:escape:109->[Local Variables] {"c":"e"}
+org.jsoup.nodes.Entities:escape:139->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:139 -> org.jsoup.nodes.Entities.canEncode
+org.jsoup.nodes.Entities:escape:139->[Control Flow] Branch Info: Line: 139, Condition: if (encoder != 0), Executed: true
+org.jsoup.nodes.Entities:escape:140->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:140 -> java.lang.StringBuilder.append
+org.jsoup.nodes.Entities:escape:145->[Local Variables] {"accum":"\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta http-equiv\u003d\"content-type\" content\u003d\"text/html; charset\u003dShift_JIS\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  before afte"}
+org.jsoup.nodes.Entities:escape:96->[Control Flow] Branch Info: Line: 96, Condition: if (reachedNonWhite != 0), Executed: false
+org.jsoup.nodes.Entities:escape:91->[Method Call] Call Stack: org.jsoup.nodes.Entities.escape:91 -> java.lang.Character.charCount
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Loop Info: Line: 91, Description: while at line 91
+org.jsoup.nodes.Entities:escape:91->[Control Flow] Branch Info: Line: 91, Condition: if (length < length), Executed: true
+org.jsoup.nodes.Entities:escape:91->[Local Variables] {"offset":11}

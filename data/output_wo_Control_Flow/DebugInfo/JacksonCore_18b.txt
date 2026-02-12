@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.TestJsonGeneratorFeatures::testTooBigBigDecimal ===
+
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:682->[Local Variables] {"value":1E+9999}
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:683->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:683 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._verifyValueWrite
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:689->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:689 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.isEnabled
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> java.math.BigDecimal.toPlainString
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeRaw
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:682->[Local Variables] {"value":1E-9999}
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:683->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:683 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._verifyValueWrite
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:689->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:689 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.isEnabled
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> java.math.BigDecimal.toPlainString
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeRaw
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:682->[Local Variables] {"value":1E+10000}
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:683->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:683 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._verifyValueWrite
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:689->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:689 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.isEnabled
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> java.math.BigDecimal.toPlainString
+com.fasterxml.jackson.core.json.WriterBasedJsonGenerator:writeNumber:690->[Method Call] Call Stack: com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeNumber:690 -> com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeRaw

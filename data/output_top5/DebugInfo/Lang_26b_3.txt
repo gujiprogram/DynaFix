@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormatTest::testLang645 ===
+Exception: junit.framework.ComparisonFailure: expected:<fredag, week [53]> but was:<fredag, week [01]>
+
+org.apache.commons.lang3.time.FastDateFormat:getInstance:195->[Local Variables] {"pattern":"EEEE\u0027, week \u0027ww","locale":"sv_SE"}
+org.apache.commons.lang3.time.FastDateFormat:getInstance:213->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:213 -> org.apache.commons.lang3.time.FastDateFormat.<init>
+org.apache.commons.lang3.time.FastDateFormat:getInstance:214->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:214 -> java.util.Map.get
+org.apache.commons.lang3.time.FastDateFormat:getInstance:215->[Control Flow] Branch Info: Line: 215, Condition: if (format == null), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:getInstance:217->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:217 -> org.apache.commons.lang3.time.FastDateFormat.init
+org.apache.commons.lang3.time.FastDateFormat:getInstance:218->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.getInstance:218 -> java.util.Map.put
+org.apache.commons.lang3.time.FastDateFormat:getInstance:215->[Control Flow] Branch Info: Line: 215, Condition: if (format == null), Executed: false

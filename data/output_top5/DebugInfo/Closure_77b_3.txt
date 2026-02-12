@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testZero ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="\[]0"> but was:<var x="\[u000]0">
+
+com.google.javascript.jscomp.CodeGenerator:jsString:907->[Local Variables] {"s":"\u0000"}
+com.google.javascript.jscomp.CodeGenerator:jsString:910->[Local Variables] {"singleq":0,"doubleq":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:911 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Control Flow] Branch Info: Line: 911, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Local Variables] {"i":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:912->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:912 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Control Flow] Loop Info: Line: 911, Description: while at line 911
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:911 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:911->[Control Flow] Branch Info: Line: 911, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:920->[Control Flow] Branch Info: Line: 920, Condition: if (doubleq < doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:927->[Local Variables] {"quote":"\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:928->[Local Variables] {"doublequote":"\\\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:931->[Local Variables] {"singlequote":"\u0027"}
+com.google.javascript.jscomp.CodeGenerator:jsString:932->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:932 -> com.google.javascript.jscomp.CodeGenerator.strEscape

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.collections.buffer.UnboundedFifoBuffer.iterator",
+    "doc": "/**\n     * Returns an iterator over this buffer's elements.\n     *\n     * @return an iterator over this buffer's elements\n     */",
+    "code": "public Iterator iterator() {\n        return new Iterator() {\n\n            private int index = head;\n            private int lastReturnedIndex = -1;\n\n            public boolean hasNext() {\n                return index != tail;\n\n            }\n\n            public Object next() {\n                if (!hasNext()) {\n                    throw new NoSuchElementException();\n                }\n                lastReturnedIndex = index;\n                index = increment(index);\n                return buffer[lastReturnedIndex];\n            }\n\n            public void remove() {\n                if (lastReturnedIndex == -1) {\n                    throw new IllegalStateException();\n                }\n\n                if (lastReturnedIndex == head) {\n                    UnboundedFifoBuffer.this.remove();\n                    lastReturnedIndex = -1;\n                    return;\n                }\n\n                int i = increment(lastReturnedIndex);\n                while (i != tail) {\n                    buffer[decrement(i)] = buffer[i];\n                    i = increment(i);\n                }\n\n                lastReturnedIndex = -1;\n                tail = decrement(tail);\n                buffer[tail] = null;\n                index = decrement(index);\n            }\n\n        };\n    }"
+  },
+  {
+    "method": "org.apache.commons.collections.buffer.UnboundedFifoBuffer.size",
+    "doc": "/**\n     * Returns the number of elements stored in the buffer.\n     *\n     * @return this buffer's size\n     */",
+    "code": "public int size() {\n        int size = 0;\n\n        if (tail < head) {\n            size = buffer.length - head + tail;\n        } else {\n            size = tail - head;\n        }\n\n        return size;\n    }"
+  }
+]

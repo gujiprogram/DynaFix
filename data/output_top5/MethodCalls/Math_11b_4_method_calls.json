@@ -1,0 +1,62 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.multiply",
+    "doc": "/**\n     * Returns the result of postmultiplying {@code this} by {@code m}.\n     *\n     * @param m matrix to postmultiply by\n     * @return {@code this * m}\n     * @throws DimensionMismatchException if\n     * {@code columnDimension(this) != rowDimension(m)}\n     */",
+    "code": "public Array2DRowRealMatrix multiply(final Array2DRowRealMatrix m)\n        throws DimensionMismatchException {\n        MatrixUtils.checkMultiplicationCompatible(this, m);\n\n        final int nRows = this.getRowDimension();\n        final int nCols = m.getColumnDimension();\n        final int nSum = this.getColumnDimension();\n\n        final double[][] outData = new double[nRows][nCols];\n        final double[] mCol = new double[nSum];\n        final double[][] mData = m.data;\n\n        for (int col = 0; col < nCols; col++) {\n            for (int mRow = 0; mRow < nSum; mRow++) {\n                mCol[mRow] = mData[mRow][col];\n            }\n\n            for (int row = 0; row < nRows; row++) {\n                final double[] dataRow = data[row];\n                double sum = 0;\n                for (int i = 0; i < nSum; i++) {\n                    sum += dataRow[i] * mCol[i];\n                }\n                outData[row][col] = sum;\n            }\n        }\n\n        return new Array2DRowRealMatrix(outData, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.setColumn",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.Array2DRowRealMatrix.transpose",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.DecompositionSolver.getInverse",
+    "doc": "/** Get the inverse (or pseudo-inverse) of the decomposed matrix.\n     * @return inverse matrix\n     * @throws SingularMatrixException\n     * if the decomposed matrix is singular.\n     */",
+    "code": "RealMatrix getInverse();\n}"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.EigenDecomposition.getDeterminant",
+    "doc": "/**\n     * Computes the determinant of the matrix.\n     *\n     * @return the determinant of the matrix.\n     */",
+    "code": "public double getDeterminant() {\n        double determinant = 1;\n        for (double lambda : realEigenvalues) {\n            determinant *= lambda;\n        }\n        return determinant;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.EigenDecomposition.getEigenvector",
+    "doc": "/**\n     * Gets a copy of the i<sup>th</sup> eigenvector of the original matrix.\n     *\n     * @param i Index of the eigenvector (counting from 0).\n     * @return a copy of the i<sup>th</sup> eigenvector of the original matrix.\n     * @see #getD()\n     */",
+    "code": "public RealVector getEigenvector(final int i) {\n        return eigenvectors[i].copy();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.EigenDecomposition.getRealEigenvalues",
+    "doc": "/**\n     * Gets a copy of the real parts of the eigenvalues of the original matrix.\n     *\n     * @return a copy of the real parts of the eigenvalues of the original matrix.\n     *\n     * @see #getD()\n     * @see #getRealEigenvalue(int)\n     * @see #getImagEigenvalues()\n     */",
+    "code": "public double[] getRealEigenvalues() {\n        return realEigenvalues.clone();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.EigenDecomposition.getSolver",
+    "doc": "/**\n     * Gets a solver for finding the A &times; X = B solution in exact\n     * linear sense.\n     * <p>\n     * Since 3.1, eigen decomposition of a general matrix is supported,\n     * but the {@link DecompositionSolver} only supports real eigenvalues.\n     *\n     * @return a solver\n     * @throws MathUnsupportedOperationException if the decomposition resulted in\n     * complex eigenvalues\n     */",
+    "code": "public DecompositionSolver getSolver() {\n        if (hasComplexEigenvalues()) {\n            throw new MathUnsupportedOperationException();\n        }\n        return new Solver(realEigenvalues, imagEigenvalues, eigenvectors);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.multiplyEntry",
+    "doc": "/**\n     * Multiplies (in place) the specified entry of {@code this} matrix by the\n     * specified value. Row and column indices start at 0.\n     *\n     * @param row Row index of the entry to be modified.\n     * @param column Column index of the entry to be modified.\n     * @param factor Multiplication factor for the matrix entry.\n     * @throws OutOfRangeException if the row or column index is not valid.\n     * @since 2.0\n     */",
+    "code": "void multiplyEntry(int row, int column, double factor) throws OutOfRangeException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealVector.toArray",
+    "doc": "/**\n     * Convert the vector to an array of {@code double}s.\n     * The array is independent from this vector data: the elements\n     * are copied.\n     *\n     * @return an array containing a copy of the vector elements.\n     */",
+    "code": "public double[] toArray() {\n        int dim = getDimension();\n        double[] values = new double[dim];\n        for (int i = 0; i < dim; i++) {\n            values[i] = getEntry(i);\n        }\n        return values;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.sqrt",
+    "doc": "/** Compute the square root of a number.\n     * <p><b>Note:</b> this implementation currently delegates to {@link Math#sqrt}\n     * @param a number on which evaluation is done\n     * @return square root of a\n     */",
+    "code": "public static double sqrt(final double a) {\n        return Math.sqrt(a);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.MathArrays.copyOf",
+    "doc": "/**\n     * Creates a copy of the {@code source} array.\n     *\n     * @param source Array to be copied.\n     * @return the copied array.\n     */",
+    "code": "public static int[] copyOf(int[] source) {\n         return copyOf(source, source.length);\n     }"
+  }
+]

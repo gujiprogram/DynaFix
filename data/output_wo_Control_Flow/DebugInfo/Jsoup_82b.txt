@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::fallbackToUtfIfCantEncode ===
+
+org.jsoup.helper.DataUtil:parseInputStream:160->[Local Variables] "{reader\u003djava.io.BufferedReader@3568f9d2}"
+org.jsoup.helper.DataUtil:parseInputStream:164->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:164 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseInputStream:167->[Local Variables] "{input\u003dorg.jsoup.internal.ConstrainableInputStream@8ad6665, doc\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:169->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:169 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseInputStream:169->[Local Variables] {"charset":{"name":"ISO-2022-CN","aliases":["ISO2022CN","csISO2022CN"]}}
+org.jsoup.helper.DataUtil:parseInputStream:170->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:170 -> org.jsoup.nodes.Document.outputSettings
+org.jsoup.helper.DataUtil:parseInputStream:170->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:170 -> org.jsoup.nodes.Document$OutputSettings.charset
+org.jsoup.helper.DataUtil:parseInputStream:118->[Local Variables] "{parser\u003dorg.jsoup.parser.Parser@30af5b6b, doc\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"ISO-2022-CN\"\u003e\n \u003c/head\u003e\n \u003cbody\u003e\n  One\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:119->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:119 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseInputStream:119->[Local Variables] "{metaElements\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:121->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:121 -> org.jsoup.select.Elements.iterator
+org.jsoup.helper.DataUtil:parseInputStream:121->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:121 -> java.util.Iterator.hasNext
+org.jsoup.helper.DataUtil:parseInputStream:121->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:121 -> java.util.Iterator.next
+org.jsoup.helper.DataUtil:parseInputStream:121->[Local Variables] "{meta\u003d\u003cmeta charset\u003d\"ISO-2022-CN\"\u003e}"
+org.jsoup.helper.DataUtil:parseInputStream:122->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:122 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.helper.DataUtil:parseInputStream:124->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:124 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.helper.DataUtil:parseInputStream:125->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:125 -> org.jsoup.nodes.Element.attr
+org.jsoup.helper.DataUtil:parseInputStream:125->[Local Variables] {"foundCharset":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:146->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:146 -> org.jsoup.helper.DataUtil.validateCharset
+org.jsoup.helper.DataUtil:parseInputStream:147->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:147 -> java.lang.String.equalsIgnoreCase
+org.jsoup.helper.DataUtil:parseInputStream:148->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:148 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:parseInputStream:148->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:148 -> java.lang.String.replaceAll
+org.jsoup.helper.DataUtil:parseInputStream:149->[Local Variables] {"charsetName":"ISO-2022-CN"}
+org.jsoup.helper.DataUtil:parseInputStream:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:160 -> java.io.InputStreamReader.<init>
+org.jsoup.helper.DataUtil:parseInputStream:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseInputStream:160 -> java.io.BufferedReader.<init>

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionDeclaration",
+    "doc": "/**\n   * Is this node a function declaration? A function declaration is a function\n   * that has a name that is added to the current scope (i.e. a function that\n   * is not part of a expression; see {@link #isFunctionExpression}).\n   */",
+    "code": "static boolean isFunctionDeclaration(Node n) {\n    return n.getType() == Token.FUNCTION && isStatement(n);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

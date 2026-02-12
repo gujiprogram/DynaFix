@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.nodes.Element.classNames",
+    "doc": "/**\n     * Get all of the element's class names. E.g. on element {@code <div class=\"header gray\"}>},\n     * returns a set of two elements {@code \"header\", \"gray\"}. Note that modifications to this set are not pushed to\n     * the backing {@code class} attribute; use the {@link #classNames(java.util.Set)} method to persist them.\n     * @return set of classnames, empty if no class attribute\n     */",
+    "code": "public Set<String> classNames() {\n        if (classNames == null) {\n            String[] names = className().split(\"\\\\s+\");\n            classNames = new LinkedHashSet<String>(Arrays.asList(names));\n        }\n        return classNames;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.clone",
+    "doc": "/**\n     * Create a stand-alone, deep copy of this node, and all of its children. The cloned node will have no siblings or\n     * parent node. As a stand-alone object, any changes made to the clone or any of its children will not impact the\n     * original node.\n     * <p>\n     * The cloned node may be adopted into another Document or node structure using {@link Element#appendChild(Node)}.\n     * @return stand-alone cloned node\n     */",
+    "code": "public Node clone() {\n        return doClone(null); // splits for orphan\n    }"
+  }
+]

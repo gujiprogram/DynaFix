@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: org.apache.commons.math3.analysis.differentiation.DerivativeStructureTest::testAtan2SpecialCases ===
+Exception: junit.framework.AssertionFailedError: expected:<0.0> but was:<NaN>
+
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1326->[Local Variables] "{result\u003d[D@77a2aa4a, resultOffset\u003d0, operandOffset\u003d0, operand\u003d[D@47ad69f7}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1327->[Local Variables] {"function":[0.0,0.0,0.0]}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1328->[Local Variables] "{x\u003dNaN}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1329->[Method Call] Call Stack: org.apache.commons.math3.analysis.differentiation.DSCompiler.atan:1329 -> org.apache.commons.math3.util.FastMath.atan
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1329->[Local Variables] "{function\u003d[D@174e1b69}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1330->[Control Flow] Branch Info: Line: 1330, Condition: if (this.order > 0), Executed: true
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1338->[Local Variables] {"q":[0.0,0.0]}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1339->[Local Variables] {"q":[1.0,0.0]}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1340->[Local Variables] "{x2\u003dNaN}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1341->[Local Variables] "{f\u003dNaN}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1342->[Local Variables] "{coeff\u003dNaN}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1344->[Control Flow] Branch Info: Line: 1344, Condition: if (this.order <= this.order), Executed: true
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1346->[Local Variables] {"n":2}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1347->[Local Variables] {"v":0.0}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1348->[Local Variables] {"q":[1.0,-2.0]}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1349->[Control Flow] Branch Info: Line: 1349, Condition: if (k >= 0), Executed: true
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1349->[Local Variables] {"k":1}
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1350->[Local Variables] "{v\u003dNaN}"
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1351->[Control Flow] Branch Info: Line: 1351, Condition: if (k > k), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1353->[Control Flow] Branch Info: Line: 1353, Condition: if (k == k), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1349->[Control Flow] Loop Info: Line: 1349, Description: while at line 1349
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1349->[Control Flow] Branch Info: Line: 1349, Condition: if (k >= 0), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1357->[Control Flow] Branch Info: Line: 1357, Condition: if (n == 0), Executed: true
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1357->[Control Flow] Branch Info: Line: 1357, Condition: if (n == 0), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1344->[Control Flow] Loop Info: Line: 1344, Description: while at line 1344
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1330->[Control Flow] Branch Info: Line: 1330, Condition: if (this.order > 0), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1344->[Control Flow] Branch Info: Line: 1344, Condition: if (this.order <= this.order), Executed: false
+org.apache.commons.math3.analysis.differentiation.DSCompiler:atan:1368->[Method Call] Call Stack: org.apache.commons.math3.analysis.differentiation.DSCompiler.atan:1368 -> org.apache.commons.math3.analysis.differentiation.DSCompiler.compose

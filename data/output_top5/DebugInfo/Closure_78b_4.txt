@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldArithmetic ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_DIVIDE_BY_0_ERROR. Divide by 0 at testcode line 1 : 8 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:104->[Local Variables] "{right\u003dDIV 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:110->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:110 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:130->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:130 -> com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dNAME x 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dNUMBER 0.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dDIV 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:104->[Local Variables] "{right\u003dNUMBER 0.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:105->[Control Flow] Branch Info: Line: 105, Condition: if (right == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:110->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:110 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:138->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:138 -> com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArithmeticOp
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:96->[Local Variables] "{subtree\u003dASSIGN 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:97->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:97 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:98->[Local Variables] "{left\u003dNAME x 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldBinaryOperator:103->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldBinaryOperator:103 -> com.google.javascript.rhino.Node.getNext

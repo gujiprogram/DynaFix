@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.utils.IOUtils.skip",
+    "doc": "/**\n     * Skips the given number of bytes by repeatedly invoking skip on\n     * the given input stream if necessary.\n     *\n     * <p>In a case where the stream's skip() method returns 0 before\n     * the requested number of bytes has been skip this implementation\n     * will fall back to using the read() method.</p>\n     *\n     * <p>This method will only skip less than the requested number of\n     * bytes if the end of the input stream has been reached.</p>\n     *\n     * @param input stream to skip bytes in\n     * @param numToSkip the number of bytes to skip\n     * @return the number of bytes actually skipped\n     * @throws IOException on error\n     */",
+    "code": "public static long skip(final InputStream input, long numToSkip) throws IOException {\n        final long available = numToSkip;\n        while (numToSkip > 0) {\n            final long skipped = input.skip(numToSkip);\n            if (skipped == 0) {\n                break;\n            }\n            numToSkip -= skipped;\n        }\n\n        while (numToSkip > 0) {\n            final int read = readFully(input, SKIP_BUF, 0,\n                                 (int) Math.min(numToSkip, SKIP_BUF_SIZE));\n            if (read < 1) {\n                break;\n            }\n            numToSkip -= read;\n        }\n        return available - numToSkip;\n    }"
+  }
+]

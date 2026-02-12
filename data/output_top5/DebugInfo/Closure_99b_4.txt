@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testPropertyOfMethod ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testMethod4 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 39 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:147->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:148->[Control Flow] Branch Info: Line: 148, Condition: if (this.assignLhsChild != null), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testInterface1 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 54 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:147->[Local Variables] "{parent\u003dGETPROP 1 [jsdoc_info: JSDocInfo], n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:148->[Control Flow] Branch Info: Line: 148, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:154->[Control Flow] Branch Info: Line: 154, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:154->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldReportThis:154 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:154->[Control Flow] Branch Info: Line: 154, Condition: if (parent != 0), Executed: true

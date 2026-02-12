@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue700 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:484->[Control Flow] Branch Info: Line: 484, Condition: if (this != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:490->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:490 -> com.google.javascript.rhino.jstype.PrototypeObjectType.isImplicitPrototype
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:458->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:458 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:458->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:458 -> com.google.javascript.rhino.jstype.RecordType.isSubtype
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:444->[Local Variables] "{that\u003d{b: boolean, n: number, text: (string|undefined)}}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:445->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:445 -> com.google.javascript.rhino.jstype.JSType.isSubtypeHelper
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:445->[Control Flow] Branch Info: Line: 445, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:450->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:450 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:450->[Control Flow] Branch Info: Line: 450, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:457->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:457 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:457->[Control Flow] Branch Info: Line: 457, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:464->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:464 -> com.google.javascript.rhino.jstype.JSType.toObjectType
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:464->[Local Variables] "{thatObj\u003d{b: boolean, n: number, text: (string|undefined)}}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:465->[Control Flow] Branch Info: Line: 465, Condition: if (thatObj == null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:465->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:465 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:466->[Control Flow] Branch Info: Line: 466, Condition: if (thatCtor != null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:466->[Control Flow] Branch Info: Line: 466, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:468->[Control Flow] Branch Info: Line: 468, Condition: if (thisInterface != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:475 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getConstructor
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Control Flow] Branch Info: Line: 475, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.getConstructor() != null), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:475 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getConstructor
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:475 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Control Flow] Branch Info: Line: 475, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.getConstructor() != null), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:475->[Control Flow] Branch Info: Line: 475, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:476->[Control Flow] Branch Info: Line: 476, Condition: if (thisInterfaces != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:484->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:484 -> com.google.javascript.rhino.jstype.PrototypeObjectType.isUnknownType
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:484->[Control Flow] Branch Info: Line: 484, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:isSubtype:484->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.isSubtype:484 -> com.google.javascript.rhino.jstype.PrototypeObjectType.implicitPrototypeChainIsUnknown

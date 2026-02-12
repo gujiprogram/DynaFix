@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM ===
+
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:115->[Local Variables] {"prefix":"A"}
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:116->[Method Call] Call Stack: org.apache.commons.jxpath.ri.NamespaceResolver.getNamespaceURI:116 -> java.util.HashMap.get
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:116->[Local Variables] {"uri":"foo"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:408->[Local Variables] "{context\u003dorg.apache.commons.jxpath.ri.JXPathContextReferenceImpl@6fe1b4fb, name\u003dA:newAttr}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:412->[Local Variables] "{element\u003d[ElementA: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:413->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:413 -> org.apache.commons.jxpath.ri.QName.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:413->[Local Variables] {"prefix":"A"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:415->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:415 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.toString
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> org.apache.commons.jxpath.JXPathException.<init>

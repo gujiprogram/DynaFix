@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getCompressedSize",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$CurrentEntry.access$100",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.closeEntry",
+    "doc": "/**\n     * Closes the current ZIP archive entry and positions the underlying\n     * stream to the beginning of the next entry. All per-entry variables\n     * and data structures are cleared.\n     * <p>\n     * If the compressed size of this entry is included in the entry header,\n     * then any outstanding bytes are simply skipped from the underlying\n     * stream without uncompressing them. This allows an entry to be safely\n     * closed even if the compression method is unsupported.\n     * <p>\n     * In case we don't know the compressed size of this entry or have\n     * already buffered too much data from the underlying stream to support\n     * uncompression, then the uncompression process is completed and the\n     * end position of the stream is adjusted based on the result of that\n     * process.\n     *\n     * @throws IOException if an error occurs\n     */",
+    "code": "private void closeEntry() throws IOException {\n        if (closed) {\n            throw new IOException(\"The stream is closed\");\n        }\n        if (current == null) {\n            return;\n        }\n\n        if (currentEntryHasOutstandingBytes()) {\n            drainCurrentEntryData();\n        } else {\n            skip(Long.MAX_VALUE);\n\n            final long inB = current.entry.getMethod() == ZipArchiveOutputStream.DEFLATED\n                       ? getBytesInflated() : current.bytesRead;\n\n            final int diff = (int) (current.bytesReadFromStream - inB);\n\n            if (diff > 0) {\n                pushback(buf.array(), buf.limit() - diff, diff);\n                current.bytesReadFromStream -= diff;\n            }\n\n            if (currentEntryHasOutstandingBytes()) {\n                drainCurrentEntryData();\n            }\n        }\n\n        if (lastStoredEntry == null && current.hasDataDescriptor) {\n            readDataDescriptor();\n        }\n\n        inf.reset();\n        buf.clear().flip();\n        current = null;\n        lastStoredEntry = null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.processZip64Extra",
+    "doc": "/**\n     * Records whether a Zip64 extra is present and sets the size\n     * information from it if sizes are 0xFFFFFFFF and the entry\n     * doesn't use a data descriptor.\n     */",
+    "code": "private void processZip64Extra(final ZipLong size, final ZipLong cSize) {\n        final Zip64ExtendedInformationExtraField z64 =\n            (Zip64ExtendedInformationExtraField)\n            current.entry.getExtraField(Zip64ExtendedInformationExtraField.HEADER_ID);\n        current.usesZip64 = z64 != null;\n        if (!current.hasDataDescriptor) {\n            if (z64 != null // same as current.usesZip64 but avoids NPE warning\n                    && (cSize.equals(ZipLong.ZIP64_MAGIC) || size.equals(ZipLong.ZIP64_MAGIC)) ) {\n                current.entry.setCompressedSize(z64.getCompressedSize().getLongValue());\n                current.entry.setSize(z64.getSize().getLongValue());\n            } else {\n                current.entry.setCompressedSize(cSize.getValue());\n                current.entry.setSize(size.getValue());\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFirstLocalFileHeader",
+    "doc": "/**\n     * Fills the given array with the first local file header and\n     * deals with splitting/spanning markers that may prefix the first\n     * LFH.\n     */",
+    "code": "private void readFirstLocalFileHeader(final byte[] lfh) throws IOException {\n        readFully(lfh);\n        final ZipLong sig = new ZipLong(lfh);\n        if (sig.equals(ZipLong.DD_SIG)) {\n            throw new UnsupportedZipFeatureException(UnsupportedZipFeatureException.Feature.SPLITTING);\n        }\n\n        if (sig.equals(ZipLong.SINGLE_SEGMENT_SPLIT_MARKER)) {\n            final byte[] missedLfhBytes = new byte[4];\n            readFully(missedLfhBytes);\n            System.arraycopy(lfh, 4, lfh, 0, LFH_LEN - 4);\n            System.arraycopy(missedLfhBytes, 0, lfh, LFH_LEN - 4, 4);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFully",
+    "doc": "/**\n     * Get the number of bytes Inflater has actually processed.\n     *\n     * <p>for Java &lt; Java7 the getBytes* methods in\n     * Inflater/Deflater seem to return unsigned ints rather than\n     * longs that start over with 0 at 2^32.</p>\n     *\n     * <p>The stream knows how many bytes it has read, but not how\n     * many the Inflater actually consumed - it should be between the\n     * total number of bytes read for the entry and the total number\n     * minus the last read operation.  Here we just try to make the\n     * value close enough to the bytes we've read by assuming the\n     * number of bytes consumed must be smaller than (or equal to) the\n     * number of bytes read but not smaller by more than 2^32.</p>\n     */",
+    "code": "private void readFully(final byte[] b) throws IOException {\n        final int count = IOUtils.readFully(in, b);\n        count(count);\n        if (count < b.length) {\n            throw new EOFException();\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.skipRemainderOfArchive",
+    "doc": "/**\n     * Reads the stream until it find the \"End of central directory\n     * record\" and consumes it as well.\n     */",
+    "code": "private void skipRemainderOfArchive() throws IOException {\n        realSkip(entriesRead * CFH_LEN - LFH_LEN);\n        findEocdRecord();\n        readFully(SHORT_BUF);\n        realSkip(ZipShort.getValue(SHORT_BUF));\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipLong.equals",
+    "doc": "/**\n     * Override to make two instances with same value equal.\n     * @param o an object to compare\n     * @return true if the objects are equal\n     */",
+    "code": "public boolean equals(final Object o) {\n        if (o == null || !(o instanceof ZipLong)) {\n            return false;\n        }\n        return value == ((ZipLong) o).getValue();\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipUtil.setNameAndCommentFromExtraFields",
+    "doc": "/**\n     * If the entry has Unicode*ExtraFields and the CRCs of the\n     * names/comments match those of the extra fields, transfer the\n     * known Unicode values from the extra field.\n     */",
+    "code": "static void setNameAndCommentFromExtraFields(final ZipArchiveEntry ze,\n                                                 final byte[] originalNameBytes,"
+  }
+]

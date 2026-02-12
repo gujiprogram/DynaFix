@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.StringUtil.isWhitespace",
+    "doc": "/**\n     * Tests if a code point is \"whitespace\" as defined in the HTML spec.\n     * @param c code point to test\n     * @return true if code point is whitespace, false otherwise\n     */",
+    "code": "public static boolean isWhitespace(int c){\n        return c == ' ' || c == '\\t' || c == '\\n' || c == '\\f' || c == '\\r';\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Entities.canEncode",
+    "doc": "/**\n     * Unescape the input string.\n     * @param string to un-HTML-escape\n     * @param strict if \"strict\" (that is, requires trailing ';' char, otherwise that's optional)\n     * @return unescaped string\n     */",
+    "code": "private static boolean canEncode(final CoreCharset charset, final char c, final CharsetEncoder fallback) {\n        switch (charset) {\n            case ascii:\n                return c < 0x80;\n            case utf:\n                return true; // real is:!(Character.isLowSurrogate(c) || Character.isHighSurrogate(c)); - but already check above\n            default:\n                return fallback.canEncode(c);\n        }\n    }"
+  }
+]

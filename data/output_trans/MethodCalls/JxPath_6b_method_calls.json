@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.Pointer.getValue",
+    "doc": "/**\n     * Returns the value of the object, property or collection element\n     * this pointer represents. May convert the value to one of the\n     * canonical InfoSet types: String, Number, Boolean, Set.\n     *\n     * For example, in the case of an XML element, getValue() will\n     * return the text contained by the element rather than\n     * the element itself.\n     */",
+    "code": "Object getValue();"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.getSingleNodePointer",
+    "doc": "/**\n     * Returns the first encountered Pointer that matches the current\n     * context's criteria.\n     */",
+    "code": "public Pointer getSingleNodePointer() {\n        reset();\n        while (nextSet()) {\n            if (nextNode()) {\n                return getCurrentNodePointer();\n            }\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.InfoSetUtil.stringValue",
+    "doc": "/**\n     * Converts the supplied object to String\n     */",
+    "code": "public static String stringValue(Object object) {\n        if (object instanceof String) {\n            return (String) object;\n        }\n        if (object instanceof Number) {\n            double d = ((Number) object).doubleValue();\n            long l = ((Number) object).longValue();\n            return d == l ? String.valueOf(l) : String.valueOf(d);\n        }\n        if (object instanceof Boolean) {\n            return ((Boolean) object).booleanValue() ? \"true\" : \"false\";\n        }\n        if (object == null) {\n            return \"\";\n        }\n        if (object instanceof NodePointer) {\n            return stringValue(((NodePointer) object).getValue());\n        }\n        if (object instanceof EvalContext) {\n            EvalContext ctx = (EvalContext) object;\n            Pointer ptr = ctx.getSingleNodePointer();\n            return ptr == null ? \"\" : stringValue(ptr);\n        }\n        return String.valueOf(object);\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.Expression.compute",
+    "doc": "/**\n     * Evaluates the expression. If the result is a node set, returns\n     * the first element of the node set.\n     */",
+    "code": "public abstract Object compute(EvalContext context);"
+  }
+]

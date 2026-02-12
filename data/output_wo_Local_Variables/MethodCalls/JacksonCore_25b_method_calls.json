@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.json.ReaderBasedJsonParser._loadMore",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected boolean _loadMore() throws IOException\n    {\n        final int bufSize = _inputEnd;\n\n        _currInputProcessed += bufSize;\n        _currInputRowStart -= bufSize;\n\n        _nameStartOffset -= bufSize;\n\n        if (_reader != null) {\n            int count = _reader.read(_inputBuffer, 0, _inputBuffer.length);\n            if (count > 0) {\n                _inputPtr = 0;\n                _inputEnd = count;\n                return true;\n            }\n            _closeInput();\n            if (count == 0) {\n                throw new IOException(\"Reader returned 0 characters when trying to read \"+_inputEnd);\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.getCurrentSegment",
+    "doc": "/**********************************************************\n     */",
+    "code": "public char[] getCurrentSegment()\n    {\n         * buffers, we should NOT have anything in shared buffer... ie. may\n         * need to unshare contents.\n        if (_inputStart >= 0) {\n            unshare(1);\n        } else {\n            char[] curr = _currentSegment;\n            if (curr == null) {\n                _currentSegment = buf(0);\n            } else if (_currentSize >= curr.length) {\n                expand(1);\n            }\n        }\n        return _currentSegment;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.getCurrentSegmentSize",
+    "doc": "/**********************************************************\n     */",
+    "code": "public int getCurrentSegmentSize() { return _currentSize; }\n    public void setCurrentLength(int len) { _currentSize = len; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.resetWithShared",
+    "doc": "/**\n     * Method called to initialize the buffer with a shared copy of data;\n     * this means that buffer will just have pointers to actual data. It\n     * also means that if anything is to be appended to the buffer, it\n     * will first have to unshare it (make a local copy).\n     */",
+    "code": "public void resetWithShared(char[] buf, int start, int len)\n    {\n        _resultString = null;\n        _resultArray = null;\n\n        _inputBuffer = buf;\n        _inputStart = start;\n        _inputLen = len;\n\n        if (_hasSegments) {\n            clearSegments();\n        }\n    }"
+  }
+]

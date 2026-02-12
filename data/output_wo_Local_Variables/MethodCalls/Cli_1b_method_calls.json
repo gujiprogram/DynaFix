@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.cli.Option.getKey",
+    "doc": "/**\n     * Returns the 'unique' Option identifier.\n     *\n     * @return the 'unique' Option identifier\n     */",
+    "code": "return getKey().charAt(0);\n    }\n\n    String getKey()\n    {"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.getLongOpt",
+    "doc": "/**\n     * Retrieve the long name of this Option.\n     *\n     * @return Long name of this option, or null, if there is no long name\n     */",
+    "code": "public String getLongOpt()\n    {\n        return this.longOpt;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.getValues",
+    "doc": "/**\n     * Return the values of this Option as a String array\n     * or null if there are no values\n     *\n     * @return the values of this Option as a String array\n     * or null if there are no values\n     */",
+    "code": "public String[] getValues()\n    {\n        return hasNoValues()\n               ? null : (String[]) this.values.toArray(new String[] {  });\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.hashCode",
+    "doc": "/**\n     * Returns whether this Option has any values.\n     *\n     * @return whether this Option has any values.\n     */",
+    "code": "public int hashCode()\n    {\n        int result;\n        result = ( opt != null ? opt.hashCode() : 0 );\n        result = 31 * result + ( longOpt != null ? longOpt.hashCode() : 0 );\n        return result;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Util.stripLeadingHyphens",
+    "doc": "/**\n     * <p>Remove the hyphens from the begining of <code>str</code> and\n     * return the new String.</p>\n     *\n     * @param str The string from which the hyphens should be removed.\n     *\n     * @return the new String.\n     */",
+    "code": "static String stripLeadingHyphens(String str)\n    {\n        if (str.startsWith(\"--\"))\n        {\n            return str.substring(2, str.length());\n        }\n        else if (str.startsWith(\"-\"))\n        {\n            return str.substring(1, str.length());\n        }\n\n        return str;\n    }"
+  }
+]

@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:691->[Control Flow] Branch Info: Line: 691, Condition: if (var != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:691->[Control Flow] Branch Info: Line: 691, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:695->[Local Variables] "{var\u003dScope.Var results.prop2{number}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:697->[Control Flow] Branch Info: Line: 697, Condition: if (oldType == null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:697->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:697 -> com.google.javascript.jscomp.TypeInference.getNativeType
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:696->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:696 -> com.google.javascript.jscomp.FlowScope.inferQualifiedSlot
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:687->[Control Flow] Branch Info: Line: 687, Condition: if (qObjName != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:687->[Control Flow] Branch Info: Line: 687, Condition: if (com.google.javascript.rhino.Node.isString() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:674->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:674 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:673->[Control Flow] Loop Info: Line: 673, Description: while at line 673
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:673->[Control Flow] Branch Info: Line: 673, Condition: if (name != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:675->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:675 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:676->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:676 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:676->[Local Variables] {"memberName":"prop2"}
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:677->[Control Flow] Branch Info: Line: 677, Condition: if (memberName != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:678->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:678 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:678->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:678 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:679->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:679 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:681->[Control Flow] Branch Info: Line: 681, Condition: if (valueType == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:684->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:684 -> com.google.javascript.rhino.jstype.ObjectType.defineInferredProperty
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:686->[Local Variables] "{type\u003d{prop2: number}, n\u003dOBJECTLIT 1 [source_file: [testcode]] : {prop2: number}, objectType\u003d{prop2: number}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:687->[Control Flow] Branch Info: Line: 687, Condition: if (qObjName != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:687->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:687 -> com.google.javascript.rhino.Node.isString
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:687->[Control Flow] Branch Info: Line: 687, Condition: if (com.google.javascript.rhino.Node.isString() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:688->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:688 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:688->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:688 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:688->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:688 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:688->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:688 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:688->[Local Variables] {"qKeyName":"results.prop2"}
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:689->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:689 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:689->[Local Variables] "{var\u003dScope.Var results.prop2{null}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:690->[Control Flow] Branch Info: Line: 690, Condition: if (var == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:690->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:690 -> com.google.javascript.jscomp.Scope$Var.getType
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:691->[Control Flow] Branch Info: Line: 691, Condition: if (var != null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:691->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:691 -> com.google.javascript.jscomp.Scope$Var.isTypeInferred
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:691->[Control Flow] Branch Info: Line: 691, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:692->[Control Flow] Branch Info: Line: 692, Condition: if (oldType == null), Executed: true
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:692->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:692 -> com.google.javascript.jscomp.Scope$Var.setType

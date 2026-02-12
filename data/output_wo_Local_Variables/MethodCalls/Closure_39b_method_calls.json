@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toString",
+    "doc": "/**\n   * A string representation of this type, suitable for printing\n   * in warnings.\n   */",
+    "code": "public String toString() {\n    return toStringHelper(false);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the number of properties of this object.\n   */",
+    "code": "public JSType getPropertyType(String property) {\n    StaticSlot<JSType> slot = getSlot(property);\n    if (slot == null) {\n      return getNativeType(JSTypeNative.UNKNOWN_TYPE);\n    }\n    return slot.getType();\n  }"
+  }
+]

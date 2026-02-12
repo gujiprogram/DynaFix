@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates",
+    "doc": "/**\n     * Method called to output a character that is beyond range of\n     * 1- and 2-byte UTF-8 encodings, when outputting \"raw\"\n     * text (meaning it is not to be escaped or quoted)\n     */",
+    "code": "protected final void _outputSurrogates(int surr1, int surr2) throws IOException\n    {\n        int c = _decodeSurrogate(surr1, surr2);\n        if ((_outputTail + 4) > _outputEnd) {\n            _flushBuffer();\n        }\n        final byte[] bbuf = _outputBuffer;\n        bbuf[_outputTail++] = (byte) (0xf0 | (c >> 18));\n        bbuf[_outputTail++] = (byte) (0x80 | ((c >> 12) & 0x3f));\n        bbuf[_outputTail++] = (byte) (0x80 | ((c >> 6) & 0x3f));\n        bbuf[_outputTail++] = (byte) (0x80 | (c & 0x3f));\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.json.UTF8JsonGenerator._reportError",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

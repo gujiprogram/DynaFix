@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::winzipBackSlashWorkaround ===
+Exception: junit.framework.AssertionFailedError: expected:<ä[/]> but was:<ä[\]>
+
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"doc.txt.gz","rawName":[100,111,99,46,116,120,116,46,103,122]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"doc2.txt","rawName":[100,111,99,50,46,116,120,116]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"�/","rawName":[-124,47]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":"ä\\"}
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.ZipFileTest::testWinzipBackSlashWorkaround ===
+Exception: junit.framework.AssertionFailedError: Expected: <null> but was: ä\ü.txt
+
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"doc.txt.gz","rawName":[100,111,99,46,116,120,116,46,103,122]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"doc2.txt","rawName":[100,111,99,50,46,116,120,116]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"�/","rawName":[-124,47]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"�/�zip.zip","rawName":[-124,47,-4,122,105,112,46,122,105,112]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":""}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:547->[Local Variables] {"name":"�/�.txt","rawName":[-124,47,-127,46,116,120,116]}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":"ä\\"}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":"ä\\³zip.zip"}
+org.apache.commons.compress.archivers.zip.ZipArchiveEntry:setName:511->[Local Variables] {"name":"ä\\ü.txt"}

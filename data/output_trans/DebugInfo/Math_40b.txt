@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolverTest::testIssue716 ===
+Exception: org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (100) exceeded: evaluations
+
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:265->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:265 -> org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.computeObjectiveValue
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:220->[Control Flow] Branch Info: Line: 220, Condition: if (org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.getFunctionValueAccuracy() < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:237->[Control Flow] Branch Info: Line: 237, Condition: if (TransVarAgingB >= TransVarAgingB), Executed: true
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:244->[Local Variables] {"TransVarY":-1.2109367128828676E-10}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarStartIndex <= TransVarStartIndex), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:247->[Local Variables] {"TransVarEndPoint":3}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:248->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:248 -> java.lang.System.arraycopy
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:249->[Local Variables] {"TransVarTmpX_":[-0.9999999,14.999677603318897,14.999680897001085,0.0,0.0,0.0]}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:250->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:250 -> org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.guessX
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:250->[Local Variables] {"TransVarX":-511.9787592228537,"TransVarTmpX_":[-0.9999999,1599.9677594897373,2.5598974424742688E13,0.0,0.0,0.0]}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:251->[Control Flow] Branch Info: Line: 251, Condition: if (TransVarX3 > 0), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:252->[Control Flow] Branch Info: Line: 252, Condition: if (TransVarSignChange >= TransVarSignChange), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:256->[Local Variables] {"TransVarEndPoint":2}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:251->[Control Flow] Branch Info: Line: 251, Condition: if (TransVarTmpX >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:258->[Local Variables] "{TransVarX\u003dNaN}"
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:259 -> java.lang.Double.isNaN
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarX != 0), Executed: true
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarStartIndex <= TransVarStartIndex), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:248->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:248 -> java.lang.System.arraycopy
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:249->[Local Variables] {"TransVarTmpX_":[-0.9999999,14.999677603318897,2.5598974424742688E13,0.0,0.0,0.0]}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:250->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:250 -> org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.guessX
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:250->[Local Variables] {"TransVarX":14.999674309637406,"TransVarTmpX_":[-0.9999999,1599.9677594897373,2.5598974424742688E13,0.0,0.0,0.0]}
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:251->[Control Flow] Branch Info: Line: 251, Condition: if (TransVarX3 > 0), Executed: true
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:251->[Control Flow] Branch Info: Line: 251, Condition: if (TransVarTmpX >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:259 -> java.lang.Double.isNaN
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarX != 0), Executed: false
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:260->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.doSolve:260 -> java.lang.Double.isNaN
+org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver:doSolve:260->[Control Flow] Branch Info: Line: 260, Condition: if (TransVarX != 0), Executed: false

@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::supportsBOMinFiles ===
+
+org.jsoup.helper.DataUtil:parseByteData:94->[Control Flow] Branch Info: Line: 94, Condition: if (charsetName == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:96->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:96 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:96->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:96 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:96->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:96 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:97->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:97 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:98->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:98 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseByteData:98->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:98 -> org.jsoup.select.Elements.first
+org.jsoup.helper.DataUtil:parseByteData:99->[Control Flow] Branch Info: Line: 99, Condition: if (meta != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:114->[Control Flow] Branch Info: Line: 114, Condition: if (foundCharset != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:114->[Control Flow] Branch Info: Line: 114, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:114->[Control Flow] Branch Info: Line: 114, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:126->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:126 -> java.lang.String.length
+org.jsoup.helper.DataUtil:parseByteData:126->[Control Flow] Branch Info: Line: 126, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:126->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:126 -> java.lang.String.charAt
+org.jsoup.helper.DataUtil:parseByteData:126->[Control Flow] Branch Info: Line: 126, Condition: if (java.lang.String.length() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:126->[Control Flow] Branch Info: Line: 126, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:133->[Control Flow] Branch Info: Line: 133, Condition: if (doc == null), Executed: false

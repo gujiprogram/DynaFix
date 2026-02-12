@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.LiveVariablesAnalysis.addToSetIfLocal",
+    "doc": "/**\n   * Computes the GEN and KILL set.\n   *\n   * @param n Root node.\n   * @param gen Local variables that are live because of the instruction at\n   *        {@code n} will be added to this set.\n   * @param kill Local variables that are killed because of the instruction at\n   *        {@code n} will be added to this set.\n   * @param conditional {@code true} if any assignments encountered are\n   *        conditionally executed. These assignments might not kill a variable.\n   */",
+    "code": "private void addToSetIfLocal(Node node, BitSet set) {\n    Preconditions.checkState(NodeUtil.isName(node));\n    String name = node.getString();\n    if (!jsScope.isDeclared(name, false)) {\n      return;\n    }\n    Var var = jsScope.getVar(name);\n    if (!escaped.contains(var)) {\n      set.set(var.index);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isForIn",
+    "doc": "/**\n   * @return Whether the node represents a FOR-IN loop.\n   */",
+    "code": "static boolean isForIn(Node n) {\n    return n.getType() == Token.FOR\n        && n.getChildCount() == 3;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isVar",
+    "doc": "/**\n   * Is this a VAR node?\n   */",
+    "code": "static boolean isVar(Node n) {\n    return n.getType() == Token.VAR;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

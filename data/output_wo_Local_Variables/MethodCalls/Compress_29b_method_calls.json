@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a zip file.\n     * Does not currently handle self-extracting zips which may have arbitrary\n     * leading content.\n     *\n     * @param signature the bytes to check\n     * @param length    the number of bytes to check\n     * @return true, if this stream is a zip archive stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < ZipArchiveOutputStream.LFH_SIG.length) {\n            return false;\n        }\n\n        return checksig(signature, ZipArchiveOutputStream.LFH_SIG) // normal file\n            || checksig(signature, ZipArchiveOutputStream.EOCD_SIG) // empty zip\n            || checksig(signature, ZipArchiveOutputStream.DD_SIG) // split zip\n            || checksig(signature, ZipLong.SINGLE_SEGMENT_SPLIT_MARKER.getBytes());\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.setEncoding",
+    "doc": "/**\n     * The encoding to use for filenames and the file comment.\n     *\n     * <p>For a list of possible values see <a\n     * href=\"http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html\">http://java.sun.com/j2se/1.5.0/docs/guide/intl/encoding.doc.html</a>.\n     * Defaults to UTF-8.</p>\n     * @param encoding the encoding to use for file names, use null\n     * for the platform's default encoding\n     */",
+    "code": "public void setEncoding(final String encoding) {\n        this.encoding = encoding;\n        this.zipEncoding = ZipEncodingHelper.getZipEncoding(encoding);\n        if (useUTF8Flag && !ZipEncodingHelper.isUTF8(encoding)) {\n            useUTF8Flag = false;\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipEncodingHelper.getZipEncoding",
+    "doc": "/**\n     * Instantiates a zip encoding.\n     *\n     * @param name The name of the zip encoding. Specify {@code null} for\n     *             the platform's default encoding.\n     * @return A zip encoding for the given encoding name.\n     */",
+    "code": "public static ZipEncoding getZipEncoding(String name) {\n\n        if (isUTF8(name)) {\n            return UTF8_ZIP_ENCODING;\n        }\n\n        if (name == null) {\n            return new FallbackZipEncoding();\n        }\n\n        SimpleEncodingHolder h = simpleEncodings.get(name);\n\n        if (h!=null) {\n            return h.getEncoding();\n        }\n\n        try {\n\n            Charset cs = Charset.forName(name);\n            return new NioZipEncoding(cs);\n\n        } catch (UnsupportedCharsetException e) {\n            return new FallbackZipEncoding(name);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.utils.IOUtils.readFully",
+    "doc": "/**\n     * Reads as much from input as possible to fill the given array.\n     *\n     * <p>This method may invoke read repeatedly to fill the array and\n     * only read less bytes than the length of the array if the end of\n     * the stream has been reached.</p>\n     *\n     * @param input stream to read from\n     * @param b buffer to fill\n     * @return the number of bytes actually read\n     * @throws IOException\n     */",
+    "code": "public static int readFully(InputStream input, byte[] b) throws IOException {\n        return readFully(input, b, 0, b.length);\n    }"
+  }
+]

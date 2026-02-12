@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang3.time.FastDateParser$Strategy.addRegex",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.lang3.time.FastDateParser.getStrategy",
+    "doc": "/**\n     * Obtain a Strategy given a field from a SimpleDateFormat pattern\n     * @param formatField A sub-sequence of the SimpleDateFormat pattern\n     * @return The Strategy that will handle parsing for the field\n     */",
+    "code": "private Strategy getStrategy(String formatField) {\n        switch(formatField.charAt(0)) {\n        case '\\'':\n            if(formatField.length()>2) {\n                formatField= formatField.substring(1, formatField.length()-1);\n            }\n        default:\n            return new CopyQuotedStrategy(formatField);\n        case 'D':\n            return DAY_OF_YEAR_STRATEGY;\n        case 'E':\n            return DAY_OF_WEEK_STRATEGY;\n        case 'F':\n            return DAY_OF_WEEK_IN_MONTH_STRATEGY;\n        case 'G':\n            return ERA_STRATEGY;\n        case 'H':\n            return MODULO_HOUR_OF_DAY_STRATEGY;\n        case 'K':\n            return HOUR_STRATEGY;\n        case 'M':\n            return formatField.length()>=3 ?TEXT_MONTH_STRATEGY :NUMBER_MONTH_STRATEGY;\n        case 'S':\n            return MILLISECOND_STRATEGY;\n        case 'W':\n            return WEEK_OF_MONTH_STRATEGY;\n        case 'Z':\n            break;\n        case 'a':\n            return AM_PM_STRATEGY;\n        case 'd':\n            return DAY_OF_MONTH_STRATEGY;\n        case 'h':\n            return MODULO_HOUR_STRATEGY;\n        case 'k':\n            return HOUR_OF_DAY_STRATEGY;\n        case 'm':\n            return MINUTE_STRATEGY;\n        case 's':\n            return SECOND_STRATEGY;\n        case 'w':\n            return WEEK_OF_YEAR_STRATEGY;\n        case 'y':\n            return formatField.length()>2 ?LITERAL_YEAR_STRATEGY :ABBREVIATED_YEAR_STRATEGY;\n        case 'z':\n            break;\n        }\n        TimeZoneStrategy tzs= tzsCache.get(locale);\n        if(tzs==null) {\n            tzs= new TimeZoneStrategy(locale);\n            TimeZoneStrategy inCache= tzsCache.putIfAbsent(locale, tzs);\n            if(inCache!=null) {\n                return inCache;\n            }\n        }\n        return tzs;\n    }"
+  }
+]

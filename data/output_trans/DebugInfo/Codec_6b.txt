@@ -1,0 +1,26 @@
+
+=== Debug Info for Test: org.apache.commons.codec.binary.Base64InputStreamTest::testCodec101 ===
+Exception: junit.framework.AssertionFailedError: Codec101: First read successful [c=0]
+
+org.apache.commons.codec.binary.Base64InputStream:read:141->[Local Variables] {"TransVarNum":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."],"TransVarSize":8192,"TransVarOffsetX":0}
+org.apache.commons.codec.binary.Base64InputStream:read:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarNum == null), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:147->[Control Flow] Branch Info: Line: 147, Condition: if (TransVarOffsetX >= 0), Executed: true
+org.apache.commons.codec.binary.Base64InputStream:read:147->[Control Flow] Branch Info: Line: 147, Condition: if (TransVarSize < 0), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:152->[Control Flow] Branch Info: Line: 152, Condition: if (TransVarNum <= TransVarNum), Executed: true
+org.apache.commons.codec.binary.Base64InputStream:read:152->[Control Flow] Branch Info: Line: 152, Condition: if (TransVarNum > TransVarNum), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:154->[Control Flow] Branch Info: Line: 154, Condition: if (TransVarSize == 0), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:173->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64InputStream.read:173 -> org.apache.commons.codec.binary.Base64.hasData
+org.apache.commons.codec.binary.Base64InputStream:read:173->[Control Flow] Branch Info: Line: 173, Condition: if (org.apache.commons.codec.binary.Base64.hasData() == 0), Executed: true
+org.apache.commons.codec.binary.Base64InputStream:read:174->[Control Flow] Branch Info: Line: 174, Condition: if (this.doEncode != false), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:174->[Local Variables] {"TransVarBuf2":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+org.apache.commons.codec.binary.Base64InputStream:read:175->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64InputStream.read:175 -> java.io.InputStream.read
+org.apache.commons.codec.binary.Base64InputStream:read:177->[Local Variables] {"TransVarNum2":3,"TransVarBuf2":[49,50,51,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+org.apache.commons.codec.binary.Base64InputStream:read:178->[Control Flow] Branch Info: Line: 178, Condition: if (TransVarNum2 > 0), Executed: true
+org.apache.commons.codec.binary.Base64InputStream:read:178->[Control Flow] Branch Info: Line: 178, Condition: if (TransVarSize == TransVarSize), Executed: true
+org.apache.commons.codec.binary.Base64InputStream:read:179->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64InputStream.read:179 -> org.apache.commons.codec.binary.Base64.setInitialBuffer
+org.apache.commons.codec.binary.Base64InputStream:read:178->[Control Flow] Branch Info: Line: 178, Condition: if (TransVarNum2 > 0), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:178->[Control Flow] Branch Info: Line: 178, Condition: if (TransVarSize == TransVarSize), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:181->[Control Flow] Branch Info: Line: 181, Condition: if (this.doEncode != false), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:184->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64InputStream.read:184 -> org.apache.commons.codec.binary.Base64.decode
+org.apache.commons.codec.binary.Base64InputStream:read:173->[Control Flow] Branch Info: Line: 173, Condition: if (org.apache.commons.codec.binary.Base64.hasData() == 0), Executed: false
+org.apache.commons.codec.binary.Base64InputStream:read:187->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64InputStream.read:187 -> org.apache.commons.codec.binary.Base64.readResults

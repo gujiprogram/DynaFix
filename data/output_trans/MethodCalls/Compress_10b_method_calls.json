@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getName",
+    "doc": "/**\n     * Get the name of the entry.\n     * @return the entry name\n     */",
+    "code": "public String getName() {\n        return name == null ? super.getName() : name;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.setExtra",
+    "doc": "/**\n     * Parses the given bytes as extra field data and consumes any\n     * unparseable data as an {@link UnparseableExtraFieldData}\n     * instance.\n     * @param extra an array of bytes to be parsed into extra fields\n     * @throws RuntimeException if the bytes cannot be parsed\n     * @throws RuntimeException on error\n     */",
+    "code": "public void setExtra(byte[] extra) throws RuntimeException {\n        try {\n            ZipExtraField[] local =\n                ExtraFieldUtils.parse(extra, true,\n                                      ExtraFieldUtils.UnparseableExtraField.READ);\n            mergeExtraFields(local, true);\n        } catch (ZipException e) {\n            throw new RuntimeException(\"Error parsing extra fields for entry: \"\n                                       + getName() + \" - \" + e.getMessage(), e);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipFile$NameAndComment.access$400",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipFile$NameAndComment.access$500",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipFile$OffsetEntry.access$002",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipFile$OffsetEntry.access$200",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipShort.getValue",
+    "doc": "/**\n     * Get value as Java int.\n     * @return value as a Java int\n     */",
+    "code": "public int getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipUtil.setNameAndCommentFromExtraFields",
+    "doc": "/**\n     * If the entry has Unicode*ExtraFields and the CRCs of the\n     * names/comments match those of the extra fields, transfer the\n     * known Unicode values from the extra field.\n     */",
+    "code": "static void setNameAndCommentFromExtraFields(ZipArchiveEntry ze,\n                                                 byte[] originalNameBytes,"
+  }
+]

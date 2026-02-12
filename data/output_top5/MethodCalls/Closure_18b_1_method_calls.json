@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.checkFirstModule",
+    "doc": "/**\n   * Verifies that at least one module has been provided and that the first one\n   * has at least one source code input.\n   */",
+    "code": "private void checkFirstModule(List<JSModule> modules) {\n    if (modules.isEmpty()) {\n      report(JSError.make(EMPTY_MODULE_LIST_ERROR));\n    } else if (modules.get(0).getInputs().isEmpty() && modules.size() > 1) {\n      report(JSError.make(EMPTY_ROOT_MODULE_ERROR,\n          modules.get(0).getName()));\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.fillEmptyModules",
+    "doc": "/**\n   * Fill any empty modules with a place holder file. It makes any cross module\n   * motion easier.\n   */",
+    "code": "private static void fillEmptyModules(List<JSModule> modules) {\n    for (JSModule module : modules) {\n      if (module.getInputs().isEmpty()) {\n        module.add(SourceFile.fromCode(\n            createFillFileName(module.getName()), \"\"));\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.getAllInputsFromModules",
+    "doc": "/**\n   * Builds a single list of all module inputs. Verifies that it contains no\n   * duplicates.\n   */",
+    "code": "private static List<CompilerInput> getAllInputsFromModules(\n      List<JSModule> modules) {\n    List<CompilerInput> inputs = Lists.newArrayList();\n    Map<String, JSModule> inputMap = Maps.newHashMap();\n    for (JSModule module : modules) {\n      for (CompilerInput input : module.getInputs()) {\n        String inputName = input.getName();\n\n        inputs.add(input);\n        inputMap.put(inputName, module);\n      }\n    }\n    return inputs;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initBasedOnOptions",
+    "doc": "/**\n   * Do any initialization that is dependent on the compiler options.\n   */",
+    "code": "private void initBasedOnOptions() {\n    if (options.sourceMapOutputPath != null) {\n      sourceMap = options.sourceMapFormat.getInstance();\n      sourceMap.setPrefixMappings(options.sourceMapLocationMappings);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initInputsByIdMap",
+    "doc": "/**\n   * Creates a map to make looking up an input by name fast. Also checks for\n   * duplicate inputs.\n   */",
+    "code": "void initInputsByIdMap() {\n    inputsById = new HashMap<InputId, CompilerInput>();\n    for (CompilerInput input : externs) {\n      InputId id = input.getInputId();\n      CompilerInput previous = putCompilerInput(id, input);\n      if (previous != null) {\n        report(JSError.make(DUPLICATE_EXTERN_INPUT, input.getName()));\n      }\n    }\n    for (CompilerInput input : inputs) {\n      InputId id = input.getInputId();\n      CompilerInput previous = putCompilerInput(id, input);\n      if (previous != null) {\n        report(JSError.make(DUPLICATE_INPUT, input.getName()));\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initOptions",
+    "doc": "/**\n   * Initialize the compiler options. Only necessary if you're not doing\n   * a normal compile() job.\n   */",
+    "code": "public void initOptions(CompilerOptions options) {\n    this.options = options;\n    if (errorManager == null) {\n      if (outStream == null) {\n        setErrorManager(\n            new LoggerErrorManager(createMessageFormatter(), logger));\n      } else {\n        PrintStreamErrorManager printer =\n            new PrintStreamErrorManager(createMessageFormatter(), outStream);\n        printer.setSummaryDetailLevel(options.summaryDetailLevel);\n        setErrorManager(printer);\n      }\n    }\n\n    if (options.enables(DiagnosticGroups.CHECK_TYPES)) {\n      options.checkTypes = true;\n    } else if (options.disables(DiagnosticGroups.CHECK_TYPES)) {\n      options.checkTypes = false;\n    } else if (!options.checkTypes) {\n      options.setWarningLevel(\n          DiagnosticGroup.forType(\n              RhinoErrorReporter.TYPE_PARSE_ERROR),\n          CheckLevel.OFF);\n    }\n\n    if (options.checkGlobalThisLevel.isOn() &&\n        !options.disables(DiagnosticGroups.GLOBAL_THIS)) {\n      options.setWarningLevel(\n          DiagnosticGroups.GLOBAL_THIS,\n          options.checkGlobalThisLevel);\n    }\n\n    if (options.getLanguageIn() == LanguageMode.ECMASCRIPT5_STRICT) {\n      options.setWarningLevel(\n          DiagnosticGroups.ES5_STRICT,\n          CheckLevel.ERROR);\n    }\n\n    List<WarningsGuard> guards = Lists.newArrayList();\n    guards.add(\n        new SuppressDocWarningsGuard(\n            getDiagnosticGroups().getRegisteredGroups()));\n    guards.add(options.getWarningsGuard());\n\n    ComposeWarningsGuard composedGuards = new ComposeWarningsGuard(guards);\n\n    if (!options.checkSymbols &&\n        !composedGuards.enables(DiagnosticGroups.CHECK_VARIABLES)) {\n      composedGuards.addGuard(new DiagnosticGroupWarningsGuard(\n          DiagnosticGroups.CHECK_VARIABLES, CheckLevel.OFF));\n    }\n\n    this.warningsGuard = composedGuards;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.makeCompilerInput",
+    "doc": "/**\n   * Do any initialization that is dependent on the compiler options.\n   */",
+    "code": "private <T extends SourceFile> List<CompilerInput> makeCompilerInput(\n      List<T> files, boolean isExtern) {\n    List<CompilerInput> inputs = Lists.newArrayList();\n    for (T file : files) {\n      inputs.add(new CompilerInput(file, isExtern));\n    }\n    return inputs;\n  }"
+  }
+]

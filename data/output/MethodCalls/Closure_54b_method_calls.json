@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.addSubType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.clearCachedValues",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getInstanceType",
+    "doc": "/**\n   * Gets the type of instance of this function.\n   * @throws IllegalStateException if this function is not a constructor\n   *         (see {@link #isConstructor()}).\n   */",
+    "code": "public ObjectType getInstanceType() {\n    Preconditions.checkState(hasInstanceType());\n    return typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getSuperClassConstructor",
+    "doc": "/**\n   * Given a constructor or an interface type, get its superclass constructor\n   * or {@code null} if none exists.\n   */",
+    "code": "public FunctionType getSuperClassConstructor() {\n    Preconditions.checkArgument(isConstructor() || isInterface());\n    ObjectType maybeSuperInstanceType = getPrototype().getImplicitPrototype();\n    if (maybeSuperInstanceType == null) {\n      return null;\n    }\n    return maybeSuperInstanceType.getConstructor();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  @Override\n  public ObjectType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isInterface",
+    "doc": "/**\n   * Two function types are equal if their signatures match. Since they don't\n   * have signatures, two interfaces are equal if their names match.\n   */",
+    "code": "return isInterface() ? getReferenceName().hashCode() : call.hashCode();\n  }\n\n  public boolean hasEqualCallType(FunctionType otherType) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.setPrototype",
+    "doc": "/**\n   * Sets the prototype.\n   * @param prototype the prototype. If this value is {@code null} it will\n   *        silently be discarded.\n   */",
+    "code": "public boolean setPrototype(PrototypeObjectType prototype) {\n    if (prototype == null) {\n      return false;\n    }\n    if (isConstructor() && prototype == getInstanceType()) {\n      return false;\n    }\n\n    boolean replacedPrototype = prototype != null;\n\n    this.prototype = prototype;\n    this.prototypeSlot = new SimpleSlot(\"prototype\", prototype, true);\n    this.prototype.setOwnerFunction(this);\n\n\n    if (isConstructor() || isInterface()) {\n      FunctionType superClass = getSuperClassConstructor();\n      if (superClass != null) {\n        superClass.addSubType(this);\n      }\n\n      if (isInterface()) {\n        for (ObjectType interfaceType : getExtendedInterfaces()) {\n          if (interfaceType.getConstructor() != null) {\n            interfaceType.getConstructor().addSubType(this);\n          }\n        }\n      }\n    }\n\n    if (replacedPrototype) {\n      clearCachedValues();\n    }\n\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasReferenceName",
+    "doc": "/**\n   * Returns true if the object is named.\n   * @return true if the object is named, false if it is anonymous\n   */",
+    "code": "public boolean hasReferenceName() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isFunctionPrototypeType",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public final boolean isFunctionPrototypeType() {\n    return getOwnerFunction() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isUnknownType",
+    "doc": "/**\n   * We treat this as the unknown type if any of its implicit prototype\n   * properties is unknown.\n   */",
+    "code": "public boolean isUnknownType() {\n    if (unknown) {\n      ObjectType implicitProto = getImplicitPrototype();\n      if (implicitProto == null ||\n          implicitProto.isNativeObjectType()) {\n        unknown = false;\n        for (ObjectType interfaceType : getCtorExtendedInterfaces()) {\n          if (interfaceType.isUnknownType()) {\n            unknown = true;\n            break;\n          }\n        }\n      } else {\n        unknown = implicitProto.isUnknownType();\n      }\n    }\n    return unknown;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.setOwnerFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

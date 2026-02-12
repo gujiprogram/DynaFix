@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.jsoup.helper.DataUtil.validateCharset",
+    "doc": "/**\n     * Parse out a charset from a content type header. If the charset is not supported, returns null (so the default\n     * will kick in.)\n     * @param contentType e.g. \"text/html; charset=EUC-JP\"\n     * @return \"EUC-JP\", or null if not found. Charset is trimmed and uppercased.\n     */",
+    "code": "return validateCharset(charset);\n        }\n        return null;\n    }\n\n    private static String validateCharset(String cs) {\n        if (cs == null || cs.length() == 0) return null;\n        cs = cs.trim().replaceAll(\"[\\\"']\", \"\");\n        try {"
+  },
+  {
+    "method": "org.jsoup.nodes.Document$OutputSettings.charset",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.nodes.Document.outputSettings",
+    "doc": "/**\n     * Get the document's current output settings.\n     * @return the document's current output settings.\n     */",
+    "code": "public OutputSettings outputSettings() {\n        return outputSettings;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.select",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.attr",
+    "doc": "/**\n     * Set an attribute value on this element. If this element already has an attribute with the\n     * key, its value is updated; otherwise, a new attribute is added.\n     *\n     * @return this element\n     */",
+    "code": "public Element attr(String attributeKey, String attributeValue) {\n        super.attr(attributeKey, attributeValue);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.hasAttr",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseInput",
+    "doc": "/**\n     * Create a new Parser, using the specified TreeBuilder\n     * @param treeBuilder TreeBuilder to use to parse input into Documents.\n     */",
+    "code": "public Document parseInput(String html, String baseUri) {\n        return treeBuilder.parse(new StringReader(html), baseUri, this);\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Elements.iterator",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

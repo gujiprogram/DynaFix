@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getDefaultErrorReporter",
+    "doc": "/**\n   * Gets a default error reporter for injecting into Rhino.\n   */",
+    "code": "abstract ErrorReporter getDefaultErrorReporter();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getParserConfig",
+    "doc": "/**\n   * Returns the parser configuration.\n   */",
+    "code": "abstract Config getParserConfig();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.hasHaltingErrors",
+    "doc": "/**\n   * @return Whether any errors have been encountered that\n   *     should stop the compilation process.\n   */",
+    "code": "abstract boolean hasHaltingErrors();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.prepareAst",
+    "doc": "/**\n   * Normalizes the types of AST nodes in the given tree, and\n   * annotates any nodes to which the coding convention applies so that passes\n   * can read the annotations instead of using the coding convention.\n   */",
+    "code": "abstract void prepareAst(Node root);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.setOldParseTree",
+    "doc": "/**\n    * Stores the \"new\" Rhino parse tree for a given source file.\n    * @param sourceName The source file name.\n    * @param astRoot The \"new\" Rhino parse tree.\n    */",
+    "code": "abstract void setOldParseTree(String sourceName, AstRoot astRoot);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceFile.getCode",
+    "doc": "/**\n   * Construct a new abstract source file.\n   *\n   * @param fileName The file name of the source file. It does not necessarily\n   *     need to correspond to a real path. But it should be unique. Will\n   *     appear in warning messages emitted by the compiler.\n   */",
+    "code": "public String getCode();\n  }\n\n  private static final int SOURCE_EXCERPT_REGION_LENGTH = 5;\n\n  private final String fileName;\n  private boolean isExternFile = false;\n\n  private String originalPath = null;\n\n  private int[] lineOffsets = null;\n\n  private String code = null;\n\n  public SourceFile(String fileName) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceFile.getName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.ParserRunner.parse",
+    "doc": "/**\n   * Parses the JavaScript text given by a reader.\n   *\n   * @param sourceString Source code from the file.\n   * @param errorReporter An error.\n   * @param logger A logger.\n   * @return The AST of the given text.\n   * @throws IOException\n   */",
+    "code": "public static ParseResult parse(StaticSourceFile sourceFile,\n                                  String sourceString,"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.script",
+    "doc": "/**\n * An AST construction helper class\n * @author johnlenz@google.com (John Lenz)\n */",
+    "code": "public static Node script() {\n    Node block = new Node(Token.SCRIPT);\n    return block;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setStaticSourceFile",
+    "doc": "/**\n   * Source position of this node. The position is encoded with the\n   * column number in the low 12 bits of the integer, and the line\n   * number in the rest.  Create some handy constants so we can change this\n   * size if we want.\n   */",
+    "code": "public void setStaticSourceFile(StaticSourceFile file) {\n    this.putProp(STATIC_SOURCE_FILE, file);\n  }"
+  }
+]

@@ -1,0 +1,26 @@
+
+=== Debug Info for Test: org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294 ===
+Exception: junit.framework.AssertionFailedError: expected:<-1> but was:<6>
+
+
+=== Debug Info for Test: org.apache.commons.lang.text.StrBuilderTest::testLang294 ===
+Exception: java.lang.ArrayIndexOutOfBoundsException: arraycopy: length -6 is negative
+
+org.apache.commons.lang.text.StrBuilder:deleteAll:1183->[Local Variables] {"str":"\n%BLAH%"}
+org.apache.commons.lang.text.StrBuilder:deleteAll:1184->[Control Flow] Branch Info: Line: 1184, Condition: if (str == null), Executed: false
+org.apache.commons.lang.text.StrBuilder:deleteAll:1184->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1184 -> java.lang.String.length
+org.apache.commons.lang.text.StrBuilder:deleteAll:1184->[Local Variables] {"len":7}
+org.apache.commons.lang.text.StrBuilder:deleteAll:1185->[Control Flow] Branch Info: Line: 1185, Condition: if (len > 0), Executed: true
+org.apache.commons.lang.text.StrBuilder:deleteAll:1186->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1186 -> org.apache.commons.lang.text.StrBuilder.indexOf
+org.apache.commons.lang.text.StrBuilder:deleteAll:1186->[Local Variables] {"index":0}
+org.apache.commons.lang.text.StrBuilder:deleteAll:1187->[Control Flow] Branch Info: Line: 1187, Condition: if (index >= 0), Executed: true
+org.apache.commons.lang.text.StrBuilder:deleteAll:1188->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1188 -> org.apache.commons.lang.text.StrBuilder.deleteImpl
+org.apache.commons.lang.text.StrBuilder:deleteAll:1189->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1189 -> org.apache.commons.lang.text.StrBuilder.indexOf
+org.apache.commons.lang.text.StrBuilder:deleteAll:1186->[Control Flow] Loop Info: Line: 1186, Description: while at line 1186
+org.apache.commons.lang.text.StrBuilder:deleteAll:1186->[Local Variables] {"index":30}
+org.apache.commons.lang.text.StrBuilder:deleteAll:1187->[Control Flow] Branch Info: Line: 1187, Condition: if (index >= 0), Executed: true
+org.apache.commons.lang.text.StrBuilder:deleteAll:1188->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1188 -> org.apache.commons.lang.text.StrBuilder.deleteImpl
+org.apache.commons.lang.text.StrBuilder:deleteAll:1189->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1189 -> org.apache.commons.lang.text.StrBuilder.indexOf
+org.apache.commons.lang.text.StrBuilder:deleteAll:1186->[Control Flow] Loop Info: Line: 1186, Description: while at line 1186
+org.apache.commons.lang.text.StrBuilder:deleteAll:1187->[Control Flow] Branch Info: Line: 1187, Condition: if (index >= 0), Executed: true
+org.apache.commons.lang.text.StrBuilder:deleteAll:1188->[Method Call] Call Stack: org.apache.commons.lang.text.StrBuilder.deleteAll:1188 -> org.apache.commons.lang.text.StrBuilder.deleteImpl

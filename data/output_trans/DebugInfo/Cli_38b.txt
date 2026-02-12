@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI265Test::shouldParseConcatenatedShortOptions ===
+Exception: junit.framework.AssertionFailedError: expected null, but was:<-ab>
+
+org.apache.commons.cli.DefaultParser:isShortOption:304->[Local Variables] {"TransVarToken1":"-ab"}
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> java.lang.String.startsWith
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> java.lang.String.length
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:314->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:314 -> java.lang.String.indexOf
+org.apache.commons.cli.DefaultParser:isShortOption:314->[Local Variables] {"TransVarPosition":-1}
+org.apache.commons.cli.DefaultParser:isShortOption:315->[Control Flow] Branch Info: Line: 315, Condition: if (TransVarPosition == TransVarPosition), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:315->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:315 -> java.lang.String.substring
+org.apache.commons.cli.DefaultParser:isShortOption:315->[Local Variables] {"TransVarToken":"ab"}
+org.apache.commons.cli.DefaultParser:isShortOption:316->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:316 -> org.apache.commons.cli.Options.hasShortOption

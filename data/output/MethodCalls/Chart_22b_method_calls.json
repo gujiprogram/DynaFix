@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.jfree.data.KeyedObjects.getIndex",
+    "doc": "/**\n     * Returns the index for a given key, or <code>-1</code>.\n     *\n     * @param key  the key (<code>null</code> not permitted).\n     *\n     * @return The index, or <code>-1</code> if the key is unrecognised.\n     *\n     * @see #getKey(int)\n     */",
+    "code": "public int getIndex(Comparable key) {\n        if (key == null) {\n            throw new IllegalArgumentException(\"Null 'key' argument.\");\n        }\n        int i = 0;\n        Iterator iterator = this.data.iterator();\n        while (iterator.hasNext()) {\n            KeyedObject ko = (KeyedObject) iterator.next();\n            if (ko.getKey().equals(key)) {\n                return i;\n            }\n            i++;\n        }\n        return -1;\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects.getItemCount",
+    "doc": "/**\n     * Returns the number of items (values) in the collection.\n     *\n     * @return The item count.\n     */",
+    "code": "public int getItemCount() {\n        return this.data.size();\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects.getObject",
+    "doc": "/**\n     * Returns an object from the list.\n     *\n     * @param item  the item index (zero-based).\n     *\n     * @return The object (possibly <code>null</code>).\n     *\n     * @throws IndexOutOfBoundsException if <code>item</code> is out of bounds.\n     */",
+    "code": "public Object getObject(int item) {\n        Object result = null;\n        KeyedObject kobj = (KeyedObject) this.data.get(item);\n        if (kobj != null) {\n            result = kobj.getObject();\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects.removeValue",
+    "doc": "/**\n     * Removes a value from the collection.\n     *\n     * @param index  the index of the item to remove.\n     *\n     * @see #removeValue(Comparable)\n     */",
+    "code": "public void removeValue(int index) {\n        this.data.remove(index);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.getColumnIndex",
+    "doc": "/**\n     * Returns the column index for a given key.\n     *\n     * @param key  the key.\n     *\n     * @return The column index.\n     *\n     * @see #getColumnKey(int)\n     */",
+    "code": "public int getColumnIndex(Comparable key) {\n        return this.columnKeys.indexOf(key);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.getColumnKey",
+    "doc": "/**\n     * Returns the key for a given column.\n     *\n     * @param column  the column.\n     *\n     * @return The key.\n     *\n     * @see #getColumnIndex(Comparable)\n     */",
+    "code": "public Comparable getColumnKey(int column) {\n        return (Comparable) this.columnKeys.get(column);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.getRowIndex",
+    "doc": "/**\n     * Returns the row index for a given key.\n     *\n     * @param key  the key.\n     *\n     * @return The row index.\n     *\n     * @see #getRowKey(int)\n     */",
+    "code": "public int getRowIndex(Comparable key) {\n        return this.rowKeys.indexOf(key);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.setObject",
+    "doc": "/**\n     * Adds or updates an object.\n     *\n     * @param object  the object.\n     * @param rowKey  the row key (<code>null</code> not permitted).\n     * @param columnKey  the column key (<code>null</code> not permitted).\n     */",
+    "code": "public void setObject(Object object, Comparable rowKey,\n            Comparable columnKey) {\n\n        if (rowKey == null) {\n            throw new IllegalArgumentException(\"Null 'rowKey' argument.\");\n        }\n        if (columnKey == null) {\n            throw new IllegalArgumentException(\"Null 'columnKey' argument.\");\n        }\n        KeyedObjects row;\n        int rowIndex = this.rowKeys.indexOf(rowKey);\n        if (rowIndex >= 0) {\n            row = (KeyedObjects) this.rows.get(rowIndex);\n        }\n        else {\n            this.rowKeys.add(rowKey);\n            row = new KeyedObjects();\n            this.rows.add(row);\n        }\n        row.setObject(columnKey, object);\n        int columnIndex = this.columnKeys.indexOf(columnKey);\n        if (columnIndex < 0) {\n            this.columnKeys.add(columnKey);\n        }\n\n    }"
+  }
+]

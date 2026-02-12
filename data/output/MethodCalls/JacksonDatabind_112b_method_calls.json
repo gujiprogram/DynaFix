@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer",
+    "doc": "/**\n     * Method for finding a value deserializer, and creating a contextual\n     * version if necessary, for value reached via specified property.\n     */",
+    "code": "public final JsonDeserializer<Object> findContextualValueDeserializer(JavaType type,\n            BeanProperty prop) throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.getDelegateCreator",
+    "doc": "/**\n     * Method that can be called to try to access member (constructor,\n     * static factory method) that is used as the \"delegate creator\".\n     * Note that implementations not required to return actual object\n     * they use (or, they may use some other instantiation) method.\n     * That is, even if {@link #canCreateUsingDelegate()} returns true,\n     * this method may return null .\n     */",
+    "code": "public AnnotatedWithParams getDelegateCreator() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer.findContentNullProvider",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer.findConvertingContentDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer.findFormatFeature",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer.isDefaultDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer.withResolved",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected StringCollectionDeserializer withResolved(JsonDeserializer<?> delegateDeser,\n            JsonDeserializer<?> valueDeser,"
+  }
+]

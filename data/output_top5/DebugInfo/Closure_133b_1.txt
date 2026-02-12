@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.parsing.JsDocInfoParserTest::testTextExtents ===
+Exception: java.lang.IllegalStateException: Recorded bad position information
+
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:946->[Control Flow] Branch Info: Line: 946, Condition: if (type == null), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:947->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:947 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.newNode
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:947->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:947 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.createJSTypeExpression
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:946->[Control Flow] Branch Info: Line: 946, Condition: if (type == null), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:949->[Local Variables] {"type":{"root":{"type":304,"propListHead":{"objectValue":{"name":"testcode","extern":false},"propType":51},"sourcePosition":9},"sourceName":"testcode"}}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:950->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:950 -> com.google.javascript.rhino.JSDocInfoBuilder.recordReturnType
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:950->[Control Flow] Branch Info: Line: 950, Condition: if (com.google.javascript.rhino.JSDocInfoBuilder.recordReturnType() == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:957->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:957 -> com.google.javascript.rhino.JSDocInfoBuilder.shouldParseDocumentation
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:957->[Control Flow] Branch Info: Line: 957, Condition: if (com.google.javascript.rhino.JSDocInfoBuilder.shouldParseDocumentation() != 0), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:959->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:959 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.extractMultilineTextualBlock
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:241->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:241 -> com.google.javascript.jscomp.parsing.Annotation.ordinal
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:862->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:862 -> com.google.javascript.jscomp.parsing.JsDocTokenStream.getLineno
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:863->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:863 -> com.google.javascript.jscomp.parsing.JsDocTokenStream.getCharno
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:866->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:866 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.lookAheadForTypeAnnotation
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:866->[Local Variables] {"hasType":true}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:867->[Control Flow] Branch Info: Line: 867, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:867->[Control Flow] Branch Info: Line: 867, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:867->[Control Flow] Branch Info: Line: 867, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:867->[Control Flow] Branch Info: Line: 867, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:871->[Local Variables] {"isAlternateTypeAnnotation":false}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:872->[Control Flow] Branch Info: Line: 872, Condition: if (isAlternateTypeAnnotation == 0), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:872->[Control Flow] Branch Info: Line: 872, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:872->[Control Flow] Branch Info: Line: 872, Condition: if (isAlternateTypeAnnotation == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:874->[Local Variables] {"canSkipTypeAnnotation":true}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:876->[Control Flow] Branch Info: Line: 876, Condition: if (hasType == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:877->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:877 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.skipEOLs
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:878->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:878 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.next
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:878->[Local Variables] {"token":"LC"}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:879->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:879 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAndRecordTypeNode
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:881->[Control Flow] Branch Info: Line: 881, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:884->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:884 -> com.google.javascript.jscomp.parsing.JsDocInfoParser.createJSTypeExpression
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:876->[Control Flow] Branch Info: Line: 876, Condition: if (canSkipTypeAnnotation == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:889->[Control Flow] Branch Info: Line: 889, Condition: if (type == null), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:889->[Control Flow] Branch Info: Line: 889, Condition: if (type == null), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:889->[Control Flow] Branch Info: Line: 889, Condition: if (canSkipTypeAnnotation == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:889->[Local Variables] {"hasError":false}
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:890->[Control Flow] Branch Info: Line: 890, Condition: if (hasError == 0), Executed: true
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:898->[Control Flow] Branch Info: Line: 898, Condition: if (type != null), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:898->[Control Flow] Branch Info: Line: 898, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:900->[Control Flow] Branch Info: Line: 900, Condition: if (com.google.javascript.rhino.JSDocInfoBuilder.recordType() == 0), Executed: false
+com.google.javascript.jscomp.parsing.JsDocInfoParser:parse:906->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.JsDocInfoParser.parse:906 -> com.google.javascript.jscomp.parsing.Annotation.ordinal

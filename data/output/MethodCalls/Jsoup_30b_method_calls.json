@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jsoup.nodes.Element.appendChild",
+    "doc": "/**\n     * Add a node child node to this element.\n     *\n     * @param child node to add. Must not already have a parent.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element appendChild(Node child) {\n        Validate.notNull(child);\n\n        addChildren(child);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.childNodes",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.tagName",
+    "doc": "/**\n     * Get the name of the tag for this element. E.g. {@code div}\n     *\n     * @return the tag name\n     */",
+    "code": "public String tagName() {\n        return tag.getName();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.baseUri",
+    "doc": "/**\n     Get the base URI of this node.\n     @return base URI\n     */",
+    "code": "public String baseUri() {\n        return baseUri;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.TextNode.getWholeText",
+    "doc": "/**\n     Get the (unencoded) text of this text node, including any newlines and spaces present in the original.\n     @return text\n     */",
+    "code": "public String getWholeText() {\n        return attributes == null ? text : attributes.get(TEXT_KEY);\n    }"
+  },
+  {
+    "method": "org.jsoup.safety.Cleaner.createSafeElement",
+    "doc": "/**\n     Iterates the input and copies trusted nodes (tags, attributes, text) into the destination.\n     */",
+    "code": "private ElementMeta createSafeElement(Element sourceEl) {\n        String sourceTag = sourceEl.tagName();\n        Attributes destAttrs = new Attributes();\n        Element dest = new Element(Tag.valueOf(sourceTag), sourceEl.baseUri(), destAttrs);\n        int numDiscarded = 0;\n\n        Attributes sourceAttrs = sourceEl.attributes();\n        for (Attribute sourceAttr : sourceAttrs) {\n            if (whitelist.isSafeAttribute(sourceTag, sourceEl, sourceAttr))\n                destAttrs.put(sourceAttr);\n            else\n                numDiscarded++;\n        }\n        Attributes enforcedAttrs = whitelist.getEnforcedAttributes(sourceTag);\n        destAttrs.addAll(enforcedAttrs);\n\n        return new ElementMeta(dest, numDiscarded);\n    }"
+  },
+  {
+    "method": "org.jsoup.safety.Whitelist.isSafeTag",
+    "doc": "/**\n     Add allowed URL protocols for an element's URL attribute. This restricts the possible values of the attribute to\n     URLs with the defined protocol.\n     <p/>\n     E.g.: <code>addProtocols(\"a\", \"href\", \"ftp\", \"http\", \"https\")</code>\n\n     @param tag       Tag the URL protocol is for\n     @param key       Attribute key\n     @param protocols List of valid protocols\n     @return this, for chaining\n     */",
+    "code": "boolean isSafeTag(String tag) {\n        return tagNames.contains(TagName.valueOf(tag));\n    }"
+  }
+]

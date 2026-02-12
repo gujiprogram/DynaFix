@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.lang.time.DurationFormatUtils.format",
+    "doc": "/**\n     * <p>Formats an elapsed time into a plurialization correct string.</p>\n     *\n     * <p>This method formats durations using the days and lower fields of the\n     * format pattern. Months and larger are not used.</p>\n     *\n     * @param durationMillis  the elapsed time to report in milliseconds\n     * @param suppressLeadingZeroElements  suppresses leading 0 elements\n     * @param suppressTrailingZeroElements  suppresses trailing 0 elements\n     * @return the formatted text in days/hours/minutes/seconds\n     */",
+    "code": "return format(tokens, 0, 0, days, hours, minutes, seconds, milliseconds, padWithZeros);\n    }\n\n    public static String formatDurationWords(\n        long durationMillis,\n        boolean suppressLeadingZeroElements,\n        boolean suppressTrailingZeroElements) {"
+  },
+  {
+    "method": "org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect",
+    "doc": "/**\n     * <p>The internal method to do the formatting.</p>\n     *\n     * @param tokens  the tokens\n     * @param years  the number of years\n     * @param months  the number of months\n     * @param days  the number of days\n     * @param hours  the number of hours\n     * @param minutes  the number of minutes\n     * @param seconds  the number of seconds\n     * @param milliseconds  the number of millis\n     * @param padWithZeros  whether to pad\n     * @return the formetted string\n     */",
+    "code": "static int reduceAndCorrect(Calendar start, Calendar end, int field, int difference) {\n        end.add( field, -1 * difference );\n        int endValue = end.get(field);\n        int startValue = start.get(field);\n        if (endValue < startValue) {\n            int newdiff = startValue - endValue;\n            end.add( field, newdiff );\n            return newdiff;\n        } else {\n            return 0;\n        }\n    }"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.collections.ListUtils.retainAll",
+    "doc": "/**\n     * Returns a List containing all the elements in <code>collection</code>\n     * that are also in <code>retain</code>. The cardinality of an element <code>e</code>\n     * in the returned list is the same as the cardinality of <code>e</code>\n     * in <code>collection</code> unless <code>retain</code> does not contain <code>e</code>, in which\n     * case the cardinality is zero. This method is useful if you do not wish to modify\n     * the collection <code>c</code> and thus cannot call <code>collection.retainAll(retain);</code>.\n     *\n     * @param collection  the collection whose contents are the target of the #retailAll operation\n     * @param retain  the collection containing the elements to be retained in the returned collection\n     * @return a <code>List</code> containing all the elements of <code>c</code>\n     * that occur at least once in <code>retain</code>.\n     * @throws NullPointerException if either parameter is null\n     * @since Commons Collections 3.2\n     */",
+    "code": "public static List retainAll(Collection collection, Collection retain) {\n        List list = new ArrayList(Math.min(collection.size(), retain.size()));\n\n        for (Iterator iter = collection.iterator(); iter.hasNext();) {\n            Object obj = iter.next();\n            if (retain.contains(obj)) {\n                list.add(obj);\n            }\n        }\n        return list;\n    }"
+  }
+]

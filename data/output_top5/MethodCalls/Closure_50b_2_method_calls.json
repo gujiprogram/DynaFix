@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkArgument",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGet",
+    "doc": "/**\n   * Is this a GETPROP or GETELEM node?\n   */",
+    "code": "static boolean isGet(Node n) {\n    return n.getType() == Token.GETPROP\n        || n.getType() == Token.GETELEM;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ExpressionDecomposer.canExposeExpression",
+    "doc": "/**\n   * Determine whether a expression is movable, or can be be made movable be\n   * decomposing the containing expression.\n   *\n   * An subExpression is MOVABLE if it can be replaced with a temporary holding\n   * its results and moved to immediately before the root of the expression.\n   * There are three conditions that must be met for this to occur:\n   * 1) There must be a location to inject a statement for the expression.  For\n   * example, this condition can not be met if the expression is a loop\n   * condition or CASE condition.\n   * 2) If the expression can be affect by side-effects, there can not be a\n   * side-effect between original location and the expression root.\n   * 3) If the expression has side-effects, there can not be any other\n   * expression that can be effected between the original location and the\n   * expression root.\n   *\n   * An expression is DECOMPOSABLE if it can be rewritten so that an\n   * subExpression is MOVABLE.\n   *\n   * An expression is decomposed by moving any other sub-expressions that\n   * preventing an subExpression from being MOVABLE.\n   *\n   * @return Whether This is a call that can be moved to an new point in the\n   * AST to allow it to be inlined.\n   */",
+    "code": "DecompositionType canExposeExpression(Node subExpression) {\n    Node expressionRoot = findExpressionRoot(subExpression);\n    if (expressionRoot != null) {\n      return isSubexpressionMovable(expressionRoot, subExpression);\n    }\n    return DecompositionType.UNDECOMPOSABLE;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ExpressionDecomposer.findExpressionRoot",
+    "doc": "/**\n   * @return The statement containing the expression. null if subExpression\n   *     is not contain by in by a Node where inlining is known to be possible.\n   *     For example, a WHILE node condition expression.\n   */",
+    "code": "static Node findExpressionRoot(Node subExpression) {\n    Node child = subExpression;\n    for (Node parent : child.getAncestors()) {\n      int parentType = parent.getType();\n      switch (parentType) {\n        case Token.EXPR_RESULT:\n        case Token.IF:\n        case Token.SWITCH:\n        case Token.RETURN:\n        case Token.VAR:\n          Preconditions.checkState(child == parent.getFirstChild());\n          return parent;\n        case Token.SCRIPT:\n        case Token.BLOCK:\n        case Token.LABEL:\n        case Token.CASE:\n        case Token.DEFAULT_CASE:\n          return null;\n      }\n      child = parent;\n    }\n\n    throw new IllegalStateException(\"Unexpected AST structure.\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isConstantName",
+    "doc": "/**\n   * <p>Determines whether a variable is constant:\n   * <ol>\n   * <li>In Normalize, any name that matches the\n   *     {@link CodingConvention#isConstant(String)} is annotated with an\n   *     IS_CONSTANT_NAME property.\n   * </ol>\n   *\n   * @param node A NAME or STRING node\n   * @return True if a name node represents a constant variable\n   */",
+    "code": "static boolean isConstantName(Node node) {\n    return node.getBooleanProp(Node.IS_CONSTANT_NAME);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExprAssign",
+    "doc": "/**\n   * Is this node an assignment expression statement?\n   *\n   * @param n The node\n   * @return True if {@code n} is EXPR_RESULT and {@code n}'s\n   *     first child is ASSIGN\n   */",
+    "code": "static boolean isExprAssign(Node n) {\n    return n.isExprResult()\n        && n.getFirstChild().isAssign();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExprCall",
+    "doc": "/**\n   * Is this node a call expression statement?\n   *\n   * @param n The node\n   * @return True if {@code n} is EXPR_RESULT and {@code n}'s\n   *     first child is CALL\n   */",
+    "code": "static boolean isExprCall(Node n) {\n    return n.isExprResult()\n        && n.getFirstChild().isCall();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasOneChild",
+    "doc": "/**\n   * Check for one child more efficiently than by iterating over all the\n   * children as is done with Node.getChildCount().\n   *\n   * @return Whether the node has exactly one child.\n   */",
+    "code": "public boolean hasOneChild() {\n    return first != null && first == last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVar",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

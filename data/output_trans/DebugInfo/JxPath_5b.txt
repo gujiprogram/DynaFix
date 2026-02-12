@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.compiler.VariableTest::testUnionOfVariableAndNode ===
+Exception: org.apache.commons.jxpath.JXPathException: Cannot compare pointers that do not belong to the same tree: '' and '$var'
+
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:650->[Local Variables] "{TransVarDepth\u003d3, TransVarP\u003d/MAIN[1]/A[1], TransVarP3\u003d$var, TransVarDepth3\u003d1}"
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:651->[Control Flow] Branch Info: Line: 651, Condition: if (TransVarDepth3 < TransVarDepth3), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:658->[Control Flow] Branch Info: Line: 658, Condition: if (TransVarDepth3 > TransVarDepth3), Executed: true
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:650->[Local Variables] "{TransVarDepth\u003d2, TransVarP\u003d/MAIN[1]}"
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:651->[Control Flow] Branch Info: Line: 651, Condition: if (TransVarDepth3 < TransVarDepth3), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:658->[Control Flow] Branch Info: Line: 658, Condition: if (TransVarDepth3 > TransVarDepth3), Executed: true
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:650->[Local Variables] "{TransVarDepth\u003d1, TransVarP\u003d}"
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:651->[Control Flow] Branch Info: Line: 651, Condition: if (TransVarDepth3 < TransVarDepth3), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:658->[Control Flow] Branch Info: Line: 658, Condition: if (TransVarDepth3 > TransVarDepth3), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:665->[Control Flow] Branch Info: Line: 665, Condition: if (TransVarP == null), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:665->[Control Flow] Branch Info: Line: 665, Condition: if (TransVarP3 == null), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:669->[Control Flow] Branch Info: Line: 669, Condition: if (TransVarP != null), Executed: true
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:669->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:669 -> java.lang.Object.equals
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:669->[Control Flow] Branch Info: Line: 669, Condition: if (TransVarP != null), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:669->[Control Flow] Branch Info: Line: 669, Condition: if (java.lang.Object.equals() != 0), Executed: false
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:673->[Control Flow] Branch Info: Line: 673, Condition: if (TransVarDepth == TransVarDepth), Executed: true
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> java.lang.StringBuilder.toString
+org.apache.commons.jxpath.ri.model.NodePointer:compareNodePointers:674->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.NodePointer.compareNodePointers:674 -> org.apache.commons.jxpath.JXPathException.<init>

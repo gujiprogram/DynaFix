@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testIssue291 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:817->[Local Variables] "{parent\u003dIF 1 [sourcename: testcode], num\u003d1, n\u003dTRUE 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:818->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:818 -> com.google.javascript.rhino.Node.newNumber
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:818->[Local Variables] {"newNode":{"number":1.0,"type":39,"sourcePosition":-1}}
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:819->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:819 -> com.google.javascript.rhino.Node.isEquivalentTo
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:819->[Control Flow] Branch Info: Line: 819, Condition: if (com.google.javascript.rhino.Node.isEquivalentTo() == 0), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:820->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:820 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:820->[Local Variables] "{newNode\u003dNUMBER 1.0 1 [sourcename: testcode], n\u003dTRUE 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:821->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:821 -> com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.reportCodeChange
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:817->[Local Variables] "{n\u003dNUMBER 1.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:818->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:818 -> com.google.javascript.rhino.Node.newNumber
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:818->[Local Variables] {"newNode":{"number":1.0,"type":39,"sourcePosition":-1}}
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:819->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.maybeReplaceChildWithNumber:819 -> com.google.javascript.rhino.Node.isEquivalentTo
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:maybeReplaceChildWithNumber:819->[Control Flow] Branch Info: Line: 819, Condition: if (com.google.javascript.rhino.Node.isEquivalentTo() == 0), Executed: false

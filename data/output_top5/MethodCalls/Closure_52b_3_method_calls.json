@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.add",
+    "doc": "/**\n   * Insert a ECMASCRIPT 5 strict annotation.\n   */",
+    "code": "void add(String str) {\n    cc.add(str);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.precedence",
+    "doc": "/**\n   * @param knownConstants A set of names known to be constant value at\n   * node 'n' (such as locals that are last written before n can execute).\n   * @return Whether the tree can be affected by side-effects or\n   * has side-effects.\n   */",
+    "code": "static int precedence(int type) {\n    switch (type) {\n      case Token.COMMA:  return 0;\n      case Token.ASSIGN_BITOR:\n      case Token.ASSIGN_BITXOR:\n      case Token.ASSIGN_BITAND:\n      case Token.ASSIGN_LSH:\n      case Token.ASSIGN_RSH:\n      case Token.ASSIGN_URSH:\n      case Token.ASSIGN_ADD:\n      case Token.ASSIGN_SUB:\n      case Token.ASSIGN_MUL:\n      case Token.ASSIGN_DIV:\n      case Token.ASSIGN_MOD:\n      case Token.ASSIGN: return 1;\n      case Token.HOOK:   return 2;  // ?: operator\n      case Token.OR:     return 3;\n      case Token.AND:    return 4;\n      case Token.BITOR:  return 5;\n      case Token.BITXOR: return 6;\n      case Token.BITAND: return 7;\n      case Token.EQ:\n      case Token.NE:\n      case Token.SHEQ:\n      case Token.SHNE:   return 8;\n      case Token.LT:\n      case Token.GT:\n      case Token.LE:\n      case Token.GE:\n      case Token.INSTANCEOF:\n      case Token.IN:     return 9;\n      case Token.LSH:\n      case Token.RSH:\n      case Token.URSH:   return 10;\n      case Token.SUB:\n      case Token.ADD:    return 11;\n      case Token.MUL:\n      case Token.MOD:\n      case Token.DIV:    return 12;\n      case Token.INC:\n      case Token.DEC:\n      case Token.NEW:\n      case Token.DELPROP:\n      case Token.TYPEOF:\n      case Token.VOID:\n      case Token.NOT:\n      case Token.BITNOT:\n      case Token.POS:\n      case Token.NEG:    return 13;\n\n      case Token.CALL:\n      case Token.GETELEM:\n      case Token.GETPROP:\n      case Token.ARRAYLIT:\n      case Token.EMPTY:  // TODO(johnlenz): remove this.\n      case Token.FALSE:\n      case Token.FUNCTION:\n      case Token.NAME:\n      case Token.NULL:\n      case Token.NUMBER:\n      case Token.OBJECTLIT:\n      case Token.REGEXP:\n      case Token.STRING:\n      case Token.THIS:\n      case Token.TRUE:\n        return 15;\n\n      default: throw new Error(\"Unknown precedence for \" +\n                               Node.tokenToName(type) +\n                               \" (type \" + type + \")\");\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

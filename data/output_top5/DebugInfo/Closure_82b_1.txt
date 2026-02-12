@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue301 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.rhino.jstype.JSType:findPropertyType:415->[Local Variables] {"propertyName":"toLowerCase"}
+com.google.javascript.rhino.jstype.JSType:findPropertyType:416->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.findPropertyType:416 -> com.google.javascript.rhino.jstype.JSType.autoboxesTo
+com.google.javascript.rhino.jstype.JSType:findPropertyType:416->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.findPropertyType:416 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.rhino.jstype.JSType:findPropertyType:416->[Local Variables] "{autoboxObjType\u003dString}"
+com.google.javascript.rhino.jstype.JSType:findPropertyType:417->[Control Flow] Branch Info: Line: 417, Condition: if (autoboxObjType != null), Executed: true
+com.google.javascript.rhino.jstype.JSType:findPropertyType:418->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.findPropertyType:418 -> com.google.javascript.rhino.jstype.ObjectType.findPropertyType
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.FunctionTypeTest::testEmptyFunctionTypes ===
+Exception: junit.framework.AssertionFailedError
+

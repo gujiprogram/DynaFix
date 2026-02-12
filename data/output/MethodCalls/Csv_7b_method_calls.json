@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.csv.CSVFormat.getHeader",
+    "doc": "/**\n     * Returns a copy of the header array.\n     *\n     * @return a copy of the header array\n     */",
+    "code": "public String[] getHeader() {\n        return header != null ? header.clone() : null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVParser.nextRecord",
+    "doc": "/**\n     * Parses the next record from the current point in the stream.\n     *\n     * @return the record as an array of values, or <tt>null</tt> if the end of the stream has been reached\n     * @throws IOException\n     *             on parse error or input read-failure\n     */",
+    "code": "CSVRecord nextRecord() throws IOException {\n        CSVRecord result = null;\n        this.record.clear();\n        StringBuilder sb = null;\n        do {\n            this.reusableToken.reset();\n            this.lexer.nextToken(this.reusableToken);\n            switch (this.reusableToken.type) {\n            case TOKEN:\n                this.addRecordValue();\n                break;\n            case EORECORD:\n                this.addRecordValue();\n                break;\n            case EOF:\n                if (this.reusableToken.isReady) {\n                    this.addRecordValue();\n                }\n                break;\n            case INVALID:\n                throw new IOException(\"(line \" + this.getCurrentLineNumber() + \") invalid parse sequence\");\n            case COMMENT: // Ignored currently\n                if (sb == null) { // first comment for this record\n                    sb = new StringBuilder();\n                } else {\n                    sb.append(Constants.LF);\n                }\n                sb.append(this.reusableToken.content);\n                this.reusableToken.type = TOKEN; // Read another token\n                break;\n            default:\n                throw new IllegalStateException(\"Unexpected Token type: \" + this.reusableToken.type);\n            }\n        } while (this.reusableToken.type == TOKEN);\n\n        if (!this.record.isEmpty()) {\n            this.recordNumber++;\n            final String comment = sb == null ? null : sb.toString();\n            result = new CSVRecord(this.record.toArray(new String[this.record.size()]), this.headerMap, comment,\n                    this.recordNumber);\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVRecord.values",
+    "doc": "/**\n     * Copies this record into a new Map. The new map is not connect\n     *\n     * @return A new Map. The map is empty if the record has no headers.\n     */",
+    "code": "String[] values() {\n        return values;\n    }"
+  }
+]

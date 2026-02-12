@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.apache.commons.lang.time.DateUtilsTest::testRoundLang346 ===
+Exception: junit.framework.AssertionFailedError: Minute Round Up Failed expected:<Mon Jul 02 08:09:00 PDT 2007> but was:<Mon Jul 02 08:01:00 PDT 2007>
+
+org.apache.commons.lang.time.DateUtils:round:436->[Local Variables] {"date":"Jul 2, 2007, 8:08:50 AM","field":12}
+org.apache.commons.lang.time.DateUtils:round:437->[Control Flow] Branch Info: Line: 437, Condition: if (date == null), Executed: false
+org.apache.commons.lang.time.DateUtils:round:440->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.round:440 -> java.util.Calendar.getInstance
+org.apache.commons.lang.time.DateUtils:round:440->[Local Variables] {"gval":{"year":2025,"month":11,"dayOfMonth":7,"hourOfDay":1,"minute":34,"second":9}}
+org.apache.commons.lang.time.DateUtils:round:441->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.round:441 -> java.util.Calendar.setTime
+org.apache.commons.lang.time.DateUtils:round:441->[Local Variables] {"gval":{"year":2007,"month":6,"dayOfMonth":2,"hourOfDay":8,"minute":8,"second":50}}
+org.apache.commons.lang.time.DateUtils:round:442->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.round:442 -> org.apache.commons.lang.time.DateUtils.modify
+org.apache.commons.lang.time.DateUtils:round:442->[Local Variables] {"gval":{"year":2007,"month":6,"dayOfMonth":2,"hourOfDay":8,"minute":1,"second":0}}
+org.apache.commons.lang.time.DateUtils:round:443->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.round:443 -> java.util.Calendar.getTime

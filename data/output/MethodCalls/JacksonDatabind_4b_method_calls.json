@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getText",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.isExpectedStartArrayToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.leaseObjectBuffer",
+    "doc": "/**\n     * Method that can be used to get access to a reusable ObjectBuffer,\n     * useful for efficiently constructing Object arrays and Lists.\n     * Note that leased buffers should be returned once deserializer\n     * is done, to allow for reuse during same round of deserialization.\n     */",
+    "code": "public final ObjectBuffer leaseObjectBuffer()\n    {\n        ObjectBuffer buf = _objectBuffer;\n        if (buf == null) {\n            buf = new ObjectBuffer();\n        } else {\n            _objectBuffer = null;\n        }\n        return buf;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StringArrayDeserializer._parseString",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.ObjectBuffer.resetAndStart",
+    "doc": "/**\n     * Method called to start buffering process. Will ensure that the buffer\n     * is empty, and then return an object array to start chunking content on\n     */",
+    "code": "public Object[] resetAndStart()\n    {\n        _reset();\n        if (_freeBuffer == null) {\n            return new Object[12];\n        }\n        return _freeBuffer;\n    }"
+  }
+]

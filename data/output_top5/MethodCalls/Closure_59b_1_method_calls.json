@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newArrayList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CheckLevel.isOn",
+    "doc": "/**\n * Controls checking levels of certain options.  For all checks going\n * forward, this should be used instead of booleans, so teams and\n * individuals can control which checks are off, which produce only warnings,\n * and which produce errors, without everyone having to agree.\n */",
+    "code": "boolean isOn() {\n    return this != OFF;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.createMessageFormatter",
+    "doc": "/**\n   * Creates a message formatter instance corresponding to the value of\n   * {@link CompilerOptions}.\n   */",
+    "code": "private MessageFormatter createMessageFormatter() {\n    boolean colorize = options.shouldColorizeErrorOutput();\n    return options.errorFormat.toFormatter(this, colorize);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.getDiagnosticGroups",
+    "doc": "/**\n   * The warning classes that are available from the command-line, and\n   * are suppressable by the {@code @suppress} annotation.\n   */",
+    "code": "protected DiagnosticGroups getDiagnosticGroups() {\n    return new DiagnosticGroups();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.setErrorManager",
+    "doc": "/**\n   * Sets the error manager.\n   *\n   * @param errorManager the error manager, it cannot be {@code null}\n   */",
+    "code": "public void setErrorManager(ErrorManager errorManager) {\n    Preconditions.checkNotNull(\n        errorManager, \"the error manager cannot be null\");\n    this.errorManager = errorManager;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.enables",
+    "doc": "/**\n   * Whether the warnings guard in this Options object enables the given\n   * group of warnings.\n   */",
+    "code": "boolean enables(DiagnosticGroup type) {\n    return warningsGuard.enables(type);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.getLanguageIn",
+    "doc": "/**\n   * Sets how goog.tweak calls are processed.\n   */",
+    "code": "public LanguageMode getLanguageIn() {\n    return languageIn;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.getWarningsGuard",
+    "doc": "/**\n   * Configure the given type of warning to the given level.\n   */",
+    "code": "WarningsGuard getWarningsGuard() {\n    return warningsGuard;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.setWarningLevel",
+    "doc": "/**\n   * Configure the given type of warning to the given level.\n   */",
+    "code": "public void setWarningLevel(DiagnosticGroup type, CheckLevel level) {\n    addWarningsGuard(new DiagnosticGroupWarningsGuard(type, level));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.DiagnosticGroups.getRegisteredGroups",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PrintStreamErrorManager.setSummaryDetailLevel",
+    "doc": "/**\n   * Creates an instance with a source-less error formatter.\n   */",
+    "code": "public void setSummaryDetailLevel(int summaryDetailLevel) {\n    this.summaryDetailLevel = summaryDetailLevel;\n  }"
+  }
+]

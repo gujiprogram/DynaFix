@@ -1,0 +1,416 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Control Flow] Branch Info: Line: 827, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:828 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Control Flow] Branch Info: Line: 828, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:832 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:803->[Local Variables] {"convention":{"indirectlyDeclaredProperties":["superClass_","instance_","getInstance"],"propertyTestFunctions":["goog.isDef","goog.isNull","goog.isDefAndNotNull","goog.isString","goog.isNumber","goog.isBoolean","goog.isFunction","goog.isArray","goog.isObject"],"nextConvention":{}}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Local Variables] {"it":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:805->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:805 -> java.util.Iterator.next
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:808->[Local Variables] "{var\u003dScope.Var a{null}, it\u003djava.util.ArrayList$Itr@16684340}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME a 1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dPARAM_LIST 1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dFUNCTION  1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:826 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:827 -> com.google.javascript.rhino.Node.isParamList
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Control Flow] Branch Info: Line: 827, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:828 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Control Flow] Branch Info: Line: 828, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:832 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:803->[Local Variables] {"convention":{"indirectlyDeclaredProperties":["superClass_","instance_","getInstance"],"propertyTestFunctions":["goog.isDef","goog.isNull","goog.isDefAndNotNull","goog.isString","goog.isNumber","goog.isBoolean","goog.isFunction","goog.isArray","goog.isObject"],"nextConvention":{}}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Local Variables] {"it":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:805->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:805 -> java.util.Iterator.next
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:808->[Local Variables] "{var\u003dScope.Var x$$1{null}, it\u003djava.util.ArrayList$Itr@2ac3658}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME x$$1 1 [source_file: input1] : (Scotch|null)}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dPARAM_LIST 1 [source_file: input1]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dFUNCTION f 1 [jsdoc_info: JSDocInfo] [source_file: input1] : function ((Scotch|null)): undefined}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:826 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:827 -> com.google.javascript.rhino.Node.isParamList
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Control Flow] Branch Info: Line: 827, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:828 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Control Flow] Branch Info: Line: 828, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:832 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:803->[Local Variables] {"convention":{"indirectlyDeclaredProperties":["superClass_","instance_","getInstance"],"propertyTestFunctions":["goog.isDef","goog.isNull","goog.isDefAndNotNull","goog.isString","goog.isNumber","goog.isBoolean","goog.isFunction","goog.isArray","goog.isObject"],"nextConvention":{}}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Local Variables] {"it":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:805->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:805 -> java.util.Iterator.next
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:808->[Local Variables] "{var\u003dScope.Var a{null}, it\u003djava.util.ArrayList$Itr@4e556720}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME a 1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dPARAM_LIST 1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dFUNCTION foo 1 [source_file: input0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:826 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:827 -> com.google.javascript.rhino.Node.isParamList
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue787 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Control Flow] Branch Info: Line: 827, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:828 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Control Flow] Branch Info: Line: 828, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:832 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:803->[Local Variables] {"convention":{"nextConvention":{"indirectlyDeclaredProperties":["superClass_","instance_","getInstance"],"propertyTestFunctions":["goog.isDef","goog.isNull","goog.isDefAndNotNull","goog.isString","goog.isNumber","goog.isBoolean","goog.isFunction","goog.isArray","goog.isObject"],"nextConvention":{}}}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Local Variables] {"it":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:805->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:805 -> java.util.Iterator.next
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:808->[Local Variables] "{var\u003dScope.Var content{null}, it\u003djava.util.ArrayList$Itr@72c32b21}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME content 7 [source_file: i0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dPARAM_LIST 7 [source_file: i0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dFUNCTION  7 [source_file: i0]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:826 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:827 -> com.google.javascript.rhino.Node.isParamList
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:845 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:846 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Control Flow] Branch Info: Line: 846, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:847->[Control Flow] Branch Info: Line: 847, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:856 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:857 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Control Flow] Branch Info: Line: 857, Condition: if (com.google.javascript.rhino.Node.getChildCount() > com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:863->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:863 -> com.google.javascript.jscomp.NodeUtil.removeChild
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:864->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:864 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME z 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:835 -> com.google.javascript.jscomp.NodeUtil.isFunctionExpression
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Control Flow] Branch Info: Line: 835, Condition: if (toRemove != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:842 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Control Flow] Branch Info: Line: 842, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:843->[Control Flow] Branch Info: Line: 843, Condition: if (com.google.javascript.rhino.Node.getChildCount() < com.google.javascript.rhino.Node.getChildCount()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:845 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:846 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Control Flow] Branch Info: Line: 846, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:847->[Control Flow] Branch Info: Line: 847, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:856 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:857 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Control Flow] Branch Info: Line: 857, Condition: if (com.google.javascript.rhino.Node.getChildCount() > com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:863->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:863 -> com.google.javascript.jscomp.NodeUtil.removeChild
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:864->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:864 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME z 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:835 -> com.google.javascript.jscomp.NodeUtil.isFunctionExpression
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Control Flow] Branch Info: Line: 835, Condition: if (toRemove != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:842 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Control Flow] Branch Info: Line: 842, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:843->[Control Flow] Branch Info: Line: 843, Condition: if (com.google.javascript.rhino.Node.getChildCount() < com.google.javascript.rhino.Node.getChildCount()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal3 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:845 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:846 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:845->[Control Flow] Branch Info: Line: 845, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:846->[Control Flow] Branch Info: Line: 846, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:847->[Control Flow] Branch Info: Line: 847, Condition: if (this.compiler != false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:856 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:857 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:857->[Control Flow] Branch Info: Line: 857, Condition: if (com.google.javascript.rhino.Node.getChildCount() > com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:863->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:863 -> com.google.javascript.jscomp.NodeUtil.removeChild
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:864->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:864 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME z 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:835 -> com.google.javascript.jscomp.NodeUtil.isFunctionExpression
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:835->[Control Flow] Branch Info: Line: 835, Condition: if (toRemove != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:842 -> com.google.javascript.rhino.Node.isFor
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:841->[Control Flow] Branch Info: Line: 841, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:842->[Control Flow] Branch Info: Line: 842, Condition: if (com.google.javascript.rhino.Node.isFor() != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:843->[Control Flow] Branch Info: Line: 843, Condition: if (com.google.javascript.rhino.Node.getChildCount() < com.google.javascript.rhino.Node.getChildCount()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.RemoveUnusedVarsTest::testIssue168b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Control Flow] Branch Info: Line: 827, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:828 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:828->[Control Flow] Branch Info: Line: 828, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:824->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:824 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:831 -> com.google.javascript.rhino.Node.isParamList
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.isParamList() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:832 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:832->[Control Flow] Branch Info: Line: 832, Condition: if (com.google.javascript.rhino.Node.isFunction() != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:836->[Control Flow] Branch Info: Line: 836, Condition: if (this.preserveFunctionExpressionNames == false), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:851->[Control Flow] Branch Info: Line: 851, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:862->[Control Flow] Branch Info: Line: 862, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Loop Info: Line: 804, Description: while at line 804
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:803->[Local Variables] {"convention":{"nextConvention":{"indirectlyDeclaredProperties":["superClass_","instance_","getInstance"],"propertyTestFunctions":["goog.isDef","goog.isNull","goog.isDefAndNotNull","goog.isString","goog.isNumber","goog.isBoolean","goog.isFunction","goog.isArray","goog.isObject"],"nextConvention":{}}}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.List.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:804 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Control Flow] Branch Info: Line: 804, Condition: if (it != 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:804->[Local Variables] {"it":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:805->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:805 -> java.util.Iterator.next
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:808->[Local Variables] "{var\u003dScope.Var x{null}, it\u003djava.util.ArrayList$Itr@518ddd3b}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> com.google.common.collect.Multimap.get
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Collection.iterator
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:809 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:809->[Control Flow] Branch Info: Line: 809, Condition: if (nameNode != 0), Executed: false
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:817->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:817 -> com.google.javascript.jscomp.RemoveUnusedVars.removeAllAssigns
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:819->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:819 -> com.google.javascript.jscomp.AbstractCompiler.addToDebugLog
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:820->[Local Variables] "{nameNode\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:821 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:821->[Local Variables] "{toRemove\u003dPARAM_LIST 1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:822->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:822 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:823->[Local Variables] "{parent\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:825 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:825->[Control Flow] Branch Info: Line: 825, Condition: if (com.google.javascript.rhino.Node.isVar() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:826 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:826->[Control Flow] Branch Info: Line: 826, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.RemoveUnusedVars:removeUnreferencedVars:827->[Method Call] Call Stack: com.google.javascript.jscomp.RemoveUnusedVars.removeUnreferencedVars:827 -> com.google.javascript.rhino.Node.isParamList

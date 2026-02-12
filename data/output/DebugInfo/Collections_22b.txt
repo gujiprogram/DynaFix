@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: org.apache.commons.collections4.map.ListOrderedMapTest::testCOLLECTIONS_474_nullValues ===
+Exception: java.lang.IndexOutOfBoundsException: Index: 2, Size: 1
+
+org.apache.commons.collections4.map.ListOrderedMap:putAll:244->[Local Variables] {"index":2,"map":{}}
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Map.entrySet
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Set.iterator
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Iterator.hasNext
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Control Flow] Branch Info: Line: 245, Condition: if (var3 != 0), Executed: true
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Iterator.next
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Local Variables] {"entry":{"hash":1855284570,"key":{}}}
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> java.util.Map$Entry.getKey
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> java.util.Map$Entry.getValue
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> org.apache.commons.collections4.map.ListOrderedMap.put
+org.apache.commons.collections4.map.ListOrderedMap:putAll:247->[Control Flow] Branch Info: Line: 247, Condition: if (old == null), Executed: true
+org.apache.commons.collections4.map.ListOrderedMap:putAll:255->[Local Variables] {"index":3}
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Control Flow] Loop Info: Line: 245, Description: while at line 245
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Iterator.hasNext
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Control Flow] Branch Info: Line: 245, Condition: if (var3 != 0), Executed: true
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:245 -> java.util.Iterator.next
+org.apache.commons.collections4.map.ListOrderedMap:putAll:245->[Local Variables] {"entry":{"hash":1874004574,"key":{}}}
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> java.util.Map$Entry.getKey
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> java.util.Map$Entry.getValue
+org.apache.commons.collections4.map.ListOrderedMap:putAll:246->[Method Call] Call Stack: org.apache.commons.collections4.map.ListOrderedMap.putAll:246 -> org.apache.commons.collections4.map.ListOrderedMap.put

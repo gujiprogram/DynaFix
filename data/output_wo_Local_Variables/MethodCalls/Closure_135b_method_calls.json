@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunction",
+    "doc": "/**\n   * Is this a FUNCTION node?\n   */",
+    "code": "static boolean isFunction(Node n) {\n    return n.getType() == Token.FUNCTION;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isThis",
+    "doc": "/**\n   * Is this a THIS node?\n   */",
+    "code": "static boolean isThis(Node node) {\n    return node.getType() == Token.THIS;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n     * <p>Return an iterable object that iterates over this nodes's children.\n     * The iterator does not support the optional operation\n     * {@link Iterator#remove()}.</p>\n     *\n     * <p>To iterate over a node's siblings, one can write</p>\n     * <pre>Node n = ...;\n     * for (Node child : n.children()) { ...</pre>\n     */",
+    "code": "public Iterable<Node> children() {\n      if (first == null) {\n        return Collections.emptySet();\n      } else {\n        return new SiblingNodeIterable(first);\n      }\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n     * Detaches child from Node and replaces it with newChild.\n     */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n        Preconditions.checkArgument(newChild.next == null,\n            \"The new child node has siblings.\");\n        Preconditions.checkArgument(newChild.parent == null,\n            \"The new child node already has a parent.\");\n\n        newChild.copyInformationFrom(child);\n\n        newChild.next = child.next;\n        newChild.parent = this;\n        if (child == first) {\n            first = newChild;\n        } else {\n            Node prev = getChildBefore(child);\n            prev.next = newChild;\n        }\n        if (child == last)\n            last = newChild;\n        child.next = null;\n        child.parent = null;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.setPrototype",
+    "doc": "/**\n   * Sets the prototype.\n   * @param prototype the prototype. If this value is {@code null} it will\n   *        silently be discarded.\n   */",
+    "code": "public boolean setPrototype(FunctionPrototypeType prototype) {\n    if (prototype == null) {\n      return false;\n    }\n    if (isConstructor() && prototype == getInstanceType()) {\n      return false;\n    }\n\n    this.prototype = prototype;\n\n    if (isConstructor() || isInterface()) {\n      FunctionType superClass = getSuperClassConstructor();\n      if (superClass != null) {\n        superClass.addSubType(this);\n      }\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toObjectType",
+    "doc": "/**\n   * Casts this to an ObjectType, or returns null if this is not an ObjectType.\n   *\n   * Does not change the underlying JS type. If you want to simulate JS\n   * autoboxing or dereferencing, you should use autoboxesTo() or dereference().\n   * Those methods may change the underlying JS type.\n   */",
+    "code": "public ObjectType toObjectType() {\n    return this instanceof ObjectType ? (ObjectType) this : null;\n  }"
+  }
+]

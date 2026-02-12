@@ -1,0 +1,143 @@
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.BinomialDistributionTest::testMath718 ===
+Exception: org.apache.commons.math3.exception.ConvergenceException: illegal state: Continued fraction diverged to NaN for value 0.5
+
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:190 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarE < 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:193->[Local Variables] {"TransVarEPrev":3.6383E-320}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:194->[Local Variables] {"TransVarDPrev":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:196->[Local Variables] {"TransVarHPrev2":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:197->[Local Variables] {"TransVarQ2":6.87E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:198->[Local Variables] {"TransVarK":334}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:143->[Control Flow] Loop Info: Line: 143, Description: while at line 143
+org.apache.commons.math3.util.ContinuedFraction:evaluate:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarMax < TransVarMax), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:149->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:149 -> org.apache.commons.math3.util.ContinuedFraction.getA
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":3.3288549048254823E-4}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":6.97E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] "{TransVarDeltaN_\u003dNaN}"
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] "{TransVarHNext\u003dNaN}"
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:188->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:188 -> java.lang.Double.valueOf
+org.apache.commons.math3.util.ContinuedFraction:evaluate:188->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:188 -> org.apache.commons.math3.exception.ConvergenceException.<init>
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":3.308987759305037E-4}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":3.6383E-320}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] {"TransVarDeltaN_":0.982753938077132}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] {"TransVarHNext":0.0010863661053775121}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:190 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarE < 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:193->[Local Variables] {"TransVarEPrev":3.5756E-320}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:194->[Local Variables] {"TransVarDPrev":0.0010863661053775121}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:195->[Local Variables] {"TransVarP":4.0E-323}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:197->[Local Variables] {"TransVarQ2":3.6383E-320}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:198->[Local Variables] {"TransVarK":333}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:143->[Control Flow] Loop Info: Line: 143, Description: while at line 143
+org.apache.commons.math3.util.ContinuedFraction:evaluate:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarMax < TransVarMax), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:149->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:149 -> org.apache.commons.math3.util.ContinuedFraction.getA
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":-0.9983368837138533}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:151->[Local Variables] {"TransVarC1":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":6.87E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] {"TransVarDeltaN_":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] {"TransVarHNext":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.FDistributionTest::testMath785 ===
+Exception: junit.framework.AssertionFailedError: Failing to calculate inverse cumulative probability
+
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] {"TransVarDeltaN_":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] {"TransVarHNext":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:190 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarE < 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:193->[Local Variables] {"TransVarEPrev":3.953E-321}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:194->[Local Variables] {"TransVarDPrev":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:196->[Local Variables] {"TransVarHPrev2":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:197->[Local Variables] {"TransVarQ2":1.3E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:198->[Local Variables] {"TransVarK":382}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:143->[Control Flow] Loop Info: Line: 143, Description: while at line 143
+org.apache.commons.math3.util.ContinuedFraction:evaluate:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarMax < TransVarMax), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:149->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:149 -> org.apache.commons.math3.util.ContinuedFraction.getA
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":9.457273562223059E-4}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":1.33E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] "{TransVarDeltaN_\u003dNaN}"
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] "{TransVarHNext\u003dNaN}"
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:188->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:188 -> java.lang.Double.valueOf
+org.apache.commons.math3.util.ContinuedFraction:evaluate:188->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:188 -> org.apache.commons.math3.exception.ConvergenceException.<init>
+org.apache.commons.math3.util.ContinuedFraction:evaluate:197->[Local Variables] {"TransVarQ2":3.844E-321}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:198->[Local Variables] {"TransVarK":380}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:143->[Control Flow] Loop Info: Line: 143, Description: while at line 143
+org.apache.commons.math3.util.ContinuedFraction:evaluate:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarMax < TransVarMax), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:149->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:149 -> org.apache.commons.math3.util.ContinuedFraction.getA
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":9.408228193731103E-4}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":3.953E-321}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarQ2prev != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:162->[Control Flow] Branch Info: Line: 162, Condition: if (TransVarJ < TransVarJ), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:182->[Local Variables] {"TransVarDeltaN_":0.9725000000000001}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:183->[Local Variables] {"TransVarHNext":0.00125}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:184 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:187 -> java.lang.Double.isNaN
+org.apache.commons.math3.util.ContinuedFraction:evaluate:187->[Control Flow] Branch Info: Line: 187, Condition: if (TransVarHNext != 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:190 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.util.ContinuedFraction:evaluate:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarE < 0), Executed: false
+org.apache.commons.math3.util.ContinuedFraction:evaluate:193->[Local Variables] {"TransVarEPrev":3.844E-321}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:194->[Local Variables] {"TransVarDPrev":0.00125}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:195->[Local Variables] {"TransVarP":4.9E-324}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:197->[Local Variables] {"TransVarQ2":3.953E-321}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:198->[Local Variables] {"TransVarK":381}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:143->[Control Flow] Loop Info: Line: 143, Description: while at line 143
+org.apache.commons.math3.util.ContinuedFraction:evaluate:145->[Control Flow] Branch Info: Line: 145, Condition: if (TransVarMax < TransVarMax), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:149->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:149 -> org.apache.commons.math3.util.ContinuedFraction.getA
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:150 -> org.apache.commons.math3.util.ContinuedFraction.getB
+org.apache.commons.math3.util.ContinuedFraction:evaluate:150->[Local Variables] {"TransVarBPrev":-0.9950348442024336}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:151->[Local Variables] {"TransVarC1":0.0}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:152->[Local Variables] {"TransVarQ2prev":1.3E-322}
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Control Flow] Branch Info: Line: 153, Condition: if (TransVarC1 == 0), Executed: true
+org.apache.commons.math3.util.ContinuedFraction:evaluate:153->[Method Call] Call Stack: org.apache.commons.math3.util.ContinuedFraction.evaluate:153 -> java.lang.Double.isInfinite

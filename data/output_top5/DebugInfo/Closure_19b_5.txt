@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testNoThisInference ===
+Exception: java.lang.IllegalArgumentException: Node cannot be refined.
+
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:append:80->[Local Variables] "{lastLink\u003dcom.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter@34a2d6e0}"
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:append:81->[Control Flow] Branch Info: Line: 81, Condition: if (this.nextLink == null), Executed: true
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:append:81->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.append:81 -> com.google.common.base.Preconditions.checkArgument

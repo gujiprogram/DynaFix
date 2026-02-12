@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.read.NonStandardUnquotedNamesTest::testUnquotedIssue510 ===
+Exception: java.lang.ArrayIndexOutOfBoundsException: Index 256 out of bounds for length 256
+
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1949->[Local Variables] {"startPtr":3999,"codes":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,"..."],"hash":28298453}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1950->[Method Call] Call Stack: com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName2:1950 -> com.fasterxml.jackson.core.util.TextBuffer.resetWithShared
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1951->[Method Call] Call Stack: com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName2:1951 -> com.fasterxml.jackson.core.util.TextBuffer.getCurrentSegment
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1951->[Local Variables] {"outBuf":["a","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","\u0000","..."]}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1952->[Method Call] Call Stack: com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName2:1952 -> com.fasterxml.jackson.core.util.TextBuffer.getCurrentSegmentSize
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1952->[Local Variables] {"outPtr":1}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1955->[Local Variables] {"maxCode":256}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1956->[Control Flow] Branch Info: Line: 1956, Condition: if (this._inputEnd >= this._inputEnd), Executed: true
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1957->[Method Call] Call Stack: com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddName2:1957 -> com.fasterxml.jackson.core.json.ReaderBasedJsonParser._loadMore
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1956->[Control Flow] Branch Info: Line: 1956, Condition: if (this._inputEnd >= this._inputEnd), Executed: false
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1957->[Control Flow] Branch Info: Line: 1957, Condition: if (com.fasterxml.jackson.core.json.ReaderBasedJsonParser._loadMore() == 0), Executed: false
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1961->[Local Variables] {"c":"Ā"}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1962->[Local Variables] {"i":256}
+com.fasterxml.jackson.core.json.ReaderBasedJsonParser:_handleOddName2:1963->[Control Flow] Branch Info: Line: 1963, Condition: if (maxCode <= maxCode), Executed: true

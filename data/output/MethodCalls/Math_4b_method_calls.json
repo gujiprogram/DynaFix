@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.threed.Line.intersection",
+    "doc": "/** Get the intersection point of the instance and another line.\n     * @param line other line\n     * @return intersection point of the instance and the other line\n     * or null if there are no intersection points\n     */",
+    "code": "public Vector3D intersection(final Line line) {\n        final Vector3D closest = closestPoint(line);\n        return line.contains(closest) ? closest : null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.threed.Line.toSubSpace",
+    "doc": "/** {@inheritDoc}\n     * @see #getAbscissa(Vector3D)\n     */",
+    "code": "public Vector1D toSubSpace(final Vector<Euclidean3D> point) {\n        return new Vector1D(getAbscissa((Vector3D) point));\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.Line.intersection",
+    "doc": "/** Get the intersection point of the instance and another line.\n     * @param other other line\n     * @return intersection point of the instance and the other line\n     * or null if there are no intersection points\n     */",
+    "code": "public Vector2D intersection(final Line other) {\n        final double d = sin * other.cos - other.sin * cos;\n        if (FastMath.abs(d) < 1.0e-10) {\n            return null;\n        }\n        return new Vector2D((cos * other.originOffset - other.cos * originOffset) / d,\n                            (sin * other.originOffset - other.sin * originOffset) / d);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.Line.toSubSpace",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.SubLine.getHyperplane",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.SubLine.getRemainingRegion",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

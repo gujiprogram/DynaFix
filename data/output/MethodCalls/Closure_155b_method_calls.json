@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.common.base.Predicate.apply",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback.addReference",
+    "doc": "/**\n   * @return true if this node marks the start of a new basic block\n   */",
+    "code": "private void addReference(NodeTraversal t, Var v, Reference reference) {\n    ReferenceCollection referenceInfo = referenceMap.get(v);\n    if (referenceInfo == null) {\n      referenceInfo = new ReferenceCollection();\n      referenceMap.put(v, referenceInfo);\n    }\n\n    referenceInfo.add(reference, t, v);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback.isBlockBoundary",
+    "doc": "/**\n   * @return true if this node marks the start of a new basic block\n   */",
+    "code": "private static boolean isBlockBoundary(Node n, Node parent) {\n    if (parent != null) {\n      switch (parent.getType()) {\n        case Token.DO:\n        case Token.FOR:\n        case Token.TRY:\n        case Token.WHILE:\n        case Token.WITH:\n          return true;\n        case Token.AND:\n        case Token.HOOK:\n        case Token.IF:\n        case Token.OR:\n          return n != parent.getFirstChild();\n\n      }\n    }\n\n    return n.getType() == Token.CASE;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  public StaticSlot<JSType> getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

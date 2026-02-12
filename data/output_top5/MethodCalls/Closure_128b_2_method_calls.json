@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.isSimpleNumber",
+    "doc": "/**\n   * We could use addList recursively here, but sometimes we produce\n   * very deeply nested operators and run out of stack space, so we\n   * just unroll the recursion when possible.\n   *\n   * We assume nodes are left-recursive.\n   */",
+    "code": "static boolean isSimpleNumber(String s) {\n    int len = s.length();\n    for (int index = 0; index < len; index++) {\n      char c = s.charAt(index);\n      if (c < '0' || c > '9') {\n        return false;\n      }\n    }\n    return len > 0 && s.charAt(0) != '0';\n  }"
+  }
+]

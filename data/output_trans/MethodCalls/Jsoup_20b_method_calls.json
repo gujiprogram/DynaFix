@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notEmpty",
+    "doc": "/**\n     * Validates that the string is not empty\n     * @param string the string to test\n     */",
+    "code": "public static void notEmpty(String string) {\n        if (string == null || string.length() == 0)\n            throw new IllegalArgumentException(\"String must not be empty\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document$OutputSettings.charset",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.nodes.Document.outputSettings",
+    "doc": "/**\n     * Get the document's current output settings.\n     * @return the document's current output settings.\n     */",
+    "code": "public OutputSettings outputSettings() {\n        return outputSettings;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseInput",
+    "doc": "/**\n     * Create a new Parser, using the specified TreeBuilder\n     * @param treeBuilder TreeBuilder to use to parse input into Documents.\n     */",
+    "code": "public Document parseInput(String html, String baseUri) {\n        errors = isTrackErrors() ? ParseErrorList.tracking(maxErrors) : ParseErrorList.noTracking();\n        Document doc = treeBuilder.parse(html, baseUri, errors);\n        return doc;\n    }"
+  }
+]

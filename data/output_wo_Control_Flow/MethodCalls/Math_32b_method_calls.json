@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.getTree",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.getVertices",
+    "doc": "/** Get the vertices of the polygon.\n     * <p>The polygon boundary can be represented as an array of loops,\n     * each loop being itself an array of vertices.</p>\n     * <p>In order to identify open loops which start and end by\n     * infinite edges, the open loops arrays start with a null point. In\n     * this case, the first non null point and the last point of the\n     * array do not represent real vertices, they are dummy points\n     * intended only to get the direction of the first and last edge. An\n     * open loop consisting of a single infinite line will therefore be\n     * represented by a three elements array with one null point\n     * followed by two dummy points. The open loops are always the first\n     * ones in the loops array.</p>\n     * <p>If the polygon has no boundary at all, a zero length loop\n     * array will be returned.</p>\n     * <p>All line segments in the various loops have the inside of the\n     * region on their left side and the outside on their right side\n     * when moving in the underlying line direction. This means that\n     * closed loops surrounding finite areas obey the direct\n     * trigonometric orientation.</p>\n     * @return vertices of the polygon, organized as oriented boundary\n     * loops with the open loops first (the returned value is guaranteed\n     * to be non-null)\n     */",
+    "code": "public Vector2D[][] getVertices() {\n        if (vertices == null) {\n            if (getTree(false).getCut() == null) {\n                vertices = new Vector2D[0][];\n            } else {\n\n                final SegmentsBuilder visitor = new SegmentsBuilder();\n                getTree(true).visit(visitor);\n                final AVLTree<ComparableSegment> sorted = visitor.getSorted();\n\n                final ArrayList<List<ComparableSegment>> loops = new ArrayList<List<ComparableSegment>>();\n                while (!sorted.isEmpty()) {\n                    final AVLTree<ComparableSegment>.Node node = sorted.getSmallest();\n                    final List<ComparableSegment> loop = followLoop(node, sorted);\n                    if (loop != null) {\n                        loops.add(loop);\n                    }\n                }\n\n                vertices = new Vector2D[loops.size()][];\n                int i = 0;\n\n                for (final List<ComparableSegment> loop : loops) {\n                    if (loop.size() < 2) {\n                        final Line line = loop.get(0).getLine();\n                        vertices[i++] = new Vector2D[] {\n                            null,\n                            line.toSpace(new Vector1D(-Float.MAX_VALUE)),\n                            line.toSpace(new Vector1D(+Float.MAX_VALUE))\n                        };\n                    } else if (loop.get(0).getStart() == null) {\n                        final Vector2D[] array = new Vector2D[loop.size() + 2];\n                        int j = 0;\n                        for (Segment segment : loop) {\n\n                            if (j == 0) {\n                                double x = segment.getLine().toSubSpace(segment.getEnd()).getX();\n                                x -= FastMath.max(1.0, FastMath.abs(x / 2));\n                                array[j++] = null;\n                                array[j++] = segment.getLine().toSpace(new Vector1D(x));\n                            }\n\n                            if (j < (array.length - 1)) {\n                                array[j++] = segment.getEnd();\n                            }\n\n                            if (j == (array.length - 1)) {\n                                double x = segment.getLine().toSubSpace(segment.getStart()).getX();\n                                x += FastMath.max(1.0, FastMath.abs(x / 2));\n                                array[j++] = segment.getLine().toSpace(new Vector1D(x));\n                            }\n\n                        }\n                        vertices[i++] = array;\n                    } else {\n                        final Vector2D[] array = new Vector2D[loop.size()];\n                        int j = 0;\n                        for (Segment segment : loop) {\n                            array[j++] = segment.getStart();\n                        }\n                        vertices[i++] = array;\n                    }\n                }\n\n            }\n        }\n\n        return vertices.clone();\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.setBarycenter",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.setSize",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getX",
+    "doc": "/** Get the abscissa of the vector.\n     * @return abscissa of the vector\n     * @see #Vector2D(double, double)\n     */",
+    "code": "public double getX() {\n        return x;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.Vector2D.getY",
+    "doc": "/** Get the ordinate of the vector.\n     * @return ordinate of the vector\n     * @see #Vector2D(double, double)\n     */",
+    "code": "public double getY() {\n        return y;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.partitioning.BSPTree.getAttribute",
+    "doc": "/** Get the attribute associated with the instance.\n     * @return attribute associated with the node or null if no\n     * attribute has been explicitly set using the {@link #setAttribute\n     * setAttribute} method\n     * @see #setAttribute\n     */",
+    "code": "public Object getAttribute() {\n        return attribute;\n    }"
+  }
+]

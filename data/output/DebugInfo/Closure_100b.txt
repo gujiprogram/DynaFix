@@ -1,0 +1,429 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction6 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 35 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:115 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Local Variables] "{lhs\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:104->[Local Variables] "{rhs\u003dNUMBER 8.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:139->[Local Variables] "{parent\u003dASSIGN 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dNUMBER 8.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction7 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 41 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:115 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Local Variables] "{lhs\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:104->[Local Variables] "{rhs\u003dNUMBER 8.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:139->[Local Variables] "{parent\u003dASSIGN 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dNUMBER 8.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testStaticFunction8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING foo 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dBLOCK 1, n\u003dRETURN 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dRETURN 1, n\u003dGETPROP 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testGlobalThis7 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING foo 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod2 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 39 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> java.lang.String.equals
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Control Flow] Branch Info: Line: 116, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:119->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:119 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:119->[Local Variables] {"leftName":"this.m2"}
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:120 -> java.lang.String.contains
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:139->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING m2 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dASSIGN 1, n\u003dNUMBER 5.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:115 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testStaticMethod3 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 41 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:119->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:119 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:119->[Local Variables] {"leftName":"this.m2"}
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:120 -> java.lang.String.contains
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dASSIGN 1, n\u003dNUMBER 5.0 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:102->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:102 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:103->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:103 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:105->[Control Flow] Branch Info: Line: 105, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:115 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:116 -> java.lang.String.equals
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:116->[Control Flow] Branch Info: Line: 116, Condition: if (java.lang.String.equals() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction1 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING x 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dBLOCK 1, n\u003dRETURN 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dRETURN 1, n\u003dGETPROP 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction2 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING x 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dRETURN 1, n\u003dGETPROP 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testInnerFunction3 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dRETURN 1, n\u003dGETPROP 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{parent\u003dGETPROP 1, n\u003dTHIS 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Control Flow] Branch Info: Line: 86, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (lhs != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.JSDocInfo.hasThisType() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (parent != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:109->[Control Flow] Branch Info: Line: 109, Condition: if (this.assignLhsChild == null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:115->[Control Flow] Branch Info: Line: 115, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (leftName != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:120->[Control Flow] Branch Info: Line: 120, Condition: if (java.lang.String.contains() != 0), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:140->[Control Flow] Branch Info: Line: 140, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:85->[Local Variables] "{n\u003dSTRING x 1}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldTraverse:86->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldTraverse:86 -> com.google.javascript.rhino.Node.getType

@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::elementIsNotASiblingOfItself ===
+Exception: junit.framework.AssertionFailedError: expected:<2> but was:<3>
+
+org.jsoup.nodes.Element:siblingElements:435->[Method Call] Call Stack: org.jsoup.nodes.Element.siblingElements:435 -> org.jsoup.nodes.Element.parent
+org.jsoup.nodes.Element:siblingElements:435->[Method Call] Call Stack: org.jsoup.nodes.Element.siblingElements:435 -> org.jsoup.nodes.Element.children
+
+=== Debug Info for Test: org.jsoup.nodes.NodeTest::nodeIsNotASiblingOfItself ===
+Exception: junit.framework.AssertionFailedError: expected:<2> but was:<3>
+
+org.jsoup.nodes.Node:siblingNodes:445->[Method Call] Call Stack: org.jsoup.nodes.Node.siblingNodes:445 -> org.jsoup.nodes.Node.parent
+org.jsoup.nodes.Node:siblingNodes:445->[Method Call] Call Stack: org.jsoup.nodes.Node.siblingNodes:445 -> org.jsoup.nodes.Node.childNodes
+
+=== Debug Info for Test: org.jsoup.nodes.NodeTest::orphanNodeReturnsNullForSiblingElements ===
+Exception: java.lang.NullPointerException
+
+org.jsoup.nodes.Node:siblingNodes:445->[Method Call] Call Stack: org.jsoup.nodes.Node.siblingNodes:445 -> org.jsoup.nodes.Node.parent
+org.jsoup.nodes.Node:siblingNodes:445->[Method Call] Call Stack: org.jsoup.nodes.Node.siblingNodes:445 -> org.jsoup.nodes.Node.childNodes

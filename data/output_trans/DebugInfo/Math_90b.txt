@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.apache.commons.math.stat.FrequencyTest::testAddNonComparable ===
+Exception: java.lang.IllegalArgumentException: Value not comparable to existing values.
+
+org.apache.commons.math.stat.Frequency:addValue:123->[Local Variables] {"TransVarValue":{}}
+org.apache.commons.math.stat.Frequency:addValue:124->[Local Variables] {"TransVarObject":{}}
+org.apache.commons.math.stat.Frequency:addValue:125->[Control Flow] Branch Info: Line: 125, Condition: if (TransVarValue != 0), Executed: false
+org.apache.commons.math.stat.Frequency:addValue:135->[Method Call] Call Stack: org.apache.commons.math.stat.Frequency.addValue:135 -> java.util.TreeMap.get
+org.apache.commons.math.stat.Frequency:addValue:142->[Local Variables] {"TransVarExcep":{"detailMessage":"java.lang.Object cannot be cast to java.lang.Comparable","stackTrace":[],"suppressedExceptions":[]}}

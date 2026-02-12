@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631 ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.apache.commons.math.exception.ConvergenceException> but was<org.apache.commons.math.exception.TooManyEvaluationsException>
+
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:124->[Local Variables] {"min":1.0,"max":10.0,"maxEval":3624,"startValue":5.5}
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:116->[Local Variables] {"allowedSolution":"ANY_SIDE"}
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:solve:118->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.solve:118 -> org.apache.commons.math.analysis.solvers.AbstractUnivariateRealSolver.solve

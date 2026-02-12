@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.tryConvertOperandsToNumber",
+    "doc": "/**\n * Peephole optimization to fold constants (e.g. x + 1 + 7 --> x + 8).\n *\n */",
+    "code": "private void tryConvertOperandsToNumber(Node n) {\n    Node next;\n    for (Node c = n.getFirstChild(); c != null; c = next) {\n      next = c.getNext();\n      tryConvertToNumber(c);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.univariate.BaseUnivariateRealOptimizer.getEvaluations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.univariate.BaseUnivariateRealOptimizer.getMaxEvaluations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.univariate.BaseUnivariateRealOptimizer.optimize",
+    "doc": "/**\n     * Find an optimum in the given interval.\n     *\n     * An optimizer may require that the interval brackets a single optimum.\n     *\n     * @param f Function to optimize.\n     * @param goalType Type of optimization goal: either\n     * {@link GoalType#MAXIMIZE} or {@link GoalType#MINIMIZE}.\n     * @param min Lower bound for the interval.\n     * @param max Upper bound for the interval.\n     * @return a (point, value) pair where the function is optimum.\n     * @throws org.apache.commons.math.exception.TooManyEvaluationsException\n     * if the maximum evaluation count is exceeded.\n     * @throws org.apache.commons.math.exception.ConvergenceException\n     * if the optimizer detects a convergence problem.\n     * @throws FunctionEvaluationException if an error occurs evaluating the\n     * function.\n     * @throws IllegalArgumentException if {@code min > max} or the endpoints\n     * do not satisfy the requirements specified by the optimizer.\n     */",
+    "code": "UnivariateRealPointValuePair optimize(FUNC f, GoalType goalType,\n                                          double min, double max)"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.univariate.BaseUnivariateRealOptimizer.setMaxEvaluations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.univariate.MultiStartUnivariateRealOptimizer.sortPairs",
+    "doc": "/**\n     * Sort the optima from best to worst, followed by {@code null} elements.\n     *\n     * @param goal Goal type.\n     */",
+    "code": "private void sortPairs(final GoalType goal) {\n        Arrays.sort(optima, new Comparator<UnivariateRealPointValuePair>() {\n                public int compare(final UnivariateRealPointValuePair o1,\n                                   final UnivariateRealPointValuePair o2) {\n                    if (o1 == null) {\n                        return (o2 == null) ? 0 : 1;\n                    } else if (o2 == null) {\n                        return -1;\n                    }\n                    final double v1 = o1.getValue();\n                    final double v2 = o2.getValue();\n                    return (goal == GoalType.MINIMIZE) ?\n                        Double.compare(v1, v2) : Double.compare(v2, v1);\n                }\n            });\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.random.RandomGenerator.nextDouble",
+    "doc": "/**\n     * Returns the next pseudorandom, uniformly distributed\n     * <code>double</code> value between <code>0.0</code> and\n     * <code>1.0</code> from this random number generator's sequence.\n     *\n     * @return  the next pseudorandom, uniformly distributed\n     *  <code>double</code> value between <code>0.0</code> and\n     *  <code>1.0</code> from this random number generator's sequence\n     */",
+    "code": "double nextDouble();"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.max",
+    "doc": "/** Compute the maximum of two values\n     * @param a first value\n     * @param b second value\n     * @return b if a is lesser or equal to b, a otherwise\n     */",
+    "code": "public static int max(final int a, final int b) {\n        return (a <= b) ? b : a;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.min",
+    "doc": "/** Compute the minimum of two values\n     * @param a first value\n     * @param b second value\n     * @return a if a is lesser or equal to b, b otherwise\n     */",
+    "code": "public static int min(final int a, final int b) {\n        return (a <= b) ? a : b;\n    }"
+  }
+]

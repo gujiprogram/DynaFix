@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.LiveVariableAnalysisTest::testExpressionInForIn ===
+Exception: java.lang.IllegalStateException
+
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:221->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:221 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:221->[Local Variables] "{TransVarLeft\u003dGETELEM 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:222->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:222 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:222->[Local Variables] "{TransVarRight\u003dNAME foo 1 [source_file:  [testcode] ]}"
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:223->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:223 -> com.google.javascript.jscomp.NodeUtil.isVar
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:223->[Control Flow] Branch Info: Line: 223, Condition: if (TransVarChildNode != 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:226->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:226 -> com.google.javascript.jscomp.LiveVariablesAnalysis.addToSetIfLocal
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:199->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:199 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:199->[Control Flow] Branch Info: Line: 199, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:203->[Control Flow] Branch Info: Line: 203, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:203->[Control Flow] Branch Info: Line: 203, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:203->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:203 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:203->[Control Flow] Branch Info: Line: 203, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:206->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:206 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:206->[Control Flow] Branch Info: Line: 206, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:206->[Control Flow] Branch Info: Line: 206, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:209->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:209 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:209->[Control Flow] Branch Info: Line: 209, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:215->[Control Flow] Branch Info: Line: 215, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:215->[Control Flow] Branch Info: Line: 215, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:215->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:215->[Control Flow] Branch Info: Line: 215, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:215->[Control Flow] Branch Info: Line: 215, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:216->[Local Variables] {"TransFallThroughFlag0":true}
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:217->[Method Call] Call Stack: com.google.javascript.jscomp.LiveVariablesAnalysis.computeGenKill:217 -> com.google.javascript.jscomp.NodeUtil.isForIn
+com.google.javascript.jscomp.LiveVariablesAnalysis:computeGenKill:217->[Control Flow] Branch Info: Line: 217, Condition: if (TransVarNode == 0), Executed: false

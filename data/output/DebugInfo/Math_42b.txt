@@ -1,0 +1,58 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath713NegativeVariable ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Control Flow] Branch Info: Line: 403, Condition: if (coefficients < coefficients), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Local Variables] {"i":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.append
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.append
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.toString
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.util.List.indexOf
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Local Variables] {"colIndex":2}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:405->[Control Flow] Branch Info: Line: 405, Condition: if (colIndex < 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:409->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:409 -> org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:412->[Local Variables] {"basicRow":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:413->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:413 -> java.util.Set.contains
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:413->[Control Flow] Branch Info: Line: 413, Condition: if (basicRow != 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:418->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:418 -> java.util.Set.add
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:418->[Local Variables] {"basicRows":[0,1]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Control Flow] Branch Info: Line: 420, Condition: if (basicRow == null), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:421->[Control Flow] Branch Info: Line: 421, Condition: if (this.restrictToNonNegative != false), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:402->[Local Variables] {"coefficients":[1.0,-1.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Control Flow] Branch Info: Line: 403, Condition: if (coefficients < coefficients), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:424->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:424 -> org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:424->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:424 -> org.apache.commons.math.optimization.RealPointValuePair.<init>
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:397->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:397 -> java.util.List.indexOf
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:397->[Local Variables] {"negativeVarColumn":-1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:398->[Control Flow] Branch Info: Line: 398, Condition: if (negativeVarColumn > 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:399->[Control Flow] Branch Info: Line: 399, Condition: if (negativeVarBasicRow == null), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:400->[Local Variables] {"mostNegative":0.0}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:401->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:401 -> java.util.HashSet.<init>
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:401->[Local Variables] {"basicRows":[]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:402->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:402 -> org.apache.commons.math.optimization.linear.SimplexTableau.getOriginalNumDecisionVariables
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:402->[Local Variables] {"coefficients":[0.0,0.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Control Flow] Branch Info: Line: 403, Condition: if (coefficients < coefficients), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Local Variables] {"i":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.append
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.append
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.lang.StringBuilder.toString
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:404 -> java.util.List.indexOf
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:404->[Local Variables] {"colIndex":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:405->[Control Flow] Branch Info: Line: 405, Condition: if (colIndex < 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:409->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:409 -> org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:412->[Local Variables] {"basicRow":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:413->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:413 -> java.util.Set.contains
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:413->[Control Flow] Branch Info: Line: 413, Condition: if (basicRow != 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:418->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:418 -> java.util.Set.add
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:418->[Local Variables] {"basicRows":[1]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Control Flow] Branch Info: Line: 420, Condition: if (basicRow == null), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:420->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:420 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:421->[Control Flow] Branch Info: Line: 421, Condition: if (this.restrictToNonNegative != false), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:402->[Local Variables] {"coefficients":[1.0,0.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403

@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.ser.TestMapSerialization::testClassKey ===
+Exception: junit.framework.ComparisonFailure: expected:<{"[]java.lang.String":2}> but was:<{"[class ]java.lang.String":2}>
+
+com.fasterxml.jackson.databind.ser.std.StdKeySerializer:serialize:30->[Local Variables] "{TransVarValue2\u003dclass java.lang.String, TransVarValue\u003dcom.fasterxml.jackson.core.json.WriterBasedJsonGenerator@142269f2, TransVarProvider1\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@331acdad}"
+com.fasterxml.jackson.databind.ser.std.StdKeySerializer:serialize:31->[Control Flow] Branch Info: Line: 31, Condition: if (TransVarValue2 != 0), Executed: false
+com.fasterxml.jackson.databind.ser.std.StdKeySerializer:serialize:41->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.StdKeySerializer.serialize:41 -> java.lang.Object.toString
+com.fasterxml.jackson.databind.ser.std.StdKeySerializer:serialize:42->[Local Variables] {"TransVarValue3":"class java.lang.String"}
+com.fasterxml.jackson.databind.ser.std.StdKeySerializer:serialize:43->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.StdKeySerializer.serialize:43 -> com.fasterxml.jackson.core.JsonGenerator.writeFieldName

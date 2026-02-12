@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.add",
+    "doc": "/**\n     * Returns the sum of {@code this} and {@code m}.\n     *\n     * @param m matrix to be added\n     * @return {@code this + m}\n     * @throws MatrixDimensionMismatchException if {@code m} is not the same\n     * size as {@code this}.\n     */",
+    "code": "RealMatrix add(RealMatrix m)\n        throws MatrixDimensionMismatchException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.getFrobeniusNorm",
+    "doc": "/**\n     * Returns the <a href=\"http://mathworld.wolfram.com/FrobeniusNorm.html\">\n     * Frobenius norm</a> of the matrix.\n     *\n     * @return norm\n     */",
+    "code": "double getFrobeniusNorm();"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.multiply",
+    "doc": "/**\n     * Returns the result of postmultiplying {@code this} by {@code m}.\n     *\n     * @param m matrix to postmultiply by\n     * @return {@code this * m}\n     * @throws DimensionMismatchException if\n     * {@code columnDimension(this) != rowDimension(m)}\n     */",
+    "code": "RealMatrix multiply(RealMatrix m)\n        throws DimensionMismatchException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.scalarMultiply",
+    "doc": "/**\n     * Returns the result of multiplying each entry of {@code this} by\n     * {@code d}.\n     *\n     * @param d value to multiply all entries by\n     * @return {@code d * this}\n     */",
+    "code": "RealMatrix scalarMultiply(double d);"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.subtract",
+    "doc": "/**\n     * Returns {@code this} minus {@code m}.\n     *\n     * @param m matrix to be subtracted\n     * @return {@code this - m}\n     * @throws MatrixDimensionMismatchException if {@code m} is not the same\n     * size as {@code this}.\n     */",
+    "code": "RealMatrix subtract(RealMatrix m)\n        throws MatrixDimensionMismatchException;"
+  }
+]

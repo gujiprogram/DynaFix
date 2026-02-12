@@ -1,0 +1,69 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.RandomStringUtilsTest::testExceptions ===
+Exception: java.lang.ArrayIndexOutOfBoundsException: 742654855
+
+org.apache.commons.lang3.RandomStringUtils:random:241->[Control Flow] Branch Info: Line: 241, Condition: if (TransVarNum == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount2 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:248->[Local Variables] {"TransVarCount2":2147483647}
+org.apache.commons.lang3.RandomStringUtils:random:249->[Local Variables] {"TransVarBufferChar":["\u0000"]}
+org.apache.commons.lang3.RandomStringUtils:random:251->[Local Variables] {"TransVarSpaceCount":2147483647}
+org.apache.commons.lang3.RandomStringUtils:random:252->[Control Flow] Branch Info: Line: 252, Condition: if (TransVarCount1 != 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:253->[Local Variables] {"TransVarCount1":0}
+org.apache.commons.lang3.RandomStringUtils:random:254->[Control Flow] Branch Info: Line: 254, Condition: if (TransVarCharacterArray == null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:257->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:257 -> java.util.Random.nextInt
+org.apache.commons.lang3.RandomStringUtils:random:68->[Local Variables] {"count":-1}
+org.apache.commons.lang3.RandomStringUtils:random:142->[Local Variables] {"numbers":false,"letters":false}
+org.apache.commons.lang3.RandomStringUtils:random:162->[Local Variables] {"start":0,"end":0}
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarNum":false,"TransVarRandomNumber":{"seed":138522761646401,"nextNextGaussian":0.0,"haveNextNextGaussian":false},"TransVarLetter":false,"TransVarCount":0,"TransVarCount2":0,"TransVarCount1":-1}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarCount1 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarCount1 < 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.toString
+org.apache.commons.lang3.RandomStringUtils:random:142->[Local Variables] {"numbers":true,"letters":true}
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarNum":true,"TransVarLetter":true}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarCount1 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarCount1 < 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.toString
+org.apache.commons.lang3.RandomStringUtils:random:323->[Local Variables] {"chars":["a"]}
+org.apache.commons.lang3.RandomStringUtils:random:324->[Control Flow] Branch Info: Line: 324, Condition: if (chars == null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarNum":false,"TransVarLetter":false,"TransVarCount2":1,"TransVarCharacterArray":["a"]}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarCount1 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarCount1 < 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.RandomStringUtils:random:237->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:237 -> java.lang.StringBuilder.toString
+org.apache.commons.lang3.RandomStringUtils:random:323->[Local Variables] {"count":1,"chars":[]}
+org.apache.commons.lang3.RandomStringUtils:random:324->[Control Flow] Branch Info: Line: 324, Condition: if (chars == null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarCount2":0,"TransVarCharacterArray":[],"TransVarCount1":1}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarCount1 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarCount1 < 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount2 == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:241->[Control Flow] Branch Info: Line: 241, Condition: if (TransVarLetter == 0), Executed: true
+
+=== Debug Info for Test: org.apache.commons.lang3.RandomStringUtilsTest::testLANG805 ===
+Exception: java.lang.ArrayIndexOutOfBoundsException: 1229541849
+
+org.apache.commons.lang3.RandomStringUtils:random:227->[Local Variables] {"TransVarNum":false,"TransVarRandomNumber":{"seed":1778620069151,"nextNextGaussian":0.0,"haveNextNextGaussian":false},"TransVarLetter":false,"TransVarCount":0,"TransVarCount2":0,"TransVarCharacterArray":["a"],"TransVarCount1":3}
+org.apache.commons.lang3.RandomStringUtils:random:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarCount1 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:233->[Control Flow] Branch Info: Line: 233, Condition: if (TransVarCount1 < 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount2 == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:241->[Control Flow] Branch Info: Line: 241, Condition: if (TransVarLetter == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:241->[Control Flow] Branch Info: Line: 241, Condition: if (TransVarNum == 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarCount2 == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:248->[Local Variables] {"TransVarCount2":2147483647}
+org.apache.commons.lang3.RandomStringUtils:random:249->[Local Variables] {"TransVarBufferChar":["\u0000","\u0000","\u0000"]}
+org.apache.commons.lang3.RandomStringUtils:random:251->[Local Variables] {"TransVarSpaceCount":2147483647}
+org.apache.commons.lang3.RandomStringUtils:random:252->[Control Flow] Branch Info: Line: 252, Condition: if (TransVarCount1 != 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:253->[Local Variables] {"TransVarCount1":2}
+org.apache.commons.lang3.RandomStringUtils:random:254->[Control Flow] Branch Info: Line: 254, Condition: if (TransVarCharacterArray == null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:257->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:257 -> java.util.Random.nextInt

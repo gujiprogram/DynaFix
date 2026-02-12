@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jfree.chart.JFreeChart.removeLegend",
+    "doc": "/**\n     * Removes the first legend in the chart and sends a\n     * {@link ChartChangeEvent} to all registered listeners.\n     *\n     * @see #getLegend()\n     */",
+    "code": "public void removeLegend() {\n        removeSubtitle(getLegend());\n    }"
+  },
+  {
+    "method": "org.jfree.chart.JFreeChart.setBackgroundPaint",
+    "doc": "/**\n     * Sets the paint used to fill the chart background and sends a\n     * {@link ChartChangeEvent} to all registered listeners.\n     *\n     * @param paint  the paint (<code>null</code> permitted).\n     *\n     * @see #getBackgroundPaint()\n     */",
+    "code": "public void setBackgroundPaint(Paint paint) {\n\n        if (this.backgroundPaint != null) {\n            if (!this.backgroundPaint.equals(paint)) {\n                this.backgroundPaint = paint;\n                fireChartChanged();\n            }\n        }\n        else {\n            if (paint != null) {\n                this.backgroundPaint = paint;\n                fireChartChanged();\n            }\n        }\n\n    }"
+  },
+  {
+    "method": "org.jfree.chart.JFreeChart.setTitle",
+    "doc": "/**\n     * Sets the main title for the chart and sends a {@link ChartChangeEvent}\n     * to all registered listeners.  If you do not want a title for the\n     * chart, set it to <code>null</code>.  If you want more than one title on\n     * a chart, use the {@link #addSubtitle(Title)} method.\n     *\n     * @param title  the title (<code>null</code> permitted).\n     *\n     * @see #getTitle()\n     */",
+    "code": "public void setTitle(TextTitle title) {\n        if (this.title != null) {\n            this.title.removeChangeListener(this);\n        }\n        this.title = title;\n        if (title != null) {\n            title.addChangeListener(this);\n        }\n        fireChartChanged();\n    }"
+  },
+  {
+    "method": "org.jfree.chart.title.TextTitle.setPosition",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

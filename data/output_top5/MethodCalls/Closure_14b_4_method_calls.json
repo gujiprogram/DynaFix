@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough",
+    "doc": "/**\n   * Computes the follow() node of a given node and its parent. There is a side\n   * effect when calling this function. If this function computed an edge that\n   * exists a FINALLY, it'll attempt to connect the fromNode to the outer\n   * FINALLY according to the finallyMap.\n   *\n   * @param fromNode The original source node since {@code node} is changed\n   *        during recursion.\n   * @param node The node that follow() should compute.\n   */",
+    "code": "return computeFallThrough(parent.getLastChild());\n          } else { // and have no FINALLY."
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.createEdge",
+    "doc": "/**\n   * Connects the two nodes in the control flow graph.\n   *\n   * @param fromNode Source.\n   * @param toNode Destination.\n   */",
+    "code": "private void createEdge(Node fromNode, ControlFlowGraph.Branch branch,\n      Node toNode) {\n    cfg.createNode(fromNode);\n    cfg.createNode(toNode);\n    cfg.connectIfNotFound(fromNode, branch, toNode);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isBlock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isSyntheticBlock",
+    "doc": "/**\n   * Returns whether this is a synthetic block that should not be considered\n   * a real source block.\n   */",
+    "code": "public boolean isSyntheticBlock() {\n    return getBooleanProp(SYNTHETIC_BLOCK_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isTry",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

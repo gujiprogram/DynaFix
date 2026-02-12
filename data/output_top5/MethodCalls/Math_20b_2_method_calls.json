@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.multiply",
+    "doc": "/**\n     * Returns the result of postmultiplying {@code this} by {@code m}.\n     *\n     * @param m matrix to postmultiply by\n     * @return {@code this * m}\n     * @throws DimensionMismatchException if\n     * {@code columnDimension(this) != rowDimension(m)}\n     */",
+    "code": "RealMatrix multiply(RealMatrix m)\n        throws DimensionMismatchException;"
+  },
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.transpose",
+    "doc": "/**\n     * Returns the transpose of this matrix.\n     *\n     * @return transpose matrix\n     */",
+    "code": "RealMatrix transpose();"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.diag",
+    "doc": "/**\n     * @param m Input matrix.\n     * @return the diagonal n-by-n matrix if m is a column matrix or the column\n     * matrix representing the diagonal if m is a n-by-n matrix.\n     */",
+    "code": "private static RealMatrix diag(final RealMatrix m) {\n        if (m.getColumnDimension() == 1) {\n            double[][] d = new double[m.getRowDimension()][m.getRowDimension()];\n            for (int i = 0; i < m.getRowDimension(); i++) {\n                d[i][i] = m.getEntry(i, 0);\n            }\n            return new Array2DRowRealMatrix(d, false);\n        } else {\n            double[][] d = new double[m.getRowDimension()][1];\n            for (int i = 0; i < m.getColumnDimension(); i++) {\n                d[i][0] = m.getEntry(i, i);\n            }\n            return new Array2DRowRealMatrix(d, false);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.eye",
+    "doc": "/**\n     * @param n Number of rows.\n     * @param m Number of columns.\n     * @return n-by-m matrix of 0.0-values, diagonal has values 1.0.\n     */",
+    "code": "private static RealMatrix eye(int n, int m) {\n        double[][] d = new double[n][m];\n        for (int r = 0; r < n; r++) {\n            if (r < m) {\n                d[r][r] = 1;\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.ones",
+    "doc": "/**\n     * @param n Number of rows.\n     * @param m Number of columns.\n     * @return n-by-m matrix filled with 1.\n     */",
+    "code": "private static RealMatrix ones(int n, int m) {\n        double[][] d = new double[n][m];\n        for (int r = 0; r < n; r++) {\n            Arrays.fill(d[r], 1.0);\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.repmat",
+    "doc": "/**\n     * @param mat Input matrix.\n     * @param n Number of row replicates.\n     * @param m Number of column replicates.\n     * @return a matrix which replicates the input matrix in both directions.\n     */",
+    "code": "private static RealMatrix repmat(final RealMatrix mat, int n, int m) {\n        int rd = mat.getRowDimension();\n        int cd = mat.getColumnDimension();\n        double[][] d = new double[n * rd][m * cd];\n        for (int r = 0; r < n * rd; r++) {\n            for (int c = 0; c < m * cd; c++) {\n                d[r][c] = mat.getEntry(r % rd, c % cd);\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.square",
+    "doc": "/**\n     * @param m Input matrix\n     * @return Matrix representing the element-wise square (^2) of m.\n     */",
+    "code": "private static RealMatrix square(final RealMatrix m) {\n        double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                double e = m.getEntry(r, c);\n                d[r][c] = e * e;\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.times",
+    "doc": "/**\n     * @param m Input matrix 1.\n     * @param n Input matrix 2.\n     * @return the matrix where the elements of m and n are element-wise multiplied.\n     */",
+    "code": "private static RealMatrix times(final RealMatrix m, final RealMatrix n) {\n        double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                d[r][c] = m.getEntry(r, c) * n.getEntry(r, c);\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  }
+]

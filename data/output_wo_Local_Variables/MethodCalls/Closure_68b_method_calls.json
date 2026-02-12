@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser$ErrorReporterParser.addParserWarning",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.createJSTypeExpression",
+    "doc": "/**\n   * Constructs a new {@code JSTypeExpression}.\n   * @param n A node. May be null.\n   */",
+    "code": "private JSTypeExpression createJSTypeExpression(Node n) {\n    return n == null ? null :\n        new JSTypeExpression(n, sourceName);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.eatTokensUntilEOL",
+    "doc": "/**\n   * Eats tokens until {@link JsDocToken#EOL} included, and switches back the\n   * state to {@link State#SEARCHING_ANNOTATION}.\n   */",
+    "code": "private JsDocToken eatTokensUntilEOL() {\n    return eatTokensUntilEOL(next());\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.next",
+    "doc": "/**\n   * Gets the next token of the token stream or the buffered token if a matching\n   * was previously made.\n   */",
+    "code": "private JsDocToken next() {\n    if (unreadToken == NO_UNREAD_TOKEN) {\n      return stream.getJsDocToken();\n    } else {\n      return current();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAndRecordTypeNode",
+    "doc": "/**\n   * Looks for a type expression at the current token and if found,\n   * returns it. Note that this method consumes input.\n   *\n   * @param token The current token.\n   * @return The type expression found or null if none.\n   */",
+    "code": "private Node parseAndRecordTypeNode(JsDocToken token) {\n    return parseAndRecordTypeNode(token, token == JsDocToken.LC);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.parseFunctionType",
+    "doc": "/**\n   * BasicTypeExpression := '*' | 'null' | 'undefined' | TypeName\n   *     | FunctionType | UnionType | RecordType | ArrayType\n   */",
+    "code": "return parseFunctionType(next());\n      } else if (\"null\".equals(string) || \"undefined\".equals(string)) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.reportTypeSyntaxWarning",
+    "doc": "/**\n   * FunctionType := 'function' FunctionSignatureType\n   * FunctionSignatureType :=\n   *    TypeParameters '(' 'this' ':' TypeName, ParametersType ')' ResultType\n   */",
+    "code": "return reportTypeSyntaxWarning(\"msg.jsdoc.missing.gt\");\n        }\n\n        next();\n      }\n    }\n    return typeNameNode;\n  }\n\n  private Node parseFunctionType(JsDocToken token) {\n    if (token != JsDocToken.LP) {\n      return reportTypeSyntaxWarning(\"msg.jsdoc.missing.lp\");\n    }\n\n    Node functionType = newNode(Token.FUNCTION);\n    Node parameters = null;\n    skipEOLs();\n    if (!match(JsDocToken.RP)) {\n      token = next();\n\n      boolean hasParams = true;\n      if (token == JsDocToken.STRING) {\n        String tokenStr = stream.getString();\n        boolean isThis = \"this\".equals(tokenStr);\n        boolean isNew = \"new\".equals(tokenStr);\n        if (isThis || isNew) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.skipEOLs",
+    "doc": "/**\n   * Skips all EOLs and all empty lines in the JSDoc. Call this method if you\n   * want the JSDoc entry to span multiple lines.\n   */",
+    "code": "private void skipEOLs() {\n    while (match(JsDocToken.EOL)) {\n      next();\n      if (match(JsDocToken.STAR)) {\n        next();\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocToken.ordinal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getCharno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getCharno() {\n    return lineno == initLineno? initCharno + charno : charno;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getLineno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getLineno() { return lineno; }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getString",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final String getString() { return string; }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.build",
+    "doc": "/**\n   * Builds a {@link JSDocInfo} object based on the populated information and\n   * returns it. Once this method is called, the builder can be reused to build\n   * another {@link JSDocInfo} object.\n   *\n   * @param sourceName The source file containing the JSDoc.\n   * @return a {@link JSDocInfo} object populated with the values given to this\n   *     builder. If no value was populated, this method simply returns\n   *     {@code null}\n   */",
+    "code": "public JSDocInfo build(String sourceName) {\n    if (populated) {\n      JSDocInfo built = currentInfo;\n      built.setSourceName(sourceName);\n      populateDefaults(built);\n      populated = false;\n      currentInfo = new JSDocInfo(this.parseDocumentation);\n      return built;\n    } else {\n      return null;\n    }\n  }"
+  }
+]

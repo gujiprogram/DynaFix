@@ -1,0 +1,107 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1000",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1100",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1200",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$300",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$400",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$500",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$600",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$700",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$800",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$900",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner.createDefineReplacements",
+    "doc": "/**\n   * Create a map of constant names to constant values from a textual\n   * description of the map.\n   *\n   * @param definitions A list of overriding definitions for defines in\n   *     the form <name>[=<val>], where <val> is a number, boolean, or\n   *     single-quoted string without single quotes.\n   */",
+    "code": "static void createDefineReplacements(List<String> definitions,\n      CompilerOptions options) {\n    for (String override : definitions) {\n      String[] assignment = override.split(\"=\", 2);\n      String defName = assignment[0];\n\n      if (defName.length() > 0) {\n        if (assignment.length == 1) {\n          options.setDefineToBooleanLiteral(defName, true);\n          continue;\n        } else {\n          String defValue = assignment[1];\n\n          if (defValue.equals(\"true\")) {\n            options.setDefineToBooleanLiteral(defName, true);\n            continue;\n          } else if (defValue.equals(\"false\")) {\n            options.setDefineToBooleanLiteral(defName, false);\n            continue;\n          } else if (defValue.length() > 1\n              && ((defValue.charAt(0) == '\\'' &&\n                  defValue.charAt(defValue.length() - 1) == '\\'')\n                  || (defValue.charAt(0) == '\\\"' &&\n                      defValue.charAt(defValue.length() - 1) == '\\\"'))) {\n            String maybeStringVal =\n                defValue.substring(1, defValue.length() - 1);\n            if (maybeStringVal.indexOf(defValue.charAt(0)) == -1) {\n              options.setDefineToStringLiteral(defName, maybeStringVal);\n              continue;\n            }\n          } else {\n            try {\n              options.setDefineToDoubleLiteral(defName,\n                  Double.parseDouble(defValue));\n              continue;\n            } catch (NumberFormatException e) {\n            }\n          }\n        }\n      }\n\n      throw new RuntimeException(\n          \"--define flag syntax invalid: \" + override);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner.getInputCharset",
+    "doc": "/**\n   * Query the flag for the input charset, and return a Charset object\n   * representing the selection.\n   *\n   * @return Charset to use when reading inputs\n   * @throws FlagUsageException if flag is not a valid Charset name.\n   */",
+    "code": "private Charset getInputCharset() throws FlagUsageException {\n    if (!config.charset.isEmpty()) {\n      if (!Charset.isSupported(config.charset)) {\n        throw new FlagUsageException(config.charset +\n            \" is not a valid charset name.\");\n      }\n      return Charset.forName(config.charset);\n    }\n    return Charsets.UTF_8;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.setLineBreak",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.setOutputCharset",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.setPrettyPrint",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.setSourceMap",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodePrinter$Builder.setSourceMapDetailLevel",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.initCompilerOptionsIfTesting",
+    "doc": "/**\n   * Parses the externs and main inputs.\n   *\n   * @return A synthetic root node whose two children are the externs root\n   *     and the main root\n   */",
+    "code": "void initCompilerOptionsIfTesting() {\n    if (options == null) {\n      initOptions(new CompilerOptions());\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.setCodingConvention",
+    "doc": "/**\n   * Enable runtime type checking, which adds JS type assertions for debugging.\n   *\n   * @param logFunction A JS function to be used for logging runtime type\n   *     assertion failures.\n   */",
+    "code": "public void setCodingConvention(CodingConvention codingConvention) {\n    this.codingConvention = codingConvention;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.setSummaryDetailLevel",
+    "doc": "/**\n   * Controls how detailed the compilation summary is. Values:\n   *  0 (never print summary), 1 (print summary only if there are\n   * errors or warnings), 2 (print summary if type checking is on,\n   * see --check_types), 3 (always print summary). The default level\n   * is 1\n   */",
+    "code": "public void setSummaryDetailLevel(int summaryDetailLevel) {\n    this.summaryDetailLevel = summaryDetailLevel;\n  }"
+  }
+]

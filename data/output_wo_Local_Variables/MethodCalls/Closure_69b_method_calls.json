@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getInput",
+    "doc": "/**\n   * Looks up an input (possibly an externs input) by name. May return null.\n   */",
+    "code": "public abstract CompilerInput getInput(String sourceName);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.isExtern",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitParameterList",
+    "doc": "/**\n   * Visits the parameters of a CALL or a NEW node.\n   */",
+    "code": "private void visitParameterList(NodeTraversal t, Node call,\n      FunctionType functionType) {\n    Iterator<Node> arguments = call.children().iterator();\n    arguments.next(); // skip the function name\n\n    Iterator<Node> parameters = functionType.getParameters().iterator();\n    int ordinal = 0;\n    Node parameter = null;\n    Node argument = null;\n    while (arguments.hasNext() &&\n           (parameters.hasNext() ||\n            parameter != null && parameter.isVarArgs())) {\n      if (parameters.hasNext()) {\n        parameter = parameters.next();\n      }\n      argument = arguments.next();\n      ordinal++;\n\n      validator.expectArgumentMatchesParameter(t, argument,\n          getJSType(argument), getJSType(parameter), call, ordinal);\n    }\n\n    int numArgs = call.getChildCount() - 1;\n    int minArgs = functionType.getMinArguments();\n    int maxArgs = functionType.getMaxArguments();\n    if (minArgs > numArgs || maxArgs < numArgs) {\n      report(t, call, WRONG_ARGUMENT_COUNT,\n              validator.getReadableJSTypeName(call.getFirstChild(), false),\n              String.valueOf(numArgs), String.valueOf(minArgs),\n              maxArgs != Integer.MAX_VALUE ?\n              \" and no more than \" + maxArgs + \" argument(s)\" : \"\");\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.getSourceName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getReturnType",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public JSType getReturnType() {\n    return call.returnType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  public ObjectType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.canBeCalled",
+    "doc": "/**\n   * This predicate is used to test whether a given type can be used as the\n   * 'function' in a function call.\n   *\n   * @return {@code true} if this type might be callable.\n   */",
+    "code": "public boolean canBeCalled() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined",
+    "doc": "/**\n   * If this is a union type, returns a union type that does not include\n   * the null or undefined type.\n   */",
+    "code": "public JSType restrictByNotNullOrUndefined() {\n    return this;\n  }"
+  }
+]

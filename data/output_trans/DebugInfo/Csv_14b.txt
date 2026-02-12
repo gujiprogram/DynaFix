@@ -1,0 +1,320 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeNull1 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\]> but was:<["\"]>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\"\\","lock":"\"\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\"\\\"","lock":"\"\\\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\","TransVarStart":0,"TransVarCount":1,"TransVarCharSequence":"\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\""}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\"","lock":"\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeNull4 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\\]> but was:<["\\"]>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\"\\\\","lock":"\"\\\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\"\\\\\"","lock":"\"\\\\\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\\\","TransVarStart":0,"TransVarCount":2,"TransVarCharSequence":"\\\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\""}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\"","lock":"\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeNull5 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\\]> but was:<["\\"]>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\"\\\\","lock":"\"\\\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\"\\\\\"","lock":"\"\\\\\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\\\","TransVarStart":0,"TransVarCount":2,"TransVarCharSequence":"\\\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\""}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\"","lock":"\""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash1 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\]> but was:<['\']>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\","lock":"\u0027\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\\u0027","lock":"\u0027\\\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\","TransVarStart":0,"TransVarCount":1,"TransVarCharSequence":"\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\u0027"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\u0027","lock":"\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash4 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\\]> but was:<['\\']>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\\\","lock":"\u0027\\\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\\\\u0027","lock":"\u0027\\\\\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\\\","TransVarStart":0,"TransVarCount":2,"TransVarCharSequence":"\\\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\u0027"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\u0027","lock":"\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash5 ===
+Exception: junit.framework.AssertionFailedError: expected:<[\\]> but was:<['\\']>
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Local Variables] {"TransVarCh":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1102->[Control Flow] Branch Info: Line: 1102, Condition: if (TransVarQuotationChar == TransVarQuotationChar), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1106->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Control Flow] Loop Info: Line: 1098, Description: while at line 1098
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1110 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1110->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\\\","lock":"\u0027\\\\"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1111 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1111->[Local Variables] {"TransVarOutput":{"buf":"\u0027\\\\\u0027","lock":"\u0027\\\\\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1005->[Local Variables] {"TransVarRecord":true,"TransVarObject1":"\\\\","TransVarStart":0,"TransVarCount":2,"TransVarCharSequence":"\\\\","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1006->[Local Variables] {"TransVarQuot":false}
+org.apache.commons.csv.CSVFormat:printAndQuote:1007->[Local Variables] {"TransVarOffset":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1008->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.csv.CSVFormat:printAndQuote:1010->[Local Variables] {"TransVarLen1":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1011 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVFormat:printAndQuote:1011->[Local Variables] {"TransVarDelimiter":","}
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> org.apache.commons.csv.CSVFormat.getQuoteCharacter
+org.apache.commons.csv.CSVFormat:printAndQuote:1012->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1012 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:printAndQuote:1013->[Local Variables] {"TransVarQuotationChar":"\u0027"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1014->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1014 -> org.apache.commons.csv.CSVFormat.getQuoteMode
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1015->[Control Flow] Branch Info: Line: 1015, Condition: if (TransVarQuoteMode == null), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1020->[Local Variables] {"TransVarQuoteMode":"MINIMAL"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1021->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1021 -> org.apache.commons.csv.QuoteMode.ordinal
+org.apache.commons.csv.CSVFormat:printAndQuote:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (TransVarCount <= 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1045->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1045 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1047->[Local Variables] {"TransVarCurrentChar":"\\"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarRecord != 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh > TransVarCh), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (TransVarCh >= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1041->[Control Flow] Branch Info: Line: 1041, Condition: if (TransVarRecord != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1074->[Control Flow] Branch Info: Line: 1074, Condition: if (TransVarCh <= TransVarCh), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1080->[Local Variables] {"TransVarQuot":true}
+org.apache.commons.csv.CSVFormat:printAndQuote:1081->[Control Flow] Branch Info: Line: 1081, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1091->[Control Flow] Branch Info: Line: 1091, Condition: if (TransVarQuot == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1098->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1098 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1099->[Local Variables] {"TransVarOutput":{"buf":"\u0027","lock":"\u0027"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1100->[Control Flow] Branch Info: Line: 1100, Condition: if (TransVarLen1 < TransVarLen1), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1101->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1101 -> java.lang.CharSequence.charAt

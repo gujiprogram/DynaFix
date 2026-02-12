@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI252Test::testExactOptionNameMatch ===
+
+org.apache.commons.cli.Options:getMatchingOptions:234->[Local Variables] {"opt":"--prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:236->[Local Variables] {"opt":"prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:240->[Local Variables] {"matchingOpts":[]}
+org.apache.commons.cli.Options:getMatchingOptions:241->[Control Flow] Branch Info: Line: 241, Condition: if (var3 != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:242->[Local Variables] {"longOpt":"prefix"}
+org.apache.commons.cli.Options:getMatchingOptions:243->[Control Flow] Branch Info: Line: 243, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:243->[Control Flow] Branch Info: Line: 243, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Options:getMatchingOptions:246->[Local Variables] {"matchingOpts":["prefix"]}
+org.apache.commons.cli.Options:getMatchingOptions:241->[Control Flow] Loop Info: Line: 241, Description: while at line 241
+org.apache.commons.cli.Options:getMatchingOptions:241->[Control Flow] Branch Info: Line: 241, Condition: if (var3 != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:242->[Local Variables] {"longOpt":"prefixplusplus"}
+org.apache.commons.cli.Options:getMatchingOptions:243->[Control Flow] Branch Info: Line: 243, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Options:getMatchingOptions:243->[Control Flow] Branch Info: Line: 243, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Options:getMatchingOptions:246->[Local Variables] {"matchingOpts":["prefix","prefixplusplus"]}
+org.apache.commons.cli.Options:getMatchingOptions:241->[Control Flow] Loop Info: Line: 241, Description: while at line 241
+org.apache.commons.cli.Options:getMatchingOptions:241->[Control Flow] Branch Info: Line: 241, Condition: if (var3 != 0), Executed: false

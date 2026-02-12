@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.nextNode",
+    "doc": "/**\n     * Returns true if there is another object in the current set.\n     * Switches the current position and node to the next object.\n     */",
+    "code": "public abstract boolean nextNode();"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.nextSet",
+    "doc": "/**\n     * Returns true if there is another sets of objects to interate over.\n     * Resets the current position and node.\n     */",
+    "code": "public boolean nextSet() {\n        reset(); // Restart iteration within the set\n\n        if (!startedSetIteration) {\n            startedSetIteration = true;\n            while (parentContext.nextSet()) {\n                if (parentContext.nextNode()) {\n                    return true;\n                }\n            }\n            return false;\n        }\n\n        if (parentContext.nextNode()) {\n            return true;\n        }\n\n        while (parentContext.nextSet()) {\n            if (parentContext.nextNode()) {\n                return true;\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.axes.NodeSetContext.setPosition",
+    "doc": "/**\n * A simple context that is based on a NodeSet.\n *\n * @author Dmitri Plotnikov\n * @version $Revision$ $Date$\n */",
+    "code": "public boolean setPosition(int position) {\n        super.setPosition(position);\n        return position >= 1 && position <= nodeSet.getPointers().size();\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.axes.UnionContext.getNodeSet",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

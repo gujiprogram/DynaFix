@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.insert",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "Element insert(Token.StartTag startTag) {\n        if (startTag.isSelfClosing()) {\n            Element el = insertEmpty(startTag);\n            stack.add(el);\n            tokeniser.transition(TokeniserState.Data); // handles <script />, otherwise needs breakout steps from script data\n            tokeniser.emit(emptyEnd.reset().name(el.tagName()));  // ensure we get out of whatever state we are in. emitted for yielded processing\n            return el;\n        }\n\n        Element el = new Element(Tag.valueOf(startTag.name(), settings), baseUri, settings.normalizeAttributes(startTag.attributes));\n        insert(el);\n        return el;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.markInsertionMode",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "void markInsertionMode() {\n        originalState = state;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.transition",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "void transition(HtmlTreeBuilderState state) {\n        this.state = state;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tokeniser.transition",
+    "doc": "/**\n * Readers the input stream into tokens.\n */",
+    "code": "void transition(TokeniserState state) {\n        this.state = state;\n    }"
+  }
+]

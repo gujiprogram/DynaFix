@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkArgument",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isCommutative",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isCommutative(int type) {\n    switch (type) {\n      case Token.MUL:\n      case Token.BITOR:\n      case Token.BITXOR:\n      case Token.BITAND:\n        return true;\n      default:\n        return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.mayHaveSideEffects",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasChildren",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public boolean hasChildren() {\n    return first != null;\n  }"
+  }
+]

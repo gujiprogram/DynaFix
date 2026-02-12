@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testCreateCopy3 ===
+Exception: junit.framework.AssertionFailedError: expected:<101.0> but was:<102.0>
+
+org.jfree.data.time.TimeSeries:add:626->[Control Flow] Branch Info: Line: 626, Condition: if (added != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:637->[Control Flow] Branch Info: Line: 637, Condition: if (notify != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:599->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:599 -> java.util.List.add
+org.jfree.data.time.TimeSeries:add:625->[Local Variables] {"added":true}
+org.jfree.data.time.TimeSeries:add:626->[Control Flow] Branch Info: Line: 626, Condition: if (added != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:627->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:627 -> org.jfree.data.time.TimeSeries.updateBoundsForAddedItem
+org.jfree.data.time.TimeSeries:add:629->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:629 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:629->[Control Flow] Branch Info: Line: 629, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.time.TimeSeries:add:634->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:634 -> org.jfree.data.time.TimeSeries.removeAgedItems
+org.jfree.data.time.TimeSeries:add:637->[Control Flow] Branch Info: Line: 637, Condition: if (notify != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:638->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:638 -> org.jfree.data.time.TimeSeries.fireSeriesChanged
+org.jfree.data.time.TimeSeries:add:626->[Control Flow] Branch Info: Line: 626, Condition: if (added != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:637->[Control Flow] Branch Info: Line: 637, Condition: if (notify != 0), Executed: false
+org.jfree.data.time.TimeSeries:add:563->[Local Variables] {"item":{"period":{"year":2010,"firstMillisecond":1262332800000,"lastMillisecond":1293868799999},"value":101.0,"selected":false}}
+org.jfree.data.time.TimeSeries:add:576->[Control Flow] Branch Info: Line: 576, Condition: if (item == null), Executed: false
+org.jfree.data.time.TimeSeries:add:579->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:579 -> org.jfree.data.time.TimeSeriesDataItem.clone
+org.jfree.data.time.TimeSeries:add:580->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:580 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:580->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:580 -> java.lang.Object.getClass
+org.jfree.data.time.TimeSeries:add:581->[Control Flow] Branch Info: Line: 581, Condition: if (this.timePeriodClass == null), Executed: false
+org.jfree.data.time.TimeSeries:add:584->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:584 -> java.lang.Object.equals
+org.jfree.data.time.TimeSeries:add:584->[Control Flow] Branch Info: Line: 584, Condition: if (java.lang.Object.equals() == 0), Executed: false
+org.jfree.data.time.TimeSeries:add:596->[Local Variables] {"added":false}
+org.jfree.data.time.TimeSeries:add:597->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:597 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:597->[Local Variables] {"count":1}
+org.jfree.data.time.TimeSeries:add:598->[Control Flow] Branch Info: Line: 598, Condition: if (count == 0), Executed: false
+org.jfree.data.time.TimeSeries:add:603->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:603 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:603->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:603 -> org.jfree.data.time.TimeSeries.getTimePeriod
+org.jfree.data.time.TimeSeries:add:603->[Local Variables] {"last":{"year":2009,"firstMillisecond":1230796800000,"lastMillisecond":1262332799999}}
+org.jfree.data.time.TimeSeries:add:604->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:604 -> org.jfree.data.time.TimeSeriesDataItem.getPeriod
+org.jfree.data.time.TimeSeries:add:604->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:604 -> org.jfree.data.time.RegularTimePeriod.compareTo
+org.jfree.data.time.TimeSeries:add:604->[Control Flow] Branch Info: Line: 604, Condition: if (org.jfree.data.time.RegularTimePeriod.compareTo() > 0), Executed: true
+org.jfree.data.time.TimeSeries:add:605->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:605 -> java.util.List.add
+org.jfree.data.time.TimeSeries:add:625->[Local Variables] {"added":true}
+org.jfree.data.time.TimeSeries:add:626->[Control Flow] Branch Info: Line: 626, Condition: if (added != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:627->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:627 -> org.jfree.data.time.TimeSeries.updateBoundsForAddedItem
+org.jfree.data.time.TimeSeries:add:629->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:629 -> org.jfree.data.time.TimeSeries.getItemCount
+org.jfree.data.time.TimeSeries:add:629->[Control Flow] Branch Info: Line: 629, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.time.TimeSeries:add:634->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:634 -> org.jfree.data.time.TimeSeries.removeAgedItems
+org.jfree.data.time.TimeSeries:add:637->[Control Flow] Branch Info: Line: 637, Condition: if (notify != 0), Executed: true
+org.jfree.data.time.TimeSeries:add:638->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.add:638 -> org.jfree.data.time.TimeSeries.fireSeriesChanged

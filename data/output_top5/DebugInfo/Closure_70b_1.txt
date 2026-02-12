@@ -1,0 +1,255 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl ===
+Exception: junit.framework.AssertionFailedError: expected:<2> but was:<1>
+
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:219->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:219 -> com.google.javascript.jscomp.CodingConvention.defineDelegateProxyPrototypeProperties
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{parent\u003dcom.google.javascript.jscomp.Scope@4cfbaf4, root\u003dFUNCTION f 2 [sourcename:  [testcode] ] [jsdoc_info: JSDocInfo] : function (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@1450078a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@3aefae67}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@3aefae67}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{parent\u003dnull, root\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:188->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:188 -> com.google.javascript.jscomp.TypedScopeCreator.createInitialScope
+com.google.javascript.jscomp.TypedScopeCreator:createScope:189->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@4cfbaf4}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:190->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:190 -> com.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:190->[Local Variables] "{globalScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder@6622a690}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:191->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder@6622a690}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:192->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:192 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Local Variables] "{functionNode\u003dFUNCTION f 2 [sourcename:  [testcode] ] [jsdoc_info: JSDocInfo] : function (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:207 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Local Variables] "{type\u003dfunction (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:209->[Local Variables] "{fnType\u003dfunction (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:210->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:210 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypedScopeCreator:createScope:210->[Local Variables] "{fnThisType\u003d?}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:211 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Loop Info: Line: 206, Description: while at line 206
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5bb3131b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5bb3131b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION f 2 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (boolean): (boolean|null|undefined)}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@6a933be2}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5f78de22}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5f78de22}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION ActiveXObject 12 [sourcename: [externs]] [jsdoc_info: JSDocInfo] : function (new:ActiveXObject, string, (string|undefined)): ?}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@5491f68b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@736ac09a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@736ac09a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION u 1 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (): boolean}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@3b0ca5e1}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testScoping12 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Local Variables] "{functionNode\u003dFUNCTION h 1 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (): string}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:207 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Local Variables] "{type\u003dfunction (): string}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:209->[Local Variables] "{fnType\u003dfunction (): string}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:210->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:210 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:211 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Loop Info: Line: 206, Description: while at line 206
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{parent\u003dcom.google.javascript.jscomp.Scope@3b0ca5e1, root\u003dFUNCTION h 1 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (): string}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@74fef3f7}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@2a037324}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@2a037324}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl ===
+Exception: junit.framework.AssertionFailedError: unexpected warning(s) : JSC_DUP_VAR_DECLARATION. variable x redefined with type string, original definition at  [testcode] :2 with type number at  [testcode]  line 2 : 42 expected:<2> but was:<1>
+
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:219->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:219 -> com.google.javascript.jscomp.CodingConvention.defineDelegateProxyPrototypeProperties
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{parent\u003dcom.google.javascript.jscomp.Scope@4cfbaf4, root\u003dFUNCTION f 2 [sourcename:  [testcode] ] [jsdoc_info: JSDocInfo] : function (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@1450078a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@3aefae67}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@3aefae67}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{parent\u003dnull, root\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:188->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:188 -> com.google.javascript.jscomp.TypedScopeCreator.createInitialScope
+com.google.javascript.jscomp.TypedScopeCreator:createScope:189->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@4cfbaf4}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:190->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:190 -> com.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:190->[Local Variables] "{globalScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder@6622a690}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:191->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$GlobalScopeBuilder@6622a690}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:192->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:192 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Local Variables] "{functionNode\u003dFUNCTION f 2 [sourcename:  [testcode] ] [jsdoc_info: JSDocInfo] : function (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:207 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:207->[Local Variables] "{type\u003dfunction (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:createScope:209->[Local Variables] "{fnType\u003dfunction (number): undefined}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:210->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:210 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypedScopeCreator:createScope:210->[Local Variables] "{fnThisType\u003d?}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:211 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:208->[Control Flow] Branch Info: Line: 208, Condition: if (type != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:211->[Control Flow] Branch Info: Line: 211, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Loop Info: Line: 206, Description: while at line 206
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5bb3131b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5bb3131b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION f 2 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (boolean): (boolean|null)}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@6a933be2}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5f78de22}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@5f78de22}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION ActiveXObject 12 [sourcename: [externs]] [jsdoc_info: JSDocInfo] : function (new:ActiveXObject, string, (string|undefined)): ?}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@5491f68b}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Local Variables] "{localScopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@736ac09a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:196->[Local Variables] "{scopeBuilder\u003dcom.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder@736ac09a}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:197->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:197 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build
+com.google.javascript.jscomp.TypedScopeCreator:createScope:200->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:200 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations
+com.google.javascript.jscomp.TypedScopeCreator:createScope:201->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:201 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.List.iterator
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:206 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypedScopeCreator:createScope:206->[Control Flow] Branch Info: Line: 206, Condition: if (localScopeBuilder != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:218->[Control Flow] Branch Info: Line: 218, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:183->[Local Variables] "{root\u003dFUNCTION u 1 [sourcename: [testcode]] [jsdoc_info: JSDocInfo] : function (): boolean}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:186->[Control Flow] Branch Info: Line: 186, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:194 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypedScopeCreator:createScope:194->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.Scope@3b0ca5e1}"
+com.google.javascript.jscomp.TypedScopeCreator:createScope:195->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.createScope:195 -> com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.<init>

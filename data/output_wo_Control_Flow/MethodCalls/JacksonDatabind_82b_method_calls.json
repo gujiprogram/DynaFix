@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.findProperties",
+    "doc": "/**\n     * @return Ordered Map with logical property name as key, and\n     *    matching getter method as value.\n     */",
+    "code": "public abstract List<BeanPropertyDefinition> findProperties();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.isEnabled",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final boolean isEnabled(MapperFeature feature) {\n        return _config.isEnabled(feature);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig.hasDeserializerModifiers",
+    "doc": "/**\n     * Fluent/factory method used to construct a configuration object that\n     * has same configuration as this instance plus specified additional\n     * value instantiator provider object.\n     * Added instantiator provider has the highest priority (that is, it\n     * gets called before any already registered resolver).\n     *\n     * @param instantiators Object that can provide {@link com.fasterxml.jackson.databind.deser.ValueInstantiator}s for\n     *    constructing POJO values during deserialization\n     */",
+    "code": "public boolean hasDeserializerModifiers() { return _modifiers.length > 0; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerBuilder.addProperty",
+    "doc": "/**\n     * Method to add a property setter. Will ensure that there is no\n     * unexpected override; if one is found will throw a\n     * {@link IllegalArgumentException}.\n     */",
+    "code": "public void addProperty(SettableBeanProperty prop)\n    {\n        SettableBeanProperty old =  _properties.put(prop.getName(), prop);\n        if (old != null && old != prop) { // should never occur...\n            throw new IllegalArgumentException(\"Duplicate property '\"+prop.getName()+\"' for \"+_beanDesc.getType());\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty",
+    "doc": "/**\n     * Method that will construct a regular bean property setter using\n     * the given setter method.\n     *\n     * @return Property constructed, if any; or null to indicate that\n     *   there should be no property based on given definitions.\n     */",
+    "code": "protected SettableBeanProperty constructSettableProperty(DeserializationContext ctxt,\n            BeanDescription beanDesc, BeanPropertyDefinition propDef,"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.filterBeanProps",
+    "doc": "/**\n     * Helper method called to filter out explicit ignored properties,\n     * as well as properties that have \"ignorable types\".\n     * Note that this will not remove properties that have no\n     * setters.\n     */",
+    "code": "protected List<BeanPropertyDefinition> filterBeanProps(DeserializationContext ctxt,\n            BeanDescription beanDesc, BeanDeserializerBuilder builder,"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.setViews",
+    "doc": "/**\n     * @since 2.3\n     */",
+    "code": "public void setViews(Class<?>[] views) {\n        if (views == null) {\n            _viewMatcher = null;\n        } else {\n            _viewMatcher = ViewMatcher.construct(views);\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getParameterType",
+    "doc": "/********************************************************\n     */",
+    "code": "public JavaType getParameterType(int index) {\n        Type[] types = _method.getGenericParameterTypes();\n        if (index >= types.length) {\n            return null;\n        }\n        return _typeContext.resolveType(types[index]);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.findViews",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.getSetter",
+    "doc": "/**********************************************************\n     */",
+    "code": "public abstract AnnotatedMethod getSetter();\n    public abstract AnnotatedField getField();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.hasSetter",
+    "doc": "/**********************************************************\n     */",
+    "code": "public abstract boolean hasSetter();\n    public abstract boolean hasField();"
+  }
+]

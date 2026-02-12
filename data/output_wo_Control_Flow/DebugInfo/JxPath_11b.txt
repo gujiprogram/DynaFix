@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.dom.DOMModelTest::testNamespaceMapping ===
+
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:106->[Local Variables] "{name\u003drate:discount, element\u003d[value:amount: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:107->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.getAttribute:107 -> org.apache.commons.jxpath.ri.QName.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:107->[Local Variables] {"testPrefix":"rate"}
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:111->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.getAttribute:111 -> org.apache.commons.jxpath.ri.model.NodePointer.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:132->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.getAttribute:132 -> org.apache.commons.jxpath.ri.QName.getName
+org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator:getAttribute:132->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMAttributeIterator.getAttribute:132 -> org.w3c.dom.Element.getAttributeNode
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.jdom.JDOMModelTest::testNamespaceMapping ===
+
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:40->[Local Variables] "{parent\u003d/vendor[1]/product[1]/rate:amount[1], name\u003drate:discount}"
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:43->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.<init>:43 -> org.apache.commons.jxpath.ri.model.NodePointer.getNode
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:44->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.<init>:44 -> org.apache.commons.jxpath.ri.model.NodePointer.getNode
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:44->[Local Variables] "{element\u003d[Element: \u003cvalue:amount [Namespace: priceNS]/\u003e]}"
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:45->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.<init>:45 -> org.apache.commons.jxpath.ri.QName.getPrefix
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:45->[Local Variables] {"prefix":"rate"}
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:48->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.<init>:48 -> java.lang.String.equals
+org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator:<init>:52->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.jdom.JDOMAttributeIterator.<init>:52 -> org.jdom.Element.getNamespace

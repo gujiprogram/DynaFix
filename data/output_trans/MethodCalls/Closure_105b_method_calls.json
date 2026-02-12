@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.reportCodeChange",
+    "doc": "/**\n   * All passes should call reportCodeChange() when they alter\n   * the JS tree structure. This is verified by CompilerTestCase.\n   * This allows us to optimize to a fixed point.\n   */",
+    "code": "public void reportCodeChange() {\n    for (CodeChangeHandler handler : codeChangeHandlers) {\n      handler.reportChange();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.InlineCostEstimator.getCost",
+    "doc": "/**\n   * Determines the size of the js code.\n   */",
+    "code": "static int getCost(Node root) {\n    return getCost(root, Integer.MAX_VALUE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getCompiler",
+    "doc": "/**\n   * Gets the compiler.\n   */",
+    "code": "public Compiler getCompiler() {\n    return (Compiler) compiler;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.detachChildren",
+    "doc": "/**\n     * Removes all children from this node and isolates the children from each\n     * other.\n     */",
+    "code": "public void detachChildren() {\n      for (Node child = first; child != null; ) {\n        Node nextChild = child.getNext();\n        child.parent = null;\n        child.next = null;\n        child = nextChild;\n      }\n      first = null;\n      last = null;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getNext() {\n        return next;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newString",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public static Node newString(String str) {\n        return new StringNode(Token.STRING, str);\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n     * Detaches child from Node and replaces it with newChild.\n     */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n        Preconditions.checkArgument(newChild.next == null,\n            \"The new child node has siblings.\");\n        Preconditions.checkArgument(newChild.parent == null,\n            \"The new child node already has a parent.\");\n\n        newChild.copyInformationFrom(child);\n\n        newChild.next = child.next;\n        newChild.parent = this;\n        if (child == first) {\n            first = newChild;\n        } else {\n            Node prev = getChildBefore(child);\n            prev.next = newChild;\n        }\n        if (child == last)\n            last = newChild;\n        child.next = null;\n        child.parent = null;\n    }"
+  }
+]

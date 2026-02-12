@@ -1,0 +1,95 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1544->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@693e4d19, n\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1545 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Local Variables] "{child\u003dNAME f 1 [sourcename: [testcode]] : function (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{childType\u003dfunction (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Control Flow] Branch Info: Line: 1548, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (childType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1558->[Local Variables] "{functionType\u003dfunction (this:F): ?}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1559->[Local Variables] {"isExtern":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1560 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Local Variables] "{functionJSDocInfo\u003dJSDocInfo}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1562 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Local Variables] {"sourceName":"[testcode]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1563 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Local Variables] "{functionSource\u003dcom.google.javascript.jscomp.CompilerInput@6f099cef}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1564->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1564 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1570 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Control Flow] Branch Info: Line: 1571, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Control Flow] Branch Info: Line: 1573, Condition: if (isExtern == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1581->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1581 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1544->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@6b580b88, n\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1545 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Local Variables] "{child\u003dNAME f 1 [sourcename: [testcode]] : function (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{childType\u003dfunction (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Control Flow] Branch Info: Line: 1548, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (childType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1558->[Local Variables] "{functionType\u003dfunction (this:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1559->[Local Variables] {"isExtern":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1560 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Local Variables] {"functionJSDocInfo":{"info":{"parameters":{"var_args":{"root":{"type":302,"propListHead":{"type":16,"intValue":0,"objectValue":"[externs]"},"sourcePosition":8203},"sourceName":"[externs]"}}},"sourceName":"[externs]","visibility":"INHERITED","bitset":2,"includeDocumentation":false}}
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1562 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Local Variables] {"sourceName":"[externs]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1563 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Local Variables] "{functionSource\u003dcom.google.javascript.jscomp.CompilerInput@52a36910}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1564->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1564 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Local Variables] {"isExtern":true}
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1570 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Control Flow] Branch Info: Line: 1571, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Control Flow] Branch Info: Line: 1573, Condition: if (isExtern == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1581->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1581 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitCall:1544->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@488b50ec, n\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1545 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitCall:1545->[Local Variables] "{child\u003dHOOK 1 [sourcename: [testcode]] [parenthesized: true] : function (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitCall:1546->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1546 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitCall:1547->[Local Variables] "{childType\u003dfunction (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1548 -> com.google.javascript.rhino.jstype.JSType.canBeCalled
+com.google.javascript.jscomp.TypeCheck:visitCall:1548->[Control Flow] Branch Info: Line: 1548, Condition: if (com.google.javascript.rhino.jstype.JSType.canBeCalled() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (childType != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1558->[Local Variables] "{functionType\u003dfunction (this:F, ?, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1559->[Local Variables] {"isExtern":false}
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1560 -> com.google.javascript.rhino.jstype.FunctionType.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitCall:1560->[Local Variables] {"functionJSDocInfo":{"info":{"parameters":{"var_args":{"root":{"type":302,"propListHead":{"type":16,"intValue":0,"objectValue":"[externs]"},"sourcePosition":8203},"sourceName":"[externs]"}}},"sourceName":"[externs]","visibility":"INHERITED","bitset":2,"includeDocumentation":false}}
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1562 -> com.google.javascript.rhino.JSDocInfo.getSourceName
+com.google.javascript.jscomp.TypeCheck:visitCall:1562->[Local Variables] {"sourceName":"[externs]"}
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1563 -> com.google.javascript.jscomp.AbstractCompiler.getInput
+com.google.javascript.jscomp.TypeCheck:visitCall:1563->[Local Variables] "{functionSource\u003dcom.google.javascript.jscomp.CompilerInput@1280851e}"
+com.google.javascript.jscomp.TypeCheck:visitCall:1564->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1564 -> com.google.javascript.jscomp.CompilerInput.isExtern
+com.google.javascript.jscomp.TypeCheck:visitCall:1561->[Control Flow] Branch Info: Line: 1561, Condition: if (functionJSDocInfo != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1569->[Local Variables] {"isExtern":true}
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1570 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitCall:1570->[Control Flow] Branch Info: Line: 1570, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1571->[Control Flow] Branch Info: Line: 1571, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1573->[Control Flow] Branch Info: Line: 1573, Condition: if (isExtern == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitCall:1581->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1581 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.rhino.jstype.FunctionType.getReturnType
+com.google.javascript.jscomp.TypeCheck:visitCall:1582->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitCall:1582 -> com.google.javascript.jscomp.TypeCheck.ensureTyped

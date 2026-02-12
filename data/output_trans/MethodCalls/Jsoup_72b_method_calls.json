@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jsoup.parser.CharacterReader.rangeEquals",
+    "doc": "/**\n     * Check if the value of the provided range equals the string.\n     */",
+    "code": "static boolean rangeEquals(final char[] charBuf, final int start, int count, final String cached) {\n        if (count == cached.length()) {\n            int i = start;\n            int j = 0;\n            while (count-- != 0) {\n                if (charBuf[i++] != cached.charAt(j++))\n                    return false;\n            }\n            return true;\n        }\n        return false;\n    }"
+  }
+]

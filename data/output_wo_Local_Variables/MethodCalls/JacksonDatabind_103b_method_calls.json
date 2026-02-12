@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findTypeResolver",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.getClassInfo",
+    "doc": "/**\n     * @deprecated Since 2.9: use {@link #findAnySetterAccessor} instead\n     */",
+    "code": "return getClassInfo().isNonStaticInnerClass();\n    }\n\n    public abstract AnnotatedClass getClassInfo();\n\n    public abstract ObjectIdInfo getObjectIdInfo();\n\n    public abstract boolean hasKnownClassAnnotations();\n\n    @Deprecated\n    public abstract TypeBindings bindingsForBeanType();\n\n    @Deprecated\n    public abstract JavaType resolveType(java.lang.reflect.Type jdkType);\n\n    public abstract Annotations getClassAnnotations();\n\n\n    public abstract List<BeanPropertyDefinition> findProperties();\n\n    public abstract Set<String> getIgnoredPropertyNames();\n\n    public abstract List<BeanPropertyDefinition> findBackReferences();\n\n    @Deprecated\n    public abstract Map<String,AnnotatedMember> findBackReferenceProperties();\n\n\n    public abstract List<AnnotatedConstructor> getConstructors();\n\n    public abstract List<AnnotatedMethod> getFactoryMethods();\n\n    public abstract AnnotatedConstructor findDefaultConstructor();\n\n    public abstract Constructor<?> findSingleArgConstructor(Class<?>... argTypes);\n\n    public abstract Method findFactoryMethod(Class<?>... expArgTypes);\n\n\n    public abstract AnnotatedMember findJsonValueAccessor();\n\n    public abstract AnnotatedMember findAnyGetter();\n\n    public abstract AnnotatedMember findAnySetterAccessor();\n\n    public abstract AnnotatedMethod findMethod(String name, Class<?>[] paramTypes);\n\n    @Deprecated // since 2.9\n    public abstract AnnotatedMethod findJsonValueMethod();\n\n    @Deprecated\n    public AnnotatedMethod findAnySetter() {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationConfig.getAnnotationIntrospector",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationConfig.getDefaultTyper",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationConfig.introspectClassAnnotations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.handleWeirdKey",
+    "doc": "/**\n     * Method that deserializers should call if they encounter a String value\n     * that cannot be converted to expected key of a {@link java.util.Map}\n     * valued property.\n     * Default implementation will try to call {@link DeserializationProblemHandler#handleWeirdNumberValue}\n     * on configured handlers, if any, to allow for recovery; if recovery does not\n     * succeed, will throw {@link InvalidFormatException} with given message.\n     *\n     * @param keyClass Expected type for key\n     * @param keyValue String value from which to deserialize key\n     * @param msg Error message template caller wants to use if exception is to be thrown\n     * @param msgArgs Optional arguments to use for message, if any\n     *\n     * @return Key value to use\n     *\n     * @throws IOException To indicate unrecoverable problem, usually based on <code>msg</code>\n     *\n     * @since 2.8\n     */",
+    "code": "public Object handleWeirdKey(Class<?> keyClass, String keyValue,\n            String msg, Object... msgArgs)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JsonDeserializer.isCachable",
+    "doc": "/**\n     * Method called to see if deserializer instance is cachable and\n     * usable for other properties of same type (type for which instance\n     * was created).\n     *<p>\n     * Note that cached instances are still resolved on per-property basis,\n     * if instance implements {@link com.fasterxml.jackson.databind.deser.ResolvableDeserializer}:\n     * cached instance is just as the base. This means that in most cases it is safe to\n     * cache instances; however, it only makes sense to cache instances\n     * if instantiation is expensive, or if instances are heavy-weight.\n     *<p>\n     * Default implementation returns false, to indicate that no caching\n     * is done.\n     */",
+    "code": "public boolean isCachable() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer",
+    "doc": "/**\n     * Method that does the heavy lifting of checking for per-type annotations,\n     * find out full type, and figure out which actual factory method\n     * to call.\n     */",
+    "code": "protected JsonDeserializer<Object> _createDeserializer(DeserializationContext ctxt,\n            DeserializerFactory factory, JavaType type)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.DeserializerCache._hasCustomHandlers",
+    "doc": "/**\n     * Helper method used to prevent both caching and cache lookups for structured\n     * types that have custom value handlers\n     *\n     * @since 2.8.11\n     */",
+    "code": "private boolean _hasCustomHandlers(JavaType t) {\n        if (t.isContainerType()) {\n            JavaType ct = t.getContentType();\n            if (ct != null) {\n                if ((ct.getValueHandler() != null) || (ct.getTypeHandler() != null)) {\n                    return true;\n                }\n            }\n            if (t.isMapLikeType()) {\n                JavaType kt = t.getKeyType();\n                if (kt.getValueHandler() != null) {\n                    return true;\n                }\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer._parse",
+    "doc": "/**\n     * Some types that are deserialized using a helper deserializer.\n     */",
+    "code": "protected Object _parse(String key, DeserializationContext ctxt) throws Exception\n    {\n        switch (_kind) {\n        case TYPE_BOOLEAN:\n            if (\"true\".equals(key)) {\n                return Boolean.TRUE;\n            }\n            if (\"false\".equals(key)) {\n                return Boolean.FALSE;\n            }\n            return ctxt.handleWeirdKey(_keyClass, key, \"value not 'true' or 'false'\");\n        case TYPE_BYTE:\n            {\n                int value = _parseInt(key);\n                if (value < Byte.MIN_VALUE || value > 255) {\n                    return ctxt.handleWeirdKey(_keyClass, key, \"overflow, value cannot be represented as 8-bit value\");\n                }\n                return Byte.valueOf((byte) value);\n            }\n        case TYPE_SHORT:\n            {\n                int value = _parseInt(key);\n                if (value < Short.MIN_VALUE || value > Short.MAX_VALUE) {\n                    return ctxt.handleWeirdKey(_keyClass, key, \"overflow, value cannot be represented as 16-bit value\");\n                }\n                return Short.valueOf((short) value);\n            }\n        case TYPE_CHAR:\n            if (key.length() == 1) {\n                return Character.valueOf(key.charAt(0));\n            }\n            return ctxt.handleWeirdKey(_keyClass, key, \"can only convert 1-character Strings\");\n        case TYPE_INT:\n            return _parseInt(key);\n\n        case TYPE_LONG:\n            return _parseLong(key);\n\n        case TYPE_FLOAT:\n            return Float.valueOf((float) _parseDouble(key));\n        case TYPE_DOUBLE:\n            return _parseDouble(key);\n        case TYPE_LOCALE:\n            try {\n                return _deser._deserialize(key, ctxt);\n            } catch (IllegalArgumentException e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        case TYPE_CURRENCY:\n            try {\n                return _deser._deserialize(key, ctxt);\n            } catch (IllegalArgumentException e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        case TYPE_DATE:\n            return ctxt.parseDate(key);\n        case TYPE_CALENDAR:\n            return ctxt.constructCalendar(ctxt.parseDate(key));\n        case TYPE_UUID:\n            try {\n                return UUID.fromString(key);\n            } catch (Exception e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        case TYPE_URI:\n            try {\n                return URI.create(key);\n            } catch (Exception e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        case TYPE_URL:\n            try {\n                return new URL(key);\n            } catch (MalformedURLException e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        case TYPE_CLASS:\n            try {\n                return ctxt.findClass(key);\n            } catch (Exception e) {\n                return ctxt.handleWeirdKey(_keyClass, key, \"unable to parse key as Class\");\n            }\n        case TYPE_BYTE_ARRAY:\n            try {\n                return ctxt.getConfig().getBase64Variant().decode(key);\n            } catch (IllegalArgumentException e) {\n                return _weirdKey(ctxt, key, e);\n            }\n        default:\n            throw new IllegalStateException(\"Internal error: unknown key type \"+_keyClass);\n        }\n    }"
+  }
+]

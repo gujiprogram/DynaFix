@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments16 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1421->[Local Variables] {"minArgs":0}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1422->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1422 -> com.google.javascript.rhino.jstype.FunctionType.getMaxArguments
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1422->[Local Variables] {"maxArgs":2147483647}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1423->[Control Flow] Branch Info: Line: 1423, Condition: if (numArgs <= numArgs), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1423->[Control Flow] Branch Info: Line: 1423, Condition: if (numArgs < numArgs), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1400->[Local Variables] "{call\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined, t\u003dcom.google.javascript.jscomp.NodeTraversal@4204541c, functionType\u003dfunction (...[number]): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1401->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1401 -> com.google.javascript.rhino.Node.children
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1401->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1401 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1401->[Local Variables] "{arguments\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@302fec27}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1402->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1402 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1404 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1404 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Local Variables] "{parameters\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@770d0ea6}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1405->[Local Variables] {"ordinal":0}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1408 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Control Flow] Branch Info: Line: 1408, Condition: if (arguments != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1409->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1409 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1409->[Control Flow] Branch Info: Line: 1409, Condition: if (parameters != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1412->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1412 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1412->[Local Variables] "{parameter\u003dNAME  [jsdoc_info: 1] : (number|undefined)}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1413->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1413 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1413->[Local Variables] "{argument\u003dNUMBER 1.0 1 [sourcename: [testcode]] : number}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1415->[Local Variables] {"ordinal":1}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1417->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1417 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1417->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1417 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1416->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1416 -> com.google.javascript.jscomp.TypeValidator.expectArgumentMatchesParameter
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1407->[Control Flow] Loop Info: Line: 1407, Description: while at line 1407
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1408 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Control Flow] Branch Info: Line: 1408, Condition: if (arguments != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1409->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1409 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Control Flow] Branch Info: Line: 1408, Condition: if (arguments != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1409->[Control Flow] Branch Info: Line: 1409, Condition: if (parameters != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1420->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1420 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1420->[Local Variables] {"numArgs":2}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1421->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1421 -> com.google.javascript.rhino.jstype.FunctionType.getMinArguments

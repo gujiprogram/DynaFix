@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test::testExample ===
+Exception: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdWithEnum1328Test$AnimalAndType`, problem: argument type mismatch
+
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:265->[Control Flow] Loop Info: Line: 265, Description: while at line 265
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarLenOfProperties < TransVarLenOfProperties), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:301->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:301 -> com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.build
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:262->[Local Variables] "{TransVarCreator1\u003dcom.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator@3ce3db41, TransVarParser\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@64df9a61, TransVarBuffer1\u003dcom.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer@77602954, TransVarCtx\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@e260766}"
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:263->[Local Variables] {"TransVarLenOfProperties":1}
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:264->[Local Variables] {"TransVarObjects":[null]}
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:265->[Local Variables] {"TransVarIndex":0}
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarLenOfProperties < TransVarLenOfProperties), Executed: true
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:270->[Local Variables] {"TransVarType":"Dog"}
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:271->[Local Variables] "{TransVarExtensionProperty\u003dcom.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty@6865c751}"
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:272->[Control Flow] Branch Info: Line: 272, Condition: if (TransVarBean1 == null), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:285->[Control Flow] Branch Info: Line: 285, Condition: if (TransVarIndex == null), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:290->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:290 -> com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler._deserialize
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:290->[Local Variables] {"TransVarObjects":[{}]}
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:291->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:291 -> com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty.getProperty
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:291->[Local Variables] "{TransVarPropName\u003d[creator property, name \u0027animal\u0027; inject id \u0027null\u0027]}"
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:292->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:292 -> com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:292->[Control Flow] Branch Info: Line: 292, Condition: if (com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex() >= 0), Executed: true
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:293->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:293 -> com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:294->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:294 -> com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty.getTypeProperty
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:295->[Control Flow] Branch Info: Line: 295, Condition: if (TransVarExtensionProperty1 != null), Executed: true
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:295->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:295 -> com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:295->[Control Flow] Branch Info: Line: 295, Condition: if (com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex() >= 0), Executed: true
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:296->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.complete:296 -> com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:292->[Control Flow] Branch Info: Line: 292, Condition: if (com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex() >= 0), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:295->[Control Flow] Branch Info: Line: 295, Condition: if (TransVarExtensionProperty1 != null), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:295->[Control Flow] Branch Info: Line: 295, Condition: if (com.fasterxml.jackson.databind.deser.SettableBeanProperty.getCreatorIndex() >= 0), Executed: false
+com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler:complete:299->[Local Variables] {"TransVarIndex":1}

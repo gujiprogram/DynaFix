@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.hasErrors",
+    "doc": "/**\n   * Consults the {@link ErrorManager} to see if we've encountered errors\n   * that should halt compilation. <p>\n   *\n   * If {@link CompilerOptions#ideMode} is {@code true}, this function\n   * always returns {@code false} without consulting the error manager. The\n   * error manager will continue to be told about new errors and warnings, but\n   * the compiler will complete compilation of all inputs.<p>\n   */",
+    "code": "public boolean hasErrors() {\n    return hasHaltingErrors();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.hoistExterns",
+    "doc": "/**\n   * Hoists inputs with the @externs annotation into the externs list.\n   */",
+    "code": "private void hoistExterns(Node externsRoot) {\n    boolean staleInputs = false;\n    for (CompilerInput input : inputs) {\n      if (options.dependencyOptions.needsManagement() &&\n          options.closurePass) {\n        if (!input.getProvides().isEmpty() || !input.getRequires().isEmpty()) {\n          continue;\n        }\n      }\n\n      Node n = input.getAstRoot(this);\n\n      if (n == null) {\n        continue;\n      }\n\n      JSDocInfo info = n.getJSDocInfo();\n      if (info != null && info.isExterns()) {\n        externsRoot.addChildToBack(n);\n        input.setIsExtern(true);\n\n        input.getModule().remove(input);\n\n        externs.add(input);\n        staleInputs = true;\n      }\n    }\n\n    if (staleInputs) {\n      repartitionInputs();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.hoistNoCompileFiles",
+    "doc": "/**\n   * Hoists inputs with the @nocompiler annotation out of the inputs.\n   */",
+    "code": "private void hoistNoCompileFiles() {\n    boolean staleInputs = false;\n    for (CompilerInput input : inputs) {\n      Node n = input.getAstRoot(this);\n\n      if (n == null) {\n        continue;\n      }\n\n      JSDocInfo info = n.getJSDocInfo();\n      if (info != null && info.isNoCompile()) {\n        input.getModule().remove(input);\n        staleInputs = true;\n      }\n    }\n\n    if (staleInputs) {\n      repartitionInputs();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.stopTracer",
+    "doc": "/**\n   * Returns a new tracer for the given pass name.\n   */",
+    "code": "void stopTracer(Tracer t, String passName) {\n    long result = t.stop();\n    if (options.tracer.isOn()) {\n      tracker.recordPassStop(passName, result);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.getAstRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.DependencyOptions.needsManagement",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildToBack",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildToBack(Node child) {\n    Preconditions.checkArgument(child.parent == null);\n    Preconditions.checkArgument(child.next == null);\n    child.parent = this;\n    child.next = null;\n    if (last == null) {\n      first = last = child;\n      return;\n    }\n    last.next = child;\n    last = child;\n  }"
+  }
+]

@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.StringUtilsTest::testReplace_StringStringArrayStringArray ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (start == null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start == 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start != null), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (java.lang.String.length() != 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3656->[Control Flow] Branch Info: Line: 3656, Condition: if (textIndex < textIndex), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Control Flow] Loop Info: Line: 3644, Description: while at line 3644
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Control Flow] Branch Info: Line: 3644, Condition: if (searchLength < searchLength), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3665->[Control Flow] Branch Info: Line: 3665, Condition: if (textIndex == textIndex), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3671->[Local Variables] {"start":0}
+org.apache.commons.lang3.StringUtils:replaceEach:3675->[Control Flow] Branch Info: Line: 3675, Condition: if (searchList < searchList), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3675->[Local Variables] {"i":0}
+org.apache.commons.lang3.StringUtils:replaceEach:3676->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3676 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3676->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3676 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3677->[Control Flow] Branch Info: Line: 3677, Condition: if (textLength > 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3675->[Control Flow] Loop Info: Line: 3675, Description: while at line 3675
+org.apache.commons.lang3.StringUtils:replaceEach:3675->[Control Flow] Branch Info: Line: 3675, Condition: if (searchList < searchList), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3675->[Local Variables] {"i":1}
+org.apache.commons.lang3.StringUtils:replaceEach:3676->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3676 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3665->[Control Flow] Branch Info: Line: 3665, Condition: if (textIndex == textIndex), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3501->[Local Variables] {"searchList":["a","b"],"replacementList":["c",null]}
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (text != null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3612 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (java.lang.String.length() != 0), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (searchList != null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (searchList != 0), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (replacementList != null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3612->[Control Flow] Branch Info: Line: 3612, Condition: if (replacementList == 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3619->[Control Flow] Branch Info: Line: 3619, Condition: if (timeToLive < 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3623->[Local Variables] {"searchLength":2}
+org.apache.commons.lang3.StringUtils:replaceEach:3626->[Local Variables] {"replacementLength":2}
+org.apache.commons.lang3.StringUtils:replaceEach:3627->[Control Flow] Branch Info: Line: 3627, Condition: if (replacementLength != replacementLength), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3637->[Local Variables] {"noMoreMatchesForReplIndex":[false,false]}
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Control Flow] Branch Info: Line: 3644, Condition: if (searchLength < searchLength), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start == 0), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start != null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3646 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (java.lang.String.length() != 0), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (start == null), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3650->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3650 -> java.lang.String.indexOf
+org.apache.commons.lang3.StringUtils:replaceEach:3652->[Local Variables] {"tempIndex":0}
+org.apache.commons.lang3.StringUtils:replaceEach:3653->[Control Flow] Branch Info: Line: 3653, Condition: if (tempIndex == tempIndex), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3656->[Control Flow] Branch Info: Line: 3656, Condition: if (textIndex != textIndex), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3657->[Local Variables] {"textIndex":0}
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start == 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start != null), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (java.lang.String.length() != 0), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3656->[Control Flow] Branch Info: Line: 3656, Condition: if (textIndex < textIndex), Executed: false
+org.apache.commons.lang3.StringUtils:replaceEach:3643->[Local Variables] {"replaceIndex":0}
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Control Flow] Loop Info: Line: 3644, Description: while at line 3644
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Control Flow] Branch Info: Line: 3644, Condition: if (searchLength < searchLength), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3644->[Local Variables] {"i":1}
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start == 0), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3645->[Control Flow] Branch Info: Line: 3645, Condition: if (start != null), Executed: true
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Method Call] Call Stack: org.apache.commons.lang3.StringUtils.replaceEach:3646 -> java.lang.String.length
+org.apache.commons.lang3.StringUtils:replaceEach:3646->[Control Flow] Branch Info: Line: 3646, Condition: if (java.lang.String.length() != 0), Executed: true

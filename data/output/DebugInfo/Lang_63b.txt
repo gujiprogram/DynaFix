@@ -1,0 +1,50 @@
+
+=== Debug Info for Test: org.apache.commons.lang.time.DurationFormatUtilsTest::testJiraLang281 ===
+Exception: junit.framework.ComparisonFailure: expected:<[09]> but was:<[-2]>
+
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:347->[Control Flow] Branch Info: Line: 347, Condition: if (tokens == 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:348->[Local Variables] {"minutes":7200}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:347->[Control Flow] Branch Info: Line: 347, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:350->[Local Variables] {"hours":0}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:351->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:351 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:351->[Control Flow] Branch Info: Line: 351, Condition: if (tokens == 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:352->[Local Variables] {"seconds":432000}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:351->[Control Flow] Branch Info: Line: 351, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:354->[Local Variables] {"minutes":0}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:355->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:355 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:355->[Control Flow] Branch Info: Line: 355, Condition: if (tokens == 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:356->[Local Variables] {"milliseconds":432000000}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:355->[Control Flow] Branch Info: Line: 355, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:359->[Local Variables] {"seconds":0}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:360->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:360 -> org.apache.commons.lang.time.DurationFormatUtils.format
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:433->[Local Variables] {"end":{"year":2006,"month":0,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:434->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:434 -> java.util.Calendar.get
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:434->[Local Variables] {"endValue":0}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:435->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:435 -> java.util.Calendar.get
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:435->[Local Variables] {"startValue":11}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:436->[Control Flow] Branch Info: Line: 436, Condition: if (startValue < startValue), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:437->[Local Variables] {"newdiff":11}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:438->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:438 -> java.util.Calendar.add
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:438->[Local Variables] {"end":{"year":2006,"month":11,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:323->[Local Variables] {"months":-2,"end":{"year":2006,"month":11,"dayOfMonth":1,"hourOfDay":0,"minute":0,"second":0}}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:324->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:324 -> org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:432->[Local Variables] {"field":1,"difference":0}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:433->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:433 -> java.util.Calendar.add
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:434->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:434 -> java.util.Calendar.get
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:434->[Local Variables] {"endValue":2006}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:435->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.reduceAndCorrect:435 -> java.util.Calendar.get
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:435->[Local Variables] {"startValue":2005}
+org.apache.commons.lang.time.DurationFormatUtils:reduceAndCorrect:436->[Control Flow] Branch Info: Line: 436, Condition: if (startValue < startValue), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:329->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:329 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:329->[Control Flow] Branch Info: Line: 329, Condition: if (tokens == 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:330->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:330 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:330->[Control Flow] Branch Info: Line: 330, Condition: if (tokens != 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:329->[Control Flow] Branch Info: Line: 329, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:339->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:339 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:339->[Control Flow] Branch Info: Line: 339, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:343->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:343 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:343->[Control Flow] Branch Info: Line: 343, Condition: if (tokens == 0), Executed: true
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:344->[Local Variables] {"hours":120}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:343->[Control Flow] Branch Info: Line: 343, Condition: if (tokens == 0), Executed: false
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:346->[Local Variables] {"days":0}
+org.apache.commons.lang.time.DurationFormatUtils:formatPeriod:347->[Method Call] Call Stack: org.apache.commons.lang.time.DurationFormatUtils.formatPeriod:347 -> org.apache.commons.lang.time.DurationFormatUtils$Token.containsTokenWithValue

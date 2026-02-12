@@ -1,0 +1,84 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.parsing.ParserTest::testSuspiciousBlockCommentWarning3 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:190->[Local Variables] "{node\u003d136, errorReporter\u003dcom.google.javascript.jscomp.testing.TestErrorReporter@47ac613b, sourceString\u003d/* \n *@type {number} */ var x \u003d 3;, sourceFile\u003dinput}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:191->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:191 -> com.google.javascript.jscomp.parsing.IRFactory.<init>
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:193->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:193 -> com.google.javascript.jscomp.parsing.IRFactory.transform
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:194->[Local Variables] "{irNode\u003dSCRIPT 1 [source_file: input] [length: 34]}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:195 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.SortedSet.iterator
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.next
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Local Variables] "{comment\u003d161}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:197 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Control Flow] Branch Info: Line: 197, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:198->[Control Flow] Branch Info: Line: 198, Condition: if (comment == 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:200 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:201->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:201 -> com.google.javascript.jscomp.parsing.IRFactory.handleBlockComment
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Loop Info: Line: 196, Description: while at line 196
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:206->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:206 -> com.google.javascript.jscomp.parsing.IRFactory.setFileOverviewJsDoc
+
+=== Debug Info for Test: com.google.javascript.jscomp.parsing.ParserTest::testSuspiciousBlockCommentWarning4 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:190->[Local Variables] "{node\u003d136, errorReporter\u003dcom.google.javascript.jscomp.testing.TestErrorReporter@47ac613b, sourceString\u003d  /*\n   * @type {number}\n   */\n  var x \u003d 3;, sourceFile\u003dinput}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:191->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:191 -> com.google.javascript.jscomp.parsing.IRFactory.<init>
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:193->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:193 -> com.google.javascript.jscomp.parsing.IRFactory.transform
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:194->[Local Variables] "{irNode\u003dSCRIPT 1 [source_file: input] [length: 43]}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:195 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.SortedSet.iterator
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.next
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Local Variables] "{comment\u003d161}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:197 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Control Flow] Branch Info: Line: 197, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:198->[Control Flow] Branch Info: Line: 198, Condition: if (comment == 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:200 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:201->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:201 -> com.google.javascript.jscomp.parsing.IRFactory.handleBlockComment
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Loop Info: Line: 196, Description: while at line 196
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:206->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:206 -> com.google.javascript.jscomp.parsing.IRFactory.setFileOverviewJsDoc
+
+=== Debug Info for Test: com.google.javascript.jscomp.parsing.ParserTest::testSuspiciousBlockCommentWarning5 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:190->[Local Variables] "{node\u003d136, errorReporter\u003dcom.google.javascript.jscomp.testing.TestErrorReporter@47ac613b, sourceString\u003d  /*\n   * some random text here\n   * @type {number}\n   */\n  var x \u003d 3;, sourceFile\u003dinput}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:191->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:191 -> com.google.javascript.jscomp.parsing.IRFactory.<init>
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:193->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:193 -> com.google.javascript.jscomp.parsing.IRFactory.transform
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:194->[Local Variables] "{irNode\u003dSCRIPT 1 [source_file: input] [length: 70]}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:195 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> com.google.javascript.rhino.head.ast.AstRoot.getComments
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.SortedSet.iterator
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.next
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Local Variables] "{comment\u003d161}"
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:197 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:197->[Control Flow] Branch Info: Line: 197, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:198->[Control Flow] Branch Info: Line: 198, Condition: if (comment == 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:200 -> com.google.javascript.rhino.head.ast.Comment.getCommentType
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:201->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:201 -> com.google.javascript.jscomp.parsing.IRFactory.handleBlockComment
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:200->[Control Flow] Branch Info: Line: 200, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Loop Info: Line: 196, Description: while at line 196
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:196 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:195->[Control Flow] Branch Info: Line: 195, Condition: if (com.google.javascript.rhino.head.ast.AstRoot.getComments() != null), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:196->[Control Flow] Branch Info: Line: 196, Condition: if (var7 != 0), Executed: false
+com.google.javascript.jscomp.parsing.IRFactory:transformTree:206->[Method Call] Call Stack: com.google.javascript.jscomp.parsing.IRFactory.transformTree:206 -> com.google.javascript.jscomp.parsing.IRFactory.setFileOverviewJsDoc

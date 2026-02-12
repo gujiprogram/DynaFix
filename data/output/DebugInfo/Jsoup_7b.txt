@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.jsoup.nodes.DocumentTest::testNormalisesStructure ===
+Exception: junit.framework.AssertionFailedError: expected:<...</script><noscript><[/noscript></head><body><p>two</p><p>three</p></body]></html>> but was:<...</script><noscript><[body><p>two</p><body><p>three</p></body></body></noscript></head]></html>>
+
+org.jsoup.nodes.Document:normalise:99->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:99 -> org.jsoup.nodes.Document.findFirstElementByTagName
+org.jsoup.nodes.Document:normalise:99->[Local Variables] "{htmlEl\u003d\n\u003chtml\u003e\n \u003chead\u003e\n  \u003cscript\u003eone\u003c/script\u003e\n  \u003cnoscript\u003e\n   \u003cbody\u003e\n    \u003cp\u003etwo\u003c/p\u003e\n    \u003cbody\u003e\n     \u003cp\u003ethree\u003c/p\u003e\n    \u003c/body\u003e\n   \u003c/body\u003e\n  \u003c/noscript\u003e\n \u003c/head\u003e\n\u003c/html\u003e}"
+org.jsoup.nodes.Document:normalise:100->[Control Flow] Branch Info: Line: 100, Condition: if (htmlEl == null), Executed: false
+org.jsoup.nodes.Document:normalise:102->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:102 -> org.jsoup.nodes.Document.head
+org.jsoup.nodes.Document:normalise:102->[Control Flow] Branch Info: Line: 102, Condition: if (org.jsoup.nodes.Document.head() == null), Executed: false
+org.jsoup.nodes.Document:normalise:104->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:104 -> org.jsoup.nodes.Document.body
+org.jsoup.nodes.Document:normalise:104->[Control Flow] Branch Info: Line: 104, Condition: if (org.jsoup.nodes.Document.body() == null), Executed: false
+org.jsoup.nodes.Document:normalise:109->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:109 -> org.jsoup.nodes.Document.head
+org.jsoup.nodes.Document:normalise:109->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:109 -> org.jsoup.nodes.Document.normaliseTextNodes
+org.jsoup.nodes.Document:normalise:110->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:110 -> org.jsoup.nodes.Document.normaliseTextNodes
+org.jsoup.nodes.Document:normalise:111->[Method Call] Call Stack: org.jsoup.nodes.Document.normalise:111 -> org.jsoup.nodes.Document.normaliseTextNodes

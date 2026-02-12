@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.parser.TokenQueue.consume",
+    "doc": "/**\n     * Consume one character off queue.\n     * @return first character on queue.\n     */",
+    "code": "public char consume() {\n        return queue.charAt(pos++);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.isEmpty",
+    "doc": "/**\n     * Is the queue empty?\n     * @return true if no data left in queue.\n     */",
+    "code": "public boolean isEmpty() {\n        return remainingLength() == 0;\n    }"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.mockito.internal.exceptions.util.ScenarioPrinter.print",
+    "doc": "[No documentation]",
+    "code": "public String print(List<VerificationAwareInvocation> invocations) {\n        if (invocations.size() == 1) {\n            return \"Actually, above is the only interaction with this mock.\";\n        }\n        StringBuilder sb = new StringBuilder(\n                \"***\\n\" +\n                \"For your reference, here is the list of all invocations ([?] - means unverified).\\n\");\n\n        int counter = 0;\n        for (VerificationAwareInvocation i : invocations) {\n            sb.append(++counter + \". \");\n            if (!i.isVerified()) {\n                sb.append(\"[?]\");\n            }\n            sb.append(i.getLocation() + \"\\n\");\n        }\n        String scenario = sb.toString();\n        return scenario;\n    }"
+  },
+  {
+    "method": "org.mockito.invocation.Invocation.getMock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

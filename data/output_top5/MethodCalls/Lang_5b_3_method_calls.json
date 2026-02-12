@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang3.LocaleUtils.availableLocaleList",
+    "doc": "/**\n     * <p>Obtains an unmodifiable list of installed locales.</p>\n     *\n     * <p>This method is a wrapper around {@link Locale#getAvailableLocales()}.\n     * It is more efficient, as the JDK method must create a new array each\n     * time it is called.</p>\n     *\n     * @return the unmodifiable list of available locales\n     */",
+    "code": "public static List<Locale> availableLocaleList() {\n        return SyncAvoid.AVAILABLE_LOCALE_LIST;\n    }"
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.common.base.Predicates.alwaysTrue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveDeadAssignments",
+    "doc": "/**\n   * Try to remove useless assignments from a control flow graph that has been\n   * annotated with liveness information.\n   *\n   * @param t The node traversal.\n   * @param cfg The control flow graph of the program annotated with liveness\n   *        information.\n   */",
+    "code": "private void tryRemoveDeadAssignments(NodeTraversal t,\n      ControlFlowGraph<Node> cfg) {\n    Iterable<DiGraphNode<Node, Branch>> nodes = cfg.getDirectedGraphNodes();\n\n    for (DiGraphNode<Node, Branch> cfgNode : nodes) {\n      FlowState<LiveVariableLattice> state =\n          cfgNode.getAnnotation();\n      Node n = cfgNode.getValue();\n      if (n == null) {\n        continue;\n      }\n      switch (n.getType()) {\n        case Token.IF:\n        case Token.WHILE:\n        case Token.DO:\n          tryRemoveAssignment(t, NodeUtil.getConditionExpression(n), state);\n          continue;\n        case Token.FOR:\n          if (!NodeUtil.isForIn(n)) {\n            tryRemoveAssignment(\n                t, NodeUtil.getConditionExpression(n), state);\n          }\n          continue;\n        case Token.SWITCH:\n        case Token.CASE:\n        case Token.RETURN:\n          if (n.hasChildren()) {\n            tryRemoveAssignment(t, n.getFirstChild(), state);\n          }\n          continue;\n      }\n\n      tryRemoveAssignment(t, n, state);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.LiveVariablesAnalysis.analyze",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getControlFlowGraph",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScopeRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.containsFunction",
+    "doc": "/**\n   * Determines if the given node contains a function statement or function\n   * expression.\n   */",
+    "code": "static boolean containsFunction(Node n) {\n    return containsType(n, Token.FUNCTION);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.has",
+    "doc": "/**\n   * @return true if n or any of its children are of the specified type\n   */",
+    "code": "return has(node, new MatchNodeType(type), traverseChildrenPred);\n  }\n\n  static boolean containsType(Node node, int type) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isGlobal",
+    "doc": "/**\n     * Returns whether this is a global variable.\n     */",
+    "code": "public boolean isGlobal() {\n      return scope.isGlobal();\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  }
+]

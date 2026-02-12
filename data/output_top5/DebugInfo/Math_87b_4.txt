@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testSingleVariableAndConstraint ===
+Exception: junit.framework.AssertionFailedError: expected:<10.0> but was:<0.0>
+
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:330->[Control Flow] Branch Info: Line: 330, Condition: if (coefficients < coefficients), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:343->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:343 -> org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:343->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:343 -> org.apache.commons.math.optimization.RealPointValuePair.<init>
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:325->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:325 -> org.apache.commons.math.optimization.linear.SimplexTableau.getOriginalNumDecisionVariables
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:325->[Local Variables] {"coefficients":[0.0]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:327->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:327 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:327->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:327 -> org.apache.commons.math.optimization.linear.SimplexTableau.getOriginalNumDecisionVariables
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:327->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:327 -> org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:327->[Local Variables] {"basicRow":1}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:328->[Control Flow] Branch Info: Line: 328, Condition: if (basicRow == null), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:328->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:328 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:328->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:328 -> org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:328->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:328 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:328->[Local Variables] {"mostNegative":10.0}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:329->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:329 -> java.util.HashSet.<init>
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:329->[Local Variables] {"basicRows":[]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:330->[Control Flow] Branch Info: Line: 330, Condition: if (coefficients < coefficients), Executed: true
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:330->[Local Variables] {"i":0}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:331->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:331 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:331->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:331 -> org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:332->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:332 -> java.util.Set.contains
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:332->[Control Flow] Branch Info: Line: 332, Condition: if (basicRow != 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:337->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:337 -> java.util.Set.add
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:337->[Local Variables] {"basicRows":[1]}
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Control Flow] Branch Info: Line: 339, Condition: if (basicRow == null), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:339 -> java.lang.Integer.intValue
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:339 -> org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:339->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexTableau.getSolution:339 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:340->[Control Flow] Branch Info: Line: 340, Condition: if (this.restrictToNonNegative != false), Executed: false
+org.apache.commons.math.optimization.linear.SimplexTableau:getSolution:330->[Control Flow] Loop Info: Line: 330, Description: while at line 330

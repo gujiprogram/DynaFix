@@ -1,0 +1,58 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Local Variables] "{var\u003dScope.Var Array.prototype.length{number}}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1159->[Control Flow] Branch Info: Line: 1159, Condition: if (var != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1160 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Local Variables] "{varType\u003dnumber}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1161->[Control Flow] Branch Info: Line: 1161, Condition: if (propertyType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.jscomp.TypeInference.getNativeType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.rhino.jstype.JSType.equals
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Control Flow] Branch Info: Line: 1162, Condition: if (com.google.javascript.rhino.jstype.JSType.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1163->[Control Flow] Branch Info: Line: 1163, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1156->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@3c66b7d8, objType\u003d{}, propName\u003dprop1, n\u003dGETPROP 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1157 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Local Variables] {"qualifiedName":"results.prop1"}
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1158 -> com.google.javascript.jscomp.FlowScope.getSlot
+com.google.javascript.jscomp.TypeInference:getPropertyType:1159->[Control Flow] Branch Info: Line: 1159, Condition: if (var != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1161->[Control Flow] Branch Info: Line: 1161, Condition: if (propertyType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1174->[Control Flow] Branch Info: Line: 1174, Condition: if (objType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1175->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1175 -> com.google.javascript.rhino.jstype.JSType.findPropertyType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1174->[Control Flow] Branch Info: Line: 1174, Condition: if (objType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1178->[Control Flow] Branch Info: Line: 1178, Condition: if (propertyType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1178->[Control Flow] Branch Info: Line: 1178, Condition: if (qualifiedName != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1181->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1181 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1181->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1181 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:getPropertyType:1178->[Control Flow] Branch Info: Line: 1178, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1178->[Control Flow] Branch Info: Line: 1178, Condition: if (qualifiedName != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1182->[Control Flow] Branch Info: Line: 1182, Condition: if (regType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1157 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Local Variables] {"qualifiedName":"String.prototype.length"}
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1158 -> com.google.javascript.jscomp.FlowScope.getSlot
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Local Variables] "{var\u003dScope.Var String.prototype.length{number}}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1159->[Control Flow] Branch Info: Line: 1159, Condition: if (var != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1160 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Local Variables] "{varType\u003dnumber}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1161->[Control Flow] Branch Info: Line: 1161, Condition: if (propertyType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.jscomp.TypeInference.getNativeType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.rhino.jstype.JSType.equals
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Control Flow] Branch Info: Line: 1162, Condition: if (com.google.javascript.rhino.jstype.JSType.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1163->[Control Flow] Branch Info: Line: 1163, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1156->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@3f81621c, objType\u003dfunction (new:Array, ...[*]): Array, propName\u003dprototype, n\u003dGETPROP 8 [source_file: [externs]]}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1157 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Local Variables] {"qualifiedName":"Array.prototype"}
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1158 -> com.google.javascript.jscomp.FlowScope.getSlot
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Local Variables] "{var\u003dScope.Var Array.prototype{Array.prototype}}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1159->[Control Flow] Branch Info: Line: 1159, Condition: if (var != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1160 -> com.google.javascript.rhino.jstype.StaticSlot.getType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1160->[Local Variables] "{varType\u003dArray.prototype}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1161->[Control Flow] Branch Info: Line: 1161, Condition: if (propertyType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.jscomp.TypeInference.getNativeType
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1162 -> com.google.javascript.rhino.jstype.JSType.equals
+com.google.javascript.jscomp.TypeInference:getPropertyType:1162->[Control Flow] Branch Info: Line: 1162, Condition: if (com.google.javascript.rhino.jstype.JSType.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1163->[Control Flow] Branch Info: Line: 1163, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.TypeInference:getPropertyType:1156->[Local Variables] "{objType\u003dArray.prototype, propName\u003dlength, n\u003dGETPROP 8 [jsdoc_info: JSDocInfo] [source_file: [externs]] : number}"
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1157 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.TypeInference:getPropertyType:1157->[Local Variables] {"qualifiedName":"Array.prototype.length"}
+com.google.javascript.jscomp.TypeInference:getPropertyType:1158->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.getPropertyType:1158 -> com.google.javascript.jscomp.FlowScope.getSlot

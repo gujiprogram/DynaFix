@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.dataformat.xml.ser.XmlSerializerProvider._initWithRootName",
+    "doc": "/**********************************************************************\n     */",
+    "code": "protected void _initWithRootName(ToXmlGenerator xgen, QName rootName) throws IOException\n    {\n         *  name if no name has been set, as per [dataformat-xml#42],\n         *  to allow for custom serializers to work.\n        if (!xgen.setNextNameIfMissing(rootName)) {\n            if (xgen.inRoot()) {\n                xgen.setNextName(rootName);\n            }\n        }\n        xgen.initGenerator();\n        String ns = rootName.getNamespaceURI();\n         * we will get an explicit prefix. But we'd rather use the default\n         * namespace, so let's try to force that.\n        if (ns != null && ns.length() > 0) {\n            try {\n                xgen.getStaxWriter().setDefaultNamespace(ns);\n            } catch (XMLStreamException e) {\n                StaxUtil.throwXmlAsIOException(e);\n            }\n        }\n    }"
+  }
+]

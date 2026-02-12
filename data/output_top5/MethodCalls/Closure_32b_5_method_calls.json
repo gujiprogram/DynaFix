@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.isPopulatedWithFileOverview",
+    "doc": "/**\n   * Returns whether this builder is populated with information that can be\n   * used to {@link #build} a {@link JSDocInfo} object that has a\n   * fileoverview tag.\n   */",
+    "code": "public boolean isPopulatedWithFileOverview() {\n    return isPopulated() &&\n        (currentInfo.hasFileOverview() || currentInfo.isExterns() ||\n         currentInfo.isNoCompile());\n  }"
+  }
+]

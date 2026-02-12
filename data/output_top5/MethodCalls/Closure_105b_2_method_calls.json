@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGetProp",
+    "doc": "/**\n   * Is this a GETPROP node?\n   */",
+    "code": "static boolean isGetProp(Node n) {\n    return n.getType() == Token.GETPROP;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isImmutableValue",
+    "doc": "/**\n   * Returns true if this is an immutable value.\n   */",
+    "code": "static boolean isImmutableValue(Node n) {\n    switch (n.getType()) {\n      case Token.STRING:\n      case Token.NUMBER:\n      case Token.NULL:\n      case Token.TRUE:\n      case Token.FALSE:\n      case Token.VOID:\n        return true;\n      case Token.NEG:\n        return isImmutableValue(n.getFirstChild());\n      case Token.NAME:\n        String name = n.getString();\n        return \"undefined\".equals(name)\n            || \"Infinity\".equals(name)\n            || \"NaN\".equals(name);\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getNext() {\n        return next;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

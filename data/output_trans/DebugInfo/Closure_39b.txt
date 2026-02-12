@@ -1,0 +1,110 @@
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testRecursiveRecord ===
+Exception: junit.framework.ComparisonFailure: expected:<{loop: [?], number: number, st...> but was:<{loop: [{...}], number: number, st...>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Local Variables] {"TransVarPropName":"string"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:384->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:384 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:386->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number, "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:387 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number, string"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:388 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number, string: "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.JSType.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number, string: string"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":3}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Loop Info: Line: 382, Description: while at line 382
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:398->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:398 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:399->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number, string: string}"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:401->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:401 -> java.lang.StringBuilder.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:356->[Local Variables] {"TransVarIsAnnotation":false}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:357->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:357 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:357->[Control Flow] Branch Info: Line: 357, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:362->[Control Flow] Branch Info: Line: 362, Condition: if (this.prettyPrint != false), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{loop: {...}","TransVarIsAnnotation":true}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":1}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Loop Info: Line: 382, Description: while at line 382
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Local Variables] {"TransVarPropName":"number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:384->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:384 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:386->[Local Variables] {"TransVarSb2":"{loop: {...}, "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:387 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Local Variables] {"TransVarSb2":"{loop: {...}, number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:388 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Local Variables] {"TransVarSb2":"{loop: {...}, number: "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.JSType.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{loop: {...}, number: number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":2}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Loop Info: Line: 382, Description: while at line 382
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testLongToString ===
+Exception: junit.framework.ComparisonFailure: expected:<...number, a4: number, [a5: number, a6: number]}> but was:<...number, a4: number, [...]}>
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Local Variables] {"TransVarPropName":"a4"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:384->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:384 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:386->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:387 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, a4"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:388 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, a4: "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.JSType.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, a4: number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":4}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:393->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:393 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:393->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, a4: number, ..."}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:398->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:398 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:399->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number, a4: number, ...}"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:401->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:401 -> java.lang.StringBuilder.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.JSType.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{a1: number, a2: number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":2}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Loop Info: Line: 382, Description: while at line 382
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Local Variables] {"TransVarPropName":"a3"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:384->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:384 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:383->[Control Flow] Branch Info: Line: 383, Condition: if (TransVarIndex > 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:386->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:387 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:387->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:388 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:388->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: "}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> com.google.javascript.rhino.jstype.JSType.toString
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:389->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:389 -> java.lang.StringBuilder.append
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:390->[Local Variables] {"TransVarSb2":"{a1: number, a2: number, a3: number"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:391->[Local Variables] {"TransVarIndex":3}
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:392->[Control Flow] Branch Info: Line: 392, Condition: if (TransVarIndex == TransVarIndex), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Loop Info: Line: 382, Description: while at line 382
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Control Flow] Branch Info: Line: 382, Condition: if (var6 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:toStringHelper:382->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.toStringHelper:382 -> java.util.Iterator.next

@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1002 ===
+Exception: java.lang.IllegalStateException
+
+com.google.javascript.jscomp.TypeCheck:visitNew:1659->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@5f2bd6d9, TransVarNext\u003dNEW 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeCheck:visitNew:1660->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1660 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitNew:1660->[Local Variables] "{TransVarFirstConstructor\u003dNAME B 1 [source_file: [testcode]] : function (...[*]): None}"
+com.google.javascript.jscomp.TypeCheck:visitNew:1661->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1661 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitNew:1661->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1661 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitNew:1661->[Local Variables] "{TransVarConstructorType\u003dfunction (...[*]): None}"
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1662 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Control Flow] Branch Info: Line: 1662, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1662 -> com.google.javascript.rhino.jstype.JSType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Control Flow] Branch Info: Line: 1662, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitNew:1662->[Control Flow] Branch Info: Line: 1662, Condition: if (com.google.javascript.rhino.jstype.JSType.isEmptyType() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitNew:1667->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1667 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeCheck:visitNew:1667->[Local Variables] "{TransVarTypeFunction\u003dfunction (...[*]): None}"
+com.google.javascript.jscomp.TypeCheck:visitNew:1668->[Control Flow] Branch Info: Line: 1668, Condition: if (TransVarTypeFunction != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitNew:1672->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1672 -> com.google.javascript.jscomp.TypeCheck.visitParameterList
+com.google.javascript.jscomp.TypeCheck:visitNew:1673->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitNew:1673 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType

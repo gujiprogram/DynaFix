@@ -1,0 +1,80 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 10 [free_call: 1] [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@17b37e9a, namesToAlias\u003d[], fnNode\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"EXPRESSION"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 15 [free_call: 1] [source_file: testcode], fnNode\u003dFUNCTION  9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"DECOMPOSABLE_EXPRESSION"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 10 [free_call: 1] [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@6c8f60f3, fnNode\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"EXPRESSION"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1 ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@1c3259fa, namesToAlias\u003d[], fnNode\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"SIMPLE_CALL"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_166), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@7209ffb5, namesToAlias\u003d[], fnNode\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"SIMPLE_CALL"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_166), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:580->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@d3f4505, namesToAlias\u003d[], fnNode\u003dFUNCTION BAR_FN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:581 -> com.google.javascript.jscomp.FunctionInjector.classifyCallSite
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:581->[Local Variables] {"callSiteType":"DECOMPOSABLE_EXPRESSION"}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:582->[Control Flow] Branch Info: Line: 582, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (this.allowDecomposition == false), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:586->[Control Flow] Branch Info: Line: 586, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceAsStatementBlock:592 -> com.google.javascript.jscomp.FunctionInjector.callMeetsBlockInliningRequirements
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:592->[Control Flow] Branch Info: Line: 592, Condition: if (namesToAlias == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceAsStatementBlock:597->[Control Flow] Branch Info: Line: 597, Condition: if (unknown_condition_165), Executed: false

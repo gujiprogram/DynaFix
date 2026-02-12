@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.json.ReaderBasedJsonParser.reset",
+    "doc": "/**\n     * Method called to parse a number, when the primary parse\n     * method has failed to parse it, due to it being split on\n     * buffer boundary. As a result code is very similar, except\n     * that it has to explicitly copy contents to the text buffer\n     * instead of just sharing the main input buffer.\n     */",
+    "code": "return reset(negative, intLen, fractLen, expLen);\n        } while (false);\n\n        _inputPtr = negative ? (startPtr+1) : startPtr;\n        return _parseNumber2(negative);\n    }\n\n    private JsonToken _parseNumber2(boolean negative) throws IOException\n    {\n        char[] outBuf = _textBuffer.emptyAndGetCurrentSegment();\n        int outPtr = 0;\n\n        if (negative) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.json.UTF8StreamJsonParser.resetInt",
+    "doc": "/**\n     * Method called to handle parsing when input is split across buffer boundary\n     * (or output is longer than segment used to store it)\n     */",
+    "code": "return resetInt(negative, intLen);\n    }\n\n    private JsonToken _parserNumber2(char[] outBuf, int outPtr, boolean negative,\n            int intPartLength)\n        throws IOException, JsonParseException\n    {"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.emptyAndGetCurrentSegment",
+    "doc": "/**********************************************************\n     */",
+    "code": "public char[] emptyAndGetCurrentSegment()\n    {\n        _inputStart = -1; // indicates shared buffer not used\n        _currentSize = 0;\n        _inputLen = 0;\n\n        _inputBuffer = null;\n        _resultString = null;\n        _resultArray = null;\n\n        if (_hasSegments) {\n            clearSegments();\n        }\n        char[] curr = _currentSegment;\n        if (curr == null) {\n            _currentSegment = curr = findBuffer(0);\n        }\n        return curr;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.resetWithShared",
+    "doc": "/**\n     * Method called to initialize the buffer with a shared copy of data;\n     * this means that buffer will just have pointers to actual data. It\n     * also means that if anything is to be appended to the buffer, it\n     * will first have to unshare it (make a local copy).\n     */",
+    "code": "public void resetWithShared(char[] buf, int start, int len)\n    {\n        _resultString = null;\n        _resultArray = null;\n\n        _inputBuffer = buf;\n        _inputStart = start;\n        _inputLen = len;\n\n        if (_hasSegments) {\n            clearSegments();\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.TextBuffer.setCurrentLength",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void setCurrentLength(int len) {\n        _currentSize = len;\n    }"
+  }
+]

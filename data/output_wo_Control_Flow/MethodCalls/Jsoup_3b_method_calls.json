@@ -1,0 +1,62 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.body",
+    "doc": "/**\n     Accessor to the document's {@code body} element.\n     @return {@code body}\n     */",
+    "code": "public Element body() {\n        return getElementsByTag(\"body\").first();\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.normalise",
+    "doc": "/**\n     Normalise the document. This happens after the parse phase so generally does not need to be called.\n     Moves any text content that is not in the body element into the body.\n     @return this document after normalisation\n     */",
+    "code": "public Document normalise() {\n        if (select(\"html\").isEmpty())\n            appendElement(\"html\");\n        if (head() == null)\n            select(\"html\").first().prependElement(\"head\");\n        if (body() == null)\n            select(\"html\").first().appendElement(\"body\");\n\n        normalise(head());\n        normalise(select(\"html\").first());\n        normalise(this);\n\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.appendChild",
+    "doc": "/**\n     * Add a node to the last child of this element.\n     *\n     * @param child node to add. Must not already have a parent.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element appendChild(Node child) {\n        Validate.notNull(child);\n\n        child.setParentNode(this);\n        childNodes.add(child);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.childNodes",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.prependChild",
+    "doc": "/**\n     * Add a node to the start of this element's children.\n     *\n     * @param child node to add. Must not already have a parent.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element prependChild(Node child) {\n        Validate.notNull(child);\n\n        child.setParentNode(this);\n        childNodes.add(0, child);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.tag",
+    "doc": "/**\n     * Get the Tag for this element.\n     *\n     * @return the tag object\n     */",
+    "code": "public Tag tag() {\n        return tag;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseEndTag",
+    "doc": "/**\n     Parse a fragment of HTML into the {@code body} of a Document, with relaxed parsing enabled. Relaxed, in this\n     context, means that implicit tags are not automatically created when missing.\n     @param bodyHtml fragment of HTML\n     @param baseUri base URI of document (i.e. original fetch location), for resolving relative URLs.\n     @return Document, with empty head, and HTML parsed into body\n     */",
+    "code": "private void parseEndTag() {\n        tq.consume(\"</\");\n        String tagName = tq.consumeWord();\n        tq.chompTo(\">\");\n\n        if (tagName.length() != 0) {\n            Tag tag = Tag.valueOf(tagName);\n            popStackToClose(tag);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseTextNode",
+    "doc": "/**\n     Parse a fragment of HTML into the {@code body} of a Document, with relaxed parsing enabled. Relaxed, in this\n     context, means that implicit tags are not automatically created when missing.\n     @param bodyHtml fragment of HTML\n     @param baseUri base URI of document (i.e. original fetch location), for resolving relative URLs.\n     @return Document, with empty head, and HTML parsed into body\n     */",
+    "code": "private void parseTextNode() {\n        String text = tq.consumeTo(\"<\");\n        TextNode textNode = TextNode.createFromEncoded(text, baseUri);\n        last().appendChild(textNode);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.stackHasValidParent",
+    "doc": "/**\n     Parse a fragment of HTML into the {@code body} of a Document, with relaxed parsing enabled. Relaxed, in this\n     context, means that implicit tags are not automatically created when missing.\n     @param bodyHtml fragment of HTML\n     @param baseUri base URI of document (i.e. original fetch location), for resolving relative URLs.\n     @return Document, with empty head, and HTML parsed into body\n     */",
+    "code": "private boolean stackHasValidParent(Tag childTag) {\n        if (stack.size() == 1 && childTag.equals(htmlTag))\n            return true; // root is valid for html node\n\n\n        for (int i = stack.size() -1; i >= 0; i--) {\n            Element el = stack.get(i);\n            Tag parent2 = el.tag();\n            if (parent2.isValidParent(childTag)) {\n                return true;\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.isValidParent",
+    "doc": "/**\n     Get if this tag should preserve whitespace within child text nodes.\n     @return if preserve whitepace\n     */",
+    "code": "boolean isValidParent(Tag child) {\n\n        if (child.ancestors.isEmpty())\n            return true; // HTML tag\n\n        for (Tag tag : child.ancestors) {\n            if (this.equals(tag))\n                return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.isEmpty",
+    "doc": "/**\n     * Is the queue empty?\n     * @return true if no data left in queue.\n     */",
+    "code": "public boolean isEmpty() {\n        return queue.isEmpty();\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matches",
+    "doc": "/**\n     * Tests if the next characters on the queue match the sequence. Case insensitive.\n     * @param seq String to check queue for.\n     * @return true if the next characters match.\n     */",
+    "code": "public boolean matches(String seq) {\n        int len = seq.length();\n        if (len > queue.size())\n            return false;\n        List<Character> chars = queue.subList(0, len);\n        char[] seqChars = seq.toCharArray();\n        for (int i = 0; i < len; i++) {\n            Character found = Character.toLowerCase(chars.get(i));\n            Character check = Character.toLowerCase(seqChars[i]);\n            if (!found.equals(check))\n                return false;\n        }\n        return true;\n    }"
+  }
+]

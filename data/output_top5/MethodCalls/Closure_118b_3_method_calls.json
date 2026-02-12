@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getLifeCycleStage",
+    "doc": "/**\n   * @return The current life-cycle stage of the AST we're working on.\n   */",
+    "code": "LifeCycleStage getLifeCycleStage() {\n    return stage;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getTypeValidator",
+    "doc": "/**\n   * Gets the central registry of type violations.\n   */",
+    "code": "abstract TypeValidator getTypeValidator();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.DisambiguateProperties.renameProperties",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      inputId = NodeUtil.getInputId(root);\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.getMismatches",
+    "doc": "/**\n   * Gets a list of type violations.\n   *\n   * For each violation, one element is the expected type and the other is\n   * the type that is actually found. Order is not significant.\n   */",
+    "code": "Iterable<TypeMismatch> getMismatches() {\n    return mismatches;\n  }"
+  }
+]

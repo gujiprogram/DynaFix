@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testIssue925 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:911->[Control Flow] Branch Info: Line: 911, Condition: if (lastTrue != null), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:911->[Control Flow] Branch Info: Line: 911, Condition: if (lastFalse != null), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:892->[Local Variables] "{n\u003dIF 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:893->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:893 -> com.google.javascript.rhino.Node.isIf
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:893->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:893 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:895->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:895 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:895->[Local Variables] "{parent\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:896->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:896 -> com.google.javascript.jscomp.NodeUtil.isStatementBlock
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:896->[Control Flow] Branch Info: Line: 896, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:902->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:902 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:902->[Local Variables] "{cond\u003dSHEQ 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:903->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:903 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:903->[Local Variables] "{trueBranch\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:904->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:904 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:904->[Local Variables] "{falseBranch\u003dBLOCK 3 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:905->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:905 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:906->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:906 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:909->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:909 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:909->[Local Variables] "{lastTrue\u003dEXPR_RESULT 2 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:910->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:910 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:910->[Local Variables] "{lastFalse\u003dEXPR_RESULT 4 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:911->[Control Flow] Branch Info: Line: 911, Condition: if (lastTrue != null), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:911->[Control Flow] Branch Info: Line: 911, Condition: if (lastFalse != null), Executed: true
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:912->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryRemoveRepeatedStatements:912 -> com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.areNodesEqualForInlining
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryRemoveRepeatedStatements:912->[Control Flow] Branch Info: Line: 912, Condition: if (com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.areNodesEqualForInlining() == 0), Executed: true

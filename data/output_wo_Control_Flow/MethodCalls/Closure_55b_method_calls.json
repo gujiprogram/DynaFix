@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionExpression",
+    "doc": "/**\n   * Is a FUNCTION node an function expression? An function expression is one\n   * that has either no name or a name that is not added to the current scope.\n   *\n   * <p>Some examples of function expressions:\n   * <pre>\n   * (function () {})\n   * (function f() {})()\n   * [ function f() {} ]\n   * var f = function f() {};\n   * for (function f() {};;) {}\n   * </pre>\n   *\n   * <p>Some examples of functions that are <em>not</em> expressions:\n   * <pre>\n   * function f() {}\n   * if (x); else function f() {}\n   * for (;;) { function f() {} }\n   * </pre>\n   *\n   * @param n A node\n   * @return Whether n is an function used within an expression.\n   */",
+    "code": "static boolean isFunctionExpression(Node n) {\n    return n.getType() == Token.FUNCTION && !isStatement(n);\n  }"
+  }
+]

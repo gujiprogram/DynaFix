@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss ===
+
+org.apache.commons.lang3.math.NumberUtils:createNumber:594->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:594 -> java.lang.Float.floatValue
+org.apache.commons.lang3.math.NumberUtils:createNumber:476->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:476 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:createNumber:479->[Local Variables] {"lastChar":"8"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:480->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:480 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:481->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:481 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:481->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:481 -> java.lang.String.indexOf
+org.apache.commons.lang3.math.NumberUtils:createNumber:484->[Local Variables] {"expPos":10}
+org.apache.commons.lang3.math.NumberUtils:createNumber:485->[Local Variables] {"numDecimals":0}
+org.apache.commons.lang3.math.NumberUtils:createNumber:489->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:489 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:492->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:492 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:495->[Local Variables] {"dec":"40282354"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:496->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:496 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:496->[Local Variables] {"mant":"3"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:497->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:497 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:508->[Local Variables] {"numDecimals":8}
+org.apache.commons.lang3.math.NumberUtils:createNumber:509->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:509 -> java.lang.Character.isDigit
+org.apache.commons.lang3.math.NumberUtils:createNumber:570->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:570 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:571->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:571 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:createNumber:571->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:571 -> java.lang.String.substring
+org.apache.commons.lang3.math.NumberUtils:createNumber:574->[Local Variables] {"exp":"+38"}
+org.apache.commons.lang3.math.NumberUtils:createNumber:591->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:591 -> org.apache.commons.lang3.math.NumberUtils.isAllZeros
+org.apache.commons.lang3.math.NumberUtils:createNumber:593->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:593 -> org.apache.commons.lang3.math.NumberUtils.createFloat
+org.apache.commons.lang3.math.NumberUtils:createNumber:593->[Local Variables] {"f":3.4028235E38}
+org.apache.commons.lang3.math.NumberUtils:createNumber:594->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createNumber:594 -> java.lang.Float.isInfinite

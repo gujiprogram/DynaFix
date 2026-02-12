@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVParserTest::testHeaderMissingWithNull ===
+
+org.apache.commons.csv.CSVParser:initializeHeader:361->[Local Variables] {"formatHeader":[]}
+org.apache.commons.csv.CSVParser:initializeHeader:362->[Control Flow] Branch Info: Line: 362, Condition: if (formatHeader != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:364->[Local Variables] {"hdrMap":{}}
+org.apache.commons.csv.CSVParser:initializeHeader:366->[Control Flow] Branch Info: Line: 366, Condition: if (formatHeader == 0), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:368->[Local Variables] {"nextRecord":{"recordNumber":1,"values":["a",null,"c",null,"d"]}}
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Control Flow] Branch Info: Line: 369, Condition: if (i != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Control Flow] Branch Info: Line: 369, Condition: if (i != null), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Local Variables] {"headerRecord":["a",null,"c",null,"d"]}
+org.apache.commons.csv.CSVParser:initializeHeader:380->[Control Flow] Branch Info: Line: 380, Condition: if (headerRecord != null), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Branch Info: Line: 381, Condition: if (headerRecord < headerRecord), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Local Variables] {"i":0}
+org.apache.commons.csv.CSVParser:initializeHeader:382->[Local Variables] {"header":"a"}
+org.apache.commons.csv.CSVParser:initializeHeader:383->[Local Variables] {"containsHeader":false}
+org.apache.commons.csv.CSVParser:initializeHeader:384->[Local Variables] {"emptyHeader":false}
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (containsHeader != 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (emptyHeader != 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:385->[Control Flow] Branch Info: Line: 385, Condition: if (org.apache.commons.csv.CSVFormat.getIgnoreEmptyHeaders() == 0), Executed: false
+org.apache.commons.csv.CSVParser:initializeHeader:380->[Local Variables] {"hdrMap":{"a":0}}
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Loop Info: Line: 381, Description: while at line 381
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Control Flow] Branch Info: Line: 381, Condition: if (headerRecord < headerRecord), Executed: true
+org.apache.commons.csv.CSVParser:initializeHeader:381->[Local Variables] {"i":1}

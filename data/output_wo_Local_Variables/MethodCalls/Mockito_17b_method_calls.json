@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.mockito.internal.creation.MockSettingsImpl.getExtraInterfaces",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.mockito.internal.creation.MockSettingsImpl.getSpiedInstance",
+    "doc": "[No documentation]",
+    "code": "public Object getSpiedInstance() {\n        return spiedInstance;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.creation.MockSettingsImpl.initiateMockName",
+    "doc": "[No documentation]",
+    "code": "public void initiateMockName(Class classToMock) {\n        mockName = new MockName(name, classToMock);\n    }"
+  },
+  {
+    "method": "org.mockito.internal.creation.jmock.ClassImposterizer.imposterise",
+    "doc": "/**\n * Thanks to jMock guys for this handy class that wraps all the cglib magic.\n */",
+    "code": "public <T> T imposterise(final MethodInterceptor interceptor, Class<T> mockedType, Class<?>... ancillaryTypes) {\n        try {\n            setConstructorsAccessible(mockedType, true);\n            Class<?> proxyClass = createProxyClass(mockedType, ancillaryTypes);\n            return mockedType.cast(createProxy(proxyClass, interceptor));\n        } finally {\n            setConstructorsAccessible(mockedType, false);\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.CreationValidator.validateExtraInterfaces",
+    "doc": "[No documentation]",
+    "code": "public void validateExtraInterfaces(Class classToMock, Class ... extraInterfaces) {\n        if (extraInterfaces == null) {\n            return;\n        }\n\n        for (Class i : extraInterfaces) {\n            if (classToMock == i) {\n                new Reporter().extraInterfacesCannotContainMockedType(classToMock);\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.CreationValidator.validateMockedType",
+    "doc": "[No documentation]",
+    "code": "public void validateMockedType(Class classToMock, Object spiedInstance) {\n        if (classToMock == null || spiedInstance == null) {\n            return;\n        }\n        if (!classToMock.equals(spiedInstance.getClass())) {\n            new Reporter().mockedTypeIsInconsistentWithSpiedInstanceType(classToMock, spiedInstance);\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.CreationValidator.validateType",
+    "doc": "[No documentation]",
+    "code": "public void validateType(Class classToMock) {\n        if (!ClassImposterizer.INSTANCE.canImposterise(classToMock)) {\n            new Reporter().cannotMockFinalClass(classToMock);\n        }\n    }"
+  }
+]

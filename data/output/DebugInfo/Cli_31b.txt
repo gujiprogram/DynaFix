@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.cli.HelpFormatterTest::testDefaultArgName ===
+Exception: junit.framework.ComparisonFailure: expected:<usage: app -f <arg[ument]>
+
+org.apache.commons.cli.HelpFormatter:appendOption:637->[Local Variables] {"buff":"usage: app ","required":true,"option":{"opt":"f","argName":"arg","required":true,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.HelpFormatter:appendOption:638->[Control Flow] Branch Info: Line: 638, Condition: if (required == 0), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:643 -> org.apache.commons.cli.Option.getOpt
+org.apache.commons.cli.HelpFormatter:appendOption:643->[Control Flow] Branch Info: Line: 643, Condition: if (org.apache.commons.cli.Option.getOpt() != null), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:645->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:645 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:645->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:645 -> org.apache.commons.cli.Option.getOpt
+org.apache.commons.cli.HelpFormatter:appendOption:645->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:645 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:652->[Local Variables] {"buff":"usage: app -f"}
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:653 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Control Flow] Branch Info: Line: 653, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:653 -> org.apache.commons.cli.Option.hasArgName
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Control Flow] Branch Info: Line: 653, Condition: if (org.apache.commons.cli.Option.hasArgName() != 0), Executed: true
+org.apache.commons.cli.HelpFormatter:appendOption:655->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:655 -> org.apache.commons.cli.Option.getOpt
+org.apache.commons.cli.HelpFormatter:appendOption:655->[Control Flow] Branch Info: Line: 655, Condition: if (org.apache.commons.cli.Option.getOpt() == null), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:655->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:655 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:655->[Local Variables] {"buff":"usage: app -f "}
+org.apache.commons.cli.HelpFormatter:appendOption:656->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:656 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:656->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:656 -> org.apache.commons.cli.Option.getArgName
+org.apache.commons.cli.HelpFormatter:appendOption:656->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:656 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:656->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.appendOption:656 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Control Flow] Branch Info: Line: 653, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:653->[Control Flow] Branch Info: Line: 653, Condition: if (org.apache.commons.cli.Option.hasArgName() != 0), Executed: false
+org.apache.commons.cli.HelpFormatter:appendOption:659->[Local Variables] {"buff":"usage: app -f \u003carg\u003e"}
+org.apache.commons.cli.HelpFormatter:appendOption:660->[Control Flow] Branch Info: Line: 660, Condition: if (required == 0), Executed: false

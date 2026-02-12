@@ -1,0 +1,65 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent5 ===
+Exception: junit.framework.AssertionFailedError: expected:<100.0> but was:<62.5>
+
+com.google.javascript.jscomp.TypeCheck:visitAssign:842->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@72ba28ee, assign\u003dASSIGN 1 [sourcename:  [testcode] ] [jsdoc_info: JSDocInfo] : enum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:843->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:843 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitAssign:843->[Local Variables] {"info":{"sourceName":" [testcode] ","visibility":"INHERITED","bitset":1610612736,"type":{"root":{"str":"number","type":40,"propListHead":{"type":16,"intValue":0,"objectValue":" [testcode] "},"sourcePosition":4113},"sourceName":" [testcode] "},"includeDocumentation":false}}
+com.google.javascript.jscomp.TypeCheck:visitAssign:844->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:844 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:844->[Local Variables] "{lvalue\u003dNAME keys 1 [sourcename:  [testcode] ] : enum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:845->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:845 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:846->[Local Variables] "{rvalue\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : enum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:847->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:847 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visitAssign:847->[Control Flow] Branch Info: Line: 847, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:926 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Control Flow] Branch Info: Line: 926, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:928 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:928 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Local Variables] "{rvalueType\u003denum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Control Flow] Branch Info: Line: 926, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:930->[Control Flow] Branch Info: Line: 930, Condition: if (rightChild != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:931->[Control Flow] Branch Info: Line: 931, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:938->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:938 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:938->[Local Variables] "{leftType\u003denum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:939->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:939 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:939->[Local Variables] "{rightChild\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : enum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:940->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:940 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:940->[Local Variables] "{rightType\u003denum{keys}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:941->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:941 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignTo
+com.google.javascript.jscomp.TypeCheck:visitAssign:941->[Control Flow] Branch Info: Line: 941, Condition: if (com.google.javascript.jscomp.TypeValidator.expectCanAssignTo() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:943->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:943 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent6 ===
+Exception: junit.framework.AssertionFailedError: expected:<100.0> but was:<66.66666666666667>
+
+com.google.javascript.jscomp.TypeCheck:visitAssign:842->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@60baef24, assign\u003dASSIGN 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:843->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:843 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitAssign:844->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:844 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:844->[Local Variables] "{lvalue\u003dNAME a 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:845->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:845 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:846->[Local Variables] "{rvalue\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:847->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:847 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visitAssign:847->[Control Flow] Branch Info: Line: 847, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:926 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Control Flow] Branch Info: Line: 926, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:928 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:928 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:928->[Local Variables] "{rvalueType\u003d{FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitAssign:929->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:929 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeCheck:visitAssign:926->[Control Flow] Branch Info: Line: 926, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:930->[Control Flow] Branch Info: Line: 930, Condition: if (rightChild != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:931->[Control Flow] Branch Info: Line: 931, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:938->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:938 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:938->[Local Variables] "{leftType\u003d{FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:939->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:939 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:939->[Local Variables] "{rightChild\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:940->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:940 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:940->[Local Variables] "{rightType\u003d{FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:941->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:941 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignTo
+com.google.javascript.jscomp.TypeCheck:visitAssign:941->[Control Flow] Branch Info: Line: 941, Condition: if (com.google.javascript.jscomp.TypeValidator.expectCanAssignTo() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:943->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:943 -> com.google.javascript.jscomp.TypeCheck.ensureTyped

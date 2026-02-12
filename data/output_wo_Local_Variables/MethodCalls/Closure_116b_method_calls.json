@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible",
+    "doc": "/**\n   * Checks if the given function matches the criteria for an inlinable\n   * function, and if so, adds it to our set of inlinable functions.\n   */",
+    "code": "boolean isDirectCallNodeReplacementPossible(Node fnNode) {\n    Node block = NodeUtil.getFunctionBody(fnNode);\n\n    if (!block.hasChildren()) {\n      return true;\n    } else if (block.hasOneChild()) {\n      if (block.getFirstChild().isReturn()\n          && block.getFirstChild().getFirstChild() != null) {\n        return true;\n      }\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getFunctionParameters",
+    "doc": "/**\n    * @param fnNode The function.\n    * @return The Node containing the Function parameters.\n    */",
+    "code": "public static Node getFunctionParameters(Node fnNode) {\n    Preconditions.checkArgument(fnNode.isFunction());\n    return fnNode.getFirstChild().getNext();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionObjectApply",
+    "doc": "/**\n   * @return Whether the callNode represents an expression in the form of:\n   *    x.apply(...)\n   *    x['apply'](...)\n   */",
+    "code": "static boolean isFunctionObjectApply(Node callNode) {\n    return isObjectCallMethod(callNode, \"apply\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionObjectCall",
+    "doc": "/**\n   * @return Whether the callNode represents an expression in the form of:\n   *    x.call(...)\n   *    x['call'](...)\n   */",
+    "code": "static boolean isFunctionObjectCall(Node callNode) {\n    return isObjectCallMethod(callNode, \"call\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.mayEffectMutableState",
+    "doc": "/**\n   * Returns true if the node may create new mutable state, or change existing\n   * state.\n   *\n   * @see <a href=\"http://www.xkcd.org/326/\">XKCD Cartoon</a>\n   */",
+    "code": "static boolean mayEffectMutableState(Node n) {\n    return mayEffectMutableState(n, null);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects",
+    "doc": "/**\n   * Returns true if the node which may have side effects when executed.\n   */",
+    "code": "static boolean mayHaveSideEffects(Node n) {\n    return mayHaveSideEffects(n, null);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

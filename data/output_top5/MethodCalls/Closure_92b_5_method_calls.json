@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.processProvideCall",
+    "doc": "/**\n   * Handles a goog.provide call.\n   */",
+    "code": "private void processProvideCall(NodeTraversal t, Node n, Node parent) {\n    Node left = n.getFirstChild();\n    Node arg = left.getNext();\n    if (verifyProvide(t, left, arg)) {\n      String ns = arg.getString();\n      if (providedNames.containsKey(ns)) {\n        ProvidedName previouslyProvided = providedNames.get(ns);\n        if (!previouslyProvided.isExplicitlyProvided()) {\n          previouslyProvided.addProvide(parent, t.getModule(), true);\n        } else {\n          compiler.report(\n              t.makeError(n, DUPLICATE_NAMESPACE_ERROR, ns));\n        }\n      } else {\n        registerAnyProvidedPrefixes(ns, parent, t.getModule());\n        providedNames.put(\n            ns, new ProvidedName(ns, parent, t.getModule(), true));\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.noNullElements",
+    "doc": "/**\n     * Validates that the array contains no null elements\n     * @param objects the array to test\n     */",
+    "code": "public static void noNullElements(Object[] objects) {\n        noNullElements(objects, \"Array must not contain any null objects\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.ensureChildNodes",
+    "doc": "/**\n     * Replace this node in the DOM with the supplied node.\n     * @param in the node that will will replace the existing node.\n     */",
+    "code": "protected void ensureChildNodes() {\n        if (childNodes == EMPTY_NODES) {\n            childNodes = new ArrayList<Node>(4);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.reindexChildren",
+    "doc": "/**\n     * Replace this node in the DOM with the supplied node.\n     * @param in the node that will will replace the existing node.\n     */",
+    "code": "private void reindexChildren(int start) {\n        for (int i = start; i < childNodes.size(); i++) {\n            childNodes.get(i).setSiblingIndex(i);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.reparentChild",
+    "doc": "/**\n     * Replace this node in the DOM with the supplied node.\n     * @param in the node that will will replace the existing node.\n     */",
+    "code": "protected void reparentChild(Node child) {\n        if (child.parentNode != null)\n            child.parentNode.removeChild(child);\n        child.setParentNode(this);\n    }"
+  }
+]

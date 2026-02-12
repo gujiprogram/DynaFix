@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testCount ===
+
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:268->[Control Flow] Branch Info: Line: 268, Condition: if (this.currSize > 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:283->[Control Flow] Branch Info: Line: 283, Condition: if (this.assemLen > 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:312->[Control Flow] Branch Info: Line: 312, Condition: if (numToWrite > 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:313->[Control Flow] Branch Info: Line: 313, Condition: if (this.recordBuf < this.recordBuf), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:314->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.write:314 -> java.lang.System.arraycopy
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:312->[Control Flow] Branch Info: Line: 312, Condition: if (numToWrite > 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:write:330->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.write:330 -> org.apache.commons.compress.archivers.tar.TarArchiveOutputStream.count

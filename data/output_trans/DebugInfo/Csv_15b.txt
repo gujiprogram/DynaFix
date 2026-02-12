@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testDontQuoteEuroFirstChar ===
+Exception: junit.framework.AssertionFailedError: expected:<[€],Deux
+
+org.apache.commons.csv.CSVFormat:printAndQuote:1218->[Local Variables] {"TransVarPosition":3}
+org.apache.commons.csv.CSVFormat:printAndQuote:1219->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1219 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1192->[Control Flow] Branch Info: Line: 1192, Condition: if (TransVarNewFile != 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1217->[Control Flow] Branch Info: Line: 1217, Condition: if (TransVarQuoteStr == 0), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1222->[Control Flow] Branch Info: Line: 1222, Condition: if (TransVarCharac <= TransVarCharac), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1229->[Control Flow] Branch Info: Line: 1229, Condition: if (TransVarQuoteStr == 0), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1231->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1231 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVFormat:printAndQuote:1231->[Local Variables] {"TransVarOutput":{"buf":"\"€\",Deux","lock":"\"€\",Deux"}}
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarDelimiter == TransVarDelimiter), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1205->[Control Flow] Loop Info: Line: 1205, Description: while at line 1205
+org.apache.commons.csv.CSVFormat:printAndQuote:1201->[Control Flow] Branch Info: Line: 1201, Condition: if (TransVarCharac <= TransVarCharac), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.csv.CSVFormat:printAndQuote:1207->[Control Flow] Branch Info: Line: 1207, Condition: if (TransVarEndIndex < TransVarEndIndex), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1208 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Local Variables] {"TransVarCh":"e"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarQuote != TransVarQuote), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarDelimiter == TransVarDelimiter), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1205->[Control Flow] Loop Info: Line: 1205, Description: while at line 1205
+org.apache.commons.csv.CSVFormat:printAndQuote:1201->[Control Flow] Branch Info: Line: 1201, Condition: if (TransVarCharac <= TransVarCharac), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.csv.CSVFormat:printAndQuote:1207->[Control Flow] Branch Info: Line: 1207, Condition: if (TransVarEndIndex < TransVarEndIndex), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1208 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Local Variables] {"TransVarCh":"u"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarQuote != TransVarQuote), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarDelimiter == TransVarDelimiter), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1205->[Control Flow] Loop Info: Line: 1205, Description: while at line 1205
+org.apache.commons.csv.CSVFormat:printAndQuote:1201->[Control Flow] Branch Info: Line: 1201, Condition: if (TransVarCharac <= TransVarCharac), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Local Variables] {"TransVarPosition":3}
+org.apache.commons.csv.CSVFormat:printAndQuote:1207->[Control Flow] Branch Info: Line: 1207, Condition: if (TransVarEndIndex < TransVarEndIndex), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.printAndQuote:1208 -> java.lang.CharSequence.charAt
+org.apache.commons.csv.CSVFormat:printAndQuote:1208->[Local Variables] {"TransVarCh":"x"}
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarCharac != TransVarCharac), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarQuote != TransVarQuote), Executed: true
+org.apache.commons.csv.CSVFormat:printAndQuote:1209->[Control Flow] Branch Info: Line: 1209, Condition: if (TransVarDelimiter == TransVarDelimiter), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1205->[Control Flow] Loop Info: Line: 1205, Description: while at line 1205
+org.apache.commons.csv.CSVFormat:printAndQuote:1201->[Control Flow] Branch Info: Line: 1201, Condition: if (TransVarCharac <= TransVarCharac), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1206->[Local Variables] {"TransVarPosition":4}
+org.apache.commons.csv.CSVFormat:printAndQuote:1207->[Control Flow] Branch Info: Line: 1207, Condition: if (TransVarEndIndex < TransVarEndIndex), Executed: false
+org.apache.commons.csv.CSVFormat:printAndQuote:1217->[Control Flow] Branch Info: Line: 1217, Condition: if (TransVarQuoteStr == 0), Executed: true

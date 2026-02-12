@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang3.time.FastDateParser.createKeyValues",
+    "doc": "/**\n     * Create key / value pairs from keys\n     * @param longValues The allowable long names for a field\n     * @param shortValues The optional allowable short names for a field\n     * @return The sorted name / value pairs for the field\n     */",
+    "code": "private static KeyValue[] createKeyValues(String[] longValues, String[] shortValues) {\n        KeyValue[] fieldKeyValues= new KeyValue[count(longValues)+count(shortValues)];\n        copy(fieldKeyValues, copy(fieldKeyValues, 0, longValues), shortValues);\n        Arrays.sort(fieldKeyValues, IGNORE_CASE_COMPARATOR);\n        return fieldKeyValues;\n    }"
+  }
+]

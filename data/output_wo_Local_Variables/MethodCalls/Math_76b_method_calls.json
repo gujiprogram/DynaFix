@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.BiDiagonalTransformer.getU",
+    "doc": "/**\n     * Returns the matrix U of the transform.\n     * <p>U is an orthogonal matrix, i.e. its transpose is also its inverse.</p>\n     * @return the U matrix\n     */",
+    "code": "public RealMatrix getU() {\n\n        if (cachedU == null) {\n\n            final int m = householderVectors.length;\n            final int n = householderVectors[0].length;\n            final int p = main.length;\n            final int diagOffset    = (m >= n) ? 0 : 1;\n            final double[] diagonal = (m >= n) ? main : secondary;\n            cachedU = MatrixUtils.createRealMatrix(m, m);\n\n            for (int k = m - 1; k >= p; --k) {\n                cachedU.setEntry(k, k, 1);\n            }\n\n            for (int k = p - 1; k >= diagOffset; --k) {\n                final double[] hK = householderVectors[k];\n                cachedU.setEntry(k, k, 1);\n                if (hK[k - diagOffset] != 0.0) {\n                    for (int j = k; j < m; ++j) {\n                        double alpha = 0;\n                        for (int i = k; i < m; ++i) {\n                            alpha -= cachedU.getEntry(i, j) * householderVectors[i][k - diagOffset];\n                        }\n                        alpha /= diagonal[k - diagOffset] * hK[k - diagOffset];\n\n                        for (int i = k; i < m; ++i) {\n                            cachedU.addToEntry(i, j, -alpha * householderVectors[i][k - diagOffset]);\n                        }\n                    }\n                }\n            }\n            if (diagOffset > 0) {\n                cachedU.setEntry(0, 0, 1);\n            }\n\n        }\n\n        return cachedU;\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.linear.BiDiagonalTransformer.getV",
+    "doc": "/**\n     * Returns the matrix V of the transform.\n     * <p>V is an orthogonal matrix, i.e. its transpose is also its inverse.</p>\n     * @return the V matrix\n     */",
+    "code": "public RealMatrix getV() {\n\n        if (cachedV == null) {\n\n            final int m = householderVectors.length;\n            final int n = householderVectors[0].length;\n            final int p = main.length;\n            final int diagOffset    = (m >= n) ? 1 : 0;\n            final double[] diagonal = (m >= n) ? secondary : main;\n            cachedV = MatrixUtils.createRealMatrix(n, n);\n\n            for (int k = n - 1; k >= p; --k) {\n                cachedV.setEntry(k, k, 1);\n            }\n\n            for (int k = p - 1; k >= diagOffset; --k) {\n                final double[] hK = householderVectors[k - diagOffset];\n                cachedV.setEntry(k, k, 1);\n                if (hK[k] != 0.0) {\n                    for (int j = k; j < n; ++j) {\n                        double beta = 0;\n                        for (int i = k; i < n; ++i) {\n                            beta -= cachedV.getEntry(i, j) * hK[i];\n                        }\n                        beta /= diagonal[k - diagOffset] * hK[k];\n\n                        for (int i = k; i < n; ++i) {\n                            cachedV.addToEntry(i, j, -beta * hK[i]);\n                        }\n                    }\n                }\n            }\n            if (diagOffset > 0) {\n                cachedV.setEntry(0, 0, 1);\n            }\n\n        }\n\n        return cachedV;\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.linear.EigenDecomposition.getV",
+    "doc": "/**\n     * Returns the matrix V of the decomposition.\n     * <p>V is an orthogonal matrix, i.e. its transpose is also its inverse.</p>\n     * <p>The columns of V are the eigenvectors of the original matrix.</p>\n     * @return the V matrix\n     */",
+    "code": "RealMatrix getV();"
+  },
+  {
+    "method": "org.apache.commons.math.linear.MatrixUtils.createRealMatrix",
+    "doc": "/**\n     * Returns a {@link RealMatrix} with specified dimensions.\n     * <p>The type of matrix returned depends on the dimension. Below\n     * 2<sup>12</sup> elements (i.e. 4096 elements or 64&times;64 for a\n     * square matrix) which can be stored in a 32kB array, a {@link\n     * Array2DRowRealMatrix} instance is built. Above this threshold a {@link\n     * BlockRealMatrix} instance is built.</p>\n     * <p>The matrix elements are all set to 0.0.</p>\n     * @param rows number of rows of the matrix\n     * @param columns number of columns of the matrix\n     * @return  RealMatrix with specified dimensions\n     * @see #createRealMatrix(double[][])\n     */",
+    "code": "public static RealMatrix createRealMatrix(final int rows, final int columns) {\n        return (rows * columns <= 4096) ?\n                new Array2DRowRealMatrix(rows, columns) : new BlockRealMatrix(rows, columns);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getData",
+    "doc": "/**\n     * Returns matrix entries as a two-dimensional array.\n     *\n     * @return    2-dimensional array of entries\n     */",
+    "code": "double[][] getData();"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getSubMatrix",
+    "doc": "/**\n     * Gets a submatrix. Rows and columns are indicated\n     * counting from 0 to n-1.\n     *\n     * @param startRow Initial row index\n     * @param endRow Final row index (inclusive)\n     * @param startColumn Initial column index\n     * @param endColumn Final column index (inclusive)\n     * @return The subMatrix containing the data of the\n     *         specified rows and columns\n     * @exception MatrixIndexException  if the indices are not valid\n     */",
+    "code": "RealMatrix getSubMatrix(int startRow, int endRow, int startColumn, int endColumn)\n       throws MatrixIndexException;"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.multiply",
+    "doc": "/**\n     * Returns the result of postmultiplying this by m.\n     *\n     * @param m    matrix to postmultiply by\n     * @return     this * m\n     * @throws     IllegalArgumentException\n     *             if columnDimension(this) != rowDimension(m)\n     */",
+    "code": "RealMatrix multiply(RealMatrix m) throws IllegalArgumentException;"
+  }
+]

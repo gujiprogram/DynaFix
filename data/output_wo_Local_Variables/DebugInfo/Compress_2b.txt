@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.ArTestCase::testArDelete ===
+
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:144->[Control Flow] Branch Info: Line: 144, Condition: if (ret > 0), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:63->[Control Flow] Branch Info: Line: 63, Condition: if (this.offset == false), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:70->[Control Flow] Branch Info: Line: 70, Condition: if (name < name), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:79->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:79 -> java.io.InputStream.available
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:79->[Control Flow] Branch Info: Line: 79, Condition: if (java.io.InputStream.available() == 0), Executed: true
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:101->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:101 -> java.lang.String.getBytes
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:103->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:103 -> org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:143->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read:143 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:144->[Control Flow] Branch Info: Line: 144, Condition: if (ret > 0), Executed: true
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:104->[Control Flow] Branch Info: Line: 104, Condition: if (expected != expected), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:107->[Control Flow] Branch Info: Line: 107, Condition: if (expected < expected), Executed: true
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:108->[Control Flow] Branch Info: Line: 108, Condition: if (i != i), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:107->[Control Flow] Branch Info: Line: 107, Condition: if (expected < expected), Executed: true
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:108->[Control Flow] Branch Info: Line: 108, Condition: if (i != i), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:107->[Control Flow] Loop Info: Line: 107, Description: while at line 107
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:107->[Control Flow] Branch Info: Line: 107, Condition: if (expected < expected), Executed: false
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:114->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:114 -> java.lang.String.trim
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:116->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:116 -> java.lang.String.trim
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:115->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:115 -> java.lang.Long.parseLong
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:getNextArEntry:115->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.getNextArEntry:115 -> org.apache.commons.compress.archivers.ar.ArArchiveEntry.<init>
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:143->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read:143 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:144->[Control Flow] Branch Info: Line: 144, Condition: if (ret > 0), Executed: true
+org.apache.commons.compress.archivers.ar.ArArchiveInputStream:read:143->[Method Call] Call Stack: org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read:143 -> java.io.InputStream.read

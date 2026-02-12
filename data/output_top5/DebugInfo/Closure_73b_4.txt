@@ -1,0 +1,55 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testUnicode ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="[\u007f]"> but was:<var x="[]">
+
+com.google.javascript.jscomp.CodeGenerator:add:381->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:381 -> com.google.javascript.jscomp.CodeConsumer.endStatement
+com.google.javascript.jscomp.CodeGenerator:add:380->[Control Flow] Branch Info: Line: 380, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:384->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:384 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:add:384->[Control Flow] Branch Info: Line: 384, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:390->[Control Flow] Branch Info: Line: 390, Condition: if (ambiguousElseClause != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:add:391->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:391 -> com.google.javascript.jscomp.CodeConsumer.notePreferredLineBreak
+com.google.javascript.jscomp.CodeGenerator:add:390->[Control Flow] Branch Info: Line: 390, Condition: if (ambiguousElseClause != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:376->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:376 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.CodeGenerator:add:376->[Control Flow] Loop Info: Line: 376, Description: while at line 376
+com.google.javascript.jscomp.CodeGenerator:add:376->[Control Flow] Branch Info: Line: 376, Condition: if (precedence != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:140->[Control Flow] Branch Info: Line: 140, Condition: if (childCount == childCount), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:176->[Control Flow] Branch Info: Line: 176, Condition: if (first != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:310->[Control Flow] Branch Info: Line: 310, Condition: if (funcNeedsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:394->[Control Flow] Branch Info: Line: 394, Condition: if (hasElse != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:552->[Control Flow] Branch Info: Line: 552, Condition: if (ambiguousElseClause != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:620->[Control Flow] Branch Info: Line: 620, Condition: if (next != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:682->[Control Flow] Branch Info: Line: 682, Condition: if (needsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:730->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:730 -> com.google.javascript.jscomp.CodeConsumer.endSourceMapping
+com.google.javascript.jscomp.CodeGenerator:add:634->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:634 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:add:634->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:634 -> com.google.javascript.jscomp.CodeGenerator.jsString
+com.google.javascript.jscomp.CodeGenerator:add:70->[Local Variables] {"str":"\"\""}
+com.google.javascript.jscomp.CodeGenerator:add:71->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:71 -> com.google.javascript.jscomp.CodeConsumer.add
+com.google.javascript.jscomp.CodeGenerator:add:140->[Control Flow] Branch Info: Line: 140, Condition: if (childCount == childCount), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:176->[Control Flow] Branch Info: Line: 176, Condition: if (first != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:310->[Control Flow] Branch Info: Line: 310, Condition: if (funcNeedsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:394->[Control Flow] Branch Info: Line: 394, Condition: if (hasElse != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:552->[Control Flow] Branch Info: Line: 552, Condition: if (ambiguousElseClause != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:620->[Control Flow] Branch Info: Line: 620, Condition: if (next != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:682->[Control Flow] Branch Info: Line: 682, Condition: if (needsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:730->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:730 -> com.google.javascript.jscomp.CodeConsumer.endSourceMapping
+com.google.javascript.jscomp.CodeGenerator:add:201->[Local Variables] "{last\u003dSTRING  1 [sourcename:  [testcode] ], childCount\u003d1, type\u003d38, n\u003dNAME x 1 [sourcename:  [testcode] ], first\u003dSTRING  1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:add:140->[Control Flow] Branch Info: Line: 140, Condition: if (childCount == childCount), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:176->[Control Flow] Branch Info: Line: 176, Condition: if (first != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:310->[Control Flow] Branch Info: Line: 310, Condition: if (funcNeedsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:394->[Control Flow] Branch Info: Line: 394, Condition: if (hasElse != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:552->[Control Flow] Branch Info: Line: 552, Condition: if (ambiguousElseClause != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:620->[Control Flow] Branch Info: Line: 620, Condition: if (next != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:682->[Control Flow] Branch Info: Line: 682, Condition: if (needsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:730->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:730 -> com.google.javascript.jscomp.CodeConsumer.endSourceMapping
+com.google.javascript.jscomp.CodeGenerator:add:140->[Control Flow] Branch Info: Line: 140, Condition: if (childCount == childCount), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:176->[Control Flow] Branch Info: Line: 176, Condition: if (first != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:310->[Control Flow] Branch Info: Line: 310, Condition: if (funcNeedsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:394->[Control Flow] Branch Info: Line: 394, Condition: if (hasElse != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:552->[Control Flow] Branch Info: Line: 552, Condition: if (ambiguousElseClause != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:620->[Control Flow] Branch Info: Line: 620, Condition: if (next != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:682->[Control Flow] Branch Info: Line: 682, Condition: if (needsParens != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:add:729->[Local Variables] "{last\u003dNAME x 1 [sourcename:  [testcode] ], context\u003dSTATEMENT, type\u003d118, n\u003dVAR 1 [sourcename:  [testcode] ], first\u003dNAME x 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:add:730->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:730 -> com.google.javascript.jscomp.CodeConsumer.endSourceMapping
+com.google.javascript.jscomp.CodeGenerator:add:379->[Local Variables] "{last\u003dVAR 1 [sourcename:  [testcode] ], context\u003dOTHER, type\u003d132, n\u003dSCRIPT 1 [sourcename:  [testcode] ] [synthetic: 1], first\u003dVAR 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:add:380->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.add:380 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:add:380->[Control Flow] Branch Info: Line: 380, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true

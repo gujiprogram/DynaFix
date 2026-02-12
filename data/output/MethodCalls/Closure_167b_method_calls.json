@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.common.base.Function.apply",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.FlowScope.createChildFlowScope",
+    "doc": "/**\n   * Creates a child of this flow scope, to represent an instruction\n   * directly following this one.\n   */",
+    "code": "FlowScope createChildFlowScope();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter.declareNameInScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter.getTypeIfRefinable",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter.maybeRestrictTwoNames",
+    "doc": "/**\n   * Creates a semantic reverse abstract interpreter.\n   */",
+    "code": "return maybeRestrictTwoNames(\n          blindScope,"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.BooleanLiteralSet.contains",
+    "doc": "/**\n   * Returns whether {@code this} contains the given literal value.\n   */",
+    "code": "public boolean contains(boolean literalValue) {\n    switch (this.ordinal()) {\n      case 0: return false;\n      case 1: return literalValue;\n      case 2: return !literalValue;\n      case 3: return true;\n      default: throw new IndexOutOfBoundsException(\"Ordinal: \" +\n          this.ordinal());\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.getNativeType",
+    "doc": "/**\n   * Utility method for less verbose code.\n   */",
+    "code": "JSType getNativeType(JSTypeNative typeId) {\n    return registry.getNativeType(typeId);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.getPossibleToBooleanOutcomes",
+    "doc": "/**\n   * Computes the set of possible outcomes of the {@code ToBoolean} predicate\n   * for this type. The {@code ToBoolean} predicate is defined by the ECMA-262\n   * standard, 3<sup>rd</sup> edition. Its behavior for simple types can be\n   * summarized by the following table:\n   * <table>\n   * <tr><th>type</th><th>result</th></tr>\n   * <tr><td>{@code undefined}</td><td>{false}</td></tr>\n   * <tr><td>{@code null}</td><td>{false}</td></tr>\n   * <tr><td>{@code boolean}</td><td>{true, false}</td></tr>\n   * <tr><td>{@code number}</td><td>{true, false}</td></tr>\n   * <tr><td>{@code string}</td><td>{true, false}</td></tr>\n   * <tr><td>{@code Object}</td><td>{true}</td></tr>\n   * </table>\n   * @return the set of boolean literals for this type\n   */",
+    "code": "public abstract BooleanLiteralSet getPossibleToBooleanOutcomes();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.getRestrictedTypeGivenToBooleanOutcome",
+    "doc": "/**\n   * Computes the restricted type of this type knowing that the\n   * {@code ToBoolean} predicate has a specific value. For more information\n   * about the {@code ToBoolean} predicate, see\n   * {@link #getPossibleToBooleanOutcomes}.\n   *\n   * @param outcome the value of the {@code ToBoolean} predicate\n   *\n   * @return the restricted type, or the Any Type if the underlying type could\n   *         not have yielded this ToBoolean value\n   *\n   * TODO(user): Move this method to the SemanticRAI and use the visit\n   * method of types to get the restricted type.\n   */",
+    "code": "public JSType getRestrictedTypeGivenToBooleanOutcome(boolean outcome) {\n\n    BooleanLiteralSet literals = getPossibleToBooleanOutcomes();\n    if (literals.contains(outcome)) {\n      return this;\n    } else {\n      return getNativeType(JSTypeNative.NO_TYPE);\n    }\n  }"
+  }
+]

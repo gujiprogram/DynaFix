@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testMinusNegativeZero ===
+Exception: junit.framework.ComparisonFailure: expected:<x-[ ]-0.0> but was:<x-[]-0.0>
+
+com.google.javascript.jscomp.CodeConsumer:addNumber:245->[Local Variables] {"TransVarY":-0.0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:246->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:246 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:addNumber:246->[Local Variables] {"TransVarLastChar":"-"}
+com.google.javascript.jscomp.CodeConsumer:addNumber:247->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:247 -> com.google.javascript.jscomp.CodeConsumer.isNegativeZero
+com.google.javascript.jscomp.CodeConsumer:addNumber:247->[Local Variables] {"TransVarNegativeZeroOrPositive":true}
+com.google.javascript.jscomp.CodeConsumer:addNumber:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarY < 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarLastChar == TransVarLastChar), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:255->[Control Flow] Branch Info: Line: 255, Condition: if (TransVarY == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addNumber:255->[Control Flow] Branch Info: Line: 255, Condition: if (TransVarY == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:255->[Control Flow] Branch Info: Line: 255, Condition: if (TransVarNegativeZeroOrPositive == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:274->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:274 -> java.lang.String.valueOf
+com.google.javascript.jscomp.CodeConsumer:addNumber:274->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:274 -> com.google.javascript.jscomp.CodeConsumer.add

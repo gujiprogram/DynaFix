@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.isDeprecated",
+    "doc": "/**\n   * Returns whether the {@code @deprecated} annotation is present on this\n   * {@link JSDocInfo}.\n   */",
+    "code": "public boolean isDeprecated() {\n    return getFlag(MASK_DEPRECATED);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype",
+    "doc": "/**\n   * Gets the docInfo for this type.\n   */",
+    "code": "return getImplicitPrototype().getJSDocInfo();\n    } else {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo",
+    "doc": "/**\n   * Gets the docInfo on the specified property on this type.  This should not\n   * be done implemented recursively, as you generally need to know exactly on\n   * which type in the prototype chain the JSDocInfo exists.\n   */",
+    "code": "public JSDocInfo getOwnPropertyJSDocInfo(String propertyName) {\n    return null;\n  }"
+  }
+]

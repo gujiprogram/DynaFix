@@ -1,0 +1,59 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1002 ===
+Exception: java.lang.IllegalStateException
+
+com.google.javascript.jscomp.TypeCheck:visitVar:1629->[Local Variables] "{value\u003dFUNCTION  1 [source_file: [testcode]] : function (new:B): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeCheck:visitVar:1631->[Local Variables] "{var\u003dScope.Var B{function (new:B): undefined}}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1632->[Control Flow] Branch Info: Line: 1632, Condition: if (value != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1633->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1633 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitVar:1633->[Local Variables] "{valueType\u003dfunction (new:B): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1634->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1634 -> com.google.javascript.jscomp.Scope$Var.getType
+com.google.javascript.jscomp.TypeCheck:visitVar:1634->[Local Variables] "{nameType\u003dfunction (new:B): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1635->[Control Flow] Branch Info: Line: 1635, Condition: if (nameType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1637->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1637 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitVar:1638->[Control Flow] Branch Info: Line: 1638, Condition: if (info == null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1638->[Control Flow] Branch Info: Line: 1638, Condition: if (info == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1641->[Local Variables] "{info\u003dJSDocInfo}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1642->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1642 -> com.google.javascript.jscomp.TypeCheck.checkEnumAlias
+com.google.javascript.jscomp.TypeCheck:visitVar:1643->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1643 -> com.google.javascript.jscomp.Scope$Var.isTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitVar:1643->[Control Flow] Branch Info: Line: 1643, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1646 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignTo
+com.google.javascript.jscomp.TypeCheck:visitVar:1632->[Control Flow] Branch Info: Line: 1632, Condition: if (value != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Control Flow] Loop Info: Line: 1627, Description: while at line 1627
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Control Flow] Branch Info: Line: 1627, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitVar:1630->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1630 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeCheck:visitVar:1631->[Local Variables] "{var\u003dScope.Var A{function (new:A): undefined}}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1632->[Control Flow] Branch Info: Line: 1632, Condition: if (value != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1633->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1633 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitVar:1633->[Local Variables] "{valueType\u003dfunction (new:A): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1634->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1634 -> com.google.javascript.jscomp.Scope$Var.getType
+com.google.javascript.jscomp.TypeCheck:visitVar:1634->[Local Variables] "{nameType\u003dfunction (new:A): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1635->[Control Flow] Branch Info: Line: 1635, Condition: if (nameType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1637->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1637 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitVar:1638->[Control Flow] Branch Info: Line: 1638, Condition: if (info == null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1638->[Control Flow] Branch Info: Line: 1638, Condition: if (info == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1641->[Local Variables] "{info\u003dJSDocInfo}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1642->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1642 -> com.google.javascript.jscomp.TypeCheck.checkEnumAlias
+com.google.javascript.jscomp.TypeCheck:visitVar:1643->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1643 -> com.google.javascript.jscomp.Scope$Var.isTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitVar:1643->[Control Flow] Branch Info: Line: 1643, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1646 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignTo
+com.google.javascript.jscomp.TypeCheck:visitVar:1632->[Control Flow] Branch Info: Line: 1632, Condition: if (value != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Control Flow] Loop Info: Line: 1627, Description: while at line 1627
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Control Flow] Branch Info: Line: 1627, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitVar:1626->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1626 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.TypeCheck:visitVar:1626->[Control Flow] Branch Info: Line: 1626, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1626->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1626 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> com.google.javascript.rhino.Node.children
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Control Flow] Branch Info: Line: 1627, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1627 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitVar:1627->[Local Variables] "{name\u003dNAME B 1 [source_file: [testcode]] : function (new:B): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitVar:1628->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitVar:1628 -> com.google.javascript.rhino.Node.getFirstChild

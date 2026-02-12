@@ -1,0 +1,107 @@
+
+=== Debug Info for Test: org.apache.commons.cli.GnuParserTest::testShortWithEqual ===
+Exception: junit.framework.ComparisonFailure: expected:<[]bar> but was:<[=]bar>
+
+org.apache.commons.cli.GnuParser:flatten:56->[Local Variables] {"TransVarStopAtNonOptionBoolean":false,"TransVarCommandLineOptions":{"shortOpts":{"f":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"longOpts":{"foo":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"requiredOpts":[],"optionGroups":{}},"TransVarOptions":["-f\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:57->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:57 -> java.util.ArrayList.<init>
+org.apache.commons.cli.GnuParser:flatten:58->[Local Variables] {"TransVarOptionList":[]}
+org.apache.commons.cli.GnuParser:flatten:60->[Local Variables] {"TransVarEatTheRestBoolean":false}
+org.apache.commons.cli.GnuParser:flatten:61->[Local Variables] {"TransVarIndex":0}
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: true
+org.apache.commons.cli.GnuParser:flatten:66->[Local Variables] {"TransVarArgument":"-f\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:67->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:67 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:67->[Control Flow] Branch Info: Line: 67, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:73->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:73 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:73->[Control Flow] Branch Info: Line: 73, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:75->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:75 -> java.lang.String.startsWith
+org.apache.commons.cli.GnuParser:flatten:75->[Control Flow] Branch Info: Line: 75, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.GnuParser:flatten:76->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:76 -> org.apache.commons.cli.Util.stripLeadingHyphens
+org.apache.commons.cli.GnuParser:flatten:76->[Local Variables] {"TransVarOption":"f\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:77->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:77 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:77->[Control Flow] Branch Info: Line: 77, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: true
+org.apache.commons.cli.GnuParser:flatten:81->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:81 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:81->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:81 -> java.util.List.add
+org.apache.commons.cli.GnuParser:flatten:81->[Local Variables] {"TransVarOptionList":["-f"]}
+org.apache.commons.cli.GnuParser:flatten:82->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:82 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:82->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:82 -> java.util.List.add
+org.apache.commons.cli.GnuParser:flatten:87->[Local Variables] {"TransVarOptionList":["-f","\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarEatTheRestBoolean != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:98->[Local Variables] {"TransVarIndex":1}
+org.apache.commons.cli.GnuParser:flatten:61->[Control Flow] Loop Info: Line: 61, Description: while at line 61
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.size
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.toArray
+
+=== Debug Info for Test: org.apache.commons.cli.GnuParserTest::testLongWithEqualSingleDash ===
+Exception: junit.framework.ComparisonFailure: expected:<[]bar> but was:<[oo=]bar>
+
+org.apache.commons.cli.GnuParser:flatten:56->[Local Variables] {"TransVarStopAtNonOptionBoolean":false,"TransVarCommandLineOptions":{"shortOpts":{"f":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"longOpts":{"foo":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"requiredOpts":[],"optionGroups":{}},"TransVarOptions":["-foo\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:57->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:57 -> java.util.ArrayList.<init>
+org.apache.commons.cli.GnuParser:flatten:58->[Local Variables] {"TransVarOptionList":[]}
+org.apache.commons.cli.GnuParser:flatten:60->[Local Variables] {"TransVarEatTheRestBoolean":false}
+org.apache.commons.cli.GnuParser:flatten:61->[Local Variables] {"TransVarIndex":0}
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: true
+org.apache.commons.cli.GnuParser:flatten:66->[Local Variables] {"TransVarArgument":"-foo\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:67->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:67 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:67->[Control Flow] Branch Info: Line: 67, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:73->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:73 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:73->[Control Flow] Branch Info: Line: 73, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:75->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:75 -> java.lang.String.startsWith
+org.apache.commons.cli.GnuParser:flatten:75->[Control Flow] Branch Info: Line: 75, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.GnuParser:flatten:76->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:76 -> org.apache.commons.cli.Util.stripLeadingHyphens
+org.apache.commons.cli.GnuParser:flatten:76->[Local Variables] {"TransVarOption":"foo\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:77->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:77 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:77->[Control Flow] Branch Info: Line: 77, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: true
+org.apache.commons.cli.GnuParser:flatten:81->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:81 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:81->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:81 -> java.util.List.add
+org.apache.commons.cli.GnuParser:flatten:81->[Local Variables] {"TransVarOptionList":["-f"]}
+org.apache.commons.cli.GnuParser:flatten:82->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:82 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:82->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:82 -> java.util.List.add
+org.apache.commons.cli.GnuParser:flatten:87->[Local Variables] {"TransVarOptionList":["-f","oo\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarEatTheRestBoolean != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:98->[Local Variables] {"TransVarIndex":1}
+org.apache.commons.cli.GnuParser:flatten:61->[Control Flow] Loop Info: Line: 61, Description: while at line 61
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.size
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.toArray
+
+=== Debug Info for Test: org.apache.commons.cli.GnuParserTest::testLongWithEqual ===
+Exception: org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: --foo=bar
+
+org.apache.commons.cli.GnuParser:flatten:56->[Local Variables] {"TransVarStopAtNonOptionBoolean":false,"TransVarCommandLineOptions":{"shortOpts":{"f":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"longOpts":{"foo":{"opt":"f","longOpt":"foo","required":false,"optionalArg":false,"numberOfArgs":1,"values":[],"valuesep":"\u0000"}},"requiredOpts":[],"optionGroups":{}},"TransVarOptions":["--foo\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:57->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:57 -> java.util.ArrayList.<init>
+org.apache.commons.cli.GnuParser:flatten:58->[Local Variables] {"TransVarOptionList":[]}
+org.apache.commons.cli.GnuParser:flatten:60->[Local Variables] {"TransVarEatTheRestBoolean":false}
+org.apache.commons.cli.GnuParser:flatten:61->[Local Variables] {"TransVarIndex":0}
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: true
+org.apache.commons.cli.GnuParser:flatten:66->[Local Variables] {"TransVarArgument":"--foo\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:67->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:67 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:67->[Control Flow] Branch Info: Line: 67, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:73->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:73 -> java.lang.String.equals
+org.apache.commons.cli.GnuParser:flatten:73->[Control Flow] Branch Info: Line: 73, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:75->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:75 -> java.lang.String.startsWith
+org.apache.commons.cli.GnuParser:flatten:75->[Control Flow] Branch Info: Line: 75, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.GnuParser:flatten:76->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:76 -> org.apache.commons.cli.Util.stripLeadingHyphens
+org.apache.commons.cli.GnuParser:flatten:76->[Local Variables] {"TransVarOption":"foo\u003dbar"}
+org.apache.commons.cli.GnuParser:flatten:77->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:77 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:77->[Control Flow] Branch Info: Line: 77, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> java.lang.String.substring
+org.apache.commons.cli.GnuParser:flatten:80->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:80 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.GnuParser:flatten:80->[Control Flow] Branch Info: Line: 80, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:85->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:85 -> java.util.List.add
+org.apache.commons.cli.GnuParser:flatten:87->[Local Variables] {"TransVarOptionList":["--foo\u003dbar"]}
+org.apache.commons.cli.GnuParser:flatten:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarEatTheRestBoolean != 0), Executed: false
+org.apache.commons.cli.GnuParser:flatten:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:98->[Local Variables] {"TransVarIndex":1}
+org.apache.commons.cli.GnuParser:flatten:61->[Control Flow] Loop Info: Line: 61, Description: while at line 61
+org.apache.commons.cli.GnuParser:flatten:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarOptions < TransVarOptions), Executed: false
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.size
+org.apache.commons.cli.GnuParser:flatten:101->[Method Call] Call Stack: org.apache.commons.cli.GnuParser.flatten:101 -> java.util.List.toArray

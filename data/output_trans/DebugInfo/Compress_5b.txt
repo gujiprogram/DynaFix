@@ -1,0 +1,49 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.Maven221MultiVolumeTest::testRead7ZipMultiVolumeArchiveForStream ===
+Exception: junit.framework.AssertionFailedError: shouldn't be able to read from truncated entry
+
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarFileLength >= 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarStartTime >= 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarFileLength >= TransVarFileLength), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:211->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:211 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getMethod
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:211->[Control Flow] Branch Info: Line: 211, Condition: if (org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getMethod() == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:236 -> java.util.zip.Inflater.needsInput
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Control Flow] Branch Info: Line: 236, Condition: if (java.util.zip.Inflater.needsInput() != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:237->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:237 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Control Flow] Branch Info: Line: 236, Condition: if (java.util.zip.Inflater.needsInput() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:238->[Control Flow] Branch Info: Line: 238, Condition: if (this.lengthOfLastRead > 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:243->[Local Variables] {"TransVarRe":0}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:244->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:244 -> java.util.zip.Inflater.inflate
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarRe == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:248 -> java.util.zip.Inflater.finished
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarRe == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Control Flow] Branch Info: Line: 248, Condition: if (java.util.zip.Inflater.finished() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:251->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:251 -> java.util.zip.CRC32.update
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:251->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:251 -> java.util.zip.CRC32.update
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:195->[Control Flow] Branch Info: Line: 195, Condition: if (this.closed != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:201 -> java.util.zip.Inflater.finished
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Control Flow] Branch Info: Line: 201, Condition: if (java.util.zip.Inflater.finished() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Control Flow] Branch Info: Line: 201, Condition: if (this.current == null), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarData <= TransVarData), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarFileLength >= 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarStartTime >= 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarFileLength >= TransVarFileLength), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:211->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:211 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getMethod
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:211->[Control Flow] Branch Info: Line: 211, Condition: if (org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getMethod() == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:236 -> java.util.zip.Inflater.needsInput
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Control Flow] Branch Info: Line: 236, Condition: if (java.util.zip.Inflater.needsInput() != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:237->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:237 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:238->[Control Flow] Branch Info: Line: 238, Condition: if (this.lengthOfLastRead > 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:236->[Control Flow] Branch Info: Line: 236, Condition: if (java.util.zip.Inflater.needsInput() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:238->[Control Flow] Branch Info: Line: 238, Condition: if (this.lengthOfLastRead > 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:243->[Local Variables] {"TransVarRe":0}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:244->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:244 -> java.util.zip.Inflater.inflate
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:246->[Local Variables] {"TransVarData":[-3,-30,35,47,38,-109,115,-10,-7,-2,46,-93,-93,53,-113,-124,52,-42,-115,-125,63,103,-60,-91,-15,-16,-99,-54,61,-77,-97,40,"..."],"TransVarRe":94}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarRe == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:248->[Control Flow] Branch Info: Line: 248, Condition: if (java.util.zip.Inflater.finished() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:251->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:251 -> java.util.zip.CRC32.update
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:195->[Control Flow] Branch Info: Line: 195, Condition: if (this.closed != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read:201 -> java.util.zip.Inflater.finished
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Control Flow] Branch Info: Line: 201, Condition: if (java.util.zip.Inflater.finished() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:201->[Control Flow] Branch Info: Line: 201, Condition: if (this.current == null), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:read:209->[Control Flow] Branch Info: Line: 209, Condition: if (TransVarData <= TransVarData), Executed: true

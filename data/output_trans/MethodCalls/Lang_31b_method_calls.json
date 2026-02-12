@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang3.ArrayUtils.isEmpty",
+    "doc": "/**\n     * <p>Checks if an array of Objects is empty or <code>null</code>.</p>\n     *\n     * @param array  the array to test\n     * @return <code>true</code> if the array is empty or <code>null</code>\n     * @since 2.1\n     */",
+    "code": "public static <T> boolean isEmpty(T[] array) {\n        if (array == null || array.length == 0) {\n            return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.StringUtils.isEmpty",
+    "doc": "/**\n     * <p>Checks if a CharSequence is empty (\"\") or null.</p>\n     *\n     * <pre>\n     * StringUtils.isEmpty(null)      = true\n     * StringUtils.isEmpty(\"\")        = true\n     * StringUtils.isEmpty(\" \")       = false\n     * StringUtils.isEmpty(\"bob\")     = false\n     * StringUtils.isEmpty(\"  bob  \") = false\n     * </pre>\n     *\n     * <p>NOTE: This method changed in Lang version 2.0.\n     * It no longer trims the CharSequence.\n     * That functionality is available in isBlank().</p>\n     *\n     * @param cs  the CharSequence to check, may be null\n     * @return <code>true</code> if the CharSequence is empty or null\n     */",
+    "code": "public static boolean isEmpty(CharSequence cs) {\n        return cs == null || cs.length() == 0;\n    }"
+  }
+]

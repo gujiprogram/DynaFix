@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testBadInterfaceExtendsNonExistentInterfaces ===
+Exception: java.lang.NullPointerException
+
+com.google.javascript.jscomp.TypeCheck:checkInterfaceConflictProperties:1569->[Local Variables] "{interfaceType\u003dnonExistent1, t\u003dcom.google.javascript.jscomp.NodeTraversal@3625a016, functionName\u003dA, currentProperties\u003d{}, n\u003dFUNCTION A 4 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : function (this:A): ?, properties\u003d{}}"
+com.google.javascript.jscomp.TypeCheck:checkInterfaceConflictProperties:1570->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkInterfaceConflictProperties:1570 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.TypeCheck:checkInterfaceConflictProperties:1574->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.checkInterfaceConflictProperties:1574 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyNames

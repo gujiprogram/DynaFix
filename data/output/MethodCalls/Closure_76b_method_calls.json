@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode",
+    "doc": "/**\n   * @return True if n should be represented by a new CFG node in the control\n   * flow graph.\n   */",
+    "code": "public static boolean isEnteringNewCfgNode(Node n) {\n    Node parent = n.getParent();\n    switch (parent.getType()) {\n      case Token.BLOCK:\n      case Token.SCRIPT:\n      case Token.TRY:\n      case Token.FINALLY:\n        return true;\n      case Token.FUNCTION:\n        return n != parent.getFirstChild().getNext();\n      case Token.WHILE:\n      case Token.DO:\n      case Token.IF:\n        return NodeUtil.getConditionExpression(parent) != n;\n\n      case Token.FOR:\n        if (NodeUtil.isForIn(parent)) {\n          return n == parent.getLastChild();\n        } else {\n          return NodeUtil.getConditionExpression(parent) != n;\n        }\n      case Token.SWITCH:\n      case Token.CASE:\n      case Token.CATCH:\n      case Token.WITH:\n        return n != parent.getFirstChild();\n      default:\n        return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill",
+    "doc": "/**\n   * Give an expression and a variable. It returns READ, if the first\n   * reference of that variable is a read. It returns KILL, if the first\n   * reference of that variable is an assignment. It returns MAY_LIVE otherwise.\n   */",
+    "code": "private VariableLiveness isVariableReadBeforeKill(\n      Node n, String variable) {\n\n    if (NodeUtil.isName(n) && variable.equals(n.getString())) {\n      if (NodeUtil.isLhs(n, n.getParent())) {\n        Preconditions.checkState(n.getParent().getType() == Token.ASSIGN);\n        Node rhs = n.getNext();\n        VariableLiveness state = isVariableReadBeforeKill(rhs, variable);\n        if (state == VariableLiveness.READ) {\n          return state;\n        }\n        return VariableLiveness.KILL;\n      } else {\n        return VariableLiveness.READ;\n      }\n    }\n\n    switch (n.getType()) {\n      case Token.OR:\n      case Token.AND:\n      case Token.HOOK:\n        return checkHookBranchReadBeforeKill(\n            n.getFirstChild().getNext(), n.getLastChild(), variable);\n\n      default:\n        for (Node child = n.getFirstChild();\n            child != null; child = child.getNext()) {\n          if (!ControlFlowGraph.isEnteringNewCfgNode(child)) { // Not a FUNCTION\n          VariableLiveness state = isVariableReadBeforeKill(child, variable);\n          if (state != VariableLiveness.MAYBE_LIVE) {\n            return state;\n          }\n        }\n      }\n    }\n\n    return VariableLiveness.MAYBE_LIVE;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLhs",
+    "doc": "/**\n   * Determines whether this node is strictly on the left hand side of an assign\n   * or var initialization. Notably, this does not include all L-values, only\n   * statements where the node is used only as an L-value.\n   *\n   * @param n The node\n   * @param parent Parent of the node\n   * @return True if n is the left hand of an assign\n   */",
+    "code": "static boolean isLhs(Node n, Node parent) {\n    return (parent.getType() == Token.ASSIGN && parent.getFirstChild() == n) ||\n           parent.getType() == Token.VAR;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isName",
+    "doc": "/**\n   * Is this a NAME node?\n   */",
+    "code": "static boolean isName(Node n) {\n    return n.getType() == Token.NAME;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

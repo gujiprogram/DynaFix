@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isCall",
+    "doc": "/**\n   * Is this a CALL node?\n   */",
+    "code": "static boolean isCall(Node n) {\n    return n.getType() == Token.CALL;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldKnownMethods",
+    "doc": "/**\n * Just to fold known methods when they are called with constants.\n *\n */",
+    "code": "return tryFoldKnownMethods(subtree);\n    }\n    return subtree;\n  }\n\n  private Node tryFoldKnownMethods(Node subtree) {\n\n    subtree = tryFoldArrayJoin(subtree);\n\n    if (subtree.getType() == Token.CALL) {"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat._cloneFormat",
+    "doc": "/**\n     * Method for getting a non-shared DateFormat instance\n     * that uses specific timezone and can handle RFC-1123\n     * compliant date format.\n     *\n     * @since 2.4\n     */",
+    "code": "return _cloneFormat(DATE_FORMAT_ISO8601, DATE_FORMAT_STR_ISO8601, tz, loc, null);\n    }\n\n    public static DateFormat getRFC1123Format(TimeZone tz, Locale loc) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.StdDateFormat.hasTimeZone",
+    "doc": "/**\n     * Overridable helper method used to figure out which of supported\n     * formats is the likeliest match.\n     */",
+    "code": "private final static boolean hasTimeZone(String str)\n    {\n        int len = str.length();\n        if (len >= 6) {\n            char c = str.charAt(len-6);\n            if (c == '+' || c == '-') return true;\n            c = str.charAt(len-5);\n            if (c == '+' || c == '-') return true;\n            c = str.charAt(len-3);\n            if (c == '+' || c == '-') return true;\n        }\n        return false;\n    }"
+  }
+]

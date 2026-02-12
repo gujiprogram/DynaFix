@@ -1,0 +1,107 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.isTypeInferred",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkEnumAlias",
+    "doc": "/**\n   * <p>Checks enum aliases.\n   *\n   * <p>We verify that the enum element type of the enum used\n   * for initialization is a subtype of the enum element type of\n   * the enum the value is being copied in.</p>\n   *\n   * <p>Example:</p>\n   * <pre>var myEnum = myOtherEnum;</pre>\n   *\n   * <p>Enum aliases are irregular, so we need special code for this :(</p>\n   *\n   * @param value the value used for initialization of the enum\n   */",
+    "code": "private void checkEnumAlias(\n      NodeTraversal t, JSDocInfo declInfo, Node value) {\n    if (declInfo == null || !declInfo.hasEnumParameterType()) {\n      return;\n    }\n\n    JSType valueType = getJSType(value);\n    if (!valueType.isEnumType()) {\n      return;\n    }\n\n    EnumType valueEnumType = valueType.toMaybeEnumType();\n    JSType valueEnumPrimitiveType =\n        valueEnumType.getElementsType().getPrimitiveType();\n    validator.expectCanAssignTo(t, value, valueEnumPrimitiveType,\n        declInfo.getEnumParameterType().evaluate(t.getScope(), typeRegistry),\n        \"incompatible enum element types\");\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkPropertyInheritanceOnGetpropAssign",
+    "doc": "/**\n   * Visits an assignment <code>lvalue = rvalue</code>. If the\n   * <code>lvalue</code> is a prototype modification, we change the schema\n   * of the object type it is referring to.\n   * @param t the traversal\n   * @param assign the assign node\n   * (<code>assign.isAssign()</code> is an implicit invariant)\n   */",
+    "code": "private void checkPropertyInheritanceOnGetpropAssign(\n      NodeTraversal t, Node assign, Node object, String property,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.propertyIsImplicitCast",
+    "doc": "/**\n   * Returns true if any type in the chain has an implicitCast annotation for\n   * the given property.\n   */",
+    "code": "private boolean propertyIsImplicitCast(ObjectType type, String prop) {\n    for (; type != null; type = type.getImplicitPrototype()) {\n      JSDocInfo docInfo = type.getOwnPropertyJSDocInfo(prop);\n      if (docInfo != null && docInfo.isImplicitCast()) {\n        return true;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf",
+    "doc": "/**\n   * Expect that the first type can be assigned to a symbol of the second\n   * type.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param rightType The type on the RHS of the assign.\n   * @param leftType The type of the symbol on the LHS of the assign.\n   * @param owner The owner of the property being assigned to.\n   * @param propName The name of the property being assigned to.\n   * @return True if the types matched, false otherwise.\n   */",
+    "code": "boolean expectCanAssignToPropertyOf(NodeTraversal t, Node n, JSType rightType,\n      JSType leftType, Node owner, String propName) {\n    if (!leftType.isNoType() && !rightType.canAssignTo(leftType)) {\n      if (bothIntrinsics(rightType, leftType)) {\n        registerMismatch(rightType, leftType, null);\n      } else {\n        JSType ownerType = getJSType(owner);\n        if (ownerType.isFunctionPrototypeType()) {\n          FunctionType ownerFn = ownerType.toObjectType().getOwnerFunction();\n          if (ownerFn.isInterface() &&\n              rightType.isFunctionType() && leftType.isFunctionType()) {\n            return true;\n          }\n        }\n\n        mismatch(t, n,\n            \"assignment to property \" + propName + \" of \" +\n            getReadableJSTypeName(owner, true),\n            rightType, leftType);\n      }\n      return false;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getQualifiedName",
+    "doc": "/**\n   * This function takes a set of GETPROP nodes and produces a string that is\n   * each property separated by dots. If the node ultimately under the left\n   * sub-tree is not a simple name, this is not a valid qualified name.\n   *\n   * @return a null if this is not a qualified name, or a dot-separated string\n   *         of the name and properties.\n   */",
+    "code": "public String getQualifiedName() {\n    if (type == Token.NAME) {\n      String name = getString();\n      return name.isEmpty() ? null : name;\n    } else if (type == Token.GETPROP) {\n      String left = getFirstChild().getQualifiedName();\n      if (left == null) {\n        return null;\n      }\n      return left + \".\" + getLastChild().getString();\n    } else if (type == Token.THIS) {\n      return \"this\";\n    } else {\n      return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isGetProp",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isInterface",
+    "doc": "/**\n   * Whether this type is a {@link FunctionType} that is an interface or a named\n   * type that points to such a type.\n   */",
+    "code": "public boolean isInterface() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined",
+    "doc": "/**\n   * If this is a union type, returns a union type that does not include\n   * the null or undefined type.\n   */",
+    "code": "public JSType restrictByNotNullOrUndefined() {\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the property type of the property whose name is given. If the\n   * underlying object does not have this property, the Unknown type is\n   * returned to indicate that no information is available on this property.\n   *\n   * @return the property's type or {@link UnknownType}. This method never\n   *         returns {@code null}.\n   */",
+    "code": "public abstract JSType getPropertyType(String propertyName);"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasProperty",
+    "doc": "/**\n   * Sets the docInfo for the specified property from the\n   * {@link JSDocInfo} on its definition.\n   * @param info {@code JSDocInfo} for the property definition. May be\n   *        {@code null}.\n   */",
+    "code": "return hasProperty(propertyName) ?\n        getPropertyType(propertyName) : null;"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred",
+    "doc": "/**\n   * Checks whether the property's type is inferred.\n   */",
+    "code": "public abstract boolean isPropertyTypeInferred(String propertyName);"
+  }
+]

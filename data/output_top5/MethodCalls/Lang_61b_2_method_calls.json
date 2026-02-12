@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang.text.StrBuilder.deleteImpl",
+    "doc": "/**\n     * Internal method to delete a range without validation.\n     *\n     * @param startIndex  the start index, must be valid\n     * @param endIndex  the end index (exclusive), must be valid\n     * @param len  the length, must be valid\n     * @throws IndexOutOfBoundsException if any index is invalid\n     */",
+    "code": "private void deleteImpl(int startIndex, int endIndex, int len) {\n        System.arraycopy(buffer, endIndex, buffer, startIndex, size - endIndex);\n        size -= len;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang.text.StrBuilder.indexOf",
+    "doc": "/**\n     * Checks if the string builder contains a string matched using the\n     * specified matcher.\n     * <p>\n     * Matchers can be used to perform advanced searching behaviour.\n     * For example you could write a matcher to search for the character\n     * 'a' followed by a number.\n     *\n     * @param matcher  the matcher to use, null returns -1\n     * @return true if the matcher finds a match in the builder\n     */",
+    "code": "return indexOf(str, 0) >= 0;\n    }\n\n    public boolean contains(StrMatcher matcher) {"
+  }
+]

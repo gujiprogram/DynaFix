@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testUnicode ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="[\u007f]"> but was:<var x="[]">
+
+com.google.javascript.jscomp.CodeGenerator:jsString:939->[Local Variables] {"s":"\u000f"}
+com.google.javascript.jscomp.CodeGenerator:jsString:942->[Local Variables] {"singleq":0,"doubleq":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Local Variables] {"i":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:944->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:944 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Loop Info: Line: 943, Description: while at line 943
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:952->[Control Flow] Branch Info: Line: 952, Condition: if (doubleq < doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:959->[Local Variables] {"quote":"\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:960->[Local Variables] {"doublequote":"\\\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:963->[Local Variables] {"singlequote":"\u0027"}
+com.google.javascript.jscomp.CodeGenerator:jsString:964->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:964 -> com.google.javascript.jscomp.CodeGenerator.strEscape
+com.google.javascript.jscomp.CodeGenerator:jsString:939->[Local Variables] {"s":"h"}
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:jsString:944->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:944 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Loop Info: Line: 943, Description: while at line 943
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:952->[Control Flow] Branch Info: Line: 952, Condition: if (doubleq < doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:964->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:964 -> com.google.javascript.jscomp.CodeGenerator.strEscape
+com.google.javascript.jscomp.CodeGenerator:jsString:939->[Local Variables] {"s":""}
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:jsString:944->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:944 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Loop Info: Line: 943, Description: while at line 943
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:943 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:943->[Control Flow] Branch Info: Line: 943, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:952->[Control Flow] Branch Info: Line: 952, Condition: if (doubleq < doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:964->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:964 -> com.google.javascript.jscomp.CodeGenerator.strEscape

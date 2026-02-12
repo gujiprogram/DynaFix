@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang3.ArrayUtils.copyArrayGrow1",
+    "doc": "/**\n     * Returns a copy of the given array of size 1 greater than the argument.\n     * The last value of the array is left to the default value.\n     *\n     * @param array The array to copy, must not be <code>null</code>.\n     * @param newArrayComponentType If <code>array</code> is <code>null</code>, create a\n     * size 1 array of this type.\n     * @return A new copy of the array of size 1 greater than the input.\n     */",
+    "code": "private static Object copyArrayGrow1(Object array, Class<?> newArrayComponentType) {\n        if (array != null) {\n            int arrayLength = Array.getLength(array);\n            Object newArray = Array.newInstance(array.getClass().getComponentType(), arrayLength + 1);\n            System.arraycopy(array, 0, newArray, 0, arrayLength);\n            return newArray;\n        }\n        return Array.newInstance(newArrayComponentType, 1);\n    }"
+  }
+]

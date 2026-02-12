@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CompilerRunnerTest::testIssue115 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Normalize:process:90->[Local Variables] "{TransVarExternList\u003dBLOCK [synthetic: 1], TransVarNode\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.Normalize:process:91->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:91 -> com.google.javascript.jscomp.NodeTraversal.traverse
+com.google.javascript.jscomp.Normalize:process:96->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:96 -> com.google.javascript.jscomp.MakeDeclaredNamesUnique.<init>
+com.google.javascript.jscomp.Normalize:process:96->[Local Variables] {"TransVarUnique":{"nameStack":[],"rootRenamer":{"nameUsage":[],"declarations":{},"global":true}}}
+com.google.javascript.jscomp.Normalize:process:97->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:97 -> com.google.javascript.jscomp.NodeTraversal.<init>
+com.google.javascript.jscomp.Normalize:process:97->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@14102aea}"
+com.google.javascript.jscomp.Normalize:process:98->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:98 -> com.google.javascript.jscomp.NodeTraversal.traverseRoots
+com.google.javascript.jscomp.Normalize:process:100->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:100 -> com.google.javascript.jscomp.Normalize.removeDuplicateDeclarations
+com.google.javascript.jscomp.Normalize:process:101->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:101 -> com.google.javascript.jscomp.Normalize$PropogateConstantAnnotations.<init>
+com.google.javascript.jscomp.Normalize:process:102->[Method Call] Call Stack: com.google.javascript.jscomp.Normalize.process:102 -> com.google.javascript.jscomp.Normalize$PropogateConstantAnnotations.process

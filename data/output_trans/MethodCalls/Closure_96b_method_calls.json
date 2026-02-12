@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectArgumentMatchesParameter",
+    "doc": "/**\n   * Expect that the type of an argument matches the type of the parameter\n   * that it's fulfilling.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param argType The type of the argument.\n   * @param paramType The type of the parameter.\n   * @param callNode The call node, to help with the warning message.\n   * @param ordinal The argument ordinal, to help with the warning message.\n   */",
+    "code": "void expectArgumentMatchesParameter(NodeTraversal t, Node n, JSType argType,\n      JSType paramType, Node callNode, int ordinal) {\n    if (!argType.canAssignTo(paramType)) {\n      mismatch(t, n,\n          String.format(\"actual parameter %d of %s does not match \" +\n              \"formal parameter\", ordinal,\n              getReadableJSTypeName(callNode.getFirstChild(), false)),\n          argType, paramType);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this nodes's children.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node child : n.children()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> children() {\n    if (first == null) {\n      return Collections.emptySet();\n    } else {\n      return new SiblingNodeIterable(first);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public int getChildCount() {\n    int c = 0;\n    for (Node n = first; n != null; n = n.next)\n      c++;\n\n    return c;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getMaxArguments",
+    "doc": "/**\n   * Gets the maximum number of arguments that this function requires,\n   * or Integer.MAX_VALUE if this is a variable argument function.\n   */",
+    "code": "public int getMaxArguments() {\n    Node params = getParametersNode();\n    if (params != null) {\n      Node lastParam = params.getLastChild();\n      if (lastParam == null || !lastParam.isVarArgs()) {\n        return params.getChildCount();\n      }\n    }\n\n    return Integer.MAX_VALUE;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getMinArguments",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getParameters",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

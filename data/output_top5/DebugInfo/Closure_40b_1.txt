@@ -1,0 +1,77 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue284 ===
+Exception: java.lang.RuntimeException: java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1370->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":true}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1371->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"superclass":"ns.PageSelectionModel.FooEvent","onlyAffectsClassDef":true}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1329->[Local Variables] "{prop\u003dSTRING PageSelectionModel 1 [source_file: i0]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1330->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1330 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1330->[Control Flow] Branch Info: Line: 1330, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1336->[Local Variables] {"name":".PageSelectionModel.FooEvent"}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1337->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1337 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1337->[Local Variables] "{rootNameNode\u003dNAME ns 1 [source_file: i0]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1326->[Control Flow] Loop Info: Line: 1326, Description: while at line 1326
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1328 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Control Flow] Branch Info: Line: 1328, Condition: if (rootNameNode != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1339->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1339 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1338->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1338 -> com.google.javascript.jscomp.NodeUtil.isObjectLitKey
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1338->[Control Flow] Branch Info: Line: 1338, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1364 -> com.google.javascript.rhino.Node.isCall
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Control Flow] Branch Info: Line: 1364, Condition: if (com.google.javascript.rhino.Node.isCall() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1364 -> com.google.javascript.jscomp.NodeTraversal.inGlobalScope
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Control Flow] Branch Info: Line: 1364, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1365->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1365 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1366->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1366 -> com.google.javascript.jscomp.CodingConvention.getClassesDefinedByCall
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1367->[Control Flow] Branch Info: Line: 1367, Condition: if (classes != null), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1368->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1368 -> com.google.javascript.jscomp.NameAnalyzer$NameInformation.<init>
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1368->[Local Variables] {"nameInfo":{"isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1369->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+
+=== Debug Info for Test: com.google.javascript.jscomp.NameAnalyzerTest::testIssue284 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1364 -> com.google.javascript.rhino.Node.isCall
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Control Flow] Branch Info: Line: 1364, Condition: if (com.google.javascript.rhino.Node.isCall() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1364 -> com.google.javascript.jscomp.NodeTraversal.inGlobalScope
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1364->[Control Flow] Branch Info: Line: 1364, Condition: if (com.google.javascript.jscomp.NodeTraversal.inGlobalScope() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1365->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1365 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1366->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1366 -> com.google.javascript.jscomp.CodingConvention.getClassesDefinedByCall
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1367->[Control Flow] Branch Info: Line: 1367, Condition: if (classes != null), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1368->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1368 -> com.google.javascript.jscomp.NameAnalyzer$NameInformation.<init>
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1368->[Local Variables] {"nameInfo":{"isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1369->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":false}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1370->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"onlyAffectsClassDef":true}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1371->[Local Variables] {"nameInfo":{"name":"ns.PageSelectionModel.ChangeEvent","isExternallyReferenceable":false,"isPrototype":false,"superclass":"ns.PageSelectionModel.FooEvent","onlyAffectsClassDef":true}}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1336->[Local Variables] {"name":".FooEvent"}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1337->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1337 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1326->[Control Flow] Loop Info: Line: 1326, Description: while at line 1326
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1328 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Control Flow] Branch Info: Line: 1328, Condition: if (rootNameNode != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1329->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1329 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1329->[Local Variables] "{prop\u003dSTRING PageSelectionModel 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1330->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1330 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1330->[Control Flow] Branch Info: Line: 1330, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1331->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1331 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1336->[Local Variables] {"name":".PageSelectionModel.FooEvent"}
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1337->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1337 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1337->[Local Variables] "{rootNameNode\u003dNAME ns 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1326->[Control Flow] Loop Info: Line: 1326, Description: while at line 1326
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1328 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1328->[Control Flow] Branch Info: Line: 1328, Condition: if (rootNameNode != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1339->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1339 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1338->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.createNameInformation:1338 -> com.google.javascript.jscomp.NodeUtil.isObjectLitKey
+com.google.javascript.jscomp.NameAnalyzer:createNameInformation:1338->[Control Flow] Branch Info: Line: 1338, Condition: if (com.google.javascript.rhino.Node.getParent() != 0), Executed: false

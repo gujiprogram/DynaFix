@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.getConfig",
+    "doc": "/**********************************************************\n     */",
+    "code": "public DeserializationConfig getConfig() { return _config; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isAbstract",
+    "doc": "/**\n     * @since 2.6\n     */",
+    "code": "public boolean isAbstract() {\n        return Modifier.isAbstract(_class.getModifiers());\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isPrimitive",
+    "doc": "/**\n     * Convenience method for checking whether underlying Java type\n     * is a concrete class or not: abstract classes and interfaces\n     * are not.\n     */",
+    "code": "public final boolean isPrimitive() { return _class.isPrimitive(); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isThrowable",
+    "doc": "/**\n     * Convenience method for checking whether underlying Java type\n     * is a concrete class or not: abstract classes and interfaces\n     * are not.\n     */",
+    "code": "public boolean isThrowable() { return Throwable.class.isAssignableFrom(_class); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory._findCustomBeanDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer",
+    "doc": "/**\n     * Method called by {@link BeanDeserializerFactory} to see if there might be a standard\n     * deserializer registered for given type.\n     */",
+    "code": "return buildBeanDeserializer(ctxt, concreteType, beanDesc);\n            }\n        }\n\n        @SuppressWarnings(\"unchecked\")\n        JsonDeserializer<Object> deser = (JsonDeserializer<Object>) findStdDeserializer(ctxt, type, beanDesc);\n        if (deser != null) {\n            return deser;\n        }\n\n        if (!isPotentialBeanType(type.getRawClass())) {\n            return null;\n        }\n        return buildBeanDeserializer(ctxt, type, beanDesc);\n    }\n\n    @Override\n    public JsonDeserializer<Object> createBuilderBasedDeserializer(\n    \t\tDeserializationContext ctxt, JavaType valueType, BeanDescription beanDesc,\n    \t\tClass<?> builderClass)\n        throws JsonMappingException\n    {\n        JavaType builderType = ctxt.constructType(builderClass);\n        BeanDescription builderDesc = ctxt.getConfig().introspectForBuilder(builderType);\n        return buildBuilderBasedDeserializer(ctxt, valueType, builderDesc);\n    }\n\n    protected JsonDeserializer<?> findStdDeserializer(DeserializationContext ctxt,\n            JavaType type, BeanDescription beanDesc)\n        throws JsonMappingException\n    {\n        JsonDeserializer<?> deser = findDefaultDeserializer(ctxt, type, beanDesc);\n        if (deser != null) {\n            if (_factoryConfig.hasDeserializerModifiers()) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.findStdDeserializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.isPotentialBeanType",
+    "doc": "/**\n     * Helper method used to skip processing for types that we know\n     * can not be (i.e. are never consider to be) beans:\n     * things like primitives, Arrays, Enums, and proxy types.\n     *<p>\n     * Note that usually we shouldn't really be getting these sort of\n     * types anyway; but better safe than sorry.\n     */",
+    "code": "protected boolean isPotentialBeanType(Class<?> type)\n    {\n        String typeStr = ClassUtil.canBeABeanType(type);\n        if (typeStr != null) {\n            throw new IllegalArgumentException(\"Can not deserialize Class \"+type.getName()+\" (of type \"+typeStr+\") as a Bean\");\n        }\n        if (ClassUtil.isProxyType(type)) {\n            throw new IllegalArgumentException(\"Can not deserialize Proxy class \"+type.getName()+\" as a Bean\");\n        }\n         * and with [JACKSON-594], other non-static inner classes are ok\n        typeStr = ClassUtil.isLocalType(type, true);\n        if (typeStr != null) {\n            throw new IllegalArgumentException(\"Can not deserialize Class \"+type.getName()+\" (of type \"+typeStr+\") as a Bean\");\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.materializeAbstractType",
+    "doc": "/**\n     * Method called by {@link BeanDeserializerFactory} to see if there might be a standard\n     * deserializer registered for given type.\n     */",
+    "code": "protected JavaType materializeAbstractType(DeserializationContext ctxt,\n            JavaType type, BeanDescription beanDesc)"
+  }
+]

@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType2 ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: string}|{b: string, c: string, e: number})
+
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.JSTypeTest::testRecordTypeLeastSuperType3 ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: string}|{d: number, e: string, f: string})
+
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testSupAndInf ===
+Exception: junit.framework.AssertionFailedError: Expected: ({a: number, b: number}|{b: number, c: number})
+
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:177->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:177 -> com.google.javascript.rhino.jstype.RecordTypeBuilder.addProperty
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.jstype.RecordType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Control Flow] Loop Info: Line: 175, Description: while at line 175
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Control Flow] Branch Info: Line: 175, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:182->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:182 -> com.google.javascript.rhino.jstype.RecordTypeBuilder.build
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:167->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:167 -> com.google.javascript.rhino.jstype.RecordType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:166->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:166 -> com.google.javascript.rhino.jstype.JSType.isEquivalentTo
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:165->[Control Flow] Branch Info: Line: 165, Condition: if (com.google.javascript.rhino.jstype.RecordType.hasProperty() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:166->[Control Flow] Branch Info: Line: 166, Condition: if (com.google.javascript.rhino.jstype.JSType.isEquivalentTo() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:171->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:171 -> com.google.javascript.rhino.jstype.RecordType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:172->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:172 -> com.google.javascript.rhino.jstype.RecordType.getPropertyNode
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:171->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:171 -> com.google.javascript.rhino.jstype.RecordTypeBuilder.addProperty
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:164->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:164 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:164->[Control Flow] Branch Info: Line: 164, Condition: if (var4 != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Control Flow] Branch Info: Line: 175, Condition: if (var4 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:176->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:176 -> com.google.javascript.rhino.jstype.RecordType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.jstype.RecordType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Control Flow] Loop Info: Line: 175, Description: while at line 175
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Control Flow] Branch Info: Line: 175, Condition: if (var4 != 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:175 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:175->[Local Variables] {"property":"c"}
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:176->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:176 -> com.google.javascript.rhino.jstype.RecordType.hasProperty
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:176->[Control Flow] Branch Info: Line: 176, Condition: if (com.google.javascript.rhino.jstype.RecordType.hasProperty() == 0), Executed: true
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:177->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:177 -> com.google.javascript.rhino.jstype.RecordType.getPropertyType
+com.google.javascript.rhino.jstype.RecordType:getGreatestSubtypeHelper:178->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.getGreatestSubtypeHelper:178 -> com.google.javascript.rhino.jstype.RecordType.getPropertyNode

@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZoneCutover::testBug3476684_adjustOffset ===
+Exception: junit.framework.AssertionFailedError: expected:<2012-02-25T23:15:00.000-03:00> but was:<2012-02-25T23:15:00.000-02:00>
+
+org.joda.time.DateTimeZone:adjustOffset:1169->[Local Variables] {"TransVarTimestamp":1330215300000,"TransVarEarlierOrLaterTimeStamp":false}
+org.joda.time.DateTimeZone:adjustOffset:1170->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1170 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1170->[Local Variables] {"TransVarTimestampBefore":1330197300000}
+org.joda.time.DateTimeZone:adjustOffset:1171->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1171 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1171->[Local Variables] {"TransVarInstant":1330215300000}
+org.joda.time.DateTimeZone:adjustOffset:1172->[Control Flow] Branch Info: Line: 1172, Condition: if (TransVarInstant == 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1180->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1180 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1180->[Local Variables] {"TransVarLocalTimestamp":1330208100000}
+org.joda.time.DateTimeZone:adjustOffset:1181->[Control Flow] Branch Info: Line: 1181, Condition: if (TransVarEarlierOrLaterTimeStamp != 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1181->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1181 -> org.joda.time.DateTimeZone.convertLocalToUTC
+org.joda.time.DateTimeZone:adjustOffset:1169->[Local Variables] {"TransVarEarlierOrLaterTimeStamp":true}
+org.joda.time.DateTimeZone:adjustOffset:1170->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1170 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1171->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1171 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1172->[Control Flow] Branch Info: Line: 1172, Condition: if (TransVarInstant == 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1180->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1180 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1181->[Control Flow] Branch Info: Line: 1181, Condition: if (TransVarEarlierOrLaterTimeStamp != 0), Executed: true
+org.joda.time.DateTimeZone:adjustOffset:1181->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1181 -> org.joda.time.DateTimeZone.convertLocalToUTC
+org.joda.time.DateTimeZone:adjustOffset:1169->[Local Variables] {"TransVarTimestamp":1330218900000,"TransVarEarlierOrLaterTimeStamp":false}
+org.joda.time.DateTimeZone:adjustOffset:1170->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1170 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1170->[Local Variables] {"TransVarTimestampBefore":1330200900000}
+org.joda.time.DateTimeZone:adjustOffset:1171->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1171 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1171->[Local Variables] {"TransVarInstant":1330218900000}
+org.joda.time.DateTimeZone:adjustOffset:1172->[Control Flow] Branch Info: Line: 1172, Condition: if (TransVarInstant == 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1180->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1180 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1180->[Local Variables] {"TransVarLocalTimestamp":1330211700000}
+org.joda.time.DateTimeZone:adjustOffset:1181->[Control Flow] Branch Info: Line: 1181, Condition: if (TransVarEarlierOrLaterTimeStamp != 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1181->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1181 -> org.joda.time.DateTimeZone.convertLocalToUTC
+org.joda.time.DateTimeZone:adjustOffset:1169->[Local Variables] {"TransVarEarlierOrLaterTimeStamp":true}
+org.joda.time.DateTimeZone:adjustOffset:1170->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1170 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1171->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1171 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1172->[Control Flow] Branch Info: Line: 1172, Condition: if (TransVarInstant == 0), Executed: false
+org.joda.time.DateTimeZone:adjustOffset:1180->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1180 -> org.joda.time.DateTimeZone.convertUTCToLocal
+org.joda.time.DateTimeZone:adjustOffset:1181->[Control Flow] Branch Info: Line: 1181, Condition: if (TransVarEarlierOrLaterTimeStamp != 0), Executed: true
+org.joda.time.DateTimeZone:adjustOffset:1181->[Method Call] Call Stack: org.joda.time.DateTimeZone.adjustOffset:1181 -> org.joda.time.DateTimeZone.convertLocalToUTC

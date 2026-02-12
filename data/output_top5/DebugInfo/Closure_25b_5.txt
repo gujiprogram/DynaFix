@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+Exception: junit.framework.ComparisonFailure: expected:<{[foo: (number|undefined)]}> but was:<{[]}>
+
+com.google.javascript.jscomp.TypeInference:<init>:87->[Local Variables] "{reverseInterpreter\u003dcom.google.javascript.jscomp.type.SemanticReverseAbstractInterpreter@24eeac69, cfg\u003dcom.google.javascript.jscomp.ControlFlowAnalysis$AstControlFlowGraph@18539cb1, functionScope\u003dcom.google.javascript.jscomp.Scope@d5556bf, compiler\u003dcom.google.javascript.jscomp.Compiler@25f723b0}"
+com.google.javascript.jscomp.TypeInference:<init>:88->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:88 -> com.google.javascript.jscomp.LinkedFlowScope$FlowScopeJoinOp.<init>
+com.google.javascript.jscomp.TypeInference:<init>:88->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:88 -> com.google.javascript.jscomp.DataFlowAnalysis$BranchedForwardDataFlowAnalysis.<init>
+com.google.javascript.jscomp.TypeInference:<init>:90->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:90 -> com.google.javascript.jscomp.AbstractCompiler.getTypeRegistry
+com.google.javascript.jscomp.TypeInference:<init>:93->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:93 -> com.google.javascript.jscomp.LinkedFlowScope.createEntryLattice
+com.google.javascript.jscomp.TypeInference:<init>:99->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:99 -> com.google.javascript.jscomp.Scope.getDeclarativelyUnboundVarsWithoutTypes
+com.google.javascript.jscomp.TypeInference:<init>:99->[Local Variables] {"varIt":{"state":"NOT_READY"}}
+com.google.javascript.jscomp.TypeInference:<init>:100->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:100 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:<init>:100->[Control Flow] Branch Info: Line: 100, Condition: if (varIt != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:<init>:100->[Local Variables] "{varIt\u003dcom.google.common.collect.Iterators$7@4d84049a}"
+com.google.javascript.jscomp.TypeInference:<init>:101->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:101 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:<init>:101->[Local Variables] "{var\u003dScope.Var y{null}}"
+com.google.javascript.jscomp.TypeInference:<init>:102->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:102 -> com.google.javascript.jscomp.TypeInference.isUnflowable
+com.google.javascript.jscomp.TypeInference:<init>:102->[Control Flow] Branch Info: Line: 102, Condition: if (var != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:<init>:107->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:107 -> com.google.javascript.jscomp.Scope$Var.getName
+com.google.javascript.jscomp.TypeInference:<init>:107->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:107 -> com.google.javascript.jscomp.TypeInference.getNativeType
+com.google.javascript.jscomp.TypeInference:<init>:106->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:106 -> com.google.javascript.jscomp.type.FlowScope.inferSlotType
+com.google.javascript.jscomp.TypeInference:<init>:99->[Control Flow] Loop Info: Line: 99, Description: while at line 99
+com.google.javascript.jscomp.TypeInference:<init>:100->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:100 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:<init>:100->[Control Flow] Branch Info: Line: 100, Condition: if (varIt != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:<init>:109->[Local Variables] {"varIt":{"state":"DONE"}}
+com.google.javascript.jscomp.TypeInference:<init>:111->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:111 -> com.google.javascript.jscomp.Scope.getRootNode
+com.google.javascript.jscomp.TypeInference:<init>:111->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:111 -> com.google.javascript.jscomp.Scope.getTypeOfThis
+com.google.javascript.jscomp.TypeInference:<init>:111->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:111 -> com.google.javascript.jscomp.Scope.<init>
+com.google.javascript.jscomp.TypeInference:<init>:110->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.<init>:110 -> com.google.javascript.jscomp.LinkedFlowScope.createEntryLattice

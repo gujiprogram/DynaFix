@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode ===
+
+com.google.javascript.jscomp.CheckSideEffects:visit:144->[Control Flow] Branch Info: Line: 144, Condition: if (n == 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:89->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:89 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:visit:89->[Control Flow] Branch Info: Line: 89, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:90 -> com.google.javascript.rhino.Node.isComma
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.Node.isComma() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:94->[Control Flow] Branch Info: Line: 94, Condition: if (parent == null), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:89->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:89 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:visit:89->[Control Flow] Branch Info: Line: 89, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:90 -> com.google.javascript.rhino.Node.isComma
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.Node.isComma() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:94->[Control Flow] Branch Info: Line: 94, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:101 -> com.google.javascript.rhino.Node.isExprResult
+com.google.javascript.jscomp.CheckSideEffects:visit:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.isExprResult() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:107->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:107 -> com.google.javascript.rhino.Node.isQualifiedName
+com.google.javascript.jscomp.CheckSideEffects:visit:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.isQualifiedName() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getJSDocInfo() != null), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:111->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:111 -> com.google.javascript.jscomp.NodeUtil.isExpressionResultUsed
+com.google.javascript.jscomp.CheckSideEffects:visit:112->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:112 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:112->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:112 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.CheckSideEffects:visit:113->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:113 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:113->[Control Flow] Branch Info: Line: 113, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:125->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:125 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:125->[Control Flow] Branch Info: Line: 125, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:125->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:125 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:117->[Control Flow] Branch Info: Line: 117, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:125->[Control Flow] Branch Info: Line: 125, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:125->[Control Flow] Branch Info: Line: 125, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:126->[Control Flow] Branch Info: Line: 126, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:126->[Control Flow] Branch Info: Line: 126, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:130->[Control Flow] Branch Info: Line: 130, Condition: if (isSimpleOp == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.jscomp.NodeTraversal.getCompiler
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.jscomp.NodeTraversal.getCompiler() == 0), Executed: false

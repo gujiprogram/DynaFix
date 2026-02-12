@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.model.beans.PropertyPointer.getBaseValue",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.jxpath.util.ValueUtils.getLength",
+    "doc": "/**\n     * If there is a regular non-indexed read method for this property,\n     * uses this method to obtain the collection and then returns its\n     * length.\n     * Otherwise, attempts to guess the length of the collection by\n     * calling the indexed get method repeatedly.  The method is supposed\n     * to throw an exception if the index is out of bounds.\n     * @param object collection\n     * @param pd IndexedPropertyDescriptor\n     * @return int\n     */",
+    "code": "return getLength(getValue(object, pd));\n        }\n\n        Method readMethod = pd.getIndexedReadMethod();\n        if (readMethod == null) {"
+  }
+]

@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.LocaleUtilsTest::testLang865 ===
+Exception: java.lang.IllegalArgumentException: Invalid locale format: _GB
+
+org.apache.commons.lang3.LocaleUtils:toLocale:91->[Local Variables] {"TransVarString":"_GB"}
+org.apache.commons.lang3.LocaleUtils:toLocale:92->[Control Flow] Branch Info: Line: 92, Condition: if (TransVarString == null), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:98->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:98 -> java.lang.String.length
+org.apache.commons.lang3.LocaleUtils:toLocale:98->[Local Variables] {"TransVarLength":3}
+org.apache.commons.lang3.LocaleUtils:toLocale:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarLength < TransVarLength), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:105->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:105 -> java.lang.String.charAt
+org.apache.commons.lang3.LocaleUtils:toLocale:105->[Local Variables] {"TransVarFirstChar":"_"}
+org.apache.commons.lang3.LocaleUtils:toLocale:106->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:106 -> java.lang.String.charAt
+org.apache.commons.lang3.LocaleUtils:toLocale:106->[Local Variables] {"TransVarCh2":"G"}
+org.apache.commons.lang3.LocaleUtils:toLocale:107->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:107 -> java.lang.Character.isLowerCase
+org.apache.commons.lang3.LocaleUtils:toLocale:107->[Control Flow] Branch Info: Line: 107, Condition: if (TransVarFirstChar != 0), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:108->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:108 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.LocaleUtils:toLocale:108->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:108 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.LocaleUtils:toLocale:108->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:108 -> java.lang.StringBuilder.toString

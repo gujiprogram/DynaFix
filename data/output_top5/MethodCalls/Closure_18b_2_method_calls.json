@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.Compiler.newExternInput",
+    "doc": "/**\n   * Removes an input file from AST.\n   * @param id The id of the input to be removed.\n   */",
+    "code": "public CompilerInput newExternInput(String name) {\n    SourceAst ast = new SyntheticAst(name);\n    if (inputsById.containsKey(ast.getInputId())) {\n      throw new IllegalArgumentException(\"Conflicting externs name: \" + name);\n    }\n    CompilerInput input = new CompilerInput(ast, true);\n    putCompilerInput(input.getInputId(), input);\n    externsRoot.addChildToFront(ast.getAstRoot(this));\n    externs.add(0, input);\n    return input;\n  }"
+  }
+]

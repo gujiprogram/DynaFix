@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isStrWhiteSpaceChar",
+    "doc": "/**\n   * Copied from Rhino's ScriptRuntime\n   */",
+    "code": "public static TernaryValue isStrWhiteSpaceChar(int c) {\n    switch (c) {\n      case '\\u000B': // <VT>\n        return TernaryValue.UNKNOWN;  // IE says \"no\", ECMAScript says \"yes\"\n      case ' ': // <SP>\n      case '\\n': // <LF>\n      case '\\r': // <CR>\n      case '\\t': // <TAB>\n      case '\\u00A0': // <NBSP>\n      case '\\u000C': // <FF>\n      case '\\u2028': // <LS>\n      case '\\u2029': // <PS>\n      case '\\uFEFF': // <BOM>\n        return TernaryValue.TRUE;\n      default:\n        return (Character.getType(c) == Character.SPACE_SEPARATOR)\n            ? TernaryValue.TRUE : TernaryValue.FALSE;\n    }\n  }"
+  }
+]

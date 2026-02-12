@@ -1,0 +1,95 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent5 ===
+Exception: junit.framework.AssertionFailedError: expected:<100.0> but was:<62.5>
+
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:999->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:999 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Control Flow] Branch Info: Line: 997, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Control Flow] Branch Info: Line: 998, Condition: if (property == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:999->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:999 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Control Flow] Branch Info: Line: 997, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Control Flow] Branch Info: Line: 998, Condition: if (property == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:963->[Local Variables] "{key\u003dSTRING C 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:964 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Local Variables] "{rvalue\u003dNUMBER 3.0 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:966->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:966 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:965->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:965 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:967->[Control Flow] Branch Info: Line: 967, Condition: if (rightType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:975->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:975 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:978->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:978 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:976->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:976 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:979->[Control Flow] Branch Info: Line: 979, Condition: if (valid != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:980->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:980 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:990->[Local Variables] "{key\u003dSTRING C 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:991->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:991 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:993->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:993 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:992->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:992 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:994->[Control Flow] Branch Info: Line: 994, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:995 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Local Variables] {"property":"C"}
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:996 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:997 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Control Flow] Branch Info: Line: 997, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:998 -> com.google.javascript.jscomp.TypeCheck.propertyIsImplicitCast
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Control Flow] Branch Info: Line: 998, Condition: if (property == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:1001->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:1001 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetTypedPercent6 ===
+Exception: junit.framework.AssertionFailedError: expected:<100.0> but was:<66.66666666666667>
+
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:963->[Local Variables] "{key\u003dSTRING FALSE 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:964 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Local Variables] "{rvalue\u003dNUMBER 0.0 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:966->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:966 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:965->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:965 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:967->[Control Flow] Branch Info: Line: 967, Condition: if (rightType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:975->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:975 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:978->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:978 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:976->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:976 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:979->[Control Flow] Branch Info: Line: 979, Condition: if (valid != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:980->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:980 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:990->[Local Variables] "{key\u003dSTRING FALSE 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:991->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:991 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:993->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:993 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:992->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:992 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:994->[Control Flow] Branch Info: Line: 994, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:995 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Local Variables] {"property":"FALSE"}
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:996 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:997 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Control Flow] Branch Info: Line: 997, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Control Flow] Branch Info: Line: 998, Condition: if (property == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:963->[Local Variables] "{objlit\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}, t\u003dcom.google.javascript.jscomp.NodeTraversal@5300f14a, key\u003dSTRING TRUE 1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:964 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:964->[Local Variables] "{rvalue\u003dNUMBER 1.0 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:966->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:966 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:965->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:965 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:966->[Local Variables] "{rightType\u003dnumber}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:967->[Control Flow] Branch Info: Line: 967, Condition: if (rightType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:974->[Local Variables] "{owner\u003dOBJECTLIT 1 [sourcename:  [testcode] ] : {FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:975->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:975 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:975->[Local Variables] "{keyType\u003d?}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:978->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:978 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:976->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:976 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:978->[Local Variables] {"valid":true}
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:979->[Control Flow] Branch Info: Line: 979, Condition: if (valid != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:980->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:980 -> com.google.javascript.jscomp.TypeCheck.ensureTyped
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:990->[Local Variables] "{key\u003dSTRING TRUE 1 [sourcename:  [testcode] ] : number}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:991->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:991 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:991->[Local Variables] "{objlitType\u003d{FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:993->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:993 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:992->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:992 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:993->[Local Variables] "{type\u003d{FALSE: number, TRUE: number}}"
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:994->[Control Flow] Branch Info: Line: 994, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:995 -> com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:995->[Local Variables] {"property":"TRUE"}
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:996 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitObjLitKey:997 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:996->[Control Flow] Branch Info: Line: 996, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:997->[Control Flow] Branch Info: Line: 997, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitObjLitKey:998->[Control Flow] Branch Info: Line: 998, Condition: if (property == 0), Executed: false

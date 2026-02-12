@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.introspect.TestMixinMerging::testDisappearingMixins515 ===
+Exception: com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class com.fasterxml.jackson.databind.introspect.TestMixinMerging$PersonImpl and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) )
+
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Control Flow] Branch Info: Line: 643, Condition: if (var6 != 0), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:659->[Control Flow] Branch Info: Line: 659, Condition: if (TransVarAnnotatedMethod != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:667->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:667 -> com.fasterxml.jackson.databind.introspect.AnnotatedClass._constructMethod
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:667->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:667 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap.add
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:646->[Local Variables] {"TransVarAnnotatedMethodMap":{"_methods":{"getCity(0-args)":{}}}}
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Control Flow] Loop Info: Line: 647, Description: while at line 647
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Control Flow] Branch Info: Line: 647, Condition: if (var9 < var9), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Control Flow] Loop Info: Line: 643, Description: while at line 643
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:643 -> java.util.Iterator.hasNext
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Control Flow] Branch Info: Line: 643, Condition: if (var6 != 0), Executed: true
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:643 -> java.util.Iterator.next
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:646->[Local Variables] {"TransVarMixinClass":"interface com.fasterxml.jackson.databind.introspect.TestMixinMerging$Contact"}
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:647 -> java.lang.Class.getDeclaredMethods
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Control Flow] Branch Info: Line: 647, Condition: if (var9 < var9), Executed: true
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:650->[Local Variables] {"TransVarMethod":{"clazz":"interface com.fasterxml.jackson.databind.introspect.TestMixinMerging$Contact","slot":0,"name":"getCity","returnType":"class java.lang.String","parameterTypes":[],"exceptionTypes":[],"modifiers":1025,"root":{"clazz":"interface com.fasterxml.jackson.databind.introspect.TestMixinMerging$Contact","slot":0,"name":"getCity","returnType":"class java.lang.String","parameterTypes":[],"exceptionTypes":[],"modifiers":1025,"override":false},"override":false}}
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:651->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:651 -> com.fasterxml.jackson.databind.introspect.AnnotatedClass._isIncludableMemberMethod
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:651->[Control Flow] Branch Info: Line: 651, Condition: if (com.fasterxml.jackson.databind.introspect.AnnotatedClass._isIncludableMemberMethod() == 0), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:654->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:654 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap.find
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:659->[Control Flow] Branch Info: Line: 659, Condition: if (TransVarAnnotatedMethod != null), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:667->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:667 -> com.fasterxml.jackson.databind.introspect.AnnotatedClass._constructMethod
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:667->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:667 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap.add
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Control Flow] Loop Info: Line: 647, Description: while at line 647
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:647->[Control Flow] Branch Info: Line: 647, Condition: if (var9 < var9), Executed: false
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Control Flow] Loop Info: Line: 643, Description: while at line 643
+com.fasterxml.jackson.databind.introspect.AnnotatedClass:_addMethodMixIns:643->[Method Call] Call Stack: com.fasterxml.jackson.databind.introspect.AnnotatedClass._addMethodMixIns:643 -> java.util.Iterator.hasNext

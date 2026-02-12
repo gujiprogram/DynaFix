@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntaxTest::testSimpleFunctionCall ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:233->[Local Variables] "{n\u003dCALL 1 [free_call: 1] [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:234->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryFoldImmediateCallToBoundFunction:234 -> com.google.javascript.rhino.Node.isCall
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:234->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryFoldImmediateCallToBoundFunction:234 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:235->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryFoldImmediateCallToBoundFunction:235 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:235->[Local Variables] "{callTarget\u003dNAME bar 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:236->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryFoldImmediateCallToBoundFunction:236 -> com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.getCodingConvention
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:236->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.tryFoldImmediateCallToBoundFunction:236 -> com.google.javascript.jscomp.CodingConvention.describeFunctionBind
+com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax:tryFoldImmediateCallToBoundFunction:237->[Control Flow] Branch Info: Line: 237, Condition: if (bind != null), Executed: false

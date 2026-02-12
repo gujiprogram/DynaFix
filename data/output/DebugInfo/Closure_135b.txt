@@ -1,0 +1,68 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.DevirtualizePrototypeMethodsTest::testRewritePrototypeMethods2 ===
+Exception: junit.framework.AssertionFailedError: expected:<[FUNCTION a = function (this:a): ?, NAME JSCompiler_StaticMethods_foo$self = a, FUNCTION JSCompiler_StaticMethods_foo = function (a): number, NAME JSCompiler_StaticMethods_bar$self = a, FUNCTION JSCompiler_StaticMethods_bar = function (a, number): number, FUNCTION JSCompiler_StaticMethods_baz = function (a): ?, NEW a = a, CALL JSCompiler_StaticMethods_foo = number, CALL JSCompiler_StaticMethods_bar = number, CALL JSCompiler_StaticMethods_baz = ?]> but was:<[FUNCTION a = function (this:a): ?, NAME JSCompiler_StaticMethods_foo$self = null, FUNCTION JSCompiler_StaticMethods_foo = function (a): number, NAME JSCompiler_StaticMethods_bar$self = null, FUNCTION JSCompiler_StaticMethods_bar = function (a, number): number, FUNCTION JSCompiler_StaticMethods_baz = function (a): ?, NEW a = a, CALL JSCompiler_StaticMethods_foo = number, CALL JSCompiler_StaticMethods_bar = number, CALL JSCompiler_StaticMethods_baz = ?]>
+
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:354->[Local Variables] "{node\u003dBLOCK 8, name\u003dJSCompiler_StaticMethods_baz$self}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:355->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:355 -> com.google.javascript.jscomp.NodeUtil.isFunction
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:355->[Control Flow] Branch Info: Line: 355, Condition: if (node != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> com.google.javascript.rhino.Node.children
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:469 -> java.lang.String.equals
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Control Flow] Branch Info: Line: 469, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:470->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:470 -> com.google.javascript.rhino.jstype.JSType.toObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:471->[Control Flow] Branch Info: Line: 471, Condition: if (objType != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.<init>
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:472->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:472 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:361->[Local Variables] {"newName":{"str":"JSCompiler_StaticMethods_bar$self","type":38,"sourcePosition":-1}}
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:362->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:362 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.next
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Local Variables] "{child\u003dSTRING x 7 : string}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:360->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:360 -> com.google.javascript.jscomp.NodeUtil.isThis
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:360->[Control Flow] Branch Info: Line: 360, Condition: if (child != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:354->[Local Variables] "{node\u003dSTRING x 7 : string}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:355->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:355 -> com.google.javascript.jscomp.NodeUtil.isFunction
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:355->[Control Flow] Branch Info: Line: 355, Condition: if (node != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> com.google.javascript.rhino.Node.children
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:365->[Local Variables] "{node\u003dGETPROP 7 : number}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:365->[Local Variables] "{node\u003dRETURN 7}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:365->[Local Variables] "{node\u003dBLOCK 7}"
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Method Call] Call Stack: com.google.javascript.jscomp.DevirtualizePrototypeMethods.replaceReferencesToThis:359 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DevirtualizePrototypeMethods:replaceReferencesToThis:359->[Control Flow] Branch Info: Line: 359, Condition: if (var3 != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGoodExtends9 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:468->[Local Variables] "{inExterns\u003dtrue, name\u003dprototype, inferred\u003dfalse, type\u003d{...}.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:469 -> java.lang.String.equals
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Control Flow] Branch Info: Line: 469, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:470->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:470 -> com.google.javascript.rhino.jstype.JSType.toObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:470->[Local Variables] "{objType\u003d{...}.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:471->[Control Flow] Branch Info: Line: 471, Condition: if (objType != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.<init>
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:472->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:472 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:468->[Local Variables] "{inExterns\u003dfalse, type\u003dSub.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:469 -> java.lang.String.equals
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:469->[Control Flow] Branch Info: Line: 469, Condition: if (java.lang.String.equals() != 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:470->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:470 -> com.google.javascript.rhino.jstype.JSType.toObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:470->[Local Variables] "{objType\u003dSub.prototype}"
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:471->[Control Flow] Branch Info: Line: 471, Condition: if (objType != null), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionType.isNativeObjectType
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:474->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:474 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.<init>
+com.google.javascript.rhino.jstype.FunctionType:defineProperty:472->[Method Call] Call Stack: com.google.javascript.rhino.jstype.FunctionType.defineProperty:472 -> com.google.javascript.rhino.jstype.FunctionType.setPrototype

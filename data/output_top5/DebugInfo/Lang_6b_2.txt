@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs ===
+Exception: java.lang.StringIndexOutOfBoundsException: index 2,length 2
+
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:107->[Local Variables] {"translators":[{"lookupMap":{"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r"},"shortest":1,"longest":1}]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:108->[Local Variables] {"newArray":[null,null]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:109->[Local Variables] {"newArray":[{"lookupMap":{"\"":"\\\"","\\":"\\\\"},"shortest":1,"longest":1},null]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:110->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.with:110 -> java.lang.System.arraycopy
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:110->[Local Variables] {"newArray":[{"lookupMap":{"\"":"\\\"","\\":"\\\\"},"shortest":1,"longest":1},{"lookupMap":{"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r"},"shortest":1,"longest":1}]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:111->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.with:111 -> org.apache.commons.lang3.text.translate.AggregateTranslator.<init>
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:107->[Local Variables] {"translators":[{"below":32,"above":127,"between":false}]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:108->[Local Variables] {"newArray":[null,null]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:109->[Local Variables] {"newArray":[{"translators":[{"lookupMap":{"\"":"\\\"","\\":"\\\\"},"shortest":1,"longest":1},{"lookupMap":{"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r"},"shortest":1,"longest":1}]},null]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:110->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.with:110 -> java.lang.System.arraycopy
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:110->[Local Variables] {"newArray":[{"translators":[{"lookupMap":{"\"":"\\\"","\\":"\\\\"},"shortest":1,"longest":1},{"lookupMap":{"\b":"\\b","\t":"\\t","\n":"\\n","\f":"\\f","\r":"\\r"},"shortest":1,"longest":1}]},{"below":32,"above":127,"between":false}]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:with:111->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.with:111 -> org.apache.commons.lang3.text.translate.AggregateTranslator.<init>

@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunctionDeclaration",
+    "doc": "/**\n   * Is this node a function declaration? A function declaration is a function\n   * that has a name that is added to the current scope (i.e. a function that\n   * is not part of a expression; see {@link #isFunctionExpression}).\n   */",
+    "code": "static boolean isFunctionDeclaration(Node n) {\n    return n.isFunction() && isStatement(n);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.RemoveUnusedVars.isRemovableVar",
+    "doc": "/**\n   * Traverses everything in the current scope and marks variables that\n   * are referenced.\n   *\n   * During traversal, we identify subtrees that will only be\n   * referenced if their enclosing variables are referenced. Instead of\n   * traversing those subtrees, we create a continuation for them,\n   * and traverse them lazily.\n   */",
+    "code": "private boolean isRemovableVar(Var var) {\n    if (!removeGlobals && var.isGlobal()) {\n      return false;\n    }\n\n    if (referenced.contains(var)) {\n      return false;\n    }\n\n    if (codingConvention.isExported(var.getName())) {\n      return false;\n    }\n\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.RemoveUnusedVars.markReferencedVar",
+    "doc": "/**\n   * Marks a var as referenced, recursing into any values of this var\n   * that we skipped.\n   * @return True if this variable had not been referenced before.\n   */",
+    "code": "private boolean markReferencedVar(Var var) {\n    if (referenced.add(var)) {\n      for (Continuation c : continuations.get(var)) {\n        c.apply();\n      }\n      return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.RemoveUnusedVars.traverseFunction",
+    "doc": "/**\n   * Traverses a function, which creates a new scope in JavaScript.\n   *\n   * Note that CATCH blocks also create a new scope, but only for the\n   * catch variable. Declarations within the block actually belong to the\n   * enclosing scope. Because we don't remove catch variables, there's\n   * no need to treat CATCH blocks differently like we do functions.\n   */",
+    "code": "private void traverseFunction(Node n, Scope parentScope) {\n    Preconditions.checkState(n.getChildCount() == 3);\n    Preconditions.checkState(n.isFunction());\n\n    final Node body = n.getLastChild();\n    Preconditions.checkState(body.getNext() == null &&\n            body.isBlock());\n\n    Scope fnScope =\n        new SyntacticScopeCreator(compiler).createScope(n, parentScope);\n    traverseNode(body, n, fnScope);\n\n    collectMaybeUnreferencedVars(fnScope);\n    allFunctionScopes.add(fnScope);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVar",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

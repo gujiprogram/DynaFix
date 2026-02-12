@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePattern ===
+
+org.apache.commons.cli.TypeHandler:createValue:50->[Local Variables] {"str":"src/test/resources/existing-readable.file","obj":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:65->[Local Variables] {"clazz":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:92->[Method Call] Call Stack: org.apache.commons.cli.TypeHandler.createValue:92 -> org.apache.commons.cli.TypeHandler.createFile
+
+=== Debug Info for Test: org.apache.commons.cli.PatternOptionBuilderTest::testExistingFilePatternFileNotExist ===
+
+org.apache.commons.cli.TypeHandler:createValue:50->[Local Variables] {"str":"non-existing.file","obj":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:65->[Local Variables] {"clazz":"class java.io.FileInputStream"}
+org.apache.commons.cli.TypeHandler:createValue:92->[Method Call] Call Stack: org.apache.commons.cli.TypeHandler.createValue:92 -> org.apache.commons.cli.TypeHandler.createFile

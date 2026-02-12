@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: org.apache.commons.math.util.FastMathTest::testMinMaxFloat ===
+Exception: junit.framework.AssertionFailedError: max(50.0, -50.0) expected:<50.0> but was:<-50.0>
+
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Branch Info: Line: 918, Condition: if (i >= 0), Executed: false
+org.apache.commons.math.util.FastMath:slowexp:931->[Control Flow] Branch Info: Line: 931, Condition: if (result != null), Executed: true
+org.apache.commons.math.util.FastMath:slowexp:932->[Local Variables] {"result":[2.7182817459106445,-7.184550924856607E-8]}
+org.apache.commons.math.util.FastMath:slowexp:931->[Control Flow] Branch Info: Line: 931, Condition: if (result != null), Executed: false
+org.apache.commons.math.util.FastMath:slowexp:935->[Local Variables] {"result":[2.7182817459106445,8.254840070367875E-8]}
+org.apache.commons.math.util.FastMath:slowexp:926->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:926 -> org.apache.commons.math.util.FastMath.splitAdd
+org.apache.commons.math.util.FastMath:slowexp:926->[Local Variables] {"as":[0.2182818353176117,-6.858566459407185E-9]}
+org.apache.commons.math.util.FastMath:slowexp:927->[Local Variables] {"ys":[0.2182818353176117,-1.891512728124633E-9]}
+org.apache.commons.math.util.FastMath:slowexp:917->[Local Variables] {"ys":[0.2182818353176117,-6.858566459407185E-9]}
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Loop Info: Line: 918, Description: while at line 918
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Branch Info: Line: 918, Condition: if (i >= 0), Executed: true
+org.apache.commons.math.util.FastMath:slowexp:918->[Local Variables] {"i":2}
+org.apache.commons.math.util.FastMath:slowexp:919->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:919 -> org.apache.commons.math.util.FastMath.splitMult
+org.apache.commons.math.util.FastMath:slowexp:923->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:923 -> org.apache.commons.math.util.FastMath.split
+org.apache.commons.math.util.FastMath:slowexp:923->[Local Variables] {"as":[2.0,0.0]}
+org.apache.commons.math.util.FastMath:slowexp:924->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:924 -> org.apache.commons.math.util.FastMath.splitReciprocal
+org.apache.commons.math.util.FastMath:slowexp:925->[Local Variables] {"facts":[0.5,0.0]}
+org.apache.commons.math.util.FastMath:slowexp:926->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:926 -> org.apache.commons.math.util.FastMath.splitAdd
+org.apache.commons.math.util.FastMath:slowexp:926->[Local Variables] {"as":[0.7182818651199341,-3.66608888471025E-8]}
+org.apache.commons.math.util.FastMath:slowexp:927->[Local Variables] {"ys":[0.7182818651199341,-6.858566459407185E-9]}
+org.apache.commons.math.util.FastMath:slowexp:917->[Local Variables] {"ys":[0.7182818651199341,-3.66608888471025E-8]}
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Loop Info: Line: 918, Description: while at line 918
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Branch Info: Line: 918, Condition: if (i >= 0), Executed: true
+org.apache.commons.math.util.FastMath:slowexp:918->[Local Variables] {"i":1}
+org.apache.commons.math.util.FastMath:slowexp:919->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:919 -> org.apache.commons.math.util.FastMath.splitMult
+org.apache.commons.math.util.FastMath:slowexp:923->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:923 -> org.apache.commons.math.util.FastMath.split
+org.apache.commons.math.util.FastMath:slowexp:923->[Local Variables] {"as":[1.0,0.0]}
+org.apache.commons.math.util.FastMath:slowexp:924->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:924 -> org.apache.commons.math.util.FastMath.splitReciprocal
+org.apache.commons.math.util.FastMath:slowexp:925->[Local Variables] {"facts":[1.0,0.0]}
+org.apache.commons.math.util.FastMath:slowexp:926->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:926 -> org.apache.commons.math.util.FastMath.splitAdd
+org.apache.commons.math.util.FastMath:slowexp:926->[Local Variables] {"as":[1.7182817459106445,8.254840070367875E-8]}
+org.apache.commons.math.util.FastMath:slowexp:927->[Local Variables] {"ys":[1.7182817459106445,-3.66608888471025E-8]}
+org.apache.commons.math.util.FastMath:slowexp:917->[Local Variables] {"ys":[1.7182817459106445,8.254840070367875E-8]}
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Loop Info: Line: 918, Description: while at line 918
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Branch Info: Line: 918, Condition: if (i >= 0), Executed: true
+org.apache.commons.math.util.FastMath:slowexp:918->[Local Variables] {"i":0}
+org.apache.commons.math.util.FastMath:slowexp:919->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:919 -> org.apache.commons.math.util.FastMath.splitMult
+org.apache.commons.math.util.FastMath:slowexp:923->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:923 -> org.apache.commons.math.util.FastMath.split
+org.apache.commons.math.util.FastMath:slowexp:923->[Local Variables] {"as":[1.0,0.0]}
+org.apache.commons.math.util.FastMath:slowexp:924->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:924 -> org.apache.commons.math.util.FastMath.splitReciprocal
+org.apache.commons.math.util.FastMath:slowexp:926->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.slowexp:926 -> org.apache.commons.math.util.FastMath.splitAdd
+org.apache.commons.math.util.FastMath:slowexp:926->[Local Variables] {"as":[2.7182817459106445,8.254840070367875E-8]}
+org.apache.commons.math.util.FastMath:slowexp:927->[Local Variables] {"ys":[2.7182817459106445,8.254840070367875E-8]}
+org.apache.commons.math.util.FastMath:slowexp:918->[Control Flow] Loop Info: Line: 918, Description: while at line 918

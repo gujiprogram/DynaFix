@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.BisectionSolverTest::testMath369 ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:74->[Local Variables] {"TransVarMinValue":3.0,"TransVarInitialValue":3.1,"TransVarFunction":{},"TransVarMaximum":3.2}
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:65->[Local Variables] {"min":3.0,"max":3.2}
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:82->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BisectionSolver.solve:82 -> org.apache.commons.math.analysis.solvers.BisectionSolver.clearResult
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:83->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BisectionSolver.solve:83 -> org.apache.commons.math.analysis.solvers.BisectionSolver.verifyInterval
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:88->[Local Variables] {"i":0}
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:89->[Control Flow] Branch Info: Line: 89, Condition: if (this.maximalIterationCount < this.maximalIterationCount), Executed: true
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:90->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BisectionSolver.solve:90 -> org.apache.commons.math.analysis.solvers.UnivariateRealSolverUtils.midpoint
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:90->[Local Variables] {"m":3.1}
+org.apache.commons.math.analysis.solvers.BisectionSolver:solve:91->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BisectionSolver.solve:91 -> org.apache.commons.math.analysis.UnivariateRealFunction.value

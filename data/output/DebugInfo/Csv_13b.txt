@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput ===
+Exception: junit.framework.AssertionFailedError: expected:<"NULL"	[NULL]
+
+org.apache.commons.csv.CSVPrinter:print:124->[Local Variables] {"value":"NULL"}
+org.apache.commons.csv.CSVPrinter:print:125->[Control Flow] Branch Info: Line: 125, Condition: if (value == null), Executed: false
+org.apache.commons.csv.CSVPrinter:print:129->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:129 -> java.lang.Object.toString
+org.apache.commons.csv.CSVPrinter:print:130->[Local Variables] {"strValue":"NULL"}
+org.apache.commons.csv.CSVPrinter:print:131->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:131 -> java.lang.String.length
+org.apache.commons.csv.CSVPrinter:print:135->[Local Variables] {"offset":0,"len":4,"object":"NULL"}
+org.apache.commons.csv.CSVPrinter:print:136->[Control Flow] Branch Info: Line: 136, Condition: if (this.newRecord == false), Executed: false
+org.apache.commons.csv.CSVPrinter:print:139->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:139 -> org.apache.commons.csv.CSVFormat.isQuoteCharacterSet
+org.apache.commons.csv.CSVPrinter:print:139->[Control Flow] Branch Info: Line: 139, Condition: if (org.apache.commons.csv.CSVFormat.isQuoteCharacterSet() != 0), Executed: true
+org.apache.commons.csv.CSVPrinter:print:141->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:141 -> org.apache.commons.csv.CSVPrinter.printAndQuote
+org.apache.commons.csv.CSVPrinter:print:125->[Control Flow] Branch Info: Line: 125, Condition: if (value == null), Executed: true
+org.apache.commons.csv.CSVPrinter:print:126->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:126 -> org.apache.commons.csv.CSVFormat.getNullString
+org.apache.commons.csv.CSVPrinter:print:126->[Local Variables] {"nullString":"NULL"}
+org.apache.commons.csv.CSVPrinter:print:127->[Control Flow] Branch Info: Line: 127, Condition: if (nullString == null), Executed: false
+org.apache.commons.csv.CSVPrinter:print:131->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:131 -> java.lang.String.length
+org.apache.commons.csv.CSVPrinter:print:135->[Local Variables] {"value":"NULL"}
+org.apache.commons.csv.CSVPrinter:print:136->[Control Flow] Branch Info: Line: 136, Condition: if (this.newRecord == false), Executed: true
+org.apache.commons.csv.CSVPrinter:print:137->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:137 -> org.apache.commons.csv.CSVFormat.getDelimiter
+org.apache.commons.csv.CSVPrinter:print:137->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:137 -> java.lang.Appendable.append
+org.apache.commons.csv.CSVPrinter:print:136->[Control Flow] Branch Info: Line: 136, Condition: if (this.newRecord == false), Executed: false
+org.apache.commons.csv.CSVPrinter:print:139->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:139 -> org.apache.commons.csv.CSVFormat.isQuoteCharacterSet
+org.apache.commons.csv.CSVPrinter:print:139->[Control Flow] Branch Info: Line: 139, Condition: if (org.apache.commons.csv.CSVFormat.isQuoteCharacterSet() != 0), Executed: true
+org.apache.commons.csv.CSVPrinter:print:141->[Method Call] Call Stack: org.apache.commons.csv.CSVPrinter.print:141 -> org.apache.commons.csv.CSVPrinter.printAndQuote
+
+=== Debug Info for Test: org.apache.commons.csv.CSVPrinterTest::testMySqlNullStringDefault ===
+Exception: junit.framework.AssertionFailedError: expected:<\N> but was:<null>
+

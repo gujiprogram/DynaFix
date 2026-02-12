@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jfree.chart.plot.CategoryPlot.getDataset",
+    "doc": "/**\n     * Returns the primary dataset for the plot.\n     *\n     * @return The primary dataset (possibly <code>null</code>).\n     *\n     * @see #setDataset(CategoryDataset)\n     */",
+    "code": "public CategoryDataset getDataset() {\n        return getDataset(0);\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.CategoryPlot.getIndexOf",
+    "doc": "/**\n     * Returns the index of the specified renderer, or <code>-1</code> if the\n     * renderer is not assigned to this plot.\n     *\n     * @param renderer  the renderer (<code>null</code> permitted).\n     *\n     * @return The renderer index.\n     */",
+    "code": "public int getIndexOf(CategoryItemRenderer renderer) {\n        return this.renderers.indexOf(renderer);\n    }"
+  }
+]

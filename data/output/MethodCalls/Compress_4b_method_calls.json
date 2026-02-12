@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveOutputStream.finish",
+    "doc": "/**\n     * Whether to fall back to UTF and the language encoding flag if\n     * the file name cannot be encoded using the specified encoding.\n     *\n     * <p>Defaults to false.</p>\n     */",
+    "code": "public void finish() throws IOException {\n        if(entry != null) {\n            throw new IOException(\"This archives contains unclosed entries.\");\n        }\n\n        cdOffset = written;\n        for (Iterator i = entries.iterator(); i.hasNext(); ) {\n            writeCentralFileHeader((ZipArchiveEntry) i.next());\n        }\n        cdLength = written - cdOffset;\n        writeCentralDirectoryEnd();\n        offsets.clear();\n        entries.clear();\n    }"
+  }
+]

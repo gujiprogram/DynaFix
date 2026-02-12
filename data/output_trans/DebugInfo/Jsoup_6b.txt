@@ -1,0 +1,98 @@
+
+=== Debug Info for Test: org.jsoup.integration.ParseTest::testYahooArticle ===
+Exception: java.lang.IllegalArgumentException: Illegal group reference: group index is missing
+
+org.jsoup.nodes.Entities:unescape:53->[Control Flow] Loop Info: Line: 53, Description: while at line 53
+org.jsoup.nodes.Entities:unescape:56->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:56 -> java.util.regex.Matcher.find
+org.jsoup.nodes.Entities:unescape:56->[Control Flow] Branch Info: Line: 56, Condition: if (java.util.regex.Matcher.find() != 0), Executed: false
+org.jsoup.nodes.Entities:unescape:82->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":105,"lookbehindTo":0,"text":"\n\u0026quot;I believe the pricing will be competitive,\u0026quot; he told a news conference in Shanghai on Tuesday.","acceptMode":0,"first":-1,"last":55,"oldLast":55,"lastAppendPosition":55,"locals":[-1,-1,-1],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.nodes.Entities:unescape:83->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:83 -> java.util.regex.Matcher.appendTail
+org.jsoup.nodes.Entities:unescape:83->[Local Variables] {"TransVarStrBuffer":"\n\"I believe the pricing will be competitive,\" he told a news conference in Shanghai on Tuesday."}
+org.jsoup.nodes.Entities:unescape:84->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:84 -> java.lang.StringBuffer.toString
+org.jsoup.nodes.Entities:unescape:48->[Local Variables] {"TransVarStr":"\n                "}
+org.jsoup.nodes.Entities:unescape:49->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:49 -> java.lang.String.contains
+org.jsoup.nodes.Entities:unescape:49->[Control Flow] Branch Info: Line: 49, Condition: if (java.lang.String.contains() == 0), Executed: true
+org.jsoup.nodes.Entities:unescape:48->[Local Variables] {"TransVarStr":"\nIn July, GM said its electric Chevrolet Volt will be sold in the United States at \u0026#36;41,000 -- \u0026#36;8,000 more than its nearest competitor, the Nissan Leaf."}
+org.jsoup.nodes.Entities:unescape:49->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:49 -> java.lang.String.contains
+org.jsoup.nodes.Entities:unescape:49->[Control Flow] Branch Info: Line: 49, Condition: if (java.lang.String.contains() == 0), Executed: false
+org.jsoup.nodes.Entities:unescape:52->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:52 -> java.util.regex.Pattern.matcher
+org.jsoup.nodes.Entities:unescape:53->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:53 -> java.lang.String.length
+org.jsoup.nodes.Entities:unescape:55->[Local Variables] {"TransVarStrBuffer":""}
+org.jsoup.nodes.Entities:unescape:56->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:56 -> java.util.regex.Matcher.find
+org.jsoup.nodes.Entities:unescape:56->[Control Flow] Branch Info: Line: 56, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.nodes.Entities:unescape:60->[Local Variables] {"TransVarIntcharval":-1}
+org.jsoup.nodes.Entities:unescape:61->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:61 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:61->[Local Variables] {"TransVarStrchar":"36"}
+org.jsoup.nodes.Entities:unescape:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarStrchar != null), Executed: true
+org.jsoup.nodes.Entities:unescape:67->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:67 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:67->[Control Flow] Branch Info: Line: 67, Condition: if (java.util.regex.Matcher.group() != null), Executed: false
+org.jsoup.nodes.Entities:unescape:68->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:68 -> java.lang.Integer.valueOf
+org.jsoup.nodes.Entities:unescape:68->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:68 -> java.lang.Integer.intValue
+org.jsoup.nodes.Entities:unescape:69->[Local Variables] {"TransVarIntcharval":36}
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: false
+org.jsoup.nodes.Entities:unescape:76->[Control Flow] Branch Info: Line: 76, Condition: if (TransVarIntcharval == TransVarIntcharval), Executed: false
+org.jsoup.nodes.Entities:unescape:77->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:77 -> java.lang.Character.toString
+org.jsoup.nodes.Entities:unescape:77->[Local Variables] {"TransVarStr2":"$"}
+org.jsoup.nodes.Entities:unescape:78->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:78 -> java.util.regex.Matcher.appendReplacement
+org.jsoup.nodes.Entities:unescape:61->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:61 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarStrchar != null), Executed: false
+org.jsoup.nodes.Entities:unescape:72->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:72 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:72->[Local Variables] {"TransVarStr1":"quot"}
+org.jsoup.nodes.Entities:unescape:73->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:73 -> java.util.Map.containsKey
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: true
+org.jsoup.nodes.Entities:unescape:74->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:74 -> java.util.Map.get
+org.jsoup.nodes.Entities:unescape:74->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:74 -> java.lang.Character.charValue
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: false
+org.jsoup.nodes.Entities:unescape:75->[Local Variables] {"TransVarIntcharval":34}
+org.jsoup.nodes.Entities:unescape:76->[Control Flow] Branch Info: Line: 76, Condition: if (TransVarIntcharval == TransVarIntcharval), Executed: false
+org.jsoup.nodes.Entities:unescape:77->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:77 -> java.lang.Character.toString
+org.jsoup.nodes.Entities:unescape:77->[Local Variables] {"TransVarStr2":"\""}
+org.jsoup.nodes.Entities:unescape:78->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:78 -> java.util.regex.Matcher.appendReplacement
+org.jsoup.nodes.Entities:unescape:78->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[1,7,2,6,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":105,"lookbehindTo":0,"text":"\n\u0026quot;I believe the pricing will be competitive,\u0026quot; he told a news conference in Shanghai on Tuesday.","acceptMode":0,"first":1,"last":7,"oldLast":7,"lastAppendPosition":7,"locals":[-1,-1,-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true},"TransVarStrBuffer":"\n\""}
+org.jsoup.nodes.Entities:unescape:53->[Control Flow] Loop Info: Line: 53, Description: while at line 53
+org.jsoup.nodes.Entities:unescape:56->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:56 -> java.util.regex.Matcher.find
+org.jsoup.nodes.Entities:unescape:56->[Control Flow] Branch Info: Line: 56, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.nodes.Entities:unescape:59->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[49,55,50,54,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":105,"lookbehindTo":0,"text":"\n\u0026quot;I believe the pricing will be competitive,\u0026quot; he told a news conference in Shanghai on Tuesday.","acceptMode":0,"first":49,"last":55,"oldLast":55,"lastAppendPosition":7,"locals":[-1,-1,-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.nodes.Entities:unescape:60->[Local Variables] {"TransVarIntcharval":-1}
+org.jsoup.nodes.Entities:unescape:61->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:61 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarStrchar != null), Executed: false
+org.jsoup.nodes.Entities:unescape:72->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:72 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:73->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:73 -> java.util.Map.containsKey
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: true
+org.jsoup.nodes.Entities:unescape:74->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:74 -> java.util.Map.get
+org.jsoup.nodes.Entities:unescape:74->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:74 -> java.lang.Character.charValue
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: false
+org.jsoup.nodes.Entities:unescape:75->[Local Variables] {"TransVarIntcharval":34}
+org.jsoup.nodes.Entities:unescape:76->[Control Flow] Branch Info: Line: 76, Condition: if (TransVarIntcharval == TransVarIntcharval), Executed: false
+org.jsoup.nodes.Entities:unescape:77->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:77 -> java.lang.Character.toString
+org.jsoup.nodes.Entities:unescape:78->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:78 -> java.util.regex.Matcher.appendReplacement
+org.jsoup.nodes.Entities:unescape:78->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[49,55,50,54,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":105,"lookbehindTo":0,"text":"\n\u0026quot;I believe the pricing will be competitive,\u0026quot; he told a news conference in Shanghai on Tuesday.","acceptMode":0,"first":49,"last":55,"oldLast":55,"lastAppendPosition":55,"locals":[-1,-1,-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true},"TransVarStrBuffer":"\n\"I believe the pricing will be competitive,\""}
+
+=== Debug Info for Test: org.jsoup.nodes.EntitiesTest::quoteReplacements ===
+Exception: java.lang.IllegalArgumentException: character to be escaped is missing
+
+org.jsoup.nodes.Entities:unescape:48->[Local Variables] {"TransVarStr":"\u0026#92; \u0026#36;"}
+org.jsoup.nodes.Entities:unescape:49->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:49 -> java.lang.String.contains
+org.jsoup.nodes.Entities:unescape:49->[Control Flow] Branch Info: Line: 49, Condition: if (java.lang.String.contains() == 0), Executed: false
+org.jsoup.nodes.Entities:unescape:52->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:52 -> java.util.regex.Pattern.matcher
+org.jsoup.nodes.Entities:unescape:52->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":11,"lookbehindTo":0,"text":"\u0026#92; \u0026#36;","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1,-1,-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.nodes.Entities:unescape:53->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:53 -> java.lang.String.length
+org.jsoup.nodes.Entities:unescape:55->[Local Variables] {"TransVarStrBuffer":""}
+org.jsoup.nodes.Entities:unescape:56->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:56 -> java.util.regex.Matcher.find
+org.jsoup.nodes.Entities:unescape:56->[Control Flow] Branch Info: Line: 56, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.nodes.Entities:unescape:59->[Local Variables] {"TransVarMatcher":{"parentPattern":{"pattern":"\u0026(#(x|X)?([0-9a-fA-F]+)|[a-zA-Z]+);?","flags":0},"groups":[0,5,1,4,-1,-1,2,4,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":11,"lookbehindTo":0,"text":"\u0026#92; \u0026#36;","acceptMode":0,"first":0,"last":5,"oldLast":5,"lastAppendPosition":0,"locals":[-1,-1,-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.nodes.Entities:unescape:60->[Local Variables] {"TransVarIntcharval":-1}
+org.jsoup.nodes.Entities:unescape:61->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:61 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:61->[Local Variables] {"TransVarStrchar":"92"}
+org.jsoup.nodes.Entities:unescape:62->[Control Flow] Branch Info: Line: 62, Condition: if (TransVarStrchar != null), Executed: true
+org.jsoup.nodes.Entities:unescape:67->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:67 -> java.util.regex.Matcher.group
+org.jsoup.nodes.Entities:unescape:67->[Control Flow] Branch Info: Line: 67, Condition: if (java.util.regex.Matcher.group() != null), Executed: false
+org.jsoup.nodes.Entities:unescape:67->[Local Variables] {"TransVarRadix":10}
+org.jsoup.nodes.Entities:unescape:68->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:68 -> java.lang.Integer.valueOf
+org.jsoup.nodes.Entities:unescape:68->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:68 -> java.lang.Integer.intValue
+org.jsoup.nodes.Entities:unescape:69->[Local Variables] {"TransVarIntcharval":92}
+org.jsoup.nodes.Entities:unescape:73->[Control Flow] Branch Info: Line: 73, Condition: if (TransVarStr2 != 0), Executed: false
+org.jsoup.nodes.Entities:unescape:76->[Control Flow] Branch Info: Line: 76, Condition: if (TransVarIntcharval == TransVarIntcharval), Executed: false
+org.jsoup.nodes.Entities:unescape:77->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:77 -> java.lang.Character.toString
+org.jsoup.nodes.Entities:unescape:77->[Local Variables] {"TransVarStr2":"\\"}
+org.jsoup.nodes.Entities:unescape:78->[Method Call] Call Stack: org.jsoup.nodes.Entities.unescape:78 -> java.util.regex.Matcher.appendReplacement

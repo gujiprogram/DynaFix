@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue700 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:580->[Local Variables] "{TransVarInferType\u003dnumber}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:581 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Control Flow] Branch Info: Line: 581, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:585->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:585 -> com.google.javascript.rhino.jstype.PrototypeObjectType.defineInferredProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Loop Info: Line: 574, Description: while at line 574
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Branch Info: Line: 574, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Local Variables] {"TransVarPropType":"text"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:578 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Local Variables] "{TransVarPropertyType\u003dstring}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:579 -> com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:580->[Local Variables] "{TransVarInferType\u003dstring}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:581 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Control Flow] Branch Info: Line: 581, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:585->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:585 -> com.google.javascript.rhino.jstype.PrototypeObjectType.defineInferredProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Loop Info: Line: 574, Description: while at line 574
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:570->[Control Flow] Branch Info: Line: 570, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Branch Info: Line: 574, Condition: if (var2 != 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:569->[Local Variables] "{TransVarObjectType\u003d{b: boolean, n: number, text: string}}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:570->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:570 -> com.google.javascript.rhino.jstype.ObjectType.isRecordType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:570->[Control Flow] Branch Info: Line: 570, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyNames
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Set.iterator
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Branch Info: Line: 574, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Local Variables] {"TransVarPropType":"b"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:578 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Local Variables] "{TransVarPropertyType\u003dboolean}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:579 -> com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:580->[Local Variables] "{TransVarInferType\u003dboolean}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:581 -> com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:581->[Control Flow] Branch Info: Line: 581, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:585->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:585 -> com.google.javascript.rhino.jstype.PrototypeObjectType.defineInferredProperty
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Control Flow] Branch Info: Line: 579, Condition: if (com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared() == 0), Executed: false
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Loop Info: Line: 574, Description: while at line 574
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Control Flow] Branch Info: Line: 574, Condition: if (var2 != 0), Executed: true
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:574->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:574 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:577->[Local Variables] {"TransVarPropType":"n"}
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:578 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:578->[Local Variables] "{TransVarPropertyType\u003dnumber}"
+com.google.javascript.rhino.jstype.PrototypeObjectType:matchConstraint:579->[Method Call] Call Stack: com.google.javascript.rhino.jstype.PrototypeObjectType.matchConstraint:579 -> com.google.javascript.rhino.jstype.PrototypeObjectType.isPropertyTypeDeclared

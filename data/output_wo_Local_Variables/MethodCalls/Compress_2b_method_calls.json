@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.read",
+    "doc": "/**\n     * Returns the next AR entry in this stream.\n     *\n     * @return the next AR entry.\n     * @throws IOException\n     *             if the entry could not be read\n     */",
+    "code": "public int read() throws IOException {\n        final int ret = input.read();\n        offset += (ret > 0 ? 1 : 0);\n        return ret;\n    }"
+  }
+]

@@ -1,0 +1,60 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::preservedCaseLinksCantNest ===
+Exception: junit.framework.AssertionFailedError: expected:<<A> ONE <[/A> <A> Two] </A>> but was:<<A> ONE <[A> Two </A>] </A>>
+
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:689 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:689 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Control Flow] Branch Info: Line: 689, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Control Flow] Loop Info: Line: 685, Description: while at line 685
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Control Flow] Branch Info: Line: 685, Condition: if (pos >= 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (excludeTag != null), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> org.jsoup.parser.HtmlTreeBuilder.currentElement
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (excludeTag != null), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:570->[Control Flow] Branch Info: Line: 570, Condition: if (org.jsoup.nodes.Element.nodeName() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:334 -> java.util.ArrayList.size
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Control Flow] Branch Info: Line: 334, Condition: if (pos >= 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Local Variables] {"pos":2}
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:335->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:335 -> java.util.ArrayList.get
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:335->[Local Variables] "{next\u003d\u003cA\u003e\n ONE \n \u003cA\u003e\n  Two\n \u003c/A\u003e\n\u003c/A\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:336->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:336 -> java.util.ArrayList.remove
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:337 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:337 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Control Flow] Branch Info: Line: 337, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Control Flow] Branch Info: Line: 334, Condition: if (pos >= 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:568->[Local Variables] {"excludeTag":"A"}
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (excludeTag != null), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> org.jsoup.parser.HtmlTreeBuilder.currentElement
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.generateImpliedEndTags:569 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (excludeTag != null), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:569->[Control Flow] Branch Info: Line: 569, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:generateImpliedEndTags:570->[Control Flow] Branch Info: Line: 570, Condition: if (org.jsoup.nodes.Element.nodeName() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:333->[Local Variables] {"elName":"A"}
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:334 -> java.util.ArrayList.size
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Control Flow] Branch Info: Line: 334, Condition: if (pos >= 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Local Variables] {"pos":3}
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:335->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:335 -> java.util.ArrayList.get
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:335->[Local Variables] "{next\u003d\u003cA\u003e\n Two\n\u003c/A\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:336->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:336 -> java.util.ArrayList.remove
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:337 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.popStackToClose:337 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:337->[Control Flow] Branch Info: Line: 337, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:popStackToClose:334->[Control Flow] Branch Info: Line: 334, Condition: if (pos >= 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:685 -> java.util.ArrayList.size
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Control Flow] Branch Info: Line: 685, Condition: if (pos >= 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Local Variables] {"pos":1}
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:686->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:686 -> java.util.ArrayList.get
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:686->[Local Variables] "{next\u003d\u003cA\u003e\n Two\n\u003c/A\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:687->[Control Flow] Branch Info: Line: 687, Condition: if (next == null), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:689 -> org.jsoup.nodes.Element.nodeName
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:689 -> java.lang.String.equals
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:689->[Control Flow] Branch Info: Line: 689, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Control Flow] Loop Info: Line: 685, Description: while at line 685
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Control Flow] Branch Info: Line: 685, Condition: if (pos >= 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:685->[Local Variables] {"pos":0}
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:686->[Method Call] Call Stack: org.jsoup.parser.HtmlTreeBuilder.getActiveFormattingElement:686 -> java.util.ArrayList.get
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:686->[Local Variables] "{next\u003d\u003cA\u003e\n ONE \n \u003cA\u003e\n  Two\n \u003c/A\u003e\n\u003c/A\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:getActiveFormattingElement:687->[Control Flow] Branch Info: Line: 687, Condition: if (next == null), Executed: false

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace.ensureGenerated",
+    "doc": "/**\n   * Creates an instance that may emit warnings when building the namespace.\n   *\n   * @param compiler The AbstractCompiler, for reporting code changes\n   * @param externsRoot The root of the externs to build a namespace for. If\n   *     this is null, externs and properties defined on extern types will not\n   *     be included in the global namespace.  If non-null, it allows\n   *     user-defined function on extern types to be included in the global\n   *     namespace.  E.g. String.foo.\n   * @param root The root of the rest of the code to build a namespace for.\n   */",
+    "code": "private void ensureGenerated() {\n    if (!generated) {\n      process();\n    }\n  }"
+  }
+]

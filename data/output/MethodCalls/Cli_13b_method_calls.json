@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.cli2.WriteableCommandLine.addValue",
+    "doc": "/**\n     * Adds a value to an Option in the CommandLine.\n     * @param option the Option to add to\n     * @param value the value to add\n     */",
+    "code": "void addValue(final Option option, final Object value);"
+  },
+  {
+    "method": "org.apache.commons.cli2.WriteableCommandLine.looksLikeOption",
+    "doc": "/**\n     * Detects whether the argument looks like an Option trigger\n     * @param argument the argument to test\n     * @return true if the argument looks like an Option trigger\n     */",
+    "code": "boolean looksLikeOption(final String argument);\n}"
+  },
+  {
+    "method": "org.apache.commons.cli2.option.ArgumentImpl.stripBoundaryQuotes",
+    "doc": "/**\n     * If there are any leading or trailing quotes remove them from the\n     * specified token.\n     *\n     * @param token\n     *            the token to strip leading and trailing quotes\n     *\n     * @return String the possibly modified token\n     */",
+    "code": "public String stripBoundaryQuotes(String token) {\n        if (!token.startsWith(\"\\\"\") || !token.endsWith(\"\\\"\")) {\n            return token;\n        }\n\n        token = token.substring(1, token.length() - 1);\n\n        return token;\n    }"
+  }
+]

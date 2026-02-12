@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notEmpty",
+    "doc": "/**\n     * Validates that the string is not empty\n     * @param string the string to test\n     */",
+    "code": "public static void notEmpty(String string) {\n        if (string == null || string.length() == 0)\n            throw new IllegalArgumentException(\"String must not be empty\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.attr",
+    "doc": "/**\n     * Get an attribute's value by its key.\n     * <p/>\n     * To get an absolute URL from an attribute that may be a relative URL, prefix the key with <code><b>abs</b></code>,\n     * which is a shortcut to the {@link #absUrl} method.\n     * E.g.: <blockquote><code>String url = a.attr(\"abs:href\");</code></blockquote>\n     * @param attributeKey The attribute key.\n     * @return The attribute, or empty string if not present (to avoid nulls).\n     * @see #attributes()\n     * @see #hasAttr(String)\n     * @see #absUrl(String)\n     */",
+    "code": "public String attr(String attributeKey) {\n        Validate.notNull(attributeKey);\n\n        if (hasAttr(attributeKey))\n            return attributes.get(attributeKey);\n        else if (attributeKey.toLowerCase().startsWith(\"abs:\"))\n            return absUrl(attributeKey.substring(\"abs:\".length()));\n        else return \"\";\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.hasAttr",
+    "doc": "/**\n     * Test if this element has an attribute.\n     * @param attributeKey The attribute key to check.\n     * @return true if the attribute exists, false if not.\n     */",
+    "code": "public boolean hasAttr(String attributeKey) {\n        Validate.notNull(attributeKey);\n        return attributes.hasKey(attributeKey);\n    }"
+  }
+]

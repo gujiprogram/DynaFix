@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.base.Predicate.apply",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.checkEnumElementCycle",
+    "doc": "/**\n   * Resolves a type by looking up its first component in the scope, and\n   * subsequent components as properties. The scope must have been fully\n   * parsed and a symbol table constructed.\n   * @return The type of the symbol, or null if the type could not be found.\n   */",
+    "code": "private void checkEnumElementCycle(ErrorReporter t) {\n    JSType referencedType = getReferencedType();\n    if (referencedType instanceof EnumElementType &&\n        ((EnumElementType) referencedType).getPrimitiveType() == this) {\n      handleTypeCycle(t);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.getReferencedType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.setReferencedType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.setResolvedTypeInternal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

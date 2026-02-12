@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.jsoup.select.SelectorTest::handlesCommasInSelector ===
+
+org.jsoup.select.QueryParser:parse:47->[Control Flow] Branch Info: Line: 47, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.select.QueryParser:parse:58->[Control Flow] Branch Info: Line: 58, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:66->[Control Flow] Branch Info: Line: 66, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:68->[Control Flow] Branch Info: Line: 68, Condition: if (seenWhite != 0), Executed: false
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":"[name\u003d1,2]"}
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":"[name\u003d1,2]","pos":0},"query":"[name\u003d1,2]","evals":[]}}
+org.jsoup.select.QueryParser:parse:47->[Control Flow] Branch Info: Line: 47, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.select.QueryParser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (this.evals == this.evals), Executed: true
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":"div, li:matches([0-9,]+)"}
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":"div, li:matches([0-9,]+)","pos":0},"query":"div, li:matches([0-9,]+)","evals":[]}}
+org.jsoup.select.QueryParser:parse:47->[Control Flow] Branch Info: Line: 47, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.select.QueryParser:parse:57->[Local Variables] {"seenWhite":false}
+org.jsoup.select.QueryParser:parse:58->[Control Flow] Branch Info: Line: 58, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: true
+org.jsoup.select.QueryParser:parse:59->[Local Variables] {"or":{"evaluators":[{"tagName":"div"}]}}
+org.jsoup.select.QueryParser:parse:62->[Control Flow] Branch Info: Line: 62, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.select.QueryParser:parse:63->[Local Variables] {"subQuery":" li:matches([0-9"}
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":" li:matches([0-9"}
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":" li:matches([0-9","pos":0},"query":" li:matches([0-9","evals":[]}}
+
+=== Debug Info for Test: org.jsoup.select.SelectorTest::mixCombinatorGroup ===
+
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.select.QueryParser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (this.evals == this.evals), Executed: true
+org.jsoup.select.QueryParser:combinator:86->[Control Flow] Branch Info: Line: 86, Condition: if (this.evals == this.evals), Executed: true
+org.jsoup.select.QueryParser:combinator:89->[Local Variables] {"e":{"evaluators":[{"tagName":"li"},{"evaluator":{"tagName":"ol"}}]}}
+org.jsoup.select.QueryParser:parse:47->[Control Flow] Branch Info: Line: 47, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() != 0), Executed: false
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.select.QueryParser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (this.evals == this.evals), Executed: true
+org.jsoup.select.QueryParser:combinator:93->[Control Flow] Branch Info: Line: 93, Condition: if (combinator == combinator), Executed: false
+org.jsoup.select.QueryParser:combinator:95->[Control Flow] Branch Info: Line: 95, Condition: if (combinator == combinator), Executed: false
+org.jsoup.select.QueryParser:combinator:97->[Control Flow] Branch Info: Line: 97, Condition: if (combinator == combinator), Executed: true
+org.jsoup.select.QueryParser:parse:51->[Control Flow] Loop Info: Line: 51, Description: while at line 51
+org.jsoup.select.QueryParser:parse:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.select.QueryParser:parse:75->[Control Flow] Branch Info: Line: 75, Condition: if (this.evals == this.evals), Executed: true
+org.jsoup.select.QueryParser:parse:64->[Local Variables] {"or":{"evaluators":[{"evaluators":[{"tagName":"ol"},{"evaluator":{"className":"foo"}}]},{"evaluators":[{"tagName":"li"},{"evaluator":{"evaluators":[{"tagName":"li"},{"evaluator":{"tagName":"ol"}}]}}]}]},"seenWhite":false}
+org.jsoup.select.QueryParser:parse:61->[Control Flow] Loop Info: Line: 61, Description: while at line 61
+org.jsoup.select.QueryParser:parse:62->[Control Flow] Branch Info: Line: 62, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.select.QueryParser:parse:51->[Control Flow] Loop Info: Line: 51, Description: while at line 51

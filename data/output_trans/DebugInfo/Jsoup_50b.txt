@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::supportsBOMinFiles ===
+Exception: junit.framework.AssertionFailedError
+
+org.jsoup.helper.DataUtil:parseByteData:92->[Local Variables] {"TransVarByteBuffer":{"hb":[-2,-1,0,60,0,33,0,68,0,79,0,67,0,84,0,89,0,80,0,69,0,32,0,72,0,84,0,77,0,76,0,32,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":1700,"capacity":1700,"address":0},"TransVarBase":"http://example.com"}
+org.jsoup.helper.DataUtil:parseByteData:97->[Control Flow] Branch Info: Line: 97, Condition: if (TransVarCharset == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:102->[Local Variables] {"TransVarByteBuffer":{"hb":[-2,-1,0,60,0,33,0,68,0,79,0,67,0,84,0,89,0,80,0,69,0,32,0,72,0,84,0,77,0,76,0,32,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":1700,"limit":1700,"capacity":1700,"address":0}}
+org.jsoup.helper.DataUtil:parseByteData:103->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:103 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:103->[Local Variables] "{TransVarNewParser\u003dorg.jsoup.parser.Parser@40cb8df7}"
+org.jsoup.helper.DataUtil:parseByteData:104->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:104 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseByteData:104->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:104 -> org.jsoup.select.Elements.first
+org.jsoup.helper.DataUtil:parseByteData:105->[Control Flow] Branch Info: Line: 105, Condition: if (TransVarMeta_content_type != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:123->[Control Flow] Branch Info: Line: 123, Condition: if (TransVarCharSet != null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:123->[Control Flow] Branch Info: Line: 123, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:124->[Control Flow] Branch Info: Line: 124, Condition: if (java.lang.String.equals() == 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:136->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:136 -> java.lang.String.length
+org.jsoup.helper.DataUtil:parseByteData:136->[Control Flow] Branch Info: Line: 136, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:136->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:136 -> java.lang.String.charAt
+org.jsoup.helper.DataUtil:parseByteData:136->[Control Flow] Branch Info: Line: 136, Condition: if (java.lang.String.length() > 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:136->[Control Flow] Branch Info: Line: 136, Condition: if (java.lang.String.charAt() == java.lang.String.charAt()), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:143->[Control Flow] Branch Info: Line: 143, Condition: if (TransVarDoc_parsed == null), Executed: false

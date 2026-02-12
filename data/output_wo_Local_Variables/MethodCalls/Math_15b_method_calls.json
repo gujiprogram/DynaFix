@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math3.util.FastMath.exp",
+    "doc": "/**\n     * Exponential function.\n     *\n     * Computes exp(x), function result is nearly rounded.   It will be correctly\n     * rounded to the theoretical value for 99.9% of input values, otherwise it will\n     * have a 1 UPL error.\n     *\n     * Method:\n     *    Lookup intVal = exp(int(x))\n     *    Lookup fracVal = exp(int(x-int(x) / 1024.0) * 1024.0 );\n     *    Compute z as the exponential of the remaining bits by a polynomial minus one\n     *    exp(x) = intVal * fracVal * (1 + z)\n     *\n     * Accuracy:\n     *    Calculation is done with 63 bits of precision, so result should be correctly\n     *    rounded for 99.9% of input values, with less than 1 ULP error otherwise.\n     *\n     * @param x   a double\n     * @return double e<sup>x</sup>\n     */",
+    "code": "public static double exp(double x) {\n        return exp(x, 0.0, null);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.log",
+    "doc": "/**\n     * Natural logarithm.\n     *\n     * @param x   a double\n     * @return log(x)\n     */",
+    "code": "public static double log(final double x) {\n        return log(x, null);\n    }"
+  }
+]

@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testPrintInOperatorInForLoop ===
+Exception: junit.framework.ComparisonFailure: expected:<for(a=c?0:[(0 in d)];;)foo()> but was:<for(a=c?0:[0 in d];;)foo()>
+
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1224->[Local Variables] "{n\u003dBLOCK 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1225 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Control Flow] Branch Info: Line: 1225, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Local Variables] "{c\u003dEXPR_RESULT 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1226 -> com.google.javascript.rhino.Node.isBlock
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Control Flow] Branch Info: Line: 1226, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1231 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Control Flow] Branch Info: Line: 1231, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1225 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Control Flow] Branch Info: Line: 1225, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1226 -> com.google.javascript.rhino.Node.isBlock
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Control Flow] Branch Info: Line: 1226, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1231 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Control Flow] Branch Info: Line: 1231, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1225 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1225->[Control Flow] Branch Info: Line: 1225, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1226 -> com.google.javascript.rhino.Node.isBlock
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1226->[Control Flow] Branch Info: Line: 1226, Condition: if (com.google.javascript.rhino.Node.isBlock() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.getFirstNonEmptyChild:1231 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CodeGenerator:getFirstNonEmptyChild:1231->[Control Flow] Branch Info: Line: 1231, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true

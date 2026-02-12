@@ -1,0 +1,77 @@
+[
+  {
+    "method": "org.jfree.chart.axis.CategoryAxis.getCategoryStart",
+    "doc": "/**\n     * Returns the starting coordinate for the specified category.\n     *\n     * @param category  the category.\n     * @param categoryCount  the number of categories.\n     * @param area  the data area.\n     * @param edge  the axis location.\n     *\n     * @return The coordinate.\n     *\n     * @see #getCategoryMiddle(int, int, Rectangle2D, RectangleEdge)\n     * @see #getCategoryEnd(int, int, Rectangle2D, RectangleEdge)\n     */",
+    "code": "public double getCategoryStart(int category, int categoryCount,\n                                   Rectangle2D area,"
+  },
+  {
+    "method": "org.jfree.chart.axis.ValueAxis.valueToJava2D",
+    "doc": "/**\n     * Converts a data value to a coordinate in Java2D space, assuming that the\n     * axis runs along one edge of the specified dataArea.\n     * <p>\n     * Note that it is possible for the coordinate to fall outside the area.\n     *\n     * @param value  the data value.\n     * @param area  the area for plotting the data.\n     * @param edge  the edge along which the axis lies.\n     *\n     * @return The Java2D coordinate.\n     *\n     * @see #java2DToValue(double, Rectangle2D, RectangleEdge)\n     */",
+    "code": "public abstract double valueToJava2D(double value, Rectangle2D area,\n                                         RectangleEdge edge);"
+  },
+  {
+    "method": "org.jfree.chart.plot.CategoryPlot.getDomainAxisEdge",
+    "doc": "/**\n     * Returns the domain axis edge.  This is derived from the axis location\n     * and the plot orientation.\n     *\n     * @return The edge (never <code>null</code>).\n     */",
+    "code": "public RectangleEdge getDomainAxisEdge() {\n        return getDomainAxisEdge(0);\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.CategoryPlot.getRangeAxisEdge",
+    "doc": "/**\n     * Returns the edge where the primary range axis is located.\n     *\n     * @return The edge (never <code>null</code>).\n     */",
+    "code": "public RectangleEdge getRangeAxisEdge() {\n        return getRangeAxisEdge(0);\n    }"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth",
+    "doc": "/**\n     * Returns the bar width.\n     *\n     * @return The bar width.\n     *\n     * @see #setBarWidth(double)\n     */",
+    "code": "public double getBarWidth() {\n        return this.barWidth;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.CategoryItemRendererState.getEntityCollection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemLabelGenerator",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemPaint",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getLowerClip",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getRowCount",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.getUpperClip",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.chart.renderer.category.StatisticalBarRenderer.isDrawBarOutline",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.statistics.StatisticalCategoryDataset.getMeanValue",
+    "doc": "/**\n     * Returns the mean value for an item.\n     *\n     * @param row  the row index (zero-based).\n     * @param column  the column index (zero-based).\n     *\n     * @return The mean value.\n     */",
+    "code": "public Number getMeanValue(int row, int column);"
+  },
+  {
+    "method": "org.jfree.data.statistics.StatisticalCategoryDataset.getStdDevValue",
+    "doc": "/**\n     * Returns the standard deviation value for an item.\n     *\n     * @param row  the row index (zero-based).\n     * @param column  the column index (zero-based).\n     *\n     * @return The standard deviation.\n     */",
+    "code": "public Number getStdDevValue(int row, int column);"
+  }
+]

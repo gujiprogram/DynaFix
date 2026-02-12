@@ -1,0 +1,63 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.univariate.BrentOptimizerTest::testKeepInitIfBest ===
+Exception: junit.framework.AssertionFailedError: Best point not reported
+
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:223->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:223 -> org.apache.commons.math3.optimization.univariate.BrentOptimizer.computeObjectiveValue
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:223->[Local Variables] {"TransVarFunctionValue":-0.9999999999999994}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarIsMaxim == 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:227->[Local Variables] {"TransVarPrevPoint":{"point":4.712388889475064,"value":-0.9999999999999959}}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:228->[Control Flow] Branch Info: Line: 228, Condition: if (TransVarIsMaxim != 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:228->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:228 -> org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.<init>
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:229->[Local Variables] {"TransVarBestPoint":{"point":4.7123889482608,"value":-0.9999999999999994}}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:230->[Control Flow] Branch Info: Line: 230, Condition: if (TransVarConvergenceChecker != null), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:231->[Control Flow] Branch Info: Line: 231, Condition: if (TransVarBestPoint != 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:235->[Control Flow] Branch Info: Line: 235, Condition: if (TransVarObjectiveFunctionValue <= 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarMid < 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:252->[Local Variables] {"TransVarVal":4.7123889482608}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:253->[Control Flow] Branch Info: Line: 253, Condition: if (TransVarFx > 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:254->[Local Variables] {"TransVarCurrent":4.712389048611653}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:255->[Local Variables] {"TransVarFxv":-0.9999999999999977}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:256->[Local Variables] {"TransVarW2":4.7123889482608}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:259->[Control Flow] Branch Info: Line: 259, Condition: if (TransVarW2 != 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:263->[Local Variables] {"TransVarFx":-0.9999999999999994}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:267->[Local Variables] {"TransVarIteration":5}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:161->[Control Flow] Loop Info: Line: 161, Description: while at line 161
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:163->[Local Variables] {"TransVarAvg":4.712388998436227}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:164->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:164 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:166->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:166 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:166->[Control Flow] Branch Info: Line: 166, Condition: if (TransVarVal <= 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:167->[Local Variables] {"TransVarStopFlag":true}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:168->[Control Flow] Branch Info: Line: 168, Condition: if (TransVarStopFlag == 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:265->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:265 -> org.apache.commons.math3.optimization.univariate.BrentOptimizer.best
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:164->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:164 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:166->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:166 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:166->[Control Flow] Branch Info: Line: 166, Condition: if (TransVarVal <= 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:168->[Control Flow] Branch Info: Line: 168, Condition: if (TransVarStopFlag == 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:169->[Local Variables] {"TransVarAlpha":0.0}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:170->[Local Variables] {"TransVarQ1":0.0}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:171->[Local Variables] {"TransVarR0":0.0}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:172->[Local Variables] {"TransVarD":0.0}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:173->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:173 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:173->[Control Flow] Branch Info: Line: 173, Condition: if (TransVarTol > 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:174->[Local Variables] {"TransVarR0":5.322696328136111E-8}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:175->[Local Variables] {"TransVarQ1":-1.0590962595813404E-7}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:177->[Local Variables] {"TransVarAlpha":-8.383739250436482E-15}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:178->[Local Variables] {"TransVarQ1":-3.182731784789903E-7}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:179->[Control Flow] Branch Info: Line: 179, Condition: if (TransVarQ1 > 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:183->[Local Variables] {"TransVarQ1":3.182731784789903E-7}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:184->[Local Variables] {"TransVarR0":5.322696372544675E-8}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:185->[Local Variables] {"TransVarEpsilon":-1.0590962595813317E-7}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarMid > 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarMid < 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:188->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:188 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:188->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:188 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:188->[Control Flow] Branch Info: Line: 188, Condition: if (TransVarR0 < 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:189->[Local Variables] {"TransVarMax":-2.634133133838642E-8}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:190->[Local Variables] {"TransVarD":4.712388969043359}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:191->[Control Flow] Branch Info: Line: 191, Condition: if (TransVarTol4 >= 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:192->[Control Flow] Branch Info: Line: 192, Condition: if (TransVarAvg <= 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:191->[Control Flow] Branch Info: Line: 191, Condition: if (TransVarTol4 < 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:213->[Local Variables] {"TransVarMax":-4.71238899538469E-8}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:214->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:214 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:214->[Control Flow] Branch Info: Line: 214, Condition: if (TransVarTol < 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:222->[Local Variables] {"TransVarD":4.7123889482608}

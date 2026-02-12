@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getRemainingJSDocLine",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "String getRemainingJSDocLine() {\n    int c;\n    for (;;) {\n      c = getChar();\n      switch (c) {\n        case '*':\n          if (peekChar() != '/') {\n            addToString(c);\n            break;\n          }\n        case EOF_CHAR:\n        case '\\n':\n          ungetChar(c);\n          this.string = getStringFromBuffer();\n          stringBufferTop = 0;\n          return this.string;\n\n        default:\n          addToString(c);\n          break;\n      }\n    }\n  }"
+  }
+]

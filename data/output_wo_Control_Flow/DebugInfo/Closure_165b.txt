@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue725 ===
+
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:120->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:120 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:<init>:87->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:87 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.RecordType:<init>:87->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:87 -> java.util.Iterator.next
+com.google.javascript.rhino.jstype.RecordType:<init>:87->[Local Variables] {"property":"name2"}
+com.google.javascript.rhino.jstype.RecordType:<init>:88->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:88 -> java.util.Map.get
+com.google.javascript.rhino.jstype.RecordType:<init>:88->[Local Variables] "{prop\u003dcom.google.javascript.rhino.jstype.RecordTypeBuilder$RecordProperty@5f36c8e3}"
+com.google.javascript.rhino.jstype.RecordType:<init>:94->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:94 -> com.google.javascript.rhino.jstype.RecordTypeBuilder$RecordProperty.getType
+com.google.javascript.rhino.jstype.RecordType:<init>:94->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:94 -> com.google.javascript.rhino.jstype.RecordTypeBuilder$RecordProperty.getPropertyNode
+com.google.javascript.rhino.jstype.RecordType:<init>:93->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:93 -> com.google.javascript.rhino.jstype.RecordType.defineDeclaredProperty
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:104->[Local Variables] "{other\u003d{name2: string}}"
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:105->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:105 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:110->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:110 -> com.google.javascript.rhino.jstype.JSType.toMaybeRecordType
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:110->[Local Variables] "{otherRecord\u003d{name2: string}}"
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:115->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:115 -> java.util.SortedMap.keySet
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:115->[Local Variables] {"keySet":["name","name2"]}
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:116->[Local Variables] "{otherProps\u003d{name2\u003dstring}}"
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:117->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:117 -> java.util.Map.keySet
+com.google.javascript.rhino.jstype.RecordType:isEquivalentTo:117->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isEquivalentTo:117 -> java.util.Set.equals
+com.google.javascript.rhino.jstype.RecordType:<init>:87->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.<init>:87 -> java.util.Iterator.hasNext
+com.google.javascript.rhino.jstype.JSTypeRegistry:canPropertyBeDefined:694->[Local Variables] "{greatestSubtype\u003d{name: string, name2: string}}"
+com.google.javascript.rhino.jstype.JSTypeRegistry:canPropertyBeDefined:695->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSTypeRegistry.canPropertyBeDefined:695 -> com.google.javascript.rhino.jstype.JSType.isEmptyType

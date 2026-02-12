@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonProperty$Access.ordinal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder._removeNonVisible",
+    "doc": "/**\n     * Helper method to handle recursive merging of annotations within accessor class,\n     * to ensure no annotations are accidentally dropped within chain when non-visible\n     * and secondary accessors are pruned later on.\n     *<p>\n     * See [databind#868] for more information.\n     *\n     * @since 2.6\n     */",
+    "code": "private <T> Linked<T> _removeNonVisible(Linked<T> node)\n    {\n        if (node == null) {\n            return node;\n        }\n        return node.withoutNonVisible();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder.findAccess",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder.removeNonVisible",
+    "doc": "/**\n     * @param inferMutators Whether mutators can be \"pulled in\" by visible\n     *    accessors or not.\n     */",
+    "code": "public void removeNonVisible(boolean inferMutators)\n    {\n         *  of explicit access type for property; if not \"AUTO\", it will\n         *  dictate how visibility checks are applied.\n        JsonProperty.Access acc = findAccess();\n        if (acc == null) {\n            acc = JsonProperty.Access.AUTO;\n        }\n        switch (acc) {\n        case READ_ONLY:\n            _setters = null;\n            _ctorParameters = null;\n            if (!_forSerialization) {\n                _fields = null;\n            }\n            break;\n        case READ_WRITE:\n            break;\n        case WRITE_ONLY:\n            _getters = null;\n            if (_forSerialization) {\n                _fields = null;\n            }\n            break;\n        default:\n        case AUTO: // the default case: base it on visibility\n            _getters = _removeNonVisible(_getters);\n            _ctorParameters = _removeNonVisible(_ctorParameters);\n\n            if (!inferMutators || (_getters == null)) {\n                _fields = _removeNonVisible(_fields);\n                _setters = _removeNonVisible(_setters);\n            }\n        }\n    }"
+  }
+]

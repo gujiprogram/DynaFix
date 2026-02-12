@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.node.TestConversions::testBase64Text ===
+Exception: junit.framework.AssertionFailedError: Failed (variant MODIFIED-FOR-URL, data length 1): Cannot access contents of TextNode as binary due to broken Base64 encoding: Unexpected end-of-String in base64 content
+
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:358->[Local Variables] {"b64variant":{"_name":"MIME"}}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:359->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:359 -> com.fasterxml.jackson.databind.node.TreeTraversingParser.currentNode
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:359->[Local Variables] {"n":{"_value":"AA\u003d\u003d"}}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:360->[Control Flow] Branch Info: Line: 360, Condition: if (n != null), Executed: true
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:363->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:363 -> com.fasterxml.jackson.databind.JsonNode.binaryValue
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:363->[Local Variables] {"data":[0]}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:364->[Control Flow] Branch Info: Line: 364, Condition: if (data != null), Executed: true
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:358->[Local Variables] {"b64variant":{"_name":"MIME-NO-LINEFEEDS"}}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:359->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:359 -> com.fasterxml.jackson.databind.node.TreeTraversingParser.currentNode
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:360->[Control Flow] Branch Info: Line: 360, Condition: if (n != null), Executed: true
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:363->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:363 -> com.fasterxml.jackson.databind.JsonNode.binaryValue
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:364->[Control Flow] Branch Info: Line: 364, Condition: if (data != null), Executed: true
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:358->[Local Variables] {"b64variant":{"_name":"MODIFIED-FOR-URL"}}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:359->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:359 -> com.fasterxml.jackson.databind.node.TreeTraversingParser.currentNode
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:359->[Local Variables] {"n":{"_value":"AA"}}
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:360->[Control Flow] Branch Info: Line: 360, Condition: if (n != null), Executed: true
+com.fasterxml.jackson.databind.node.TreeTraversingParser:getBinaryValue:363->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.TreeTraversingParser.getBinaryValue:363 -> com.fasterxml.jackson.databind.JsonNode.binaryValue

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractPeepholeOptimization.optimizeSubtree",
+    "doc": "/**\n   * Given a node to optimize and a traversal, optimize the node. Subclasses\n   * should override to provide their own peephole optimization.\n   *\n   * @param subtree The subtree that will be optimized.\n   * @return The new version of the subtree (or null if the subtree or one of\n   * its parents was removed from the AST). If the subtree has not changed,\n   * this method must return {@code subtree}.\n   */",
+    "code": "abstract Node optimizeSubtree(Node subtree);"
+  }
+]

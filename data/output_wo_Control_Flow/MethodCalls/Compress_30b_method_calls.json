@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.count",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.read0",
+    "doc": "/**\n     * Constructs a new BZip2CompressorInputStream which decompresses bytes\n     * read from the specified stream.\n     *\n     * @param in the InputStream from which this object should be created\n     * @param decompressConcatenated\n     *                     if true, decompress until the end of the input;\n     *                     if false, stop after the first .bz2 stream and\n     *                     leave the input position to point to the next\n     *                     byte after the .bz2 stream\n     *\n     * @throws IOException\n     *             if the stream content is malformed or an I/O error occurs.\n     * @throws NullPointerException\n     *             if {@code in == null}\n     */",
+    "code": "private int read0() throws IOException {\n        switch (currentState) {\n        case EOF:\n            return -1;\n\n        case START_BLOCK_STATE:\n            return setupBlock();\n\n        case RAND_PART_A_STATE:\n            throw new IllegalStateException();\n\n        case RAND_PART_B_STATE:\n            return setupRandPartB();\n\n        case RAND_PART_C_STATE:\n            return setupRandPartC();\n\n        case NO_RAND_PART_A_STATE:\n            throw new IllegalStateException();\n\n        case NO_RAND_PART_B_STATE:\n            return setupNoRandPartB();\n\n        case NO_RAND_PART_C_STATE:\n            return setupNoRandPartC();\n\n        default:\n            throw new IllegalStateException();\n        }\n    }"
+  }
+]

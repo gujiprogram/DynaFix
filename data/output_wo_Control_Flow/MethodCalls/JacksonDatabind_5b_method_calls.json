@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedClass._constructMethod",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected AnnotatedMethod _constructMethod(Method m)\n    {\n         * methods; only for creator methods (static factory methods)\n         * -- at least not yet!\n        if (_annotationIntrospector == null) { // when annotation processing is disabled\n            return new AnnotatedMethod(m, _emptyAnnotationMap(), null);\n        }\n        return new AnnotatedMethod(m, _collectRelevantAnnotations(m.getDeclaredAnnotations()), null);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedClass._isIncludableMemberMethod",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected boolean _isIncludableMemberMethod(Method m)\n    {\n        if (Modifier.isStatic(m.getModifiers())) {\n            return false;\n        }\n         *   bridge and/or synthetic methods. I don't think we want to\n         *   consider those...\n        if (m.isSynthetic() || m.isBridge()) {\n            return false;\n        }\n        int pcount = m.getParameterTypes().length;\n        return (pcount <= 2);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap.add",
+    "doc": "/**\n     * Method called to add specified annotated method in the Map.\n     */",
+    "code": "public void add(AnnotatedMethod am)\n    {\n        if (_methods == null) {\n            _methods = new LinkedHashMap<MemberKey,AnnotatedMethod>();\n        }\n        _methods.put(new MemberKey(am.getAnnotated()), am);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap.find",
+    "doc": "/**\n     * Method called to remove specified method, assuming\n     * it exists in the Map\n     */",
+    "code": "public AnnotatedMethod find(String name, Class<?>[] paramTypes)\n    {\n        if (_methods == null) {\n            return null;\n        }\n        return _methods.get(new MemberKey(name, paramTypes));\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.ClassUtil.findSuperTypes",
+    "doc": "/**\n     * Method that will find all sub-classes and implemented interfaces\n     * of a given class or interface. Classes are listed in order of\n     * precedence, starting with the immediate super-class, followed by\n     * interfaces class directly declares to implemented, and then recursively\n     * followed by parent of super-class and so forth.\n     * Note that <code>Object.class</code> is not included in the list\n     * regardless of whether <code>endBefore</code> argument is defined or not.\n     *\n     * @param endBefore Super-type to NOT include in results, if any; when\n     *    encountered, will be ignored (and no super types are checked).\n     */",
+    "code": "return findSuperTypes(cls, endBefore, new ArrayList<Class<?>>(8));\n    }\n\n    public static List<Class<?>> findSuperTypes(Class<?> cls, Class<?> endBefore, List<Class<?>> result) {"
+  }
+]

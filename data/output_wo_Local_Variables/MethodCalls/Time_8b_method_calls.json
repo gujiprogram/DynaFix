@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.joda.time.DateTimeZone.forOffsetMillis",
+    "doc": "/**\n     * Gets a time zone instance for the specified offset to UTC in milliseconds.\n     *\n     * @param millisOffset  the offset in millis from UTC, from -23:59:59.999 to +23:59:59.999\n     * @return the DateTimeZone object for the offset\n     */",
+    "code": "return forOffsetMillis(offset);\n    }\n\n    public static DateTimeZone forOffsetMillis(int millisOffset) {"
+  },
+  {
+    "method": "org.joda.time.field.FieldUtils.safeMultiply",
+    "doc": "/**\n     * Multiply two values throwing an exception if overflow occurs.\n     *\n     * @param val1  the first value\n     * @param val2  the second value\n     * @return the new total\n     * @throws ArithmeticException if the value is too big or too small\n     * @since 1.2\n     */",
+    "code": "public static int safeMultiply(int val1, int val2) {\n        long total = (long) val1 * (long) val2;\n        if (total < Integer.MIN_VALUE || total > Integer.MAX_VALUE) {\n          throw new ArithmeticException(\"Multiplication overflows an int: \" + val1 + \" * \" + val2);\n        }\n        return (int) total;\n    }"
+  }
+]

@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.NPEWithCertainMatchersTest::shouldNotThrowNPEWhenNullPassedToSame ===
+Exception: java.lang.Exception: Unexpected exception, expected<java.lang.AssertionError> but was<java.lang.NullPointerException>
+
+org.mockito.internal.matchers.Same:describeTo:29->[Local Variables] {"TransVarDesc":{"out":""}}
+org.mockito.internal.matchers.Same:describeTo:30->[Method Call] Call Stack: org.mockito.internal.matchers.Same.describeTo:30 -> org.hamcrest.Description.appendText
+org.mockito.internal.matchers.Same:describeTo:30->[Local Variables] {"TransVarDesc":{"out":"same("}}
+org.mockito.internal.matchers.Same:describeTo:31->[Method Call] Call Stack: org.mockito.internal.matchers.Same.describeTo:31 -> org.mockito.internal.matchers.Same.appendQuoting
+org.mockito.internal.matchers.Same:describeTo:32->[Method Call] Call Stack: org.mockito.internal.matchers.Same.describeTo:32 -> java.lang.Object.toString

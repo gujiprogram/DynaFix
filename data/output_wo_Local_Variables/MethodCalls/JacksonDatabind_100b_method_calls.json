@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JsonNode.binaryValue",
+    "doc": "/**\n     * Method to use for accessing binary content of binary nodes (nodes\n     * for which {@link #isBinary} returns true); or for Text Nodes\n     * (ones for which {@link #textValue} returns non-null value),\n     * to read decoded base64 data.\n     * For other types of nodes, returns null.\n     *\n     * @return Binary data this node contains, iff it is a binary\n     *   node; null otherwise\n     */",
+    "code": "public byte[] binaryValue() throws IOException {\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.node.TreeTraversingParser.currentNode",
+    "doc": "/**********************************************************\n     */",
+    "code": "return currentNode().textValue();\n        case VALUE_NUMBER_INT:"
+  }
+]

@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631 ===
+Exception: org.apache.commons.math.exception.TooManyEvaluationsException: illegal state: maximal count (3,624) exceeded: evaluations
+
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:190->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:190 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarFunctionTolerance <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarInvert != 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:200->[Control Flow] Branch Info: Line: 200, Condition: if (TransVarInvert == 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarF2 <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:210->[Control Flow] Branch Info: Line: 210, Condition: if (TransVarF2 >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.max
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarAbsoluteAccuracy < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:169->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:169 -> org.apache.commons.math.analysis.solvers.BaseSecantSolver.computeObjectiveValue
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarInvert != 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:200->[Control Flow] Branch Info: Line: 200, Condition: if (TransVarInvert == 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarF2 <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:210->[Control Flow] Branch Info: Line: 210, Condition: if (TransVarF2 >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.max
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarAbsoluteAccuracy < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:169->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:169 -> org.apache.commons.math.analysis.solvers.BaseSecantSolver.computeObjectiveValue
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:170->[Control Flow] Branch Info: Line: 170, Condition: if (TransVarFx2 == 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:173->[Control Flow] Branch Info: Line: 173, Condition: if (TransVarFx2 < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:178->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:178 -> org.apache.commons.math.analysis.solvers.BaseSecantSolver$Method.ordinal
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:190->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:190 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:190->[Control Flow] Branch Info: Line: 190, Condition: if (TransVarFunctionTolerance <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:195->[Control Flow] Branch Info: Line: 195, Condition: if (TransVarInvert != 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:200->[Control Flow] Branch Info: Line: 200, Condition: if (TransVarInvert == 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:205->[Control Flow] Branch Info: Line: 205, Condition: if (TransVarF2 <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:210->[Control Flow] Branch Info: Line: 210, Condition: if (TransVarF2 >= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:218 -> org.apache.commons.math.util.FastMath.max
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarAbsoluteAccuracy < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:164->[Control Flow] Loop Info: Line: 164, Description: while at line 164
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:169->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:169 -> org.apache.commons.math.analysis.solvers.BaseSecantSolver.computeObjectiveValue
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:170->[Control Flow] Branch Info: Line: 170, Condition: if (TransVarFx2 == 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:173->[Control Flow] Branch Info: Line: 173, Condition: if (TransVarFx2 < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BaseSecantSolver:doSolve:178->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BaseSecantSolver.doSolve:178 -> org.apache.commons.math.analysis.solvers.BaseSecantSolver$Method.ordinal

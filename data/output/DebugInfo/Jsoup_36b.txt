@@ -1,0 +1,132 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::shouldCorrectCharsetForDuplicateCharsetString ===
+Exception: java.nio.charset.IllegalCharsetNameException: charset=iso-8859-1
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003dcharset\u003diso-8859-1"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":37,"lookbehindTo":0,"text":"text/html; charset\u003dcharset\u003diso-8859-1","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,37,19,37,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":37,"lookbehindTo":0,"text":"text/html; charset\u003dcharset\u003diso-8859-1","acceptMode":0,"first":11,"last":37,"oldLast":37,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"charset\u003diso-8859-1"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::shouldNotThrowExceptionOnEmptyCharset ===
+Exception: java.nio.charset.IllegalCharsetNameException:
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003d"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":19,"lookbehindTo":0,"text":"text/html; charset\u003d","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,19,19,19,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":19,"lookbehindTo":0,"text":"text/html; charset\u003d","acceptMode":0,"first":11,"last":19,"oldLast":19,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":""}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::testQuotedCharset ===
+Exception: java.nio.charset.IllegalCharsetNameException: 'UTF-8'
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:162->[Local Variables] {"charset":"UNSUPPORTED"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:163->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:163 -> java.nio.charset.Charset.isSupported
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:163->[Control Flow] Branch Info: Line: 163, Condition: if (charset != 0), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003d\u0027UTF-8\u0027"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":26,"lookbehindTo":0,"text":"text/html; charset\u003d\u0027UTF-8\u0027","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,26,19,26,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":26,"lookbehindTo":0,"text":"text/html; charset\u003d\u0027UTF-8\u0027","acceptMode":0,"first":11,"last":26,"oldLast":26,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"\u0027UTF-8\u0027"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":31,"lookbehindTo":0,"text":"text/html; charset\u003d\"ISO-8859-1\"","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,30,20,30,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":31,"lookbehindTo":0,"text":"text/html; charset\u003d\"ISO-8859-1\"","acceptMode":0,"first":11,"last":30,"oldLast":30,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"ISO-8859-1"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Control Flow] Branch Info: Line: 161, Condition: if (charset != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003d\"Unsupported\""}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":32,"lookbehindTo":0,"text":"text/html; charset\u003d\"Unsupported\"","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,31,20,31,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":32,"lookbehindTo":0,"text":"text/html; charset\u003d\"Unsupported\"","acceptMode":0,"first":11,"last":31,"oldLast":31,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"Unsupported"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Control Flow] Branch Info: Line: 161, Condition: if (charset != 0), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:162->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:162 -> java.lang.String.toUpperCase
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::shouldSelectFirstCharsetOnWeirdMultileCharsetsInMetaTags ===
+Exception: java.nio.charset.IllegalCharsetNameException: ISO-8859-1,
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003dISO-8859-1, charset\u003d1251"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":43,"lookbehindTo":0,"text":"text/html; charset\u003dISO-8859-1, charset\u003d1251","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,30,19,30,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":43,"lookbehindTo":0,"text":"text/html; charset\u003dISO-8859-1, charset\u003d1251","acceptMode":0,"first":11,"last":30,"oldLast":30,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"ISO-8859-1,"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::shouldReturnNullForIllegalCharsetNames ===
+Exception: java.nio.charset.IllegalCharsetNameException: $HJKDF§$/(
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:156->[Local Variables] {"contentType":"text/html; charset\u003d$HJKDF§$/("}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:157->[Control Flow] Branch Info: Line: 157, Condition: if (contentType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:158 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:158->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":29,"lookbehindTo":0,"text":"text/html; charset\u003d$HJKDF§$/(","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":1}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:159 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Control Flow] Branch Info: Line: 159, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:159->[Local Variables] {"m":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":0},"groups":[11,29,19,29,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":29,"lookbehindTo":0,"text":"text/html; charset\u003d$HJKDF§$/(","acceptMode":0,"first":11,"last":29,"oldLast":29,"lastAppendPosition":0,"locals":[-1],"localsPos":[],"hitEnd":true,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true,"modCount":2}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:160 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:160->[Local Variables] {"charset":"$HJKDF§$/("}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:161->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:161 -> java.nio.charset.Charset.isSupported
+
+=== Debug Info for Test: org.jsoup.integration.ParseTest::testBrokenHtml5CharsetWithASingleDoubleQuote ===
+Exception: java.nio.charset.IllegalCharsetNameException: UTF-8"
+
+org.jsoup.helper.DataUtil:parseByteData:75->[Local Variables] {"parser":{"treeBuilder":{"baseUriSetFromDoc":false,"formattingElements":[],"pendingTableCharacters":[],"framesetOk":true,"fosterInserts":false,"fragmentParsing":false},"maxErrors":0},"byteData":{"hb":[60,104,116,109,108,62,10,60,104,101,97,100,62,60,109,101,116,97,32,99,104,97,114,115,101,116,61,85,84,70,45,56,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":63,"address":16},"baseUri":"http://example.com/"}
+org.jsoup.helper.DataUtil:parseByteData:77->[Control Flow] Branch Info: Line: 77, Condition: if (charsetName == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:79->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:79 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:79->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:79 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:79->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:79 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:79->[Local Variables] {"byteData":{"hb":[60,104,116,109,108,62,10,60,104,101,97,100,62,60,109,101,116,97,32,99,104,97,114,115,101,116,61,85,84,70,45,56,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":63,"address":16},"docData":"\u003chtml\u003e\n\u003chead\u003e\u003cmeta charset\u003dUTF-8\"\u003e\u003c/head\u003e\n\u003cbody\u003e\u003c/body\u003e\n\u003c/html\u003e"}
+org.jsoup.helper.DataUtil:parseByteData:80->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:80 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:80->[Local Variables] "{parser\u003dorg.jsoup.parser.Parser@7c8c9a05, doc\u003d\u003chtml\u003e\n \u003chead\u003e\n  \u003cmeta charset\u003d\"UTF-8\u0026quot;\" /\u003e\n \u003c/head\u003e \n \u003cbody\u003e \n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseByteData:81->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:81 -> org.jsoup.nodes.Document.select
+org.jsoup.helper.DataUtil:parseByteData:81->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:81 -> org.jsoup.select.Elements.first
+org.jsoup.helper.DataUtil:parseByteData:81->[Local Variables] "{meta\u003d\u003cmeta charset\u003d\"UTF-8\u0026quot;\" /\u003e}"
+org.jsoup.helper.DataUtil:parseByteData:82->[Control Flow] Branch Info: Line: 82, Condition: if (meta != null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:85->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:85 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.helper.DataUtil:parseByteData:85->[Control Flow] Branch Info: Line: 85, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:88->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:88 -> org.jsoup.nodes.Element.attr
+org.jsoup.helper.DataUtil:parseByteData:90->[Local Variables] {"foundCharset":"UTF-8\""}
+org.jsoup.helper.DataUtil:parseByteData:91->[Control Flow] Branch Info: Line: 91, Condition: if (foundCharset != null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:91->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:91 -> java.lang.String.length
+org.jsoup.helper.DataUtil:parseByteData:91->[Control Flow] Branch Info: Line: 91, Condition: if (java.lang.String.length() != 0), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:91->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:91 -> java.lang.String.equals
+org.jsoup.helper.DataUtil:parseByteData:91->[Control Flow] Branch Info: Line: 91, Condition: if (java.lang.String.equals() == 0), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:92->[Local Variables] {"charsetName":"UTF-8\""}
+org.jsoup.helper.DataUtil:parseByteData:93->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:93 -> java.nio.ByteBuffer.rewind
+org.jsoup.helper.DataUtil:parseByteData:93->[Local Variables] {"byteData":{"hb":[60,104,116,109,108,62,10,60,104,101,97,100,62,60,109,101,116,97,32,99,104,97,114,115,101,116,61,85,84,70,45,56,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":63,"address":16}}
+org.jsoup.helper.DataUtil:parseByteData:94->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:94 -> java.nio.charset.Charset.forName

@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288 ===
+Exception: junit.framework.AssertionFailedError: expected:<10.0> but was:<11.5>
+
+org.apache.commons.math.optimization.linear.SimplexSolver:solvePhase1:167->[Local Variables] {"tableau":{"f":{"constantTerm":0.0},"constraints":[{"relationship":"LEQ","value":0.0},{"relationship":"LEQ","value":0.0},{"relationship":"LEQ","value":0.0},{"relationship":"LEQ","value":1.0},{"relationship":"LEQ","value":1.0}],"restrictToNonNegative":true,"numDecisionVariables":4,"numSlackVariables":5,"numArtificialVariables":0,"epsilon":1.0E-6}}
+org.apache.commons.math.optimization.linear.SimplexSolver:solvePhase1:168->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.solvePhase1:168 -> org.apache.commons.math.optimization.linear.SimplexTableau.getNumArtificialVariables
+org.apache.commons.math.optimization.linear.SimplexSolver:solvePhase1:168->[Control Flow] Branch Info: Line: 168, Condition: if (org.apache.commons.math.optimization.linear.SimplexTableau.getNumArtificialVariables() == 0), Executed: true

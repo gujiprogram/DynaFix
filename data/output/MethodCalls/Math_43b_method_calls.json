@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic.increment",
+    "doc": "/**\n     * Updates the internal state of the statistic to reflect the addition of the new value.\n     * @param d  the new value.\n     */",
+    "code": "void increment(double d);"
+  },
+  {
+    "method": "org.apache.commons.math.stat.descriptive.moment.SecondMoment.increment",
+    "doc": "/**\n     * {@inheritDoc}\n     */",
+    "code": "public void increment(final double d) {\n        if (n < 1) {\n            m1 = m2 = 0.0;\n        }\n        super.increment(d);\n        m2 += ((double) n - 1) * dev * nDev;\n    }"
+  }
+]

@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.ser.TestJsonValue::testJsonValueWithCustomOverride ===
+Exception: junit.framework.ComparisonFailure: expected:<[42]> but was:<["value"]>
+
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Control Flow] Loop Info: Line: 204, Description: while at line 204
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:204 -> java.util.Iterator.hasNext
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:199->[Control Flow] Branch Info: Line: 199, Condition: if (ser != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Control Flow] Branch Info: Line: 204, Condition: if (var7 != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:214->[Control Flow] Branch Info: Line: 214, Condition: if (ser == null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:218->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:218 -> com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerByLookup
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:218->[Local Variables] {"ser":{"_handledType":"class java.lang.String"}}
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:214->[Control Flow] Branch Info: Line: 214, Condition: if (ser == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:219->[Control Flow] Branch Info: Line: 219, Condition: if (ser == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:221->[Control Flow] Branch Info: Line: 221, Condition: if (ser == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:227->[Control Flow] Branch Info: Line: 227, Condition: if (ser == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:232->[Control Flow] Branch Info: Line: 232, Condition: if (ser == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:239->[Control Flow] Branch Info: Line: 239, Condition: if (ser != null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:241->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:241 -> com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:239->[Control Flow] Branch Info: Line: 239, Condition: if (ser != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:241->[Control Flow] Branch Info: Line: 241, Condition: if (com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:242->[Control Flow] Branch Info: Line: 242, Condition: if (var7 != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:241->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:241 -> com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:239->[Control Flow] Branch Info: Line: 239, Condition: if (ser != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:241->[Control Flow] Branch Info: Line: 241, Condition: if (com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:242->[Control Flow] Branch Info: Line: 242, Condition: if (var7 != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:173->[Local Variables] "{type\u003d[simple type, class com.fasterxml.jackson.databind.ser.TestJsonValue$Bean838], beanDesc\u003dcom.fasterxml.jackson.databind.introspect.BasicBeanDescription@7adbd080, prov\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@41beb473}"
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:174->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:174 -> com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerByAnnotations
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:174->[Local Variables] "{ser\u003d(@JsonValue serializer for method class com.fasterxml.jackson.databind.ser.TestJsonValue$Bean838#value)}"
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:175->[Control Flow] Branch Info: Line: 175, Condition: if (ser != null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:173->[Local Variables] {"type":{"_class":"class java.lang.String","_hash":1195259493,"_asStatic":false},"beanDesc":{"_classInfo":{"_class":"class java.lang.String","_superTypes":[],"_classAnnotations":{},"_creatorsResolved":false},"_properties":[],"_type":{"_class":"class java.lang.String","_hash":1195259493,"_asStatic":false}}}
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:174->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:174 -> com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerByAnnotations
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:175->[Control Flow] Branch Info: Line: 175, Condition: if (ser != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:178->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:178 -> com.fasterxml.jackson.databind.SerializerProvider.getConfig
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:182->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:182 -> com.fasterxml.jackson.databind.JavaType.isContainerType
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:182->[Control Flow] Branch Info: Line: 182, Condition: if (com.fasterxml.jackson.databind.JavaType.isContainerType() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:204 -> com.fasterxml.jackson.databind.ser.BeanSerializerFactory.customSerializers
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:204 -> java.lang.Iterable.iterator
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:204 -> java.util.Iterator.hasNext
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Control Flow] Branch Info: Line: 204, Condition: if (var7 != 0), Executed: true
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:204 -> java.util.Iterator.next
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:204->[Local Variables] {"serializers":{"_classMappings":{"com.fasterxml.jackson.databind.ser.TestJsonValue$Bean838":{}},"_hasEnumSerializer":false}}
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:205->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2:205 -> com.fasterxml.jackson.databind.ser.Serializers.findSerializer
+com.fasterxml.jackson.databind.ser.BeanSerializerFactory:_createSerializer2:206->[Control Flow] Branch Info: Line: 206, Condition: if (ser != null), Executed: false

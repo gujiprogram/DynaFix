@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getCodingConvention",
+    "doc": "/**\n   * Gets the current coding convention.\n   */",
+    "code": "public abstract CodingConvention getCodingConvention();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodingConvention.getClassesDefinedByCall",
+    "doc": "/**\n   * Checks if the given method defines a subclass relationship,\n   * and if it does, returns information on that relationship. By default,\n   * always returns null. Meant to be overridden by subclasses.\n   *\n   * @param callNode A CALL node.\n   */",
+    "code": "public SubclassRelationship getClassesDefinedByCall(Node callNode);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.inGlobalScope",
+    "doc": "/**\n   * Determines whether the traversal is currently in the global scope.\n   */",
+    "code": "boolean inGlobalScope() {\n    return getScopeDepth() <= 1;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGet",
+    "doc": "/**\n   * Is this a GETPROP or GETELEM node?\n   */",
+    "code": "static boolean isGet(Node n) {\n    return n.isGetProp() || n.isGetElem();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isObjectLitKey",
+    "doc": "/**\n   * Determines whether a node represents an object literal key\n   * (e.g. key1 in {key1: value1, key2: value2}).\n   *\n   * @param node A node\n   * @param parent The node's parent\n   */",
+    "code": "static boolean isObjectLitKey(Node node, Node parent) {\n    switch (node.getType()) {\n      case Token.STRING:\n        return parent.isObjectLit();\n      case Token.GETTER_DEF:\n      case Token.SETTER_DEF:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isCall",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isGetProp",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

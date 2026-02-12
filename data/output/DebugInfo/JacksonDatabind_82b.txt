@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.filter.IgnorePropertyOnDeserTest::testIgnoreGetterNotSetter1595 ===
+Exception: junit.framework.ComparisonFailure: expected:<jack> but was:<null>
+
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:604->[Control Flow] Branch Info: Line: 604, Condition: if (views == null), Executed: true
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:606->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:606 -> com.fasterxml.jackson.databind.DeserializationContext.isEnabled
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:604->[Control Flow] Branch Info: Line: 604, Condition: if (views == null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:606->[Control Flow] Branch Info: Line: 606, Condition: if (com.fasterxml.jackson.databind.DeserializationContext.isEnabled() == 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:611->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:611 -> com.fasterxml.jackson.databind.deser.SettableBeanProperty.setViews
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:612->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:612 -> com.fasterxml.jackson.databind.deser.BeanDeserializerBuilder.addProperty
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:602->[Control Flow] Branch Info: Line: 602, Condition: if (prop != null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Control Flow] Loop Info: Line: 542, Description: while at line 542
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:542 -> java.util.Iterator.hasNext
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Control Flow] Branch Info: Line: 542, Condition: if (propName != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:532->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:532 -> com.fasterxml.jackson.databind.BeanDescription.findProperties
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:531->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:531 -> com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.filterBeanProps
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:535->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:535 -> com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig.hasDeserializerModifiers
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:535->[Control Flow] Branch Info: Line: 535, Condition: if (com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig.hasDeserializerModifiers() != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:536->[Control Flow] Branch Info: Line: 536, Condition: if (propName != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:542 -> java.util.List.iterator
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:542 -> java.util.Iterator.hasNext
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Control Flow] Branch Info: Line: 542, Condition: if (propName != 0), Executed: true
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:542->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:542 -> java.util.Iterator.next
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:548->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:548 -> com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.hasSetter
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:548->[Control Flow] Branch Info: Line: 548, Condition: if (com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.hasSetter() != 0), Executed: true
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:549->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:549 -> com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.getSetter
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:549->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:549 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getParameterType
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:549->[Local Variables] {"propertyType":{"_bindings":{"_names":[],"_types":[],"_hashCode":1},"_class":"int","_hash":104431,"_asStatic":false}}
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:550->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:550 -> com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:550->[Local Variables] {"prop":{"_annotated":{"_paramClasses":["int"]},"_propName":{"_simpleName":"id"},"_type":{"_bindings":{"_names":[],"_types":[],"_hashCode":1},"_class":"int","_hash":104431,"_asStatic":false},"_valueDeserializer":{},"_propertyIndex":-1,"_metadata":{}}}
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:554->[Control Flow] Branch Info: Line: 554, Condition: if (useGettersAsSetters != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:554->[Control Flow] Branch Info: Line: 554, Condition: if (com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.hasGetter() != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:562->[Control Flow] Branch Info: Line: 562, Condition: if (java.lang.Class.isAssignableFrom() != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:568->[Control Flow] Branch Info: Line: 568, Condition: if (hasCreatorProps != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:568->[Control Flow] Branch Info: Line: 568, Condition: if (com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.hasConstructorParameter() != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:602->[Control Flow] Branch Info: Line: 602, Condition: if (prop != null), Executed: true
+com.fasterxml.jackson.databind.deser.BeanDeserializerFactory:addBeanProps:603->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps:603 -> com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.findViews

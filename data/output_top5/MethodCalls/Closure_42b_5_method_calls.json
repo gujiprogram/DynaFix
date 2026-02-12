@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory$TransformDispatcher.processName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.handleJsDoc",
+    "doc": "/**\n   * @return true if the jsDocParser represents a fileoverview.\n   */",
+    "code": "private JSDocInfo handleJsDoc(AstNode node, Node irNode) {\n    Comment comment = node.getJsDocNode();\n    if (comment != null) {\n      JsDocInfoParser jsDocParser = createJsDocInfoParser(comment, irNode);\n      parsedComments.add(comment);\n      if (!handlePossibleFileOverviewJsDoc(jsDocParser)) {\n        return jsDocParser.retrieveAndResetParsedJSDocInfo();\n      }\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.setSourceInfo",
+    "doc": "/**\n   * @return true if the jsDocParser represents a fileoverview.\n   */",
+    "code": "private void setSourceInfo(Node irNode, AstNode node) {\n    if (irNode.getLineno() == -1) {\n      int lineno = node.getLineno();\n      irNode.setLineno(lineno);\n      int charno = position2charno(node.getAbsolutePosition());\n      irNode.setCharno(charno);\n      maybeSetLengthFrom(irNode, node);\n    }\n  }"
+  }
+]

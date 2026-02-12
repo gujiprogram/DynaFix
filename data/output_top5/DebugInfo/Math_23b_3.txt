@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.univariate.BrentOptimizerTest::testKeepInitIfBest ===
+Exception: junit.framework.AssertionFailedError: Best point not reported
+
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:296->[Local Variables] {"a":{"point":4.7123889482608,"value":-0.9999999999999994},"b":{"point":4.712388889475064,"value":-0.9999999999999959},"isMinim":true}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:297->[Control Flow] Branch Info: Line: 297, Condition: if (a == null), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:300->[Control Flow] Branch Info: Line: 300, Condition: if (b == null), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:304->[Control Flow] Branch Info: Line: 304, Condition: if (isMinim != 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:305->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.best:305 -> org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:305->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.best:305 -> org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:best:305->[Control Flow] Branch Info: Line: 305, Condition: if (org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.getValue() <= 0), Executed: true

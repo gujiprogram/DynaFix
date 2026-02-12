@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration",
+    "doc": "/**\n   * Increments the current generation. Clients must call this in order to\n   * move to the next generation of type resolution, allowing types to attempt\n   * resolution again.\n   */",
+    "code": "boolean isLastGeneration() {\n    return lastGeneration;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.finishPropertyContinuations",
+    "doc": "/**\n   * Create a named type based on the reference.\n   */",
+    "code": "private void finishPropertyContinuations() {\n    ObjectType referencedObjType = getReferencedObjTypeInternal();\n    if (referencedObjType != null && !referencedObjType.isUnknownType()) {\n      if (propertyContinuations != null) {\n        for (PropertyContinuation c : propertyContinuations) {\n          c.commit(this);\n        }\n      }\n    }\n    propertyContinuations = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.getReferencedType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry",
+    "doc": "/**\n   * Resolves a named type by looking it up in the registry.\n   * @return True if we resolved successfully.\n   */",
+    "code": "private boolean resolveViaRegistry(\n      ErrorReporter t, StaticScope<JSType> enclosing) {\n    JSType type = registry.getType(reference);\n    if (type != null) {\n      setReferencedAndResolvedType(type, t, enclosing);\n      return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ProxyObjectType.resolveInternal",
+    "doc": "/**\n * An object type which uses composition to delegate all calls.\n *\n * @see NamedType\n * @see ParameterizedType\n *\n */",
+    "code": "JSType resolveInternal(ErrorReporter t, StaticScope<JSType> scope) {\n    setReferencedType(referencedType.resolve(t, scope));\n    return this;\n  }"
+  }
+]

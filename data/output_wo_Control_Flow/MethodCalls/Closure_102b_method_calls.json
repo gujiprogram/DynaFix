@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverseRoots",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverseRoots(Node ... roots) {\n    traverseRoots(Lists.newArrayList(roots));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Normalize$PropogateConstantAnnotations.process",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Normalize.removeDuplicateDeclarations",
+    "doc": "/**\n   * Remove duplicate VAR declarations.\n   */",
+    "code": "private void removeDuplicateDeclarations(Node root) {\n    Callback tickler = new ScopeTicklingCallback();\n    ScopeCreator scopeCreator =  new SyntacticScopeCreator(\n        compiler, new DuplicateDeclarationHandler());\n    NodeTraversal t = new NodeTraversal(compiler, tickler, scopeCreator);\n    t.traverse(root);\n  }"
+  }
+]

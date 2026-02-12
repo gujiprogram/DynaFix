@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1200",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1300",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1400",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1500",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1600",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1700",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1800",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner$CommandLineConfig.access$1900",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCommandLineRunner.getInputCharset",
+    "doc": "/**\n   * Query the flag for the input charset, and return a Charset object\n   * representing the selection.\n   *\n   * @return Charset to use when reading inputs\n   * @throws FlagUsageException if flag is not a valid Charset name.\n   */",
+    "code": "private Charset getInputCharset() throws FlagUsageException {\n    if (!config.charset.isEmpty()) {\n      if (!Charset.isSupported(config.charset)) {\n        throw new FlagUsageException(config.charset +\n            \" is not a valid charset name.\");\n      }\n      return Charset.forName(config.charset);\n    }\n    return Charsets.UTF_8;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerOptions.setLanguageIn",
+    "doc": "/**\n   * Sets how goog.tweak calls are processed.\n   */",
+    "code": "public void setLanguageIn(LanguageMode languageIn) {\n    this.languageIn = languageIn;\n    this.languageOut = languageIn;\n  }"
+  }
+]

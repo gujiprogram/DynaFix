@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.registerMismatch",
+    "doc": "/**\n   * Report a type mismatch\n   */",
+    "code": "private void registerMismatch(JSType found, JSType required, JSError error) {\n    found = found.restrictByNotNullOrUndefined();\n    required = required.restrictByNotNullOrUndefined();\n    if (found.canAssignTo(required) || required.canAssignTo(found)) {\n      return;\n    }\n\n    mismatches.add(new TypeMismatch(found, required, error));\n    if (found.isFunctionType() &&\n        required.isFunctionType()) {\n      FunctionType fnTypeA = found.toMaybeFunctionType();\n      FunctionType fnTypeB = required.toMaybeFunctionType();\n      Iterator<Node> paramItA = fnTypeA.getParameters().iterator();\n      Iterator<Node> paramItB = fnTypeB.getParameters().iterator();\n      while (paramItA.hasNext() && paramItB.hasNext()) {\n        registerIfMismatch(paramItA.next().getJSType(),\n            paramItB.next().getJSType(), error);\n      }\n\n      registerIfMismatch(\n          fnTypeA.getReturnType(), fnTypeB.getReturnType(), error);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.canAssignTo",
+    "doc": "/**\n   * Tests whether values of {@code this} type can be safely assigned\n   * to values of {@code that} type.<p>\n   *\n   * The default implementation verifies that {@code this} is a subtype\n   * of {@code that}.<p>\n   */",
+    "code": "public boolean canAssignTo(JSType that) {\n    return isSubtype(that);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isConstructor",
+    "doc": "/**\n   * Whether this type is a {@link FunctionType} that is a constructor or a\n   * named type that points to such a type.\n   */",
+    "code": "public boolean isConstructor() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isEnumType",
+    "doc": "/**\n   * Downcasts this to an EnumElementType, or returns null if this is not an EnumElementType.\n   */",
+    "code": "public boolean isEnumType() {\n    return toMaybeEnumType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isNoType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

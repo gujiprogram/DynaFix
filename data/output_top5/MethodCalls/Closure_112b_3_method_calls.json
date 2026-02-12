@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.getLeastSupertype",
+    "doc": "/**\n   * Gets the least supertype of {@code this} and {@code that}.\n   * The least supertype is the join (&#8744;) or supremum of both types in the\n   * type lattice.<p>\n   * Examples:\n   * <ul>\n   * <li>{@code number &#8744; *} = {@code *}</li>\n   * <li>{@code number &#8744; Object} = {@code (number, Object)}</li>\n   * <li>{@code Number &#8744; Object} = {@code Object}</li>\n   * </ul>\n   * @return {@code this &#8744; that}\n   */",
+    "code": "public JSType getLeastSupertype(JSType that) {\n    if (that.isUnionType()) {\n      return that.toMaybeUnionType().getLeastSupertype(this);\n    }\n    return getLeastSupertype(this, that);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  }
+]

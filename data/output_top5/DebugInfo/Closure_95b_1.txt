@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testQualifiedNameInference5 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:297->[Local Variables] "{n\u003dGETPROP 1 [sourcename: [testcode]]}"
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:298 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Control Flow] Branch Info: Line: 298, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:299->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:299 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:299->[Local Variables] "{firstChild\u003dNAME ns 1 [sourcename: [testcode]]}"
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:300->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:300 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Control Flow] Branch Info: Line: 298, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:300->[Control Flow] Branch Info: Line: 300, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:301->[Control Flow] Branch Info: Line: 301, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:303->[Control Flow] Branch Info: Line: 303, Condition: if (com.google.javascript.rhino.Node.isQualifiedName() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypedScopeCreatorTest::testGlobalQualifiedNameInLocalScope ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:297->[Local Variables] "{n\u003dGETPROP 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:298 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Control Flow] Branch Info: Line: 298, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:299->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:299 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:299->[Local Variables] "{firstChild\u003dNAME ns 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:300->[Method Call] Call Stack: com.google.javascript.jscomp.TypedScopeCreator.getPrototypePropertyOwner:300 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:298->[Control Flow] Branch Info: Line: 298, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:300->[Control Flow] Branch Info: Line: 300, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:301->[Control Flow] Branch Info: Line: 301, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypedScopeCreator:getPrototypePropertyOwner:303->[Control Flow] Branch Info: Line: 303, Condition: if (com.google.javascript.rhino.Node.isQualifiedName() != 0), Executed: false

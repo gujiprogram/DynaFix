@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.Frequency.getSumFreq",
+    "doc": "/**\n     * Returns the sum of all frequencies.\n     *\n     * @return the total frequency count.\n     */",
+    "code": "public long getSumFreq() {\n        long result = 0;\n        Iterator<Long> iterator = freqTable.values().iterator();\n        while (iterator.hasNext())  {\n            result += iterator.next().longValue();\n        }\n        return result;\n    }"
+  }
+]

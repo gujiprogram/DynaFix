@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jsoup.nodes.Attributes.get",
+    "doc": "/**\n     Get an attribute value by key.\n     @param key the (case-sensitive) attribute key\n     @return the attribute value if set; or empty string if not set.\n     @see #hasKey(String)\n     */",
+    "code": "public String get(String key) {\n        Validate.notEmpty(key);\n\n        if (attributes == null)\n            return \"\";\n\n        Attribute attr = attributes.get(key);\n        return attr != null ? attr.getValue() : \"\";\n    }"
+  }
+]

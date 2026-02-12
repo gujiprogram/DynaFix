@@ -1,0 +1,170 @@
+
+=== Debug Info for Test: org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanVertical ===
+Exception: junit.framework.AssertionFailedError
+
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:382->[Local Variables] {"column":1}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:383->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:383 -> org.jfree.chart.plot.CategoryPlot.getDomainAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:387->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:387 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:386->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:386 -> org.jfree.chart.axis.CategoryAxis.getCategoryStart
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:389->[Local Variables] {"rectX":192.78750000000002}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:390->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:390 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getRowCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:391->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:391 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:392->[Control Flow] Branch Info: Line: 392, Condition: if (seriesCount > seriesCount), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:398->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:398 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:402->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:402 -> org.jfree.data.statistics.StatisticalCategoryDataset.getMeanValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:404->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:404 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:460->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:460 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:460->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:460 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:461->[Local Variables] {"highVal":27.158025568181827}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:462->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:462 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:462->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:462 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:464->[Local Variables] {"lowVal":81.89524147727272}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:465->[Control Flow] Branch Info: Line: 465, Condition: if (this.errorIndicatorStroke != null), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:466->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:466 -> java.awt.Graphics2D.setStroke
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:471->[Control Flow] Branch Info: Line: 471, Condition: if (this.errorIndicatorPaint != null), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:472->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:472 -> java.awt.Graphics2D.setPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:476->[Local Variables] "{g2\u003dsun.java2d.SunGraphics2D[font\u003djava.awt.Font[family\u003dSansSerif,name\u003dSansSerif,style\u003dplain,size\u003d12],color\u003djava.awt.Color[r\u003d128,g\u003d128,b\u003d128]]}"
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:478->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:478 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:479->[Local Variables] {"line":{"x1":103.52578125,"y1":81.89524147727272,"x2":103.52578125,"y2":27.158025568181827}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:480->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:480 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:481->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:481 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:482->[Local Variables] {"line":{"x1":98.52578125,"y1":27.158025568181827,"x2":108.52578125,"y2":27.158025568181827}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:483->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:483 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:484->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:484 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:485->[Local Variables] {"line":{"x1":98.52578125,"y1":81.89524147727272,"x2":108.52578125,"y2":81.89524147727272}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:486->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:486 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:488->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:488 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemLabelGenerator
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:490->[Control Flow] Branch Info: Line: 490, Condition: if (generator != null), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:490->[Control Flow] Branch Info: Line: 490, Condition: if (org.jfree.chart.renderer.category.StatisticalBarRenderer.isItemLabelVisible() != 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:496->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:496 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getEntityCollection
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:497->[Control Flow] Branch Info: Line: 497, Condition: if (entities != null), Executed: false
+
+=== Debug Info for Test: org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationVertical ===
+Exception: junit.framework.AssertionFailedError
+
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:443->[Local Variables] {"rectY":13.47372159090908}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:444->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:444 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:445->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:445 -> java.lang.Math.abs
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:446->[Local Variables] {"rectHeight":87.57954545454547}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:447->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:447 -> java.awt.geom.Rectangle2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:448->[Local Variables] {"bar":{"x":192.78750000000002,"y":13.47372159090908,"width":83.3109375,"height":87.57954545454547}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:449->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:449 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:450->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:450 -> java.awt.Graphics2D.setPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:450->[Local Variables] "{g2\u003dsun.java2d.SunGraphics2D[font\u003djava.awt.Font[family\u003dSansSerif,name\u003dSansSerif,style\u003dplain,size\u003d12],color\u003djava.awt.Color[r\u003d255,g\u003d85,b\u003d85]]}"
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:451->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:451 -> java.awt.Graphics2D.fill
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:452->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:452 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.isDrawBarOutline
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:452->[Control Flow] Branch Info: Line: 452, Condition: if (org.jfree.chart.renderer.category.StatisticalBarRenderer.isDrawBarOutline() != 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:452->[Control Flow] Branch Info: Line: 452, Condition: if (org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth() > 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:459->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:459 -> org.jfree.data.statistics.StatisticalCategoryDataset.getStdDevValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:459->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:459 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:382->[Local Variables] {"column":1}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:383->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:383 -> org.jfree.chart.plot.CategoryPlot.getDomainAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:387->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:387 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:386->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:386 -> org.jfree.chart.axis.CategoryAxis.getCategoryStart
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:389->[Local Variables] {"rectX":192.78750000000002}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:390->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:390 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getRowCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:391->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:391 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:392->[Control Flow] Branch Info: Line: 392, Condition: if (seriesCount > seriesCount), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:398->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:398 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:402->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:402 -> org.jfree.data.statistics.StatisticalCategoryDataset.getMeanValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:403->[Local Variables] {"meanValue":4.0}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:404->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:404 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:404->[Local Variables] {"value":4.0}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:406->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:406 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getLowerClip
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:407->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:407 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getUpperClip
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:409->[Control Flow] Branch Info: Line: 409, Condition: if (uclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:418->[Control Flow] Branch Info: Line: 418, Condition: if (lclip <= 0), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:419->[Control Flow] Branch Info: Line: 419, Condition: if (uclip >= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:414->[Control Flow] Branch Info: Line: 414, Condition: if (lclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:423->[Control Flow] Branch Info: Line: 423, Condition: if (lclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:433->[Control Flow] Branch Info: Line: 433, Condition: if (uclip >= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:438->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:438 -> org.jfree.chart.plot.CategoryPlot.getRangeAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:439->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:439 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:440->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:440 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:441->[Local Variables] {"transY2":13.47372159090908}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawVerticalItem:442->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawVerticalItem:442 -> java.lang.Math.min
+
+=== Debug Info for Test: org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullMeanHorizontal ===
+Exception: junit.framework.AssertionFailedError
+
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:354->[Control Flow] Branch Info: Line: 354, Condition: if (entities != null), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:239->[Local Variables] {"column":1}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:240->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:240 -> org.jfree.chart.plot.CategoryPlot.getDomainAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:243->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:243 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:243->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:243 -> org.jfree.chart.axis.CategoryAxis.getCategoryStart
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:245->[Local Variables] {"rectY":118.26249999999999}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:246->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:246 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getRowCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:247->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:247 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:248->[Control Flow] Branch Info: Line: 248, Condition: if (seriesCount > seriesCount), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:254->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:254 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:258->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:258 -> org.jfree.data.statistics.StatisticalCategoryDataset.getMeanValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:260->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:260 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:316->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:316 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:316->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:316 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:317->[Local Variables] {"highVal":250.76775568181816}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:318->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:318 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:318->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:318 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:320->[Local Variables] {"lowVal":144.38991477272725}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:321->[Control Flow] Branch Info: Line: 321, Condition: if (this.errorIndicatorStroke != null), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:322->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:322 -> java.awt.Graphics2D.setStroke
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:327->[Control Flow] Branch Info: Line: 327, Condition: if (this.errorIndicatorPaint != null), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:328->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:328 -> java.awt.Graphics2D.setPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:333->[Local Variables] "{g2\u003dsun.java2d.SunGraphics2D[font\u003djava.awt.Font[family\u003dSansSerif,name\u003dSansSerif,style\u003dplain,size\u003d12],color\u003djava.awt.Color[r\u003d128,g\u003d128,b\u003d128]]}"
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:335->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:335 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:336->[Local Variables] {"line":{"x1":144.38991477272725,"y1":71.604296875,"x2":250.76775568181816,"y2":71.604296875}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:337->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:337 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:338->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:338 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:339->[Local Variables] {"line":{"x1":250.76775568181816,"y1":60.7173828125,"x2":250.76775568181816,"y2":82.4912109375}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:340->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:340 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:341->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:341 -> java.awt.geom.Line2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:342->[Local Variables] {"line":{"x1":144.38991477272725,"y1":60.7173828125,"x2":144.38991477272725,"y2":82.4912109375}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:343->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:343 -> java.awt.Graphics2D.draw
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:345->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:345 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemLabelGenerator
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:347->[Control Flow] Branch Info: Line: 347, Condition: if (generator != null), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:347->[Control Flow] Branch Info: Line: 347, Condition: if (org.jfree.chart.renderer.category.StatisticalBarRenderer.isItemLabelVisible() != 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:353->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:353 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getEntityCollection
+
+=== Debug Info for Test: org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests::testDrawWithNullDeviationHorizontal ===
+Exception: junit.framework.AssertionFailedError
+
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:298->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:298 -> java.lang.Math.min
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:300->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:300 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:301->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:301 -> java.lang.Math.abs
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:302->[Local Variables] {"rectWidth":170.20454545454544}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:303->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:303 -> java.awt.geom.Rectangle2D$Double.<init>
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:304->[Local Variables] {"bar":{"x":107.15767045454545,"y":118.26249999999999,"width":170.20454545454544,"height":43.547656249999996}}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:305->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:305 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getItemPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:306->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:306 -> java.awt.Graphics2D.setPaint
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:306->[Local Variables] "{g2\u003dsun.java2d.SunGraphics2D[font\u003djava.awt.Font[family\u003dSansSerif,name\u003dSansSerif,style\u003dplain,size\u003d12],color\u003djava.awt.Color[r\u003d255,g\u003d85,b\u003d85]]}"
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:307->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:307 -> java.awt.Graphics2D.fill
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:308->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:308 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.isDrawBarOutline
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:308->[Control Flow] Branch Info: Line: 308, Condition: if (org.jfree.chart.renderer.category.StatisticalBarRenderer.isDrawBarOutline() != 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:308->[Control Flow] Branch Info: Line: 308, Condition: if (org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth() > 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:315->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:315 -> org.jfree.data.statistics.StatisticalCategoryDataset.getStdDevValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:315->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:315 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:354->[Control Flow] Branch Info: Line: 354, Condition: if (entities != null), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:239->[Local Variables] {"column":1}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:240->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:240 -> org.jfree.chart.plot.CategoryPlot.getDomainAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:243->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:243 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:243->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:243 -> org.jfree.chart.axis.CategoryAxis.getCategoryStart
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:245->[Local Variables] {"rectY":118.26249999999999}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:246->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:246 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getRowCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:247->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:247 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getColumnCount
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:248->[Control Flow] Branch Info: Line: 248, Condition: if (seriesCount > seriesCount), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:254->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:254 -> org.jfree.chart.renderer.category.CategoryItemRendererState.getBarWidth
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:258->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:258 -> org.jfree.data.statistics.StatisticalCategoryDataset.getMeanValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:259->[Local Variables] {"meanValue":4.0}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:260->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:260 -> java.lang.Number.doubleValue
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:260->[Local Variables] {"value":4.0}
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:262->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:262 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getLowerClip
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:263->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:263 -> org.jfree.chart.renderer.category.StatisticalBarRenderer.getUpperClip
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:265->[Control Flow] Branch Info: Line: 265, Condition: if (uclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:274->[Control Flow] Branch Info: Line: 274, Condition: if (lclip <= 0), Executed: true
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:275->[Control Flow] Branch Info: Line: 275, Condition: if (uclip >= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:270->[Control Flow] Branch Info: Line: 270, Condition: if (lclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:279->[Control Flow] Branch Info: Line: 279, Condition: if (lclip <= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:289->[Control Flow] Branch Info: Line: 289, Condition: if (uclip >= 0), Executed: false
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:294->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:294 -> org.jfree.chart.plot.CategoryPlot.getRangeAxisEdge
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:295->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:295 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:296->[Method Call] Call Stack: org.jfree.chart.renderer.category.StatisticalBarRenderer.drawHorizontalItem:296 -> org.jfree.chart.axis.ValueAxis.valueToJava2D
+org.jfree.chart.renderer.category.StatisticalBarRenderer:drawHorizontalItem:297->[Local Variables] {"transY2":277.3622159090909}

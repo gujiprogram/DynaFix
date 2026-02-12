@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.sevenz.SevenZFileTest::readEntriesOfSize0 ===
+Exception: java.lang.IllegalStateException: No current 7z entry (call getNextEntry() first).
+
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:902 -> java.util.ArrayList.isEmpty
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Control Flow] Branch Info: Line: 902, Condition: if (java.util.ArrayList.isEmpty() != 0), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:906 -> java.util.ArrayList.size
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Control Flow] Branch Info: Line: 906, Condition: if (java.util.ArrayList.size() > java.util.ArrayList.size()), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:915->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:915 -> java.util.ArrayList.get
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:902 -> java.util.ArrayList.isEmpty
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Control Flow] Branch Info: Line: 902, Condition: if (java.util.ArrayList.isEmpty() != 0), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:906 -> java.util.ArrayList.size
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Control Flow] Branch Info: Line: 906, Condition: if (java.util.ArrayList.size() > java.util.ArrayList.size()), Executed: true
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:910->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:910 -> java.util.ArrayList.remove
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:910->[Local Variables] "{stream\u003dorg.apache.commons.compress.utils.CRC32VerifyingInputStream@68fa0ba8}"
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:911->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:911 -> org.apache.commons.compress.utils.IOUtils.skip
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:912->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:912 -> java.io.InputStream.close
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:903->[Control Flow] Loop Info: Line: 903, Description: while at line 903
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Control Flow] Branch Info: Line: 902, Condition: if (java.util.ArrayList.isEmpty() != 0), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:906 -> java.util.ArrayList.size
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Control Flow] Branch Info: Line: 906, Condition: if (java.util.ArrayList.size() > java.util.ArrayList.size()), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:915->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:915 -> java.util.ArrayList.get
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:902 -> java.util.ArrayList.isEmpty
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Control Flow] Branch Info: Line: 902, Condition: if (java.util.ArrayList.isEmpty() != 0), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:906 -> java.util.ArrayList.size
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:906->[Control Flow] Branch Info: Line: 906, Condition: if (java.util.ArrayList.size() > java.util.ArrayList.size()), Executed: false
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:915->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:915 -> java.util.ArrayList.get
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Method Call] Call Stack: org.apache.commons.compress.archivers.sevenz.SevenZFile.getCurrentStream:902 -> java.util.ArrayList.isEmpty
+org.apache.commons.compress.archivers.sevenz.SevenZFile:getCurrentStream:902->[Control Flow] Branch Info: Line: 902, Condition: if (java.util.ArrayList.isEmpty() != 0), Executed: true

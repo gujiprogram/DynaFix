@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.fasterxml.jackson.annotation.JsonIdentityReference.alwaysAsId",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findFilterId",
+    "doc": "/**\n     * Method for finding if annotated class has associated filter; and if so,\n     * to return id that is used to locate filter.\n     *\n     * @return Id of the filter to use for filtering properties of annotated\n     *    class, if any; or null if none found.\n     */",
+    "code": "public Object findFilterId(Annotated ann) { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findObjectIdInfo",
+    "doc": "/**\n     * Method for checking whether given annotated thing\n     * (type, or accessor) indicates that values\n     * referenced (values of type of annotated class, or\n     * values referenced by annotated property; latter\n     * having precedence) should include Object Identifier,\n     * and if so, specify details of Object Identity used.\n     *\n     * @since 2.0\n     */",
+    "code": "public ObjectIdInfo findObjectIdInfo(Annotated ann) {\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findObjectReferenceInfo",
+    "doc": "/**\n     * Method for figuring out additional properties of an Object Identity reference\n     *\n     * @since 2.1\n     */",
+    "code": "public ObjectIdInfo findObjectReferenceInfo(Annotated ann, ObjectIdInfo objectIdInfo) {\n        return objectIdInfo;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findPropertiesToIgnore",
+    "doc": "/**\n     * Method for finding list of properties to ignore for given class\n     * (null is returned if not specified).\n     * List of property names is applied\n     * after other detection mechanisms, to filter out these specific\n     * properties from being serialized and deserialized.\n     *\n     * @param forSerialization True if requesting properties to ignore for serialization;\n     *   false if for deserialization\n     */",
+    "code": "public String[] findPropertiesToIgnore(Annotated ac, boolean forSerialization) {\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer",
+    "doc": "/**\n     * Method called to get hold of a serializer for a value of given type;\n     * or if no such serializer can be found, a default handler (which\n     * may do a best-effort generic serialization or just simply\n     * throw an exception when invoked).\n     *<p>\n     * Note: this method is only called for non-null values; not for keys\n     * or null values. For these, check out other accessor methods.\n     *<p>\n     * Note that serializers produced should NOT handle polymorphic serialization\n     * aspects; separate {@link TypeSerializer} is to be constructed by caller\n     * if and as necessary.\n     *\n     * @throws JsonMappingException if there are fatal problems with\n     *   accessing suitable serializer; including that of not\n     *   finding any serializer\n     */",
+    "code": "public JsonSerializer<Object> findValueSerializer(Class<?> valueType, BeanProperty property)\n        throws JsonMappingException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector._findAnnotation",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.ObjectIdInfo.getAlwaysAsId",
+    "doc": "/**\n     * @since 2.8.9\n     */",
+    "code": "public boolean getAlwaysAsId() { return _alwaysAsId; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.ObjectIdInfo.withAlwaysAsId",
+    "doc": "/**\n     * @since 2.8.9\n     */",
+    "code": "public ObjectIdInfo withAlwaysAsId(boolean state) {\n        if (_alwaysAsId == state) {\n            return this;\n        }\n        return new ObjectIdInfo(_propertyName, _scope, _generator, state, _resolver);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.impl.ObjectIdWriter.withAlwaysAsId",
+    "doc": "/**\n     * @since 2.1\n     */",
+    "code": "public ObjectIdWriter withAlwaysAsId(boolean newState) {\n        if (newState == alwaysAsId) {\n            return this;\n        }\n        return new ObjectIdWriter(idType, propertyName, generator, serializer, newState);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.impl.ObjectIdWriter.withSerializer",
+    "doc": "/**\n     * Factory method called by {@link com.fasterxml.jackson.databind.ser.std.BeanSerializerBase}\n     * with the initial information based on standard settings for the type\n     * for which serializer is being built.\n     *\n     * @since 2.3\n     */",
+    "code": "public ObjectIdWriter withSerializer(JsonSerializer<?> ser) {\n        return new ObjectIdWriter(idType, propertyName, generator, ser, alwaysAsId);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.withObjectIdWriter",
+    "doc": "/**\n     * Mutant factory used for creating a new instance with different\n     * {@link ObjectIdWriter}.\n     *\n     * @since 2.0\n     */",
+    "code": "public abstract BeanSerializerBase withObjectIdWriter(ObjectIdWriter objectIdWriter);"
+  }
+]

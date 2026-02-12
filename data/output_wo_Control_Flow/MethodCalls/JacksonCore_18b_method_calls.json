@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator._verifyValueWrite",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected void _verifyValueWrite(String typeMsg) throws IOException\n    {\n        if (_cfgPrettyPrinter != null) {\n            _verifyPrettyValueWrite(typeMsg);\n            return;\n        }\n        char c;\n        final int status = _writeContext.writeValue();\n        if (status == JsonWriteContext.STATUS_EXPECT_NAME) {\n            _reportError(\"Can not \"+typeMsg+\", expecting field name\");\n        }\n        switch (status) {\n        case JsonWriteContext.STATUS_OK_AFTER_COMMA:\n            c = ',';\n            break;\n        case JsonWriteContext.STATUS_OK_AFTER_COLON:\n            c = ':';\n            break;\n        case JsonWriteContext.STATUS_OK_AFTER_SPACE: // root-value separator\n            if (_rootValueSeparator != null) {\n                writeRaw(_rootValueSeparator.getValue());\n            }\n            return;\n        case JsonWriteContext.STATUS_OK_AS_IS:\n        default:\n            return;\n        }\n        if (_outputTail >= _outputEnd) {\n            _flushBuffer();\n        }\n        _outputBuffer[_outputTail] = c;\n        ++_outputTail;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.isEnabled",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.json.WriterBasedJsonGenerator.writeRaw",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void writeRaw(String text) throws IOException\n    {\n        int len = text.length();\n        int room = _outputEnd - _outputTail;\n\n        if (room == 0) {\n            _flushBuffer();\n            room = _outputEnd - _outputTail;\n        }\n        if (room >= len) {\n            text.getChars(0, len, _outputBuffer, _outputTail);\n            _outputTail += len;\n        } else {\n            writeRawLong(text);\n        }\n    }"
+  }
+]

@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testSuccessfulDeserializationOfObjectWithChainedArrayCreators ===
+
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromArray:1335->[Control Flow] Branch Info: Line: 1335, Condition: if (this._arrayDelegateDeserializer != null), Executed: true
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromArray:1337->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray:1337 -> com.fasterxml.jackson.databind.JsonDeserializer.deserialize
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1192->[Control Flow] Branch Info: Line: 1192, Condition: if (this._delegateDeserializer != null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1196->[Control Flow] Branch Info: Line: 1196, Condition: if (this._propertyBasedCreator != null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1200->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault:1200 -> com.fasterxml.jackson.databind.JavaType.isAbstract
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1200->[Control Flow] Branch Info: Line: 1200, Condition: if (com.fasterxml.jackson.databind.JavaType.isAbstract() != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1204->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault:1204 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromObjectUsingNonDefault:1204->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault:1204 -> com.fasterxml.jackson.databind.DeserializationContext.handleMissingInstantiator
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromArray:1343->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromArray:1343 -> com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapInstantiationProblem
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.struct.SingleValueAsArrayTest::testWithSingleString ===
+
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromString:1263->[Control Flow] Branch Info: Line: 1263, Condition: if (this._objectIdReader != null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromString:1269->[Control Flow] Branch Info: Line: 1269, Condition: if (this._delegateDeserializer != null), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromString:1270->[Control Flow] Branch Info: Line: 1270, Condition: if (com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromString() == 0), Executed: false
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromString:1279->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString:1279 -> com.fasterxml.jackson.core.JsonParser.getText
+com.fasterxml.jackson.databind.deser.BeanDeserializerBase:deserializeFromString:1279->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromString:1279 -> com.fasterxml.jackson.databind.deser.ValueInstantiator.createFromString

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getBooleanValue",
+    "doc": "/**\n   * Gets the boolean value of a node that represents a literal. This method\n   * effectively emulates the <code>Boolean()</code> JavaScript cast function.\n   */",
+    "code": "return getBooleanValue(n);\n    }\n  }\n\n  static TernaryValue getBooleanValue(Node n) {\n    switch (n.getType()) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

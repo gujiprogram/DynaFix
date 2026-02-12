@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.lang.StringEscapeUtilsTest::testEscapeHtmlHighUnicode ===
+Exception: junit.framework.ComparisonFailure: High unicode was not escaped correctly expected:<&#[119650];> but was:<&#[55348;&#57186];>
+
+org.apache.commons.lang.Entities:unescape:904->[Local Variables] {"str":"\u0026#55348;\u0026#57186;","writer":{"buf":"","lock":""}}
+org.apache.commons.lang.Entities:unescape:905->[Method Call] Call Stack: org.apache.commons.lang.Entities.unescape:905 -> java.lang.String.indexOf
+org.apache.commons.lang.Entities:unescape:905->[Local Variables] {"firstAmp":0}
+org.apache.commons.lang.Entities:unescape:906->[Control Flow] Branch Info: Line: 906, Condition: if (firstAmp < 0), Executed: false
+org.apache.commons.lang.Entities:unescape:910->[Method Call] Call Stack: org.apache.commons.lang.Entities.unescape:910 -> org.apache.commons.lang.Entities.doUnescape
+org.apache.commons.lang.Entities:unescape:911->[Local Variables] {"writer":{"buf":"𝍢","lock":"𝍢"}}

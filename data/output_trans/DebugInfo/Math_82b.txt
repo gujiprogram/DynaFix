@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.linear.SimplexSolverTest::testMath288 ===
+Exception: junit.framework.AssertionFailedError: expected:<10.0> but was:<11.5>
+
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:94->[Local Variables] {"TransVarMinRatio":0.6000000000000002}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarMinRatioForSimplex < 0), Executed: true
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:96->[Local Variables] {"TransVarMinRatioForSimplex":0.6000000000000002}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:97->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:97 -> java.lang.Integer.valueOf
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Control Flow] Branch Info: Line: 90, Condition: if (this.epsilon >= 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarMinRatioForSimplex < 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:99->[Local Variables] {"TransVarMinRatioPosSimplex":5}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:100->[Local Variables] {"TransVarIndex":6}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:82->[Control Flow] Loop Info: Line: 82, Description: while at line 82
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:83 -> org.apache.commons.math.optimization.linear.SimplexTableau.getHeight
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Control Flow] Branch Info: Line: 83, Condition: if (org.apache.commons.math.optimization.linear.SimplexTableau.getHeight() < org.apache.commons.math.optimization.linear.SimplexTableau.getHeight()), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:89->[Local Variables] {"TransVarSimplexEntry":-6.004799503160661E15}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:90 -> org.apache.commons.math.util.MathUtils.compareTo
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Control Flow] Branch Info: Line: 90, Condition: if (this.epsilon >= 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarMinRatioForSimplex < 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:100->[Local Variables] {"TransVarIndex":4}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:82->[Control Flow] Loop Info: Line: 82, Description: while at line 82
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:83 -> org.apache.commons.math.optimization.linear.SimplexTableau.getHeight
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Control Flow] Branch Info: Line: 83, Condition: if (org.apache.commons.math.optimization.linear.SimplexTableau.getHeight() < org.apache.commons.math.optimization.linear.SimplexTableau.getHeight()), Executed: true
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:87->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:87 -> org.apache.commons.math.optimization.linear.SimplexTableau.getWidth
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:87->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:87 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:88->[Local Variables] {"TransVarRatio":-2.161727821137838E15}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:89->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:89 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:89->[Local Variables] {"TransVarSimplexEntry":-3.602879701896397E15}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:90 -> org.apache.commons.math.util.MathUtils.compareTo
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Control Flow] Branch Info: Line: 90, Condition: if (this.epsilon >= 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarMinRatioForSimplex < 0), Executed: false
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:100->[Local Variables] {"TransVarIndex":5}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:82->[Control Flow] Loop Info: Line: 82, Description: while at line 82
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:83 -> org.apache.commons.math.optimization.linear.SimplexTableau.getHeight
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:83->[Control Flow] Branch Info: Line: 83, Condition: if (org.apache.commons.math.optimization.linear.SimplexTableau.getHeight() < org.apache.commons.math.optimization.linear.SimplexTableau.getHeight()), Executed: true
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:87->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:87 -> org.apache.commons.math.optimization.linear.SimplexTableau.getWidth
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:87->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:87 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:88->[Local Variables] {"TransVarRatio":3.6028797018963975E15}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:89->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:89 -> org.apache.commons.math.optimization.linear.SimplexTableau.getEntry
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:89->[Local Variables] {"TransVarSimplexEntry":6.004799503160661E15}
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Method Call] Call Stack: org.apache.commons.math.optimization.linear.SimplexSolver.getPivotRow:90 -> org.apache.commons.math.util.MathUtils.compareTo
+org.apache.commons.math.optimization.linear.SimplexSolver:getPivotRow:90->[Control Flow] Branch Info: Line: 90, Condition: if (this.epsilon >= 0), Executed: true

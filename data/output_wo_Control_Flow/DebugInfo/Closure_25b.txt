@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1059 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.TypeInference:traverseNew:1036->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@6a9cd0f8, n\u003dNEW 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1037 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseNew:1037->[Local Variables] "{constructor\u003dNAME F 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1038->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1038 -> com.google.javascript.jscomp.TypeInference.traverse
+com.google.javascript.jscomp.TypeInference:traverseNew:1038->[Local Variables] "{constructor\u003dNAME F 4 [source_file: [testcode]] : function (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1039->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1039 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeInference:traverseNew:1039->[Local Variables] "{constructorType\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1042->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1042 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:traverseNew:1043->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1043 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeInference:traverseNew:1046->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1046 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeInference:traverseNew:1046->[Local Variables] "{ct\u003dfunction (new:F, {foo: (number|undefined)}): undefined}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1053->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1053 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeInference:traverseNew:1054->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1054 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.TypeInference:traverseNew:1057->[Local Variables] "{type\u003dF}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1058->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1058 -> com.google.javascript.rhino.Node.setJSType
+com.google.javascript.jscomp.TypeInference:traverseNew:1058->[Local Variables] "{n\u003dNEW 4 [source_file: [testcode]] : F}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1059 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.TypeInference:traverseNew:1059->[Local Variables] "{arg\u003dNAME y 4 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:traverseNew:1060->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseNew:1060 -> com.google.javascript.jscomp.TypeInference.traverse
+com.google.javascript.jscomp.TypeInference:traverseNew:1058->[Local Variables] "{arg\u003dNAME y 4 [source_file: [testcode]] : {}}"

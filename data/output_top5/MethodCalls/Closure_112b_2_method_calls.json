@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.google.common.collect.ImmutableList.isEmpty",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.collect.Maps.newIdentityHashMap",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGet",
+    "doc": "/**\n   * Is this a GETPROP or GETELEM node?\n   */",
+    "code": "static boolean isGet(Node n) {\n    return n.isGetProp() || n.isGetElem();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return unknownType;\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes",
+    "doc": "/**\n   * For functions with function parameters, type inference will set the type of\n   * a function literal argument from the function parameter type.\n   */",
+    "code": "private void maybeResolveTemplateTypeFromNodes(\n      Iterable<Node> declParams,"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType",
+    "doc": "/**\n   * For functions with function parameters, type inference will set the type of\n   * a function literal argument from the function parameter type.\n   */",
+    "code": "private void maybeResolveTemplatedType(\n      JSType paramType,"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildAtIndex",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getChildAtIndex(int i) {\n    Node n = first;\n    while (i > 0) {\n      n = n.next;\n      i--;\n    }\n    return n;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasMoreThanOneChild",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public boolean hasMoreThanOneChild() {\n    return first != null && first != last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.siblings",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this node's siblings.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node sibling : n.siblings()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> siblings() {\n    return new SiblingNodeIterable(this);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getParameters",
+    "doc": "/**\n   * When a class B inherits from A and A is annotated as a dict, then B\n   * automatically gets the annotation, even if B's constructor is not\n   * explicitly annotated.\n   */",
+    "code": "public Iterable<Node> getParameters() {\n    Node n = getParametersNode();\n    if (n != null) {\n      return n.children();\n    } else {\n      return Collections.emptySet();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "public JSType getTypeOfThis() {\n    return typeOfThis.isEmptyType() ?\n        registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE) : typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys",
+    "doc": "/**\n   * Returns a list of all template keys.\n   */",
+    "code": "public ImmutableList<TemplateType> getTemplateKeys() {\n    return templateKeys;\n  }"
+  }
+]

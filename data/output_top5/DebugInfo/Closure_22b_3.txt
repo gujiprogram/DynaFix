@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode ===
+Exception: junit.framework.AssertionFailedError: There should be one warning, repeated 1 time(s). expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:90 -> com.google.javascript.rhino.Node.isComma
+com.google.javascript.jscomp.CheckSideEffects:visit:90->[Control Flow] Branch Info: Line: 90, Condition: if (com.google.javascript.rhino.Node.isComma() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:94->[Control Flow] Branch Info: Line: 94, Condition: if (parent == null), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:101->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:101 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:101->[Control Flow] Branch Info: Line: 101, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:122->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:122 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:122->[Control Flow] Branch Info: Line: 122, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:122->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:122 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:122->[Control Flow] Branch Info: Line: 122, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:123->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:123 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:123->[Control Flow] Branch Info: Line: 123, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:123->[Control Flow] Branch Info: Line: 123, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:124->[Control Flow] Branch Info: Line: 124, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Control Flow] Branch Info: Line: 163, Condition: if (this.problemNodes == false), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.protectSideEffects:163 -> java.util.List.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:protectSideEffects:163->[Control Flow] Branch Info: Line: 163, Condition: if (this.problemNodes == false), Executed: false

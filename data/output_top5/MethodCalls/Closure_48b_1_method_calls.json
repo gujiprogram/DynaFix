@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "public ObjectType getTypeOfThis() {\n    return typeOfThis.isNoObjectType() ?\n        registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE) : typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isFunctionType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType",
+    "doc": "/**\n   * Downcasts this to a FunctionType, or returns null if this is not\n   * a function.\n   *\n   * For the purposes of this function, we define a MaybeFunctionType as any\n   * type in the sub-lattice\n   * { x | LEAST_FUNCTION_TYPE <= x <= GREATEST_FUNCTION_TYPE }\n   * This definition excludes bottom types like NoType and NoObjectType.\n   *\n   * This definition is somewhat arbitrary and axiomatic, but this is the\n   * definition that makes the most sense for the most callers.\n   */",
+    "code": "public FunctionType toMaybeFunctionType() {\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isUnknownType",
+    "doc": "/**\n   * We treat this as the unknown type if any of its implicit prototype\n   * properties is unknown.\n   */",
+    "code": "public boolean isUnknownType() {\n    if (unknown) {\n      ObjectType implicitProto = getImplicitPrototype();\n      if (implicitProto == null ||\n          implicitProto.isNativeObjectType()) {\n        unknown = false;\n        for (ObjectType interfaceType : getCtorExtendedInterfaces()) {\n          if (interfaceType.isUnknownType()) {\n            unknown = true;\n            break;\n          }\n        }\n      } else {\n        unknown = implicitProto.isUnknownType();\n      }\n    }\n    return unknown;\n  }"
+  }
+]

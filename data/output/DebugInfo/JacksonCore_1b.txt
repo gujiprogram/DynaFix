@@ -1,0 +1,6 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.TestParserNonStandard::testAllowNaN ===
+Exception: junit.framework.AssertionFailedError: Expected an exception with one of substrings ([can not be represented as BigDecimal]): got one with message "Character N is neither a decimal digit number, decimal point, nor "e" notation exponential mark."
+
+com.fasterxml.jackson.core.io.NumberInput:parseBigDecimal:294->[Local Variables] {"numStr":"NaN"}
+com.fasterxml.jackson.core.io.NumberInput:parseBigDecimal:295->[Method Call] Call Stack: com.fasterxml.jackson.core.io.NumberInput.parseBigDecimal:295 -> java.math.BigDecimal.<init>

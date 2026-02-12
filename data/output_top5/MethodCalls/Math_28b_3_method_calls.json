@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexSolver.doIteration",
+    "doc": "/**\n     * Runs one iteration of the Simplex method on the given model.\n     * @param tableau simple tableau for the problem\n     * @throws MaxCountExceededException if the maximal iteration count has been exceeded\n     * @throws UnboundedSolutionException if the model is found not to have a bounded solution\n     */",
+    "code": "protected void doIteration(final SimplexTableau tableau)\n        throws MaxCountExceededException, UnboundedSolutionException {\n\n        incrementIterationsCounter();\n\n        Integer pivotCol = getPivotColumn(tableau);\n        Integer pivotRow = getPivotRow(tableau, pivotCol);\n        if (pivotRow == null) {\n            throw new UnboundedSolutionException();\n        }\n\n        double pivotVal = tableau.getEntry(pivotRow, pivotCol);\n        tableau.divideRow(pivotRow, pivotVal);\n\n        for (int i = 0; i < tableau.getHeight(); i++) {\n            if (i != pivotRow) {\n                final double multiplier = tableau.getEntry(i, pivotCol);\n                tableau.subtractRow(i, pivotRow, multiplier);\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getEntry",
+    "doc": "/** Get an entry of the tableau.\n     * @param row row index\n     * @param column column index\n     * @return entry at (row, column)\n     */",
+    "code": "protected final double getEntry(final int row, final int column) {\n        return tableau.getEntry(row, column);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getNumArtificialVariables",
+    "doc": "/**\n     * Get the number of artificial variables.\n     * @return number of artificial variables\n     */",
+    "code": "protected final int getNumArtificialVariables() {\n        return numArtificialVariables;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getRhsOffset",
+    "doc": "/**\n     * Get the offset of the right hand side.\n     * @return offset of the right hand side\n     */",
+    "code": "protected final int getRhsOffset() {\n        return getWidth() - 1;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.isOptimal",
+    "doc": "/**\n     * Returns whether the problem is at an optimal state.\n     * @return whether the model has been solved\n     */",
+    "code": "boolean isOptimal() {\n        for (int i = getNumObjectiveFunctions(); i < getWidth() - 1; i++) {\n            final double entry = tableau.getEntry(0, i);\n            if (Precision.compareTo(entry, 0d, epsilon) < 0) {\n                return false;\n            }\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.util.Precision.equals",
+    "doc": "/**\n     * Returns true iff they are equal as defined by\n     * {@link #equals(float,float,int) equals(x, y, 1)}.\n     *\n     * @param x first value\n     * @param y second value\n     * @return {@code true} if the values are equal.\n     */",
+    "code": "public static boolean equals(float x, float y) {\n        return equals(x, y, 1);\n    }"
+  }
+]

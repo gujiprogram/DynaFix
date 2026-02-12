@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.node.POJONodeTest::testPOJONodeCustomSer ===
+Exception: junit.framework.ComparisonFailure: expected:<...Str":"The value is: [Hello!]"}}> but was:<...Str":"The value is: [NULL]"}}>
+
+com.fasterxml.jackson.databind.node.POJONode:serialize:109->[Local Variables] "{TransVarGenerator\u003dcom.fasterxml.jackson.core.json.WriterBasedJsonGenerator@41925502, TransVarContext\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@13e3c1c7}"
+com.fasterxml.jackson.databind.node.POJONode:serialize:110->[Control Flow] Branch Info: Line: 110, Condition: if (this._value == null), Executed: false
+com.fasterxml.jackson.databind.node.POJONode:serialize:115->[Control Flow] Branch Info: Line: 115, Condition: if (this._value != false), Executed: false
+com.fasterxml.jackson.databind.node.POJONode:serialize:123->[Method Call] Call Stack: com.fasterxml.jackson.databind.node.POJONode.serialize:123 -> com.fasterxml.jackson.core.JsonGenerator.writeObject

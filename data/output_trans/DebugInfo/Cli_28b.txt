@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: org.apache.commons.cli.ValueTest::testPropertyOptionFlags ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.cli.Parser:processProperties:266->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:266 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarName != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"TransVarName":{"table":[{"hash":99,"key":"c","value":"no"},null,{"hash":101,"key":"e","value":"0"},null,null,null,null,null,null,{"hash":97,"key":"a","value":"false"},null],"index":9,"entry":{"hash":97,"key":"a","value":"false"},"type":0,"iterator":false,"expectedModCount":3}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:270->[Local Variables] {"TransVarConfOption":"a","TransVarName":{"table":[{"hash":99,"key":"c","value":"no"},null,{"hash":101,"key":"e","value":"0"},null,null,null,null,null,null,{"hash":97,"key":"a","value":"false"},null],"index":9,"lastReturned":{"hash":97,"key":"a","value":"false"},"type":0,"iterator":false,"expectedModCount":3}}
+org.apache.commons.cli.Parser:processProperties:271->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:271 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:271->[Control Flow] Branch Info: Line: 271, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:272->[Local Variables] {"TransVarOption":{"opt":"a","argName":"arg","description":"toggle -a","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:273->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:273 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:273->[Local Variables] {"TransVarVal":"false"}
+org.apache.commons.cli.Parser:processProperties:274->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:274 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:281->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:281 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:281->[Control Flow] Branch Info: Line: 281, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:281->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:281 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:281->[Control Flow] Branch Info: Line: 281, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:282->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:282 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:282->[Control Flow] Branch Info: Line: 282, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarName != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarName != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"TransVarName":{"table":[{"hash":99,"key":"c","value":"yes"},null,{"hash":101,"key":"e","value":"1"},null,null,null,null,null,null,{"hash":97,"key":"a","value":"true"},null],"index":0,"entry":{"hash":99,"key":"c","value":"yes"},"lastReturned":{"hash":101,"key":"e","value":"1"},"type":0,"iterator":false,"expectedModCount":3}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:270->[Local Variables] {"TransVarConfOption":"c","TransVarName":{"table":[{"hash":99,"key":"c","value":"yes"},null,{"hash":101,"key":"e","value":"1"},null,null,null,null,null,null,{"hash":97,"key":"a","value":"true"},null],"index":0,"lastReturned":{"hash":99,"key":"c","value":"yes"},"type":0,"iterator":false,"expectedModCount":3}}
+org.apache.commons.cli.Parser:processProperties:271->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:271 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:271->[Control Flow] Branch Info: Line: 271, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:272->[Local Variables] {"TransVarOption":{"opt":"c","longOpt":"c","argName":"arg","description":"toggle -c","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:273->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:273 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:273->[Local Variables] {"TransVarVal":"yes"}
+org.apache.commons.cli.Parser:processProperties:274->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:274 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:281->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:281 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:275->[Control Flow] Branch Info: Line: 275, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:281->[Control Flow] Branch Info: Line: 281, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:281->[Control Flow] Branch Info: Line: 281, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:282->[Control Flow] Branch Info: Line: 282, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:285->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:285 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:271->[Control Flow] Branch Info: Line: 271, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:265->[Control Flow] Loop Info: Line: 265, Description: while at line 265
+org.apache.commons.cli.Parser:processProperties:266->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:266 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:266->[Control Flow] Branch Info: Line: 266, Condition: if (TransVarName != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:256->[Local Variables] {"TransVarConfigProperties":{"a":"false","e":"0","c":"no"}}
+org.apache.commons.cli.Parser:processProperties:257->[Control Flow] Branch Info: Line: 257, Condition: if (TransVarConfigProperties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:265->[Local Variables] {"TransVarName":{"table":[{"hash":99,"key":"c","value":"no"},null,{"hash":101,"key":"e","value":"0"},null,null,null,null,null,null,{"hash":97,"key":"a","value":"false"},null],"index":11,"type":0,"iterator":false,"expectedModCount":3}}

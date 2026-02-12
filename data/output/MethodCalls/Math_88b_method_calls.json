@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getEntry",
+    "doc": "/**\n     * Returns the entry in the specified row and column.\n     * <p>\n     * Row and column indices start at 0 and must satisfy\n     * <ul>\n     * <li><code>0 <= row < rowDimension</code></li>\n     * <li><code> 0 <= column < columnDimension</code></li>\n     * </ul>\n     * otherwise a <code>MatrixIndexException</code> is thrown.</p>\n     *\n     * @param row  row location of entry to be fetched\n     * @param column  column location of entry to be fetched\n     * @return matrix entry in row,column\n     * @throws MatrixIndexException if the row or column index is not valid\n     */",
+    "code": "double getEntry(int row, int column) throws MatrixIndexException;"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getValue",
+    "doc": "/**\n     * Compute the value of the linear equation at the current point\n     * @param point point at which linear equation must be evaluated\n     * @return value of the linear equation at the current point\n     */",
+    "code": "public double getValue(final double[] point) {\n        return coefficients.dotProduct(point) + constantTerm;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getBasicRow",
+    "doc": "/**\n     * Checks whether the given column is basic.\n     * @param col index of the column to check\n     * @return the row that the variable is basic in.  null if the column is not basic\n     */",
+    "code": "private Integer getBasicRow(final int col) {\n        Integer row = null;\n        for (int i = getNumObjectiveFunctions(); i < getHeight(); i++) {\n            if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {\n                if (row == null) {\n                    row = i;\n                } else {\n                    return null;\n                }\n            }\n        }\n        return row;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getEntry",
+    "doc": "/** Get an entry of the tableau.\n     * @param row row index\n     * @param column column index\n     * @return entry at (row, column)\n     */",
+    "code": "protected final double getEntry(final int row, final int column) {\n        return tableau.getEntry(row, column);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions",
+    "doc": "/**\n     * Get the number of objective functions in this tableau.\n     * @return 2 for Phase 1.  1 for Phase 2.\n     */",
+    "code": "protected final int getNumObjectiveFunctions() {\n        return this.numArtificialVariables > 0 ? 2 : 1;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getRhsOffset",
+    "doc": "/**\n     * Get the offset of the right hand side.\n     * @return offset of the right hand side\n     */",
+    "code": "protected final int getRhsOffset() {\n        return getWidth() - 1;\n    }"
+  }
+]

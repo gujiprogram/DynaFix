@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.find",
+    "doc": "/**\n     * @since 2.3\n     */",
+    "code": "public SettableBeanProperty find(int index)\n    {\n        for (int i = 1, end = _hashArea.length; i < end; i += 2) {\n            SettableBeanProperty prop = (SettableBeanProperty) _hashArea[i];\n            if ((prop != null) && (index == prop.getPropertyIndex())) {\n                return prop;\n            }\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler.handlePropertyValue",
+    "doc": "/**\n     * Method called to ask handler to handle value of given property,\n     * at point where parser points to the first token of the value.\n     * Handling can mean either resolving type id it contains (if it matches type\n     * property name), or by buffering the value for further use.\n     *\n     * @return True, if the given property was properly handled\n     */",
+    "code": "public boolean handlePropertyValue(JsonParser jp, DeserializationContext ctxt,\n            String propName, Object bean) throws IOException"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.findCreatorProperty",
+    "doc": "/**********************************************************\n     */",
+    "code": "public SettableBeanProperty findCreatorProperty(String name) {\n        return _propertyLookup.get(name);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.readIdProperty",
+    "doc": "/**\n     * Helper method called to see if given non-creator property is the \"id property\";\n     * and if so, handle appropriately.\n     *\n     * @since 2.1\n     */",
+    "code": "public boolean readIdProperty(String propName) throws IOException\n    {\n        if ((_objectIdReader != null) && propName.equals(_objectIdReader.propertyName.getSimpleName())) {\n            _idValue = _objectIdReader.readObjectReference(_parser, _context);\n            return true;\n        }\n        return false;\n    }"
+  }
+]

@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NameAnalyzerTest::testAssignWithCall ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Control Flow] Branch Info: Line: 1557, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Loop Info: Line: 1556, Description: while at line 1556
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1549->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.Scope@250a9031, name\u003dx}"
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1550 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1550 -> com.google.javascript.jscomp.CodingConvention.isExported
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Control Flow] Branch Info: Line: 1550, Condition: if (name != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1553->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1553 -> com.google.javascript.jscomp.Scope.isLocal
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1553->[Control Flow] Branch Info: Line: 1553, Condition: if (com.google.javascript.jscomp.Scope.isLocal() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Loop Info: Line: 1556, Description: while at line 1556
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Local Variables] {"s":"goog.global"}
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1557 -> java.lang.String.startsWith
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Control Flow] Branch Info: Line: 1557, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Loop Info: Line: 1556, Description: while at line 1556
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (var3 != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1549->[Local Variables] {"name":"fun"}
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1550 -> com.google.javascript.jscomp.AbstractCompiler.getCodingConvention
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1550 -> com.google.javascript.jscomp.CodingConvention.isExported
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1550->[Control Flow] Branch Info: Line: 1550, Condition: if (name != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1553->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1553 -> com.google.javascript.jscomp.Scope.isLocal
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1553->[Control Flow] Branch Info: Line: 1553, Condition: if (com.google.javascript.jscomp.Scope.isLocal() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Set.iterator
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Local Variables] {"s":"window"}
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1557 -> java.lang.String.startsWith
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Control Flow] Branch Info: Line: 1557, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Loop Info: Line: 1556, Description: while at line 1556
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Control Flow] Branch Info: Line: 1556, Condition: if (var3 != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1556 -> java.util.Iterator.next
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1556->[Local Variables] {"s":"goog.global"}
+com.google.javascript.jscomp.NameAnalyzer:isExternallyReferenceable:1557->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable:1557 -> java.lang.String.startsWith

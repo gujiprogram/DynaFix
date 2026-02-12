@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testIssue787 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.getParent() != null), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.getParent() != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isScript
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isScript() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.changed != false), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isScript
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isScript() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.changed != false), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:140->[Local Variables] "{node\u003dFUNCTION some_function 1 [source_file: i0]}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.getParent() != null), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:142->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:142 -> com.google.javascript.jscomp.PeepholeOptimizationsPass$StateStack.peek
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isScript() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.changed != false), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:140->[Local Variables] "{node\u003dSCRIPT 1 [synthetic: 1] [source_file: i0] [input_id: InputId: i0]}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.getParent() != null), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isFunction
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.getParent() != null), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.isScript
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isScript() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isFunction() == 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:142->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:142 -> com.google.javascript.jscomp.PeepholeOptimizationsPass$StateStack.peek
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:142->[Local Variables] {"state":{"changed":false,"traverseChildScopes":true}}
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Control Flow] Branch Info: Line: 141, Condition: if (com.google.javascript.rhino.Node.isScript() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.changed != false), Executed: false
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:140->[Local Variables] "{node\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.PeepholeOptimizationsPass:shouldRetraverse:141->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeOptimizationsPass.shouldRetraverse:141 -> com.google.javascript.rhino.Node.getParent

@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getInput",
+    "doc": "/**\n   * Looks up an input (possibly an externs input) by name. May return null.\n   */",
+    "code": "public abstract CompilerInput getInput(String sourceName);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isControlStructure",
+    "doc": "/**\n   * Determines whether the given node is a FOR, DO, WHILE, WITH, or IF node.\n   */",
+    "code": "static boolean isControlStructure(Node n) {\n    switch (n.getType()) {\n      case Token.FOR:\n      case Token.DO:\n      case Token.WHILE:\n      case Token.WITH:\n      case Token.IF:\n      case Token.LABEL:\n      case Token.TRY:\n      case Token.CATCH:\n      case Token.SWITCH:\n      case Token.CASE:\n      case Token.DEFAULT:\n        return true;\n      default:\n        return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isStatementBlock",
+    "doc": "/**\n   * @return Whether the node is of a type that contain other statements.\n   */",
+    "code": "static boolean isStatementBlock(Node n) {\n    return n.getType() == Token.SCRIPT || n.getType() == Token.BLOCK;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.declare",
+    "doc": "/**\n   * Declares a variable whose type is inferred.\n   *\n   * @param name name of the variable\n   * @param nameNode the NAME node declaring the variable\n   * @param type the variable's type\n   * @param input the input in which this variable is defined.\n   */",
+    "code": "Var declare(String name, Node nameNode, JSType type, CompilerInput input) {\n    return declare(name, nameNode, type, input, true);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isLocal",
+    "doc": "/**\n     * Returns whether this is a local variable.\n     */",
+    "code": "public boolean isLocal() {\n      return scope.isLocal();\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getProp",
+    "doc": "/**\n   * @param item The item to inspect\n   * @param propType The property to look for\n   * @return The replacement list if the property was removed, or\n   *   'item' otherwise.\n   */",
+    "code": "public Object getProp(int propType) {\n    PropListItem item = lookupProperty(propType);\n    if (item == null) {\n      return null;\n    }\n    return item.objectValue;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:151->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:151 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphEdge.getValue
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:153->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.LinkedFlowScope@4eb9f2af}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:154->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:154 -> com.google.javascript.jscomp.ControlFlowGraph$Branch.ordinal
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:201->[Control Flow] Branch Info: Line: 201, Condition: if (condition != null), Executed: false
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:244 -> com.google.javascript.jscomp.FlowScope.optimize
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:244 -> java.util.List.add
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Local Variables] "{result\u003d[com.google.javascript.jscomp.LinkedFlowScope@3fd05b3e]}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Loop Info: Line: 150, Description: while at line 150
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Branch Info: Line: 150, Condition: if (var9 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:149 -> java.util.List.size
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:149 -> com.google.common.collect.Lists.newArrayListWithCapacity
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Local Variables] {"result":[]}
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.List.iterator
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Branch Info: Line: 150, Condition: if (var9 != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:151->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:151 -> com.google.javascript.jscomp.graph.DiGraph$DiGraphEdge.getValue
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:153->[Local Variables] "{newScope\u003dcom.google.javascript.jscomp.LinkedFlowScope@1682c08c}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:154->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:154 -> com.google.javascript.jscomp.ControlFlowGraph$Branch.ordinal
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:201->[Control Flow] Branch Info: Line: 201, Condition: if (condition != null), Executed: false
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:244 -> com.google.javascript.jscomp.FlowScope.optimize
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:244 -> java.util.List.add
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:244->[Local Variables] "{result\u003d[com.google.javascript.jscomp.LinkedFlowScope@1682c08c]}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Loop Info: Line: 150, Description: while at line 150
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Branch Info: Line: 150, Condition: if (var9 != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:142->[Local Variables] "{input\u003dcom.google.javascript.jscomp.LinkedFlowScope@3fd05b3e, source\u003dRETURN 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:143->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:143 -> com.google.javascript.jscomp.TypeInference.flowThrough
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:143->[Local Variables] "{output\u003dcom.google.javascript.jscomp.LinkedFlowScope@4eb9f2af}"
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:148->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:148 -> com.google.javascript.jscomp.TypeInference.getCfg
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:148->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:148 -> com.google.javascript.jscomp.ControlFlowGraph.getOutEdges
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:149 -> java.util.List.size
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:149 -> com.google.common.collect.Lists.newArrayListWithCapacity
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:149->[Local Variables] {"result":[]}
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.List.iterator
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Control Flow] Branch Info: Line: 150, Condition: if (var9 != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:branchedFlowThrough:150->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.branchedFlowThrough:150 -> java.util.Iterator.next

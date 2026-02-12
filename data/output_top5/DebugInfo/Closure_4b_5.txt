@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsExtendsLoop ===
+Exception: junit.framework.AssertionFailedError: unexpected warning(s) : JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 2 : 29, JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 3 : 26 expected:<1> but was:<2>
+
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:219->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@20eaeaf8, enclosing\u003dcom.google.javascript.jscomp.Scope@58d6e55a}"
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:220->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry:220 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getType
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:220->[Local Variables] "{type\u003dF}"
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:221->[Control Flow] Branch Info: Line: 221, Condition: if (type != null), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:222->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry:222 -> com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsLoop ===
+Exception: junit.framework.AssertionFailedError: expected:<[Parse error. Cycle detected in inheritance chain of type T]> but was:<[can only implement interfaces]>
+
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:219->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@1e1eeedd, enclosing\u003dcom.google.javascript.jscomp.Scope@659feb22}"
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:220->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry:220 -> com.google.javascript.rhino.jstype.JSTypeRegistry.getType
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:220->[Local Variables] "{type\u003dT}"
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:221->[Control Flow] Branch Info: Line: 221, Condition: if (type != null), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveViaRegistry:222->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry:222 -> com.google.javascript.rhino.jstype.NamedType.setReferencedAndResolvedType
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testConversionFromInterfaceToRecursiveConstructor ===

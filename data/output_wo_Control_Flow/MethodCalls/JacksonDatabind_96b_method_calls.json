@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.constructCreatorProperty",
+    "doc": "/**\n     * Method that will construct a property object that represents\n     * a logical property passed via Creator (constructor or static\n     * factory method)\n     */",
+    "code": "protected SettableBeanProperty constructCreatorProperty(DeserializationContext ctxt,\n            BeanDescription beanDesc, PropertyName name, int index,"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.creator",
+    "doc": "[No documentation]",
+    "code": "public AnnotatedWithParams creator() { return _creator; }\n    public int paramCount() { return _paramCount; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.explicitParamName",
+    "doc": "[No documentation]",
+    "code": "public PropertyName explicitParamName(int i) {\n        BeanPropertyDefinition propDef = _params[i].propDef;\n        if (propDef != null) {\n            if (propDef.isExplicitlyNamed()) {\n                return propDef.getFullName();\n            }\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.findImplicitParamName",
+    "doc": "[No documentation]",
+    "code": "public PropertyName findImplicitParamName(int i) {\n        String str = _intr.findImplicitPropertyName(_params[i].annotated);\n        if (str != null && !str.isEmpty()) {\n            return PropertyName.construct(str);\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.injection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.paramCount",
+    "doc": "[No documentation]",
+    "code": "public int paramCount() { return _paramCount; }\n    public JacksonInject.Value injection(int i) { return _params[i].injection; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.parameter",
+    "doc": "[No documentation]",
+    "code": "public AnnotatedParameter parameter(int i) { return _params[i].annotated; }\n    public BeanPropertyDefinition propertyDef(int i) { return _params[i].propDef; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCandidate.propertyDef",
+    "doc": "[No documentation]",
+    "code": "public BeanPropertyDefinition propertyDef(int i) { return _params[i].propDef; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.CreatorCollector.addPropertyCreator",
+    "doc": "/**\n     * Method called to indicate the default creator: no-arguments constructor\n     * or factory method that is called to instantiate a value before populating\n     * it with data. Default creator is only used if no other creators are\n     * indicated.\n     *\n     * @param creator\n     *            Creator method; no-arguments constructor or static factory\n     *            method.\n     */",
+    "code": "public void addPropertyCreator(AnnotatedWithParams creator,\n            boolean explicit, SettableBeanProperty[] properties)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition.couldSerialize",
+    "doc": "/**********************************************************\n     */",
+    "code": "public boolean couldSerialize() { return getAccessor() != null; }"
+  }
+]

@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI265Test::shouldParseShortOptionWithoutValue ===
+Exception: junit.framework.AssertionFailedError: Second option has been used as value for first option. Actual: -last
+
+org.apache.commons.cli.DefaultParser:isShortOption:304->[Local Variables] {"TransVarTokenIn":"-last"}
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> java.lang.String.startsWith
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> java.lang.String.length
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> java.lang.String.substring
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:305 -> org.apache.commons.cli.Options.hasShortOption
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:305->[Control Flow] Branch Info: Line: 305, Condition: if (org.apache.commons.cli.Options.hasShortOption() != 0), Executed: false

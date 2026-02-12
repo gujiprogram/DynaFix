@@ -1,0 +1,75 @@
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexTest::testAtanI ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math.complex.Complex:divide:274->[Local Variables] {"denominator":2.0}
+org.apache.commons.math.complex.Complex:divide:275->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:275 -> org.apache.commons.math.complex.Complex.createComplex
+org.apache.commons.math.complex.Complex:divide:250->[Local Variables] {"divisor":{"imaginary":0.0,"real":0.0}}
+org.apache.commons.math.complex.Complex:divide:251->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:251 -> org.apache.commons.math.util.MathUtils.checkNotNull
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN == false), Executed: true
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN != false), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: true
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: true
+org.apache.commons.math.complex.Complex:divide:250->[Local Variables] {"divisor":{"imaginary":0.0,"real":2.0}}
+org.apache.commons.math.complex.Complex:divide:251->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:251 -> org.apache.commons.math.util.MathUtils.checkNotNull
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN == false), Executed: true
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN != false), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:260 -> org.apache.commons.math.complex.Complex.isInfinite
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() != 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:264->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:264 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:265->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:265 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Control Flow] Branch Info: Line: 267, Condition: if (d < 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:275->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:275 -> org.apache.commons.math.complex.Complex.createComplex
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: true
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:260 -> org.apache.commons.math.complex.Complex.isInfinite
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() != 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:264->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:264 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:264->[Local Variables] {"c":0.0}
+org.apache.commons.math.complex.Complex:divide:265->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:265 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:266->[Local Variables] {"d":0.9}
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Control Flow] Branch Info: Line: 267, Condition: if (d < 0), Executed: true
+org.apache.commons.math.complex.Complex:divide:269->[Local Variables] {"denominator":0.9}
+org.apache.commons.math.complex.Complex:divide:270->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:270 -> org.apache.commons.math.complex.Complex.createComplex
+org.apache.commons.math.complex.Complex:divide:250->[Local Variables] {"divisor":{"imaginary":0.0,"real":2.0}}
+org.apache.commons.math.complex.Complex:divide:251->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:251 -> org.apache.commons.math.util.MathUtils.checkNotNull
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN == false), Executed: true
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN != false), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:260 -> org.apache.commons.math.complex.Complex.isInfinite
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() != 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:260->[Control Flow] Branch Info: Line: 260, Condition: if (org.apache.commons.math.complex.Complex.isInfinite() == 0), Executed: false
+org.apache.commons.math.complex.Complex:divide:264->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:264 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:264->[Local Variables] {"c":2.0}
+org.apache.commons.math.complex.Complex:divide:265->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:265 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:266->[Local Variables] {"d":0.0}
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:267 -> org.apache.commons.math.util.FastMath.abs
+org.apache.commons.math.complex.Complex:divide:267->[Control Flow] Branch Info: Line: 267, Condition: if (d < 0), Executed: false
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexTest::testDivideZero ===
+Exception: junit.framework.AssertionFailedError: expected:<(NaN, NaN)> but was:<(Infinity, Infinity)>
+
+org.apache.commons.math.complex.Complex:divide:250->[Local Variables] {"divisor":{"imaginary":0.0,"real":0.0}}
+org.apache.commons.math.complex.Complex:divide:251->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:251 -> org.apache.commons.math.util.MathUtils.checkNotNull
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN == false), Executed: true
+org.apache.commons.math.complex.Complex:divide:252->[Control Flow] Branch Info: Line: 252, Condition: if (this.isNaN != false), Executed: false
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: true
+org.apache.commons.math.complex.Complex:divide:256->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.divide:256 -> org.apache.commons.math.complex.Complex.getImaginary
+org.apache.commons.math.complex.Complex:divide:256->[Control Flow] Branch Info: Line: 256, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: true

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.jfree.data.time.RegularTimePeriod.compareTo",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.fireSeriesChanged",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getItemCount",
+    "doc": "/**\n     * Returns the number of items in the series.\n     *\n     * @return The item count.\n     */",
+    "code": "public int getItemCount() {\n        return this.data.size();\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getTimePeriod",
+    "doc": "/**\n     * Returns the time period at the specified index.\n     *\n     * @param index  the index of the data item.\n     *\n     * @return The time period.\n     */",
+    "code": "public RegularTimePeriod getTimePeriod(int index) {\n        return getRawDataItem(index).getPeriod();\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.removeAgedItems",
+    "doc": "/**\n     * Age items in the series.  Ensure that the timespan from the youngest to\n     * the oldest record in the series does not exceed maximumItemAge time\n     * periods.  Oldest items will be removed if required.\n     *\n     * @param notify  controls whether or not a {@link SeriesChangeEvent} is\n     *                sent to registered listeners IF any items are removed.\n     */",
+    "code": "public void removeAgedItems(boolean notify) {\n        if (getItemCount() > 1) {\n            long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();\n            boolean removed = false;\n            while ((latest - getTimePeriod(0).getSerialIndex())\n                    > this.maximumItemAge) {\n                this.data.remove(0);\n                removed = true;\n            }\n            if (removed) {\n                findBoundsByIteration();\n                if (notify) {\n                    fireSeriesChanged();\n                }\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.updateBoundsForAddedItem",
+    "doc": "/**\n     * Updates the cached values for the minimum and maximum data values.\n     *\n     * @param item  the item added (<code>null</code> not permitted).\n     *\n     * @since 1.0.14\n     */",
+    "code": "private void updateBoundsForAddedItem(TimeSeriesDataItem item) {\n        Number yN = item.getValue();\n        if (item.getValue() != null) {\n            double y = yN.doubleValue();\n            this.minY = minIgnoreNaN(this.minY, y);\n            this.maxY = maxIgnoreNaN(this.maxY, y);\n        }\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeriesDataItem.clone",
+    "doc": "/**\n     * Clones the data item.  Note: there is no need to clone the period or\n     * value since they are immutable instances.\n     *\n     * @return A clone of the data item.\n     */",
+    "code": "public Object clone() {\n        Object clone = null;\n        try {\n            clone = super.clone();\n        }\n        catch (CloneNotSupportedException e) { // won't get here...\n            e.printStackTrace();\n        }\n        return clone;\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeriesDataItem.getPeriod",
+    "doc": "/**\n     * Returns the time period.\n     *\n     * @return The time period (never <code>null</code>).\n     */",
+    "code": "public RegularTimePeriod getPeriod() {\n        return this.period;\n    }"
+  }
+]

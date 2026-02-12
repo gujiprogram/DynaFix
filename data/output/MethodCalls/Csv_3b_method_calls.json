@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.csv.ExtendedBufferedReader.read",
+    "doc": "/**\n     * Created extended buffered reader using default buffer-size\n     */",
+    "code": "public int read() throws IOException {\n        final int current = super.read();\n        if (current == CR || (current == LF && lastChar != CR)) {\n            lineCounter++;\n        }\n        lastChar = current;\n        return lastChar;\n    }"
+  }
+]

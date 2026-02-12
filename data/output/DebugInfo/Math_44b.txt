@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.apache.commons.math.ode.events.EventStateTest::testIssue695 ===
+Exception: junit.framework.AssertionFailedError: going backard in time! (7.796578226186635 < 10.99)
+
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Control Flow] Branch Info: Line: 301, Condition: if (currentY != 0), Executed: true
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:301 -> java.util.Iterator.next
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Local Variables] "{state\u003dorg.apache.commons.math.ode.events.EventState@2063c53e}"
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:302->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:302 -> org.apache.commons.math.ode.events.EventState.evaluateStep
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:302->[Control Flow] Branch Info: Line: 302, Condition: if (org.apache.commons.math.ode.events.EventState.evaluateStep() != 0), Executed: false
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Control Flow] Loop Info: Line: 301, Description: while at line 301
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:301 -> java.util.Iterator.hasNext
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Control Flow] Branch Info: Line: 301, Condition: if (currentY != 0), Executed: true
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:301 -> java.util.Iterator.next
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Local Variables] "{state\u003dorg.apache.commons.math.ode.events.EventState@44de94c3}"
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:302->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:302 -> org.apache.commons.math.ode.events.EventState.evaluateStep
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:318->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:318 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.setSoftCurrentTime
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:321->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:321 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.setInterpolatedTime
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:322 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getInterpolatedState
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:322->[Local Variables] {"eventY":[10.989999999999997]}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:323->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:323 -> org.apache.commons.math.ode.events.EventState.stepAccepted
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:324->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:324 -> org.apache.commons.math.ode.events.EventState.stop
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:327->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:327 -> java.util.Collection.iterator
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:327->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:327 -> java.util.Iterator.hasNext
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:327->[Control Flow] Branch Info: Line: 327, Condition: if (var17 != 0), Executed: false
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:331->[Control Flow] Branch Info: Line: 331, Condition: if (this.isLastStep != false), Executed: false
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:337->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:337 -> org.apache.commons.math.ode.events.EventState.reset
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:337->[Control Flow] Branch Info: Line: 337, Condition: if (org.apache.commons.math.ode.events.EventState.reset() != 0), Executed: true
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:339->[Local Variables] {"eventY":[11.989999999999997]}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:340->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:340 -> java.lang.System.arraycopy
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:340->[Local Variables] {"y":[11.989999999999997]}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:341->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:341 -> org.apache.commons.math.ode.AbstractIntegrator.computeDerivatives
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:277->[Local Variables] {"y":[24.714163638448092]}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:278->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:278 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getGlobalPreviousTime
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:278->[Local Variables] {"previousT":10.99}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:279->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:279 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getGlobalCurrentTime
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:279->[Local Variables] {"currentT":23.714163638448092}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:283->[Control Flow] Branch Info: Line: 283, Condition: if (this.statesInitialized == false), Executed: false
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:291->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:291 -> org.apache.commons.math.ode.sampling.AbstractStepInterpolator.isForward
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:291->[Control Flow] Branch Info: Line: 291, Condition: if (org.apache.commons.math.ode.sampling.AbstractStepInterpolator.isForward() != 0), Executed: true
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:292->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:292 -> org.apache.commons.math.ode.AbstractIntegrator$1.<init>
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:292->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:292 -> java.util.TreeSet.<init>
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:300->[Local Variables] {"occuringEvents":[]}
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:301 -> java.util.Collection.iterator
+org.apache.commons.math.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.acceptStep:301 -> java.util.Iterator.hasNext

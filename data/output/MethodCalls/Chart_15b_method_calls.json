@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jfree.chart.plot.PiePlot.getDataset",
+    "doc": "/**\n     * Returns the dataset.\n     *\n     * @return The dataset (possibly <code>null</code>).\n     *\n     * @see #setDataset(PieDataset)\n     */",
+    "code": "public PieDataset getDataset() {\n        return this.dataset;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.PiePlotState.setPassesRequired",
+    "doc": "/**\n     * Sets the number of passes required by the renderer.\n     *\n     * @param passes  the passes.\n     */",
+    "code": "public void setPassesRequired(int passes) {\n        this.passesRequired = passes;\n    }"
+  },
+  {
+    "method": "org.jfree.data.general.DatasetUtilities.calculatePieDatasetTotal",
+    "doc": "/**\n     * Calculates the total of all the values in a {@link PieDataset}.  If\n     * the dataset contains negative or <code>null</code> values, they are\n     * ignored.\n     *\n     * @param dataset  the dataset (<code>null</code> not permitted).\n     *\n     * @return The total.\n     */",
+    "code": "public static double calculatePieDatasetTotal(PieDataset dataset) {\n        if (dataset == null) {\n            throw new IllegalArgumentException(\"Null 'dataset' argument.\");\n        }\n        List keys = dataset.getKeys();\n        double totalValue = 0;\n        Iterator iterator = keys.iterator();\n        while (iterator.hasNext()) {\n            Comparable current = (Comparable) iterator.next();\n            if (current != null) {\n                Number value = dataset.getValue(current);\n                double v = 0.0;\n                if (value != null) {\n                    v = value.doubleValue();\n                }\n                if (v > 0) {\n                    totalValue = totalValue + v;\n                }\n            }\n        }\n        return totalValue;\n    }"
+  }
+]

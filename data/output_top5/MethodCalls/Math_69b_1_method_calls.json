@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getRowDimension",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.stat.correlation.PearsonsCorrelation.checkSufficientData",
+    "doc": "/**\n     * Throws IllegalArgumentException of the matrix does not have at least\n     * two columns and two rows\n     *\n     * @param matrix matrix to check for sufficiency\n     */",
+    "code": "private void checkSufficientData(final RealMatrix matrix) {\n        int nRows = matrix.getRowDimension();\n        int nCols = matrix.getColumnDimension();\n        if (nRows < 2 || nCols < 2) {\n            throw MathRuntimeException.createIllegalArgumentException(\n                    \"insufficient data: only {0} rows and {1} columns.\",\n                    nRows, nCols);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix",
+    "doc": "/**\n     * Computes the correlation matrix for the columns of the\n     * input matrix.\n     *\n     * @param matrix matrix with columns representing variables to correlate\n     * @return correlation matrix\n     */",
+    "code": "public RealMatrix computeCorrelationMatrix(RealMatrix matrix) {\n        int nVars = matrix.getColumnDimension();\n        RealMatrix outMatrix = new BlockRealMatrix(nVars, nVars);\n        for (int i = 0; i < nVars; i++) {\n            for (int j = 0; j < i; j++) {\n              double corr = correlation(matrix.getColumn(i), matrix.getColumn(j));\n              outMatrix.setEntry(i, j, corr);\n              outMatrix.setEntry(j, i, corr);\n            }\n            outMatrix.setEntry(i, i, 1d);\n        }\n        return outMatrix;\n    }"
+  }
+]

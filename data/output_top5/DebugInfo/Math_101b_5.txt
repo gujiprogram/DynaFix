@@ -1,0 +1,120 @@
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexFormatTest::testForgottenImaginaryCharacter ===
+Exception: java.lang.StringIndexOutOfBoundsException: begin 5, end 6, length 5
+
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:426->[Local Variables] {"ret":"+"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":" ","index":4}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"1","index":5}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":5,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:410->[Local Variables] {"pos":{"index":0,"errorIndex":-1},"source":"1 + 1"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Local Variables] {"index":0}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Local Variables] {"n":5}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"1","index":1}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":1,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:426->[Local Variables] {"ret":"1"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":" ","index":2}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"+","index":3}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":3,"errorIndex":-1}}
+
+=== Debug Info for Test: org.apache.commons.math.complex.FrenchComplexFormatTest::testForgottenImaginaryCharacter ===
+Exception: java.lang.StringIndexOutOfBoundsException: begin 5, end 6, length 5
+
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:426->[Local Variables] {"ret":"+"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":" ","index":4}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"1","index":5}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":5,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:410->[Local Variables] {"pos":{"index":0,"errorIndex":-1},"source":"1 + 1"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Local Variables] {"index":0}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Local Variables] {"n":5}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"1","index":1}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":1,"errorIndex":-1}}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:422->[Control Flow] Branch Info: Line: 422, Condition: if (n < n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:426->[Local Variables] {"ret":"1"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:411->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:411 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:412->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:412 -> java.lang.String.length
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:414->[Local Variables] {"ret":"\u0000"}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:415->[Control Flow] Branch Info: Line: 415, Condition: if (n < n), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":" ","index":2}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: true
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (n >= n), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:418 -> java.lang.String.charAt
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:418->[Local Variables] {"c":"+","index":3}
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:419 -> java.lang.Character.isWhitespace
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:419->[Control Flow] Branch Info: Line: 419, Condition: if (c != 0), Executed: false
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:420->[Method Call] Call Stack: org.apache.commons.math.complex.ComplexFormat.parseNextCharacter:420 -> java.text.ParsePosition.setIndex
+org.apache.commons.math.complex.ComplexFormat:parseNextCharacter:421->[Local Variables] {"pos":{"index":3,"errorIndex":-1}}

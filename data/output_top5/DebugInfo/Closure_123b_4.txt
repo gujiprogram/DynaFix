@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testPrintInOperatorInForLoop ===
+Exception: junit.framework.ComparisonFailure: expected:<for(a=c?0:[(0 in d)];;)foo()> but was:<for(a=c?0:[0 in d];;)foo()>
+
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.getBooleanProp() == 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:829->[Local Variables] "{n\u003dNAME b_ 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> java.lang.String.equals
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.getBooleanProp() == 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:829->[Local Variables] "{n\u003dNAME foo 1 [source_file: [testcode]]}"
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> java.lang.String.equals
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.getBooleanProp() == 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> java.lang.String.equals
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:831->[Control Flow] Branch Info: Line: 831, Condition: if (com.google.javascript.rhino.Node.getBooleanProp() == 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isIndirectEval:830 -> java.lang.String.equals
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isIndirectEval:830->[Control Flow] Branch Info: Line: 830, Condition: if (java.lang.String.equals() != 0), Executed: false

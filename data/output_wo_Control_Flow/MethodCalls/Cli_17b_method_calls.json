@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.cli.Option.hasArg",
+    "doc": "/**\n     * Query to see if this Option requires an argument\n     *\n     * @return boolean flag indicating if an argument is required\n     */",
+    "code": "public boolean hasArg()\n    {\n        return (this.numberOfArgs > 0) || (numberOfArgs == UNLIMITED_VALUES);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Options.getOption",
+    "doc": "/**\n     * Retrieve the {@link Option} matching the long or short name specified.\n     * The leading hyphens in the name are ignored (up to 2).\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return the option represented by opt\n     */",
+    "code": "public Option getOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        if (shortOpts.containsKey(opt))\n        {\n            return (Option) shortOpts.get(opt);\n        }\n\n        return (Option) longOpts.get(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Options.hasOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member\n     * of this {@link Options}.\n     *\n     * @param opt short or long name of the {@link Option}\n     * @return true if the named {@link Option} is a member\n     * of this {@link Options}\n     */",
+    "code": "public boolean hasOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt) || longOpts.containsKey(opt);\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.PosixParser.process",
+    "doc": "/**\n     * <p>If there is a current option and it can have an argument\n     * value then add the token to the processed tokens list and\n     * set the current option to null.</p>\n     *\n     * <p>If there is a current option and it can have argument\n     * values then add the token to the processed tokens list.</p>\n     *\n     * <p>If there is not a current option add the special token\n     * \"<b>--</b>\" and the current <code>value</code> to the processed\n     * tokens list.  The add all the remaining <code>argument</code>\n     * values to the processed tokens list.</p>\n     *\n     * @param value The current token\n     */",
+    "code": "private void process(String value)\n    {\n        if (currentOption != null && currentOption.hasArg())\n        {\n            if (currentOption.hasArg())\n            {\n                tokens.add(value);\n                currentOption = null;\n            }\n            else if (currentOption.hasArgs())\n            {\n                tokens.add(value);\n            }\n        }\n        else\n        {\n            eatTheRest = true;\n            tokens.add(\"--\");\n            tokens.add(value);\n        }\n    }"
+  }
+]

@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarUtilsTest::testRoundTripOctalOrBinary8 ===
+Exception: java.lang.IllegalArgumentException: Value -72057594037927935 is too large for 8 byte field.
+
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:481->[Control Flow] Branch Info: Line: 481, Condition: if (TransVarByteCount == TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarLongValue < 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Local Variables] {"TransVarNeg":true}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarMaxLengthAsOctalChar <= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:495->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:495 -> org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:496->[Local Variables] {"TransVarByteArray":[-1,-1,-1,-1,-1,-1,-1,-1]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:497->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:497 -> org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:499->[Control Flow] Branch Info: Line: 499, Condition: if (TransVarNeg != 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:480->[Local Variables] {"TransVarLongValue":-72057594037927935,"TransVarByteArray":[0,0,0,0,0,0,0,0]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:481->[Control Flow] Branch Info: Line: 481, Condition: if (TransVarByteCount == TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarLongValue < 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarMaxLengthAsOctalChar <= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:495->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:495 -> org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:496->[Local Variables] {"TransVarByteArray":[-1,0,0,0,0,0,0,1]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:497->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:497 -> org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:480->[Local Variables] {"TransVarOffsetOfInterest":0,"TransVarLongValue":0,"TransVarByteCount":8,"TransVarByteArray":[0,0,0,0,0,0,0,0]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:481->[Control Flow] Branch Info: Line: 481, Condition: if (TransVarByteCount == TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:482->[Local Variables] {"TransVarMaxLengthAsOctalChar":2097151}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarLongValue < 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Local Variables] {"TransVarNeg":false}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarMaxLengthAsOctalChar <= 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:488->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:488 -> org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:480->[Local Variables] {"TransVarLongValue":1}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:481->[Control Flow] Branch Info: Line: 481, Condition: if (TransVarByteCount == TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarLongValue < 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarMaxLengthAsOctalChar <= 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:488->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:488 -> org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalBytes
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:480->[Local Variables] {"TransVarLongValue":8589934591}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:481->[Control Flow] Branch Info: Line: 481, Condition: if (TransVarByteCount == TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:483->[Control Flow] Branch Info: Line: 483, Condition: if (TransVarLongValue < 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarNeg == 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:484->[Control Flow] Branch Info: Line: 484, Condition: if (TransVarMaxLengthAsOctalChar <= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: true
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:495->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:495 -> org.apache.commons.compress.archivers.tar.TarUtils.formatLongBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:491->[Control Flow] Branch Info: Line: 491, Condition: if (TransVarByteCount < TransVarByteCount), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:496->[Local Variables] {"TransVarByteArray":[0,0,0,1,-1,-1,-1,-1]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:497->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarUtils.formatLongOctalOrBinaryBytes:497 -> org.apache.commons.compress.archivers.tar.TarUtils.formatBigIntegerBinary
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:499->[Control Flow] Branch Info: Line: 499, Condition: if (TransVarNeg != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:499->[Local Variables] {"TransVarByteArray":[-128,0,0,1,-1,-1,-1,-1]}
+org.apache.commons.compress.archivers.tar.TarUtils:formatLongOctalOrBinaryBytes:480->[Local Variables] {"TransVarLongValue":-1,"TransVarByteArray":[0,0,0,0,0,0,0,0]}

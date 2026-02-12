@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.StringUtil.inSorted",
+    "doc": "/**\n     * After normalizing the whitespace within a string, appends it to a string builder.\n     * @param accum builder to append to\n     * @param string string to normalize whitespace within\n     * @param stripLeading set to true if you wish to remove any leading whitespace\n     */",
+    "code": "public static boolean inSorted(String needle, String[] haystack) {\n        return Arrays.binarySearch(haystack, needle) >= 0;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.nodeName",
+    "doc": "/**\n     * Create a new Element from a tag and a base URI.\n     *\n     * @param tag element tag\n     * @param baseUri the base URI of this element. It is acceptable for the base URI to be an empty\n     *            string, but not null.\n     * @see Tag#valueOf(String, ParseSettings)\n     */",
+    "code": "public String nodeName() {\n        return tag.getName();\n    }"
+  }
+]

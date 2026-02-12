@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue942 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x={[0]:1}> but was:<var x={["0"]:1}>
+
+com.google.javascript.jscomp.CodeGenerator:strEscape:1048->[Local Variables] {"s":"0","quote":"\"","useSlashV":false,"isRegexp":false,"singlequoteEscape":"\u0027","doublequoteEscape":"\\\"","backslashEscape":"\\\\"}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1049->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1049 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:strEscape:1049->[Local Variables] {"sb":""}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1050->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1050 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.CodeGenerator:strEscape:1050->[Local Variables] {"sb":"\""}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1051 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Control Flow] Branch Info: Line: 1051, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Local Variables] {"i":0}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1052->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1052 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:strEscape:1052->[Local Variables] {"c":"0"}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1139->[Control Flow] Branch Info: Line: 1139, Condition: if (outputCharsetEncoder != null), Executed: false
+com.google.javascript.jscomp.CodeGenerator:strEscape:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (c > c), Executed: true
+com.google.javascript.jscomp.CodeGenerator:strEscape:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (c < c), Executed: true
+com.google.javascript.jscomp.CodeGenerator:strEscape:1151->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1151 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.CodeGenerator:strEscape:1050->[Local Variables] {"sb":"\"0"}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Control Flow] Loop Info: Line: 1051, Description: while at line 1051
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1051 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:strEscape:1051->[Control Flow] Branch Info: Line: 1051, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:strEscape:1161->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1161 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.CodeGenerator:strEscape:1161->[Local Variables] {"sb":"\"0\""}
+com.google.javascript.jscomp.CodeGenerator:strEscape:1162->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.strEscape:1162 -> java.lang.StringBuilder.toString

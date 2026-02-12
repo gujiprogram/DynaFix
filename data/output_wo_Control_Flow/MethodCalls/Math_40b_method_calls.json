@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.computeObjectiveValue",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.getAbsoluteAccuracy",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.getFunctionValueAccuracy",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.getRelativeAccuracy",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.guessX",
+    "doc": "/** Guess an x value by n<sup>th</sup> order inverse polynomial interpolation.\n     * <p>\n     * The x value is guessed by evaluating polynomial Q(y) at y = targetY, where Q\n     * is built such that for all considered points (x<sub>i</sub>, y<sub>i</sub>),\n     * Q(y<sub>i</sub>) = x<sub>i</sub>.\n     * </p>\n     * @param targetY target value for y\n     * @param x reference points abscissas for interpolation,\n     * note that this array <em>is</em> modified during computation\n     * @param y reference points ordinates for interpolation\n     * @param start start index of the points to consider (inclusive)\n     * @param end end index of the points to consider (exclusive)\n     * @return guessed root (will be a NaN if two points share the same y)\n     */",
+    "code": "private double guessX(final double targetY, final double[] x, final double[] y,\n                          final int start, final int end) {\n\n        for (int i = start; i < end - 1; ++i) {\n            final int delta = i + 1 - start;\n            for (int j = end - 1; j > i; --j) {\n                x[j] = (x[j] - x[j-1]) / (y[j] - y[j - delta]);\n            }\n        }\n\n        double x0 = 0;\n        for (int j = end - 1; j >= start; --j) {\n            x0 = x[j] + x0 * (targetY - y[j]);\n        }\n\n        return x0;\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.abs",
+    "doc": "/**\n     * Absolute value.\n     * @param x number from which absolute value is requested\n     * @return abs(x)\n     */",
+    "code": "public static int abs(final int x) {\n        return (x < 0) ? -x : x;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.max",
+    "doc": "/** Compute the maximum of two values\n     * @param a first value\n     * @param b second value\n     * @return b if a is lesser or equal to b, a otherwise\n     */",
+    "code": "public static int max(final int a, final int b) {\n        return (a <= b) ? b : a;\n    }"
+  }
+]

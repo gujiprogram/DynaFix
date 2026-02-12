@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JsonDeserializer.deserialize",
+    "doc": "/**\n     * Method that can be called to ask implementation to deserialize\n     * JSON content into the value type this serializer handles.\n     * Returned instance is to be constructed by method itself.\n     *<p>\n     * Pre-condition for this method is that the parser points to the\n     * first event that is part of value to deserializer (and which\n     * is never JSON 'null' literal, more on this below): for simple\n     * types it may be the only value; and for structured types the\n     * Object start marker or a FIELD_NAME.\n     * </p>\n     * <p>\n     * The two possible input conditions for structured types result\n     * from polymorphism via fields. In the ordinary case, Jackson\n     * calls this method when it has encountered an OBJECT_START,\n     * and the method implementation must advance to the next token to\n     * see the first field name. If the application configures\n     * polymorphism via a field, then the object looks like the following.\n     *  <pre>\n     *      {\n     *          \"@class\": \"class name\",\n     *          ...\n     *      }\n     *  </pre>\n     *  Jackson consumes the two tokens (the <tt>@class</tt> field name\n     *  and its value) in order to learn the class and select the deserializer.\n     *  Thus, the stream is pointing to the FIELD_NAME for the first field\n     *  after the @class. Thus, if you want your method to work correctly\n     *  both with and without polymorphism, you must begin your method with:\n     *  <pre>\n     *       if (jp.getCurrentToken() == JsonToken.START_OBJECT) {\n     *         jp.nextToken();\n     *       }\n     *  </pre>\n     * This results in the stream pointing to the field name, so that\n     * the two conditions align.\n     * </p>\n     * <p>\n     * Post-condition is that the parser will point to the last\n     * event that is part of deserialized value (or in case deserialization\n     * fails, event that was not recognized or usable, which may be\n     * the same event as the one it pointed to upon call).\n     *<p>\n     * Note that this method is never called for JSON null literal,\n     * and thus deserializers need (and should) not check for it.\n     *\n     * @param p Parsed used for reading JSON content\n     * @param ctxt Context that can be used to access information about\n     *   this deserialization activity.\n     *\n     * @return Deserialized value\n     */",
+    "code": "public abstract T deserialize(JsonParser p, DeserializationContext ctxt)\n        throws IOException, JsonProcessingException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer",
+    "doc": "/**\n     * Method called to locate deserializer for the passed root-level value.\n     */",
+    "code": "protected JsonDeserializer<Object> _findRootDeserializer(DeserializationContext ctxt,\n            JavaType valueType)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader._initForReading",
+    "doc": "/**\n     * NOTE: changed from static to non-static in 2.5; unfortunate but\n     * necessary change to support overridability\n     */",
+    "code": "protected JsonToken _initForReading(JsonParser p) throws IOException\n    {\n        if (_schema != null) {\n            p.setSchema(_schema);\n        }\n        _config.initialize(p); // since 2.5\n\n         * This occurs before first read from JsonParser, as well as\n         * after clearing of current token.\n        JsonToken t = p.getCurrentToken();\n        if (t == null) { // and then we must get something...\n            t = p.nextToken();\n            if (t == null) {\n                throw JsonMappingException.from(p, \"No content to map due to end-of-input\");\n            }\n        }\n        return t;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ObjectReader.createDeserializationContext",
+    "doc": "/**\n     * Internal helper method called to create an instance of {@link DeserializationContext}\n     * for deserializing a single root value.\n     * Can be overridden if a custom context is needed.\n     */",
+    "code": "protected DefaultDeserializationContext createDeserializationContext(JsonParser jp,\n            DeserializationConfig cfg) {\n        return _context.createInstance(cfg, jp, _injectableValues);\n    }"
+  }
+]

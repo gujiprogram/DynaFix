@@ -1,0 +1,74 @@
+
+=== Debug Info for Test: org.jsoup.nodes.FormElementTest::createsFormData ===
+Exception: junit.framework.AssertionFailedError: expected:<6> but was:<7>
+
+org.jsoup.nodes.FormElement:formData:89->[Control Flow] Branch Info: Line: 89, Condition: if (org.jsoup.parser.Tag.isFormSubmittable() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:90->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:90 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.nodes.FormElement:formData:90->[Control Flow] Branch Info: Line: 90, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: true
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Loop Info: Line: 85, Description: while at line 85
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.hasNext
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Branch Info: Line: 85, Condition: if (var2 != 0), Executed: true
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.next
+org.jsoup.nodes.FormElement:formData:88->[Local Variables] "{TransVarElement\u003d\u003cinput name\u003d\"eleven\" value\u003d\"text\" type\u003d\"button\"\u003e}"
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.nodes.Element.tag
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.parser.Tag.isFormSubmittable
+org.jsoup.nodes.FormElement:formData:89->[Control Flow] Branch Info: Line: 89, Condition: if (org.jsoup.parser.Tag.isFormSubmittable() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:90->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:90 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.nodes.FormElement:formData:90->[Control Flow] Branch Info: Line: 90, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:91->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:91 -> org.jsoup.nodes.Element.attr
+org.jsoup.nodes.FormElement:formData:91->[Local Variables] {"TransVarAttributeName":"eleven"}
+org.jsoup.nodes.FormElement:formData:92->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:92 -> java.lang.String.length
+org.jsoup.nodes.FormElement:formData:92->[Control Flow] Branch Info: Line: 92, Condition: if (java.lang.String.length() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:93->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:93 -> org.jsoup.nodes.Element.attr
+org.jsoup.nodes.FormElement:formData:95->[Local Variables] {"TransVarElementType":"button"}
+org.jsoup.nodes.FormElement:formData:96->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:96 -> org.jsoup.nodes.Element.normalName
+org.jsoup.nodes.FormElement:formData:96->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:96 -> java.lang.String.equals
+org.jsoup.nodes.FormElement:formData:96->[Control Flow] Branch Info: Line: 96, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:111->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:111 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.FormElement:formData:111->[Control Flow] Branch Info: Line: 111, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.jsoup.nodes.FormElement:formData:111->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:111 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.FormElement:formData:111->[Control Flow] Branch Info: Line: 111, Condition: if (java.lang.String.equalsIgnoreCase() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:118->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:118 -> org.jsoup.nodes.Element.val
+org.jsoup.nodes.FormElement:formData:118->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:118 -> org.jsoup.helper.HttpConnection$KeyVal.create
+org.jsoup.nodes.FormElement:formData:118->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:118 -> java.util.ArrayList.add
+org.jsoup.nodes.FormElement:formData:113->[Control Flow] Branch Info: Line: 113, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:119->[Local Variables] {"TransVarList":[{"key":"one","value":"two"},{"key":"three","value":"four"},{"key":"three","value":"five"},{"key":"six","value":"seven"},{"key":"seven","value":"on"},{"key":"eight","value":"on"},{"key":"eleven","value":"text"}]}
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Loop Info: Line: 85, Description: while at line 85
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.hasNext
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Branch Info: Line: 85, Condition: if (var2 != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:114->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:114 -> org.jsoup.nodes.Element.val
+org.jsoup.nodes.FormElement:formData:114->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:114 -> java.lang.String.length
+org.jsoup.nodes.FormElement:formData:114->[Control Flow] Branch Info: Line: 114, Condition: if (java.lang.String.length() > 0), Executed: false
+org.jsoup.nodes.FormElement:formData:115->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:115 -> org.jsoup.helper.HttpConnection$KeyVal.create
+org.jsoup.nodes.FormElement:formData:115->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:115 -> java.util.ArrayList.add
+org.jsoup.nodes.FormElement:formData:115->[Local Variables] {"TransVarList":[{"key":"one","value":"two"},{"key":"three","value":"four"},{"key":"three","value":"five"},{"key":"six","value":"seven"},{"key":"seven","value":"on"},{"key":"eight","value":"on"}]}
+org.jsoup.nodes.FormElement:formData:113->[Control Flow] Branch Info: Line: 113, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Loop Info: Line: 85, Description: while at line 85
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.hasNext
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Branch Info: Line: 85, Condition: if (var2 != 0), Executed: true
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.next
+org.jsoup.nodes.FormElement:formData:88->[Local Variables] "{TransVarElement\u003d\u003cinput name\u003d\"nine\" type\u003d\"checkbox\" value\u003d\"unset\"\u003e}"
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.nodes.Element.tag
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.parser.Tag.isFormSubmittable
+org.jsoup.nodes.FormElement:formData:89->[Control Flow] Branch Info: Line: 89, Condition: if (org.jsoup.parser.Tag.isFormSubmittable() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:90->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:90 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.nodes.FormElement:formData:90->[Control Flow] Branch Info: Line: 90, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:91->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:91 -> org.jsoup.nodes.Element.attr
+org.jsoup.nodes.FormElement:formData:91->[Local Variables] {"TransVarAttributeName":"nine"}
+org.jsoup.nodes.FormElement:formData:92->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:92 -> java.lang.String.length
+org.jsoup.nodes.FormElement:formData:92->[Control Flow] Branch Info: Line: 92, Condition: if (java.lang.String.length() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:93->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:93 -> org.jsoup.nodes.Element.attr
+org.jsoup.nodes.FormElement:formData:96->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:96 -> org.jsoup.nodes.Element.normalName
+org.jsoup.nodes.FormElement:formData:96->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:96 -> java.lang.String.equals
+org.jsoup.nodes.FormElement:formData:96->[Control Flow] Branch Info: Line: 96, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:111->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:111 -> java.lang.String.equalsIgnoreCase
+org.jsoup.nodes.FormElement:formData:111->[Control Flow] Branch Info: Line: 111, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.jsoup.nodes.FormElement:formData:113->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:113 -> org.jsoup.nodes.Element.hasAttr
+org.jsoup.nodes.FormElement:formData:113->[Control Flow] Branch Info: Line: 113, Condition: if (org.jsoup.nodes.Element.hasAttr() != 0), Executed: false
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Loop Info: Line: 85, Description: while at line 85
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.hasNext
+org.jsoup.nodes.FormElement:formData:85->[Control Flow] Branch Info: Line: 85, Condition: if (var2 != 0), Executed: true
+org.jsoup.nodes.FormElement:formData:85->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:85 -> java.util.Iterator.next
+org.jsoup.nodes.FormElement:formData:88->[Local Variables] "{TransVarElement\u003d\u003cinput name\u003d\"ten\" value\u003d\"text\" disabled\u003e}"
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.nodes.Element.tag
+org.jsoup.nodes.FormElement:formData:89->[Method Call] Call Stack: org.jsoup.nodes.FormElement.formData:89 -> org.jsoup.parser.Tag.isFormSubmittable

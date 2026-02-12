@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.isIdeMode",
+    "doc": "/**\n   * Returns true if compiling in IDE mode.\n   */",
+    "code": "abstract boolean isIdeMode();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.MethodCompilerPass.addSignature",
+    "doc": "/**\n   * The signature storage is provided by the implementing class.\n   */",
+    "code": "public void addSignature(\n        String functionName, Node functionNode, String sourceFile);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getSourceName",
+    "doc": "/**\n   * Gets the current input source name.\n   *\n   * @return A string that may be empty, but not null\n   */",
+    "code": "public String getSourceName() {\n    return sourceName;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getInitialValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getInputName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  public StaticSlot<JSType> getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * This function takes a set of GETPROP nodes and produces a string that is\n     * each property separated by dots.  If the node ultimately under the left\n     * sub-tree is not a simple name, this is not a valid qualified name.\n     *\n     * @return a null if this is not a qualified name, or a dot-separated string\n     * of the name and properties.\n     */",
+    "code": "return getString();\n        } else if (type == Token.GETPROP) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

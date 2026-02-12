@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.joda.time.DateTimeZone.convertLocalToUTC",
+    "doc": "/**\n     * Converts a local instant to a standard UTC instant with the same\n     * local time attempting to use the same offset as the original.\n     * <p>\n     * This conversion is used after performing a calculation\n     * where the calculation was done using a simple local zone.\n     * Whenever possible, the same offset as the original offset will be used.\n     * This is most significant during a daylight savings overlap.\n     *\n     * @param instantLocal  the local instant to convert to UTC\n     * @param strict  whether the conversion should reject non-existent local times\n     * @param originalInstantUTC  the original instant that the calculation is based on\n     * @return the UTC instant with the same local time,\n     * @throws ArithmeticException if the result overflows a long\n     * @throws IllegalArgumentException if the zone has no equivalent local time\n     * @since 2.0\n     */",
+    "code": "public long convertLocalToUTC(long instantLocal, boolean strict, long originalInstantUTC) {\n        int offsetOriginal = getOffset(originalInstantUTC);\n        long instantUTC = instantLocal - offsetOriginal;\n        int offsetLocalFromOriginal = getOffset(instantUTC);\n        if (offsetLocalFromOriginal == offsetOriginal) {\n            return instantUTC;\n        }\n        return convertLocalToUTC(instantLocal, strict);\n    }"
+  },
+  {
+    "method": "org.joda.time.DateTimeZone.convertUTCToLocal",
+    "doc": "/**\n     * Converts a standard UTC instant to a local instant with the same\n     * local time. This conversion is used before performing a calculation\n     * so that the calculation can be done using a simple local zone.\n     *\n     * @param instantUTC  the UTC instant to convert to local\n     * @return the local instant with the same local time\n     * @throws ArithmeticException if the result overflows a long\n     * @since 1.5\n     */",
+    "code": "public long convertUTCToLocal(long instantUTC) {\n        int offset = getOffset(instantUTC);\n        long instantLocal = instantUTC + offset;\n        if ((instantUTC ^ instantLocal) < 0 && (instantUTC ^ offset) >= 0) {\n            throw new ArithmeticException(\"Adding time zone offset caused overflow\");\n        }\n        return instantLocal;\n    }"
+  }
+]

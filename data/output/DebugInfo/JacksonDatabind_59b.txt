@@ -1,0 +1,48 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.TypeRefinementForMapTest::testMapKeyRefinement1384 ===
+Exception: com.fasterxml.jackson.databind.JsonMappingException: Can not find a (Map) Key deserializer for type [simple type, class com.fasterxml.jackson.databind.jsontype.TypeRefinementForMapTest$CompoundKey]
+
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:346->[Control Flow] Branch Info: Line: 346, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:354->[Control Flow] Branch Info: Line: 354, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:358->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:358 -> java.lang.Class.isAssignableFrom
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:358->[Control Flow] Branch Info: Line: 358, Condition: if (java.lang.Class.isAssignableFrom() == 0), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:365 -> com.fasterxml.jackson.databind.JavaType.getBindings
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:365 -> com.fasterxml.jackson.databind.type.TypeBindings.isEmpty
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.fasterxml.jackson.databind.type.TypeBindings.isEmpty() != 0), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:370->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:370 -> com.fasterxml.jackson.databind.JavaType.isContainerType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.fasterxml.jackson.databind.JavaType.isContainerType() != 0), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:371->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:371 -> com.fasterxml.jackson.databind.JavaType.isMapLikeType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:371->[Control Flow] Branch Info: Line: 371, Condition: if (com.fasterxml.jackson.databind.JavaType.isMapLikeType() != 0), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.JavaType.getKeyType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.JavaType.getContentType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.type.TypeBindings.create
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:376->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:376 -> com.fasterxml.jackson.databind.type.TypeFactory._fromClass
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:421->[Control Flow] Branch Info: Line: 421, Condition: if (newType == null), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:344->[Local Variables] "{subclass\u003dclass java.util.LinkedHashMap, baseType\u003d[map type; class java.util.Map, [simple type, class com.fasterxml.jackson.databind.jsontype.TypeRefinementForMapTest$CompoundKey] -\u003e [simple type, class java.lang.String]]}"
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:345->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:345 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:345->[Local Variables] {"rawBase":"interface java.util.Map"}
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:346->[Control Flow] Branch Info: Line: 346, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:354->[Control Flow] Branch Info: Line: 354, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:358->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:358 -> java.lang.Class.isAssignableFrom
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:358->[Control Flow] Branch Info: Line: 358, Condition: if (java.lang.Class.isAssignableFrom() == 0), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:365 -> com.fasterxml.jackson.databind.JavaType.getBindings
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:365 -> com.fasterxml.jackson.databind.type.TypeBindings.isEmpty
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.fasterxml.jackson.databind.type.TypeBindings.isEmpty() != 0), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:370->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:370 -> com.fasterxml.jackson.databind.JavaType.isContainerType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:370->[Control Flow] Branch Info: Line: 370, Condition: if (com.fasterxml.jackson.databind.JavaType.isContainerType() != 0), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:371->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:371 -> com.fasterxml.jackson.databind.JavaType.isMapLikeType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:371->[Control Flow] Branch Info: Line: 371, Condition: if (com.fasterxml.jackson.databind.JavaType.isMapLikeType() != 0), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:372->[Control Flow] Branch Info: Line: 372, Condition: if (unknown_condition_165), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.JavaType.getKeyType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.JavaType.getContentType
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:377->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:377 -> com.fasterxml.jackson.databind.type.TypeBindings.create
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:376->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:376 -> com.fasterxml.jackson.databind.type.TypeFactory._fromClass
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:421->[Control Flow] Branch Info: Line: 421, Condition: if (newType == null), Executed: false
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:344->[Local Variables] {"subclass":"class java.util.HashMap"}
+com.fasterxml.jackson.databind.type.TypeFactory:constructSpecializedType:345->[Method Call] Call Stack: com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType:345 -> com.fasterxml.jackson.databind.JavaType.getRawClass

@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.jsoup.helper.DescendableLinkedList.add",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.helper.StringUtil.in",
+    "doc": "/**\n     * Tests if a code point is \"whitespace\" as defined in the HTML spec.\n     * @param c code point to test\n     * @return true if code point is whitespace, false otherwise\n     */",
+    "code": "public static boolean in(String needle, String... haystack) {\n        for (String hay : haystack) {\n            if (hay.equals(needle))\n            return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.appendChild",
+    "doc": "/**\n     * Add a node child node to this element.\n     *\n     * @param child node to add.\n     * @return this element, so that you can add more child nodes or elements.\n     */",
+    "code": "public Element appendChild(Node child) {\n        Validate.notNull(child);\n\n        addChildren(child);\n        return this;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.tagName",
+    "doc": "/**\n     * Get the name of the tag for this element. E.g. {@code div}\n     *\n     * @return the tag name\n     */",
+    "code": "public String tagName() {\n        return tag.getName();\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.currentElement",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.insertEmpty",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "Element insertEmpty(Token.StartTag startTag) {\n        Tag tag = Tag.valueOf(startTag.name());\n        Element el = new Element(tag, baseUri, startTag.attributes);\n        insertNode(el);\n        if (startTag.isSelfClosing()) {\n            if (tag.isKnownTag()) {\n                if (tag.isSelfClosing()) tokeniser.acknowledgeSelfClosingFlag(); // if not acked, promulagates error\n            } else {\n                tag.setSelfClosing();\n                tokeniser.acknowledgeSelfClosingFlag(); // not an distinct error\n            }\n        }\n        return el;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.getData",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.isSelfClosing",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Tokeniser.emit",
+    "doc": "/**\n * Readers the input stream into tokens.\n */",
+    "code": "void emit(Token token) {\n        Validate.isFalse(isEmitPending, \"There is an unread token pending!\");\n\n        emitPending = token;\n        isEmitPending = true;\n\n        if (token.type == Token.TokenType.StartTag) {\n            Token.StartTag startTag = (Token.StartTag) token;\n            lastStartTag = startTag;\n            if (startTag.selfClosing)\n                selfClosingFlagAcknowledged = false;\n        } else if (token.type == Token.TokenType.EndTag) {\n            Token.EndTag endTag = (Token.EndTag) token;\n            if (endTag.attributes != null)\n                error(\"Attributes incorrectly present on end tag\");\n        }\n    }"
+  }
+]

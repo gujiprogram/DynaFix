@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math.ode.events.CombinedEventsManager.evaluateStep",
+    "doc": "/** Evaluate the impact of the proposed step on all managed\n     * event handlers.\n     * @param interpolator step interpolator for the proposed step\n     * @return true if at least one event handler triggers an event\n     * before the end of the proposed step (this implies the step should\n     * be rejected)\n     * @exception DerivativeException if the interpolator fails to\n     * compute the function somewhere within the step\n     * @exception IntegratorException if an event cannot be located\n     */",
+    "code": "public boolean evaluateStep(final StepInterpolator interpolator)\n    throws DerivativeException, IntegratorException {\n\n        try {\n\n            first = null;\n            if (states.isEmpty()) {\n                return false;\n            }\n\n            if (! initialized) {\n\n                final double t0 = interpolator.getPreviousTime();\n                interpolator.setInterpolatedTime(t0);\n                final double [] y = interpolator.getInterpolatedState();\n                for (EventState state : states) {\n                    state.reinitializeBegin(t0, y);\n                }\n\n                initialized = true;\n\n            }\n\n            for (EventState state : states) {\n\n                if (state.evaluateStep(interpolator)) {\n                    if (first == null) {\n                        first = state;\n                    } else {\n                        if (interpolator.isForward()) {\n                            if (state.getEventTime() < first.getEventTime()) {\n                                first = state;\n                            }\n                        } else {\n                            if (state.getEventTime() > first.getEventTime()) {\n                                first = state;\n                            }\n                        }\n                    }\n                }\n\n            }\n\n            return first != null;\n\n        } catch (EventException se) {\n            throw new IntegratorException(se);\n        } catch (ConvergenceException ce) {\n            throw new IntegratorException(ce);\n        }\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.CombinedEventsManager.stepAccepted",
+    "doc": "/** Inform the event handlers that the step has been accepted\n     * by the integrator.\n     * @param t value of the independent <i>time</i> variable at the\n     * end of the step\n     * @param y array containing the current value of the state vector\n     * at the end of the step\n     * @exception IntegratorException if the value of one of the\n     * events states cannot be evaluated\n     */",
+    "code": "public void stepAccepted(final double t, final double[] y)\n    throws IntegratorException {\n        try {\n            for (EventState state : states) {\n                state.stepAccepted(t, y);\n            }\n        } catch (EventException se) {\n            throw new IntegratorException(se);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.CombinedEventsManager.stop",
+    "doc": "/** Check if the integration should be stopped at the end of the\n     * current step.\n     * @return true if the integration should be stopped\n     */",
+    "code": "public boolean stop() {\n        for (EventState state : states) {\n            if (state.stop()) {\n                return true;\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.nonstiff.EmbeddedRungeKuttaIntegrator.estimateError",
+    "doc": "/** Compute the error ratio.\n   * @param yDotK derivatives computed during the first stages\n   * @param y0 estimate of the step at the start of the step\n   * @param y1 estimate of the step at the end of the step\n   * @param h  current step\n   * @return error ratio, greater than 1 if step should be rejected\n   */",
+    "code": "protected abstract double estimateError(double[][] yDotK,\n                                          double[] y0, double[] y1,"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.storeTime",
+    "doc": "/** Store the current step time.\n   * @param t current time\n   */",
+    "code": "public void storeTime(final double t) {\n\n    currentTime = t;\n    h           = currentTime - previousTime;\n    setInterpolatedTime(t);\n\n    finalized  = false;\n\n  }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.StepHandler.handleStep",
+    "doc": "/**\n   * Handle the last accepted step\n   * @param interpolator interpolator for the last accepted step. For\n   * efficiency purposes, the various integrators reuse the same\n   * object on each call, so if the instance wants to keep it across\n   * all calls (for example to provide at the end of the integration a\n   * continuous model valid throughout the integration range, as the\n   * {@link org.apache.commons.math.ode.ContinuousOutputModel\n   * ContinuousOutputModel} class does), it should build a local copy\n   * using the clone method of the interpolator and store this copy.\n   * Keeping only a reference to the interpolator and reusing it will\n   * result in unpredictable behavior (potentially crashing the application).\n   * @param isLast true if the step is the last one\n   * @throws DerivativeException this exception is propagated to the\n   * caller if the underlying user function triggers one\n   */",
+    "code": "void handleStep(StepInterpolator interpolator, boolean isLast) throws DerivativeException;"
+  }
+]

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer._append",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected final void _append(JsonToken type)\n    {\n        Segment next = _hasNativeId\n                ? _last.append(_appendAt, type, _objectId, _typeId)\n                : _last.append(_appendAt, type);\n        if (next == null) {\n            ++_appendAt;\n        } else {\n            _last = next;\n            _appendAt = 1; // since we added first at 0\n        }\n    }"
+  }
+]

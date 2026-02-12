@@ -1,0 +1,95 @@
+
+=== Debug Info for Test: org.apache.commons.math.optimization.general.MinpackTest::testMinpackJennrichSampson ===
+Exception: junit.framework.AssertionFailedError: expected:<0.2578330049> but was:<0.25781992663680675>
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (ratio > 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:419->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:419 -> org.apache.commons.math.optimization.VectorialPointValuePair.<init>
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:367->[Local Variables] {"pc2":124.3621824781581}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:368->[Local Variables] {"coeff1":1.5229496722977656E-10}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:369->[Local Variables] {"coeff2":2.2570614593416043E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:370->[Local Variables] {"preRed":4.666417885912985E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:373->[Local Variables] {"dirDer":-2.4093564265713807E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:374->[Control Flow] Branch Info: Line: 374, Condition: if (preRed == 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:376->[Local Variables] {"ratio":-0.24704518391102842}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:377->[Control Flow] Branch Info: Line: 377, Condition: if (ratio <= 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:379->[Control Flow] Branch Info: Line: 379, Condition: if (actRed < 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:379->[Local Variables] {"tmp":0.4034739611357154}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:380->[Control Flow] Branch Info: Line: 380, Condition: if (previousCost < 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:380->[Control Flow] Branch Info: Line: 380, Condition: if (j < 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:383->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:383 -> java.lang.Math.min
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:383->[Local Variables] {"delta":0.003766504564714348}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:385->[Control Flow] Branch Info: Line: 385, Condition: if (ratio >= 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:391->[Control Flow] Branch Info: Line: 391, Condition: if (ratio >= 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Local Variables] {"j":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:404->[Local Variables] {"pj":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Local Variables] {"j":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:404->[Local Variables] {"pj":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:407->[Local Variables] {"tmpVec":[-1.4117744821199232,-2.6505443341000148,-3.665426686744455,-4.390573369764287,-4.740769425764473,-4.605737091028882,-3.842764504368982,-2.2671664251815997,0.36006067304182743,4.348214303737317]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:414->[Local Variables] {"oldRes":[-1.4117744821199232,-2.6505443341000148,-3.665426686744455,-4.390573369764287,-4.740769425764473,-4.605737091028882,-3.842764504368982,-2.2671664251815997,0.36006067304182743,4.348214303737317]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:415 -> java.lang.Math.abs
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (this.costRelativeTolerance <= 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (this.costRelativeTolerance <= 0), Executed: true
+
+=== Debug Info for Test: org.apache.commons.math.optimization.general.MinpackTest::testMinpackFreudensteinRoth ===
+Exception: junit.framework.AssertionFailedError: expected:<11.4121122022341> but was:<11.41300466147456>
+
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:380->[Control Flow] Branch Info: Line: 380, Condition: if (j < 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:383->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:383 -> java.lang.Math.min
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:383->[Local Variables] {"delta":0.022174316498196855}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:385->[Control Flow] Branch Info: Line: 385, Condition: if (ratio >= 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:391->[Control Flow] Branch Info: Line: 391, Condition: if (ratio >= 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Local Variables] {"j":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:404->[Local Variables] {"pj":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Local Variables] {"j":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:404->[Local Variables] {"pj":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Loop Info: Line: 403, Description: while at line 403
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:403->[Control Flow] Branch Info: Line: 403, Condition: if (this.solvedCols < this.solvedCols), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:407->[Local Variables] {"tmpVec":[-4.948952121152819,4.948952092347156]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:414->[Local Variables] {"oldRes":[-4.948952121152819,4.948952092347156]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:415 -> java.lang.Math.abs
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (this.costRelativeTolerance <= 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (this.costRelativeTolerance <= 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:415->[Control Flow] Branch Info: Line: 415, Condition: if (ratio > 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:419->[Method Call] Call Stack: org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer.doOptimize:419 -> org.apache.commons.math.optimization.VectorialPointValuePair.<init>
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:355->[Local Variables] {"j":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:356->[Local Variables] {"pj":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:357->[Local Variables] {"dirJ":-8.924592404592662E-4}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:358->[Local Variables] {"work1":[0.0011173520522884236,0.0]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Control Flow] Branch Info: Line: 359, Condition: if (coeff1 <= coeff1), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:358->[Local Variables] {"work1":[-1.4477590940792655E-4,0.0]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Control Flow] Branch Info: Line: 359, Condition: if (coeff1 <= coeff1), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Local Variables] {"i":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:358->[Local Variables] {"work1":[-1.4477590940792655E-4,8.153387495792957E-9]}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Control Flow] Loop Info: Line: 359, Description: while at line 359
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:359->[Control Flow] Branch Info: Line: 359, Condition: if (coeff1 <= coeff1), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:355->[Control Flow] Loop Info: Line: 355, Description: while at line 355
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:355->[Control Flow] Branch Info: Line: 355, Condition: if (this.solvedCols < this.solvedCols), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:363->[Local Variables] {"coeff1":0.0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Control Flow] Branch Info: Line: 364, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Local Variables] {"j":0}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:363->[Local Variables] {"coeff1":2.0960063944892157E-8}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Control Flow] Loop Info: Line: 364, Description: while at line 364
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Control Flow] Branch Info: Line: 364, Condition: if (this.solvedCols < this.solvedCols), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Local Variables] {"j":1}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:363->[Local Variables] {"coeff1":2.0960064011369883E-8}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Control Flow] Loop Info: Line: 364, Description: while at line 364
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:364->[Control Flow] Branch Info: Line: 364, Condition: if (this.solvedCols < this.solvedCols), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:368->[Local Variables] {"coeff1":4.278939133436292E-10}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:369->[Local Variables] {"coeff2":1.03134369507643E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:370->[Local Variables] {"preRed":2.490581303496489E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:373->[Local Variables] {"dirDer":-1.459237608420059E-9}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:374->[Control Flow] Branch Info: Line: 374, Condition: if (preRed == 0), Executed: false
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:376->[Local Variables] {"ratio":-1.6534917324446288}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:377->[Control Flow] Branch Info: Line: 377, Condition: if (ratio <= 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:379->[Control Flow] Branch Info: Line: 379, Condition: if (actRed < 0), Executed: true
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:379->[Local Variables] {"tmp":0.2073773155907563}
+org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer:doOptimize:380->[Control Flow] Branch Info: Line: 380, Condition: if (previousCost < 0), Executed: true

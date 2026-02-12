@@ -1,0 +1,60 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldArithmetic ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_DIVIDE_BY_0_ERROR. Divide by 0 at testcode line 1 : 8 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:666->[Local Variables] "{left\u003dNAME y 1 [sourcename: testcode], right\u003dNUMBER 5.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:667->[Control Flow] Branch Info: Line: 667, Condition: if (opType == opType), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:669->[Control Flow] Branch Info: Line: 669, Condition: if (right != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:667->[Control Flow] Branch Info: Line: 667, Condition: if (opType == opType), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:669->[Control Flow] Branch Info: Line: 669, Condition: if (right != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:666->[Local Variables] "{left\u003dNUMBER 1.0 1 [sourcename: testcode], opType\u003d24, right\u003dNUMBER 0.0 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:667->[Control Flow] Branch Info: Line: 667, Condition: if (opType == opType), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:669->[Control Flow] Branch Info: Line: 669, Condition: if (right != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Local Variables] {"lValObj":1.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:682->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:682 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:682->[Local Variables] {"rValObj":0.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:683->[Control Flow] Branch Info: Line: 683, Condition: if (rValObj == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:687->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:687 -> java.lang.Double.doubleValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:687->[Local Variables] {"lval":1.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:688->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:688 -> java.lang.Double.doubleValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:689->[Local Variables] {"rval":0.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:717->[Control Flow] Branch Info: Line: 717, Condition: if (rval == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:718->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:718 -> com.google.javascript.jscomp.DiagnosticType.error
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:718->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:718 -> com.google.javascript.jscomp.PeepholeFoldConstants.error
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Local Variables] {"lValObj":2.25}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:682->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:682 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:682->[Local Variables] {"rValObj":3.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:683->[Control Flow] Branch Info: Line: 683, Condition: if (rValObj == null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:687->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:687 -> java.lang.Double.doubleValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:687->[Local Variables] {"lval":2.25}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:688->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:688 -> java.lang.Double.doubleValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:689->[Local Variables] {"rval":3.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:707->[Local Variables] {"result":6.75}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:729->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:729 -> java.lang.String.valueOf
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:729->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:729 -> java.lang.String.length
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:730->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:730 -> java.lang.String.valueOf
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:730->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:730 -> java.lang.String.length
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:730->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:730 -> java.lang.String.valueOf
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:730->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:730 -> java.lang.String.length
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:730->[Control Flow] Branch Info: Line: 730, Condition: if (java.lang.String.length() <= java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:734->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:734 -> java.lang.Math.abs
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:734->[Control Flow] Branch Info: Line: 734, Condition: if (result <= 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:735->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:735 -> com.google.javascript.rhino.Node.newNumber
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:735->[Local Variables] {"newNumber":{"number":6.75,"type":39,"sourcePosition":-1}}
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:666->[Local Variables] "{left\u003dNAME x 1 [sourcename: testcode], right\u003dNAME y 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:667->[Control Flow] Branch Info: Line: 667, Condition: if (opType == opType), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:669->[Control Flow] Branch Info: Line: 669, Condition: if (right != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:678->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.performArithmeticOp:678 -> com.google.javascript.jscomp.NodeUtil.getNumberValue
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:679->[Control Flow] Branch Info: Line: 679, Condition: if (lValObj == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:667->[Control Flow] Branch Info: Line: 667, Condition: if (opType == opType), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:performArithmeticOp:669->[Control Flow] Branch Info: Line: 669, Condition: if (right != 0), Executed: false

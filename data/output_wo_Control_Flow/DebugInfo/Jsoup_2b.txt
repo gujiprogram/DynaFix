@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::handlesTextAfterData ===
+
+org.jsoup.parser.Parser:parseStartTag:142->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:142 -> org.jsoup.parser.Parser.addChildToParent
+org.jsoup.parser.Parser:parseStartTag:144->[Local Variables] "{child\u003d\n \u003cscript\u003e\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:145->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:145 -> org.jsoup.parser.Tag.isData
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> java.lang.StringBuilder.toString
+org.jsoup.parser.Parser:parseStartTag:146->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:146 -> org.jsoup.parser.TokenQueue.chompTo
+org.jsoup.parser.Parser:parseStartTag:146->[Local Variables] {"data":"inner"}
+org.jsoup.parser.Parser:parseStartTag:147->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:147 -> org.jsoup.parser.TokenQueue.chompTo
+org.jsoup.parser.Parser:parseStartTag:150->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:150 -> org.jsoup.parser.Tag.equals
+org.jsoup.parser.Parser:parseStartTag:150->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:150 -> org.jsoup.parser.Tag.equals
+org.jsoup.parser.Parser:parseStartTag:153->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:153 -> org.jsoup.nodes.DataNode.<init>
+org.jsoup.parser.Parser:parseStartTag:153->[Local Variables] {"dataNode":{"childNodes":[],"attributes":{"attributes":{"data":{"key":"data","value":"inner"}}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:154->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:154 -> org.jsoup.nodes.Element.appendChild
+org.jsoup.parser.Parser:parseStartTag:157->[Local Variables] "{child\u003d\n \u003cscript\u003einner\u003c/script\u003e}"
+org.jsoup.parser.Parser:parseStartTag:158->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:158 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.Parser:parseStartTag:158->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:158 -> java.lang.String.equals
+org.jsoup.parser.Parser:parseStartTag:133->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:133 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.Parser:parseStartTag:133->[Local Variables] {"tag":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]}}
+org.jsoup.parser.Parser:parseStartTag:134->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:134 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.Parser:parseStartTag:135->[Local Variables] {"child":{"tag":{"tagName":"body","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[{"tagName":"html","isBlock":true,"canContainBlock":true,"canContainInline":true,"optionalClosing":false,"empty":false,"preserveWhitespace":false,"ancestors":[]}]},"childNodes":[],"attributes":{"attributes":{}},"baseUri":""}}
+org.jsoup.parser.Parser:parseStartTag:136->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:136 -> org.jsoup.parser.Tag.isEmpty
+org.jsoup.parser.Parser:parseStartTag:137->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:137 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:140->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:140 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:142->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:142 -> org.jsoup.parser.Parser.addChildToParent
+org.jsoup.parser.Parser:parseStartTag:144->[Local Variables] "{child\u003d\n\u003cbody\u003e\n\u003c/body\u003e}"
+org.jsoup.parser.Parser:parseStartTag:145->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:145 -> org.jsoup.parser.Tag.isData
+org.jsoup.parser.Parser:parseStartTag:158->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:158 -> org.jsoup.nodes.Element.tagName
+org.jsoup.parser.Parser:parseStartTag:158->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:158 -> java.lang.String.equals
+org.jsoup.parser.Parser:parseStartTag:117->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:117 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseStartTag:118->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:118 -> org.jsoup.parser.TokenQueue.consumeWord
+org.jsoup.parser.Parser:parseStartTag:119->[Local Variables] {"tagName":"script"}
+org.jsoup.parser.Parser:parseStartTag:120->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:120 -> java.lang.String.length
+org.jsoup.parser.Parser:parseStartTag:126->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:126 -> org.jsoup.nodes.Attributes.<init>
+org.jsoup.parser.Parser:parseStartTag:127->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:127 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseStartTag:133->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:133 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.Parser:parseStartTag:134->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:134 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.Parser:parseStartTag:136->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:136 -> org.jsoup.parser.Tag.isEmpty
+org.jsoup.parser.Parser:parseStartTag:137->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:137 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseStartTag:140->[Method Call] Call Stack: org.jsoup.parser.Parser.parseStartTag:140 -> org.jsoup.parser.TokenQueue.matchChomp

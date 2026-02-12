@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.apache.commons.cli.HelpFormatterTest::testPrintWrapped ===
+Exception: junit.framework.ComparisonFailure: single line padded text 2 expected:<...TE[-DATE] where DATE[
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:821->[Control Flow] Branch Info: Line: 821, Condition: if (TransVarPos2 == TransVarPos2), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Local Variables] {"TransVarBuffer":"  -p,--period \u003cPERIOD\u003e  PERIOD is time duration of\n                        form DATE[-DATE] where DATE has form YYYY[MM[DD]]"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Local Variables] {"TransVarPad":"    "}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Local Variables] {"TransVarContent":"    test."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Local Variables] {"TransVarPos2":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:821->[Control Flow] Branch Info: Line: 821, Condition: if (TransVarPos2 == TransVarPos2), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Local Variables] {"TransVarBuffer":"This is a\n    test."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:797->[Local Variables] {"TransVarContent":"  -p,--period \u003cPERIOD\u003e  PERIOD is time duration of form DATE[-DATE] where DATE has form YYYY[MM[DD]]","TransVarBuffer":"","TransVarNumWidth":53,"TransVarBufferWidth":24}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:798->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:798 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:799->[Local Variables] {"TransVarPos2":50}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:800->[Control Flow] Branch Info: Line: 800, Condition: if (TransVarPos2 == TransVarPos2), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:809 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:809 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:809 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:809 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:812->[Local Variables] {"TransVarBuffer":"  -p,--period \u003cPERIOD\u003e  PERIOD is time duration of\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:813 -> org.apache.commons.cli.HelpFormatter.createPadding
+org.apache.commons.cli.HelpFormatter:renderWrappedText:818->[Local Variables] {"TransVarPad":"                        "}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:819 -> java.lang.StringBuilder.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Local Variables] {"TransVarContent":"                        form DATE[-DATE] where DATE has form YYYY[MM[DD]]"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:820 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Local Variables] {"TransVarPos2":-1}

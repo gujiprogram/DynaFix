@@ -1,0 +1,61 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::booleanAttributeOutput ===
+Exception: junit.framework.AssertionFailedError: expected:<...mg src="foo" noshade[] nohref async autofo...> but was:<...mg src="foo" noshade[=""] nohref async autofo...>
+
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (unknown_condition_166), Executed: false
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.nodes.Attributes:html:329->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:329 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:329->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref async autofocus\u003d\""}
+org.jsoup.nodes.Attributes:html:330->[Control Flow] Branch Info: Line: 330, Condition: if (TransVarValue == null), Executed: false
+org.jsoup.nodes.Attributes:html:330->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:330 -> org.jsoup.nodes.Entities.escape
+org.jsoup.nodes.Attributes:html:331->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref async autofocus\u003d\"false"}
+org.jsoup.nodes.Attributes:html:332->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:332 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: false
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (TransVarKey1 == 0), Executed: false
+org.jsoup.nodes.Attributes:html:333->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref async autofocus\u003d\"false\""}
+org.jsoup.nodes.Attributes:html:334->[Local Variables] {"TransVarJ":5}
+org.jsoup.nodes.Attributes:html:315->[Control Flow] Loop Info: Line: 315, Description: while at line 315
+org.jsoup.nodes.Attributes:html:316->[Control Flow] Branch Info: Line: 316, Condition: if (TransVarSize < TransVarSize), Executed: false
+org.jsoup.nodes.Attributes:html:332->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:332 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: false
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (TransVarKey1 == 0), Executed: false
+org.jsoup.nodes.Attributes:html:333->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\""}
+org.jsoup.nodes.Attributes:html:334->[Local Variables] {"TransVarJ":2}
+org.jsoup.nodes.Attributes:html:315->[Control Flow] Loop Info: Line: 315, Description: while at line 315
+org.jsoup.nodes.Attributes:html:316->[Control Flow] Branch Info: Line: 316, Condition: if (TransVarSize < TransVarSize), Executed: true
+org.jsoup.nodes.Attributes:html:320->[Local Variables] {"TransVarKey1":"nohref"}
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref"}
+org.jsoup.nodes.Attributes:html:323->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:323 -> org.jsoup.nodes.Document$OutputSettings.syntax
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (unknown_condition_166), Executed: true
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: false
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (TransVarKey1 == 0), Executed: false
+org.jsoup.nodes.Attributes:html:334->[Local Variables] {"TransVarJ":3}
+org.jsoup.nodes.Attributes:html:315->[Control Flow] Loop Info: Line: 315, Description: while at line 315
+org.jsoup.nodes.Attributes:html:316->[Control Flow] Branch Info: Line: 316, Condition: if (TransVarSize < TransVarSize), Executed: true
+org.jsoup.nodes.Attributes:html:320->[Local Variables] {"TransVarKey1":"async"}
+org.jsoup.nodes.Attributes:html:321->[Local Variables] {"TransVarValue":"async"}
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref async"}
+org.jsoup.nodes.Attributes:html:323->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:323 -> org.jsoup.nodes.Document$OutputSettings.syntax
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (unknown_condition_166), Executed: true
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: true
+org.jsoup.nodes.Attributes:html:325->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:325 -> java.lang.String.equals
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (java.lang.String.equals() != 0), Executed: true
+org.jsoup.nodes.Attributes:html:325->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:325 -> org.jsoup.nodes.Attribute.isBooleanAttribute
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: false
+org.jsoup.nodes.Attributes:html:325->[Control Flow] Branch Info: Line: 325, Condition: if (TransVarKey1 == 0), Executed: false
+org.jsoup.nodes.Attributes:html:334->[Local Variables] {"TransVarJ":4}
+org.jsoup.nodes.Attributes:html:315->[Control Flow] Loop Info: Line: 315, Description: while at line 315
+org.jsoup.nodes.Attributes:html:316->[Control Flow] Branch Info: Line: 316, Condition: if (TransVarSize < TransVarSize), Executed: true
+org.jsoup.nodes.Attributes:html:320->[Local Variables] {"TransVarKey1":"autofocus"}
+org.jsoup.nodes.Attributes:html:321->[Local Variables] {"TransVarValue":"false"}
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:322 -> java.lang.Appendable.append
+org.jsoup.nodes.Attributes:html:322->[Local Variables] {"TransVarAccumulator":"\u003cimg src\u003d\"foo\" noshade\u003d\"\" nohref async autofocus"}
+org.jsoup.nodes.Attributes:html:323->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:323 -> org.jsoup.nodes.Document$OutputSettings.syntax
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (unknown_condition_166), Executed: true
+org.jsoup.nodes.Attributes:html:323->[Control Flow] Branch Info: Line: 323, Condition: if (TransVarValue != null), Executed: true
+org.jsoup.nodes.Attributes:html:325->[Method Call] Call Stack: org.jsoup.nodes.Attributes.html:325 -> java.lang.String.equals

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.cli.Options.hasShortOption",
+    "doc": "/**\n     * Returns whether the named {@link Option} is a member of this {@link Options}.\n     *\n     * @param opt short name of the {@link Option}\n     * @return true if the named {@link Option} is a member of this {@link Options}\n     * @since 1.3\n     */",
+    "code": "public boolean hasShortOption(String opt)\n    {\n        opt = Util.stripLeadingHyphens(opt);\n\n        return shortOpts.containsKey(opt);\n    }"
+  }
+]

@@ -1,0 +1,52 @@
+
+=== Debug Info for Test: org.apache.commons.codec.binary.Base64InputStreamTest::testBase64EmptyInputStream ===
+Exception: junit.framework.AssertionFailedError: EOF expected:<-1> but was:<13>
+
+org.apache.commons.codec.binary.Base64:encode:417->[Local Variables] {"TransVarInput":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."],"TransVarInPos1":0,"TransVarInPos":-1}
+org.apache.commons.codec.binary.Base64:encode:418->[Control Flow] Branch Info: Line: 418, Condition: if (this.eof != false), Executed: false
+org.apache.commons.codec.binary.Base64:encode:426->[Control Flow] Branch Info: Line: 426, Condition: if (TransVarInPos < 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:431->[Control Flow] Branch Info: Line: 431, Condition: if (this.buf != null), Executed: false
+org.apache.commons.codec.binary.Base64:encode:432->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64.encode:432 -> org.apache.commons.codec.binary.Base64.resizeBuf
+org.apache.commons.codec.binary.Base64:encode:431->[Control Flow] Branch Info: Line: 431, Condition: if (this.encodeSize < this.encodeSize), Executed: false
+org.apache.commons.codec.binary.Base64:encode:434->[Local Variables] {"TransFallThroughFlag0":false}
+org.apache.commons.codec.binary.Base64:encode:436->[Local Variables] {"TransBreakFlag0":true}
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarIndex == 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarInPos2 != 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarInPos2 != 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (this.modulus == this.modulus), Executed: false
+org.apache.commons.codec.binary.Base64:encode:441->[Control Flow] Branch Info: Line: 441, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarIndex == 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarInPos2 != 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarInPos2 != 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (this.modulus == this.modulus), Executed: false
+org.apache.commons.codec.binary.Base64:encode:450->[Control Flow] Branch Info: Line: 450, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.codec.binary.Base64:encode:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.lineLength > 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:456->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64.encode:456 -> java.lang.System.arraycopy
+org.apache.commons.codec.binary.Base64:encode:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.lineLength > 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:461->[Control Flow] Branch Info: Line: 461, Condition: if (TransVarInPos < TransVarInPos), Executed: false
+
+=== Debug Info for Test: org.apache.commons.codec.binary.Base64OutputStreamTest::testBase64EmptyOutputStream ===
+Exception: junit.framework.AssertionFailedError: Streaming base64 encode
+
+org.apache.commons.codec.binary.Base64:encode:417->[Local Variables] {"TransVarInput":[0],"TransVarInPos1":0,"TransVarInPos":-1}
+org.apache.commons.codec.binary.Base64:encode:418->[Control Flow] Branch Info: Line: 418, Condition: if (this.eof != false), Executed: false
+org.apache.commons.codec.binary.Base64:encode:426->[Control Flow] Branch Info: Line: 426, Condition: if (TransVarInPos < 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:431->[Control Flow] Branch Info: Line: 431, Condition: if (this.buf != null), Executed: false
+org.apache.commons.codec.binary.Base64:encode:432->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64.encode:432 -> org.apache.commons.codec.binary.Base64.resizeBuf
+org.apache.commons.codec.binary.Base64:encode:431->[Control Flow] Branch Info: Line: 431, Condition: if (this.encodeSize < this.encodeSize), Executed: false
+org.apache.commons.codec.binary.Base64:encode:434->[Local Variables] {"TransFallThroughFlag0":false}
+org.apache.commons.codec.binary.Base64:encode:436->[Local Variables] {"TransBreakFlag0":true}
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarIndex == 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarInPos2 != 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (TransVarInPos2 != 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:437->[Control Flow] Branch Info: Line: 437, Condition: if (this.modulus == this.modulus), Executed: false
+org.apache.commons.codec.binary.Base64:encode:441->[Control Flow] Branch Info: Line: 441, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarIndex == 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarInPos2 != 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (TransVarInPos2 != 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:446->[Control Flow] Branch Info: Line: 446, Condition: if (this.modulus == this.modulus), Executed: false
+org.apache.commons.codec.binary.Base64:encode:450->[Control Flow] Branch Info: Line: 450, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.codec.binary.Base64:encode:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.lineLength > 0), Executed: true
+org.apache.commons.codec.binary.Base64:encode:456->[Method Call] Call Stack: org.apache.commons.codec.binary.Base64.encode:456 -> java.lang.System.arraycopy
+org.apache.commons.codec.binary.Base64:encode:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.lineLength > 0), Executed: false
+org.apache.commons.codec.binary.Base64:encode:461->[Control Flow] Branch Info: Line: 461, Condition: if (TransVarInPos < TransVarInPos), Executed: false

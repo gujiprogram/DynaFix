@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.io.NumberInput.parseInt",
+    "doc": "/**\n     * Fast method for parsing integers that are known to fit into\n     * regular 32-bit signed int type. This means that length is\n     * between 1 and 9 digits (inclusive)\n     *<p>\n     * Note: public to let unit tests call it\n     */",
+    "code": "public static int parseInt(char[] ch, int off, int len)\n    {\n        int num = ch[off] - '0';\n\n        if (len > 4) {\n            num = (num * 10) + (ch[++off] - '0');\n            num = (num * 10) + (ch[++off] - '0');\n            num = (num * 10) + (ch[++off] - '0');\n            num = (num * 10) + (ch[++off] - '0');\n            len -= 4;\n            if (len > 4) {\n                num = (num * 10) + (ch[++off] - '0');\n                num = (num * 10) + (ch[++off] - '0');\n                num = (num * 10) + (ch[++off] - '0');\n                num = (num * 10) + (ch[++off] - '0');\n                return num;\n            }\n        }\n        if (len > 1) {\n            num = (num * 10) + (ch[++off] - '0');\n            if (len > 2) {\n                num = (num * 10) + (ch[++off] - '0');\n                if (len > 3) {\n                    num = (num * 10) + (ch[++off] - '0');\n                }\n            }\n        }\n        return num;\n    }"
+  }
+]

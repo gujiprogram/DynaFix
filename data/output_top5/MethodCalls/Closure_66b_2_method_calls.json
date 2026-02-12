@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  public StaticSlot<JSType> getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectCanAssignTo",
+    "doc": "/**\n   * Expect that the first type can be assigned to a symbol of the second\n   * type.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param rightType The type on the RHS of the assign.\n   * @param leftType The type of the symbol on the LHS of the assign.\n   * @param msg An extra message for the mismatch warning, if necessary.\n   * @return True if the types matched, false otherwise.\n   */",
+    "code": "boolean expectCanAssignTo(NodeTraversal t, Node n, JSType rightType,\n      JSType leftType, String msg) {\n    if (!rightType.canAssignTo(leftType)) {\n      if (bothIntrinsics(rightType, leftType)) {\n        registerMismatch(rightType, leftType);\n      } else {\n        mismatch(t, n, msg, rightType, leftType);\n      }\n      return false;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

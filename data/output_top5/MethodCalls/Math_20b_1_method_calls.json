@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.getColumn",
+    "doc": "/**\n     * Get the entries at the given column index as an array. Column indices\n     * start at 0.\n     *\n     * @param column Column to be fetched.\n     * @return the array of entries in the column.\n     * @throws OutOfRangeException if the specified column index is not valid.\n     */",
+    "code": "double[] getColumn(int column) throws OutOfRangeException;"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.ConvergenceChecker.converged",
+    "doc": "/**\n     * Check if the optimization algorithm has converged.\n     *\n     * @param iteration Current iteration.\n     * @param previous Best point in the previous iteration.\n     * @param current Best point in the current iteration.\n     * @return {@code true} if the algorithm is considered to have converged.\n     */",
+    "code": "boolean converged(int iteration, PAIR previous, PAIR current);\n}"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.getConvergenceChecker",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.max",
+    "doc": "/**\n     * @param m Input matrix.\n     * @return the maximum of the matrix element values.\n     */",
+    "code": "private static double max(final RealMatrix m) {\n        double max = -Double.MAX_VALUE;\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                double e = m.getEntry(r, c);\n                if (max < e) {\n                    max = e;\n                }\n            }\n        }\n        return max;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.min",
+    "doc": "/**\n     * @param m Input matrix.\n     * @return the minimum of the matrix element values.\n     */",
+    "code": "private static double min(final RealMatrix m) {\n        double min = Double.MAX_VALUE;\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                double e = m.getEntry(r, c);\n                if (min > e) {\n                    min = e;\n                }\n            }\n        }\n        return min;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.direct.CMAESOptimizer.sqrt",
+    "doc": "/**\n     * @param m\n     *            Input matrix\n     * @return Matrix representing the element-wise square root of m.\n     */",
+    "code": "private static RealMatrix sqrt(final RealMatrix m) {\n        double[][] d = new double[m.getRowDimension()][m.getColumnDimension()];\n        for (int r = 0; r < m.getRowDimension(); r++) {\n            for (int c = 0; c < m.getColumnDimension(); c++) {\n                d[r][c] = Math.sqrt(m.getEntry(r, c));\n            }\n        }\n        return new Array2DRowRealMatrix(d, false);\n    }"
+  }
+]

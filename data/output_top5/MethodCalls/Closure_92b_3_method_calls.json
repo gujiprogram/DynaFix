@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getModule",
+    "doc": "/**\n   * Gets the current input module.\n   */",
+    "code": "public JSModule getModule() {\n    CompilerInput input = getInput();\n    return input == null ? null : input.getModule();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.registerAnyProvidedPrefixes",
+    "doc": "/**\n   * Registers ProvidedNames for prefix namespaces if they haven't\n   * already been defined. The prefix namespaces must be registered in\n   * order from shortest to longest.\n   *\n   * @param ns The namespace whose prefixes may need to be provided.\n   * @param node The EXPR of the provide call.\n   * @param module The current module.\n   */",
+    "code": "private void registerAnyProvidedPrefixes(\n      String ns, Node node, JSModule module) {\n    int pos = ns.indexOf('.');\n    while (pos != -1) {\n      String prefixNs = ns.substring(0, pos);\n      pos = ns.indexOf('.', pos + 1);\n      if (providedNames.containsKey(prefixNs)) {\n        providedNames.get(prefixNs).addProvide(\n      } else {\n        providedNames.put(\n            prefixNs,\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.verifyProvide",
+    "doc": "/**\n   * Verifies that a provide method call has exactly one argument,\n   * and that it's a string literal and that the contents of the string are\n   * valid JS tokens. Reports a compile error if it doesn't.\n   *\n   * @return Whether the argument checked out okay\n   */",
+    "code": "private boolean verifyProvide(NodeTraversal t, Node methodName, Node arg) {\n    if (!verifyArgument(t, methodName, arg)) {\n      return false;\n    }\n\n    for (String part : arg.getString().split(\"\\\\.\")) {\n      if (!NodeUtil.isValidPropertyName(part)) {\n        compiler.report(t.makeError(arg, INVALID_PROVIDE_ERROR, part));\n        return false;\n      }\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  }
+]

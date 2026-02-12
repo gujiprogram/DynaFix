@@ -1,0 +1,55 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NodeUtilTest::testLocalValue1 ===
+Exception: junit.framework.AssertionFailedError
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects8 ===
+Exception: junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNAME a 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testLocalizedSideEffects9 ===
+Exception: junit.framework.AssertionFailedError: expected:<[A]> but was:<[A, f]>
+
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dTHIS 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNAME a 1 [sourcename: testcode] : A}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new4 ===
+Exception: junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod]>
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testAnnotationInExterns_new6 ===
+Exception: junit.framework.AssertionFailedError: expected:<[externObjSEThis]> but was:<[externObjSEThis, NEW STRING externObjSEThisMethod, f]>
+
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNEW 1 [sourcename: testcode] : externObjSEThis}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303b ===
+Exception: junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNAME window 1 [sourcename: testcode] : ?}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dTHIS 1 [sourcename: testcode] : F}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNEW 1 [sourcename: testcode] [parenthesized: true] : F}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.PureFunctionIdentifierTest::testIssue303 ===
+Exception: junit.framework.AssertionFailedError: expected:<[]> but was:<[NEW STRING setLocation]>
+
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dNAME window 1 [sourcename: testcode] : ?}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.NodeUtil:isThis:1461->[Local Variables] "{node\u003dTHIS 1 [sourcename: testcode] : F}"
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.isThis:1462 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:isThis:1462->[Control Flow] Branch Info: Line: 1462, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true

@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: org.apache.commons.lang.math.NumberUtilsTest::testLang300 ===
+Exception: java.lang.NumberFormatException: 1l is not a valid number.
+
+org.apache.commons.lang.math.NumberUtils:isDigits:1506->[Local Variables] {"str":"1"}
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1507 -> org.apache.commons.lang.StringUtils.isEmpty
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Control Flow] Branch Info: Line: 1507, Condition: if (str != 0), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1510 -> java.lang.String.length
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Branch Info: Line: 1510, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Local Variables] {"i":0}
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1511 -> java.lang.String.charAt
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1511 -> java.lang.Character.isDigit
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Control Flow] Branch Info: Line: 1511, Condition: if (java.lang.String.charAt() == 0), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Loop Info: Line: 1510, Description: while at line 1510
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1510 -> java.lang.String.length
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Branch Info: Line: 1510, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1507 -> org.apache.commons.lang.StringUtils.isEmpty
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Control Flow] Branch Info: Line: 1507, Condition: if (str != 0), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1510 -> java.lang.String.length
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Branch Info: Line: 1510, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1511 -> java.lang.String.charAt
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1511 -> java.lang.Character.isDigit
+org.apache.commons.lang.math.NumberUtils:isDigits:1511->[Control Flow] Branch Info: Line: 1511, Condition: if (java.lang.String.charAt() == 0), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Loop Info: Line: 1510, Description: while at line 1510
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1510 -> java.lang.String.length
+org.apache.commons.lang.math.NumberUtils:isDigits:1510->[Control Flow] Branch Info: Line: 1510, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.lang.math.NumberUtils:isDigits:1506->[Local Variables] {"str":""}
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Method Call] Call Stack: org.apache.commons.lang.math.NumberUtils.isDigits:1507 -> org.apache.commons.lang.StringUtils.isEmpty
+org.apache.commons.lang.math.NumberUtils:isDigits:1507->[Control Flow] Branch Info: Line: 1507, Condition: if (str != 0), Executed: true

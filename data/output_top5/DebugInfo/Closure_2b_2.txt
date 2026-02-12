@@ -1,0 +1,49 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testBadInterfaceExtendsNonExistentInterfaces ===
+Exception: java.lang.NullPointerException
+
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Control Flow] Branch Info: Line: 1646, Condition: if (properties != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1656->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1656 -> com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfacesCount
+com.google.javascript.jscomp.TypeCheck:visitFunction:1656->[Control Flow] Branch Info: Line: 1656, Condition: if (com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfacesCount() > com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfacesCount()), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitFunction:1658->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1658 -> java.util.HashMap.<init>
+com.google.javascript.jscomp.TypeCheck:visitFunction:1659->[Local Variables] {"properties":{}}
+com.google.javascript.jscomp.TypeCheck:visitFunction:1660->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1660 -> java.util.HashMap.<init>
+com.google.javascript.jscomp.TypeCheck:visitFunction:1661->[Local Variables] {"currentProperties":{}}
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1662 -> com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfaces
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1662 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1662 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Control Flow] Branch Info: Line: 1662, Condition: if (baseInterface != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1662 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitFunction:1662->[Local Variables] "{interfaceType\u003dnonExistent1}"
+com.google.javascript.jscomp.TypeCheck:visitFunction:1663->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1663 -> java.util.HashMap.clear
+com.google.javascript.jscomp.TypeCheck:visitFunction:1664->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1664 -> com.google.javascript.jscomp.TypeCheck.checkInterfaceConflictProperties
+com.google.javascript.jscomp.TypeCheck:visitFunction:1601->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@2262d6d5, n\u003dFUNCTION A 4 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : function (this:A): ?}"
+com.google.javascript.jscomp.TypeCheck:visitFunction:1602->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1602 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeCheck:visitFunction:1602->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1602 -> com.google.javascript.rhino.jstype.JSType.toMaybeFunctionType
+com.google.javascript.jscomp.TypeCheck:visitFunction:1602->[Local Variables] "{functionType\u003dfunction (this:A): ?}"
+com.google.javascript.jscomp.TypeCheck:visitFunction:1603->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1603 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitFunction:1603->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1603 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitFunction:1603->[Local Variables] {"functionPrivateName":"A"}
+com.google.javascript.jscomp.TypeCheck:visitFunction:1604->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1604 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:visitFunction:1604->[Control Flow] Branch Info: Line: 1604, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1644->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1644 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.jscomp.TypeCheck:visitFunction:1644->[Control Flow] Branch Info: Line: 1644, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> com.google.javascript.rhino.jstype.FunctionType.getExtendedInterfaces
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Control Flow] Branch Info: Line: 1646, Condition: if (properties != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Local Variables] "{extInterface\u003dnonExistent1}"
+com.google.javascript.jscomp.TypeCheck:visitFunction:1647->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1647 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:visitFunction:1647->[Control Flow] Branch Info: Line: 1647, Condition: if (com.google.javascript.rhino.jstype.ObjectType.getConstructor() != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1648->[Control Flow] Branch Info: Line: 1648, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Control Flow] Loop Info: Line: 1646, Description: while at line 1646
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Control Flow] Branch Info: Line: 1646, Condition: if (properties != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1646 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Local Variables] "{extInterface\u003dnonExistent2}"
+com.google.javascript.jscomp.TypeCheck:visitFunction:1647->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitFunction:1647 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:visitFunction:1647->[Control Flow] Branch Info: Line: 1647, Condition: if (com.google.javascript.rhino.jstype.ObjectType.getConstructor() != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1648->[Control Flow] Branch Info: Line: 1648, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitFunction:1646->[Control Flow] Loop Info: Line: 1646, Description: while at line 1646

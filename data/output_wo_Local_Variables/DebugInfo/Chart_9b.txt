@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testBug1864222 ===
+
+org.jfree.data.time.TimeSeries:createCopy:921->[Control Flow] Branch Info: Line: 921, Condition: if (start == null), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:924->[Control Flow] Branch Info: Line: 924, Condition: if (end == null), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:927->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:927 -> org.jfree.data.time.RegularTimePeriod.compareTo
+org.jfree.data.time.TimeSeries:createCopy:927->[Control Flow] Branch Info: Line: 927, Condition: if (org.jfree.data.time.RegularTimePeriod.compareTo() > 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:932->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:932 -> org.jfree.data.time.TimeSeries.getIndex
+org.jfree.data.time.TimeSeries:createCopy:933->[Control Flow] Branch Info: Line: 933, Condition: if (startIndex < 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:935->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:935 -> java.util.List.size
+org.jfree.data.time.TimeSeries:createCopy:933->[Control Flow] Branch Info: Line: 933, Condition: if (startIndex < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:935->[Control Flow] Branch Info: Line: 935, Condition: if (this.data == this.data), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:939->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:939 -> org.jfree.data.time.TimeSeries.getIndex
+org.jfree.data.time.TimeSeries:createCopy:940->[Control Flow] Branch Info: Line: 940, Condition: if (endIndex < 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:940->[Control Flow] Branch Info: Line: 940, Condition: if (endIndex < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:944->[Control Flow] Branch Info: Line: 944, Condition: if (endIndex < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:947->[Control Flow] Branch Info: Line: 947, Condition: if (emptyRange != 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:879->[Control Flow] Branch Info: Line: 879, Condition: if (start < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:882->[Control Flow] Branch Info: Line: 882, Condition: if (start < start), Executed: true

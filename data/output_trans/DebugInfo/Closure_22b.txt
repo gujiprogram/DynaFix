@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode ===
+Exception: junit.framework.AssertionFailedError: There should be one warning, repeated 1 time(s). expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckSideEffects:visit:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarIsSimpleOperator == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:143->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:143 -> com.google.javascript.jscomp.NodeTraversal.getCompiler
+com.google.javascript.jscomp.CheckSideEffects:visit:143->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:143 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.CheckSideEffects:visit:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarIsUsed == 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:143->[Control Flow] Branch Info: Line: 143, Condition: if (com.google.javascript.jscomp.NodeTraversal.getCompiler() == 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:161->[Control Flow] Branch Info: Line: 161, Condition: if (TransVarNode == 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:91->[Local Variables] "{TransVarAncestor\u003dnull, TransVarNode\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:92 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Control Flow] Branch Info: Line: 92, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:92 -> com.google.javascript.rhino.Node.isComma
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Control Flow] Branch Info: Line: 92, Condition: if (com.google.javascript.rhino.Node.isComma() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarAncestor == null), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:109->[Control Flow] Branch Info: Line: 109, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:132->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:132 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:132->[Control Flow] Branch Info: Line: 132, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:132->[Control Flow] Branch Info: Line: 132, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:134->[Control Flow] Branch Info: Line: 134, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:91->[Local Variables] "{TransVarAncestor\u003dBLOCK [synthetic: 1], TransVarNode\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:92 -> com.google.javascript.rhino.Node.isEmpty
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Control Flow] Branch Info: Line: 92, Condition: if (com.google.javascript.rhino.Node.isEmpty() == 0), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:92 -> com.google.javascript.rhino.Node.isComma
+com.google.javascript.jscomp.CheckSideEffects:visit:92->[Control Flow] Branch Info: Line: 92, Condition: if (com.google.javascript.rhino.Node.isComma() != 0), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarAncestor == null), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:109->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:109 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:109->[Control Flow] Branch Info: Line: 109, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:131 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:131->[Control Flow] Branch Info: Line: 131, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:133->[Control Flow] Branch Info: Line: 133, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.CheckSideEffects:visit:140->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:140 -> com.google.javascript.jscomp.NodeUtil.isExpressionResultUsed
+com.google.javascript.jscomp.CheckSideEffects:visit:141->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:141 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckSideEffects:visit:141->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.visit:141 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.CheckSideEffects:visit:142->[Control Flow] Branch Info: Line: 142, Condition: if (TransVarIsUsed == 0), Executed: true

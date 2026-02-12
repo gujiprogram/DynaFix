@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.compress.utils.IOUtilsTest::skipUsingRead ===
+Exception: junit.framework.AssertionFailedError: expected:<10> but was:<0>
+
+org.apache.commons.compress.utils.IOUtils:skip:97->[Local Variables] {"TransVarSkip":10}
+org.apache.commons.compress.utils.IOUtils:skip:98->[Local Variables] {"TransVarNumToSkip":10}
+org.apache.commons.compress.utils.IOUtils:skip:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarSkip > 0), Executed: true
+org.apache.commons.compress.utils.IOUtils:skip:103->[Method Call] Call Stack: org.apache.commons.compress.utils.IOUtils.skip:103 -> java.io.InputStream.skip
+org.apache.commons.compress.utils.IOUtils:skip:103->[Local Variables] {"TransVarSkippedNum":0}
+org.apache.commons.compress.utils.IOUtils:skip:104->[Control Flow] Branch Info: Line: 104, Condition: if (TransVarSkippedNum == 0), Executed: true
+org.apache.commons.compress.utils.IOUtils:skip:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarSkip > 0), Executed: false
+
+=== Debug Info for Test: org.apache.commons.compress.utils.IOUtilsTest::skipUsingSkipAndRead ===
+Exception: junit.framework.AssertionFailedError: expected:<10> but was:<5>
+
+org.apache.commons.compress.utils.IOUtils:skip:97->[Local Variables] {"TransVarSkip":10}
+org.apache.commons.compress.utils.IOUtils:skip:98->[Local Variables] {"TransVarNumToSkip":10}
+org.apache.commons.compress.utils.IOUtils:skip:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarSkip > 0), Executed: true
+org.apache.commons.compress.utils.IOUtils:skip:103->[Method Call] Call Stack: org.apache.commons.compress.utils.IOUtils.skip:103 -> java.io.InputStream.skip
+org.apache.commons.compress.utils.IOUtils:skip:103->[Local Variables] {"TransVarSkippedNum":5}
+org.apache.commons.compress.utils.IOUtils:skip:104->[Control Flow] Branch Info: Line: 104, Condition: if (TransVarSkippedNum == 0), Executed: false
+org.apache.commons.compress.utils.IOUtils:skip:110->[Local Variables] {"TransVarSkip":5}
+org.apache.commons.compress.utils.IOUtils:skip:98->[Control Flow] Loop Info: Line: 98, Description: while at line 98
+org.apache.commons.compress.utils.IOUtils:skip:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarSkip > 0), Executed: true
+org.apache.commons.compress.utils.IOUtils:skip:103->[Method Call] Call Stack: org.apache.commons.compress.utils.IOUtils.skip:103 -> java.io.InputStream.skip
+org.apache.commons.compress.utils.IOUtils:skip:103->[Local Variables] {"TransVarSkippedNum":0}
+org.apache.commons.compress.utils.IOUtils:skip:104->[Control Flow] Branch Info: Line: 104, Condition: if (TransVarSkippedNum == 0), Executed: true
+org.apache.commons.compress.utils.IOUtils:skip:99->[Control Flow] Branch Info: Line: 99, Condition: if (TransVarSkip > 0), Executed: false

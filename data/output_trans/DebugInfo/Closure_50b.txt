@@ -1,0 +1,83 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (com.google.javascript.rhino.Node.getChildCount() == com.google.javascript.rhino.Node.getChildCount()), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:405->[Control Flow] Branch Info: Line: 405, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:428->[Control Flow] Branch Info: Line: 428, Condition: if (TransVarStringbuilder != null), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:429->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:429 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:431->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:431 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:431->[Local Variables] {"TransVarSize":10}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:433->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:433 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:433->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:433 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:433->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:433 -> com.google.javascript.rhino.Node.copyInformationFrom
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:432->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:432 -> java.util.List.add
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:428->[Control Flow] Branch Info: Line: 428, Condition: if (TransVarStringbuilder != null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:435->[Local Variables] "{TransVarArrayChildren\u003d[STRING a 1 [source_file: testcode], NAME foo 1 [source_file: testcode], STRING b,c 1 [source_file: testcode]]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:436->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:436 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:437->[Local Variables] {"TransVarSize":12}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:438->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:438 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:438->[Local Variables] {"TransVarFinalSize":22}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransVarArrayChildren == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransVarArrayChildren == TransVarArrayChildren), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> java.util.List.size
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeReplaceKnownMethodsTest::testNoStringJoin ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:404->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:404 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:405->[Control Flow] Branch Info: Line: 405, Condition: if (TransVarChildNode != null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:428->[Control Flow] Branch Info: Line: 428, Condition: if (TransVarStringbuilder != null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:436->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:436 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:437->[Local Variables] {"TransVarSize":-1}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:438->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:438 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:438->[Local Variables] {"TransVarFinalSize":12}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:439->[Local Variables] {"TransFallThroughFlag0":false}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:440->[Local Variables] {"TransBreakFlag0":true}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> java.util.List.size
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransVarArrayChildren == 0), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Control Flow] Branch Info: Line: 441, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:441->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:441 -> com.google.javascript.jscomp.PeepholeReplaceKnownMethods.reportCodeChange
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:370->[Local Variables] "{TransVarNode\u003dCALL 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:371->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:371 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:372->[Local Variables] "{TransVarNewTarget\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:373->[Control Flow] Branch Info: Line: 373, Condition: if (TransVarNewTarget != null), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:373->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:373 -> com.google.javascript.jscomp.NodeUtil.isGetProp
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:373->[Control Flow] Branch Info: Line: 373, Condition: if (TransVarNewTarget == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:380->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:380 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:380->[Local Variables] "{TransVarTarget\u003dSTRING , 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:381->[Control Flow] Branch Info: Line: 381, Condition: if (TransVarTarget != null), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:385->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:385 -> com.google.javascript.jscomp.NodeUtil.isImmutableValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:381->[Control Flow] Branch Info: Line: 381, Condition: if (TransVarTarget != null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:385->[Control Flow] Branch Info: Line: 385, Condition: if (TransVarTarget == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:390->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:390 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:390->[Local Variables] "{TransVarCurrentNode\u003dARRAYLIT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:391->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:391 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:392->[Local Variables] "{TransVarNewFunction\u003dSTRING join 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:393->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:393 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:393->[Control Flow] Branch Info: Line: 393, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:393->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:393 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:393->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:393 -> java.lang.String.equals
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:393->[Control Flow] Branch Info: Line: 393, Condition: if (java.lang.String.equals() == 0), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:399->[Control Flow] Branch Info: Line: 399, Condition: if (TransVarTarget == null), Executed: false
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:399->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:399 -> com.google.javascript.jscomp.NodeUtil.getStringValue
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:399->[Local Variables] {"TransVarJoinedStr":","}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:400->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeReplaceKnownMethods.tryFoldArrayJoin:400 -> com.google.common.collect.Lists.newLinkedList
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:400->[Local Variables] {"TransVarArrayChildren":[]}
+com.google.javascript.jscomp.PeepholeReplaceKnownMethods:tryFoldArrayJoin:402->[Local Variables] {"TransVarSize":0}

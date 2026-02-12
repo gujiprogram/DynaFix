@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findDeserializationType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.DeserializationContext.getAnnotationIntrospector",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final AnnotationIntrospector getAnnotationIntrospector() {\n        return _config.getAnnotationIntrospector();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isContainerType",
+    "doc": "/**\n     * @return True if type represented is a container type; this includes\n     *    array, Map and Collection types.\n     */",
+    "code": "public abstract boolean isContainerType();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.narrowBy",
+    "doc": "/**\n     * Method that can be called to do a \"narrowing\" conversions; that is,\n     * to return a type with a raw class that is assignable to the raw\n     * class of this type. If this is not possible, an\n     * {@link IllegalArgumentException} is thrown.\n     * If class is same as the current raw class, instance itself is\n     * returned.\n     */",
+    "code": "public JavaType narrowBy(Class<?> subclass)\n    {\n        if (subclass == _class) { return this; }\n        _assertSubclass(subclass, _class);\n\n        JavaType result = _narrow(subclass);\n\n        if (_valueHandler != result.<Object>getValueHandler()) {\n            result = result.withValueHandler(_valueHandler);\n        }\n        if (_typeHandler != result.<Object>getTypeHandler()) {\n            result = result.withTypeHandler(_typeHandler);\n        }\n        return result;\n    }"
+  }
+]

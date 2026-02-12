@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.recordReference",
+    "doc": "/**\n   * Records a reference from one name to another name.\n   */",
+    "code": "private void recordReference(String fromName, String toName,\n                               RefType depType) {\n    if (fromName.equals(toName)) {\n      return;\n    }\n\n    JsName from = getName(fromName, true);\n    JsName to = getName(toName, true);\n    referenceGraph.createNode(from);\n    referenceGraph.createNode(to);\n    if (!referenceGraph.isConnectedInDirection(from, depType, to)) {\n      referenceGraph.connect(from, depType, to);\n    }\n  }"
+  }
+]

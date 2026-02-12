@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGetOrSetKey",
+    "doc": "/**\n   * Determines whether a node represents an object literal get or set key\n   * (e.g. key1 in {get key1() {}, set key2(a){}).\n   *\n   * @param node A node\n   */",
+    "code": "static boolean isGetOrSetKey(Node node) {\n    switch (node.getType()) {\n      case Token.GETTER_DEF:\n      case Token.SETTER_DEF:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.RemoveUnusedVars.getFunctionArgList",
+    "doc": "/**\n   * @return the LP node containing the function parameters.\n   */",
+    "code": "private static Node getFunctionArgList(Node function) {\n    return function.getFirstChild().getNext();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getRootNode",
+    "doc": "/**\n   * Gets the container node of the scope. This is typically the FUNCTION\n   * node or the global BLOCK/SCRIPT node.\n   */",
+    "code": "public Node getRootNode() {\n    return rootNode;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.removeChild",
+    "doc": "/**\n   * Detach a child from its parent and siblings.\n   */",
+    "code": "public void removeChild(Node child) {\n    Node prev = getChildBefore(child);\n    if (prev == null)\n        first = first.next;\n    else\n        prev.next = child.next;\n    if (child == last) last = prev;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

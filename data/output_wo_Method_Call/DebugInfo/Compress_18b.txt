@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveOutputStreamTest::testWriteNonAsciiDirectoryNamePosixMode ===
+
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:466->[Control Flow] Loop Info: Line: 466, Description: while at line 466
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:466->[Control Flow] Branch Info: Line: 466, Condition: if (data != 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:486->[Local Variables] {"data":[49,53,32,112,97,116,104,61,102,-61,-74,-61,-74,47,10]}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:487->[Local Variables] {"pex":{"name":"./PaxHeaders.X/fvv/","mode":16877,"userId":0,"groupId":0,"size":15,"modTime":1752374832,"checkSumOK":false,"linkFlag":120,"linkName":"","magic":"ustar\u0000","version":"00","userName":"","groupName":"","devMajor":0,"devMinor":0,"isExtended":false,"realSize":0}}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:472->[Local Variables] {"line":"13 path\u003dföö/\n"}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:473->[Local Variables] {"actualLength":15}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:474->[Control Flow] Branch Info: Line: 474, Condition: if (actualLength != actualLength), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:480->[Local Variables] {"len":15}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:481->[Local Variables] {"line":"15 path\u003dföö/\n"}
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:473->[Control Flow] Loop Info: Line: 473, Description: while at line 473
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:474->[Control Flow] Branch Info: Line: 474, Condition: if (actualLength != actualLength), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveOutputStream:writePaxHeaders:484->[Local Variables] {"w":{"buf":"15 path\u003dföö/\n","lock":"15 path\u003dföö/\n"}}

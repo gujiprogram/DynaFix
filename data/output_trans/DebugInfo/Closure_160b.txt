@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testCheckSymbolsOverrideForQuiet ===
+Exception: junit.framework.AssertionFailedError: Expected exactly one warning or error Errors:
+
+com.google.javascript.jscomp.Compiler:initOptions:285->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:285 -> java.util.List.add
+com.google.javascript.jscomp.Compiler:initOptions:283->[Control Flow] Branch Info: Line: 283, Condition: if (this.checkSymbols == false), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:284->[Control Flow] Branch Info: Line: 284, Condition: if (com.google.javascript.jscomp.WarningsGuard.disables() == 0), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:289->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:289 -> com.google.javascript.jscomp.ComposeWarningsGuard.<init>
+com.google.javascript.jscomp.Compiler:initOptions:231->[Control Flow] Branch Info: Line: 231, Condition: if (this.errorManager == null), Executed: true
+com.google.javascript.jscomp.Compiler:initOptions:235->[Control Flow] Branch Info: Line: 235, Condition: if (this.outStream == null), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:243->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:243 -> com.google.javascript.jscomp.Compiler.createMessageFormatter
+com.google.javascript.jscomp.Compiler:initOptions:243->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:243 -> com.google.javascript.jscomp.PrintStreamErrorManager.<init>
+com.google.javascript.jscomp.Compiler:initOptions:243->[Local Variables] "{TransVarOutPrinter\u003dcom.google.javascript.jscomp.PrintStreamErrorManager@1536602f}"
+com.google.javascript.jscomp.Compiler:initOptions:244->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:244 -> com.google.javascript.jscomp.PrintStreamErrorManager.setSummaryDetailLevel
+com.google.javascript.jscomp.Compiler:initOptions:245->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:245 -> com.google.javascript.jscomp.Compiler.setErrorManager
+com.google.javascript.jscomp.Compiler:initOptions:231->[Control Flow] Branch Info: Line: 231, Condition: if (this.errorManager == null), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:250->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:250 -> com.google.javascript.jscomp.CompilerOptions.enables
+com.google.javascript.jscomp.Compiler:initOptions:250->[Control Flow] Branch Info: Line: 250, Condition: if (com.google.javascript.jscomp.CompilerOptions.enables() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:252->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:252 -> com.google.javascript.jscomp.CompilerOptions.disables
+com.google.javascript.jscomp.Compiler:initOptions:252->[Control Flow] Branch Info: Line: 252, Condition: if (com.google.javascript.jscomp.CompilerOptions.disables() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:254->[Control Flow] Branch Info: Line: 254, Condition: if (this.checkTypes == false), Executed: true
+com.google.javascript.jscomp.Compiler:initOptions:259->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:259 -> com.google.javascript.jscomp.DiagnosticGroup.forType
+com.google.javascript.jscomp.Compiler:initOptions:258->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:258 -> com.google.javascript.jscomp.CompilerOptions.setWarningLevel
+com.google.javascript.jscomp.Compiler:initOptions:254->[Control Flow] Branch Info: Line: 254, Condition: if (this.checkTypes == false), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:264->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:264 -> com.google.javascript.jscomp.CheckLevel.isOn
+com.google.javascript.jscomp.Compiler:initOptions:264->[Control Flow] Branch Info: Line: 264, Condition: if (com.google.javascript.jscomp.CheckLevel.isOn() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:271->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:271 -> com.google.common.collect.Lists.newArrayList
+com.google.javascript.jscomp.Compiler:initOptions:271->[Local Variables] {"TransVarGuardsList":[]}
+com.google.javascript.jscomp.Compiler:initOptions:274->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:274 -> com.google.javascript.jscomp.Compiler.getDiagnosticGroups
+com.google.javascript.jscomp.Compiler:initOptions:274->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:274 -> com.google.javascript.jscomp.DiagnosticGroups.getRegisteredGroups
+com.google.javascript.jscomp.Compiler:initOptions:274->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:274 -> com.google.javascript.jscomp.SuppressDocWarningsGuard.<init>
+com.google.javascript.jscomp.Compiler:initOptions:272->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:272 -> java.util.List.add
+com.google.javascript.jscomp.Compiler:initOptions:275->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:275 -> com.google.javascript.jscomp.CompilerOptions.getWarningsGuard
+com.google.javascript.jscomp.Compiler:initOptions:275->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:275 -> java.util.List.add
+com.google.javascript.jscomp.Compiler:initOptions:283->[Control Flow] Branch Info: Line: 283, Condition: if (this.checkSymbols == false), Executed: true
+com.google.javascript.jscomp.Compiler:initOptions:283->[Control Flow] Branch Info: Line: 283, Condition: if (this.warningsGuard != null), Executed: false
+com.google.javascript.jscomp.Compiler:initOptions:285->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.initOptions:285 -> com.google.javascript.jscomp.DiagnosticGroupWarningsGuard.<init>

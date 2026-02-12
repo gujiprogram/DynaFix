@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.VerifyingWithAnExtraCallToADifferentMockTest::shouldAllowVerifyingWhenOtherMockCallIsInTheSameLine ===
+Exception: org.mockito.exceptions.base.MockitoException:
+
+org.mockito.internal.MockHandler:handle:73->[Control Flow] Branch Info: Line: 73, Condition: if (verificationMode != null), Executed: true
+org.mockito.internal.MockHandler:handle:76->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:76 -> org.mockito.internal.stubbing.InvocationContainerImpl.getInvocations
+org.mockito.internal.MockHandler:handle:76->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:76 -> org.mockito.internal.verification.VerificationDataImpl.<init>
+org.mockito.internal.MockHandler:handle:83->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:83 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:85->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:85 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:87->[Control Flow] Branch Info: Line: 87, Condition: if (stubbedInvocation != null), Executed: false
+org.mockito.internal.MockHandler:handle:91->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:91 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:91->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:91 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:98->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:98 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:58->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:58 -> org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing
+org.mockito.internal.MockHandler:handle:58->[Control Flow] Branch Info: Line: 58, Condition: if (org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing() != 0), Executed: false
+org.mockito.internal.MockHandler:handle:65->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:65 -> org.mockito.internal.progress.MockingProgress.pullVerificationMode
+org.mockito.internal.MockHandler:handle:67->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:67 -> org.mockito.internal.progress.MockingProgress.getArgumentMatcherStorage
+org.mockito.internal.MockHandler:handle:67->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:67 -> org.mockito.internal.invocation.MatchersBinder.bindMatchers
+org.mockito.internal.MockHandler:handle:70->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:70 -> org.mockito.internal.progress.MockingProgress.validateState
+org.mockito.internal.MockHandler:handle:73->[Control Flow] Branch Info: Line: 73, Condition: if (verificationMode != null), Executed: false
+org.mockito.internal.MockHandler:handle:81->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:81 -> org.mockito.internal.stubbing.InvocationContainerImpl.setInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:82->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:82 -> org.mockito.internal.stubbing.OngoingStubbingImpl.<init>
+org.mockito.internal.MockHandler:handle:82->[Local Variables] "{ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@49e09b23}"
+org.mockito.internal.MockHandler:handle:83->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:83 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:85->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:85 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:87->[Control Flow] Branch Info: Line: 87, Condition: if (stubbedInvocation != null), Executed: false
+org.mockito.internal.MockHandler:handle:91->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:91 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:91->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:91 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:98->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:98 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockitoCore:verify:73->[Method Call] Call Stack: org.mockito.internal.MockitoCore.verify:73 -> org.mockito.internal.progress.MockingProgress.verificationStarted
+org.mockito.internal.MockHandler:handle:58->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:58 -> org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing
+org.mockito.internal.MockHandler:handle:58->[Control Flow] Branch Info: Line: 58, Condition: if (org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing() != 0), Executed: false
+org.mockito.internal.MockHandler:handle:65->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:65 -> org.mockito.internal.progress.MockingProgress.pullVerificationMode
+org.mockito.internal.MockHandler:handle:66->[Local Variables] {"verificationMode":{"wantedCount":1}}
+org.mockito.internal.MockHandler:handle:67->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:67 -> org.mockito.internal.progress.MockingProgress.getArgumentMatcherStorage
+org.mockito.internal.MockHandler:handle:67->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:67 -> org.mockito.internal.invocation.MatchersBinder.bindMatchers
+org.mockito.internal.MockHandler:handle:70->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:70 -> org.mockito.internal.progress.MockingProgress.validateState

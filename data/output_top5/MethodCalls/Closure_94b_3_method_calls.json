@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodingConvention.isConstant",
+    "doc": "/**\n   * This checks whether a given variable name, such as a name in all-caps\n   * should be treated as if it had the @const annotation.\n   *\n   * @param variableName potentially constant variable name\n   * @return {@code true} if the name should be treated as a constant.\n   */",
+    "code": "public boolean isConstant(String variableName);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isObjectLitKey",
+    "doc": "/**\n   * Determines whether a node represents an object literal key\n   * (e.g. key1 in {key1: value1, key2: value2}).\n   *\n   * @param node A node\n   * @param parent The node's parent\n   */",
+    "code": "static boolean isObjectLitKey(Node node, Node parent) {\n    if (node.getType() == Token.STRING && parent.getType() == Token.OBJECTLIT) {\n      int index = 0;\n      for (Node current = parent.getFirstChild();\n           current != null;\n           current = current.getNext()) {\n        if (current == node) {\n          return index % 2 == 0;\n        }\n        index++;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

@@ -1,0 +1,64 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.reflect.TypeUtilsTest::testGetTypeArguments ===
+
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:129->[Control Flow] Branch Info: Line: 129, Condition: if (type != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:131->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:131 -> org.apache.commons.lang3.ClassUtils.isAssignable
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:653->[Control Flow] Branch Info: Line: 653, Condition: if (toClass == 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:658->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:658 -> java.lang.Class.isPrimitive
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:658->[Control Flow] Branch Info: Line: 658, Condition: if (java.lang.Class.isPrimitive() != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:671->[Control Flow] Branch Info: Line: 671, Condition: if (subtypeVarAssigns == null), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:671->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:671 -> java.util.HashMap.<init>
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:675->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:675 -> java.lang.Class.getTypeParameters
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:675->[Control Flow] Branch Info: Line: 675, Condition: if (java.lang.Class.getTypeParameters() <= 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:627->[Control Flow] Loop Info: Line: 627, Description: while at line 627
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:627->[Control Flow] Branch Info: Line: 627, Condition: if (typeParams < typeParams), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:633->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:633 -> java.lang.Object.equals
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:633->[Control Flow] Branch Info: Line: 633, Condition: if (java.lang.Object.equals() != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:622->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:622 -> java.lang.reflect.ParameterizedType.getActualTypeArguments
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:624->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:624 -> java.lang.Class.getTypeParameters
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:627->[Control Flow] Branch Info: Line: 627, Condition: if (typeParams < typeParams), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:629->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:629 -> java.util.Map.containsKey
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:629->[Control Flow] Branch Info: Line: 629, Condition: if (typeArg != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:629->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:629 -> java.util.Map.put
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:627->[Control Flow] Loop Info: Line: 627, Description: while at line 627
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:627->[Control Flow] Branch Info: Line: 627, Condition: if (typeParams < typeParams), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:633->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:633 -> java.lang.Object.equals
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:633->[Control Flow] Branch Info: Line: 633, Condition: if (java.lang.Object.equals() != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:547->[Control Flow] Branch Info: Line: 547, Condition: if (type != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:653->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:653 -> org.apache.commons.lang3.reflect.TypeUtils.isAssignable
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:113->[Control Flow] Branch Info: Line: 113, Condition: if (type == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:120->[Control Flow] Branch Info: Line: 120, Condition: if (toClass == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:125->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:125 -> java.lang.Object.equals
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:125->[Control Flow] Branch Info: Line: 125, Condition: if (java.lang.Object.equals() != 0), Executed: false
+
+=== Debug Info for Test: org.apache.commons.lang3.reflect.TypeUtilsTest::testIsAssignable ===
+
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:203->[Control Flow] Branch Info: Line: 203, Condition: if (fromTypeVarAssigns == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:210->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:210 -> java.util.Map.isEmpty
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:210->[Control Flow] Branch Info: Line: 210, Condition: if (fromTypeVarAssigns != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:219->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:219 -> java.util.Iterator.hasNext
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:219->[Control Flow] Branch Info: Line: 219, Condition: if (var6 != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:79->[Control Flow] Branch Info: Line: 79, Condition: if (toType != null), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:79->[Control Flow] Branch Info: Line: 79, Condition: if (toType != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:83->[Control Flow] Branch Info: Line: 83, Condition: if (toType != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:181->[Control Flow] Branch Info: Line: 181, Condition: if (type == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:187->[Control Flow] Branch Info: Line: 187, Condition: if (toParameterizedType == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:192->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:192 -> java.lang.Object.equals
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:192->[Control Flow] Branch Info: Line: 192, Condition: if (java.lang.Object.equals() != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:197->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:197 -> org.apache.commons.lang3.reflect.TypeUtils.getRawType
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:200->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:200 -> org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:547->[Control Flow] Branch Info: Line: 547, Condition: if (type != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:653->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:653 -> org.apache.commons.lang3.reflect.TypeUtils.isAssignable
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:113->[Control Flow] Branch Info: Line: 113, Condition: if (type == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:120->[Control Flow] Branch Info: Line: 120, Condition: if (toClass == null), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:125->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:125 -> java.lang.Object.equals
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:125->[Control Flow] Branch Info: Line: 125, Condition: if (java.lang.Object.equals() != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:129->[Control Flow] Branch Info: Line: 129, Condition: if (type != 0), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:isAssignable:131->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.isAssignable:131 -> org.apache.commons.lang3.ClassUtils.isAssignable
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:653->[Control Flow] Branch Info: Line: 653, Condition: if (toClass == 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:658->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:658 -> java.lang.Class.isPrimitive
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:658->[Control Flow] Branch Info: Line: 658, Condition: if (java.lang.Class.isPrimitive() != 0), Executed: false
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:671->[Control Flow] Branch Info: Line: 671, Condition: if (subtypeVarAssigns == null), Executed: true
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:671->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:671 -> java.util.HashMap.<init>
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:675->[Method Call] Call Stack: org.apache.commons.lang3.reflect.TypeUtils.getTypeArguments:675 -> java.lang.Class.getTypeParameters
+org.apache.commons.lang3.reflect.TypeUtils:getTypeArguments:675->[Control Flow] Branch Info: Line: 675, Condition: if (java.lang.Class.getTypeParameters() <= 0), Executed: false

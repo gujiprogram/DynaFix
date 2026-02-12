@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMark ===
+Exception: junit.framework.AssertionFailedError: expected:<[One]> but was:<[]>
+
+org.jsoup.helper.DataUtil:parseByteData:74->[Local Variables] {"parser":{"treeBuilder":{"baseUriSetFromDoc":false,"formattingElements":[],"pendingTableCharacters":[],"framesetOk":true,"fosterInserts":false,"fragmentParsing":false},"maxErrors":0},"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":16},"baseUri":"http://foo.com/","charsetName":"UTF-8"}
+org.jsoup.helper.DataUtil:parseByteData:76->[Control Flow] Branch Info: Line: 76, Condition: if (charsetName == null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:91->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:91 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:92->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:92 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:93->[Local Variables] {"byteData":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":16},"docData":"﻿\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}
+org.jsoup.helper.DataUtil:parseByteData:94->[Control Flow] Branch Info: Line: 94, Condition: if (doc == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:99->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:99 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:99->[Local Variables] "{parser\u003dorg.jsoup.parser.Parser@6c4980d3, doc\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  ﻿\n  \u003ctitle\u003eOne\u003c/title\u003eTwo\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseByteData:100->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:100 -> org.jsoup.nodes.Document.outputSettings
+org.jsoup.helper.DataUtil:parseByteData:100->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:100 -> org.jsoup.nodes.Document$OutputSettings.charset
+org.jsoup.helper.DataUtil:parseByteData:94->[Control Flow] Branch Info: Line: 94, Condition: if (doc == null), Executed: false

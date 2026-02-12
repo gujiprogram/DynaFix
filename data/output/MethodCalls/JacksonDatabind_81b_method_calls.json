@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.hasRawClass",
+    "doc": "/**\n     * Method that can be used to check whether this type has\n     * specified Class as its type erasure. Put another way, returns\n     * true if instantiation of this Type is given (type-erased) Class.\n     */",
+    "code": "public final boolean hasRawClass(Class<?> clz) { return _class == clz; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isMapLikeType",
+    "doc": "/**\n     * @return True if type is either true {@link java.util.Map} type,\n     *    or something similar (meaning it has at least two type parameter;\n     *    first one describing key type, second value type)\n     */",
+    "code": "public boolean isMapLikeType() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.annotation.JsonSerialize.as",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.MapperConfig.getTypeFactory",
+    "doc": "/**\n     * Method called to locate a type info handler for types that do not have\n     * one explicitly declared via annotations (or other configuration).\n     * If such default handler is configured, it is returned; otherwise\n     * null is returned.\n     */",
+    "code": "public final TypeFactory getTypeFactory() {\n        return _base.getTypeFactory();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector._classIfExplicit",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector._findAnnotation",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

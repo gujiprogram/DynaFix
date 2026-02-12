@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.LocaleUtilsTest::testLang865 ===
+Exception: java.lang.IllegalArgumentException: Invalid locale format: _GB
+
+org.apache.commons.lang3.LocaleUtils:toLocale:88->[Local Variables] {"str":"_GB"}
+org.apache.commons.lang3.LocaleUtils:toLocale:89->[Control Flow] Branch Info: Line: 89, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:92->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:92 -> java.lang.String.length
+org.apache.commons.lang3.LocaleUtils:toLocale:92->[Local Variables] {"len":3}
+org.apache.commons.lang3.LocaleUtils:toLocale:93->[Control Flow] Branch Info: Line: 93, Condition: if (len < len), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:96->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:96 -> java.lang.String.charAt
+org.apache.commons.lang3.LocaleUtils:toLocale:96->[Local Variables] {"ch0":"_"}
+org.apache.commons.lang3.LocaleUtils:toLocale:97->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:97 -> java.lang.String.charAt
+org.apache.commons.lang3.LocaleUtils:toLocale:97->[Local Variables] {"ch1":"G"}
+org.apache.commons.lang3.LocaleUtils:toLocale:98->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:98 -> java.lang.Character.isLowerCase
+org.apache.commons.lang3.LocaleUtils:toLocale:98->[Control Flow] Branch Info: Line: 98, Condition: if (ch0 != 0), Executed: false
+org.apache.commons.lang3.LocaleUtils:toLocale:99->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:99 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.LocaleUtils:toLocale:99->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:99 -> java.lang.StringBuilder.append
+org.apache.commons.lang3.LocaleUtils:toLocale:99->[Method Call] Call Stack: org.apache.commons.lang3.LocaleUtils.toLocale:99 -> java.lang.StringBuilder.toString

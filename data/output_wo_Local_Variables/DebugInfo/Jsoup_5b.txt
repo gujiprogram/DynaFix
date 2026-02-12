@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::parsesQuiteRoughAttributes ===
+
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:199->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:199 -> java.lang.StringBuilder.toString
+org.jsoup.parser.Parser:parseAttribute:201->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:201 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:186->[Control Flow] Branch Info: Line: 186, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:203->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:203 -> java.lang.String.length
+org.jsoup.parser.Parser:parseAttribute:203->[Control Flow] Branch Info: Line: 203, Condition: if (java.lang.String.length() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:206->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:206 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseAttribute:185->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:185 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:186->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:186 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:186->[Control Flow] Branch Info: Line: 186, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:203->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:203 -> java.lang.String.length
+org.jsoup.parser.Parser:parseAttribute:203->[Control Flow] Branch Info: Line: 203, Condition: if (java.lang.String.length() != 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:204->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:204 -> org.jsoup.nodes.Attribute.createFromEncoded
+org.jsoup.parser.Parser:parseAttribute:182->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:182 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:183->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:183 -> org.jsoup.parser.TokenQueue.consumeAttributeKey
+org.jsoup.parser.Parser:parseAttribute:185->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:185 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:186->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:186 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:186->[Control Flow] Branch Info: Line: 186, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:187->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:187 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.parser.Parser:parseAttribute:189->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:189 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:189->[Control Flow] Branch Info: Line: 189, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:191->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:191 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.parser.Parser:parseAttribute:191->[Control Flow] Branch Info: Line: 191, Condition: if (org.jsoup.parser.TokenQueue.matchChomp() != 0), Executed: false
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.matchesWhitespace
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.isEmpty() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:197->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:197 -> org.jsoup.parser.TokenQueue.consume
+org.jsoup.parser.Parser:parseAttribute:197->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:197 -> java.lang.StringBuilder.append
+org.jsoup.parser.Parser:parseAttribute:194->[Control Flow] Loop Info: Line: 194, Description: while at line 194
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.matchesWhitespace
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesWhitespace() == 0), Executed: true
+org.jsoup.parser.Parser:parseAttribute:196->[Method Call] Call Stack: org.jsoup.parser.Parser.parseAttribute:196 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.parser.Parser:parseAttribute:196->[Control Flow] Branch Info: Line: 196, Condition: if (org.jsoup.parser.TokenQueue.matchesAny() == 0), Executed: false

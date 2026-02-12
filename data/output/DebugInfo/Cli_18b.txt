@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: org.apache.commons.cli.PosixParserTest::testStop2 ===
+Exception: junit.framework.AssertionFailedError: Confirm -a is not set
+
+org.apache.commons.cli.PosixParser:flatten:98->[Local Variables] {"stopAtNonOption":true,"arguments":["-z","-a","-btoast"]}
+org.apache.commons.cli.PosixParser:flatten:99->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:99 -> org.apache.commons.cli.PosixParser.init
+org.apache.commons.cli.PosixParser:flatten:103->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:103 -> java.util.Arrays.asList
+org.apache.commons.cli.PosixParser:flatten:103->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:103 -> java.util.List.iterator
+org.apache.commons.cli.PosixParser:flatten:105->[Local Variables] {"iter":{"cursor":0,"a":["-z","-a","-btoast"]}}
+org.apache.commons.cli.PosixParser:flatten:106->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:106 -> java.util.Iterator.hasNext
+org.apache.commons.cli.PosixParser:flatten:106->[Control Flow] Branch Info: Line: 106, Condition: if (iter != 0), Executed: true
+org.apache.commons.cli.PosixParser:flatten:109->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:109 -> java.util.Iterator.next
+org.apache.commons.cli.PosixParser:flatten:111->[Local Variables] {"iter":{"cursor":1,"a":["-z","-a","-btoast"]},"token":"-z"}
+org.apache.commons.cli.PosixParser:flatten:112->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:112 -> java.lang.String.startsWith
+org.apache.commons.cli.PosixParser:flatten:112->[Control Flow] Branch Info: Line: 112, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.PosixParser:flatten:126->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:126 -> java.lang.String.equals
+org.apache.commons.cli.PosixParser:flatten:126->[Control Flow] Branch Info: Line: 126, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.cli.PosixParser:flatten:130->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:130 -> java.lang.String.startsWith
+org.apache.commons.cli.PosixParser:flatten:130->[Control Flow] Branch Info: Line: 130, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.PosixParser:flatten:132->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:132 -> java.lang.String.length
+org.apache.commons.cli.PosixParser:flatten:132->[Control Flow] Branch Info: Line: 132, Condition: if (java.lang.String.length() == java.lang.String.length()), Executed: true
+org.apache.commons.cli.PosixParser:flatten:134->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:134 -> org.apache.commons.cli.PosixParser.processOptionToken
+org.apache.commons.cli.PosixParser:processOptionToken:232->[Local Variables] {"stopAtNonOption":true,"token":"-z"}
+org.apache.commons.cli.PosixParser:processOptionToken:233->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.processOptionToken:233 -> org.apache.commons.cli.Options.hasOption
+org.apache.commons.cli.PosixParser:processOptionToken:233->[Control Flow] Branch Info: Line: 233, Condition: if (org.apache.commons.cli.Options.hasOption() != 0), Executed: false
+org.apache.commons.cli.PosixParser:processOptionToken:238->[Control Flow] Branch Info: Line: 238, Condition: if (stopAtNonOption != 0), Executed: true
+org.apache.commons.cli.PosixParser:processOptionToken:238->[Control Flow] Branch Info: Line: 238, Condition: if (stopAtNonOption != 0), Executed: false
+org.apache.commons.cli.PosixParser:flatten:155->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:155 -> org.apache.commons.cli.PosixParser.gobble
+org.apache.commons.cli.PosixParser:flatten:155->[Local Variables] {"iter":{"cursor":3,"a":["-z","-a","-btoast"]}}
+org.apache.commons.cli.PosixParser:flatten:103->[Control Flow] Loop Info: Line: 103, Description: while at line 103
+org.apache.commons.cli.PosixParser:flatten:106->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:106 -> java.util.Iterator.hasNext
+org.apache.commons.cli.PosixParser:flatten:106->[Control Flow] Branch Info: Line: 106, Condition: if (iter != 0), Executed: false
+org.apache.commons.cli.PosixParser:flatten:158->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:158 -> java.util.List.size
+org.apache.commons.cli.PosixParser:flatten:158->[Method Call] Call Stack: org.apache.commons.cli.PosixParser.flatten:158 -> java.util.List.toArray

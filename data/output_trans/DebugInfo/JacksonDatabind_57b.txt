@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.seq.ReadValuesTest::testRootBeans ===
+Exception: java.io.CharConversionException: Invalid UTF-32 character 0x2261223a(above 10ffff)  at char #1, byte #7)
+
+com.fasterxml.jackson.databind.ObjectReader:readValues:1447->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1447 -> com.fasterxml.jackson.databind.ObjectReader._considerFilter
+com.fasterxml.jackson.databind.ObjectReader:readValues:1447->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1447 -> com.fasterxml.jackson.databind.ObjectReader._bindAndReadValues
+com.fasterxml.jackson.databind.ObjectReader:readValues:1428->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@1a45193b}"
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._newIterator
+com.fasterxml.jackson.databind.ObjectReader:readValues:1422->[Control Flow] Branch Info: Line: 1422, Condition: if (this._dataFormatReaders != null), Executed: false
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1425 -> com.fasterxml.jackson.core.JsonFactory.createParser
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1425 -> com.fasterxml.jackson.databind.ObjectReader._considerFilter
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Local Variables] "{p\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@38f116f6}"
+com.fasterxml.jackson.databind.ObjectReader:readValues:1426->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1426 -> com.fasterxml.jackson.databind.ObjectReader._initForMultiRead
+com.fasterxml.jackson.databind.ObjectReader:readValues:1427->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1427 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.databind.ObjectReader:readValues:1428->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1428 -> com.fasterxml.jackson.databind.ObjectReader.createDeserializationContext
+com.fasterxml.jackson.databind.ObjectReader:readValues:1428->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@5286c33a}"
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._newIterator
+com.fasterxml.jackson.databind.ObjectReader:readValues:1421->[Local Variables] {"json":"{\"a\":3}{\"a\":3}"}
+com.fasterxml.jackson.databind.ObjectReader:readValues:1422->[Control Flow] Branch Info: Line: 1422, Condition: if (this._dataFormatReaders != null), Executed: false
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1425 -> com.fasterxml.jackson.core.JsonFactory.createParser
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1425 -> com.fasterxml.jackson.databind.ObjectReader._considerFilter
+com.fasterxml.jackson.databind.ObjectReader:readValues:1425->[Local Variables] "{p\u003dcom.fasterxml.jackson.core.json.ReaderBasedJsonParser@6e6d5d29}"
+com.fasterxml.jackson.databind.ObjectReader:readValues:1426->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1426 -> com.fasterxml.jackson.databind.ObjectReader._initForMultiRead
+com.fasterxml.jackson.databind.ObjectReader:readValues:1427->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1427 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.databind.ObjectReader:readValues:1428->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1428 -> com.fasterxml.jackson.databind.ObjectReader.createDeserializationContext
+com.fasterxml.jackson.databind.ObjectReader:readValues:1428->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@5c530d1e}"
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer
+com.fasterxml.jackson.databind.ObjectReader:readValues:1429->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1429 -> com.fasterxml.jackson.databind.ObjectReader._newIterator
+com.fasterxml.jackson.databind.ObjectReader:readValues:1440->[Local Variables] {"TransVarFile":[0,0,0,123,34,97,34,58,51,125,123,34,97,34,58,50,55,125,32,32,0,0,0],"TransVarOff":3}
+com.fasterxml.jackson.databind.ObjectReader:readValues:1441->[Control Flow] Branch Info: Line: 1441, Condition: if (this._dataFormatReaders != null), Executed: false
+com.fasterxml.jackson.databind.ObjectReader:readValues:1447->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader.readValues:1447 -> com.fasterxml.jackson.core.JsonFactory.createParser

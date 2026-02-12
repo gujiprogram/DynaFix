@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.supportsDataDescriptorFor",
+    "doc": "/**\n     * Whether this entry requires a data descriptor this library can work with.\n     *\n     * @return true if allowStoredEntriesWithDataDescriptor is true,\n     * the entry doesn't require any data descriptor or the method is\n     * DEFLATED or ENHANCED_DEFLATED.\n     */",
+    "code": "private boolean supportsDataDescriptorFor(final ZipArchiveEntry entry) {\n        return !entry.getGeneralPurposeBit().usesDataDescriptor()\n\n                || (allowStoredEntriesWithDataDescriptor && entry.getMethod() == ZipEntry.STORED)\n                || entry.getMethod() == ZipEntry.DEFLATED\n                || entry.getMethod() == ZipMethod.ENHANCED_DEFLATED.getCode();\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipUtil.canHandleEntryData",
+    "doc": "/**\n     * Whether this library is able to read or write the given entry.\n     */",
+    "code": "static boolean canHandleEntryData(final ZipArchiveEntry entry) {\n        return supportsEncryptionOf(entry) && supportsMethodOf(entry);\n    }"
+  }
+]

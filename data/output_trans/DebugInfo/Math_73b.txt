@@ -1,0 +1,60 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.solvers.BrentSolverTest::testBadEndpoints ===
+Exception: junit.framework.AssertionFailedError: Expecting IllegalArgumentException - non-bracketing
+
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:239->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:239 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:239->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:239 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:239->[Control Flow] Branch Info: Line: 239, Condition: if (y1 < 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:241->[Local Variables] {"x0":1.2000005}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:242->[Local Variables] {"x1":1.2}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:243->[Local Variables] {"x2":1.2000005}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:244->[Local Variables] {"y0":0.9320392671459871}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:245->[Local Variables] {"y1":0.9320390859672263}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:239->[Control Flow] Branch Info: Line: 239, Condition: if (y1 < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:247->[Local Variables] {"y2":0.9320392671459871}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:248->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:248 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:248->[Control Flow] Branch Info: Line: 248, Condition: if (this.functionValueAccuracy <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:255->[Local Variables] {"dx":5.00000000069889E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:257->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:257 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:257->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:257 -> java.lang.Math.max
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:258->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:258 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:258->[Control Flow] Branch Info: Line: 258, Condition: if (tolerance <= 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:259->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:259 -> org.apache.commons.math.analysis.solvers.BrentSolver.setResult
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:257->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:257 -> java.lang.Math.max
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:258->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:258 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:258->[Control Flow] Branch Info: Line: 258, Condition: if (tolerance <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:262->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:262 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:262->[Control Flow] Branch Info: Line: 262, Condition: if (tolerance >= 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:263->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:263 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:263->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:263 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:263->[Control Flow] Branch Info: Line: 263, Condition: if (y1 <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:273->[Local Variables] {"r3":0.9999995550779447}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:274->[Control Flow] Branch Info: Line: 274, Condition: if (x2 == 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:276->[Local Variables] {"p":1.1444086704702067E-6}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:284->[Local Variables] {"p1":4.4492205530932694E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:285->[Control Flow] Branch Info: Line: 285, Condition: if (p > 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:289->[Local Variables] {"p1":-4.4492205530932694E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:290->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:290 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:290->[Control Flow] Branch Info: Line: 290, Condition: if (p1 < 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:295->[Local Variables] {"delta":5.722045898215455E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:302->[Local Variables] {"oldDelta":5.722045898215455E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:303->[Local Variables] {"x0":1.2}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:305->[Local Variables] {"y0":0.9320390859672263}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:306->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:306 -> java.lang.Math.abs
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:306->[Control Flow] Branch Info: Line: 306, Condition: if (tolerance > 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:308->[Control Flow] Branch Info: Line: 308, Condition: if (dx > 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:310->[Control Flow] Branch Info: Line: 310, Condition: if (dx <= 0), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:312->[Local Variables] {"x1":1.2000005}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:313->[Method Call] Call Stack: org.apache.commons.math.analysis.solvers.BrentSolver.solve:313 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:313->[Local Variables] {"y1":0.9320392671459871}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:314->[Control Flow] Branch Info: Line: 314, Condition: if (y1 > 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:314->[Control Flow] Branch Info: Line: 314, Condition: if (y2 > 0), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:314->[Control Flow] Branch Info: Line: 314, Condition: if (y2 == y2), Executed: true
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:315->[Local Variables] {"x2":1.2}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:316->[Local Variables] {"y2":0.9320390859672263}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:317->[Local Variables] {"delta":5.00000000069889E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:314->[Control Flow] Branch Info: Line: 314, Condition: if (y2 == y2), Executed: false
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:319->[Local Variables] {"oldDelta":5.00000000069889E-7}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:320->[Local Variables] {"i":19}
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:237->[Control Flow] Loop Info: Line: 237, Description: while at line 237
+org.apache.commons.math.analysis.solvers.BrentSolver:solve:238->[Control Flow] Branch Info: Line: 238, Condition: if (this.maximalIterationCount < this.maximalIterationCount), Executed: true

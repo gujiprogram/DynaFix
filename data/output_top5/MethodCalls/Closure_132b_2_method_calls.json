@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.isFoldableExpressBlock",
+    "doc": "/**\n   * @return Whether the node is a block with a single statement that is\n   *     an expression.\n   */",
+    "code": "private boolean isFoldableExpressBlock(Node n) {\n    if (n.isBlock()) {\n      if (n.hasOneChild()) {\n        Node maybeExpr = n.getFirstChild();\n        if (maybeExpr.isExprResult()) {\n          if (maybeExpr.getFirstChild().isCall()) {\n            Node calledFn = maybeExpr.getFirstChild().getFirstChild();\n\n            if (calledFn.isGetElem()) {\n              return false;\n            } else if (calledFn.isGetProp() &&\n                       calledFn.getLastChild().getString().startsWith(\"on\")) {\n              return false;\n            }\n          }\n\n          return true;\n        }\n        return false;\n      }\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  }
+]

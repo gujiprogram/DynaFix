@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.convert.TestUpdateValue::testIssue744 ===
+Exception: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "i" (class com.fasterxml.jackson.databind.convert.TestUpdateValue$DataB), not marked as ignorable (2 known properties: "da", "k"])
+
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1470->[Local Variables] "{jp\u003dcom.fasterxml.jackson.databind.node.TreeTraversingParser@70925b45}"
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1471->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader._bindAsTree:1471 -> com.fasterxml.jackson.databind.ObjectReader._initForReading
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1471->[Local Variables] {"t":"START_OBJECT"}
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1472->[Control Flow] Branch Info: Line: 1472, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1472->[Control Flow] Branch Info: Line: 1472, Condition: if (unknown_condition_165), Executed: true
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1472->[Control Flow] Branch Info: Line: 1472, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1475->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader._bindAsTree:1475 -> com.fasterxml.jackson.databind.ObjectReader.createDeserializationContext
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1475->[Local Variables] "{ctxt\u003dcom.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl@7d373bcf}"
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1476->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader._bindAsTree:1476 -> com.fasterxml.jackson.databind.ObjectReader._findRootDeserializer
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1476->[Local Variables] "{deser\u003dcom.fasterxml.jackson.databind.deser.BeanDeserializer@6d6bc158}"
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1477->[Control Flow] Branch Info: Line: 1477, Condition: if (this._unwrapRoot != false), Executed: false
+com.fasterxml.jackson.databind.ObjectReader:_bindAsTree:1480->[Method Call] Call Stack: com.fasterxml.jackson.databind.ObjectReader._bindAsTree:1480 -> com.fasterxml.jackson.databind.JsonDeserializer.deserialize

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jfree.data.time.Week.peg",
+    "doc": "/**\n     * Recalculates the start date/time and end date/time for this time period\n     * relative to the supplied calendar (which incorporates a time zone).\n     *\n     * @param calendar  the calendar (<code>null</code> not permitted).\n     *\n     * @since 1.0.3\n     */",
+    "code": "public void peg(Calendar calendar) {\n        this.firstMillisecond = getFirstMillisecond(calendar);\n        this.lastMillisecond = getLastMillisecond(calendar);\n    }"
+  }
+]

@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FoldConstantsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:216->[Control Flow] Branch Info: Line: 216, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:217->[Control Flow] Branch Info: Line: 217, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:221->[Control Flow] Branch Info: Line: 221, Condition: if (com.google.javascript.rhino.Node.getNext() == null), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:225->[Control Flow] Branch Info: Line: 225, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:233->[Control Flow] Branch Info: Line: 233, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:238->[Control Flow] Branch Info: Line: 238, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:243->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:243 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FoldConstants:visit:244->[Control Flow] Branch Info: Line: 244, Condition: if (right == null), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:90->[Local Variables] "{parent\u003dnull, n\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.FoldConstants:visit:91->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:91 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.FoldConstants:visit:92->[Local Variables] {"type":125}
+com.google.javascript.jscomp.FoldConstants:visit:93->[Control Flow] Branch Info: Line: 93, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:94->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:94 -> com.google.javascript.jscomp.FoldConstants.tryFoldBlock
+com.google.javascript.jscomp.FoldConstants:visit:335->[Control Flow] Branch Info: Line: 335, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:339->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:339 -> com.google.javascript.jscomp.NodeUtil.isLiteralValue
+com.google.javascript.jscomp.FoldConstants:visit:339->[Control Flow] Branch Info: Line: 339, Condition: if (left != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:342->[Control Flow] Branch Info: Line: 342, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:345->[Control Flow] Branch Info: Line: 345, Condition: if (type != type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:345->[Control Flow] Branch Info: Line: 345, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:90->[Local Variables] "{parent\u003dSCRIPT [source name: null] [encoded source length: 0] [base line: -1] [end line: -1] 1 [sourcename: testcode] [synthetic: 1], n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.FoldConstants:visit:91->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:91 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.FoldConstants:visit:92->[Local Variables] {"type":130}
+com.google.javascript.jscomp.FoldConstants:visit:93->[Control Flow] Branch Info: Line: 93, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:98->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:98 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FoldConstants:visit:98->[Local Variables] "{left\u003dASSIGN 1}"
+com.google.javascript.jscomp.FoldConstants:visit:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:103->[Control Flow] Branch Info: Line: 103, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:103->[Control Flow] Branch Info: Line: 103, Condition: if (left != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type != type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type != type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:216->[Control Flow] Branch Info: Line: 216, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:217->[Control Flow] Branch Info: Line: 217, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:221->[Control Flow] Branch Info: Line: 221, Condition: if (com.google.javascript.rhino.Node.getNext() == null), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:225->[Control Flow] Branch Info: Line: 225, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:233->[Control Flow] Branch Info: Line: 233, Condition: if (type == type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:234->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:234 -> com.google.javascript.jscomp.FoldConstants.tryMinimizeCondition
+com.google.javascript.jscomp.FoldConstants:visit:90->[Local Variables] "{parent\u003dBLOCK [synthetic: 1], n\u003dSCRIPT [source name: null] [encoded source length: 0] [base line: -1] [end line: -1] 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.FoldConstants:visit:91->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:91 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.FoldConstants:visit:92->[Local Variables] {"type":132}
+com.google.javascript.jscomp.FoldConstants:visit:93->[Control Flow] Branch Info: Line: 93, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:98->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.visit:98 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FoldConstants:visit:98->[Local Variables] "{left\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.FoldConstants:visit:99->[Control Flow] Branch Info: Line: 99, Condition: if (left == null), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:103->[Control Flow] Branch Info: Line: 103, Condition: if (type == type), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:103->[Control Flow] Branch Info: Line: 103, Condition: if (left != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type != type), Executed: true
+com.google.javascript.jscomp.FoldConstants:visit:139->[Control Flow] Branch Info: Line: 139, Condition: if (type != type), Executed: true

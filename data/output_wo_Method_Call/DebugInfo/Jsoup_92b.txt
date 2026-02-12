@@ -1,0 +1,62 @@
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::retainsAttributesOfDifferentCaseIfSensitive ===
+
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003cbody\u003e\u003c/body\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:201->[Local Variables] {"startTag":{"tagName":"p","normalName":"p","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":4,"keys":["One","one","two","Two"],"vals":["Two","Three","Five","Six"]},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:202->[Control Flow] Branch Info: Line: 202, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:210->[Local Variables] {"el":{"tag":{"tagName":"p","normalName":"p","isBlock":true,"formatAsBlock":false,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{"size":4,"keys":["One","one","two","Two"],"vals":["Two","Three","Five","Six"]},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003cp One\u003d\"Two\" one\u003d\"Three\" two\u003d\"Five\" Two\u003d\"Six\"\u003e\u003c/p\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:257->[Local Variables] {"characterToken":{"data":"Text","type":"Character"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:259->[Local Variables] {"tagName":"p"}
+org.jsoup.parser.HtmlTreeBuilder:insert:261->[Local Variables] {"data":"Text"}
+org.jsoup.parser.HtmlTreeBuilder:insert:262->[Control Flow] Branch Info: Line: 262, Condition: if (org.jsoup.parser.Token$Character.isCData() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:264->[Control Flow] Branch Info: Line: 264, Condition: if (java.lang.String.equals() == 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:insert:264->[Control Flow] Branch Info: Line: 264, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:267->[Local Variables] {"node":{"value":"Text","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:268->[Local Variables] "{node\u003dText, el\u003d\u003cp One\u003d\"Two\" one\u003d\"Three\" two\u003d\"Five\" Two\u003d\"Six\"\u003eText\u003c/p\u003e}"
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"One","key":"One"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Three","key":"one"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Four","key":"two"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Six","key":"Two"}
+org.jsoup.parser.HtmlTreeBuilder:insert:221->[Local Variables] {"el":{"tag":{"tagName":"html","normalName":"html","isBlock":true,"formatAsBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003chtml\u003e\u003c/html\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:201->[Local Variables] {"startTag":{"tagName":"head","normalName":"head","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":0,"keys":[],"vals":[]},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:202->[Control Flow] Branch Info: Line: 202, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:210->[Local Variables] {"el":{"tag":{"tagName":"head","normalName":"head","isBlock":true,"formatAsBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{"size":0,"keys":[],"vals":[]},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003chead\u003e\u003c/head\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:201->[Local Variables] {"startTag":{"tagName":"body","normalName":"body","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":0,"keys":[],"vals":[]},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:202->[Control Flow] Branch Info: Line: 202, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:210->[Local Variables] {"el":{"tag":{"tagName":"body","normalName":"body","isBlock":true,"formatAsBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{"size":0,"keys":[],"vals":[]},"baseUri":"","siblingIndex":0}}
+
+=== Debug Info for Test: org.jsoup.parser.HtmlParserTest::dropsDuplicateAttributes ===
+
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003cbody\u003e\u003c/body\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:201->[Local Variables] {"startTag":{"tagName":"p","normalName":"p","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":5,"keys":["One","ONE","Two","one","two",null,null,null],"vals":["Four","Two","two","Three","Five",null,null,null]},"type":"StartTag"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:202->[Control Flow] Branch Info: Line: 202, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:210->[Local Variables] {"startTag":{"tagName":"p","normalName":"p","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":5,"keys":["one","one","two","one","two",null,null,null],"vals":["Four","Two","two","Three","Five",null,null,null]},"type":"StartTag"},"el":{"tag":{"tagName":"p","normalName":"p","isBlock":true,"formatAsBlock":false,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{"size":5,"keys":["one","one","two","one","two",null,null,null],"vals":["Four","Two","two","Three","Five",null,null,null]},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:222->[Local Variables] "{el\u003d\u003cp one\u003d\"Four\" one\u003d\"Two\" two\u003d\"two\" one\u003d\"Three\" two\u003d\"Five\"\u003e\u003c/p\u003e}"
+org.jsoup.parser.HtmlTreeBuilder:insert:257->[Local Variables] {"characterToken":{"data":"Text","type":"Character"}}
+org.jsoup.parser.HtmlTreeBuilder:insert:259->[Local Variables] {"tagName":"p"}
+org.jsoup.parser.HtmlTreeBuilder:insert:261->[Local Variables] {"data":"Text"}
+org.jsoup.parser.HtmlTreeBuilder:insert:262->[Control Flow] Branch Info: Line: 262, Condition: if (org.jsoup.parser.Token$Character.isCData() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:264->[Control Flow] Branch Info: Line: 264, Condition: if (java.lang.String.equals() == 0), Executed: true
+org.jsoup.parser.HtmlTreeBuilder:insert:264->[Control Flow] Branch Info: Line: 264, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.jsoup.parser.HtmlTreeBuilder:insert:267->[Local Variables] {"node":{"value":"Text","siblingIndex":0}}
+org.jsoup.parser.HtmlTreeBuilder:insert:268->[Local Variables] "{node\u003dText, el\u003d\u003cp one\u003d\"Four\" one\u003d\"Two\" two\u003d\"two\" one\u003d\"Three\" two\u003d\"Five\"\u003eText\u003c/p\u003e}"
+
+=== Debug Info for Test: org.jsoup.parser.XmlTreeBuilderTest::dropsDuplicateAttributes ===
+
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"One","key":"One"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Two","key":"ONE"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Three","key":"one"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Six","key":"two"}
+org.jsoup.nodes.Attributes:add:118->[Local Variables] {"value":"Eight","key":"Two"}
+org.jsoup.parser.XmlTreeBuilder:insert:75->[Local Variables] {"startTag":{"tagName":"p","normalName":"p","pendingAttributeValue":"","hasEmptyAttributeValue":false,"hasPendingAttributeValue":false,"selfClosing":false,"attributes":{"size":5,"keys":["One","ONE","one","two","Two",null,null,null],"vals":["Four","Five","Three","Seven","Eight",null,null,null]},"type":"StartTag"}}
+org.jsoup.parser.XmlTreeBuilder:insert:78->[Local Variables] {"tag":{"tagName":"p","normalName":"p","isBlock":true,"formatAsBlock":false,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false}}
+org.jsoup.parser.XmlTreeBuilder:insert:79->[Local Variables] {"el":{"tag":{"tagName":"p","normalName":"p","isBlock":true,"formatAsBlock":false,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false,"formList":false,"formSubmit":false},"childNodes":[],"attributes":{"size":5,"keys":["One","ONE","one","two","Two",null,null,null],"vals":["Four","Five","Three","Seven","Eight",null,null,null]},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:80->[Local Variables] "{el\u003d\u003cp One\u003d\"Four\" ONE\u003d\"Five\" one\u003d\"Three\" two\u003d\"Seven\" Two\u003d\"Eight\"\u003e\u003c/p\u003e}"
+org.jsoup.parser.XmlTreeBuilder:insert:81->[Control Flow] Branch Info: Line: 81, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:insert:82->[Control Flow] Branch Info: Line: 82, Condition: if (org.jsoup.parser.Tag.isKnownTag() == 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:insert:103->[Local Variables] {"token":{"data":"Text","type":"Character"}}
+org.jsoup.parser.XmlTreeBuilder:insert:104->[Local Variables] {"data":"Text"}
+org.jsoup.parser.XmlTreeBuilder:insert:105->[Control Flow] Branch Info: Line: 105, Condition: if (org.jsoup.parser.Token$Character.isCData() != 0), Executed: false

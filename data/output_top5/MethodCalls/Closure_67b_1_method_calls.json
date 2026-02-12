@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.common.collect.Sets.newHashSet",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.FixedPointGraphTraversal.computeFixedPoint",
+    "doc": "/**\n   * Compute a fixed point for the given graph.\n   * @param graph The graph to traverse.\n   */",
+    "code": "public void computeFixedPoint(DiGraph<N, E> graph) {\n    Set<N> nodes = Sets.newHashSet();\n    for (DiGraphNode<N, E> node : graph.getDirectedGraphNodes()) {\n      nodes.add(node.getValue());\n    }\n    computeFixedPoint(graph, nodes);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.FixedPointGraphTraversal.newTraversal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool.safelyMatches",
+    "doc": "/**\n     * Suspiciously not matching arguments are those that don't much, the toString() representation is the same but types are different.\n     */",
+    "code": "private boolean safelyMatches(Matcher m, Object arg) {\n        try {\n            return m.matches(arg);\n        } catch (Throwable t) {\n            return false;\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool.toStringEquals",
+    "doc": "/**\n     * Suspiciously not matching arguments are those that don't much, the toString() representation is the same but types are different.\n     */",
+    "code": "private boolean toStringEquals(Matcher m, Object arg) {\n        return StringDescription.toString(m).equals(arg.toString());\n    }"
+  }
+]

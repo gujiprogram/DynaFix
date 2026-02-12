@@ -1,0 +1,930 @@
+
+=== Debug Info for Test: org.jfree.chart.axis.junit.LogAxisTests::testXYAutoRange1 ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.axis.junit.LogAxisTests::testXYAutoRange2 ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.axis.junit.NumberAxisTests::testXYAutoRange1 ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.axis.junit.NumberAxisTests::testXYAutoRange2 ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.axis.junit.ValueAxisTests::testAxisMargins ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@3fc7d2f1]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@3fc7d2f1}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":100.0,"upper":200.0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.JFreeChartTests::testSerialization4 ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":1.7523036E12,"upper":1.752476399999E12}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@2063ce}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.time.TimeSeriesCollection@e09508cb]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@77e2a6e2, d\u003dorg.jfree.data.time.TimeSeriesCollection@e09508cb}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4478->[Local Variables] "{d\u003dorg.jfree.data.time.TimeSeriesCollection@2eeb1692, mappedDatasets\u003d[org.jfree.data.time.TimeSeriesCollection@2eeb1692]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+
+=== Debug Info for Test: org.jfree.chart.junit.ScatterPlotTests::testDrawWithNullInfo ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.ScatterPlotTests::testSetSeriesToolTipGenerator ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.ScatterPlotTests::testReplaceDataset ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.TimeSeriesChartTests::testDrawWithNullInfo ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@4d4d48a6, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.TimeSeriesChartTests::testSetSeriesToolTipGenerator ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@4d4d48a6, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.TimeSeriesChartTests::testReplaceDataset ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@4d4d48a6, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYAreaChartTests::testDrawWithNullInfo ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYAreaChartTests::testSetSeriesToolTipGenerator ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYAreaChartTests::testReplaceDataset ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@3d526ad9, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepAreaChartTests::testDrawWithNullInfo ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@7a34b7b8, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepAreaChartTests::testSetSeriesToolTipGenerator ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@7a34b7b8, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepAreaChartTests::testReplaceDataset ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@7a34b7b8, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepChartTests::testDrawWithNullInfo ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@772485dd, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepChartTests::testSetSeriesToolTipGenerator ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@772485dd, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.junit.XYStepChartTests::testReplaceDataset ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.DateAxis@7a58c0e4}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Local Variables] {"includedAnnotations":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] "{mappedDatasets\u003d[org.jfree.data.xy.XYSeriesCollection@5c90670e]}"
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] "{iterator\u003djava.util.ArrayList$Itr@772485dd, d\u003dorg.jfree.data.xy.XYSeriesCollection@5c90670e}"
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4492->[Local Variables] {"result":{"lower":0.5,"upper":3.5}}
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+
+=== Debug Info for Test: org.jfree.chart.plot.junit.XYPlotTests::testDrawRangeGridlines ===
+Exception: java.lang.NullPointerException
+
+org.jfree.chart.plot.XYPlot:getDataRange:4474->[Control Flow] Branch Info: Line: 4474, Condition: if (isDomainAxis != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4475->[Control Flow] Branch Info: Line: 4475, Condition: if (xyabi != null), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4480->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4480 -> org.jfree.data.general.DatasetUtilities.findDomainBounds
+org.jfree.chart.plot.XYPlot:getDataRange:4479->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4479 -> org.jfree.data.Range.combine
+org.jfree.chart.plot.XYPlot:getDataRange:4493->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4493 -> org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations
+org.jfree.chart.plot.XYPlot:getDataRange:4495->[Control Flow] Branch Info: Line: 4495, Condition: if (i != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Control Flow] Loop Info: Line: 4469, Description: while at line 4469
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4504->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4504 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4505->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4505 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4505->[Control Flow] Branch Info: Line: 4505, Condition: if (it != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4426->[Local Variables] "{axis\u003dorg.jfree.chart.axis.NumberAxis@58}"
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4428 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4428->[Local Variables] {"mappedDatasets":[]}
+org.jfree.chart.plot.XYPlot:getDataRange:4429->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4429 -> java.util.ArrayList.<init>
+org.jfree.chart.plot.XYPlot:getDataRange:4432->[Local Variables] {"isDomainAxis":true}
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4433 -> org.jfree.chart.plot.XYPlot.getDomainAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4433->[Local Variables] {"domainIndex":0}
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis
+org.jfree.chart.plot.XYPlot:getDataRange:4436->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4436 -> java.util.List.addAll
+org.jfree.chart.plot.XYPlot:getDataRange:4437->[Local Variables] {"mappedDatasets":[{"seriesKeys":[],"seriesList":[],"group":{"id":"NOID"}}]}
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4440 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4440->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":0}}
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4441 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4434->[Control Flow] Branch Info: Line: 4434, Condition: if (domainIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4438->[Control Flow] Branch Info: Line: 4438, Condition: if (domainIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4441->[Control Flow] Branch Info: Line: 4441, Condition: if (rangeIndex != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4451 -> org.jfree.chart.plot.XYPlot.getRangeAxisIndex
+org.jfree.chart.plot.XYPlot:getDataRange:4451->[Local Variables] {"rangeIndex":-1}
+org.jfree.chart.plot.XYPlot:getDataRange:4452->[Control Flow] Branch Info: Line: 4452, Condition: if (rangeIndex >= 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4456->[Control Flow] Branch Info: Line: 4456, Condition: if (rangeIndex == 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4458->[Control Flow] Branch Info: Line: 4458, Condition: if (iterator != 0), Executed: false
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4469 -> java.util.List.iterator
+org.jfree.chart.plot.XYPlot:getDataRange:4469->[Local Variables] {"iterator":{"cursor":0,"lastRet":-1,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4470 -> java.util.Iterator.hasNext
+org.jfree.chart.plot.XYPlot:getDataRange:4470->[Control Flow] Branch Info: Line: 4470, Condition: if (iterator != 0), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4471 -> java.util.Iterator.next
+org.jfree.chart.plot.XYPlot:getDataRange:4471->[Local Variables] {"iterator":{"cursor":1,"lastRet":0,"expectedModCount":1}}
+org.jfree.chart.plot.XYPlot:getDataRange:4472->[Control Flow] Branch Info: Line: 4472, Condition: if (it != null), Executed: true
+org.jfree.chart.plot.XYPlot:getDataRange:4473->[Method Call] Call Stack: org.jfree.chart.plot.XYPlot.getDataRange:4473 -> org.jfree.chart.plot.XYPlot.getRendererForDataset

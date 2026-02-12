@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.apache.commons.math.distribution.FDistributionTest::testSmallDegreesOfFreedom ===
+Exception: java.lang.IllegalArgumentException: Invalid endpoint parameters:  lowerBound=0.0 initial=-1.0 upperBound=1.7976931348623157E308
+
+org.apache.commons.math.distribution.FDistributionImpl:getInitialDomain:147->[Local Variables] {"TransVarPr":0.4959706533253018}
+org.apache.commons.math.distribution.FDistributionImpl:getInitialDomain:148->[Method Call] Call Stack: org.apache.commons.math.distribution.FDistributionImpl.getInitialDomain:148 -> org.apache.commons.math.distribution.FDistributionImpl.getDenominatorDegreesOfFreedom
+org.apache.commons.math.distribution.FDistributionImpl:getInitialDomain:149->[Local Variables] {"TransVarDenominatorDegreesOfFreedom":1.0}
+org.apache.commons.math.distribution.FDistributionImpl:getInitialDomain:150->[Local Variables] {"TransVarResult":-1.0}

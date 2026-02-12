@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.jfree.data.xy.junit.XYSeriesTests::testBug1955483 ===
+Exception: java.lang.IndexOutOfBoundsException: Index: -1, Size: 1
+
+org.jfree.data.xy.XYSeries:addOrUpdate:526->[Local Variables] {"x":1.0,"y":1.0}
+org.jfree.data.xy.XYSeries:addOrUpdate:543->[Local Variables] {"TransVarNum":1.0,"TransVarNumber":1.0}
+org.jfree.data.xy.XYSeries:addOrUpdate:544->[Control Flow] Branch Info: Line: 544, Condition: if (TransVarNumber == null), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:553->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:553 -> org.jfree.data.xy.XYSeries.indexOf
+org.jfree.data.xy.XYSeries:addOrUpdate:553->[Local Variables] {"TransVarI":-1}
+org.jfree.data.xy.XYSeries:addOrUpdate:554->[Control Flow] Branch Info: Line: 554, Condition: if (TransVarI >= 0), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:554->[Control Flow] Branch Info: Line: 554, Condition: if (this.allowDuplicateXValues == false), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:572->[Control Flow] Branch Info: Line: 572, Condition: if (this.autoSort != false), Executed: true
+org.jfree.data.xy.XYSeries:addOrUpdate:573->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:573 -> org.jfree.data.xy.XYDataItem.<init>
+org.jfree.data.xy.XYSeries:addOrUpdate:573->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:573 -> java.util.List.add
+org.jfree.data.xy.XYSeries:addOrUpdate:579->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:579 -> org.jfree.data.xy.XYSeries.getItemCount
+org.jfree.data.xy.XYSeries:addOrUpdate:579->[Control Flow] Branch Info: Line: 579, Condition: if (this.maximumItemCount > this.maximumItemCount), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:583->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:583 -> org.jfree.data.xy.XYSeries.fireSeriesChanged
+org.jfree.data.xy.XYSeries:addOrUpdate:526->[Local Variables] {"y":2.0}
+org.jfree.data.xy.XYSeries:addOrUpdate:543->[Local Variables] {"TransVarNum":2.0}
+org.jfree.data.xy.XYSeries:addOrUpdate:544->[Control Flow] Branch Info: Line: 544, Condition: if (TransVarNumber == null), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:553->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:553 -> org.jfree.data.xy.XYSeries.indexOf
+org.jfree.data.xy.XYSeries:addOrUpdate:553->[Local Variables] {"TransVarI":0}
+org.jfree.data.xy.XYSeries:addOrUpdate:554->[Control Flow] Branch Info: Line: 554, Condition: if (TransVarI >= 0), Executed: true
+org.jfree.data.xy.XYSeries:addOrUpdate:554->[Control Flow] Branch Info: Line: 554, Condition: if (TransVarI >= 0), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:554->[Control Flow] Branch Info: Line: 554, Condition: if (this.allowDuplicateXValues == false), Executed: false
+org.jfree.data.xy.XYSeries:addOrUpdate:572->[Control Flow] Branch Info: Line: 572, Condition: if (this.autoSort != false), Executed: true
+org.jfree.data.xy.XYSeries:addOrUpdate:573->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:573 -> org.jfree.data.xy.XYDataItem.<init>
+org.jfree.data.xy.XYSeries:addOrUpdate:573->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.addOrUpdate:573 -> java.util.List.add

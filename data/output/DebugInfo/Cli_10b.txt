@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: org.apache.commons.cli.ParseRequiredTest::testReuseOptionsTwice ===
+Exception: junit.framework.AssertionFailedError: MissingOptionException not thrown
+
+org.apache.commons.cli.Parser:setOptions:44->[Local Variables] {"options":{"shortOpts":{"v":{"opt":"v","argName":"arg","required":true,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}},"longOpts":{},"requiredOpts":["v"],"optionGroups":{}}}
+org.apache.commons.cli.Parser:setOptions:46->[Method Call] Call Stack: org.apache.commons.cli.Parser.setOptions:46 -> org.apache.commons.cli.Options.getRequiredOptions
+org.apache.commons.cli.Parser:setOptions:44->[Local Variables] {"options":{"shortOpts":{"v":{"opt":"v","argName":"arg","required":true,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}},"longOpts":{},"requiredOpts":[],"optionGroups":{}}}
+org.apache.commons.cli.Parser:setOptions:46->[Method Call] Call Stack: org.apache.commons.cli.Parser.setOptions:46 -> org.apache.commons.cli.Options.getRequiredOptions

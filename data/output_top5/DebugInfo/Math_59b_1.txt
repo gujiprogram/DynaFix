@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.math.util.FastMathTest::testMinMaxFloat ===
+Exception: junit.framework.AssertionFailedError: max(50.0, -50.0) expected:<50.0> but was:<-50.0>
+
+org.apache.commons.math.util.FastMath:min:3445->[Local Variables] {"a":-50.0,"b":50.0}
+org.apache.commons.math.util.FastMath:min:3446->[Control Flow] Branch Info: Line: 3446, Condition: if (b <= 0), Executed: true
+org.apache.commons.math.util.FastMath:min:3445->[Local Variables] {"a":50.0,"b":-50.0}
+org.apache.commons.math.util.FastMath:min:3446->[Control Flow] Branch Info: Line: 3446, Condition: if (b <= 0), Executed: false
+org.apache.commons.math.util.FastMath:min:3446->[Method Call] Call Stack: org.apache.commons.math.util.FastMath.min:3446 -> java.lang.Float.isNaN
+org.apache.commons.math.util.FastMath:min:3446->[Control Flow] Branch Info: Line: 3446, Condition: if (b != 0), Executed: false

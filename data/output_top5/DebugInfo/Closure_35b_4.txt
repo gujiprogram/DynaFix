@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:555->[Local Variables] "{nodeType\u003d{prop1: {a: number}}, objectType\u003d{prop1: {a: number}}}"
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:523->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:523 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:523->[Control Flow] Branch Info: Line: 523, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:511->[Local Variables] "{getprop\u003dGETPROP 1 [source_file: [testcode]] : {a: number}, rightType\u003d{a: number}}"
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:512->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:512 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:512->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:512 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:512->[Local Variables] {"propName":"prop1"}
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:513->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:513 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:513->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:513 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:513->[Local Variables] "{nodeType\u003d{}}"
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:515->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:515 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:514->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:514 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:515->[Local Variables] "{objectType\u003d{}}"
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:516->[Control Flow] Branch Info: Line: 516, Condition: if (objectType == null), Executed: false
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:519->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:519 -> com.google.javascript.jscomp.TypeInference.ensurePropertyDeclaredHelper
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:519->[Control Flow] Branch Info: Line: 519, Condition: if (objectType != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:523->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:523 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:523->[Control Flow] Branch Info: Line: 523, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:536->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:536 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:536->[Control Flow] Branch Info: Line: 536, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:537->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:537 -> com.google.javascript.rhino.jstype.ObjectType.isInstanceType
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:537->[Control Flow] Branch Info: Line: 537, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isInstanceType() == 0), Executed: true
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:536->[Control Flow] Branch Info: Line: 536, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:538->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:538 -> java.lang.String.equals
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:538->[Control Flow] Branch Info: Line: 538, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:542->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.ensurePropertyDefined:542 -> com.google.javascript.rhino.jstype.ObjectType.defineInferredProperty
+com.google.javascript.jscomp.TypeInference:ensurePropertyDefined:523->[Control Flow] Branch Info: Line: 523, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared() == 0), Executed: false

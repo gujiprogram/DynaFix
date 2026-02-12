@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectIndexMatch",
+    "doc": "/**\n   * Expect that the first type can be addressed with GETELEM syntax,\n   * and that the second type is the right type for an index into the\n   * first type.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param objType The type of the left side of the GETELEM.\n   * @param indexType The type inside the brackets of the GETELEM.\n   */",
+    "code": "void expectIndexMatch(NodeTraversal t, Node n, JSType objType,\n      JSType indexType) {\n    if (objType.isUnknownType()) {\n      expectStringOrNumber(t, n, indexType, \"property access\");\n    } else if (objType.toObjectType() != null &&\n        objType.toObjectType().getIndexType() != null) {\n      expectCanAssignTo(t, n, indexType, objType.toObjectType().getIndexType(),\n          \"restricted index type\");\n    } else if (objType.isArrayType()) {\n      expectNumber(t, n, indexType, \"array access\");\n    } else if (objType.matchesObjectContext()) {\n      expectString(t, n, indexType, \"property access\");\n    } else {\n      mismatch(t, n, \"only arrays or objects can be accessed\",\n          objType, typeRegistry.createUnionType(ARRAY_TYPE, OBJECT_TYPE));\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  }
+]

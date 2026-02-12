@@ -1,0 +1,64 @@
+
+=== Debug Info for Test: org.apache.commons.math.stat.correlation.PearsonsCorrelationTest::testPValueNearZero ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Loop Info: Line: 189, Description: while at line 189
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:187->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:187 -> org.apache.commons.math.linear.RealMatrix.getColumnDimension
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:187->[Local Variables] {"nVars":2}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:188 -> org.apache.commons.math.linear.BlockRealMatrix.<init>
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[0.0,0.0,0.0,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"i":0}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:195->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:195 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.0,0.0,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Loop Info: Line: 189, Description: while at line 189
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"i":1}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Local Variables] {"j":0}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.linear.RealMatrix.getColumn
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.linear.RealMatrix.getColumn
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.stat.correlation.PearsonsCorrelation.correlation
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Local Variables] {"corr":0.9999961516947906}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:192->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:192 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:192->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.0,0.9999961516947906,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:193->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:193 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.9999961516947906,0.9999961516947906,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Loop Info: Line: 190, Description: while at line 190
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:195->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:195 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.9999961516947906,0.9999961516947906,1.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+
+=== Debug Info for Test: org.apache.commons.math.stat.correlation.SpearmansRankCorrelationTest::testPValueNearZero ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Loop Info: Line: 189, Description: while at line 189
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:187->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:187 -> org.apache.commons.math.linear.RealMatrix.getColumnDimension
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:187->[Local Variables] {"nVars":2}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:188 -> org.apache.commons.math.linear.BlockRealMatrix.<init>
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[0.0,0.0,0.0,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"i":0}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:195->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:195 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.0,0.0,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Loop Info: Line: 189, Description: while at line 189
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Control Flow] Branch Info: Line: 189, Condition: if (nVars < nVars), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"i":1}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: true
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Local Variables] {"j":0}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.linear.RealMatrix.getColumn
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.linear.RealMatrix.getColumn
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:191 -> org.apache.commons.math.stat.correlation.PearsonsCorrelation.correlation
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:191->[Local Variables] {"corr":0.9999961516947906}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:192->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:192 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:192->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.0,0.9999961516947906,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:193->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:193 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:189->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.9999961516947906,0.9999961516947906,0.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Loop Info: Line: 190, Description: while at line 190
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:190->[Control Flow] Branch Info: Line: 190, Condition: if (i < i), Executed: false
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:195->[Method Call] Call Stack: org.apache.commons.math.stat.correlation.PearsonsCorrelation.computeCorrelationMatrix:195 -> org.apache.commons.math.linear.RealMatrix.setEntry
+org.apache.commons.math.stat.correlation.PearsonsCorrelation:computeCorrelationMatrix:188->[Local Variables] {"outMatrix":{"blocks":[[1.0,0.9999961516947906,0.9999961516947906,1.0]],"rows":2,"columns":2,"blockRows":1,"blockColumns":1}}

@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.joda.time.format.PeriodFormatterBuilder.appendSeparator",
+    "doc": "/**\n     * Append a separator, which is output if fields are printed both before\n     * and after the separator.\n     * <p>\n     * For example, <code>builder.appendDays().appendSeparator(\",\").appendHours()</code>\n     * will only output the comma if both the days and hours fields are output.\n     * <p>\n     * The text will be parsed case-insensitively.\n     * <p>\n     * Note: appending a separator discontinues any further work on the latest\n     * appended field.\n     *\n     * @param text  the text to use as a separator\n     * @return this PeriodFormatterBuilder\n     * @throws IllegalStateException if this separator follows a previous one\n     */",
+    "code": "public PeriodFormatterBuilder appendSeparator(String text) {\n        return appendSeparator(text, text, null, true, true);\n    }"
+  }
+]

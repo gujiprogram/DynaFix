@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserBase._longIntegerDesc",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserBase._reportError",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserBase.getText",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserMinimalBase._longIntegerDesc",
+    "doc": "/**\n     * @since 2.10\n     */",
+    "code": "protected String _longIntegerDesc(String rawNum) {\n        int rawLen = rawNum.length();\n        if (rawLen < 1000) {\n            return rawNum;\n        }\n        if (rawNum.startsWith(\"-\")) {\n            rawLen -= 1;\n        }\n        return String.format(\"[Integer with %d digits]\", rawLen);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserMinimalBase._reportError",
+    "doc": "/**********************************************************\n     */",
+    "code": "protected final void _reportError(String msg) throws JsonParseException {\n        throw _constructError(msg);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.base.ParserMinimalBase.getText",
+    "doc": "/**********************************************************\n     */",
+    "code": "return getText();\n        }\n        if (_currToken == JsonToken.FIELD_NAME) {"
+  }
+]

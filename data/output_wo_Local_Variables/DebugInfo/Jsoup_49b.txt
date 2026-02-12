@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.jsoup.nodes.ElementTest::appendMustCorrectlyMoveChildrenInsideOneParentElement ===
+
+org.jsoup.nodes.Node:addChildren:439->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:439 -> org.jsoup.helper.Validate.noNullElements
+org.jsoup.nodes.Node:addChildren:440->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:440 -> org.jsoup.nodes.Node.ensureChildNodes
+org.jsoup.nodes.Node:addChildren:441->[Control Flow] Branch Info: Line: 441, Condition: if (i >= 0), Executed: true
+org.jsoup.nodes.Node:addChildren:443->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:443 -> org.jsoup.nodes.Node.reparentChild
+org.jsoup.nodes.Node:addChildren:444->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:444 -> java.util.List.add
+org.jsoup.nodes.Node:addChildren:441->[Control Flow] Loop Info: Line: 441, Description: while at line 441
+org.jsoup.nodes.Node:addChildren:441->[Control Flow] Branch Info: Line: 441, Condition: if (i >= 0), Executed: true
+org.jsoup.nodes.Node:addChildren:443->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:443 -> org.jsoup.nodes.Node.reparentChild
+org.jsoup.nodes.Node:addChildren:444->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:444 -> java.util.List.add
+org.jsoup.nodes.Node:addChildren:441->[Control Flow] Loop Info: Line: 441, Description: while at line 441
+org.jsoup.nodes.Node:addChildren:441->[Control Flow] Branch Info: Line: 441, Condition: if (i >= 0), Executed: false
+org.jsoup.nodes.Node:addChildren:446->[Method Call] Call Stack: org.jsoup.nodes.Node.addChildren:446 -> org.jsoup.nodes.Node.reindexChildren

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo",
+    "doc": "/**\n   * Collapse the given assign expression into the expression directly\n   * following it, if possible.\n   *\n   * @param expr The expression that may be moved.\n   * @param exprParent The parent of {@code expr}.\n   * @param value The value of this expression, expressed as a node. Each\n   *     expression may have multiple values, so this function may be called\n   *     multiple times for the same expression. For example,\n   *     <code>\n   *     a = true;\n   *     </code>\n   *     is equal to the name \"a\" and the boolean \"true\".\n   * @return Whether the expression was collapsed successfully.\n   */",
+    "code": "private boolean collapseAssignEqualTo(Node expr, Node exprParent,\n      Node value) {\n    Node assign = expr.getFirstChild();\n    Node parent = exprParent;\n    Node next = expr.getNext();\n    while (next != null) {\n      switch (next.getType()) {\n        case Token.AND:\n        case Token.OR:\n        case Token.HOOK:\n        case Token.IF:\n        case Token.RETURN:\n        case Token.EXPR_RESULT:\n          parent = next;\n          next = next.getFirstChild();\n          break;\n\n        case Token.VAR:\n          if (next.getFirstChild().hasChildren()) {\n            parent = next.getFirstChild();\n            next = parent.getFirstChild();\n            break;\n          }\n          return false;\n\n        case Token.GETPROP:\n        case Token.NAME:\n          if (next.isQualifiedName()) {\n            String nextName = next.getQualifiedName();\n            if (value.isQualifiedName() &&\n                nextName.equals(value.getQualifiedName())) {\n\n              if (!isSafeReplacement(next, assign)) {\n                return false;\n              }\n\n              exprParent.removeChild(expr);\n              expr.removeChild(assign);\n              parent.replaceChild(next, assign);\n              return true;\n            }\n          }\n          return false;\n\n        case Token.ASSIGN:\n          Node leftSide = next.getFirstChild();\n          if (leftSide.isName() ||\n              leftSide.isGetProp() &&\n              leftSide.getFirstChild().isThis()) {\n            parent = next;\n            next = leftSide.getNext();\n            break;\n          } else {\n            return false;\n          }\n\n        default:\n          if (NodeUtil.isImmutableValue(next)\n              && next.isEquivalentTo(value)) {\n            exprParent.removeChild(expr);\n            expr.removeChild(assign);\n            parent.replaceChild(next, assign);\n            return true;\n          }\n          return false;\n      }\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue",
+    "doc": "/**\n   * Determines whether we know enough about the given value to be able\n   * to collapse it into subsequent expressions.\n   *\n   * For example, we can collapse booleans and variable names:\n   * <code>\n   * x = 3; y = x; // y = x = 3;\n   * a = true; b = true; // b = a = true;\n   * <code>\n   * But we won't try to collapse complex expressions.\n   *\n   * @param value The value node.\n   * @param isLValue Whether it's on the left-hand side of an expr.\n   */",
+    "code": "private static boolean isCollapsibleValue(Node value, boolean isLValue) {\n    switch (value.getType()) {\n      case Token.GETPROP:\n        return !isLValue || value.getFirstChild().isThis();\n\n      case Token.NAME:\n        return true;\n\n      default:\n        return NodeUtil.isImmutableValue(value);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isAssign",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckSideEffectsTest::testUselessCode ===
+Exception: junit.framework.AssertionFailedError: There should be one warning, repeated 1 time(s). expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckSideEffects:addExtern:174->[Local Variables] "{var\u003dVAR, name\u003dNAME JSCOMPILER_PRESERVE [is_constant_name: 1]}"
+com.google.javascript.jscomp.CheckSideEffects:addExtern:175->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:175 -> com.google.javascript.rhino.JSDocInfoBuilder.<init>
+com.google.javascript.jscomp.CheckSideEffects:addExtern:176->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:176 -> com.google.javascript.rhino.JSDocInfoBuilder.recordNoAlias
+com.google.javascript.jscomp.CheckSideEffects:addExtern:176->[Local Variables] {"builder":{"currentInfo":{"bitset":128,"includeDocumentation":false},"populated":true,"parseDocumentation":false}}
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:177 -> com.google.javascript.rhino.JSDocInfoBuilder.build
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:177 -> com.google.javascript.rhino.Node.setJSDocInfo
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Local Variables] "{var\u003dVAR [jsdoc_info: JSDocInfo], builder\u003dcom.google.javascript.rhino.JSDocInfoBuilder@7ed3df3b}"
+com.google.javascript.jscomp.CheckSideEffects:addExtern:178->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:178 -> com.google.javascript.jscomp.AbstractCompiler.getSynthesizedExternsInput
+com.google.javascript.jscomp.CheckSideEffects:addExtern:179->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:179 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.CheckSideEffects:addExtern:179->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:179 -> com.google.javascript.rhino.Node.addChildrenToBack
+com.google.javascript.jscomp.CheckSideEffects:addExtern:180->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:180 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange
+com.google.javascript.jscomp.CheckSideEffects:addExtern:171->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:171 -> com.google.javascript.rhino.IR.name
+com.google.javascript.jscomp.CheckSideEffects:addExtern:171->[Local Variables] {"name":{"str":"JSCOMPILER_PRESERVE","type":38,"sourcePosition":-1}}
+com.google.javascript.jscomp.CheckSideEffects:addExtern:172->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:172 -> com.google.javascript.rhino.Node.putBooleanProp
+com.google.javascript.jscomp.CheckSideEffects:addExtern:172->[Local Variables] {"name":{"str":"JSCOMPILER_PRESERVE","type":38,"propListHead":{"intValue":1,"propType":43},"sourcePosition":-1}}
+com.google.javascript.jscomp.CheckSideEffects:addExtern:173->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:173 -> com.google.javascript.rhino.IR.var
+com.google.javascript.jscomp.CheckSideEffects:addExtern:174->[Local Variables] "{var\u003dVAR, name\u003dNAME JSCOMPILER_PRESERVE [is_constant_name: 1]}"
+com.google.javascript.jscomp.CheckSideEffects:addExtern:175->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:175 -> com.google.javascript.rhino.JSDocInfoBuilder.<init>
+com.google.javascript.jscomp.CheckSideEffects:addExtern:176->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:176 -> com.google.javascript.rhino.JSDocInfoBuilder.recordNoAlias
+com.google.javascript.jscomp.CheckSideEffects:addExtern:176->[Local Variables] {"builder":{"currentInfo":{"bitset":128,"includeDocumentation":false},"populated":true,"parseDocumentation":false}}
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:177 -> com.google.javascript.rhino.JSDocInfoBuilder.build
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:177 -> com.google.javascript.rhino.Node.setJSDocInfo
+com.google.javascript.jscomp.CheckSideEffects:addExtern:177->[Local Variables] "{var\u003dVAR [jsdoc_info: JSDocInfo], builder\u003dcom.google.javascript.rhino.JSDocInfoBuilder@42383cb0}"
+com.google.javascript.jscomp.CheckSideEffects:addExtern:178->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:178 -> com.google.javascript.jscomp.AbstractCompiler.getSynthesizedExternsInput
+com.google.javascript.jscomp.CheckSideEffects:addExtern:179->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:179 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.CheckSideEffects:addExtern:179->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:179 -> com.google.javascript.rhino.Node.addChildrenToBack
+com.google.javascript.jscomp.CheckSideEffects:addExtern:180->[Method Call] Call Stack: com.google.javascript.jscomp.CheckSideEffects.addExtern:180 -> com.google.javascript.jscomp.AbstractCompiler.reportCodeChange

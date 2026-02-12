@@ -1,0 +1,56 @@
+
+=== Debug Info for Test: org.apache.commons.math.fraction.FractionFormatTest::testParseProperInvalidMinus ===
+Exception: junit.framework.AssertionFailedError: invalid minus in improper fraction.
+
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarCh == TransVarCh), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:188->[Local Variables] {"TransBreakFlag0":false}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:189->[Control Flow] Branch Info: Line: 189, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:189->[Control Flow] Branch Info: Line: 189, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:189->[Control Flow] Branch Info: Line: 189, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:197->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:197 -> org.apache.commons.math.fraction.ProperFractionFormat.parseAndIgnoreWhitespace
+org.apache.commons.math.fraction.ProperFractionFormat:parse:199->[Local Variables] {"TransVarPosition":{"index":7,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:200->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:200 -> org.apache.commons.math.fraction.ProperFractionFormat.getDenominatorFormat
+org.apache.commons.math.fraction.ProperFractionFormat:parse:200->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:200 -> java.text.NumberFormat.parse
+org.apache.commons.math.fraction.ProperFractionFormat:parse:200->[Local Variables] {"TransVarDenominator":3,"TransVarPosition":{"index":8,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:201->[Control Flow] Branch Info: Line: 201, Condition: if (TransVarDenominator == null), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:211->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:211 -> java.lang.Number.intValue
+org.apache.commons.math.fraction.ProperFractionFormat:parse:211->[Local Variables] {"TransVarWholeNumber":2}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:212->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:212 -> java.lang.Number.intValue
+org.apache.commons.math.fraction.ProperFractionFormat:parse:212->[Local Variables] {"TransVarNumber":-2}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:213->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:213 -> java.lang.Number.intValue
+org.apache.commons.math.fraction.ProperFractionFormat:parse:213->[Local Variables] {"TransVarDivisor":3}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:214->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:214 -> java.lang.Math.abs
+org.apache.commons.math.fraction.ProperFractionFormat:parse:214->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:214 -> org.apache.commons.math.util.MathUtils.sign
+org.apache.commons.math.fraction.ProperFractionFormat:parse:214->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:214 -> org.apache.commons.math.fraction.Fraction.<init>
+org.apache.commons.math.fraction.ProperFractionFormat:parse:134->[Local Variables] {"TransVarString":"2 -2 / 3","TransVarPosition":{"index":0,"errorIndex":-1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:135->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:135 -> org.apache.commons.math.fraction.FractionFormat.parse
+org.apache.commons.math.fraction.ProperFractionFormat:parse:135->[Local Variables] {"TransVarPosition":{"index":0,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:136->[Control Flow] Branch Info: Line: 136, Condition: if (TransVarFraction != null), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:143->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:143 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.fraction.ProperFractionFormat:parse:145->[Local Variables] {"TransVarI":0}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:146->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:146 -> org.apache.commons.math.fraction.ProperFractionFormat.parseAndIgnoreWhitespace
+org.apache.commons.math.fraction.ProperFractionFormat:parse:149->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:149 -> org.apache.commons.math.fraction.ProperFractionFormat.getWholeFormat
+org.apache.commons.math.fraction.ProperFractionFormat:parse:149->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:149 -> java.text.NumberFormat.parse
+org.apache.commons.math.fraction.ProperFractionFormat:parse:149->[Local Variables] {"TransVarNum":2,"TransVarPosition":{"index":1,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:150->[Control Flow] Branch Info: Line: 150, Condition: if (TransVarNum == null), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:162->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:162 -> org.apache.commons.math.fraction.ProperFractionFormat.parseAndIgnoreWhitespace
+org.apache.commons.math.fraction.ProperFractionFormat:parse:164->[Local Variables] {"TransVarPosition":{"index":2,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:165->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:165 -> org.apache.commons.math.fraction.ProperFractionFormat.getNumeratorFormat
+org.apache.commons.math.fraction.ProperFractionFormat:parse:165->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:165 -> java.text.NumberFormat.parse
+org.apache.commons.math.fraction.ProperFractionFormat:parse:165->[Local Variables] {"TransVarNumerator":-2,"TransVarPosition":{"index":4,"errorIndex":1}}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:166->[Control Flow] Branch Info: Line: 166, Condition: if (TransVarNumerator == null), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:177->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:177 -> java.text.ParsePosition.getIndex
+org.apache.commons.math.fraction.ProperFractionFormat:parse:177->[Local Variables] {"TransVarStartIndex1":4}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:178->[Method Call] Call Stack: org.apache.commons.math.fraction.ProperFractionFormat.parse:178 -> org.apache.commons.math.fraction.ProperFractionFormat.parseNextCharacter
+org.apache.commons.math.fraction.ProperFractionFormat:parse:178->[Local Variables] {"TransVarPosition":{"index":6,"errorIndex":1},"TransVarCh":"/"}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:179->[Local Variables] {"TransFallThroughFlag0":false}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:181->[Local Variables] {"TransBreakFlag0":true}
+org.apache.commons.math.fraction.ProperFractionFormat:parse:182->[Control Flow] Branch Info: Line: 182, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:182->[Control Flow] Branch Info: Line: 182, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:182->[Control Flow] Branch Info: Line: 182, Condition: if (TransBreakFlag0 != 0), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:182->[Control Flow] Branch Info: Line: 182, Condition: if (TransVarCh == 0), Executed: false
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransBreakFlag0 != 0), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarCh == TransVarCh), Executed: true
+org.apache.commons.math.fraction.ProperFractionFormat:parse:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransFallThroughFlag0 == 0), Executed: false

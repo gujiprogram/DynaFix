@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.DeadAssignmentsElimination.tryRemoveAssignment",
+    "doc": "/**\n   * Try to remove useless assignments from a control flow graph that has been\n   * annotated with liveness information.\n   *\n   * @param t The node traversal.\n   * @param cfg The control flow graph of the program annotated with liveness\n   *        information.\n   */",
+    "code": "private void tryRemoveAssignment(NodeTraversal t, Node n,\n      FlowState<LiveVariableLattice> state) {\n    tryRemoveAssignment(t, n, n, state);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getAnnotation",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasChildren",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public boolean hasChildren() {\n    return first != null;\n  }"
+  }
+]

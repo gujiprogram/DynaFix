@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments16 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1424->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1424 -> com.google.javascript.rhino.jstype.FunctionType.getMinArguments
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1424->[Local Variables] {"TransVarMinArguments":0}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1425->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1425 -> com.google.javascript.rhino.jstype.FunctionType.getMaxArguments
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1425->[Local Variables] {"TransVarMaxArgument":2147483647}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1426->[Control Flow] Branch Info: Line: 1426, Condition: if (TransVarArgumentCount <= TransVarArgumentCount), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1426->[Control Flow] Branch Info: Line: 1426, Condition: if (TransVarArgumentCount < TransVarArgumentCount), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1403->[Local Variables] "{TransVarTraversal\u003dcom.google.javascript.jscomp.NodeTraversal@30af5b6b, TransVarCurrentNode\u003dCALL 1 [sourcename: [testcode]] [free_call: 1] : undefined, TransVarFunctionTypeInstance\u003dfunction (...[number]): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1404 -> com.google.javascript.rhino.Node.children
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1404 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1404->[Local Variables] "{TransVarArgumentNodes\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@6138e79a}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1405->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1405 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1407->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1407 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1407->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1407 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1407->[Local Variables] "{TransVarIterator\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@388526fb}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1408->[Local Variables] {"TransVarIteratorIndex":0}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1411 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (TransVarArgumentNodes != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1411 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (TransVarIterator != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1415->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1415 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1415->[Local Variables] "{TransVarParameterNode\u003dNAME  [jsdoc_info: 1] : (number|undefined)}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1416->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1416 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1416->[Local Variables] "{TransVarArgumentNode\u003dNUMBER 1.0 1 [sourcename: [testcode]] : number}"
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1417->[Local Variables] {"TransVarIteratorIndex":1}
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1418->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1418 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1418->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1418 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1418->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1418 -> com.google.javascript.jscomp.TypeValidator.expectArgumentMatchesParameter
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1410->[Control Flow] Loop Info: Line: 1410, Description: while at line 1410
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1411 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (TransVarArgumentNodes != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1411 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (TransVarArgumentNodes != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (TransVarIterator != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1423->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitParameterList:1423 -> com.google.javascript.rhino.Node.getChildCount
+com.google.javascript.jscomp.TypeCheck:visitParameterList:1423->[Local Variables] {"TransVarArgumentCount":2}

@@ -1,0 +1,77 @@
+[
+  {
+    "method": "org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer",
+    "doc": "[No documentation]",
+    "code": "public Answer<Object> getDefaultAnswer() {\n        return defaultAnswer;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.invocation.Invocation.getMock",
+    "doc": "/**\n * Method call on a mock object.\n * <p>\n * Contains sequence number which should be globally unique and is used for\n * verification in order.\n * <p>\n * Contains stack trace of invocation\n */",
+    "code": "public Object getMock() {\n        return mock;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.invocation.MatchersBinder.bindMatchers",
+    "doc": "[No documentation]",
+    "code": "public InvocationMatcher bindMatchers(ArgumentMatcherStorage argumentMatcherStorage, Invocation invocation) {\n        List<Matcher> lastMatchers = argumentMatcherStorage.pullMatchers();\n        validateMatchers(invocation, lastMatchers);\n\n        InvocationMatcher invocationWithMatchers = new InvocationMatcher(invocation, lastMatchers);\n        return invocationWithMatchers;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.progress.MockingProgress.getArgumentMatcherStorage",
+    "doc": "/**\n     * Removes ongoing stubbing so that in case the framework is misused\n     * state validation errors are more accurate\n     */",
+    "code": "ArgumentMatcherStorage getArgumentMatcherStorage();"
+  },
+  {
+    "method": "org.mockito.internal.progress.MockingProgress.pullVerificationMode",
+    "doc": "[No documentation]",
+    "code": "VerificationMode pullVerificationMode();"
+  },
+  {
+    "method": "org.mockito.internal.progress.MockingProgress.reportOngoingStubbing",
+    "doc": "[No documentation]",
+    "code": "void reportOngoingStubbing(IOngoingStubbing iOngoingStubbing);"
+  },
+  {
+    "method": "org.mockito.internal.progress.MockingProgress.validateState",
+    "doc": "[No documentation]",
+    "code": "void validateState();"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor",
+    "doc": "[No documentation]",
+    "code": "return findAnswerFor(invocation).answer(invocation);\n    }\n\n    public StubbedInvocationMatcher findAnswerFor(Invocation invocation) {"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.InvocationContainerImpl.hasAnswersForStubbing",
+    "doc": "[No documentation]",
+    "code": "public boolean hasAnswersForStubbing() {\n        return !answersForStubbing.isEmpty();\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing",
+    "doc": "[No documentation]",
+    "code": "public void resetInvocationForPotentialStubbing(InvocationMatcher invocationMatcher) {\n        this.invocationForStubbing = invocationMatcher;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.InvocationContainerImpl.setInvocationForPotentialStubbing",
+    "doc": "[No documentation]",
+    "code": "public void setInvocationForPotentialStubbing(InvocationMatcher invocation) {\n        registeredInvocations.add(invocation.getInvocation());\n        this.invocationForStubbing = invocation;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.StubbedInvocationMatcher.answer",
+    "doc": "[No documentation]",
+    "code": "public Object answer(InvocationOnMock invocation) throws Throwable {\n        synchronized(answers) {\n            return answers.size() == 1 ? answers.peek().answer(invocation) : answers.poll().answer(invocation);\n        }\n    }"
+  },
+  {
+    "method": "org.mockito.internal.stubbing.StubbedInvocationMatcher.captureArgumentsFrom",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.mockito.internal.verification.MockAwareVerificationMode.getMock",
+    "doc": "[No documentation]",
+    "code": "public Object getMock() {\n        return mock;\n    }"
+  },
+  {
+    "method": "org.mockito.stubbing.Answer.answer",
+    "doc": "/**\n     * @param invocation the invocation on the mock.\n     *\n     * @return the value to be returned\n     *\n     * @throws Throwable the throwable to be thrown\n     */",
+    "code": "T answer(InvocationOnMock invocation) throws Throwable;\n}"
+  }
+]

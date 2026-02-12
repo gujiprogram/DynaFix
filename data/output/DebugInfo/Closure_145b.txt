@@ -1,0 +1,76 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testFunctionSafariCompatiblity ===
+Exception: junit.framework.ComparisonFailure: expected:<if(e1)[{A:function goo(){return true}]}> but was:<if(e1)[A:function goo(){return true]}>
+
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dFUNCTION  1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dFUNCTION  1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dFUNCTION  1 [sourcename:  [testcode] ]}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dLABEL 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testDoLoopIECompatiblity ===
+Exception: junit.framework.ComparisonFailure: expected:<if(x)[{A:do foo();while(y)}]> but was:<if(x)[A:do foo();while(y)]>
+
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dLABEL 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dDO 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dEXPR_RESULT 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:713->[Local Variables] "{n\u003dDO 1}"
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Control Flow] Branch Info: Line: 714, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isOneExactlyFunctionOrDo:714->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isOneExactlyFunctionOrDo:714 -> com.google.javascript.rhino.Node.getType

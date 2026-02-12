@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests::testGetRangeBounds ===
+Exception: junit.framework.AssertionFailedError: expected:<Range[8.5,9.6]> but was:<Range[8.6,9.6]>
+
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:163->[Control Flow] Branch Info: Line: 163, Condition: if (org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier() != null), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:164->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:164 -> org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:164->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:164 -> java.lang.Number.doubleValue
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:163->[Control Flow] Branch Info: Line: 163, Condition: if (org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier() != null), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:166->[Local Variables] {"maxval":9.6}
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:167->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:167 -> java.lang.Double.isNaN
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:167->[Control Flow] Branch Info: Line: 167, Condition: if (this.maximumRangeValue != false), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:172->[Control Flow] Branch Info: Line: 172, Condition: if (this.maximumRangeValue > 0), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:178->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:178 -> java.lang.Double.isNaN
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:178->[Control Flow] Branch Info: Line: 178, Condition: if (this.minimumRangeValue != false), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:183->[Control Flow] Branch Info: Line: 183, Condition: if (this.minimumRangeValue < 0), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:189->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:189 -> org.jfree.data.Range.<init>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:191->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:191 -> org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.fireDatasetChanged
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:167->[Control Flow] Branch Info: Line: 167, Condition: if (this.maximumRangeValue != false), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:172->[Control Flow] Branch Info: Line: 172, Condition: if (this.maximumRangeValue > 0), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:172->[Control Flow] Branch Info: Line: 172, Condition: if (this.maximumRangeValue > 0), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:178->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:178 -> java.lang.Double.isNaN
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:178->[Control Flow] Branch Info: Line: 178, Condition: if (this.minimumRangeValue != false), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:183->[Control Flow] Branch Info: Line: 183, Condition: if (this.minimumRangeValue < 0), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:189->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:189 -> org.jfree.data.Range.<init>
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:191->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:191 -> org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.fireDatasetChanged
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:146->[Local Variables] {"item":{"mean":1.5,"median":2.5,"q1":3.5,"q3":4.5,"minRegularValue":5.5,"maxRegularValue":6.5,"minOutlier":8.6,"maxOutlier":9.6,"outliers":[]},"rowKey":"R1"}
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:147->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:147 -> org.jfree.data.KeyedObjects2D.addObject
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:150->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:150 -> org.jfree.data.KeyedObjects2D.getRowIndex
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:150->[Local Variables] {"r":0}
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:151->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:151 -> org.jfree.data.KeyedObjects2D.getColumnIndex
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (r == r), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (r == r), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (c == c), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (c != c), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:155->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:155 -> org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.updateBounds
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (r == r), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:152->[Control Flow] Branch Info: Line: 152, Condition: if (c == c), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:158->[Local Variables] "{minval\u003dNaN}"
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:159->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:159 -> org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier() != null), Executed: true
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:160->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:160 -> org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:160->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:160 -> java.lang.Number.doubleValue
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier() != null), Executed: false
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:161->[Local Variables] {"minval":8.6}
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:162->[Local Variables] "{maxval\u003dNaN}"
+org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset:add:163->[Method Call] Call Stack: org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.add:163 -> org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier

@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest::testEventsScheduling ===
+
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:323->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:323 -> org.apache.commons.math3.ode.events.EventState.evaluateStep
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:351->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:351 -> org.apache.commons.math3.ode.sampling.StepHandler.handleStep
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:350->[Control Flow] Loop Info: Line: 350, Description: while at line 350
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:350->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:350 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:350->[Control Flow] Branch Info: Line: 350, Condition: if (needReset != 0), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:354->[Control Flow] Branch Info: Line: 354, Condition: if (this.isLastStep != false), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:363->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:363 -> org.apache.commons.math3.ode.events.EventState.reset
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:364->[Control Flow] Branch Info: Line: 364, Condition: if (needReset != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:367->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:367 -> java.lang.System.arraycopy
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:368->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:368 -> org.apache.commons.math3.ode.AbstractIntegrator.computeDerivatives
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:370->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:370 -> java.util.SortedSet.iterator
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:370->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:370 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:370->[Control Flow] Branch Info: Line: 370, Condition: if (remaining != 0), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:300->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:300 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.getGlobalPreviousTime
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:301->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:301 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.getGlobalCurrentTime
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:304->[Control Flow] Branch Info: Line: 304, Condition: if (this.statesInitialized == false), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:312->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:312 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.isForward
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:312->[Control Flow] Branch Info: Line: 312, Condition: if (org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.isForward() != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:313->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:313 -> org.apache.commons.math3.ode.AbstractIntegrator$1.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:313->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:313 -> java.util.TreeSet.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:322 -> java.util.Collection.iterator
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:322 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Control Flow] Branch Info: Line: 322, Condition: if (currentY != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:322 -> java.util.Iterator.next

@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.ExploitAssignsTest::testIssue1017 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Control Flow] Branch Info: Line: 54, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:56 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:48->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:48 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:49->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:49 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:49->[Local Variables] "{rightValue\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:50 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:51 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Control Flow] Branch Info: Line: 51, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:53 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Control Flow] Branch Info: Line: 53, Condition: if (rightValue != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:54 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Control Flow] Branch Info: Line: 53, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Control Flow] Branch Info: Line: 54, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:56 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:59->[Local Variables] "{rightValue\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Control Flow] Branch Info: Line: 54, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:56 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:48->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:48 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:49->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:49 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:49->[Local Variables] "{rightValue\u003dGETPROP 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:50 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:51 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Control Flow] Branch Info: Line: 51, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:53 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Control Flow] Branch Info: Line: 53, Condition: if (rightValue != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:54 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Control Flow] Branch Info: Line: 53, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:54->[Control Flow] Branch Info: Line: 54, Condition: if (rightValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:56 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:56->[Control Flow] Branch Info: Line: 56, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:59->[Local Variables] "{rightValue\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:48->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:48 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:49->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:49 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:50 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: true
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:51 -> com.google.javascript.jscomp.ExploitAssigns.collapseAssignEqualTo
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:50->[Control Flow] Branch Info: Line: 50, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:51->[Control Flow] Branch Info: Line: 51, Condition: if (leftValue != 0), Executed: false
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Method Call] Call Stack: com.google.javascript.jscomp.ExploitAssigns.collapseAssign:53 -> com.google.javascript.jscomp.ExploitAssigns.isCollapsibleValue
+com.google.javascript.jscomp.ExploitAssigns:collapseAssign:53->[Control Flow] Branch Info: Line: 53, Condition: if (rightValue != 0), Executed: false

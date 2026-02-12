@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.RawValueWithSurrogatesTest::testRawWithSurrogatesString ===
+Exception: com.fasterxml.jackson.core.JsonGenerationException: Split surrogate on writeRaw() input (last character)
+
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3998}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":4000}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1887->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1887 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._reportError
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3233}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3474}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3476}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3755}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1889->[Method Call] Call Stack: com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputRawMultiByteChar:1889 -> com.fasterxml.jackson.core.json.UTF8JsonGenerator._outputSurrogates
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1882->[Local Variables] {"inputOffset":3757}
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1883->[Control Flow] Branch Info: Line: 1883, Condition: if (ch >= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1884->[Control Flow] Branch Info: Line: 1884, Condition: if (ch <= ch), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (inputEnd < inputEnd), Executed: true
+com.fasterxml.jackson.core.json.UTF8JsonGenerator:_outputRawMultiByteChar:1886->[Control Flow] Branch Info: Line: 1886, Condition: if (cbuf == null), Executed: false

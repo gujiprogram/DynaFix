@@ -1,0 +1,72 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize",
+    "doc": "/**\n     * This method is needed by some specialized bean deserializers,\n     * and also called by some {@link #deserializeAndSet} implementations.\n     *<p>\n     * Pre-condition is that passed parser must point to the first token\n     * that should be consumed to produce the value (the only value for\n     * scalars, multiple for Objects and Arrays).\n     *<p>\n     * Note that this method is final for performance reasons: to override\n     * functionality you must override other methods that call this method;\n     * this method should also not be called directly unless you really know\n     * what you are doing (and probably not even then).\n     */",
+    "code": "public final Object deserialize(JsonParser p, DeserializationContext ctxt) throws IOException\n    {\n        JsonToken t = p.getCurrentToken();\n\n        if (t == JsonToken.VALUE_NULL) {\n            return _valueDeserializer.getNullValue(ctxt);\n        }\n        if (_valueTypeDeserializer != null) {\n            return _valueDeserializer.deserializeWithType(p, ctxt, _valueTypeDeserializer);\n        }\n        return _valueDeserializer.deserialize(p, ctxt);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.build",
+    "doc": "/**\n     * Method called when starting to build a bean instance.\n     *\n     * @since 2.1 (added ObjectIdReader parameter -- existed in previous versions without)\n     */",
+    "code": "public Object build(DeserializationContext ctxt, PropertyValueBuffer buffer) throws IOException\n    {\n        Object bean = _valueInstantiator.createFromObjectWith(ctxt,\n                _allProperties, buffer);\n        if (bean != null) {\n            bean = buffer.handleIdValue(ctxt, bean);\n\n            for (PropertyValue pv = buffer.buffered(); pv != null; pv = pv.next) {\n                pv.assign(bean);\n            }\n        }\n        return bean;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.findCreatorProperty",
+    "doc": "/**********************************************************\n     */",
+    "code": "public SettableBeanProperty findCreatorProperty(String name) {\n        return _propertyLookup.get(name);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.startBuilding",
+    "doc": "/**\n     * Method called when starting to build a bean instance.\n     *\n     * @since 2.1 (added ObjectIdReader parameter -- existed in previous versions without)\n     */",
+    "code": "public PropertyValueBuffer startBuilding(JsonParser p, DeserializationContext ctxt,\n            ObjectIdReader oir) {\n        return new PropertyValueBuffer(p, ctxt, _propertyCount, oir);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter",
+    "doc": "/**\n     * Method called to buffer value for given property, as well as check whether\n     * we now have values for all (creator) properties that we expect to get values for.\n     *\n     * @return True if we have received all creator parameters\n     *\n     * @since 2.6\n     */",
+    "code": "public boolean assignParameter(SettableBeanProperty prop, Object value)\n    {\n        final int ix = prop.getCreatorIndex();\n        _creatorParameters[ix] = value;\n\n        if (_paramsSeenBig == null) {\n            int old = _paramsSeen;\n            int newValue = (old | (1 << ix));\n            if (old != newValue) {\n                _paramsSeen = newValue;\n                if (--_paramsNeeded <= 0) {\n                    return (_objectIdReader == null) || (_idValue != null);\n                }\n            }\n        } else {\n            if (!_paramsSeenBig.get(ix)) {\n                _paramsSeenBig.set(ix);\n                if (--_paramsNeeded <= 0) {\n                }\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.UnwrappedPropertyHandler.processUnwrapped",
+    "doc": "/**\n * Object that is responsible for handling acrobatics related to\n * deserializing \"unwrapped\" values; sets of properties that are\n * embedded (inlined) as properties of parent JSON object.\n */",
+    "code": "public Object processUnwrapped(JsonParser originalParser, DeserializationContext ctxt,\n            Object bean, TokenBuffer buffered)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.copyCurrentStructure",
+    "doc": "/**********************************************************\n     */",
+    "code": "public void copyCurrentStructure(JsonParser p) throws IOException\n    {\n        JsonToken t = p.getCurrentToken();\n\n        if (t == JsonToken.FIELD_NAME) {\n            if (_mayHaveNativeIds) {\n                _checkNativeIds(p);\n            }\n            writeFieldName(p.getCurrentName());\n            t = p.nextToken();\n        }\n\n        if (_mayHaveNativeIds) {\n            _checkNativeIds(p);\n        }\n\n        switch (t) {\n        case START_ARRAY:\n            writeStartArray();\n            while (p.nextToken() != JsonToken.END_ARRAY) {\n                copyCurrentStructure(p);\n            }\n            writeEndArray();\n            break;\n        case START_OBJECT:\n            writeStartObject();\n            while (p.nextToken() != JsonToken.END_OBJECT) {\n                copyCurrentStructure(p);\n            }\n            writeEndObject();\n            break;\n        default: // others are simple:\n            copyCurrentEvent(p);\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeEndObject",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final void writeEndObject() throws IOException\n    {\n        _append(JsonToken.END_OBJECT);\n        JsonWriteContext c = _writeContext.getParent();\n        if (c != null) {\n            _writeContext = c;\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeFieldName",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final void writeFieldName(String name) throws IOException\n    {\n        _writeContext.writeFieldName(name);\n        _append(JsonToken.FIELD_NAME, name);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.TokenBuffer.writeStartObject",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final void writeStartObject() throws IOException\n    {\n        _writeContext.writeValue();\n        _append(JsonToken.START_OBJECT);\n        _writeContext = _writeContext.createChildObjectContext();\n    }"
+  }
+]

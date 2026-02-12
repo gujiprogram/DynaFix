@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CheckLevel.isOn",
+    "doc": "/**\n * Controls checking levels of certain options.  For all checks going\n * forward, this should be used instead of booleans, so teams and\n * individuals can control which checks are off, which produce only warnings,\n * and which produce errors, without everyone having to agree.\n */",
+    "code": "boolean isOn() {\n    return this != OFF;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  }
+]

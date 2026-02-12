@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue582 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x=[-0.]0> but was:<var x=[]0>
+
+com.google.javascript.jscomp.CodeConsumer:addNumber:238->[Local Variables] {"TransVarY":-0.0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:239->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:239 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:addNumber:239->[Local Variables] {"TransVarC":"\u003d"}
+com.google.javascript.jscomp.CodeConsumer:addNumber:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarY < 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:240->[Control Flow] Branch Info: Line: 240, Condition: if (TransVarC == TransVarC), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:247->[Control Flow] Branch Info: Line: 247, Condition: if (TransVarY == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addNumber:251->[Local Variables] {"TransVarX":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:252->[Local Variables] {"TransVarLong2":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:253->[Local Variables] {"TransVarExpression":0}
+com.google.javascript.jscomp.CodeConsumer:addNumber:254->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:254 -> java.lang.Math.abs
+com.google.javascript.jscomp.CodeConsumer:addNumber:254->[Control Flow] Branch Info: Line: 254, Condition: if (TransVarY >= 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:255->[Control Flow] Branch Info: Line: 255, Condition: if (TransVarX == 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:260->[Control Flow] Branch Info: Line: 260, Condition: if (TransVarExpression > TransVarExpression), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addNumber:263->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:263 -> java.lang.Long.toString
+com.google.javascript.jscomp.CodeConsumer:addNumber:263->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addNumber:263 -> com.google.javascript.jscomp.CodeConsumer.add

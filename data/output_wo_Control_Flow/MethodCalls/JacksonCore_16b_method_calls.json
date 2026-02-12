@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "/**\n     * Main iteration method, which will advance stream enough\n     * to determine type of the next token, if any. If none\n     * remaining (stream has no content other than possible\n     * white space before ending), null will be returned.\n     *\n     * @return Next token from the stream, if any found, or null\n     *   to indicate end-of-input\n     */",
+    "code": "public abstract JsonToken nextToken() throws IOException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.core.util.JsonParserSequence.switchToNext",
+    "doc": "/**\n     * Method that will switch active parser from the current one\n     * to next parser in sequence, if there is another parser left,\n     * making this the new delegate. Old delegate is returned if\n     * switch succeeds.\n     *\n     * @return True if switch succeeded; false otherwise\n     */",
+    "code": "protected boolean switchToNext()\n    {\n        if (_nextParser >= _parsers.length) {\n            return false;\n        }\n        delegate = _parsers[_nextParser++];\n        return true;\n    }"
+  }
+]

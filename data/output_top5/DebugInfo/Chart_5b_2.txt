@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: org.jfree.data.xy.junit.XYSeriesTests::testBug1955483 ===
+Exception: java.lang.IndexOutOfBoundsException: Index: -1, Size: 1
+
+org.jfree.data.xy.XYSeries:indexOf:588->[Local Variables] {"x":1.0}
+org.jfree.data.xy.XYSeries:indexOf:589->[Control Flow] Branch Info: Line: 589, Condition: if (this.autoSort != false), Executed: true
+org.jfree.data.xy.XYSeries:indexOf:590->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.indexOf:590 -> org.jfree.data.xy.XYDataItem.<init>
+org.jfree.data.xy.XYSeries:indexOf:590->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.indexOf:590 -> java.util.Collections.binarySearch
+org.jfree.data.xy.XYSeries:indexOf:589->[Control Flow] Branch Info: Line: 589, Condition: if (this.autoSort != false), Executed: true
+org.jfree.data.xy.XYSeries:indexOf:590->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.indexOf:590 -> org.jfree.data.xy.XYDataItem.<init>
+org.jfree.data.xy.XYSeries:indexOf:590->[Method Call] Call Stack: org.jfree.data.xy.XYSeries.indexOf:590 -> java.util.Collections.binarySearch

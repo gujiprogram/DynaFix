@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.base.GeneratorBase.enable",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JsonGenerator enable(Feature f) {\n        final int mask = f.getMask();\n        _features |= mask;\n        if ((mask & DERIVED_FEATURES_MASK) != 0) {\n            if (f == Feature.WRITE_NUMBERS_AS_STRINGS) {\n                _cfgNumbersAsStrings = true;\n            } else if (f == Feature.ESCAPE_NON_ASCII) {\n                setHighestNonEscapedChar(127);\n            } else if (f == Feature.STRICT_DUPLICATE_DETECTION) {\n                if (_writeContext.getDupDetector() == null) { // but only if disabled currently\n                    _writeContext = _writeContext.withDupDetector(DupDetector.rootDetector(this));\n                }\n            }\n        }\n        return this;\n    }"
+  }
+]

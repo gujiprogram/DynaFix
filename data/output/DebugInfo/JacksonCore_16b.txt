@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.core.json.ParserSequenceTest::testInitialized ===
+Exception: junit.framework.AssertionFailedError: expected:<2> but was:<3>
+
+com.fasterxml.jackson.core.util.JsonParserSequence:<init>:44->[Method Call] Call Stack: com.fasterxml.jackson.core.util.JsonParserSequence.<init>:44 -> com.fasterxml.jackson.core.util.JsonParserDelegate.<init>
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:106->[Method Call] Call Stack: com.fasterxml.jackson.core.util.JsonParserSequence.nextToken:106 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:107->[Control Flow] Branch Info: Line: 107, Condition: if (t != null), Executed: false
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:110->[Control Flow] Branch Info: Line: 110, Condition: if (t != null), Executed: false
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:108->[Method Call] Call Stack: com.fasterxml.jackson.core.util.JsonParserSequence.nextToken:108 -> com.fasterxml.jackson.core.util.JsonParserSequence.switchToNext
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:108->[Control Flow] Branch Info: Line: 108, Condition: if (com.fasterxml.jackson.core.util.JsonParserSequence.switchToNext() != 0), Executed: true
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:109->[Method Call] Call Stack: com.fasterxml.jackson.core.util.JsonParserSequence.nextToken:109 -> com.fasterxml.jackson.core.JsonParser.nextToken
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:109->[Local Variables] {"t":"VALUE_NUMBER_INT"}
+com.fasterxml.jackson.core.util.JsonParserSequence:nextToken:110->[Control Flow] Branch Info: Line: 110, Condition: if (t != null), Executed: true

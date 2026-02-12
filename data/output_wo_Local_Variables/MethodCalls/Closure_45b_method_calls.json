@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.google.common.collect.Multimap.get",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isForIn",
+    "doc": "/**\n   * @return Whether the node represents a FOR-IN loop.\n   */",
+    "code": "static boolean isForIn(Node n) {\n    return n.isFor()\n        && n.getChildCount() == 3;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * the name a is not.\n   *\n   * Function literals do not meet this definition, because they\n   * lexically capture variables. For example, if you have\n   * <code>\n   * function() { return a; }\n   * </code>\n   * If it is evaluated in a different scope, then it\n   * captures a different variable. Even if the function did not read\n   * any captured vairables directly, it would still fail this definition,\n   * because it affects the lifecycle of variables in the enclosing scope.\n   *\n   * However, a function literal with respect to a particular scope is\n   * a literal.\n   *\n   * @param includeFunctions If true, all function expressions will be\n   *     treated as literals.\n   */",
+    "code": "static boolean isLiteralValue(Node n, boolean includeFunctions) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if ((!child.isEmpty()) && !isLiteralValue(child, includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child, includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.OBJECTLIT:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child.getFirstChild(), includeFunctions)) {\n            return false;\n          }\n        }\n        return true;\n\n      case Token.FUNCTION:\n        return includeFunctions && !NodeUtil.isFunctionDeclaration(n);\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getInitialValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.getParentNode",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isVar",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

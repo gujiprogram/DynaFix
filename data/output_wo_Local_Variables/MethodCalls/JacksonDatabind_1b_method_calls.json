@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JsonSerializer.serialize",
+    "doc": "/**\n     * Method that can be called to ask implementation to serialize\n     * values of type this serializer handles.\n     *\n     * @param value Value to serialize; can <b>not</b> be null.\n     * @param jgen Generator used to output resulting Json content\n     * @param provider Provider that can be used to get serializers for\n     *   serializing Objects value contains, if any.\n     */",
+    "code": "public abstract void serialize(T value, JsonGenerator jgen, SerializerProvider provider)\n        throws IOException, JsonProcessingException;"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanPropertyWriter.get",
+    "doc": "/**\n     * Method that can be used to access value of the property this\n     * Object describes, from given bean instance.\n     *<p>\n     * Note: method is final as it should not need to be overridden -- rather,\n     * calling method(s) ({@link #serializeAsField}) should be overridden\n     * to change the behavior\n     */",
+    "code": "public final Object get(Object bean) throws Exception\n    {\n        if (_accessorMethod != null) {\n            return _accessorMethod.invoke(bean);\n        }\n        return _field.get(bean);\n    }"
+  }
+]

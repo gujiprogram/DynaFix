@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZoneCutover::testDateTimeCreation_london ===
+Exception: junit.framework.ComparisonFailure: expected:<...1-10-30T01:15:00.000[+01:00]> but was:<...1-10-30T01:15:00.000[Z]>
+
+org.joda.time.DateTimeZone:getOffsetFromLocal:884->[Local Variables] {"TransVarInstant":1319937300000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:885->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:885 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:886->[Local Variables] {"TransVarOffset":0}
+org.joda.time.DateTimeZone:getOffsetFromLocal:887->[Local Variables] {"TransVarInstantAdjustedLocal":1319937300000}
+org.joda.time.DateTimeZone:getOffsetFromLocal:888->[Method Call] Call Stack: org.joda.time.DateTimeZone.getOffsetFromLocal:888 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.DateTimeZone:getOffsetFromLocal:889->[Local Variables] {"TransVarOffsetAdjustedLocal":0}
+org.joda.time.DateTimeZone:getOffsetFromLocal:890->[Control Flow] Branch Info: Line: 890, Condition: if (TransVarOffsetAdjustedLocal != TransVarOffsetAdjustedLocal), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:896->[Control Flow] Branch Info: Line: 896, Condition: if (TransVarOffsetAdjustedLocal < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:909->[Control Flow] Branch Info: Line: 909, Condition: if (TransVarOffset > 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:911->[Control Flow] Branch Info: Line: 911, Condition: if (TransVarInstantAdjustedLocal < 0), Executed: false
+org.joda.time.DateTimeZone:getOffsetFromLocal:914->[Control Flow] Branch Info: Line: 914, Condition: if (TransVarOffsetDiff <= 0), Executed: false

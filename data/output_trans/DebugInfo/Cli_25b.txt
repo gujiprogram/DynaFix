@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testLongLineChunkingIndentIgnored ===
+Exception: junit.framework.ComparisonFailure: Long arguments did not split as expected expected:<...
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Control Flow] Loop Info: Line: 839, Description: while at line 839
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Local Variables] {"TransVarRectangleText":"                     ."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Local Variables] {"TransVarPos1":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (TransVarPos1 == TransVarPos1), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:845->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:845 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:814->[Local Variables] {"TransVarWidthTabStop":0,"TransVarStr":"","TransVarRectangleText":"Footer"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:815->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:815 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:817->[Control Flow] Branch Info: Line: 817, Condition: if (TransVarPos1 == TransVarPos1), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:822->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:822 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:823->[Local Variables] {"TransVarStr":"Footer"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (TransVarPos1 == TransVarPos1), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:848 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthOfRectangle > TransVarWidthOfRectangle), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthTabStop == TransVarWidthTabStop), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthOfRectangle > TransVarWidthOfRectangle), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthTabStop == TransVarWidthTabStop), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:851->[Local Variables] {"TransVarPos1":22}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> org.apache.commons.cli.HelpFormatter.rtrim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Control Flow] Loop Info: Line: 839, Description: while at line 839
+org.apache.commons.cli.HelpFormatter:renderWrappedText:841->[Local Variables] {"TransVarStr":"-x,--extralongarg\n                     T\n                     h\n                     i\n                     s\n                     d\n                     e\n                     s\n                     c\n                     r\n                     i\n                     p\n                     t\n                     i\n                     o\n                     n\n                     i\n                     s\n                     L\n                     o\n                     n\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.String.substring
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.String.trim
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.append
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:842 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:renderWrappedText:842->[Local Variables] {"TransVarRectangleText":"                     g."}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:843 -> org.apache.commons.cli.HelpFormatter.findWrapPos
+org.apache.commons.cli.HelpFormatter:renderWrappedText:843->[Local Variables] {"TransVarPos1":20}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:844->[Control Flow] Branch Info: Line: 844, Condition: if (TransVarPos1 == TransVarPos1), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:848 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthOfRectangle > TransVarWidthOfRectangle), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthTabStop == TransVarWidthTabStop), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthOfRectangle > TransVarWidthOfRectangle), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:848->[Control Flow] Branch Info: Line: 848, Condition: if (TransVarWidthTabStop == TransVarWidthTabStop), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:851->[Local Variables] {"TransVarPos1":22}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:852->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.renderWrappedText:852 -> java.lang.String.substring

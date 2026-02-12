@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.RealVector.getData",
+    "doc": "/**\n     * Returns vector entries as a double array.\n     * @return double array of entries\n     */",
+    "code": "double[] getData();"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getCoefficients",
+    "doc": "/**\n     * Get the coefficients of the constraint (left hand side).\n     * @return coefficients of the constraint (left hand side)\n     */",
+    "code": "public RealVector getCoefficients() {\n        return coefficients;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getRelationship",
+    "doc": "/**\n     * Get the relationship between left and right hand sides.\n     * @return relationship between left and right hand sides\n     */",
+    "code": "public Relationship getRelationship() {\n        return relationship;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearConstraint.getValue",
+    "doc": "/**\n     * Get the value of the constraint (right hand side).\n     * @return value of the constraint (right hand side)\n     */",
+    "code": "public double getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.LinearObjectiveFunction.getConstantTerm",
+    "doc": "/**\n     * Get the constant of the linear equation being optimized.\n     * @return constant of the linear equation being optimized\n     */",
+    "code": "public double getConstantTerm() {\n        return constantTerm;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.copyArray",
+    "doc": "/**\n     * @param src the source array\n     * @param dest the destination array\n     * @param destPos the destination position\n     */",
+    "code": "private void copyArray(final double[] src, final double[] dest,\n                           final int destPos) {\n        System.arraycopy(src, 0, dest, getNumObjectiveFunctions(), src.length);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getInvertedCoeffiecientSum",
+    "doc": "/**\n     * Get the -1 times the sum of all coefficients in the given array.\n     * @param coefficients coefficients to sum\n     * @return the -1 times the sum of all coefficients in the given array.\n     */",
+    "code": "protected static double getInvertedCoeffiecientSum(final RealVector coefficients) {\n        double sum = 0;\n        for (double coefficient : coefficients.getData()) {\n            sum -= coefficient;\n        }\n        return sum;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getNumObjectiveFunctions",
+    "doc": "/**\n     * Get the number of objective functions in this tableau.\n     * @return 2 for Phase 1.  1 for Phase 2.\n     */",
+    "code": "protected final int getNumObjectiveFunctions() {\n        return this.numArtificialVariables > 0 ? 2 : 1;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getSlackVariableOffset",
+    "doc": "/**\n     * Get the offset of the first slack variable.\n     * @return offset of the first slack variable\n     */",
+    "code": "protected final int getSlackVariableOffset() {\n        return getNumObjectiveFunctions() + numDecisionVariables;\n    }"
+  }
+]

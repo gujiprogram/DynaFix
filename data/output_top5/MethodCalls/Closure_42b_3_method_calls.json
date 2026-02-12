@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.transform",
+    "doc": "/**\n   * @return true if the jsDocParser represents a fileoverview.\n   */",
+    "code": "private Node transform(AstNode node) {\n    Node irNode = justTransform(node);\n    JSDocInfo jsDocInfo = handleJsDoc(node, irNode);\n    if (jsDocInfo != null) {\n      irNode.setJSDocInfo(jsDocInfo);\n    }\n    setSourceInfo(irNode, node);\n    return irNode;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isBlock",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

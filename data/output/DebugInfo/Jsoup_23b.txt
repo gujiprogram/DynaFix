@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: org.jsoup.nodes.EntitiesTest::letterDigitEntities ===
+Exception: junit.framework.AssertionFailedError: expected:<[&sup1;&sup2;&sup3;&frac14;&frac12;&]frac34;> but was:<[⊃1;⊃2;⊃3;&amp;frac14;&amp;frac12;&amp;]frac34;>
+
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (found == 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:140 -> org.jsoup.nodes.Entities.isNamedEntity
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Control Flow] Branch Info: Line: 140, Condition: if (nameRef != 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.substring
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Local Variables] {"nameRef":""}
+org.jsoup.parser.Tokeniser:consumeCharacterReference:144->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:144 -> org.jsoup.parser.CharacterReader.unconsume
+org.jsoup.parser.Tokeniser:consumeCharacterReference:138->[Control Flow] Loop Info: Line: 138, Description: while at line 138
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:139 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (java.lang.String.length() > 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (found == 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:147->[Control Flow] Branch Info: Line: 147, Condition: if (found == 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:148->[Control Flow] Branch Info: Line: 148, Condition: if (looksLegit != 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:150->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:150 -> org.jsoup.parser.CharacterReader.rewindToMark
+org.jsoup.parser.Tokeniser:consumeCharacterReference:135->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:135 -> org.jsoup.parser.CharacterReader.consumeLetterSequence
+org.jsoup.parser.Tokeniser:consumeCharacterReference:135->[Local Variables] {"nameRef":"frac"}
+org.jsoup.parser.Tokeniser:consumeCharacterReference:137->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:137 -> org.jsoup.parser.CharacterReader.matches
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:139 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (found == 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:140 -> org.jsoup.nodes.Entities.isNamedEntity
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Control Flow] Branch Info: Line: 140, Condition: if (nameRef != 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.substring
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Local Variables] {"nameRef":"fra"}
+org.jsoup.parser.Tokeniser:consumeCharacterReference:144->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:144 -> org.jsoup.parser.CharacterReader.unconsume
+org.jsoup.parser.Tokeniser:consumeCharacterReference:138->[Control Flow] Loop Info: Line: 138, Description: while at line 138
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:139 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (found == 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:140 -> org.jsoup.nodes.Entities.isNamedEntity
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Control Flow] Branch Info: Line: 140, Condition: if (nameRef != 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.substring
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Local Variables] {"nameRef":"fr"}
+org.jsoup.parser.Tokeniser:consumeCharacterReference:144->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:144 -> org.jsoup.parser.CharacterReader.unconsume
+org.jsoup.parser.Tokeniser:consumeCharacterReference:138->[Control Flow] Loop Info: Line: 138, Description: while at line 138
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:139 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (java.lang.String.length() > 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Control Flow] Branch Info: Line: 139, Condition: if (found == 0), Executed: true
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:140 -> org.jsoup.nodes.Entities.isNamedEntity
+org.jsoup.parser.Tokeniser:consumeCharacterReference:140->[Control Flow] Branch Info: Line: 140, Condition: if (nameRef != 0), Executed: false
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.length
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:143 -> java.lang.String.substring
+org.jsoup.parser.Tokeniser:consumeCharacterReference:143->[Local Variables] {"nameRef":"f"}
+org.jsoup.parser.Tokeniser:consumeCharacterReference:144->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:144 -> org.jsoup.parser.CharacterReader.unconsume
+org.jsoup.parser.Tokeniser:consumeCharacterReference:138->[Control Flow] Loop Info: Line: 138, Description: while at line 138
+org.jsoup.parser.Tokeniser:consumeCharacterReference:139->[Method Call] Call Stack: org.jsoup.parser.Tokeniser.consumeCharacterReference:139 -> java.lang.String.length

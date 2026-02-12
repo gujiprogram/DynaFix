@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.StringEscapeUtilsTest::testLang720 ===
+Exception: junit.framework.ComparisonFailure: expected:<𠮷[A]> but was:<𠮷[?]>
+
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarLength < TransVarLength), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:59->[Local Variables] {"writer":{"buf":"𠮷?","lock":"𠮷?"}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:60->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:60 -> java.io.StringWriter.toString
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:53->[Local Variables] {"input":"𠮷A"}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:54->[Control Flow] Branch Info: Line: 54, Condition: if (input == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:58 -> java.lang.CharSequence.length
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:58 -> java.io.StringWriter.<init>
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Local Variables] {"writer":{"buf":"","lock":""}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:78->[Local Variables] {"TransVarString":"𠮷A","TransVarStringWriter":{"buf":"","lock":""}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:79->[Control Flow] Branch Info: Line: 79, Condition: if (TransVarStringWriter == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:85->[Control Flow] Branch Info: Line: 85, Condition: if (TransVarString == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:91->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:92 -> java.lang.CharSequence.length
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:92 -> java.lang.Character.codePointCount
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Local Variables] {"TransVarLength":2}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarLength < TransVarLength), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:94->[Local Variables] {"TransVarCharconsumed":0}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarCharconsumed == 0), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:96 -> java.lang.Character.codePointAt
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:96 -> java.lang.Character.toChars
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Local Variables] {"TransVarCharacter":["?","?"]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:97->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:97 -> java.io.Writer.write
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:97->[Local Variables] {"TransVarStringWriter":{"buf":"𠮷","lock":"𠮷"}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:111->[Local Variables] {"TransVarPosition":1}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Control Flow] Loop Info: Line: 92, Description: while at line 92
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarLength < TransVarLength), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarCharconsumed == 0), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:96 -> java.lang.Character.codePointAt
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:96 -> java.lang.Character.toChars
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:96->[Local Variables] {"TransVarCharacter":["?"]}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:97->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:97 -> java.io.Writer.write
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:97->[Local Variables] {"TransVarStringWriter":{"buf":"𠮷?","lock":"𠮷?"}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:111->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Control Flow] Loop Info: Line: 92, Description: while at line 92

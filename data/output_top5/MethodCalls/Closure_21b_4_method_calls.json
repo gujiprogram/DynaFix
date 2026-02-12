@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getSynthesizedExternsInput",
+    "doc": "/**\n   * @return a CompilerInput that can be modified to add addition extern\n   * definitions;\n   */",
+    "code": "abstract CompilerInput getSynthesizedExternsInput();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.reportCodeChange",
+    "doc": "/**\n   * Report code changes.\n   */",
+    "code": "public abstract void reportCodeChange();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CompilerInput.getAstRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.name",
+    "doc": "/**\n * An AST construction helper class\n * @author johnlenz@google.com (John Lenz)\n */",
+    "code": "public static Node name(String name) {\n    return Node.newString(Token.NAME, name);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.var",
+    "doc": "/**\n * An AST construction helper class\n * @author johnlenz@google.com (John Lenz)\n */",
+    "code": "public static Node var(Node name, Node value) {\n    Preconditions.checkState(name.isName() && !name.hasChildren());\n    Preconditions.checkState(mayBeExpression(value));\n    name.addChildToFront(value);\n    return var(name);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.build",
+    "doc": "/**\n   * Builds a {@link JSDocInfo} object based on the populated information and\n   * returns it. Once this method is called, the builder can be reused to build\n   * another {@link JSDocInfo} object.\n   *\n   * @param associatedNode The source node containing the JSDoc.\n   * @return a {@link JSDocInfo} object populated with the values given to this\n   *     builder. If no value was populated, this method simply returns\n   *     {@code null}\n   */",
+    "code": "public JSDocInfo build(Node associatedNode) {\n    if (populated) {\n      JSDocInfo built = currentInfo;\n      built.setAssociatedNode(associatedNode);\n      populateDefaults(built);\n      populated = false;\n      currentInfo = new JSDocInfo(this.parseDocumentation);\n      return built;\n    } else {\n      return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.recordNoAlias",
+    "doc": "/**\n   * Records that the {@link JSDocInfo} being built should have its\n   * {@link JSDocInfo#isNoAlias()} flag set to {@code true}.\n   */",
+    "code": "public boolean recordNoAlias() {\n    if (!currentInfo.isNoAlias()) {\n      currentInfo.setNoAlias(true);\n      populated = true;\n      return true;\n    } else {\n      return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.addChildrenToBack",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public void addChildrenToBack(Node children) {\n    addChildrenAfter(children, getLastChild());\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.putBooleanProp",
+    "doc": "/**\n   * Returns the integer value for the property, or 0 if the property\n   * is not defined.\n   */",
+    "code": "public void putBooleanProp(int propType, boolean value) {\n    putIntProp(propType, value ? 1 : 0);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setJSDocInfo",
+    "doc": "/**\n   * Sets the {@link JSDocInfo} attached to this node.\n   */",
+    "code": "public void setJSDocInfo(JSDocInfo info) {\n      putProp(JSDOC_INFO_PROP, info);\n  }"
+  }
+]

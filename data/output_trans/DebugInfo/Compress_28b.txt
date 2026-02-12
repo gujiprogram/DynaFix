@@ -1,0 +1,58 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.tar.TarArchiveInputStreamTest::shouldThrowAnExceptionOnTruncatedEntries ===
+Exception: junit.framework.AssertionFailedError: Expected exception: java.io.IOException
+
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:572->[Local Variables] {"TransVarByteArray":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:582->[Control Flow] Branch Info: Line: 582, Condition: if (this.currEntry == null), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.available
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> java.lang.Math.min
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:590->[Local Variables] {"TransVarNumBytesToRead":2648}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:591 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Local Variables] {"TransVarTotalReadBytes":2616,"TransVarByteArray":[32,32,32,32,32,32,32,32,32,32,32,32,32,32,65,112,97,99,104,101,32,67,111,109,109,111,110,115,32,67,111,109,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:592->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:592 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.count
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:594->[Control Flow] Branch Info: Line: 594, Condition: if (TransVarTotalReadBytes == TransVarTotalReadBytes), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:572->[Local Variables] {"TransVarNumBytesToRead":8024}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:574->[Local Variables] {"TransVarTotalReadBytes":0}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:582->[Control Flow] Branch Info: Line: 582, Condition: if (this.currEntry == null), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.available
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> java.lang.Math.min
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:590->[Local Variables] {"TransVarNumBytesToRead":32}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:591 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Local Variables] {"TransVarTotalReadBytes":-1}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:592->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:592 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.count
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:594->[Control Flow] Branch Info: Line: 594, Condition: if (TransVarTotalReadBytes == TransVarTotalReadBytes), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:582->[Control Flow] Branch Info: Line: 582, Condition: if (this.currEntry == null), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.available
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> java.lang.Math.min
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:590->[Local Variables] {"TransVarNumBytesToRead":433}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:591 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Local Variables] {"TransVarTotalReadBytes":433,"TransVarByteArray":[65,112,97,99,104,101,32,67,111,109,109,111,110,115,32,67,111,109,112,114,101,115,115,10,67,111,112,121,114,105,103,104,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:592->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:592 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.count
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:594->[Control Flow] Branch Info: Line: 594, Condition: if (TransVarTotalReadBytes == TransVarTotalReadBytes), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:572->[Local Variables] {"TransVarNumBytesToRead":8024}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:574->[Local Variables] {"TransVarTotalReadBytes":0}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:572->[Local Variables] {"TransVarByteArray":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.hasHitEOF == false), Executed: true
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:575->[Control Flow] Branch Info: Line: 575, Condition: if (this.entrySize >= 0), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:582->[Control Flow] Branch Info: Line: 582, Condition: if (this.currEntry == null), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.available
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:589->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:589 -> java.lang.Math.min
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:590->[Local Variables] {"TransVarNumBytesToRead":1632}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:591 -> java.io.InputStream.read
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:591->[Local Variables] {"TransVarTotalReadBytes":1632,"TransVarByteArray":[65,112,97,99,104,101,32,67,111,109,109,111,110,115,32,67,111,109,112,114,101,115,115,32,119,97,115,32,100,101,114,105,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:592->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.read:592 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.count
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:594->[Control Flow] Branch Info: Line: 594, Condition: if (TransVarTotalReadBytes == TransVarTotalReadBytes), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:572->[Local Variables] {"TransVarNumBytesToRead":8024}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:read:574->[Local Variables] {"TransVarTotalReadBytes":0}

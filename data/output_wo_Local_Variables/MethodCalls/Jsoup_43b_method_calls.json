@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the object is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Element.equals",
+    "doc": "/**\n     * Set this element's inner HTML. Clears the existing HTML first.\n     * @param html HTML to parse and set into this element\n     * @return this element\n     * @see #append(String)\n     */",
+    "code": "public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n        if (!super.equals(o)) return false;\n\n        Element element = (Element) o;\n\n        return tag.equals(element.tag);\n    }"
+  }
+]

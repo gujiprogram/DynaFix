@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getQualifiedName",
+    "doc": "/**\n   * This function takes a set of GETPROP nodes and produces a string that is\n   * each property separated by dots. If the node ultimately under the left\n   * sub-tree is not a simple name, this is not a valid qualified name.\n   *\n   * @return a null if this is not a qualified name, or a dot-separated string\n   *         of the name and properties.\n   */",
+    "code": "public String getQualifiedName() {\n    if (type == Token.NAME) {\n      return getString();\n    } else if (type == Token.GETPROP) {\n      String left = getFirstChild().getQualifiedName();\n      if (left == null) {\n        return null;\n      }\n      return left + \".\" + getLastChild().getString();\n    } else if (type == Token.THIS) {\n      return \"this\";\n    } else {\n      return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

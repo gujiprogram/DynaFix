@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.Complex.getReal",
+    "doc": "/**\n     * Access the real part.\n     *\n     * @return the real part\n     */",
+    "code": "public double getReal() {\n        return real;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.complex.Complex.isNaN",
+    "doc": "/**\n     * Returns true if either or both parts of this complex number is NaN;\n     * false otherwise\n     *\n     * @return  true if either or both parts of this complex number is NaN;\n     * false otherwise\n     */",
+    "code": "public boolean isNaN() {\n        return Double.isNaN(real) || Double.isNaN(imaginary);\n    }"
+  }
+]

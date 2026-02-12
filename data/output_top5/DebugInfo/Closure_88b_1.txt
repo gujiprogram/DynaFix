@@ -1,0 +1,177 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testIssue297 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003dx, exprRoot\u003dAND 1 [sourcename: input0] [parenthesized: true], n\u003dASSIGN 1 [sourcename: input0] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dAND 1 [sourcename: input0]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dGT 1 [sourcename: input0]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297a ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003dx, exprRoot\u003dAND 1 [sourcename: testcode] [parenthesized: true], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dAND 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dGT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"READ"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297b ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003dx, exprRoot\u003dAND 1 [sourcename: testcode], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dAND 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297c ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003dx, exprRoot\u003dAND 1 [sourcename: testcode], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dAND 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297d ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003da, exprRoot\u003dAND 1 [sourcename: testcode], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dAND 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297e ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003da, exprRoot\u003dSUB 1 [sourcename: testcode], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dSUB 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297f ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{variable\u003da, exprRoot\u003dEXPR_RESULT 1 [sourcename: testcode], n\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:294->[Local Variables] "{sibling\u003dASSIGN 1 [sourcename: testcode] [parenthesized: true]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:295 -> com.google.javascript.jscomp.ControlFlowGraph.isEnteringNewCfgNode
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:295->[Control Flow] Branch Info: Line: 295, Condition: if (sibling == 0), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:296->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:296 -> com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableReadBeforeKill
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:298->[Local Variables] {"state":"KILL"}
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:299->[Control Flow] Branch Info: Line: 299, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:301->[Control Flow] Branch Info: Line: 301, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dSUB 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Control Flow] Branch Info: Line: 293, Condition: if (sibling != null), Executed: false
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:306->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:306 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Loop Info: Line: 292, Description: while at line 292
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:291->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode] [free_call: 1]}"
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:292->[Control Flow] Branch Info: Line: 292, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.DeadAssignmentsElimination:isVariableStillLiveWithinExpression:293->[Method Call] Call Stack: com.google.javascript.jscomp.DeadAssignmentsElimination.isVariableStillLiveWithinExpression:293 -> com.google.javascript.rhino.Node.getNext

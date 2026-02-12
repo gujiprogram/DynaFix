@@ -1,0 +1,126 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_1 ===
+Exception: junit.framework.ComparisonFailure: expected:<[({a:alert,b:alert}).a("a")]> but was:<[]>
+
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:107 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:108 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:110->[Control Flow] Branch Info: Line: 110, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:118 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:120 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.Scope$Var.getInputName
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.MethodCompilerPass.addSignature
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:124->[Local Variables] {"signatureAdded":true}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:125->[Control Flow] Branch Info: Line: 125, Condition: if (signatureAdded == 0), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:101->[Local Variables] "{node\u003dNAME alert 1, t\u003dcom.google.javascript.jscomp.NodeTraversal@42f48531, name\u003da}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:102->[Local Variables] {"signatureAdded":false}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:103 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Control Flow] Branch Info: Line: 103, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:107 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:108 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Local Variables] {"functionName":"alert"}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Local Variables] "{v\u003dScope.Var alert}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:110->[Control Flow] Branch Info: Line: 110, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:118 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Local Variables] "{function\u003dFUNCTION alert 1 [sourcename: externs]}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:120 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.Scope$Var.getInputName
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.MethodCompilerPass.addSignature
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:124->[Local Variables] {"signatureAdded":true}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:125->[Control Flow] Branch Info: Line: 125, Condition: if (signatureAdded == 0), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:101->[Local Variables] {"name":"b"}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:102->[Local Variables] {"signatureAdded":false}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:103 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Control Flow] Branch Info: Line: 103, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineGettersTest::testIssue2508576_3 ===
+Exception: java.lang.RuntimeException: INTERNAL COMPILER ERROR.
+
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:101->[Local Variables] "{node\u003dFUNCTION  1 [sourcename: testcode], t\u003dcom.google.javascript.jscomp.NodeTraversal@15cafec7, name\u003da}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:102->[Local Variables] {"signatureAdded":false}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:103 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Control Flow] Branch Info: Line: 103, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:105->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:105 -> com.google.javascript.jscomp.NodeTraversal.getSourceName
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:105->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:105 -> com.google.javascript.jscomp.MethodCompilerPass.addSignature
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:124->[Local Variables] {"signatureAdded":true}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:125->[Control Flow] Branch Info: Line: 125, Condition: if (signatureAdded == 0), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:101->[Local Variables] "{node\u003dNAME alert 1, name\u003db}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:102->[Local Variables] {"signatureAdded":false}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:103 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Control Flow] Branch Info: Line: 103, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:107 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:108 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Local Variables] {"functionName":"alert"}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:110->[Control Flow] Branch Info: Line: 110, Condition: if (v == null), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:111->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:111 -> com.google.javascript.jscomp.AbstractCompiler.isIdeMode
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:111->[Control Flow] Branch Info: Line: 111, Condition: if (com.google.javascript.jscomp.AbstractCompiler.isIdeMode() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.MethodCheckTest::testSeparateMethods ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_WRONG_ARGUMENT_COUNT. Function oneOrTwoArg2: called with 3 argument(s). All definitions of this function require at least 1 argument(s) and no more than 2 argument(s). at testcode line 1 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Local Variables] "{v\u003dScope.Var twoArg}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:110->[Control Flow] Branch Info: Line: 110, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:118 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Local Variables] "{function\u003dFUNCTION twoArg 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:120 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.Scope$Var.getInputName
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.MethodCompilerPass.addSignature
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:124->[Local Variables] {"signatureAdded":true}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:125->[Control Flow] Branch Info: Line: 125, Condition: if (signatureAdded == 0), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Local Variables] {"functionName":"oneArg"}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Local Variables] "{v\u003dScope.Var oneArg}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:110->[Control Flow] Branch Info: Line: 110, Condition: if (v == null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:118 -> com.google.javascript.jscomp.Scope$Var.getInitialValue
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:118->[Local Variables] "{function\u003dFUNCTION oneArg 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:120 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.Scope$Var.getInputName
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:121->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:121 -> com.google.javascript.jscomp.MethodCompilerPass.addSignature
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:119->[Control Flow] Branch Info: Line: 119, Condition: if (function != null), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:120->[Control Flow] Branch Info: Line: 120, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:124->[Local Variables] {"signatureAdded":true}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:125->[Control Flow] Branch Info: Line: 125, Condition: if (signatureAdded == 0), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:101->[Local Variables] "{node\u003dNAME twoArg 1, name\u003dstaticMethod2}"
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:102->[Local Variables] {"signatureAdded":false}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:103 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:103->[Control Flow] Branch Info: Line: 103, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:107 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:107->[Control Flow] Branch Info: Line: 107, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:108 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:108->[Local Variables] {"functionName":"twoArg"}
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.MethodCompilerPass:addPossibleSignature:109->[Method Call] Call Stack: com.google.javascript.jscomp.MethodCompilerPass.addPossibleSignature:109 -> com.google.javascript.jscomp.Scope.getVar
+
+=== Debug Info for Test: com.google.javascript.jscomp.RenameVarsTest::testDollarSignSuperExport2 ===
+Exception: junit.framework.AssertionFailedError:
+

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator.declareNativeType",
+    "doc": "/**\n   * Create the outermost scope. This scope contains native binding such as\n   * {@code Object}, {@code Date}, etc.\n   */",
+    "code": "private void declareNativeType(Scope scope, String name, JSType t) {\n    scope.declare(name, null, t, null, false);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getInstanceType",
+    "doc": "/**\n   * Gets the type of instance of this function.\n   * @throws IllegalStateException if this function is not a constructor\n   *         (see {@link #isConstructor()}).\n   */",
+    "code": "public ObjectType getInstanceType() {\n    Preconditions.checkState(hasInstanceType());\n    return typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getPrototype",
+    "doc": "/**\n   * Gets the {@code prototype} property of this function type. This is\n   * equivalent to {@code (ObjectType) getPropertyType(\"prototype\")}.\n   */",
+    "code": "public ObjectType getPrototype() {\n    if (prototypeSlot == null) {\n      String refName = getReferenceName();\n      if (refName == null) {\n        setPrototypeNoCheck(\n           registry.getNativeObjectType(JSTypeNative.UNKNOWN_TYPE),\n           null);\n      } else {\n        setPrototype(\n            new PrototypeObjectType(\n                registry,\n                this.getReferenceName() + \".prototype\",\n                registry.getNativeObjectType(OBJECT_TYPE),\n                isNativeObjectType()),\n            null);\n      }\n    }\n    return (ObjectType) prototypeSlot.getType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeFunctionType",
+    "doc": "/**\n   * Looks up a type by name.\n   *\n   * @param jsTypeName The name string.\n   * @return the corresponding JSType object or {@code null} it cannot be found\n   */",
+    "code": "public FunctionType getNativeFunctionType(JSTypeNative typeId) {\n    return (FunctionType) getNativeType(typeId);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getReferenceName",
+    "doc": "/**\n   * Gets the reference name for this object. This includes named types\n   * like constructors, prototypes, and enums. It notably does not include\n   * literal types like strings and booleans and structural types.\n   * @return the object's name or {@code null} if this is an anonymous\n   *         object\n   */",
+    "code": "public abstract String getReferenceName();"
+  }
+]

@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.text.translate.NumericEntityUnescaperTest::testSupplementaryUnescaping ===
+Exception: junit.framework.ComparisonFailure: Failed to unescape numeric entities supplementary characters expected:<[𐰢]> but was:<[ఢ]>
+
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":7}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: false
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:64->[Control Flow] Branch Info: Line: 64, Condition: if (TransVarIsHexadecimal != 0), Executed: false
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:67->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:67 -> java.lang.CharSequence.subSequence
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:67->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:67 -> java.lang.CharSequence.toString
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:67->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:67 -> java.lang.Integer.parseInt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:70->[Local Variables] {"TransVarEntity":68642}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:73->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:73 -> java.io.Writer.write
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:73->[Local Variables] {"TransVarWriter":{"buf":"ఢ","lock":"ఢ"}}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:74->[Control Flow] Branch Info: Line: 74, Condition: if (TransVarIsHexadecimal != 0), Executed: false
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:39->[Local Variables] {"TransVarWriter":{"buf":"","lock":""},"TransVarUserInput":"\u0026#68642;","TransVarSelectedItem":0}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:40->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:40 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:40->[Control Flow] Branch Info: Line: 40, Condition: if (TransVarSelectedItem == TransVarSelectedItem), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:41->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:41 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:41->[Control Flow] Branch Info: Line: 41, Condition: if (TransVarSelectedItem == TransVarSelectedItem), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:45->[Local Variables] {"TransVarNext":2}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:47->[Local Variables] {"TransVarIsHexadecimal":false}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:48->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:48 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:48->[Local Variables] {"TransVarFirstChar2":"6"}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:49->[Control Flow] Branch Info: Line: 49, Condition: if (TransVarFirstChar2 != TransVarFirstChar2), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:49->[Control Flow] Branch Info: Line: 49, Condition: if (TransVarFirstChar2 == TransVarFirstChar2), Executed: false
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":2}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Control Flow] Loop Info: Line: 57, Description: while at line 57
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":3}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Control Flow] Loop Info: Line: 57, Description: while at line 57
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":4}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Control Flow] Loop Info: Line: 57, Description: while at line 57
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":5}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Control Flow] Loop Info: Line: 57, Description: while at line 57
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Local Variables] {"TransVarEndChar":6}
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.NumericEntityUnescaper.translate:58 -> java.lang.CharSequence.charAt
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:58->[Control Flow] Branch Info: Line: 58, Condition: if (TransVarEndChar != TransVarEndChar), Executed: true
+org.apache.commons.lang3.text.translate.NumericEntityUnescaper:translate:57->[Control Flow] Loop Info: Line: 57, Description: while at line 57

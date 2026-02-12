@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the obect is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Attributes.hasKey",
+    "doc": "/**\n     Tests if these attributes contain an attribute with this key.\n     @param key key to check for\n     @return true if key exists, false otherwise\n     */",
+    "code": "public boolean hasKey(String key) {\n        return attributes != null && attributes.containsKey(key.toLowerCase());\n    }"
+  }
+]

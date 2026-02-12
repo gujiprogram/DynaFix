@@ -1,0 +1,76 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue791 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Control Flow] Branch Info: Line: 553, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:558->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:558 -> com.google.javascript.rhino.jstype.JSType.toMaybeParameterizedType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:559->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:559 -> com.google.javascript.rhino.jstype.JSType.toMaybeParameterizedType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thisParamType == null), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thatParamType != null), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:583 -> com.google.javascript.rhino.jstype.JSType.isNominalType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:589->[Control Flow] Branch Info: Line: 589, Condition: if (this != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:595->[Control Flow] Branch Info: Line: 595, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:605->[Control Flow] Branch Info: Line: 605, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:228->[Control Flow] Branch Info: Line: 228, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isSubtype() != 0), Executed: false
+com.google.javascript.rhino.jstype.RecordType:isSubtype:235->[Method Call] Call Stack: com.google.javascript.rhino.jstype.RecordType.isSubtype:235 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.RecordType:isSubtype:235->[Control Flow] Branch Info: Line: 235, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() == 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thisParamType == null), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thatParamType != null), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:583 -> com.google.javascript.rhino.jstype.JSType.isNominalType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:583 -> com.google.javascript.rhino.jstype.JSType.isNominalType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:589->[Control Flow] Branch Info: Line: 589, Condition: if (this != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:595->[Control Flow] Branch Info: Line: 595, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:605->[Control Flow] Branch Info: Line: 605, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.JSType:isEquivalentTo:492->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.isEquivalentTo:492 -> com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:521->[Control Flow] Branch Info: Line: 521, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:525->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:525 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:526->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:526 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:527->[Control Flow] Branch Info: Line: 527, Condition: if (thisUnknown == 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:527->[Control Flow] Branch Info: Line: 527, Condition: if (thatUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:534->[Control Flow] Branch Info: Line: 534, Condition: if (thisUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:534->[Control Flow] Branch Info: Line: 534, Condition: if (thatUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:535->[Control Flow] Branch Info: Line: 535, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:543 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Control Flow] Branch Info: Line: 543, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Control Flow] Branch Info: Line: 543, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:548 -> com.google.javascript.rhino.jstype.JSType.isFunctionType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Control Flow] Branch Info: Line: 548, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Control Flow] Branch Info: Line: 548, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:553 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Control Flow] Branch Info: Line: 553, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.rhino.jstype.RecordTypeTest::testSubtypeWithUnknowns2 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.rhino.jstype.RecordType:isSubtype:272->[Control Flow] Branch Info: Line: 272, Condition: if (com.google.javascript.rhino.jstype.JSType.isInvariant() == 0), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:527->[Control Flow] Branch Info: Line: 527, Condition: if (thatUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:534->[Control Flow] Branch Info: Line: 534, Condition: if (thisUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:534->[Control Flow] Branch Info: Line: 534, Condition: if (thatUnknown != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:535->[Control Flow] Branch Info: Line: 535, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:543 -> com.google.javascript.rhino.jstype.JSType.isUnionType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Control Flow] Branch Info: Line: 543, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:543->[Control Flow] Branch Info: Line: 543, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:548 -> com.google.javascript.rhino.jstype.JSType.isFunctionType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Control Flow] Branch Info: Line: 548, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:548->[Control Flow] Branch Info: Line: 548, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:553 -> com.google.javascript.rhino.jstype.JSType.isRecordType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Control Flow] Branch Info: Line: 553, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:553->[Control Flow] Branch Info: Line: 553, Condition: if (com.google.javascript.rhino.jstype.JSType.isRecordType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:558->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:558 -> com.google.javascript.rhino.jstype.JSType.toMaybeParameterizedType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:559->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:559 -> com.google.javascript.rhino.jstype.JSType.toMaybeParameterizedType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thisParamType == null), Executed: true
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:560->[Control Flow] Branch Info: Line: 560, Condition: if (thatParamType != null), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Method Call] Call Stack: com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper:583 -> com.google.javascript.rhino.jstype.JSType.isNominalType
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:583->[Control Flow] Branch Info: Line: 583, Condition: if (com.google.javascript.rhino.jstype.JSType.isNominalType() != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:589->[Control Flow] Branch Info: Line: 589, Condition: if (this != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:595->[Control Flow] Branch Info: Line: 595, Condition: if (that != 0), Executed: false
+com.google.javascript.rhino.jstype.JSType:checkEquivalenceHelper:605->[Control Flow] Branch Info: Line: 605, Condition: if (unknown_condition_166), Executed: false
+com.google.javascript.rhino.jstype.ArrowType:checkArrowEquivalenceHelper:206->[Control Flow] Branch Info: Line: 206, Condition: if (com.google.javascript.rhino.jstype.JSType.checkEquivalenceHelper() == 0), Executed: true
+com.google.javascript.rhino.jstype.FunctionType:checkFunctionEquivalenceHelper:907->[Control Flow] Branch Info: Line: 907, Condition: if (com.google.javascript.rhino.jstype.ObjectType.checkEquivalenceHelper() != 0), Executed: false
+com.google.javascript.rhino.jstype.FunctionType:checkFunctionEquivalenceHelper:909->[Control Flow] Branch Info: Line: 909, Condition: if (com.google.javascript.rhino.jstype.ArrowType.checkArrowEquivalenceHelper() != 0), Executed: false

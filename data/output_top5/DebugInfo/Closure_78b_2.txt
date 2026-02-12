@@ -1,0 +1,43 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldArithmetic ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_DIVIDE_BY_0_ERROR. Divide by 0 at testcode line 1 : 8 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:454->[Control Flow] Branch Info: Line: 454, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Control Flow] Branch Info: Line: 455, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:460->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:460 -> com.google.javascript.jscomp.PeepholeFoldConstants.mayHaveSideEffects
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:460->[Control Flow] Branch Info: Line: 460, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.mayHaveSideEffects() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:465 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:465 -> com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Control Flow] Branch Info: Line: 465, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:467 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:467 -> com.google.javascript.jscomp.NodeUtil.isCommutative
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Control Flow] Branch Info: Line: 467, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:468->[Control Flow] Branch Info: Line: 468, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:451->[Control Flow] Branch Info: Line: 451, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:451->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:451 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:454->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:454 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:454->[Control Flow] Branch Info: Line: 454, Condition: if (com.google.javascript.rhino.Node.hasChildren() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:455 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:455->[Control Flow] Branch Info: Line: 455, Condition: if (unknown_condition_165), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:460->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:460 -> com.google.javascript.jscomp.PeepholeFoldConstants.mayHaveSideEffects
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:460->[Control Flow] Branch Info: Line: 460, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.mayHaveSideEffects() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:465 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:465 -> com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:465->[Control Flow] Branch Info: Line: 465, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:467 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:467 -> com.google.javascript.jscomp.NodeUtil.isCommutative
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Control Flow] Branch Info: Line: 467, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:468->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:468 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:468->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:468 -> com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:467->[Control Flow] Branch Info: Line: 467, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:468->[Control Flow] Branch Info: Line: 468, Condition: if (com.google.javascript.jscomp.PeepholeFoldConstants.areNodesEqualForInlining() != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:450->[Local Variables] "{right\u003dDIV 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:451->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:451 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:451->[Control Flow] Branch Info: Line: 451, Condition: if (com.google.javascript.rhino.Node.getType() == com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:451->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:451 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:454->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:454 -> com.google.javascript.rhino.Node.hasChildren

@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVRecordTest::testGetStringInconsistentRecord ===
+Exception: java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+
+org.apache.commons.csv.CSVRecord:get:82->[Local Variables] {"TransVarUserName":"fourth"}
+org.apache.commons.csv.CSVRecord:get:83->[Control Flow] Branch Info: Line: 83, Condition: if (this.mapping == null), Executed: false
+org.apache.commons.csv.CSVRecord:get:90->[Method Call] Call Stack: org.apache.commons.csv.CSVRecord.get:90 -> java.util.Map.get
+org.apache.commons.csv.CSVRecord:get:90->[Local Variables] {"TransVarKey":4}
+org.apache.commons.csv.CSVRecord:get:91->[Control Flow] Branch Info: Line: 91, Condition: if (TransVarKey != null), Executed: true
+org.apache.commons.csv.CSVRecord:get:91->[Method Call] Call Stack: org.apache.commons.csv.CSVRecord.get:91 -> java.lang.Integer.intValue

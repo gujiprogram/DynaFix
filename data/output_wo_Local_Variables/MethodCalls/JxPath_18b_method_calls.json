@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.getCurrentNodePointer",
+    "doc": "/**\n     * {@inheritDoc}\n     */",
+    "code": "return getCurrentNodePointer();\n    }\n\n    public JXPathContext getJXPathContext() {"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.EvalContext.setPosition",
+    "doc": "/**\n     * Moves the current position to the specified index. Used with integer\n     * predicates to quickly get to the n'th element of the node set.\n     * Returns false if the position is out of the node set range.\n     * You can call it with 0 as the position argument to restart the iteration.\n     * @param position to set\n     * @return boolean\n     */",
+    "code": "public boolean setPosition(int position) {\n        this.position = position;\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.axes.AttributeContext.getCurrentPosition",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.compiler.NodeNameTest.getNodeName",
+    "doc": "/**\n     * Get the node name.\n     * @return QName\n     */",
+    "code": "public QName getNodeName() {\n        return qname;\n    }"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodeIterator.getNodePointer",
+    "doc": "/**\n     * Get the NodePointer at the current position.\n     * @return NodePointer\n     */",
+    "code": "NodePointer getNodePointer();\n}"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodeIterator.getPosition",
+    "doc": "/**\n     * Get the current iterator position.\n     * @return int position\n     */",
+    "code": "int getPosition();"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodeIterator.setPosition",
+    "doc": "/**\n     * Set the new current position.\n     * @param position the position to set\n     * @return <code>true</code> if there is a node at <code>position</code>.\n     */",
+    "code": "boolean setPosition(int position);"
+  },
+  {
+    "method": "org.apache.commons.jxpath.ri.model.NodePointer.attributeIterator",
+    "doc": "/**\n     * Returns a NodeIterator that iterates over all attributes of the current\n     * node matching the supplied node name (could have a wildcard).\n     * May return null if the object does not support the attributes.\n     * @param qname the attribute name to test\n     * @return NodeIterator\n     */",
+    "code": "public NodeIterator attributeIterator(QName qname) {\n        NodePointer valuePointer = getValuePointer();\n        return valuePointer == null || valuePointer == this ? null\n                : valuePointer.attributeIterator(qname);\n    }"
+  }
+]

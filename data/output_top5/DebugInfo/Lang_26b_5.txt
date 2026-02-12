@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormatTest::testLang645 ===
+Exception: junit.framework.ComparisonFailure: expected:<fredag, week [53]> but was:<fredag, week [01]>
+
+org.apache.commons.lang3.time.FastDateFormat:applyRules:887->[Local Variables] {"calendar":{"year":2010,"month":0,"dayOfMonth":1,"hourOfDay":12,"minute":0,"second":0},"buf":""}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:888->[Local Variables] {"rules":[{"mField":7,"mValues":["","söndag","måndag","tisdag","onsdag","torsdag","fredag","lördag"]},{"mValue":", week "},{"mField":3}]}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:889->[Local Variables] {"len":3}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Branch Info: Line: 890, Condition: if (len < len), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Local Variables] {"i":0}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:891->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.applyRules:891 -> org.apache.commons.lang3.time.FastDateFormat$Rule.appendTo
+org.apache.commons.lang3.time.FastDateFormat:applyRules:889->[Local Variables] {"buf":"fredag"}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Loop Info: Line: 890, Description: while at line 890
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Branch Info: Line: 890, Condition: if (len < len), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Local Variables] {"i":1}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:891->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.applyRules:891 -> org.apache.commons.lang3.time.FastDateFormat$Rule.appendTo
+org.apache.commons.lang3.time.FastDateFormat:applyRules:889->[Local Variables] {"buf":"fredag, week "}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Loop Info: Line: 890, Description: while at line 890
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Branch Info: Line: 890, Condition: if (len < len), Executed: true
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Local Variables] {"i":2}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:891->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateFormat.applyRules:891 -> org.apache.commons.lang3.time.FastDateFormat$Rule.appendTo
+org.apache.commons.lang3.time.FastDateFormat:applyRules:889->[Local Variables] {"buf":"fredag, week 01"}
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Loop Info: Line: 890, Description: while at line 890
+org.apache.commons.lang3.time.FastDateFormat:applyRules:890->[Control Flow] Branch Info: Line: 890, Condition: if (len < len), Executed: false

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.access$300",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveStubDeclarations",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$AbstractScopeBuilder.resolveTypes",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypedScopeCreator$LocalScopeBuilder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Copies source file and name information from the other node to the\n   * entire tree rooted at this node.\n   * @return this\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "public ObjectType getTypeOfThis() {\n    return typeOfThis.isNoObjectType() ?\n        registry.getNativeObjectType(JSTypeNative.OBJECT_TYPE) : typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isUnknownType",
+    "doc": "/**\n   * We treat this as the unknown type if any of its implicit prototype\n   * properties is unknown.\n   */",
+    "code": "public boolean isUnknownType() {\n    if (unknown) {\n      ObjectType implicitProto = getImplicitPrototype();\n      if (implicitProto == null ||\n          implicitProto.isNativeObjectType()) {\n        unknown = false;\n      } else {\n        unknown = implicitProto.isUnknownType();\n      }\n    }\n    return unknown;\n  }"
+  }
+]

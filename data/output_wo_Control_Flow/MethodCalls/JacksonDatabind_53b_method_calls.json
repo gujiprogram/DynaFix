@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.type.ClassStack.resolveSelfReferences",
+    "doc": "/**\n     * Method called when type that this stack frame represents is\n     * fully resolved, allowing self-references to be completed\n     * (if there are any)\n     */",
+    "code": "public void resolveSelfReferences(JavaType resolved)\n    {\n        if (_selfRefs != null) {\n            for (ResolvedRecursiveType ref : _selfRefs) {\n                ref.setReference(resolved);\n            }\n        }\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeBindings.isEmpty",
+    "doc": "/**\n     * Find type bound to specified name, if there is one; returns bound type if so, null if not.\n     */",
+    "code": "public boolean isEmpty() {\n        return (_types.length == 0);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory._findWellKnownSimple",
+    "doc": "/**\n     * Helper method called to see if requested, non-generic-parameterized\n     * type is one of common, \"well-known\" types, instances of which are\n     * pre-constructed and do not need dynamic caching.\n     *\n     * @since 2.7\n     */",
+    "code": "protected JavaType _findWellKnownSimple(Class<?> clz) {\n        if (clz.isPrimitive()) {\n            if (clz == CLS_BOOL) return CORE_TYPE_BOOL;\n            if (clz == CLS_INT) return CORE_TYPE_INT;\n            if (clz == CLS_LONG) return CORE_TYPE_LONG;\n        } else {\n            if (clz == CLS_STRING) return CORE_TYPE_STRING;\n            if (clz == CLS_OBJECT) return CORE_TYPE_OBJECT; // since 2.7\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.LRUMap.get",
+    "doc": "/**\n     * @since 2.5\n     */",
+    "code": "public V get(Object key) {  return _map.get(key); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.util.LRUMap.putIfAbsent",
+    "doc": "/**\n     * @since 2.5\n     */",
+    "code": "public V putIfAbsent(K key, V value) {\n        if (_map.size() >= _maxEntries) {\n            synchronized (this) {\n                if (_map.size() >= _maxEntries) {\n                    clear();\n                }\n            }\n        }\n        return _map.putIfAbsent(key, value);\n    }"
+  }
+]

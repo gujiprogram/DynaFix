@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jsoup.nodes.Document.outputSettings",
+    "doc": "/**\n     * Get the document's current output settings.\n     * @return the document's current output settings.\n     */",
+    "code": "public OutputSettings outputSettings() {\n        return outputSettings;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Node.ownerDocument",
+    "doc": "/**\n     * Gets the Document associated with this Node.\n     * @return the Document associated with this Node, or null if there is no such Document.\n     */",
+    "code": "public Document ownerDocument() {\n        if (this instanceof Document)\n            return (Document) this;\n        else if (parentNode == null)\n            return null;\n        else\n            return parentNode.ownerDocument();\n    }"
+  },
+  {
+    "method": "org.jsoup.select.NodeTraversor.traverse",
+    "doc": "/**\n * Breadth first node traversor.\n */",
+    "code": "public void traverse(Node root) {\n        Node node = root;\n        int depth = 0;\n\n        while (node != null) {\n            visitor.head(node, depth);\n            if (node.childNodes().size() > 0) {\n                node = node.childNode(0);\n                depth++;\n            } else {\n                while (node.nextSibling() == null && depth > 0) {\n                    visitor.tail(node, depth);\n                    node = node.parent();\n                    depth--;\n                }\n                visitor.tail(node, depth);\n                if (node == root)\n                    break;\n                node = node.nextSibling();\n            }\n        }\n    }"
+  }
+]

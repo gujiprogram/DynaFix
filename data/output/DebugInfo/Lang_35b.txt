@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.ArrayUtilsAddTest::testLANG571 ===
+Exception: java.lang.ClassCastException: class [Ljava.lang.Object; cannot be cast to class [Ljava.lang.String; ([Ljava.lang.Object; and [Ljava.lang.String; are in module java.base of loader 'bootstrap')
+
+org.apache.commons.lang3.ArrayUtils:add:3290->[Control Flow] Branch Info: Line: 3290, Condition: if (array != null), Executed: false
+org.apache.commons.lang3.ArrayUtils:add:3292->[Control Flow] Branch Info: Line: 3292, Condition: if (element != null), Executed: false
+org.apache.commons.lang3.ArrayUtils:add:3297->[Local Variables] {"type":"class java.lang.Object"}
+org.apache.commons.lang3.ArrayUtils:add:3298->[Method Call] Call Stack: org.apache.commons.lang3.ArrayUtils.add:3298 -> org.apache.commons.lang3.ArrayUtils.copyArrayGrow1
+org.apache.commons.lang3.ArrayUtils:add:3298->[Local Variables] {"newArray":[null]}

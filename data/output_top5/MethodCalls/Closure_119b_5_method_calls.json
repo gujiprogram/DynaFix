@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace.process",
+    "doc": "/**\n   * Builds the namespace lazily.\n   */",
+    "code": "private void process() {\n    if (externsRoot != null) {\n      inExterns = true;\n      NodeTraversal.traverse(compiler, externsRoot, new BuildGlobalNamespace());\n    }\n    inExterns = false;\n\n    NodeTraversal.traverse(compiler, root, new BuildGlobalNamespace());\n    generated = true;\n  }"
+  }
+]

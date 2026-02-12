@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.RealVector.mapMultiply",
+    "doc": "/**\n     * Multiply each entry by the argument. Returns a new vector.\n     * Does not change instance data.\n     *\n     * @param d Multiplication factor.\n     * @return {@code this} * {@code d}.\n     */",
+    "code": "public RealVector mapMultiply(double d) {\n        return copy().mapMultiplyToSelf(d);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getCoefficients",
+    "doc": "/**\n     * Get the coefficients of the constraint (left hand side).\n     * @return coefficients of the constraint (left hand side)\n     */",
+    "code": "public RealVector getCoefficients() {\n        return coefficients;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getRelationship",
+    "doc": "/**\n     * Get the relationship between left and right hand sides.\n     * @return relationship between left and right hand sides\n     */",
+    "code": "public Relationship getRelationship() {\n        return relationship;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.LinearConstraint.getValue",
+    "doc": "/**\n     * Get the value of the constraint (right hand side).\n     * @return value of the constraint (right hand side)\n     */",
+    "code": "public double getValue() {\n        return value;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.Relationship.oppositeRelationship",
+    "doc": "/**\n     * Get the relationship obtained when multiplying all coefficients by -1.\n     * @return relationship obtained when multiplying all coefficients by -1\n     */",
+    "code": "public Relationship oppositeRelationship() {\n        switch (this) {\n        case LEQ :\n            return GEQ;\n        case GEQ :\n            return LEQ;\n        default :\n            return EQ;\n        }\n    }"
+  }
+]

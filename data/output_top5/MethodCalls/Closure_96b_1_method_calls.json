@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExpressionNode",
+    "doc": "/**\n   * Returns true if the operator is associative.\n   * e.g. (a * b) * c = a * (b * c)\n   * Note: \"+\" is not associative because it is also the concatentation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   */",
+    "code": "static boolean isExpressionNode(Node n) {\n    return n.getType() == Token.EXPR_RESULT;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting",
+    "doc": "/**\n   * Counts the given node in the typed statistics.\n   * @param n a node that should be typed\n   */",
+    "code": "private void doPercentTypedAccounting(NodeTraversal t, Node n) {\n    JSType type = n.getJSType();\n    if (type == null) {\n      nullCount++;\n    } else if (type.isUnknownType()) {\n      if (reportUnknownTypes.isOn()) {\n        compiler.report(\n            t.makeError(n, reportUnknownTypes, UNKNOWN_EXPR_TYPE));\n      }\n      unknownCount++;\n    } else {\n      typedCount++;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitCall",
+    "doc": "/**\n   * Visits a CALL node.\n   *\n   * @param t The node traversal object that supplies context, such as the\n   * scope chain to use in name lookups as well as error reporting.\n   * @param n The node being visited.\n   */",
+    "code": "private void visitCall(NodeTraversal t, Node n) {\n    Node child = n.getFirstChild();\n    JSType childType = getJSType(child).restrictByNotNullOrUndefined();\n\n    if (!childType.canBeCalled()) {\n      report(t, n, NOT_CALLABLE, childType.toString());\n      ensureTyped(t, n);\n      return;\n    }\n\n    if (childType instanceof FunctionType) {\n      FunctionType functionType = (FunctionType) childType;\n\n      if (functionType.isConstructor() &&\n          !functionType.isNativeObjectType()) {\n        report(t, n, CONSTRUCTOR_NOT_CALLABLE, childType.toString());\n      }\n\n      visitParameterList(t, n, functionType);\n      ensureTyped(t, n, functionType.getReturnType());\n    } else {\n      ensureTyped(t, n);\n    }\n\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

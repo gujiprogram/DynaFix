@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864 ===
+Exception: junit.framework.AssertionFailedError: Out of bounds (0.5038479039212689 > 0.5)
+
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:499->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:499 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getStartPoint
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:499->[Local Variables] {"init":[0.0]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:500->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:500 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getLowerBound
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:500->[Local Variables] {"lB":[-1000000.0]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:501->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:501 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getUpperBound
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:503->[Local Variables] {"uB":[0.5]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:504->[Local Variables] {"hasFiniteBounds":false}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:505->[Control Flow] Branch Info: Line: 505, Condition: if (lB < lB), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:505->[Local Variables] {"i":0}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:506->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:506 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:506->[Control Flow] Branch Info: Line: 506, Condition: if (hasInfiniteBounds != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:508->[Local Variables] {"hasFiniteBounds":true}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:505->[Control Flow] Branch Info: Line: 505, Condition: if (lB < lB), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:513->[Local Variables] {"hasInfiniteBounds":false}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:514->[Control Flow] Branch Info: Line: 514, Condition: if (hasFiniteBounds != 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:515->[Control Flow] Branch Info: Line: 515, Condition: if (lB < lB), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:516->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:516 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:516->[Control Flow] Branch Info: Line: 516, Condition: if (i == 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:517->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters:517 -> java.lang.Double.isInfinite
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:517->[Control Flow] Branch Info: Line: 517, Condition: if (i != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:515->[Control Flow] Loop Info: Line: 515, Description: while at line 515
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:515->[Control Flow] Branch Info: Line: 515, Condition: if (lB < lB), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:523->[Control Flow] Branch Info: Line: 523, Condition: if (hasInfiniteBounds != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:538->[Control Flow] Branch Info: Line: 538, Condition: if (this.inputSigma != null), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:checkParameters:542->[Control Flow] Branch Info: Line: 542, Condition: if (init < init), Executed: false

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkNotNull",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.InferJSDocInfo.process",
+    "doc": "/**\n * Set the JSDocInfo on all types.\n *\n * Propagates JSDoc across the type graph, but not across the symbol graph.\n * This means that if you have:\n * <code>\n * var x = new Foo();\n * x.bar;\n * </code>\n * then the JSType attached to x.bar may get associated JSDoc, but the\n * Node and Var will not.\n *\n * JSDoc is initially attached to AST Nodes at parse time.\n * There are 3 ways that JSDoc get propagated across the type system.\n * 1) Nominal types (e.g., constructors) may contain JSDocInfo for their\n *    declaration.\n * 2) Object types have a JSDocInfo slot for each property on that type.\n * 3) Shape types (like structural functions) may have JSDocInfo.\n *\n * #1 and #2 should be self-explanatory, and non-controversial. #3 is\n * a bit trickier. It means that if you have:\n * <code>\n * /** @param {number} x /\n * Foo.prototype.bar = goog.abstractMethod;\n * </code>\n * the JSDocInfo will appear in two places in the type system: in the 'bar'\n * slot of Foo.prototype, and on the function expression type created by\n * this expression.\n *\n * @author nicksantos@google.com (Nick Santos)\n */",
+    "code": "public void process(Node externs, Node root) {\n    if (externs != null) {\n      inExterns = true;\n      NodeTraversal.traverse(compiler, externs, this);\n    }\n    if (root != null) {\n      inExterns = false;\n      NodeTraversal.traverse(compiler, root, this);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverseWithScope",
+    "doc": "/**\n   * Traverses a parse tree recursively with a scope, starting with the given\n   * root. This should only be used in the global scope. Otherwise, use\n   * {@link #traverseAtScope}.\n   */",
+    "code": "void traverseWithScope(Node root, Scope s) {\n    Preconditions.checkState(s.isGlobal());\n\n    sourceName = \"\";\n    curNode = root;\n    pushScope(s);\n    traverseBranch(root, null);\n    popScope();\n  }"
+  }
+]

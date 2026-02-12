@@ -1,0 +1,56 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1058 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1053->[Local Variables] "{resolvedTypes\u003d{CLASS\u003d(number|string)}}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1032->[Local Variables] "{call\u003dCALL 19 [source_file: [testcode]] : ?, fnType\u003dfunction (this:Class, function (CLASS): CLASS): ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.common.collect.ImmutableList.isEmpty
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1037 -> com.google.common.collect.Maps.newIdentityHashMap
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1039->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1039 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1039->[Local Variables] "{callTarget\u003dGETPROP 19 [source_file: [testcode]] : function (this:Class, function (CLASS): CLASS): ?}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1040 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (callTarget != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1041->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1041 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1041->[Local Variables] "{obj\u003dNEW 19 [source_file: [testcode]] : Class}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1043->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1043 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1044->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1044 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1042->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1042 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (callTarget != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1048 -> com.google.javascript.rhino.Node.hasMoreThanOneChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (com.google.javascript.rhino.Node.hasMoreThanOneChild() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1050->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1050 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1051 -> com.google.javascript.rhino.Node.getChildAtIndex
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1051 -> com.google.javascript.rhino.Node.siblings
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1049->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1049 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (com.google.javascript.rhino.Node.hasMoreThanOneChild() != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTemplatized11 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1053->[Local Variables] "{resolvedTypes\u003d{K\u003dnumber, T\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1032->[Local Variables] "{call\u003dCALL 14 [source_file: [testcode]] : T, fnType\u003dfunction (this:C, (K|T)): T}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.javascript.rhino.jstype.FunctionType.getTemplateTypeMap
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.javascript.rhino.jstype.TemplateTypeMap.getTemplateKeys
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1033 -> com.google.common.collect.ImmutableList.isEmpty
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1033->[Control Flow] Branch Info: Line: 1033, Condition: if (com.google.common.collect.ImmutableList.isEmpty() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1037->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1037 -> com.google.common.collect.Maps.newIdentityHashMap
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1039->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1039 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1039->[Local Variables] "{callTarget\u003dGETPROP 14 [source_file: [testcode]] : function (this:C, (K|T)): T}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1040 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (callTarget != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1041->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1041 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1041->[Local Variables] "{obj\u003dNEW 14 [source_file: [testcode]] : C}"
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1043->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1043 -> com.google.javascript.rhino.jstype.FunctionType.getTypeOfThis
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1044->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1044 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1042->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1042 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1040->[Control Flow] Branch Info: Line: 1040, Condition: if (callTarget != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1048 -> com.google.javascript.rhino.Node.hasMoreThanOneChild
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (com.google.javascript.rhino.Node.hasMoreThanOneChild() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1050->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1050 -> com.google.javascript.rhino.jstype.FunctionType.getParameters
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1051 -> com.google.javascript.rhino.Node.getChildAtIndex
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1051->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1051 -> com.google.javascript.rhino.Node.siblings
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1049->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferTemplateTypesFromParameters:1049 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes
+com.google.javascript.jscomp.TypeInference:inferTemplateTypesFromParameters:1048->[Control Flow] Branch Info: Line: 1048, Condition: if (com.google.javascript.rhino.Node.hasMoreThanOneChild() != 0), Executed: false

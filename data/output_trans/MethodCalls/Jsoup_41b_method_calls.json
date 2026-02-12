@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jsoup.nodes.Node.equals",
+    "doc": "/**\n     * Check if this node is equal to another node. A node is considered equal if its attributes and content equal the\n     * other node; particularly its position in the tree does not influence its equality.\n     * @param o other object to compare to\n     * @return true if the content of this node is the same as the other\n     */",
+    "code": "public boolean equals(Object o) {\n        if (this == o) return true;\n        if (o == null || getClass() != o.getClass()) return false;\n\n        Node node = (Node) o;\n\n        if (childNodes != null ? !childNodes.equals(node.childNodes) : node.childNodes != null) return false;\n        return !(attributes != null ? !attributes.equals(node.attributes) : node.attributes != null);\n    }"
+  }
+]

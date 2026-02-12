@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.cli.Option.getArgName",
+    "doc": "/**\n     * Gets the display name for the argument value.\n     *\n     * @return the display name for the argument value.\n     */",
+    "code": "public String getArgName()\n    {\n        return this.argName;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.getOpt",
+    "doc": "/**\n     * Retrieve the name of this Option.\n     *\n     * It is this String which can be used with\n     * {@link CommandLine#hasOption(String opt)} and\n     * {@link CommandLine#getOptionValue(String opt)} to check\n     * for existence and argument.\n     *\n     * @return The name of this option\n     */",
+    "code": "public String getOpt()\n    {\n        return this.opt;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.hasArg",
+    "doc": "/**\n     * Query to see if this Option requires an argument\n     *\n     * @return boolean flag indicating if an argument is required\n     */",
+    "code": "public boolean hasArg()\n    {\n        return (this.numberOfArgs > 0) || (numberOfArgs == UNLIMITED_VALUES);\n    }"
+  }
+]

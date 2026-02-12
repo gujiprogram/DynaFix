@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: org.jfree.chart.block.junit.BorderArrangementTests::testSizingWithWidthConstraint ===
+Exception: java.lang.IllegalArgumentException: Range(double, double): require lower (0.0) <= upper (-2.3000000000000007).
+
+org.jfree.chart.block.BorderArrangement:arrangeFF:455->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:455 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:458->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:458 -> org.jfree.chart.block.Block.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFF:453->[Control Flow] Branch Info: Line: 453, Condition: if (this.leftBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:460->[Local Variables] {"TransVarWidth":[10.0,10.0,12.3,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:461->[Local Variables] {"TransVarHeigh":[0.0,0.0,45.6,45.6,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:462->[Control Flow] Branch Info: Line: 462, Condition: if (this.rightBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFF:464->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:464 -> org.jfree.chart.block.RectangleConstraint.getWidth
+org.jfree.chart.block.BorderArrangement:arrangeFF:464->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:464 -> org.jfree.data.Range.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:470->[Local Variables] {"TransVarHeigh":[0.0,0.0,45.6,45.6,45.6]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:471->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:471 -> org.jfree.chart.block.RectangleConstraint.getWidth
+org.jfree.chart.block.BorderArrangement:arrangeFF:471->[Local Variables] {"TransVarWidth":[10.0,10.0,12.3,0.0,-2.3000000000000007]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:472->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:472 -> org.jfree.chart.block.RectangleConstraint.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:473->[Control Flow] Branch Info: Line: 473, Condition: if (this.centerBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFF:474->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:474 -> org.jfree.chart.block.Block.arrange
+org.jfree.chart.block.BorderArrangement:arrangeFF:473->[Control Flow] Branch Info: Line: 473, Condition: if (this.centerBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:477->[Control Flow] Branch Info: Line: 477, Condition: if (this.topBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:481->[Control Flow] Branch Info: Line: 481, Condition: if (this.bottomBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:485->[Control Flow] Branch Info: Line: 485, Condition: if (this.leftBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFF:486->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:486 -> java.awt.geom.Rectangle2D$Double.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:486->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:486 -> org.jfree.chart.block.Block.setBounds
+org.jfree.chart.block.BorderArrangement:arrangeFF:485->[Control Flow] Branch Info: Line: 485, Condition: if (this.leftBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:489->[Control Flow] Branch Info: Line: 489, Condition: if (this.rightBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:493->[Control Flow] Branch Info: Line: 493, Condition: if (this.centerBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFF:494->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:494 -> java.awt.geom.Rectangle2D$Double.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:494->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:494 -> org.jfree.chart.block.Block.setBounds
+org.jfree.chart.block.BorderArrangement:arrangeFF:493->[Control Flow] Branch Info: Line: 493, Condition: if (this.centerBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:497->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:497 -> org.jfree.chart.block.RectangleConstraint.getWidth
+org.jfree.chart.block.BorderArrangement:arrangeFF:497->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:497 -> org.jfree.chart.block.RectangleConstraint.getHeight
+org.jfree.chart.block.BorderArrangement:arrangeFF:497->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:497 -> org.jfree.chart.util.Size2D.<init>
+org.jfree.chart.block.BorderArrangement:arrangeFF:427->[Local Variables] {"TransVarWidth":[0.0,0.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:428->[Local Variables] {"TransVarHeigh":[0.0,0.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:429->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:429 -> org.jfree.chart.block.RectangleConstraint.getWidth
+org.jfree.chart.block.BorderArrangement:arrangeFF:429->[Local Variables] {"TransVarWidth":[10.0,0.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:430->[Control Flow] Branch Info: Line: 430, Condition: if (this.topBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:441->[Local Variables] {"TransVarWidth":[10.0,10.0,0.0,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:442->[Control Flow] Branch Info: Line: 442, Condition: if (this.bottomBlock != null), Executed: false
+org.jfree.chart.block.BorderArrangement:arrangeFF:452->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:452 -> org.jfree.chart.block.RectangleConstraint.getHeight
+org.jfree.chart.block.BorderArrangement:arrangeFF:452->[Local Variables] {"TransVarHeigh":[0.0,0.0,45.6,0.0,0.0]}
+org.jfree.chart.block.BorderArrangement:arrangeFF:453->[Control Flow] Branch Info: Line: 453, Condition: if (this.leftBlock != null), Executed: true
+org.jfree.chart.block.BorderArrangement:arrangeFF:455->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:455 -> org.jfree.chart.block.RectangleConstraint.getWidth
+org.jfree.chart.block.BorderArrangement:arrangeFF:455->[Method Call] Call Stack: org.jfree.chart.block.BorderArrangement.arrangeFF:455 -> org.jfree.data.Range.<init>

@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: org.jsoup.parser.CharacterReaderTest::handleCarriageReturnAsLineFeed ===
+Exception: junit.framework.AssertionFailedError: expected:<one []> but was:<one [
+
+org.jsoup.parser.CharacterReader:<init>:15->[Local Variables] {"input":"one \r two \r\n three"}
+org.jsoup.parser.CharacterReader:<init>:17->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:17 -> org.jsoup.helper.Validate.notNull
+org.jsoup.parser.CharacterReader:<init>:20->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:20 -> java.lang.String.length
+
+=== Debug Info for Test: org.jsoup.parser.CharacterReaderTest::consumeToEnd ===
+Exception: junit.framework.AssertionFailedError: expected:<one two thre[e]> but was:<one two thre[]>
+
+org.jsoup.parser.CharacterReader:<init>:15->[Local Variables] {"input":"one two three"}
+org.jsoup.parser.CharacterReader:<init>:17->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:17 -> org.jsoup.helper.Validate.notNull
+org.jsoup.parser.CharacterReader:<init>:20->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:20 -> java.lang.String.length
+org.jsoup.parser.CharacterReader:consumeToEnd:99->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.consumeToEnd:99 -> java.lang.String.length
+org.jsoup.parser.CharacterReader:consumeToEnd:99->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.consumeToEnd:99 -> java.lang.String.substring
+org.jsoup.parser.CharacterReader:consumeToEnd:99->[Local Variables] {"data":"one two thre"}
+org.jsoup.parser.CharacterReader:consumeToEnd:100->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.consumeToEnd:100 -> java.lang.String.length
+
+=== Debug Info for Test: org.jsoup.parser.ParserTest::handlesNewlinesAndWhitespaceInTag ===
+Exception: junit.framework.AssertionFailedError: expected:<<a href="one" []id="two"></a>> but was:<<a href="one" [="" ]id="two"></a>>
+
+org.jsoup.parser.CharacterReader:<init>:15->[Local Variables] {"input":"\u003ca \n href\u003d\"one\" \r\n id\u003d\"two\" \f \u003e"}
+org.jsoup.parser.CharacterReader:<init>:17->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:17 -> org.jsoup.helper.Validate.notNull
+org.jsoup.parser.CharacterReader:<init>:20->[Method Call] Call Stack: org.jsoup.parser.CharacterReader.<init>:20 -> java.lang.String.length

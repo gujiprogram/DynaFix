@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math3.util.ContinuedFraction.getA",
+    "doc": "/**\n     * Access the n-th a coefficient of the continued fraction.  Since a can be\n     * a function of the evaluation point, x, that is passed in as well.\n     * @param n the coefficient index to retrieve.\n     * @param x the evaluation point.\n     * @return the n-th a coefficient.\n     */",
+    "code": "protected abstract double getA(int n, double x);"
+  },
+  {
+    "method": "org.apache.commons.math3.util.ContinuedFraction.getB",
+    "doc": "/**\n     * Access the n-th b coefficient of the continued fraction.  Since b can be\n     * a function of the evaluation point, x, that is passed in as well.\n     * @param n the coefficient index to retrieve.\n     * @param x the evaluation point.\n     * @return the n-th b coefficient.\n     */",
+    "code": "protected abstract double getB(int n, double x);"
+  },
+  {
+    "method": "org.apache.commons.math3.util.FastMath.abs",
+    "doc": "/**\n     * Absolute value.\n     * @param x number from which absolute value is requested\n     * @return abs(x)\n     */",
+    "code": "public static int abs(final int x) {\n        return (x < 0) ? -x : x;\n    }"
+  }
+]

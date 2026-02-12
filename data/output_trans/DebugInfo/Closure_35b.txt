@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue669 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1117->[Local Variables] "{TransVarJsType\u003d({prop1: {a: number}}|{prop2: number}), TransVarJsConstraint\u003d{prop1: (Object|null|undefined)}}"
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (TransVarJsType != null), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1118->[Control Flow] Branch Info: Line: 1118, Condition: if (TransVarJsConstraint == null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1126->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1126 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1126->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1126 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1126->[Local Variables] "{TransVarConstraint\u003d{prop1: (Object|null|undefined)}}"
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (TransVarConstraint != null), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1127 -> com.google.javascript.rhino.jstype.ObjectType.isRecordType
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1131 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.inferPropertyTypesToMatchConstraint:1131 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (TransVarConstraint != null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isRecordType() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1132->[Control Flow] Branch Info: Line: 1132, Condition: if (TransVarObjectType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:inferPropertyTypesToMatchConstraint:1133->[Control Flow] Branch Info: Line: 1133, Condition: if (var5 != 0), Executed: false

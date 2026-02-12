@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest::testIssue1255 ===
+Exception: com.fasterxml.jackson.databind.deser.UnresolvedForwardReference: Unresolved forward references for: Object id [1] (for com.fasterxml.jackson.databind.objectid.AlwaysAsReferenceFirstTest$Bar) at [Source: {"bar1":1,"bar2":{"@id":2,"value":3}}; line: 1, column: 10].
+
+com.fasterxml.jackson.databind.ser.impl.WritableObjectId:generateId:52->[Local Variables] {"TransVarPojo":{"value":3}}
+com.fasterxml.jackson.databind.ser.impl.WritableObjectId:generateId:53->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.impl.WritableObjectId.generateId:53 -> com.fasterxml.jackson.annotation.ObjectIdGenerator.generateId
+com.fasterxml.jackson.databind.ser.impl.WritableObjectId:generateId:53->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.impl.WritableObjectId.generateId:53 -> com.fasterxml.jackson.annotation.ObjectIdGenerator.generateId

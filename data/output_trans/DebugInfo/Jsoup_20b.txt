@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::discardsSpuriousByteOrderMark ===
+Exception: junit.framework.AssertionFailedError: expected:<[One]> but was:<[]>
+
+org.jsoup.helper.DataUtil:parseByteData:77->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":0,"limit":63,"capacity":67,"address":0},"TransVarBaseUriString":"http://foo.com/","TransVarParserForJson":{"treeBuilder":{"baseUriSetFromDoc":false,"formattingElements":[],"pendingTableCharacters":[],"framesetOk":true,"fosterInserts":false,"fragmentParsing":false},"maxErrors":0},"TransVarCharSetName":"UTF-8"}
+org.jsoup.helper.DataUtil:parseByteData:79->[Control Flow] Branch Info: Line: 79, Condition: if (TransVarCharSetName == null), Executed: false
+org.jsoup.helper.DataUtil:parseByteData:101->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:101 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.charset.Charset.forName
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.charset.Charset.decode
+org.jsoup.helper.DataUtil:parseByteData:102->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:102 -> java.nio.CharBuffer.toString
+org.jsoup.helper.DataUtil:parseByteData:103->[Local Variables] {"TransVarByteBuffer":{"hb":[-17,-69,-65,60,104,116,109,108,62,60,104,101,97,100,62,60,116,105,116,108,101,62,79,110,101,60,47,116,105,116,108,101,"..."],"offset":0,"isReadOnly":false,"bigEndian":true,"nativeByteOrder":false,"mark":-1,"position":63,"limit":63,"capacity":67,"address":0},"TransVarDoc":"﻿\u003chtml\u003e\u003chead\u003e\u003ctitle\u003eOne\u003c/title\u003e\u003c/head\u003e\u003cbody\u003eTwo\u003c/body\u003e\u003c/html\u003e"}
+org.jsoup.helper.DataUtil:parseByteData:104->[Control Flow] Branch Info: Line: 104, Condition: if (TransVarDocObject == null), Executed: true
+org.jsoup.helper.DataUtil:parseByteData:109->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:109 -> org.jsoup.parser.Parser.parseInput
+org.jsoup.helper.DataUtil:parseByteData:109->[Local Variables] "{TransVarParserForJson\u003dorg.jsoup.parser.Parser@4470f8a6, TransVarDocObject\u003d\u003chtml\u003e\n \u003chead\u003e\u003c/head\u003e\n \u003cbody\u003e\n  ﻿\n  \u003ctitle\u003eOne\u003c/title\u003eTwo\n \u003c/body\u003e\n\u003c/html\u003e}"
+org.jsoup.helper.DataUtil:parseByteData:110->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:110 -> org.jsoup.nodes.Document.outputSettings
+org.jsoup.helper.DataUtil:parseByteData:110->[Method Call] Call Stack: org.jsoup.helper.DataUtil.parseByteData:110 -> org.jsoup.nodes.Document$OutputSettings.charset
+org.jsoup.helper.DataUtil:parseByteData:104->[Control Flow] Branch Info: Line: 104, Condition: if (TransVarDocObject == null), Executed: false

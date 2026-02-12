@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math.estimation.AbstractEstimator.updateJacobian",
+    "doc": "/**\n     * Update the jacobian matrix.\n     */",
+    "code": "protected void updateJacobian() {\n        incrementJacobianEvaluationsCounter();\n        Arrays.fill(jacobian, 0);\n        for (int i = 0, index = 0; i < rows; i++) {\n            WeightedMeasurement wm = measurements[i];\n            double factor = -Math.sqrt(wm.getWeight());\n            for (int j = 0; j < cols; ++j) {\n                jacobian[index++] = factor * wm.getPartial(parameters[j]);\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.estimation.EstimationProblem.getAllParameters",
+    "doc": "/**\n   * Get all the parameters of the problem.\n   * @return parameters\n   */",
+    "code": "public EstimatedParameter[] getAllParameters();"
+  },
+  {
+    "method": "org.apache.commons.math.estimation.EstimationProblem.getMeasurements",
+    "doc": "/**\n   * Get the measurements of an estimation problem.\n   * @return measurements\n   */",
+    "code": "public WeightedMeasurement[] getMeasurements();"
+  }
+]

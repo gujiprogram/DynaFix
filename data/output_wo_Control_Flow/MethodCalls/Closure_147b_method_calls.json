@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CheckGlobalThis.getFunctionJsDocInfo",
+    "doc": "/**\n   * Gets a function's JSDoc information, if it has any. Checks for a few\n   * patterns (ellipses show where JSDoc would be):\n   * <pre>\n   * ... function() {}\n   * ... x = function() {};\n   * var ... x = function() {};\n   * ... var x = function() {};\n   * </pre>\n   */",
+    "code": "private JSDocInfo getFunctionJsDocInfo(Node n) {\n    JSDocInfo jsDoc = n.getJSDocInfo();\n    Node parent = n.getParent();\n    if (jsDoc == null) {\n      int parentType = parent.getType();\n      if (parentType == Token.NAME || parentType == Token.ASSIGN) {\n        jsDoc = parent.getJSDocInfo();\n        if (jsDoc == null && parentType == Token.NAME) {\n          Node gramps = parent.getParent();\n          if (gramps.getType() == Token.VAR) {\n            jsDoc = gramps.getJSDocInfo();\n          }\n        }\n      }\n    }\n    return jsDoc;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

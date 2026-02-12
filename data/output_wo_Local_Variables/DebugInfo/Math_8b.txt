@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.apache.commons.math3.distribution.DiscreteRealDistributionTest::testIssue942 ===
+
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:182->[Control Flow] Branch Info: Line: 182, Condition: if (sampleSize <= 0), Executed: false
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:187->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.sample:187 -> java.util.List.get
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:187->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.sample:187 -> java.lang.Object.getClass
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:187->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.sample:187 -> java.lang.reflect.Array.newInstance
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:189->[Control Flow] Branch Info: Line: 189, Condition: if (sampleSize < sampleSize), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:157->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.sample:157 -> org.apache.commons.math3.random.RandomGenerator.nextDouble
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:160->[Control Flow] Branch Info: Line: 160, Condition: if (this.probabilities < this.probabilities), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:162->[Control Flow] Branch Info: Line: 162, Condition: if (sum < 0), Executed: false
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:160->[Control Flow] Loop Info: Line: 160, Description: while at line 160
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:160->[Control Flow] Branch Info: Line: 160, Condition: if (this.probabilities < this.probabilities), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:162->[Control Flow] Branch Info: Line: 162, Condition: if (sum < 0), Executed: true
+org.apache.commons.math3.distribution.DiscreteDistribution:sample:163->[Method Call] Call Stack: org.apache.commons.math3.distribution.DiscreteDistribution.sample:163 -> java.util.List.get

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.handleBlockComment",
+    "doc": "/**\n   * Check to see if the given block comment looks like it should be JSDoc.\n   */",
+    "code": "private void handleBlockComment(Comment comment) {\n      errorReporter.warning(\n          SUSPICIOUS_COMMENT_WARNING,\n          sourceName,\n          comment.getLineno(), \"\", 0);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.setFileOverviewJsDoc",
+    "doc": "/**\n * IRFactory transforms the new AST to the old AST.\n *\n */",
+    "code": "private void setFileOverviewJsDoc(Node irNode) {\n    JSDocInfo rootNodeJsDoc = rootNodeJsDocHolder.getJSDocInfo();\n    if (rootNodeJsDoc != null) {\n      irNode.setJSDocInfo(rootNodeJsDoc);\n      rootNodeJsDoc.setAssociatedNode(irNode);\n    }\n\n    if (fileOverviewInfo != null) {\n      if ((irNode.getJSDocInfo() != null) &&\n          (irNode.getJSDocInfo().getLicense() != null)) {\n        fileOverviewInfo.setLicense(irNode.getJSDocInfo().getLicense());\n      }\n      irNode.setJSDocInfo(fileOverviewInfo);\n      fileOverviewInfo.setAssociatedNode(irNode);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.IRFactory.transform",
+    "doc": "/**\n   * @return true if the jsDocParser represents a fileoverview.\n   */",
+    "code": "private Node transform(AstNode node) {\n    Node irNode = justTransform(node);\n    JSDocInfo jsDocInfo = handleJsDoc(node, irNode);\n    if (jsDocInfo != null) {\n      irNode = maybeInjectCastNode(node, jsDocInfo, irNode);\n      irNode.setJSDocInfo(jsDocInfo);\n    }\n    setSourceInfo(irNode, node);\n    return irNode;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.head.ast.AstRoot.getComments",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.head.ast.Comment.getCommentType",
+    "doc": "[Source file not found]",
+    "code": ""
+  }
+]

@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: org.apache.commons.lang.StringEscapeUtilsTest::testEscapeHtmlHighUnicode ===
+Exception: junit.framework.ComparisonFailure: High unicode was not escaped correctly expected:<&#[119650];> but was:<&#[55348;&#57186];>
+
+org.apache.commons.lang.Entities:escape:828->[Local Variables] {"TransVarMyString":"𝍢","TransVarMyWriter":{"buf":"","lock":""}}
+org.apache.commons.lang.Entities:escape:829->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:829 -> java.lang.String.length
+org.apache.commons.lang.Entities:escape:829->[Local Variables] {"TransVarStrLen":2}
+org.apache.commons.lang.Entities:escape:830->[Local Variables] {"TransVarJ":0}
+org.apache.commons.lang.Entities:escape:831->[Control Flow] Branch Info: Line: 831, Condition: if (TransVarStrLen < TransVarStrLen), Executed: true
+org.apache.commons.lang.Entities:escape:835->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:835 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:escape:835->[Local Variables] {"TransVarCharAt":"?"}
+org.apache.commons.lang.Entities:escape:836->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:836 -> org.apache.commons.lang.Entities.entityName
+org.apache.commons.lang.Entities:escape:837->[Control Flow] Branch Info: Line: 837, Condition: if (TransVarEntityName1 == null), Executed: true
+org.apache.commons.lang.Entities:escape:841->[Control Flow] Branch Info: Line: 841, Condition: if (TransVarCharAt > TransVarCharAt), Executed: true
+org.apache.commons.lang.Entities:escape:842->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:842 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:842->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#","lock":"\u0026#"}}
+org.apache.commons.lang.Entities:escape:843->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:843 -> java.lang.Integer.toString
+org.apache.commons.lang.Entities:escape:843->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:843 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:843->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#55348","lock":"\u0026#55348"}}
+org.apache.commons.lang.Entities:escape:844->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:844 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:852->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#55348;","lock":"\u0026#55348;"}}
+org.apache.commons.lang.Entities:escape:853->[Local Variables] {"TransVarJ":1}
+org.apache.commons.lang.Entities:escape:830->[Control Flow] Loop Info: Line: 830, Description: while at line 830
+org.apache.commons.lang.Entities:escape:831->[Control Flow] Branch Info: Line: 831, Condition: if (TransVarStrLen < TransVarStrLen), Executed: true
+org.apache.commons.lang.Entities:escape:835->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:835 -> java.lang.String.charAt
+org.apache.commons.lang.Entities:escape:835->[Local Variables] {"TransVarCharAt":"?"}
+org.apache.commons.lang.Entities:escape:836->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:836 -> org.apache.commons.lang.Entities.entityName
+org.apache.commons.lang.Entities:escape:837->[Control Flow] Branch Info: Line: 837, Condition: if (TransVarEntityName1 == null), Executed: true
+org.apache.commons.lang.Entities:escape:841->[Control Flow] Branch Info: Line: 841, Condition: if (TransVarCharAt > TransVarCharAt), Executed: true
+org.apache.commons.lang.Entities:escape:842->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:842 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:842->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#55348;\u0026#","lock":"\u0026#55348;\u0026#"}}
+org.apache.commons.lang.Entities:escape:843->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:843 -> java.lang.Integer.toString
+org.apache.commons.lang.Entities:escape:843->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:843 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:843->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#55348;\u0026#57186","lock":"\u0026#55348;\u0026#57186"}}
+org.apache.commons.lang.Entities:escape:844->[Method Call] Call Stack: org.apache.commons.lang.Entities.escape:844 -> java.io.Writer.write
+org.apache.commons.lang.Entities:escape:852->[Local Variables] {"TransVarMyWriter":{"buf":"\u0026#55348;\u0026#57186;","lock":"\u0026#55348;\u0026#57186;"}}
+org.apache.commons.lang.Entities:escape:853->[Local Variables] {"TransVarJ":2}
+org.apache.commons.lang.Entities:escape:830->[Control Flow] Loop Info: Line: 830, Description: while at line 830
+org.apache.commons.lang.Entities:escape:831->[Control Flow] Branch Info: Line: 831, Condition: if (TransVarStrLen < TransVarStrLen), Executed: false

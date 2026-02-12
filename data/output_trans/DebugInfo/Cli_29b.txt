@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.cli.UtilTest::testStripLeadingAndTrailingQuotes ===
+Exception: junit.framework.ComparisonFailure: expected:<foo "bar["]> but was:<foo "bar[]>
+
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:67->[Local Variables] {"TransVarStr1":"\"foo\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:68 -> java.lang.String.startsWith
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Control Flow] Branch Info: Line: 68, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:73->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:73 -> java.lang.String.length
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:73->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:73 -> java.lang.String.substring
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Control Flow] Branch Info: Line: 68, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:74->[Local Variables] {"TransVarStr1":"foo\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:75->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:75 -> java.lang.String.length
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:75->[Local Variables] {"TransVarStr":4}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:76 -> java.lang.String.endsWith
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Control Flow] Branch Info: Line: 76, Condition: if (java.lang.String.endsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:81->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:81 -> java.lang.String.substring
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Control Flow] Branch Info: Line: 76, Condition: if (java.lang.String.endsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:83->[Local Variables] {"TransVarStr1":"foo"}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:67->[Local Variables] {"TransVarStr1":"foo \"bar\""}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:68 -> java.lang.String.startsWith
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:68->[Control Flow] Branch Info: Line: 68, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:75->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:75 -> java.lang.String.length
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:75->[Local Variables] {"TransVarStr":9}
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:76 -> java.lang.String.endsWith
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Control Flow] Branch Info: Line: 76, Condition: if (java.lang.String.endsWith() != 0), Executed: true
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:81->[Method Call] Call Stack: org.apache.commons.cli.Util.stripLeadingAndTrailingQuotes:81 -> java.lang.String.substring
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:76->[Control Flow] Branch Info: Line: 76, Condition: if (java.lang.String.endsWith() != 0), Executed: false
+org.apache.commons.cli.Util:stripLeadingAndTrailingQuotes:83->[Local Variables] {"TransVarStr1":"foo \"bar"}

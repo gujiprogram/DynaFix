@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.jsoup.helper.DataUtil.detectCharsetFromBom",
+    "doc": "/**\n     * Creates a random string, suitable for use as a mime boundary\n     */",
+    "code": "private static BomCharset detectCharsetFromBom(final ByteBuffer byteData) {\n        final Buffer buffer = byteData; // .mark and rewind used to return Buffer, now ByteBuffer, so cast for backward compat\n        buffer.mark();\n        byte[] bom = new byte[4];\n        if (byteData.remaining() >= bom.length) {\n            byteData.get(bom);\n            buffer.rewind();\n        }\n        if (bom[0] == 0x00 && bom[1] == 0x00 && bom[2] == (byte) 0xFE && bom[3] == (byte) 0xFF || // BE\n            bom[0] == (byte) 0xFF && bom[1] == (byte) 0xFE && bom[2] == 0x00 && bom[3] == 0x00) { // LE\n            return new BomCharset(\"UTF-32\", false); // and I hope it's on your system\n        } else if (bom[0] == (byte) 0xFE && bom[1] == (byte) 0xFF || // BE\n            bom[0] == (byte) 0xFF && bom[1] == (byte) 0xFE) {\n            return new BomCharset(\"UTF-16\", false); // in all Javas\n        } else if (bom[0] == (byte) 0xEF && bom[1] == (byte) 0xBB && bom[2] == (byte) 0xBF) {\n            return new BomCharset(\"UTF-8\", true); // in all Javas\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.DataUtil.readToByteBuffer",
+    "doc": "/**\n     * Read the input stream into a byte buffer. To deal with slow input streams, you may interrupt the thread this\n     * method is executing on. The data read until being interrupted will be available.\n     * @param inStream the input stream to read from\n     * @param maxSize the maximum size in bytes to read from the stream. Set to 0 to be unlimited.\n     * @return the filled byte buffer\n     * @throws IOException if an exception occurs whilst reading from the input stream.\n     */",
+    "code": "public static ByteBuffer readToByteBuffer(InputStream inStream, int maxSize) throws IOException {\n        Validate.isTrue(maxSize >= 0, \"maxSize must be 0 (unlimited) or larger\");\n        final ConstrainableInputStream input = ConstrainableInputStream.wrap(inStream, bufferSize, maxSize);\n        return input.readToByteBuffer(maxSize);\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.DataUtil.validateCharset",
+    "doc": "/**\n     * Parse out a charset from a content type header. If the charset is not supported, returns null (so the default\n     * will kick in.)\n     * @param contentType e.g. \"text/html; charset=EUC-JP\"\n     * @return \"EUC-JP\", or null if not found. Charset is trimmed and uppercased.\n     */",
+    "code": "return validateCharset(charset);\n        }\n        return null;\n    }\n\n    private static String validateCharset(String cs) {\n        if (cs == null || cs.length() == 0) return null;\n        cs = cs.trim().replaceAll(\"[\\\"']\", \"\");\n        try {"
+  },
+  {
+    "method": "org.jsoup.internal.ConstrainableInputStream.wrap",
+    "doc": "/**\n     * If this InputStream is not already a ConstrainableInputStream, let it be one.\n     * @param in the input stream to (maybe) wrap\n     * @param bufferSize the buffer size to use when reading\n     * @param maxSize the maximum size to allow to be read. 0 == infinite.\n     * @return a constrainable input stream\n     */",
+    "code": "public static ConstrainableInputStream wrap(InputStream in, int bufferSize, int maxSize) {\n        return in instanceof ConstrainableInputStream\n            ? (ConstrainableInputStream) in\n            : new ConstrainableInputStream(in, bufferSize, maxSize);\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.childNode",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.childNodeSize",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.nodes.Document.select",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jsoup.parser.Parser.parseInput",
+    "doc": "/**\n     * Create a new Parser, using the specified TreeBuilder\n     * @param treeBuilder TreeBuilder to use to parse input into Documents.\n     */",
+    "code": "public Document parseInput(String html, String baseUri) {\n        return treeBuilder.parse(new StringReader(html), baseUri, this);\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Elements.iterator",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

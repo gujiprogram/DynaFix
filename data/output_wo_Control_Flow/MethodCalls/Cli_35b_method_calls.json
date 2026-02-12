@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.cli.Util.stripLeadingHyphens",
+    "doc": "/**\n     * Remove the hyphens from the beginning of <code>str</code> and\n     * return the new String.\n     *\n     * @param str The string from which the hyphens should be removed.\n     *\n     * @return the new String.\n     */",
+    "code": "static String stripLeadingHyphens(String str)\n    {\n        if (str == null)\n        {\n            return null;\n        }\n        if (str.startsWith(\"--\"))\n        {\n            return str.substring(2, str.length());\n        }\n        else if (str.startsWith(\"-\"))\n        {\n            return str.substring(1, str.length());\n        }\n\n        return str;\n    }"
+  }
+]

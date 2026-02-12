@@ -1,0 +1,107 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.bindingsForBeanType",
+    "doc": "/**\n     * Accessor for type bindings that may be needed to fully resolve\n     * types of member object, such as return and argument types of\n     * methods and constructors, and types of fields.\n     */",
+    "code": "public abstract TypeBindings bindingsForBeanType();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.findAnyGetter",
+    "doc": "/**********************************************************\n     */",
+    "code": "public abstract AnnotatedMember findAnyGetter();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.BeanDescription.getClassAnnotations",
+    "doc": "/**\n     * Method for accessing collection of annotations the bean\n     * class has.\n     */",
+    "code": "public abstract Annotations getClassAnnotations();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializationConfig.canOverrideAccessModifiers",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializationConfig.isEnabled",
+    "doc": "/**********************************************************\n     */",
+    "code": "return isEnabled(SerializationFeature.WRAP_ROOT_VALUE);\n    }\n\n    @Override\n    public AnnotationIntrospector getAnnotationIntrospector()\n    {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.handlePrimaryContextualization",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers",
+    "doc": "/**\n     * List of modifiers that can change the way {@link BeanSerializer} instances\n     * are configured and constructed.\n     */",
+    "code": "public boolean hasSerializerModifiers() { return _modifiers.length > 0; }\n    public Iterable<Serializers> serializers() { return new ArrayIterator<Serializers>(_additionalSerializers); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMember.fixAccess",
+    "doc": "/**\n     * Method that can be called to modify access rights, by calling\n     * {@link java.lang.reflect.AccessibleObject#setAccessible} on\n     * the underlying annotated element.\n     */",
+    "code": "public final void fixAccess() {\n        ClassUtil.checkAndFixAccess(getMember());\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMember.getName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedMember.getType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerBuilder.build",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerBuilder.setAnyGetter",
+    "doc": "/**\n     * Initialization method called right after construction, to specify\n     * configuration to use.\n     *<p>\n     * Note: ideally should be passed in constructor, but for backwards\n     * compatibility, needed to add a setter instead\n     *\n     * @since 2.1\n     */",
+    "code": "public void setAnyGetter(AnyGetterWriter anyGetter) {\n        _anyGetter = anyGetter;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerBuilder.setFilterId",
+    "doc": "/**\n     * Initialization method called right after construction, to specify\n     * configuration to use.\n     *<p>\n     * Note: ideally should be passed in constructor, but for backwards\n     * compatibility, needed to add a setter instead\n     *\n     * @since 2.1\n     */",
+    "code": "public void setFilterId(Object filterId) {\n        _filterId = filterId;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerBuilder.setObjectIdWriter",
+    "doc": "/**\n     * Initialization method called right after construction, to specify\n     * configuration to use.\n     *<p>\n     * Note: ideally should be passed in constructor, but for backwards\n     * compatibility, needed to add a setter instead\n     *\n     * @since 2.1\n     */",
+    "code": "public void setObjectIdWriter(ObjectIdWriter w) {\n        _objectIdWriter = w;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerBuilder.setProperties",
+    "doc": "/**\n     * Initialization method called right after construction, to specify\n     * configuration to use.\n     *<p>\n     * Note: ideally should be passed in constructor, but for backwards\n     * compatibility, needed to add a setter instead\n     *\n     * @since 2.1\n     */",
+    "code": "public void setProperties(List<BeanPropertyWriter> properties) {\n        _properties = properties;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.constructObjectIdHandler",
+    "doc": "/**\n     * Method called to construct serializer for serializing specified bean type.\n     *\n     * @since 2.1\n     */",
+    "code": "protected ObjectIdWriter constructObjectIdHandler(SerializerProvider prov,\n            BeanDescription beanDesc, List<BeanPropertyWriter> props)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.createTypeSerializer",
+    "doc": "/**\n     * Method called to create a type information serializer for values of given\n     * container property\n     * if one is needed. If not needed (no polymorphic handling configured), should\n     * return null.\n     *\n     * @param containerType Declared type of the container to use as the base type for type information serializer\n     *\n     * @return Type serializer to use for property value contents, if one is needed; null if not.\n     */",
+    "code": "return createTypeSerializer(config, baseType);\n        }\n        Collection<NamedType> subtypes = config.getSubtypeResolver().collectAndResolveSubtypes(\n                accessor, config, ai, baseType);\n        return b.buildTypeSerializer(config, baseType, subtypes);\n    }\n\n    public TypeSerializer findPropertyContentTypeSerializer(JavaType containerType,\n            SerializationConfig config, AnnotatedMember accessor)\n        throws JsonMappingException\n    {\n        JavaType contentType = containerType.getContentType();\n        AnnotationIntrospector ai = config.getAnnotationIntrospector();\n        TypeResolverBuilder<?> b = ai.findPropertyContentTypeResolver(config, accessor, containerType);\n        if (b == null) {"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findFilterId",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.processViews",
+    "doc": "/**\n     * Method called to handle view information for constructed serializer,\n     * based on bean property writers.\n     *<p>\n     * Note that this method is designed to be overridden by sub-classes\n     * if they want to provide custom view handling. As such it is not\n     * considered an internal implementation detail, and will be supported\n     * as part of API going forward.\n     */",
+    "code": "protected void processViews(SerializationConfig config, BeanSerializerBuilder builder)\n    {\n        List<BeanPropertyWriter> props = builder.getProperties();\n        boolean includeByDefault = config.isEnabled(MapperFeature.DEFAULT_VIEW_INCLUSION);\n        final int propCount = props.size();\n        int viewsFound = 0;\n        BeanPropertyWriter[] filtered = new BeanPropertyWriter[propCount];\n        for (int i = 0; i < propCount; ++i) {\n            BeanPropertyWriter bpw = props.get(i);\n            Class<?>[] views = bpw.getViews();\n            if (views == null) { // no view info? include or exclude by default?\n                if (includeByDefault) {\n                    filtered[i] = bpw;\n                }\n            } else {\n                ++viewsFound;\n                filtered[i] = constructFilteredBeanWriter(bpw, views);\n            }\n        }\n        if (includeByDefault && viewsFound == 0) {\n            return;\n        }\n        builder.setFilteredProperties(filtered);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.std.MapSerializer.construct",
+    "doc": "/**\n     * @since 2.3\n     */",
+    "code": "public static MapSerializer construct(String[] ignoredList, JavaType mapType,\n            boolean staticValueType, TypeSerializer vts,"
+  }
+]

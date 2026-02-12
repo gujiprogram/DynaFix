@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.joda.time.format.DateTimeFormatter.printTo",
+    "doc": "/**\n     * Prints a ReadableInstant, using the chronology supplied by the instant.\n     *\n     * @param buf  the destination to format to, not null\n     * @param instant  instant to format, null means now\n     */",
+    "code": "public void printTo(StringBuffer buf, ReadableInstant instant) {\n        long millis = DateTimeUtils.getInstantMillis(instant);\n        Chronology chrono = DateTimeUtils.getInstantChronology(instant);\n        printTo(buf, millis, chrono);\n    }"
+  },
+  {
+    "method": "org.joda.time.format.DateTimeFormatter.requirePrinter",
+    "doc": "/**\n     * Checks whether printing is supported.\n     *\n     * @throws UnsupportedOperationException if printing is not supported\n     */",
+    "code": "private DateTimePrinter requirePrinter() {\n        DateTimePrinter printer = iPrinter;\n        if (printer == null) {\n            throw new UnsupportedOperationException(\"Printing not supported\");\n        }\n        return printer;\n    }"
+  },
+  {
+    "method": "org.joda.time.format.DateTimePrinter.estimatePrintedLength",
+    "doc": "/**\n     * Returns the expected maximum number of characters produced.\n     * The actual amount should rarely exceed this estimate.\n     *\n     * @return the estimated length\n     */",
+    "code": "int estimatePrintedLength();"
+  }
+]

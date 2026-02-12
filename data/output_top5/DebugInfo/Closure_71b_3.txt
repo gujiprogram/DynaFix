@@ -1,0 +1,72 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6 ===
+Exception: junit.framework.AssertionFailedError: Overriding private property of Foo.prototype.
+
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:204->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:204 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:200->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:200 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:201 -> com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Control Flow] Branch Info: Line: 201, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:202->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:202 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getOwnerFunction
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:203 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:204->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:204 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dSubFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:201 -> com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Control Flow] Branch Info: Line: 201, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:202->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:202 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getOwnerFunction
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:202->[Local Variables] "{owner\u003dfunction (new:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:203 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:200->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:200 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dSubFoo}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:201 -> com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Control Flow] Branch Info: Line: 201, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:201 -> com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Control Flow] Branch Info: Line: 201, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dfunction (new:Foo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:200->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:200 -> com.google.javascript.rhino.jstype.FunctionType.getInstanceType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:199 -> com.google.javascript.rhino.jstype.JSType.isConstructor
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:199->[Control Flow] Branch Info: Line: 199, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:201 -> com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:201->[Control Flow] Branch Info: Line: 201, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionPrototypeType() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:203->[Control Flow] Branch Info: Line: 203, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:196->[Local Variables] "{type\u003dfunction (new:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.normalizeClassType:197 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.CheckAccessControls:normalizeClassType:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() != 0), Executed: false

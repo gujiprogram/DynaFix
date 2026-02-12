@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExprCall",
+    "doc": "/**\n   * Is this node a call expression statement?\n   *\n   * @param n The node\n   * @return True if {@code n} is EXPR_RESULT and {@code n}'s\n   *     first child is CALL\n   */",
+    "code": "static boolean isExprCall(Node n) {\n    return n.getType() == Token.EXPR_RESULT\n        && n.getFirstChild().getType() == Token.CALL;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getQualifiedName",
+    "doc": "/**\n   * This function takes a set of GETPROP nodes and produces a string that is\n   * each property separated by dots. If the node ultimately under the left\n   * sub-tree is not a simple name, this is not a valid qualified name.\n   *\n   * @return a null if this is not a qualified name, or a dot-separated string\n   *         of the name and properties.\n   */",
+    "code": "public String getQualifiedName() {\n    if (type == Token.NAME) {\n      return getString();\n    } else if (type == Token.GETPROP) {\n      String left = getFirstChild().getQualifiedName();\n      if (left == null) {\n        return null;\n      }\n      return left + \".\" + getLastChild().getString();\n    } else if (type == Token.THIS) {\n      return \"this\";\n    } else {\n      return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

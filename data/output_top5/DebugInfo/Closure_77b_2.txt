@@ -1,0 +1,19 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testZero ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="\[]0"> but was:<var x="\[u000]0">
+
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1126->[Local Variables] {"c":"\u0000","sb":"\""}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1143->[Local Variables] {"codePoint":0,"out":"\""}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1144->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1144 -> java.lang.Character.isSupplementaryCodePoint
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1144->[Control Flow] Branch Info: Line: 1144, Condition: if (codePoint != 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1154->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1154 -> java.lang.Appendable.append
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1154->[Local Variables] {"out":"\"\\u"}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1155->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1155 -> java.lang.Appendable.append
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1155->[Local Variables] {"out":"\"\\u0"}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1156->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1156 -> java.lang.Appendable.append
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1156->[Local Variables] {"out":"\"\\u00"}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1157->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1157 -> java.lang.Appendable.append
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1157->[Local Variables] {"out":"\"\\u000"}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1158->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation:1158 -> java.lang.Appendable.append
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1158->[Local Variables] {"out":"\"\\u0000"}
+com.google.javascript.jscomp.CodeGenerator:appendHexJavaScriptRepresentation:1130->[Local Variables] {"sb":"\"\\u0000"}

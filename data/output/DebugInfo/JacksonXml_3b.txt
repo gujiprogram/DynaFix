@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.dataformat.xml.stream.XmlParserNextXxxTest::testXmlAttributesWithNextTextValue ===
+Exception: junit.framework.ComparisonFailure: expected:<7> but was:<null>
+
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser:nextTextValue:604->[Control Flow] Branch Info: Line: 604, Condition: if (this._nextToken != null), Executed: false
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser:nextTextValue:617->[Method Call] Call Stack: com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser.nextTextValue:617 -> com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.next
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser:nextTextValue:619->[Local Variables] {"token":4}
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser:nextTextValue:620->[Control Flow] Branch Info: Line: 620, Condition: if (token == token), Executed: false
+com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser:nextTextValue:669->[Method Call] Call Stack: com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser.nextTextValue:669 -> com.fasterxml.jackson.dataformat.xml.deser.XmlTokenStream.getText

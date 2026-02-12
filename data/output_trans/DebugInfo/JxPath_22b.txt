@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.JXPath154Test::testInnerEmptyNamespaceDOM ===
+Exception: junit.framework.ComparisonFailure: expected:</b:foo[1]/[test[1]]> but was:</b:foo[1]/[node()[2]]>
+
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:685 -> org.w3c.dom.Element.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Local Variables] {"TransVarUriString":"bla"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:686->[Control Flow] Branch Info: Line: 686, Condition: if (TransVarUriString == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:675->[Local Variables] "{TransVarNodeObject\u003d[test: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:676->[Control Flow] Branch Info: Line: 676, Condition: if (TransVarNodeObject != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:684->[Local Variables] "{TransVarNewElement\u003d[test: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:685 -> org.w3c.dom.Element.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:686->[Control Flow] Branch Info: Line: 686, Condition: if (TransVarUriString == null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:690->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:690 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:691->[Control Flow] Branch Info: Line: 691, Condition: if (TransVarPrefixString == null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:694->[Control Flow] Branch Info: Line: 694, Condition: if (TransVarNode != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:695->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:695 -> org.w3c.dom.Node.getNodeType
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:695->[Control Flow] Branch Info: Line: 695, Condition: if (TransVarNode == TransVarNode), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:696->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:696 -> org.w3c.dom.Element.getAttributeNode
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:697->[Control Flow] Branch Info: Line: 697, Condition: if (TransVarAttribute != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:698->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:698 -> org.w3c.dom.Attr.getValue
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:260->[Control Flow] Branch Info: Line: 260, Condition: if (namespace != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:260->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:260 -> java.lang.String.equals
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:244->[Control Flow] Branch Info: Line: 244, Condition: if (namespace == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:260->[Control Flow] Branch Info: Line: 260, Condition: if (java.lang.String.equals() != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:265->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:265 -> java.util.Map.put
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:266->[Control Flow] Branch Info: Line: 266, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:675->[Local Variables] "{TransVarNodeObject\u003d[b:foo: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:676->[Control Flow] Branch Info: Line: 676, Condition: if (TransVarNodeObject != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:684->[Local Variables] "{TransVarNewElement\u003d[b:foo: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:685 -> org.w3c.dom.Element.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Local Variables] {"TransVarUriString":"bla"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:686->[Control Flow] Branch Info: Line: 686, Condition: if (TransVarUriString == null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:675->[Local Variables] "{TransVarNodeObject\u003d[test: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:676->[Control Flow] Branch Info: Line: 676, Condition: if (TransVarNodeObject != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:684->[Local Variables] "{TransVarNewElement\u003d[test: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:685->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:685 -> org.w3c.dom.Element.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:686->[Control Flow] Branch Info: Line: 686, Condition: if (TransVarUriString == null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:690->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:690 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:691->[Control Flow] Branch Info: Line: 691, Condition: if (TransVarPrefixString == null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:692->[Local Variables] {"TransVarPrefixName":"xmlns"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:693->[Local Variables] "{TransVarNode\u003d[test: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:694->[Control Flow] Branch Info: Line: 694, Condition: if (TransVarNode != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:695->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:695 -> org.w3c.dom.Node.getNodeType
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:695->[Control Flow] Branch Info: Line: 695, Condition: if (TransVarNode == TransVarNode), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:696->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:696 -> org.w3c.dom.Element.getAttributeNode
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:696->[Local Variables] "{TransVarAttribute\u003dxmlns\u003d\"\"}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:697->[Control Flow] Branch Info: Line: 697, Condition: if (TransVarAttribute != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:698->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI:698 -> org.w3c.dom.Attr.getValue
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:675->[Local Variables] "{TransVarNodeObject\u003d[b:foo: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:676->[Control Flow] Branch Info: Line: 676, Condition: if (TransVarNodeObject != 0), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:getNamespaceURI:684->[Local Variables] "{TransVarNewElement\u003d[b:foo: null]}"

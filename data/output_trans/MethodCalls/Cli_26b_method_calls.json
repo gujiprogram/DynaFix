@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.apache.commons.cli.Option.setArgName",
+    "doc": "/**\n     * Sets the display name for the argument value.\n     *\n     * @param argName the display name for the argument value.\n     */",
+    "code": "public void setArgName(String argName)\n    {\n        this.argName = argName;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setArgs",
+    "doc": "/**\n     * Sets the number of argument values this Option can take.\n     *\n     * @param num the number of argument values\n     */",
+    "code": "public void setArgs(int num)\n    {\n        this.numberOfArgs = num;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setLongOpt",
+    "doc": "/**\n     * Sets the long name of this Option.\n     *\n     * @param longOpt the long name of this Option\n     */",
+    "code": "public void setLongOpt(String longOpt)\n    {\n        this.longOpt = longOpt;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setOptionalArg",
+    "doc": "/**\n     * Sets whether this Option can have an optional argument.\n     *\n     * @param optionalArg specifies whether the Option can have\n     * an optional argument.\n     */",
+    "code": "public void setOptionalArg(boolean optionalArg)\n    {\n        this.optionalArg = optionalArg;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setRequired",
+    "doc": "/**\n     * Sets whether this Option is mandatory.\n     *\n     * @param required specifies whether this Option is mandatory\n     */",
+    "code": "public void setRequired(boolean required)\n    {\n        this.required = required;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setType",
+    "doc": "/**\n     * Sets the type of this Option.\n     *\n     * @param type the type of this Option\n     */",
+    "code": "public void setType(Object type)\n    {\n        this.type = type;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.Option.setValueSeparator",
+    "doc": "/**\n     * Sets the value separator.  For example if the argument value\n     * was a Java property, the value separator would be '='.\n     *\n     * @param sep The value separator.\n     */",
+    "code": "public void setValueSeparator(char sep)\n    {\n        this.valuesep = sep;\n    }"
+  },
+  {
+    "method": "org.apache.commons.cli.OptionBuilder.reset",
+    "doc": "/**\n     * Resets the member variables to their default values.\n     */",
+    "code": "private static void reset()\n    {\n        description = null;\n        argName = \"arg\";\n        longopt = null;\n        type = null;\n        required = false;\n        numberOfArgs = Option.UNINITIALIZED;\n\n\n        optionalArg = false;\n        valuesep = (char) 0;\n    }"
+  }
+]

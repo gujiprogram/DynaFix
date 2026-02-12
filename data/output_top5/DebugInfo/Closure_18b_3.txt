@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.IntegrationTest::testDependencySorting ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Compiler:newExternInput:1026->[Local Variables] {"name":"{SyntheticVarsDeclar}"}
+com.google.javascript.jscomp.Compiler:newExternInput:1027->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1027 -> com.google.javascript.jscomp.SyntheticAst.<init>
+com.google.javascript.jscomp.Compiler:newExternInput:1027->[Local Variables] {"ast":{"inputId":{"id":"{SyntheticVarsDeclar}"},"sourceFile":{"fileName":"{SyntheticVarsDeclar}","isExternFile":false},"root":{"type":132,"propListHead":{"objectValue":{"fileName":"{SyntheticVarsDeclar}","isExternFile":false},"next":{"objectValue":{"id":"{SyntheticVarsDeclar}"},"propType":53},"propType":51},"sourcePosition":-1}}}
+com.google.javascript.jscomp.Compiler:newExternInput:1028->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1028 -> com.google.javascript.jscomp.SourceAst.getInputId
+com.google.javascript.jscomp.Compiler:newExternInput:1028->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1028 -> java.util.Map.containsKey
+com.google.javascript.jscomp.Compiler:newExternInput:1028->[Control Flow] Branch Info: Line: 1028, Condition: if (ast != 0), Executed: false
+com.google.javascript.jscomp.Compiler:newExternInput:1031->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1031 -> com.google.javascript.jscomp.CompilerInput.<init>
+com.google.javascript.jscomp.Compiler:newExternInput:1031->[Local Variables] {"input":{"id":{"id":"{SyntheticVarsDeclar}"},"ast":{"inputId":{"id":"{SyntheticVarsDeclar}"},"sourceFile":{"fileName":"{SyntheticVarsDeclar}","isExternFile":true},"root":{"type":132,"propListHead":{"objectValue":{"fileName":"{SyntheticVarsDeclar}","isExternFile":true},"next":{"objectValue":{"id":"{SyntheticVarsDeclar}"},"propType":53},"propType":51},"sourcePosition":-1}},"provides":[],"requires":[],"generatedDependencyInfoFromSource":false},"ast":{"inputId":{"id":"{SyntheticVarsDeclar}"},"sourceFile":{"fileName":"{SyntheticVarsDeclar}","isExternFile":true},"root":{"type":132,"propListHead":{"objectValue":{"fileName":"{SyntheticVarsDeclar}","isExternFile":true},"next":{"objectValue":{"id":"{SyntheticVarsDeclar}"},"propType":53},"propType":51},"sourcePosition":-1}}}
+com.google.javascript.jscomp.Compiler:newExternInput:1032->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1032 -> com.google.javascript.jscomp.CompilerInput.getInputId
+com.google.javascript.jscomp.Compiler:newExternInput:1032->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1032 -> com.google.javascript.jscomp.Compiler.putCompilerInput
+com.google.javascript.jscomp.Compiler:newExternInput:1033->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1033 -> com.google.javascript.jscomp.SourceAst.getAstRoot
+com.google.javascript.jscomp.Compiler:newExternInput:1033->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1033 -> com.google.javascript.rhino.Node.addChildToFront
+com.google.javascript.jscomp.Compiler:newExternInput:1033->[Local Variables] "{input\u003d{SyntheticVarsDeclar}, ast\u003dcom.google.javascript.jscomp.SyntheticAst@748ec962}"
+com.google.javascript.jscomp.Compiler:newExternInput:1034->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.newExternInput:1034 -> java.util.List.add

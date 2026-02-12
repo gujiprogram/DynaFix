@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeInference.traverseName",
+    "doc": "/**\n   * Declares a property on its owner, if necessary.\n   * @return True if a property was declared.\n   */",
+    "code": "private FlowScope traverseName(Node n, FlowScope scope) {\n    String varName = n.getString();\n    Node value = n.getFirstChild();\n    JSType type = n.getJSType();\n    if (value != null) {\n      scope = traverse(value, scope);\n          getJSType(value));\n      return scope;\n    } else {\n      StaticSlot<JSType> var = scope.getSlot(varName);\n      if (var != null) {\n\n        boolean isInferred = var.isTypeInferred();\n        boolean unflowable = isInferred &&\n            isUnflowable(syntacticScope.getVar(varName));\n\n        boolean nonLocalInferredSlot =\n            isInferred &&\n            syntacticScope.getParent() != null &&\n            var == syntacticScope.getParent().getSlot(varName);\n\n        if (!unflowable && !nonLocalInferredSlot) {\n          type = var.getType();\n          if (type == null) {\n            type = getNativeType(UNKNOWN_TYPE);\n          }\n        }\n      }\n    }\n    n.setJSType(type);\n    return scope;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSDocInfo",
+    "doc": "/**\n   * Get the {@link JSDocInfo} attached to this node.\n   * @return the information or {@code null} if no JSDoc is attached to this\n   * node\n   */",
+    "code": "public JSDocInfo getJSDocInfo() {\n    return (JSDocInfo) getProp(JSDOC_INFO_PROP);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isGetProp",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

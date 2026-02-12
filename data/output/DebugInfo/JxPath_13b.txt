@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.model.ExternalXMLNamespaceTest::testCreateAndSetAttributeDOM ===
+Exception: org.apache.commons.jxpath.JXPathException: Unknown namespace prefix: A
+
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:115->[Local Variables] {"prefix":"A"}
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:116->[Method Call] Call Stack: org.apache.commons.jxpath.ri.NamespaceResolver.getNamespaceURI:116 -> java.util.HashMap.get
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:116->[Local Variables] {"uri":"foo"}
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:117->[Control Flow] Branch Info: Line: 117, Condition: if (uri == null), Executed: false
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:117->[Control Flow] Branch Info: Line: 117, Condition: if (this.pointer != null), Executed: false
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:120->[Control Flow] Branch Info: Line: 120, Condition: if (uri == null), Executed: false
+org.apache.commons.jxpath.ri.NamespaceResolver:getNamespaceURI:120->[Control Flow] Branch Info: Line: 120, Condition: if (this.parent != null), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:408->[Local Variables] "{context\u003dorg.apache.commons.jxpath.ri.JXPathContextReferenceImpl@6fe1b4fb, name\u003dA:newAttr}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:409->[Control Flow] Branch Info: Line: 409, Condition: if (this.node == false), Executed: false
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:412->[Local Variables] "{element\u003d[ElementA: null]}"
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:413->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:413 -> org.apache.commons.jxpath.ri.QName.getPrefix
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:413->[Local Variables] {"prefix":"A"}
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:414->[Control Flow] Branch Info: Line: 414, Condition: if (prefix != null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:415->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:415 -> org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.getNamespaceURI
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:416->[Control Flow] Branch Info: Line: 416, Condition: if (it == null), Executed: true
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.append
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> java.lang.StringBuilder.toString
+org.apache.commons.jxpath.ri.model.dom.DOMNodePointer:createAttribute:417->[Method Call] Call Stack: org.apache.commons.jxpath.ri.model.dom.DOMNodePointer.createAttribute:417 -> org.apache.commons.jxpath.JXPathException.<init>

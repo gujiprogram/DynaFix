@@ -1,0 +1,60 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.DisambiguatePropertiesTest::testOneType4 ===
+Exception: junit.framework.ComparisonFailure: expected:<{[]}> but was:<{[a=[[Foo.prototype]]]}>
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.DisambiguatePropertiesTest::testTwoTypes4 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:633 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Control Flow] Branch Info: Line: 633, Condition: if (newName != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:640->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:640 -> java.lang.String.equals
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:640->[Control Flow] Branch Info: Line: 640, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.String.replaceAll
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:645->[Local Variables] {"newName":"Bar_prototype$a"}
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Set.iterator
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Branch Info: Line: 646, Condition: if (type != 0), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.next
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:647->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:647 -> java.util.Map.put
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:647->[Local Variables] {"names":{"Foo.prototype":"Foo_prototype$a","Bar.prototype":"Bar_prototype$a"}}
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Loop Info: Line: 646, Description: while at line 646
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Branch Info: Line: 646, Condition: if (type != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Control Flow] Loop Info: Line: 629, Description: while at line 629
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:629 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Control Flow] Branch Info: Line: 629, Condition: if (var4 != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:643->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:643 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:645->[Local Variables] {"newName":"Foo_prototype$a"}
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Set.iterator
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Branch Info: Line: 646, Condition: if (type != 0), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.next
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:647->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:647 -> java.util.Map.put
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:647->[Local Variables] {"names":{"Foo.prototype":"Foo_prototype$a"}}
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Loop Info: Line: 646, Description: while at line 646
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:646 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:646->[Control Flow] Branch Info: Line: 646, Condition: if (type != 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Control Flow] Loop Info: Line: 629, Description: while at line 629
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:629 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Control Flow] Branch Info: Line: 629, Condition: if (var4 != 0), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:629 -> java.util.Iterator.next
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:629->[Local Variables] "{set\u003d[Bar.prototype]}"
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:630->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:630 -> java.util.Set.isEmpty
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:630->[Control Flow] Branch Info: Line: 630, Condition: if (set == 0), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:630->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:630 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:633 -> java.util.Set.iterator
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:633 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Control Flow] Branch Info: Line: 633, Condition: if (newName != 0), Executed: true
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:633 -> java.util.Iterator.next
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Local Variables] "{type\u003dBar.prototype}"
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:634->[Control Flow] Branch Info: Line: 634, Condition: if (typeName != null), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:635->[Method Call] Call Stack: com.google.javascript.jscomp.DisambiguateProperties.buildPropNames:635 -> java.lang.Object.toString
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:634->[Control Flow] Branch Info: Line: 634, Condition: if (java.lang.String.compareTo() < 0), Executed: false
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:636->[Local Variables] {"typeName":"Bar.prototype"}
+com.google.javascript.jscomp.DisambiguateProperties:buildPropNames:633->[Control Flow] Loop Info: Line: 633, Description: while at line 633

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.jsoup.nodes.Attribute.createFromEncoded",
+    "doc": "/**\n     * Create a new Attribute from an unencoded key and a HMTL attribute encoded value.\n     * @param unencodedKey assumes the key is not encoded, as can be only run of simple \\w chars.\n     * @param encodedValue HTML attribute encoded value\n     * @return attribute\n     */",
+    "code": "public static Attribute createFromEncoded(String unencodedKey, String encodedValue) {\n        String value = Entities.unescape(encodedValue);\n        return new Attribute(unencodedKey, value);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.consume",
+    "doc": "/**\n     * Consume one character off queue.\n     * @return first character on queue.\n     */",
+    "code": "public Character consume() {\n        Character c = queue.charAt(pos);\n        pos++;\n        return c;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.consumeAttributeKey",
+    "doc": "/**\n     Consume an attribute key off the queue (letter, digit, -, _, :\")\n     @return attribute key\n     */",
+    "code": "public String consumeAttributeKey() {\n        int start = pos;\n        while (!isEmpty() && (matchesWord() || matchesAny('-', '_', ':')))\n            pos++;\n\n        return queue.substring(start, pos);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.consumeWhitespace",
+    "doc": "/**\n     * Pulls the next run of whitespace characters of the queue.\n     */",
+    "code": "public boolean consumeWhitespace() {\n        boolean seen = false;\n        while (matchesWhitespace()) {\n            pos++;\n            seen = true;\n        }\n        return seen;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.isEmpty",
+    "doc": "/**\n     * Is the queue empty?\n     * @return true if no data left in queue.\n     */",
+    "code": "public boolean isEmpty() {\n        return remainingLength() == 0;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchChomp",
+    "doc": "/**\n     * Tests if the queue matches the sequence (as with match), and if they do, removes the matched string from the\n     * queue.\n     * @param seq String to search for, and if found, remove from queue.\n     * @return true if found and removed, false if not found.\n     */",
+    "code": "public boolean matchChomp(String seq) {\n        if (matches(seq)) {\n            pos += seq.length();\n            return true;\n        } else {\n            return false;\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchesAny",
+    "doc": "/**\n     Tests if the next characters match any of the sequences. Case insensitive.\n     @param seq\n     @return\n     */",
+    "code": "public boolean matchesAny(String... seq) {\n        for (String s : seq) {\n            if (matches(s))\n                return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchesWhitespace",
+    "doc": "/**\n     Tests if queue starts with a whitespace character.\n     @return if starts with whitespace\n     */",
+    "code": "public boolean matchesWhitespace() {\n        return !isEmpty() && Character.isWhitespace(queue.charAt(pos));\n    }"
+  }
+]

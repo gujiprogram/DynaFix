@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVParserTest::testDuplicateHeaderEntries ===
+
+org.apache.commons.csv.CSVParser:initializeHeader:350->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:350 -> org.apache.commons.csv.CSVFormat.getHeader
+org.apache.commons.csv.CSVParser:initializeHeader:350->[Local Variables] {"formatHeader":[]}
+org.apache.commons.csv.CSVParser:initializeHeader:352->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:352 -> java.util.LinkedHashMap.<init>
+org.apache.commons.csv.CSVParser:initializeHeader:353->[Local Variables] {"hdrMap":{}}
+org.apache.commons.csv.CSVParser:initializeHeader:357->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:357 -> org.apache.commons.csv.CSVParser.nextRecord
+org.apache.commons.csv.CSVParser:initializeHeader:357->[Local Variables] {"nextRecord":{"recordNumber":1,"values":["a","b","a"]}}
+org.apache.commons.csv.CSVParser:initializeHeader:359->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:359 -> org.apache.commons.csv.CSVRecord.values
+org.apache.commons.csv.CSVParser:initializeHeader:360->[Local Variables] {"header":["a","b","a"]}
+org.apache.commons.csv.CSVParser:initializeHeader:370->[Local Variables] {"i":0}
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.lang.Integer.valueOf
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.util.Map.put
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Local Variables] {"hdrMap":{"a":0}}
+org.apache.commons.csv.CSVParser:initializeHeader:370->[Local Variables] {"i":1}
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.lang.Integer.valueOf
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.util.Map.put
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Local Variables] {"hdrMap":{"a":0,"b":1}}
+org.apache.commons.csv.CSVParser:initializeHeader:370->[Local Variables] {"i":2}
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.lang.Integer.valueOf
+org.apache.commons.csv.CSVParser:initializeHeader:371->[Method Call] Call Stack: org.apache.commons.csv.CSVParser.initializeHeader:371 -> java.util.Map.put
+org.apache.commons.csv.CSVParser:initializeHeader:369->[Local Variables] {"hdrMap":{"a":2,"b":1}}

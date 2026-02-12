@@ -1,0 +1,34 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testCreateCopy3 ===
+Exception: junit.framework.AssertionFailedError: expected:<101.0> but was:<102.0>
+
+org.jfree.data.time.TimeSeries:createCopy:1052->[Local Variables] {"TransVarEndIndex":1,"TransVarStartIndex":0}
+org.jfree.data.time.TimeSeries:createCopy:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (TransVarStartIndex < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (TransVarStartIndex < TransVarStartIndex), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1065->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1065 -> org.jfree.data.general.Series.clone
+org.jfree.data.time.TimeSeries:createCopy:1065->[Local Variables] "{TransVarClonedTimeSeries\u003dorg.jfree.data.time.TimeSeries@4e33b357}"
+org.jfree.data.time.TimeSeries:createCopy:1066->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1066 -> java.util.ArrayList.<init>
+org.jfree.data.time.TimeSeries:createCopy:1066->[Local Variables] "{TransVarClonedTimeSeries\u003dorg.jfree.data.time.TimeSeries@6eaaaa4f}"
+org.jfree.data.time.TimeSeries:createCopy:1067->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1067 -> java.util.List.size
+org.jfree.data.time.TimeSeries:createCopy:1067->[Control Flow] Branch Info: Line: 1067, Condition: if (this.data > 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1068->[Local Variables] {"TransVarIndex2":0}
+org.jfree.data.time.TimeSeries:createCopy:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarEndIndex <= TransVarEndIndex), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1070->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1070 -> java.util.List.get
+org.jfree.data.time.TimeSeries:createCopy:1070->[Local Variables] {"TransVarClonedItem":{"period":{"year":2009,"firstMillisecond":1230796800000,"lastMillisecond":1262332799999},"value":100.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1071->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1071 -> org.jfree.data.time.TimeSeriesDataItem.clone
+org.jfree.data.time.TimeSeries:createCopy:1072->[Local Variables] {"TransVarCloneItem":{"period":{"year":2009,"firstMillisecond":1230796800000,"lastMillisecond":1262332799999},"value":100.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1073->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1073 -> org.jfree.data.time.TimeSeries.add
+org.jfree.data.time.TimeSeries:createCopy:1075->[Local Variables] "{TransVarClonedTimeSeries\u003dorg.jfree.data.time.TimeSeries@993e0f62}"
+org.jfree.data.time.TimeSeries:createCopy:1077->[Local Variables] {"TransVarIndex2":1}
+org.jfree.data.time.TimeSeries:createCopy:1068->[Control Flow] Loop Info: Line: 1068, Description: while at line 1068
+org.jfree.data.time.TimeSeries:createCopy:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarEndIndex <= TransVarEndIndex), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1070->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1070 -> java.util.List.get
+org.jfree.data.time.TimeSeries:createCopy:1070->[Local Variables] {"TransVarClonedItem":{"period":{"year":2010,"firstMillisecond":1262332800000,"lastMillisecond":1293868799999},"value":101.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1071->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1071 -> org.jfree.data.time.TimeSeriesDataItem.clone
+org.jfree.data.time.TimeSeries:createCopy:1072->[Local Variables] {"TransVarCloneItem":{"period":{"year":2010,"firstMillisecond":1262332800000,"lastMillisecond":1293868799999},"value":101.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1073->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1073 -> org.jfree.data.time.TimeSeries.add
+org.jfree.data.time.TimeSeries:createCopy:1075->[Local Variables] "{TransVarClonedTimeSeries\u003dorg.jfree.data.time.TimeSeries@8a618782}"
+org.jfree.data.time.TimeSeries:createCopy:1077->[Local Variables] {"TransVarIndex2":2}
+org.jfree.data.time.TimeSeries:createCopy:1068->[Control Flow] Loop Info: Line: 1068, Description: while at line 1068
+org.jfree.data.time.TimeSeries:createCopy:1067->[Control Flow] Branch Info: Line: 1067, Condition: if (this.data > 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1069->[Control Flow] Branch Info: Line: 1069, Condition: if (TransVarEndIndex <= TransVarEndIndex), Executed: false

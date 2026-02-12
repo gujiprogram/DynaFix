@@ -1,0 +1,32 @@
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::testCharset ===
+Exception: junit.framework.AssertionFailedError: expected:<[utf]-8> but was:<[UTF]-8>
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:130->[Local Variables] {"TransVarType":"text/html;charset\u003dutf-8 "}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:131->[Control Flow] Branch Info: Line: 131, Condition: if (TransVarType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:132->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:132 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:132->[Local Variables] {"TransVarMatch":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":2},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":24,"lookbehindTo":0,"text":"text/html;charset\u003dutf-8 ","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:133->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:133 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:133->[Control Flow] Branch Info: Line: 133, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:136->[Local Variables] {"TransVarMatch":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":2},"groups":[10,23,18,23,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":24,"lookbehindTo":0,"text":"text/html;charset\u003dutf-8 ","acceptMode":0,"first":10,"last":23,"oldLast":23,"lastAppendPosition":0,"locals":[-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:137 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:137 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Local Variables] {"TransVarMimeType":"utf-8"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:138->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:138 -> java.lang.String.toUpperCase
+org.jsoup.helper.DataUtil:getCharsetFromContentType:138->[Local Variables] {"TransVarMimeType":"UTF-8"}
+
+=== Debug Info for Test: org.jsoup.helper.DataUtilTest::testQuotedCharset ===
+Exception: junit.framework.AssertionFailedError: expected:<[utf]-8> but was:<[UTF]-8>
+
+org.jsoup.helper.DataUtil:getCharsetFromContentType:130->[Local Variables] {"TransVarType":"text/html; charset\u003d\"utf-8\""}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:131->[Control Flow] Branch Info: Line: 131, Condition: if (TransVarType == null), Executed: false
+org.jsoup.helper.DataUtil:getCharsetFromContentType:132->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:132 -> java.util.regex.Pattern.matcher
+org.jsoup.helper.DataUtil:getCharsetFromContentType:132->[Local Variables] {"TransVarMatch":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":2},"groups":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":26,"lookbehindTo":0,"text":"text/html; charset\u003d\"utf-8\"","acceptMode":0,"first":-1,"last":0,"oldLast":-1,"lastAppendPosition":0,"locals":[-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:133->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:133 -> java.util.regex.Matcher.find
+org.jsoup.helper.DataUtil:getCharsetFromContentType:133->[Control Flow] Branch Info: Line: 133, Condition: if (java.util.regex.Matcher.find() != 0), Executed: true
+org.jsoup.helper.DataUtil:getCharsetFromContentType:136->[Local Variables] {"TransVarMatch":{"parentPattern":{"pattern":"(?i)\\bcharset\u003d\\s*\"?([^\\s;\"]*)","flags":2},"groups":[11,25,20,25,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],"from":0,"to":26,"lookbehindTo":0,"text":"text/html; charset\u003d\"utf-8\"","acceptMode":0,"first":11,"last":25,"oldLast":25,"lastAppendPosition":0,"locals":[-1],"hitEnd":false,"requireEnd":false,"transparentBounds":false,"anchoringBounds":true}}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:137 -> java.util.regex.Matcher.group
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:137 -> java.lang.String.trim
+org.jsoup.helper.DataUtil:getCharsetFromContentType:137->[Local Variables] {"TransVarMimeType":"utf-8"}
+org.jsoup.helper.DataUtil:getCharsetFromContentType:138->[Method Call] Call Stack: org.jsoup.helper.DataUtil.getCharsetFromContentType:138 -> java.lang.String.toUpperCase
+org.jsoup.helper.DataUtil:getCharsetFromContentType:138->[Local Variables] {"TransVarMimeType":"UTF-8"}

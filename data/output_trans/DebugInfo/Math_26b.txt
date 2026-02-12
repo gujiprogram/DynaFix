@@ -1,0 +1,54 @@
+
+=== Debug Info for Test: org.apache.commons.math3.fraction.FractionTest::testIntegerOverflow ===
+Exception: junit.framework.AssertionFailedError: an exception should have been thrown
+
+org.apache.commons.math3.fraction.Fraction:<init>:120->[Local Variables] {"value":-1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:176->[Local Variables] {"TransVarDoubleValue":-1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:182->[Local Variables] {"TransVarDoubleR0":-1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:183->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:183 -> org.apache.commons.math3.util.FastMath.floor
+org.apache.commons.math3.fraction.Fraction:<init>:183->[Local Variables] {"TransVarA0_long":-10000000000}
+org.apache.commons.math3.fraction.Fraction:<init>:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarMaxOverflow > 0), Executed: false
+org.apache.commons.math3.fraction.Fraction:<init>:193->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:193 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.fraction.Fraction:<init>:193->[Control Flow] Branch Info: Line: 193, Condition: if (TransVarDoubleEpsilon < 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarDoubleEpsilon > 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarDenom < 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:226->[Local Variables] {"TransVarP":0}
+org.apache.commons.math3.fraction.Fraction:<init>:227->[Local Variables] {"TransVarP2":1}
+org.apache.commons.math3.fraction.Fraction:<init>:228->[Local Variables] {"TransVarQ1":1}
+org.apache.commons.math3.fraction.Fraction:<init>:230->[Local Variables] {"TransVarA0_long":1}
+org.apache.commons.math3.fraction.Fraction:<init>:234->[Local Variables] {"TransVarDoubleR0":1.3333333333074633}
+org.apache.commons.math3.fraction.Fraction:<init>:235->[Control Flow] Branch Info: Line: 235, Condition: if (TransVarExit != 0), Executed: false
+org.apache.commons.math3.fraction.Fraction:<init>:213->[Local Variables] {"TransVarNn":2}
+org.apache.commons.math3.fraction.Fraction:<init>:214->[Local Variables] {"TransVarR2":3.0000000002328306}
+org.apache.commons.math3.fraction.Fraction:<init>:215->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:215 -> org.apache.commons.math3.util.FastMath.floor
+org.apache.commons.math3.fraction.Fraction:<init>:215->[Local Variables] {"TransVarA2":3}
+org.apache.commons.math3.fraction.Fraction:<init>:216->[Local Variables] {"TransVarP2_long":3}
+org.apache.commons.math3.fraction.Fraction:<init>:217->[Local Variables] {"TransVarQ2_1":4}
+org.apache.commons.math3.fraction.Fraction:<init>:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarMaxOverflow <= 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarMaxOverflow > 0), Executed: false
+org.apache.commons.math3.fraction.Fraction:<init>:222->[Local Variables] {"TransVarConvergent1":0.75}
+org.apache.commons.math3.fraction.Fraction:<init>:223->[Control Flow] Branch Info: Line: 223, Condition: if (TransVarMaxIteration < TransVarMaxIteration), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:224->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:224 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.fraction.Fraction:<init>:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarDoubleEpsilon > 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarDenom < 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:226->[Local Variables] {"TransVarP":1}
+org.apache.commons.math3.fraction.Fraction:<init>:227->[Local Variables] {"TransVarP2":3}
+org.apache.commons.math3.fraction.Fraction:<init>:229->[Local Variables] {"TransVarQ2":4}
+org.apache.commons.math3.fraction.Fraction:<init>:230->[Local Variables] {"TransVarA0_long":3}
+org.apache.commons.math3.fraction.Fraction:<init>:234->[Local Variables] {"TransVarDoubleR0":3.0000000002328306}
+org.apache.commons.math3.fraction.Fraction:<init>:235->[Control Flow] Branch Info: Line: 235, Condition: if (TransVarExit != 0), Executed: false
+org.apache.commons.math3.fraction.Fraction:<init>:213->[Local Variables] {"TransVarNn":3}
+org.apache.commons.math3.fraction.Fraction:<init>:214->[Local Variables] {"TransVarR2":4.294967296E9}
+org.apache.commons.math3.fraction.Fraction:<init>:215->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:215 -> org.apache.commons.math3.util.FastMath.floor
+org.apache.commons.math3.fraction.Fraction:<init>:215->[Local Variables] {"TransVarA2":4294967296}
+org.apache.commons.math3.fraction.Fraction:<init>:216->[Local Variables] {"TransVarP2_long":12884901889}
+org.apache.commons.math3.fraction.Fraction:<init>:217->[Local Variables] {"TransVarQ2_1":17179869185}
+org.apache.commons.math3.fraction.Fraction:<init>:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarMaxOverflow <= 0), Executed: false
+org.apache.commons.math3.fraction.Fraction:<init>:219->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:219 -> org.apache.commons.math3.fraction.FractionConversionException.<init>
+org.apache.commons.math3.fraction.Fraction:<init>:120->[Local Variables] {"value":1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:176->[Local Variables] {"TransVarDoubleValue":1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:182->[Local Variables] {"TransVarDoubleR0":1.0E10}
+org.apache.commons.math3.fraction.Fraction:<init>:183->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:183 -> org.apache.commons.math3.util.FastMath.floor
+org.apache.commons.math3.fraction.Fraction:<init>:183->[Local Variables] {"TransVarA0_long":10000000000}
+org.apache.commons.math3.fraction.Fraction:<init>:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarMaxOverflow > 0), Executed: true
+org.apache.commons.math3.fraction.Fraction:<init>:188->[Method Call] Call Stack: org.apache.commons.math3.fraction.Fraction.<init>:188 -> org.apache.commons.math3.fraction.FractionConversionException.<init>

@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.collections.map.MultiValueMap.createCollection",
+    "doc": "/**\n     * Creates a new instance of the map value Collection container\n     * using the factory.\n     * <p>\n     * This method can be overridden to perform your own processing\n     * instead of using the factory.\n     *\n     * @param size  the collection size that is about to be added\n     * @return the new collection\n     */",
+    "code": "protected Collection createCollection(int size) {\n        return (Collection) collectionFactory.create();\n    }"
+  },
+  {
+    "method": "org.apache.commons.collections.map.MultiValueMap.getCollection",
+    "doc": "/**\n     * Gets the collection mapped to the specified key.\n     * This method is a convenience method to typecast the result of <code>get(key)</code>.\n     *\n     * @param key  the key to retrieve\n     * @return the collection mapped to the key, null if no mapping\n     */",
+    "code": "public Collection getCollection(Object key) {\n        return (Collection) getMap().get(key);\n    }"
+  },
+  {
+    "method": "org.apache.commons.collections.map.MultiValueMap.getMap",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

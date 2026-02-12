@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.apache.commons.lang.StringEscapeUtilsTest::testEscapeJavaScript ===
+Exception: junit.framework.ComparisonFailure: expected:<...ipt>alert(\'aaa\');<[\]/script>\';> but was:<...ipt>alert(\'aaa\');<[]/script>\';>
+
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:122->[Method Call] Call Stack: org.apache.commons.lang.StringEscapeUtils.escapeJavaScript:122 -> org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:138->[Method Call] Call Stack: org.apache.commons.lang.StringEscapeUtils.escapeJavaScript:138 -> org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:137->[Local Variables] {"str":""}
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:138->[Method Call] Call Stack: org.apache.commons.lang.StringEscapeUtils.escapeJavaScript:138 -> org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:121->[Local Variables] {"str":"He didn\u0027t say, \"stop!\""}
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:122->[Method Call] Call Stack: org.apache.commons.lang.StringEscapeUtils.escapeJavaScript:122 -> org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:121->[Local Variables] {"str":"document.getElementById(\"test\").value \u003d \u0027\u003cscript\u003ealert(\u0027aaa\u0027);\u003c/script\u003e\u0027;"}
+org.apache.commons.lang.StringEscapeUtils:escapeJavaScript:122->[Method Call] Call Stack: org.apache.commons.lang.StringEscapeUtils.escapeJavaScript:122 -> org.apache.commons.lang.StringEscapeUtils.escapeJavaStyleString

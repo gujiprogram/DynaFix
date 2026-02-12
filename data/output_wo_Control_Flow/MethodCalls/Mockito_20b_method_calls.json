@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.asInternalMockHandler",
+    "doc": "[No documentation]",
+    "code": "private static InternalMockHandler asInternalMockHandler(MockHandler handler) {\n        if (!(handler instanceof InternalMockHandler)) {\n            throw new MockitoException(join(\n                    \"At the moment you cannot provide own implementations of MockHandler.\",\n                    \"Please see the javadocs for the MockMaker interface.\",\n                    \"\"\n            ));\n        }\n        return (InternalMockHandler) handler;\n    }"
+  },
+  {
+    "method": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker.ensureMockIsAssignableToMockedType",
+    "doc": "[No documentation]",
+    "code": "return ensureMockIsAssignableToMockedType(settings, mockInstance);\n        } catch (ClassCastException cce) {"
+  },
+  {
+    "method": "org.mockito.internal.creation.bytebuddy.CachingMockBytecodeGenerator.get",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.mockito.internal.creation.bytebuddy.ClassInstantiator.instantiate",
+    "doc": "/**\n*\n*/",
+    "code": "<T> T instantiate(Class<T> type);"
+  },
+  {
+    "method": "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor$MockAccess.setMockitoInterceptor",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.mockito.mock.MockCreationSettings.getExtraInterfaces",
+    "doc": "/**\n     * the extra interfaces the mock object should implement.\n     */",
+    "code": "Set<Class> getExtraInterfaces();"
+  },
+  {
+    "method": "org.mockito.mock.MockCreationSettings.getSerializableMode",
+    "doc": "/**\n     * @return the serializable mode of this mock\n     */",
+    "code": "SerializableMode getSerializableMode();"
+  },
+  {
+    "method": "org.mockito.mock.MockCreationSettings.getTypeToMock",
+    "doc": "/**\n     * Mocked type. An interface or class the mock should implement / extend.\n     */",
+    "code": "Class<T> getTypeToMock();"
+  }
+]

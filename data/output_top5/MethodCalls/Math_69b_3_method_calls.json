@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getColumn",
+    "doc": "/**\n     * Returns the entries in column number <code>col</code> as an array.\n     * <p>\n     * Column indices start at 0.  A <code>MatrixIndexException</code> is thrown\n     * unless <code>0 <= column < columnDimension.</code></p>\n     *\n     * @param column the column to be fetched\n     * @return array of entries in the column\n     * @throws MatrixIndexException if the specified column index is not valid\n     */",
+    "code": "double[] getColumn(int column) throws MatrixIndexException;"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.getColumnDimension",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.linear.RealMatrix.setEntry",
+    "doc": "/**\n     * Set the entry in the specified row and column.\n     * <p>\n     * Row and column indices start at 0 and must satisfy\n     * <ul>\n     * <li><code>0 <= row < rowDimension</code></li>\n     * <li><code> 0 <= column < columnDimension</code></li>\n     * </ul>\n     * otherwise a <code>MatrixIndexException</code> is thrown.</p>\n     *\n     * @param row  row location of entry to be set\n     * @param column  column location of entry to be set\n     * @param value matrix entry to be set in row,column\n     * @throws MatrixIndexException if the row or column index is not valid\n     * @since 2.0\n     */",
+    "code": "void setEntry(int row, int column, double value) throws MatrixIndexException;"
+  },
+  {
+    "method": "org.apache.commons.math.stat.correlation.PearsonsCorrelation.correlation",
+    "doc": "/**\n     * Computes the Pearson's product-moment correlation coefficient between the two arrays.\n     *\n     * </p>Throws IllegalArgumentException if the arrays do not have the same length\n     * or their common length is less than 2</p>\n     *\n     * @param xArray first data array\n     * @param yArray second data array\n     * @return Returns Pearson's correlation coefficient for the two arrays\n     * @throws  IllegalArgumentException if the arrays lengths do not match or\n     * there is insufficient data\n     */",
+    "code": "public double correlation(final double[] xArray, final double[] yArray) throws IllegalArgumentException {\n        SimpleRegression regression = new SimpleRegression();\n        if(xArray.length == yArray.length && xArray.length > 1) {\n            for(int i=0; i<xArray.length; i++) {\n                regression.addData(xArray[i], yArray[i]);\n            }\n            return regression.getR();\n        }\n        else {\n            throw MathRuntimeException.createIllegalArgumentException(\n                    \"invalid array dimensions. xArray has size {0}; yArray has {1} elements\",\n                    xArray.length, yArray.length);\n        }\n    }"
+  }
+]

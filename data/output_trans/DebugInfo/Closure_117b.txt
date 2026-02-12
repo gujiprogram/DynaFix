@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1047 ===
+Exception: junit.framework.ComparisonFailure: expected:<...p never defined on C[2]> but was:<...p never defined on C[3.c2_]>
+
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:756->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:756 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:756->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:756 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:756->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:756 -> java.lang.StringBuilder.toString
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:733->[Local Variables] "{TransVarBool\u003dtrue, TransVarNode\u003dGETPROP 16 [source_file: [testcode]] : (C2|null)}"
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:734->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:734 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:734->[Control Flow] Branch Info: Line: 734, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:738->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:738 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:738->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:738 -> com.google.javascript.jscomp.TypeValidator.getJSType
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:738->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:738 -> com.google.javascript.rhino.jstype.JSType.dereference
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:738->[Local Variables] "{TransVarType\u003dC3}"
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:739->[Control Flow] Branch Info: Line: 739, Condition: if (TransVarType1 != null), Executed: true
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:743->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:743 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:743->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:743 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:743->[Local Variables] {"TransVarName":"c2_"}
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:744 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Control Flow] Branch Info: Line: 744, Condition: if (com.google.javascript.rhino.jstype.ObjectType.getConstructor() != null), Executed: true
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:744 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:744 -> com.google.javascript.rhino.jstype.FunctionType.isInterface
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Control Flow] Branch Info: Line: 744, Condition: if (com.google.javascript.rhino.jstype.ObjectType.getConstructor() != null), Executed: false
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:744->[Control Flow] Branch Info: Line: 744, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isInterface() != 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarType1 != null), Executed: true
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:748->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:748 -> com.google.javascript.rhino.jstype.ObjectType.hasOwnProperty
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:748->[Control Flow] Branch Info: Line: 748, Condition: if (TransVarType1 != null), Executed: false
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:748->[Control Flow] Branch Info: Line: 748, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasOwnProperty() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:755->[Control Flow] Branch Info: Line: 755, Condition: if (TransVarType1 != null), Executed: true
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:755->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:755 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:755->[Control Flow] Branch Info: Line: 755, Condition: if (com.google.javascript.rhino.jstype.ObjectType.getConstructor() == null), Executed: false
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:756->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:756 -> com.google.javascript.rhino.jstype.ObjectType.toString
+com.google.javascript.jscomp.TypeValidator:getReadableJSTypeName:756->[Method Call] Call Stack: com.google.javascript.jscomp.TypeValidator.getReadableJSTypeName:756 -> java.lang.StringBuilder.append

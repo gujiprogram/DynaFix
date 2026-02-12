@@ -1,0 +1,44 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_831 ===
+Exception: junit.framework.AssertionFailedError: Parsed dates should be equal expected:<null> but was:<Mon Mar 02 21:00:00 PST 1970>
+
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:378->[Local Variables] {"field":7}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:379 -> java.lang.Integer.valueOf
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Local Variables] {"fieldInt":7}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:380->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:380 -> java.util.concurrent.ConcurrentMap.get
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: true
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:382->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:382 -> java.text.DateFormatSymbols.getInstance
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:382->[Local Variables] {"symbols":{"eras":["BC","AD"],"months":["January","February","March","April","May","June","July","August","September","October","November","December",""],"shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"weekdays":["","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"shortWeekdays":["","Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ampms":["AM","PM"],"localPatternChars":"GyMdkHmsSEDFwWahKzZ","locale":"en_US"}}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> java.text.DateFormatSymbols.getWeekdays
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> java.text.DateFormatSymbols.getShortWeekdays
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> org.apache.commons.lang3.time.FastDateParser.createKeyValues
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Local Variables] {"fieldKeyValues":[{"key":"Fri","value":6},{"key":"Friday","value":6},{"key":"Mon","value":2},{"key":"Monday","value":2},{"key":"Sat","value":7},{"key":"Saturday","value":7},{"key":"Sun","value":1},{"key":"Sunday","value":1},{"key":"Thu","value":5},{"key":"Thursday","value":5},{"key":"Tue","value":3},{"key":"Tuesday","value":3},{"key":"Wed","value":4},{"key":"Wednesday","value":4}]}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:406->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:406 -> java.util.concurrent.ConcurrentMap.putIfAbsent
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:407->[Control Flow] Branch Info: Line: 407, Condition: if (prior != null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:379 -> java.lang.Integer.valueOf
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:380->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:380 -> java.util.concurrent.ConcurrentMap.get
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:407->[Control Flow] Branch Info: Line: 407, Condition: if (prior != null), Executed: false
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateParserTest::testLANG_831 ===
+Exception: junit.framework.AssertionFailedError: Expected FDF failure, but got Mon Mar 02 21:00:00 PST 1970 for [M E,3  Tue] using (\p{IsNd}++)\s*+(Fri|Friday|Mon|Monday|Sat|Saturday|Sun|Sunday|Thu|Thursday|Tue|Tuesday|Wed|Wednesday)
+
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:378->[Local Variables] {"field":7}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:379 -> java.lang.Integer.valueOf
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Local Variables] {"fieldInt":7}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:380->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:380 -> java.util.concurrent.ConcurrentMap.get
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: true
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:382->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:382 -> java.text.DateFormatSymbols.getInstance
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:382->[Local Variables] {"symbols":{"eras":["BC","AD"],"months":["January","February","March","April","May","June","July","August","September","October","November","December",""],"shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"weekdays":["","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"shortWeekdays":["","Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ampms":["AM","PM"],"localPatternChars":"GyMdkHmsSEDFwWahKzZ","locale":"en_US"}}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> java.text.DateFormatSymbols.getWeekdays
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> java.text.DateFormatSymbols.getShortWeekdays
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:395 -> org.apache.commons.lang3.time.FastDateParser.createKeyValues
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:395->[Local Variables] {"fieldKeyValues":[{"key":"Fri","value":6},{"key":"Friday","value":6},{"key":"Mon","value":2},{"key":"Monday","value":2},{"key":"Sat","value":7},{"key":"Saturday","value":7},{"key":"Sun","value":1},{"key":"Sunday","value":1},{"key":"Thu","value":5},{"key":"Thursday","value":5},{"key":"Tue","value":3},{"key":"Tuesday","value":3},{"key":"Wed","value":4},{"key":"Wednesday","value":4}]}
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:406->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:406 -> java.util.concurrent.ConcurrentMap.putIfAbsent
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:407->[Control Flow] Branch Info: Line: 407, Condition: if (prior != null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:379->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:379 -> java.lang.Integer.valueOf
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:380->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getDisplayNames:380 -> java.util.concurrent.ConcurrentMap.get
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:381->[Control Flow] Branch Info: Line: 381, Condition: if (fieldKeyValues == null), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getDisplayNames:407->[Control Flow] Branch Info: Line: 407, Condition: if (prior != null), Executed: false

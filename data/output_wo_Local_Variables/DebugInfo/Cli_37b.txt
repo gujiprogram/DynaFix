@@ -1,0 +1,12 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI265Test::shouldParseShortOptionWithoutValue ===
+
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> java.lang.String.startsWith
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.startsWith() != 0), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> java.lang.String.length
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: true
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> java.lang.String.substring
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.isShortOption:302 -> org.apache.commons.cli.Options.hasShortOption
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: false
+org.apache.commons.cli.DefaultParser:isShortOption:302->[Control Flow] Branch Info: Line: 302, Condition: if (org.apache.commons.cli.Options.hasShortOption() != 0), Executed: false

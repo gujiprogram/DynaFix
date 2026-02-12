@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BrentSolver.setAbsoluteAccuracy",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BrentSolver.setMaximalIterationCount",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.analysis.solvers.BrentSolver.solve",
+    "doc": "/**\n     * Find a zero in the given interval with an initial guess.\n     * <p>Throws <code>IllegalArgumentException</code> if the values of the\n     * function at the three points have the same sign (note that it is\n     * allowed to have endpoints with the same sign if the initial point has\n     * opposite sign function-wise).</p>\n     *\n     * @param f function to solve.\n     * @param min the lower bound for the interval.\n     * @param max the upper bound for the interval.\n     * @param initial the start value to use (must be set to min if no\n     * initial point is known).\n     * @return the value where the function is zero\n     * @throws MaxIterationsExceededException the maximum iteration count\n     * is exceeded\n     * @throws FunctionEvaluationException if an error occurs evaluating\n     *  the function\n     * @throws IllegalArgumentException if initial is not between min and max\n     * (even if it <em>is</em> a root)\n     */",
+    "code": "public double solve(final UnivariateRealFunction f,\n                        final double min, final double max, final double initial)"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.EventHandler.g",
+    "doc": "/** Compute the value of the switching function.\n\n   * <p>The discrete events are generated when the sign of this\n   * switching function changes. The integrator will take care to change\n   * the stepsize in such a way these events occur exactly at step boundaries.\n   * The switching function must be continuous in its roots neighborhood\n   * (but not necessarily smooth), as the integrator will need to find its\n   * roots to locate precisely the events.</p>\n\n   * @param t current value of the independent <i>time</i> variable\n   * @param y array containing the current value of the state vector\n   * @return value of the g switching function\n   * @exception EventException if the switching function cannot be evaluated\n   */",
+    "code": "double g(double t, double[] y) throws EventException;"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.StepInterpolator.getInterpolatedState",
+    "doc": "/**\n   * Get the state vector of the interpolated point.\n   * <p>The returned vector is a reference to a reused array, so\n   * it should not be modified and it should be copied if it needs\n   * to be preserved across several calls.</p>\n   * @return state vector at time {@link #getInterpolatedTime}\n   * @see #getInterpolatedDerivatives()\n   * @throws DerivativeException if this call induces an automatic\n   * step finalization that throws one\n   */",
+    "code": "double[] getInterpolatedState() throws DerivativeException;"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.StepInterpolator.isForward",
+    "doc": "/** Check if the natural integration direction is forward.\n   * <p>This method provides the integration direction as specified by\n   * the integrator itself, it avoid some nasty problems in\n   * degenerated cases like null steps due to cancellation at step\n   * initialization, step control or discrete events\n   * triggering.</p>\n   * @return true if the integration variable (time) increases during\n   * integration\n   */",
+    "code": "boolean isForward();"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.StepInterpolator.setInterpolatedTime",
+    "doc": "/**\n   * Set the time of the interpolated point.\n   * <p>Setting the time outside of the current step is now allowed, but\n   * should be used with care since the accuracy of the interpolator will\n   * probably be very poor far from this step. This allowance has been\n   * added to simplify implementation of search algorithms near the\n   * step endpoints.</p>\n   * <p>Setting the time changes the instance internal state. If a\n   * specific state must be preserved, a copy of the instance must be\n   * created using {@link #copy()}.</p>\n   * @param time time of the interpolated point\n   */",
+    "code": "void setInterpolatedTime(double time);"
+  }
+]

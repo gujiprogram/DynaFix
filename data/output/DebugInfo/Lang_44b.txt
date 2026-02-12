@@ -1,0 +1,39 @@
+
+=== Debug Info for Test: org.apache.commons.lang.NumberUtilsTest::testLang457 ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+
+org.apache.commons.lang.NumberUtils:createNumber:138->[Local Variables] {"val":"l"}
+org.apache.commons.lang.NumberUtils:createNumber:139->[Control Flow] Branch Info: Line: 139, Condition: if (val == null), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:142->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:142 -> java.lang.String.length
+org.apache.commons.lang.NumberUtils:createNumber:142->[Control Flow] Branch Info: Line: 142, Condition: if (java.lang.String.length() == 0), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:145->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:145 -> java.lang.String.startsWith
+org.apache.commons.lang.NumberUtils:createNumber:145->[Control Flow] Branch Info: Line: 145, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:152->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:152 -> java.lang.String.startsWith
+org.apache.commons.lang.NumberUtils:createNumber:152->[Control Flow] Branch Info: Line: 152, Condition: if (java.lang.String.startsWith() == 0), Executed: true
+org.apache.commons.lang.NumberUtils:createNumber:152->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:152 -> java.lang.String.startsWith
+org.apache.commons.lang.NumberUtils:createNumber:152->[Control Flow] Branch Info: Line: 152, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:155->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:155 -> java.lang.String.length
+org.apache.commons.lang.NumberUtils:createNumber:155->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:155 -> java.lang.String.charAt
+org.apache.commons.lang.NumberUtils:createNumber:158->[Local Variables] {"lastChar":"l"}
+org.apache.commons.lang.NumberUtils:createNumber:159->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:159 -> java.lang.String.indexOf
+org.apache.commons.lang.NumberUtils:createNumber:159->[Local Variables] {"decPos":-1}
+org.apache.commons.lang.NumberUtils:createNumber:160->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:160 -> java.lang.String.indexOf
+org.apache.commons.lang.NumberUtils:createNumber:160->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:160 -> java.lang.String.indexOf
+org.apache.commons.lang.NumberUtils:createNumber:161->[Local Variables] {"expPos":-1}
+org.apache.commons.lang.NumberUtils:createNumber:162->[Control Flow] Branch Info: Line: 162, Condition: if (decPos > decPos), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:174->[Control Flow] Branch Info: Line: 174, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:178->[Local Variables] {"mant":"l"}
+org.apache.commons.lang.NumberUtils:createNumber:181->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:181 -> java.lang.Character.isDigit
+org.apache.commons.lang.NumberUtils:createNumber:181->[Control Flow] Branch Info: Line: 181, Condition: if (lastChar == 0), Executed: true
+org.apache.commons.lang.NumberUtils:createNumber:182->[Control Flow] Branch Info: Line: 182, Condition: if (expPos > expPos), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:182->[Control Flow] Branch Info: Line: 182, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:188->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:188 -> java.lang.String.length
+org.apache.commons.lang.NumberUtils:createNumber:188->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:188 -> java.lang.String.substring
+org.apache.commons.lang.NumberUtils:createNumber:188->[Local Variables] {"numeric":""}
+org.apache.commons.lang.NumberUtils:createNumber:189->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:189 -> org.apache.commons.lang.NumberUtils.isAllZeros
+org.apache.commons.lang.NumberUtils:createNumber:189->[Control Flow] Branch Info: Line: 189, Condition: if (mant != 0), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:189->[Control Flow] Branch Info: Line: 189, Condition: if (exp != 0), Executed: false
+org.apache.commons.lang.NumberUtils:createNumber:189->[Local Variables] {"allZeros":false}
+org.apache.commons.lang.NumberUtils:createNumber:193->[Control Flow] Branch Info: Line: 193, Condition: if (dec == null), Executed: true
+org.apache.commons.lang.NumberUtils:createNumber:193->[Control Flow] Branch Info: Line: 193, Condition: if (exp == null), Executed: true
+org.apache.commons.lang.NumberUtils:createNumber:195->[Method Call] Call Stack: org.apache.commons.lang.NumberUtils.createNumber:195 -> java.lang.String.charAt

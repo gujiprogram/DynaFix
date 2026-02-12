@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CheckSideEffects.protectSideEffects",
+    "doc": "/**\n   * Protect side-effect free nodes by making them parameters\n   * to a extern function call.  This call will be removed\n   * after all the optimizations passes have run.\n   */",
+    "code": "private void protectSideEffects() {\n    if (!problemNodes.isEmpty()) {\n      addExtern();\n      for (Node n : problemNodes) {\n        Node name = IR.name(PROTECTOR_FN).srcref(n);\n        name.putBooleanProp(Node.IS_CONSTANT_NAME, true);\n        Node replacement = IR.call(name).srcref(n);\n        replacement.putBooleanProp(Node.FREE_CALL, true);\n        n.getParent().replaceChild(n, replacement);\n        replacement.addChildToBack(n);\n      }\n      compiler.reportCodeChange();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.traverse",
+    "doc": "/**\n   * Traverses a parse tree recursively.\n   */",
+    "code": "public void traverse(Node root) {\n    try {\n      inputId = NodeUtil.getInputId(root);\n      sourceName = \"\";\n      curNode = root;\n      pushScope(root);\n      traverseBranch(root, null);\n      popScope();\n    } catch (Exception unexpectedException) {\n      throwUnexpectedException(unexpectedException);\n    }\n  }"
+  }
+]

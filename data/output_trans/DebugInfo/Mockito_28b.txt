@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest::mock_should_be_injected_once_and_in_the_best_matching_type ===
+Exception: junit.framework.AssertionFailedError: expected same:<java.lang.Object@40f9f97e> was not:<mockedBean>
+
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:94->[Local Variables] {"TransVarAwaitingInjectionClazzObject":"class org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest$Service","TransVarField":{"mockShouldNotGoInHere":{}}}
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Method Call] Call Stack: org.mockito.internal.configuration.DefaultInjectionEngine.injectMockCandidate:95 -> org.mockito.internal.configuration.DefaultInjectionEngine.orderedInstanceFieldsFrom
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Control Flow] Branch Info: Line: 95, Condition: if (var5 < var5), Executed: true
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:98->[Local Variables] "{TransVarMocksSet\u003d[mockedBean], TransVarMockField\u003dpublic org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest$Bean org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest$Service.mockShouldGoInHere}"
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:99->[Method Call] Call Stack: org.mockito.internal.configuration.DefaultInjectionEngine.injectMockCandidate:99 -> org.mockito.internal.configuration.injection.MockCandidateFilter.filterCandidate
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:99->[Method Call] Call Stack: org.mockito.internal.configuration.DefaultInjectionEngine.injectMockCandidate:99 -> org.mockito.internal.configuration.injection.OngoingInjecter.thenInject
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:94->[Local Variables] "{TransVarField\u003dorg.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest$Service@70225ba5}"
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Control Flow] Loop Info: Line: 95, Description: while at line 95
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Control Flow] Branch Info: Line: 95, Condition: if (var5 < var5), Executed: true
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:98->[Local Variables] "{TransVarMockField\u003dpublic final java.lang.Object org.mockitousage.bugs.InjectionByTypeShouldFirstLookForExactTypeThenAncestorTest$Service.mockShouldNotGoInHere}"
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:99->[Method Call] Call Stack: org.mockito.internal.configuration.DefaultInjectionEngine.injectMockCandidate:99 -> org.mockito.internal.configuration.injection.MockCandidateFilter.filterCandidate
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:99->[Method Call] Call Stack: org.mockito.internal.configuration.DefaultInjectionEngine.injectMockCandidate:99 -> org.mockito.internal.configuration.injection.OngoingInjecter.thenInject
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Control Flow] Loop Info: Line: 95, Description: while at line 95
+org.mockito.internal.configuration.DefaultInjectionEngine:injectMockCandidate:95->[Control Flow] Branch Info: Line: 95, Condition: if (var5 < var5), Executed: false

@@ -1,0 +1,13 @@
+
+=== Debug Info for Test: org.apache.commons.math.ode.events.EventStateTest::testIssue695 ===
+Exception: junit.framework.AssertionFailedError: going backard in time! (7.796578226186635 < 10.99)
+
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:127->[Local Variables] {"handler":{"tEvent":10.99},"convergence":1.0E-9,"maxCheckInterval":0.1,"maxIterationCount":1000}
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:128->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:128 -> org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.<init>
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:138->[Local Variables] {"solver":{"maximalOrder":5,"allowed":"ANY_SIDE","functionValueAccuracy":1.0E-15,"absoluteAccuracy":1.0E-9,"relativeAccuracy":1.0E-14,"evaluations":{"maximalCount":0,"count":0},"searchMin":0.0,"searchMax":0.0,"searchStart":0.0}}
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:139->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:139 -> org.apache.commons.math.ode.events.EventState.<init>
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:139->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:139 -> java.util.Collection.add
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:127->[Local Variables] {"handler":{"tEvent":11.01}}
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:128->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:128 -> org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver.<init>
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:139->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:139 -> org.apache.commons.math.ode.events.EventState.<init>
+org.apache.commons.math.ode.AbstractIntegrator:addEventHandler:139->[Method Call] Call Stack: org.apache.commons.math.ode.AbstractIntegrator.addEventHandler:139 -> java.util.Collection.add

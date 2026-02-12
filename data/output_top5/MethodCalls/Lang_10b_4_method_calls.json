@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang3.time.FastDateParser.copy",
+    "doc": "/**\n     * Create key / value pairs from values\n     * @param fieldKeyValues The destination array\n     * @param offset The offset into the destination array\n     * @param values The values to use to create key / value pairs.  This parameter may be null.\n     * @return The offset into the destination array\n     */",
+    "code": "private static int copy(KeyValue[] fieldKeyValues, int offset, String[] values) {\n        if(values!=null) {\n            for(int i= 0; i<values.length; ++i) {\n                String value= values[i];\n                if(value.length()>0) {\n                    fieldKeyValues[offset++]= new KeyValue(value, i);\n                }\n            }\n        }\n        return offset;\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.time.FastDateParser.count",
+    "doc": "/**\n     * Get a count of valid values in array.  A valid value is of non-zero length.\n     * @param values The values to check.  This parameter may be null\n     * @return The number of valid values\n     */",
+    "code": "private static int count(String[] values) {\n        int count= 0;\n        if(values!=null) {\n            for(String value : values) {\n                if(value.length()>0) {\n                    ++count;\n                }\n            }\n        }\n        return count;\n    }"
+  }
+]

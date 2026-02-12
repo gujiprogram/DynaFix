@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.csv.CSVFormat.getDelimiter",
+    "doc": "/**\n     * Returns the character delimiting the values (typically ';', ',' or '\\t').\n     *\n     * @return the delimiter character\n     */",
+    "code": "public char getDelimiter() {\n        return delimiter;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVFormat.getNullString",
+    "doc": "/**\n     * Gets the String to convert to and from {@code null}.\n     * <ul>\n     * <li>\n     * <strong>Reading:</strong> Converts strings equal to the given {@code nullString} to {@code null} when reading\n     * records.</li>\n     * <li>\n     * <strong>Writing:</strong> Writes {@code null} as the given {@code nullString} when writing records.</li>\n     * </ul>\n     *\n     * @return the String to convert to and from {@code null}. No substitution occurs if {@code null}\n     */",
+    "code": "public String getNullString() {\n        return nullString;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVFormat.isQuoteCharacterSet",
+    "doc": "/**\n     * Returns whether a quoteChar has been defined.\n     *\n     * @return {@code true} if a quoteChar is defined\n     */",
+    "code": "public boolean isQuoteCharacterSet() {\n        return quoteCharacter != null;\n    }"
+  },
+  {
+    "method": "org.apache.commons.csv.CSVPrinter.printAndQuote",
+    "doc": "/**\n     * Prints the string as the next value on the line. The value will be escaped or encapsulated as needed.\n     *\n     * @param value\n     *            value to be output.\n     * @throws IOException\n     *             If an I/O error occurs\n     */",
+    "code": "private void printAndQuote(final Object object, final CharSequence value, final int offset, final int len)\n            throws IOException {\n        boolean quote = false;\n        int start = offset;\n        int pos = offset;\n        final int end = offset + len;\n\n        final char delimChar = format.getDelimiter();\n        final char quoteChar = format.getQuoteCharacter().charValue();\n\n        QuoteMode quoteModePolicy = format.getQuoteMode();\n        if (quoteModePolicy == null) {\n            quoteModePolicy = QuoteMode.MINIMAL;\n        }\n        switch (quoteModePolicy) {\n        case ALL:\n            quote = true;\n            break;\n        case NON_NUMERIC:\n            quote = !(object instanceof Number);\n            break;\n        case NONE:\n            printAndEscape(value, offset, len);\n            return;\n        case MINIMAL:\n            if (len <= 0) {\n                if (newRecord) {\n                    quote = true;\n                }\n            } else {\n                char c = value.charAt(pos);\n\n                if (newRecord && (c < '0' || (c > '9' && c < 'A') || (c > 'Z' && c < 'a') || (c > 'z'))) {\n                    quote = true;\n                } else if (c <= COMMENT) {\n                    quote = true;\n                } else {\n                    while (pos < end) {\n                        c = value.charAt(pos);\n                        if (c == LF || c == CR || c == quoteChar || c == delimChar) {\n                            quote = true;\n                            break;\n                        }\n                        pos++;\n                    }\n\n                    if (!quote) {\n                        pos = end - 1;\n                        c = value.charAt(pos);\n                        if (c <= SP) {\n                            quote = true;\n                        }\n                    }\n                }\n            }\n\n            if (!quote) {\n                out.append(value, start, end);\n                return;\n            }\n            break;\n        default:\n            throw new IllegalStateException(\"Unexpected Quote value: \" + quoteModePolicy);\n        }\n\n        if (!quote) {\n            out.append(value, start, end);\n            return;\n        }\n\n        out.append(quoteChar);\n\n        while (pos < end) {\n            final char c = value.charAt(pos);\n            if (c == quoteChar) {\n\n                out.append(value, start, pos + 1);\n                start = pos;\n            }\n            pos++;\n        }\n\n        out.append(value, start, pos);\n        out.append(quoteChar);\n    }"
+  }
+]

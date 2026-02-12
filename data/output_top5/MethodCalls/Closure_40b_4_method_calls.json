@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newArrayList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.AstChangeProxy.replaceWith",
+    "doc": "/**\n   * Replaces a node from the parent's child list.\n   */",
+    "code": "final void replaceWith(Node parent, Node node, Node replacement) {\n    replaceWith(parent, node, Lists.newArrayList(replacement));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.getRhsSubexpressions",
+    "doc": "/**\n   * Extract a list of subexpressions that act as right hand sides.\n   */",
+    "code": "private List<Node> getRhsSubexpressions(Node n) {\n    switch (n.getType()) {\n      case Token.EXPR_RESULT:\n        return getRhsSubexpressions(n.getFirstChild());\n      case Token.FUNCTION:\n        return Collections.emptyList();\n      case Token.NAME:\n        {\n          Node rhs = n.getFirstChild();\n          if (rhs != null) {\n            return Lists.newArrayList(rhs);\n          } else {\n            return Collections.emptyList();\n          }\n        }\n      case Token.ASSIGN:\n        {\n          Node lhs = n.getFirstChild();\n          Node rhs = lhs.getNext();\n          return Lists.newArrayList(lhs, rhs);\n        }\n      case Token.VAR:\n        {\n          List<Node> nodes = Lists.newArrayList();\n          for (Node child : n.children()) {\n            nodes.addAll(getRhsSubexpressions(child));\n          }\n          return nodes;\n        }\n      default:\n        throw new IllegalArgumentException(\"AstChangeProxy::getRhs \" + n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.getSideEffectNodes",
+    "doc": "/**\n   * Extract a list of replacement nodes to use.\n   */",
+    "code": "private List<Node> getSideEffectNodes(Node n) {\n    List<Node> subexpressions = Lists.newArrayList();\n    NodeTraversal.traverse(\n        compiler, n,\n        new GatherSideEffectSubexpressionsCallback(\n            compiler,\n            new CopySideEffectSubexpressions(compiler, subexpressions)));\n\n    List<Node> replacements =\n        Lists.newArrayListWithExpectedSize(subexpressions.size());\n    for (Node subexpression : subexpressions) {\n      replacements.add(NodeUtil.newExpr(subexpression));\n    }\n    return replacements;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFor",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

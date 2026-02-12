@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.lang3.text.ExtendedMessageFormat.applyPattern",
+    "doc": "/**\n     * Apply the specified pattern.\n     *\n     * @param pattern String\n     */",
+    "code": "public final void applyPattern(String pattern) {\n        if (registry == null) {\n            super.applyPattern(pattern);\n            toPattern = super.toPattern();\n            return;\n        }\n        ArrayList<Format> foundFormats = new ArrayList<Format>();\n        ArrayList<String> foundDescriptions = new ArrayList<String>();\n        StringBuilder stripCustom = new StringBuilder(pattern.length());\n\n        ParsePosition pos = new ParsePosition(0);\n        char[] c = pattern.toCharArray();\n        int fmtCount = 0;\n        while (pos.getIndex() < pattern.length()) {\n            switch (c[pos.getIndex()]) {\n            case QUOTE:\n                appendQuotedString(pattern, pos, stripCustom, true);\n                break;\n            case START_FE:\n                fmtCount++;\n                seekNonWs(pattern, pos);\n                int start = pos.getIndex();\n                int index = readArgumentIndex(pattern, next(pos));\n                stripCustom.append(START_FE).append(index);\n                seekNonWs(pattern, pos);\n                Format format = null;\n                String formatDescription = null;\n                if (c[pos.getIndex()] == START_FMT) {\n                    formatDescription = parseFormatDescription(pattern,\n                            next(pos));\n                    format = getFormat(formatDescription);\n                    if (format == null) {\n                        stripCustom.append(START_FMT).append(formatDescription);\n                    }\n                }\n                foundFormats.add(format);\n                foundDescriptions.add(format == null ? null : formatDescription);\n                Validate.isTrue(foundFormats.size() == fmtCount);\n                Validate.isTrue(foundDescriptions.size() == fmtCount);\n                if (c[pos.getIndex()] != END_FE) {\n                    throw new IllegalArgumentException(\n                            \"Unreadable format element at position \" + start);\n                }\n            default:\n                stripCustom.append(c[pos.getIndex()]);\n                next(pos);\n            }\n        }\n        super.applyPattern(stripCustom.toString());\n        toPattern = insertFormats(super.toPattern(), foundDescriptions);\n        if (containsElements(foundFormats)) {\n            Format[] origFormats = getFormats();\n            int i = 0;\n            for (Iterator<Format> it = foundFormats.iterator(); it.hasNext(); i++) {\n                Format f = it.next();\n                if (f != null) {\n                    origFormats[i] = f;\n                }\n            }\n            super.setFormats(origFormats);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.text.ExtendedMessageFormat.getLocale",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.lang3.text.ExtendedMessageFormat.setLocale",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.lang3.text.FormatFactory.getFormat",
+    "doc": "/**\n     * Create or retrieve a format instance.\n     *\n     * @param name The format type name\n     * @param arguments Arguments used to create the format instance. This allows the\n     *                  <code>FormatFactory</code> to implement the \"format style\"\n     *                  concept from <code>java.text.MessageFormat</code>.\n     * @param locale The locale, may be null\n     * @return The format instance\n     */",
+    "code": "Format getFormat(String name, String arguments, Locale locale);"
+  }
+]

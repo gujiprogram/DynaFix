@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.RandomStringUtilsTest::testLANG807 ===
+Exception: junit.framework.AssertionFailedError: Message (bound must be positive) must contain 'start'
+
+org.apache.commons.lang3.RandomStringUtils:random:162->[Local Variables] {"count":3,"start":5,"numbers":false,"end":5,"letters":false}
+org.apache.commons.lang3.RandomStringUtils:random:224->[Local Variables] {"random":{"seed":169261074351808,"nextNextGaussian":0.0,"haveNextNextGaussian":false}}
+org.apache.commons.lang3.RandomStringUtils:random:225->[Control Flow] Branch Info: Line: 225, Condition: if (count == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:227->[Control Flow] Branch Info: Line: 227, Condition: if (count < 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:230->[Control Flow] Branch Info: Line: 230, Condition: if (chars != null), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:230->[Control Flow] Branch Info: Line: 230, Condition: if (chars == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:234->[Control Flow] Branch Info: Line: 234, Condition: if (start == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:234->[Control Flow] Branch Info: Line: 234, Condition: if (end == 0), Executed: false
+org.apache.commons.lang3.RandomStringUtils:random:247->[Local Variables] {"buffer":["\u0000","\u0000","\u0000"]}
+org.apache.commons.lang3.RandomStringUtils:random:249->[Local Variables] {"gap":0}
+org.apache.commons.lang3.RandomStringUtils:random:250->[Control Flow] Branch Info: Line: 250, Condition: if (count != 0), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:251->[Local Variables] {"count":2}
+org.apache.commons.lang3.RandomStringUtils:random:252->[Control Flow] Branch Info: Line: 252, Condition: if (chars == null), Executed: true
+org.apache.commons.lang3.RandomStringUtils:random:253->[Method Call] Call Stack: org.apache.commons.lang3.RandomStringUtils.random:253 -> java.util.Random.nextInt

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jfree.chart.plot.XYPlot.getDatasetsMappedToDomainAxis",
+    "doc": "/**\n     * A utility method that returns a list of datasets that are mapped to a\n     * particular axis.\n     *\n     * @param axisIndex  the axis index (<code>null</code> not permitted).\n     *\n     * @return A list of datasets.\n     */",
+    "code": "private List getDatasetsMappedToDomainAxis(Integer axisIndex) {\n        if (axisIndex == null) {\n            throw new IllegalArgumentException(\"Null 'axisIndex' argument.\");\n        }\n        List result = new ArrayList();\n        for (int i = 0; i < this.datasets.size(); i++) {\n            List mappedAxes = (List) this.datasetToDomainAxesMap.get(\n                    new Integer(i));\n            if (mappedAxes == null) {\n                if (axisIndex.equals(ZERO)) {\n                    result.add(this.datasets.get(i));\n                }\n            }\n            else {\n                if (mappedAxes.contains(axisIndex)) {\n                    result.add(this.datasets.get(i));\n                }\n            }\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.XYPlot.getDomainAxisIndex",
+    "doc": "/**\n     * Returns the index of the given domain axis.\n     *\n     * @param axis  the axis.\n     *\n     * @return The axis index.\n     *\n     * @see #getRangeAxisIndex(ValueAxis)\n     */",
+    "code": "public int getDomainAxisIndex(ValueAxis axis) {\n        int result = this.domainAxes.indexOf(axis);\n        if (result < 0) {\n            Plot parent = getParent();\n            if (parent instanceof XYPlot) {\n                XYPlot p = (XYPlot) parent;\n                result = p.getDomainAxisIndex(axis);\n            }\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.XYPlot.getRangeAxisIndex",
+    "doc": "/**\n     * Returns the index of the given range axis.\n     *\n     * @param axis  the axis.\n     *\n     * @return The axis index.\n     *\n     * @see #getDomainAxisIndex(ValueAxis)\n     */",
+    "code": "public int getRangeAxisIndex(ValueAxis axis) {\n        int result = this.rangeAxes.indexOf(axis);\n        if (result < 0) {\n            Plot parent = getParent();\n            if (parent instanceof XYPlot) {\n                XYPlot p = (XYPlot) parent;\n                result = p.getRangeAxisIndex(axis);\n            }\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.plot.XYPlot.getRendererForDataset",
+    "doc": "/**\n     * Returns the renderer for the specified dataset.  The code first\n     * determines the index of the dataset, then checks if there is a\n     * renderer with the same index (if not, the method returns renderer(0).\n     *\n     * @param dataset  the dataset (<code>null</code> permitted).\n     *\n     * @return The renderer (possibly <code>null</code>).\n     */",
+    "code": "public XYItemRenderer getRendererForDataset(XYDataset dataset) {\n        XYItemRenderer result = null;\n        for (int i = 0; i < this.datasets.size(); i++) {\n            if (this.datasets.get(i) == dataset) {\n                result = (XYItemRenderer) this.renderers.get(i);\n                if (result == null) {\n                    result = getRenderer();\n                }\n                break;\n            }\n        }\n        return result;\n    }"
+  },
+  {
+    "method": "org.jfree.chart.renderer.xy.XYItemRenderer.getAnnotations",
+    "doc": "/**\n     * Returns a collection of the annotations that are assigned to the\n     * renderer.\n     *\n     * @return A collection of annotations (possibly empty but never\n     *     <code>null</code>).\n     *\n     * @since 1.2.0\n     */",
+    "code": "public Collection getAnnotations();"
+  },
+  {
+    "method": "org.jfree.data.Range.combine",
+    "doc": "/**\n     * Creates a new range by combining two existing ranges.\n     * <P>\n     * Note that:\n     * <ul>\n     *   <li>either range can be <code>null</code>, in which case the other\n     *       range is returned;</li>\n     *   <li>if both ranges are <code>null</code> the return value is\n     *       <code>null</code>.</li>\n     * </ul>\n     *\n     * @param range1  the first range (<code>null</code> permitted).\n     * @param range2  the second range (<code>null</code> permitted).\n     *\n     * @return A new range (possibly <code>null</code>).\n     */",
+    "code": "public static Range combine(Range range1, Range range2) {\n        if (range1 == null) {\n            return range2;\n        }\n        else {\n            if (range2 == null) {\n                return range1;\n            }\n            else {\n                double l = Math.min(range1.getLowerBound(),\n                        range2.getLowerBound());\n                double u = Math.max(range1.getUpperBound(),\n                        range2.getUpperBound());\n                return new Range(l, u);\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.jfree.data.general.DatasetUtilities.findDomainBounds",
+    "doc": "/**\n     * Returns the range of values in the domain (x-values) of a dataset.\n     *\n     * @param dataset  the dataset (<code>null</code> not permitted).\n     *\n     * @return The range of values (possibly <code>null</code>).\n     */",
+    "code": "public static Range findDomainBounds(XYDataset dataset) {\n        return findDomainBounds(dataset, true);\n    }"
+  }
+]

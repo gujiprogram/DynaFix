@@ -1,0 +1,68 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.ZipTestCase::testListAllFilesWithNestedArchive ===
+Exception: junit.framework.AssertionFailedError: expected:<1> but was:<0>
+
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Local Variables] {"TransVarS":{"value":1836597052}}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:253 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:253 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:257 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Control Flow] Branch Info: Line: 257, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.closed == false), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.hitCentralDirectory != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:230->[Control Flow] Branch Info: Line: 230, Condition: if (this.current != null), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:234->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:234 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.closeEntry
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:230->[Control Flow] Branch Info: Line: 230, Condition: if (this.current != null), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:238->[Local Variables] {"TransVarFirstTime":false}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:239->[Control Flow] Branch Info: Line: 239, Condition: if (TransVarFirstTime != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:246->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:246 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFully
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:252 -> org.apache.commons.compress.archivers.zip.ZipLong.<init>
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Local Variables] {"TransVarS":{"value":33639248}}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:253 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:255->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:255 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.skipRemainderOfArchive
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:257 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Control Flow] Branch Info: Line: 257, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:309->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:309 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFully
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:309->[Local Variables] {"TransVarHeaderExtraData":[85,88,12,0,12,2,-21,73,-122,-124,-37,73,-11,1,-11,1]}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:310->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:310 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$CurrentEntry.access$100
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:310->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:310 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.setExtra
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:312->[Control Flow] Branch Info: Line: 312, Condition: if (TransVarUseUtf8 == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:312->[Control Flow] Branch Info: Line: 312, Condition: if (this.useUnicodeExtraFields != false), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:313->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:313 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$CurrentEntry.access$100
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:313->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:313 -> org.apache.commons.compress.archivers.zip.ZipUtil.setNameAndCommentFromExtraFields
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:312->[Control Flow] Branch Info: Line: 312, Condition: if (TransVarUseUtf8 == 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:312->[Control Flow] Branch Info: Line: 312, Condition: if (this.useUnicodeExtraFields != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:316->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:316 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.processZip64Extra
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:318->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:318 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$CurrentEntry.access$100
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:318->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:318 -> org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getCompressedSize
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:318->[Control Flow] Branch Info: Line: 318, Condition: if (org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getCompressedSize() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:326->[Control Flow] Branch Info: Line: 326, Condition: if (org.apache.commons.compress.archivers.zip.ZipMethod.getCode() == org.apache.commons.compress.archivers.zip.ZipMethod.getCode()), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:332->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:332 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream$CurrentEntry.access$100
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:223->[Local Variables] {"TransVarFirstTime":true}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.closed == false), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.hitCentralDirectory != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:230->[Control Flow] Branch Info: Line: 230, Condition: if (this.current != null), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:239->[Control Flow] Branch Info: Line: 239, Condition: if (TransVarFirstTime != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:244->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:244 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFirstLocalFileHeader
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:252 -> org.apache.commons.compress.archivers.zip.ZipLong.<init>
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.zip.ZipArchiveInputStreamTest::testThrowOnInvalidEntry ===
+Exception: junit.framework.AssertionFailedError: IOException expected
+
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:223->[Local Variables] {"TransVarFirstTime":true}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.closed == false), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.hitCentralDirectory != false), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:230->[Control Flow] Branch Info: Line: 230, Condition: if (this.current != null), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:239->[Control Flow] Branch Info: Line: 239, Condition: if (TransVarFirstTime != 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:244->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:244 -> org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFirstLocalFileHeader
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:252 -> org.apache.commons.compress.archivers.zip.ZipLong.<init>
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:252->[Local Variables] {"TransVarS":{"value":1936287828}}
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:253 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: true
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:253 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:253->[Control Flow] Branch Info: Line: 253, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() != 0), Executed: false
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Method Call] Call Stack: org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry:257 -> org.apache.commons.compress.archivers.zip.ZipLong.equals
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream:getNextZipEntry:257->[Control Flow] Branch Info: Line: 257, Condition: if (org.apache.commons.compress.archivers.zip.ZipLong.equals() == 0), Executed: true

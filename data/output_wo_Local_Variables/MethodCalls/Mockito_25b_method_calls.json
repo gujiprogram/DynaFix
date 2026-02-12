@@ -1,0 +1,27 @@
+[
+  {
+    "method": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs.actualParameterizedType",
+    "doc": "/**\n     * Creates a mock using the Generics Metadata.\n     *\n     * @param returnTypeGenericMetadata The metadata to use to create the new mock.\n     * @return The mock\n     */",
+    "code": "protected GenericMetadataSupport actualParameterizedType(Object mock) {\n        CreationSettings mockSettings = (CreationSettings) new MockUtil().getMockHandler(mock).getMockSettings();\n        return GenericMetadataSupport.inferFrom(mockSettings.getTypeToMock());\n    }"
+  },
+  {
+    "method": "org.mockito.internal.util.reflection.GenericMetadataSupport.rawType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.mockito.internal.util.reflection.GenericMetadataSupport.resolveGenericReturnType",
+    "doc": "/**\n     * Resolve current method generic return type to a {@link GenericMetadataSupport}.\n     *\n     * @param method Method to resolve the return type.\n     * @return {@link GenericMetadataSupport} representing this generic return type.\n     */",
+    "code": "public GenericMetadataSupport resolveGenericReturnType(Method method) {\n        Type genericReturnType = method.getGenericReturnType();\n\n        if (genericReturnType instanceof Class) {\n            return new NotGenericReturnTypeSupport(genericReturnType);\n        }\n        if (genericReturnType instanceof ParameterizedType) {\n            return new ParameterizedReturnType(this, method.getTypeParameters(), (ParameterizedType) method.getGenericReturnType());\n        }\n        if (genericReturnType instanceof TypeVariable) {\n            return new TypeVariableReturnType(this, method.getTypeParameters(), (TypeVariable) genericReturnType);\n        }\n\n        throw new MockitoException(\"Ouch, it shouldn't happen, type '\" + genericReturnType.getClass().getCanonicalName() + \"' on method : '\" + method.toGenericString() + \"' is not supported : \" + genericReturnType);\n    }"
+  },
+  {
+    "method": "org.mockito.invocation.InvocationOnMock.getMethod",
+    "doc": "/**\n     * returns the method\n     *\n     * @return method\n     */",
+    "code": "Method getMethod();"
+  },
+  {
+    "method": "org.mockito.invocation.InvocationOnMock.getMock",
+    "doc": "/**\n     * returns the mock object\n     *\n     * @return mock object\n     */",
+    "code": "Object getMock();"
+  }
+]

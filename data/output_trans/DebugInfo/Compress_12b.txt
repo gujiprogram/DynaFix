@@ -1,0 +1,10 @@
+
+=== Debug Info for Test: org.apache.commons.compress.archivers.TarTestCase::testCOMPRESS178 ===
+Exception: java.lang.IllegalArgumentException: Invalid byte 0 at offset 2 in '00{NUL}0765{NUL}' len=8
+
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:176->[Control Flow] Branch Info: Line: 176, Condition: if (this.hasHitEOF != false), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:183->[Control Flow] Branch Info: Line: 183, Condition: if (this.currEntry != null), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:200->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry:200 -> org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getRecord
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:201->[Local Variables] {"TransVarRecord":[116,101,115,116,49,46,120,109,108,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"..."]}
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:202->[Control Flow] Branch Info: Line: 202, Condition: if (this.hasHitEOF != false), Executed: false
+org.apache.commons.compress.archivers.tar.TarArchiveInputStream:getNextTarEntry:207->[Method Call] Call Stack: org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextTarEntry:207 -> org.apache.commons.compress.archivers.tar.TarArchiveEntry.<init>

@@ -1,0 +1,82 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction2 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction3 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1145 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Control Flow] Branch Info: Line: 1145, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1146 -> com.google.javascript.rhino.jstype.ObjectType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Control Flow] Branch Info: Line: 1146, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isEmptyType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1149 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (ctor == null), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1133->[Local Variables] "{ctor\u003dfunction (new:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1134 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Control Flow] Branch Info: Line: 1134, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1134 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1135 -> com.google.javascript.rhino.jstype.FunctionType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Control Flow] Branch Info: Line: 1135, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1135 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getImplicitPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Local Variables] "{maybeSuperInstanceType\u003dObject}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1142->[Control Flow] Branch Info: Line: 1142, Condition: if (maybeSuperInstanceType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1145 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Control Flow] Branch Info: Line: 1145, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1146 -> com.google.javascript.rhino.jstype.ObjectType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Control Flow] Branch Info: Line: 1146, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isEmptyType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1149 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Local Variables] "{ctor\u003dfunction (new:Object, *): ?}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (ctor == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1153 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Control Flow] Branch Info: Line: 1153, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1153 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Control Flow] Loop Info: Line: 1135, Description: while at line 1135
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getImplicitPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Local Variables] "{maybeSuperInstanceType\u003d{...}}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1142->[Control Flow] Branch Info: Line: 1142, Condition: if (maybeSuperInstanceType == null), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testThisTypeOfFunction4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Control Flow] Branch Info: Line: 1153, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1153 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Control Flow] Loop Info: Line: 1135, Description: while at line 1135
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getImplicitPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Local Variables] "{maybeSuperInstanceType\u003d{...}}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1142->[Control Flow] Branch Info: Line: 1142, Condition: if (maybeSuperInstanceType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1145 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Control Flow] Branch Info: Line: 1145, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1146 -> com.google.javascript.rhino.jstype.ObjectType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Control Flow] Branch Info: Line: 1146, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isEmptyType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1149 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (ctor == null), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1145 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Control Flow] Branch Info: Line: 1145, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1146 -> com.google.javascript.rhino.jstype.ObjectType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Control Flow] Branch Info: Line: 1146, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isEmptyType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1149 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (ctor == null), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1133->[Local Variables] "{ctor\u003dfunction (new:F): undefined}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1134 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Control Flow] Branch Info: Line: 1134, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1134->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1134 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1135 -> com.google.javascript.rhino.jstype.FunctionType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Control Flow] Branch Info: Line: 1135, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1135->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1135 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionType.getPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1141 -> com.google.javascript.rhino.jstype.FunctionPrototypeType.getImplicitPrototype
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1141->[Local Variables] "{maybeSuperInstanceType\u003dObject}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1142->[Control Flow] Branch Info: Line: 1142, Condition: if (maybeSuperInstanceType == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1145 -> com.google.javascript.rhino.jstype.ObjectType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1145->[Control Flow] Branch Info: Line: 1145, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1146 -> com.google.javascript.rhino.jstype.ObjectType.isEmptyType
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1146->[Control Flow] Branch Info: Line: 1146, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isEmptyType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1149 -> com.google.javascript.rhino.jstype.ObjectType.getConstructor
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1149->[Local Variables] "{ctor\u003dfunction (new:Object, *): ?}"
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1150->[Control Flow] Branch Info: Line: 1150, Condition: if (ctor == null), Executed: false
+com.google.javascript.jscomp.TypeCheck:hasUnknownOrEmptySupertype:1153->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.hasUnknownOrEmptySupertype:1153 -> com.google.javascript.rhino.jstype.FunctionType.isConstructor

@@ -1,0 +1,53 @@
+
+=== Debug Info for Test: org.apache.commons.math.analysis.BrentSolverTest::testRootEndpoints ===
+Exception: java.lang.IllegalArgumentException: Function values at endpoints do not have different signs.  Endpoints: [3.0,3.141592653589793]  Values: [0.1411200080598672,1.2246467991473532E-16]
+
+org.apache.commons.math.analysis.BrentSolver:solve:137->[Local Variables] {"sign":1.7282216616616507E-17}
+org.apache.commons.math.analysis.BrentSolver:solve:138->[Control Flow] Branch Info: Line: 138, Condition: if (sign >= 0), Executed: true
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.append
+org.apache.commons.math.analysis.BrentSolver:solve:141->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:141 -> java.lang.StringBuilder.toString
+org.apache.commons.math.analysis.BrentSolver:solve:127->[Local Variables] {"min":3.141592653589793,"max":4.0}
+org.apache.commons.math.analysis.BrentSolver:solve:128->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:128 -> org.apache.commons.math.analysis.BrentSolver.clearResult
+org.apache.commons.math.analysis.BrentSolver:solve:129->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:129 -> org.apache.commons.math.analysis.BrentSolver.verifyInterval
+org.apache.commons.math.analysis.BrentSolver:solve:132->[Local Variables] "{ret\u003dNaN}"
+org.apache.commons.math.analysis.BrentSolver:solve:133->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:133 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.BrentSolver:solve:133->[Local Variables] {"yMin":1.2246467991473532E-16}
+org.apache.commons.math.analysis.BrentSolver:solve:134->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:134 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.BrentSolver:solve:136->[Local Variables] {"yMax":-0.7568024953079282}
+org.apache.commons.math.analysis.BrentSolver:solve:137->[Local Variables] {"sign":-9.26815753465584E-17}
+org.apache.commons.math.analysis.BrentSolver:solve:138->[Control Flow] Branch Info: Line: 138, Condition: if (sign >= 0), Executed: false
+org.apache.commons.math.analysis.BrentSolver:solve:174->[Local Variables] {"y0":1.2246467991473532E-16,"x0":3.141592653589793,"y1":-0.7568024953079282,"x1":4.0,"y2":1.2246467991473532E-16,"x2":3.141592653589793}
+org.apache.commons.math.analysis.BrentSolver:solve:175->[Local Variables] {"delta":0.8584073464102069}
+org.apache.commons.math.analysis.BrentSolver:solve:177->[Local Variables] {"oldDelta":0.8584073464102069}
+org.apache.commons.math.analysis.BrentSolver:solve:178->[Local Variables] {"i":0}
+org.apache.commons.math.analysis.BrentSolver:solve:179->[Control Flow] Branch Info: Line: 179, Condition: if (this.maximalIterationCount < this.maximalIterationCount), Executed: true
+org.apache.commons.math.analysis.BrentSolver:solve:180->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:180 -> java.lang.Math.abs
+org.apache.commons.math.analysis.BrentSolver:solve:180->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:180 -> java.lang.Math.abs
+org.apache.commons.math.analysis.BrentSolver:solve:180->[Control Flow] Branch Info: Line: 180, Condition: if (y1 < 0), Executed: true
+org.apache.commons.math.analysis.BrentSolver:solve:182->[Local Variables] {"x0":4.0}
+org.apache.commons.math.analysis.BrentSolver:solve:183->[Local Variables] {"x1":3.141592653589793}
+org.apache.commons.math.analysis.BrentSolver:solve:184->[Local Variables] {"x2":4.0}
+org.apache.commons.math.analysis.BrentSolver:solve:185->[Local Variables] {"y0":-0.7568024953079282}
+org.apache.commons.math.analysis.BrentSolver:solve:186->[Local Variables] {"y1":1.2246467991473532E-16}
+org.apache.commons.math.analysis.BrentSolver:solve:180->[Control Flow] Branch Info: Line: 180, Condition: if (y1 < 0), Executed: false
+org.apache.commons.math.analysis.BrentSolver:solve:188->[Local Variables] {"y2":-0.7568024953079282}
+org.apache.commons.math.analysis.BrentSolver:solve:189->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:189 -> java.lang.Math.abs
+org.apache.commons.math.analysis.BrentSolver:solve:189->[Control Flow] Branch Info: Line: 189, Condition: if (this.functionValueAccuracy <= 0), Executed: true
+org.apache.commons.math.analysis.BrentSolver:solve:193->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:193 -> org.apache.commons.math.analysis.BrentSolver.setResult
+org.apache.commons.math.analysis.BrentSolver:solve:150->[Local Variables] {"ret":3.141592653589793}
+org.apache.commons.math.analysis.BrentSolver:solve:127->[Local Variables] {"min":3.0,"max":3.141592653589793}
+org.apache.commons.math.analysis.BrentSolver:solve:128->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:128 -> org.apache.commons.math.analysis.BrentSolver.clearResult
+org.apache.commons.math.analysis.BrentSolver:solve:129->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:129 -> org.apache.commons.math.analysis.BrentSolver.verifyInterval
+org.apache.commons.math.analysis.BrentSolver:solve:132->[Local Variables] "{ret\u003dNaN}"
+org.apache.commons.math.analysis.BrentSolver:solve:133->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:133 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.BrentSolver:solve:133->[Local Variables] {"yMin":0.1411200080598672}
+org.apache.commons.math.analysis.BrentSolver:solve:134->[Method Call] Call Stack: org.apache.commons.math.analysis.BrentSolver.solve:134 -> org.apache.commons.math.analysis.UnivariateRealFunction.value
+org.apache.commons.math.analysis.BrentSolver:solve:136->[Local Variables] {"yMax":1.2246467991473532E-16}

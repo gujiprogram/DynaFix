@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int ===
+Exception: java.lang.IllegalArgumentException: Minutes out of range: -15
+
+org.joda.time.DateTimeZone:fixedOffsetZone:389->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:389 -> java.util.Map.put
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:381 -> java.util.Map.get
+org.joda.time.DateTimeZone:fixedOffsetZone:382->[Control Flow] Branch Info: Line: 382, Condition: if (ref != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:384->[Control Flow] Branch Info: Line: 384, Condition: if (zone != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:388 -> org.joda.time.tz.FixedDateTimeZone.<init>
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Local Variables] {"zone":{"iWallOffset":7200000,"iStandardOffset":7200000,"iID":"+02:00"}}
+org.joda.time.DateTimeZone:fixedOffsetZone:389->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:389 -> java.util.Map.put
+org.joda.time.DateTimeZone:fixedOffsetZone:374->[Control Flow] Branch Info: Line: 374, Condition: if (offset == 0), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:377->[Control Flow] Branch Info: Line: 377, Condition: if (offset == null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:381 -> java.util.Map.get
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Local Variables] {"ref":{"timestamp":6983451040,"referent":{"iWallOffset":7200000,"iStandardOffset":7200000,"iID":"+02:00"},"queue":{"lock":{},"queueLength":0}}}
+org.joda.time.DateTimeZone:fixedOffsetZone:382->[Control Flow] Branch Info: Line: 382, Condition: if (ref != null), Executed: true
+org.joda.time.DateTimeZone:fixedOffsetZone:383->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:383 -> java.lang.ref.Reference.get
+org.joda.time.DateTimeZone:fixedOffsetZone:384->[Control Flow] Branch Info: Line: 384, Condition: if (zone != null), Executed: true
+org.joda.time.DateTimeZone:fixedOffsetZone:373->[Local Variables] {"offset":900000,"id":"+00:15"}
+org.joda.time.DateTimeZone:fixedOffsetZone:374->[Control Flow] Branch Info: Line: 374, Condition: if (offset == 0), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:377->[Control Flow] Branch Info: Line: 377, Condition: if (offset == null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:381 -> java.util.Map.get
+org.joda.time.DateTimeZone:fixedOffsetZone:382->[Control Flow] Branch Info: Line: 382, Condition: if (ref != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:384->[Control Flow] Branch Info: Line: 384, Condition: if (zone != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:388 -> org.joda.time.tz.FixedDateTimeZone.<init>
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Local Variables] {"zone":{"iWallOffset":900000,"iStandardOffset":900000,"iID":"+00:15"}}
+org.joda.time.DateTimeZone:fixedOffsetZone:389->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:389 -> java.util.Map.put
+org.joda.time.DateTimeZone:fixedOffsetZone:374->[Control Flow] Branch Info: Line: 374, Condition: if (offset == 0), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:377->[Control Flow] Branch Info: Line: 377, Condition: if (offset == null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:381 -> java.util.Map.get
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Local Variables] {"ref":{"timestamp":6983451040,"referent":{"iWallOffset":900000,"iStandardOffset":900000,"iID":"+00:15"},"queue":{"lock":{},"queueLength":0}}}
+org.joda.time.DateTimeZone:fixedOffsetZone:382->[Control Flow] Branch Info: Line: 382, Condition: if (ref != null), Executed: true
+org.joda.time.DateTimeZone:fixedOffsetZone:383->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:383 -> java.lang.ref.Reference.get
+org.joda.time.DateTimeZone:fixedOffsetZone:384->[Control Flow] Branch Info: Line: 384, Condition: if (zone != null), Executed: true
+org.joda.time.DateTimeZone:fixedOffsetZone:373->[Local Variables] {"offset":-900000,"id":"-00:15"}
+org.joda.time.DateTimeZone:fixedOffsetZone:374->[Control Flow] Branch Info: Line: 374, Condition: if (offset == 0), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:377->[Control Flow] Branch Info: Line: 377, Condition: if (offset == null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:381->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:381 -> java.util.Map.get
+org.joda.time.DateTimeZone:fixedOffsetZone:382->[Control Flow] Branch Info: Line: 382, Condition: if (ref != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:384->[Control Flow] Branch Info: Line: 384, Condition: if (zone != null), Executed: false
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Method Call] Call Stack: org.joda.time.DateTimeZone.fixedOffsetZone:388 -> org.joda.time.tz.FixedDateTimeZone.<init>
+org.joda.time.DateTimeZone:fixedOffsetZone:388->[Local Variables] {"zone":{"iWallOffset":-900000,"iStandardOffset":-900000,"iID":"-00:15"}}

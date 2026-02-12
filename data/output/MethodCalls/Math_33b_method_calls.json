@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math3.linear.RealMatrix.getEntry",
+    "doc": "/**\n     * Get the entry in the specified row and column.\n     * Row and column indices start at 0.\n     *\n     * @param row Row location of entry to be fetched.\n     * @param column Column location of entry to be fetched.\n     * @return the matrix entry at {@code (row, column)}.\n     * @throws org.apache.commons.math3.exception.OutOfRangeException if the\n     * row or column index is not valid.\n     */",
+    "code": "double getEntry(int row, int column);"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getHeight",
+    "doc": "/**\n     * Get the height of the tableau.\n     * @return height of the tableau\n     */",
+    "code": "protected final int getHeight() {\n        return tableau.getRowDimension();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getWidth",
+    "doc": "/**\n     * Get the width of the tableau.\n     * @return width of the tableau\n     */",
+    "code": "protected final int getWidth() {\n        return tableau.getColumnDimension();\n    }"
+  }
+]

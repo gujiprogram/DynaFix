@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.isTrue",
+    "doc": "/**\n     * Validates that the value is true\n     * @param val object to test\n     */",
+    "code": "public static void isTrue(boolean val) {\n        if (!val)\n            throw new IllegalArgumentException(\"Must be true\");\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the object is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.bufferUp",
+    "doc": "/**\n CharacterReader consumes tokens off a string. Used internally by jsoup. API subject to changes.\n */",
+    "code": "private void bufferUp() {\n        final int pos = bufPos;\n        if (pos < bufSplitPoint)\n            return;\n\n        try {\n            reader.skip(pos);\n            reader.mark(maxBufferLen);\n            final int read = reader.read(charBuf);\n            reader.reset();\n            if (read != -1) {\n                bufLength = read;\n                readerPos += pos;\n                bufPos = 0;\n                bufMark = -1;\n                bufSplitPoint = bufLength > readAheadLimit ? readAheadLimit : bufLength;\n            }\n        } catch (IOException e) {\n            throw new UncheckedIOException(e);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.CharacterReader.cacheString",
+    "doc": "/**\n     * Read characters until the first of any delimiters is found.\n     * @param chars delimiters to scan for\n     * @return characters read up to the matched delimiter.\n     */",
+    "code": "return cacheString(charBuf, stringCache, start, bufPos - start);\n    }\n\n    String consumeLetterThenDigitSequence() {"
+  }
+]

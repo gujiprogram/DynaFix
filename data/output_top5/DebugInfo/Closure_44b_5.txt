@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue620 ===
+Exception: junit.framework.ComparisonFailure: expected:<alert(/ //[ ]/ /)> but was:<alert(/ //[]/ /)>
+
+com.google.javascript.jscomp.CodeConsumer:endStatement:138->[Local Variables] {"needSemiColon":false}
+com.google.javascript.jscomp.CodeConsumer:endStatement:139->[Control Flow] Branch Info: Line: 139, Condition: if (needSemiColon != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:endStatement:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.statementStarted != false), Executed: true
+com.google.javascript.jscomp.CodeConsumer:endStatement:143->[Control Flow] Branch Info: Line: 143, Condition: if (this.statementStarted != false), Executed: false

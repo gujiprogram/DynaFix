@@ -1,0 +1,24 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testMinusNegativeZero ===
+Exception: junit.framework.ComparisonFailure: expected:<x-[ ]-0.0> but was:<x-[]-0.0>
+
+com.google.javascript.jscomp.CodeConsumer:addOp:210->[Local Variables] {"op":"-","binOp":true}
+com.google.javascript.jscomp.CodeConsumer:addOp:211->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:211 -> com.google.javascript.jscomp.CodeConsumer.maybeEndStatement
+com.google.javascript.jscomp.CodeConsumer:addOp:213->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:213 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeConsumer:addOp:213->[Local Variables] {"first":"-"}
+com.google.javascript.jscomp.CodeConsumer:addOp:214->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:214 -> com.google.javascript.jscomp.CodeConsumer.getLastChar
+com.google.javascript.jscomp.CodeConsumer:addOp:215->[Local Variables] {"prev":"x"}
+com.google.javascript.jscomp.CodeConsumer:addOp:216->[Control Flow] Branch Info: Line: 216, Condition: if (first != first), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addOp:216->[Control Flow] Branch Info: Line: 216, Condition: if (first == first), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addOp:216->[Control Flow] Branch Info: Line: 216, Condition: if (first != first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:216->[Control Flow] Branch Info: Line: 216, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:216->[Control Flow] Branch Info: Line: 216, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:220->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:220 -> java.lang.Character.isLetter
+com.google.javascript.jscomp.CodeConsumer:addOp:220->[Control Flow] Branch Info: Line: 220, Condition: if (first != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:221->[Control Flow] Branch Info: Line: 221, Condition: if (prev != 0), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:224->[Control Flow] Branch Info: Line: 224, Condition: if (prev == prev), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:224->[Control Flow] Branch Info: Line: 224, Condition: if (first == first), Executed: false
+com.google.javascript.jscomp.CodeConsumer:addOp:230->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:230 -> com.google.javascript.jscomp.CodeConsumer.appendOp
+com.google.javascript.jscomp.CodeConsumer:addOp:235->[Control Flow] Branch Info: Line: 235, Condition: if (binOp != 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:addOp:236->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.addOp:236 -> com.google.javascript.jscomp.CodeConsumer.maybeCutLine
+com.google.javascript.jscomp.CodeConsumer:addOp:235->[Control Flow] Branch Info: Line: 235, Condition: if (binOp != 0), Executed: false

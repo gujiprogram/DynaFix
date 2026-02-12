@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExpressionNode",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isExpressionNode(Node n) {\n    return n.getType() == Token.EXPR_RESULT;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting",
+    "doc": "/**\n   * Counts the given node in the typed statistics.\n   * @param n a node that should be typed\n   */",
+    "code": "private void doPercentTypedAccounting(NodeTraversal t, Node n) {\n    JSType type = n.getJSType();\n    if (type == null) {\n      nullCount++;\n    } else if (type.isUnknownType()) {\n      if (reportUnknownTypes.isOn()) {\n        compiler.report(\n            t.makeError(n, reportUnknownTypes, UNKNOWN_EXPR_TYPE));\n      }\n      unknownCount++;\n    } else {\n      typedCount++;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitCall",
+    "doc": "/**\n   * Visits a CALL node.\n   *\n   * @param t The node traversal object that supplies context, such as the\n   * scope chain to use in name lookups as well as error reporting.\n   * @param n The node being visited.\n   */",
+    "code": "private void visitCall(NodeTraversal t, Node n) {\n    Node child = n.getFirstChild();\n    JSType childType = getJSType(child).restrictByNotNullOrUndefined();\n\n    if (!childType.canBeCalled()) {\n      report(t, n, NOT_CALLABLE, childType.toString());\n      ensureTyped(t, n);\n      return;\n    }\n\n    if (childType instanceof FunctionType) {\n      FunctionType functionType = (FunctionType) childType;\n\n      boolean isExtern = false;\n      JSDocInfo functionJSDocInfo = functionType.getJSDocInfo();\n      if(functionJSDocInfo != null) {\n        String sourceName = functionJSDocInfo.getSourceName();\n        CompilerInput functionSource = compiler.getInput(sourceName);\n        isExtern = functionSource.isExtern();\n      }\n\n      if (functionType.isConstructor() &&\n          !functionType.isNativeObjectType() &&\n          (functionType.getReturnType().isUnknownType() ||\n           functionType.getReturnType().isVoidType() ||\n           !isExtern)) {\n        report(t, n, CONSTRUCTOR_NOT_CALLABLE, childType.toString());\n      }\n\n\n      visitParameterList(t, n, functionType);\n      ensureTyped(t, n, functionType.getReturnType());\n    } else {\n      ensureTyped(t, n);\n    }\n\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitFunction",
+    "doc": "/**\n   * Visits a {@link Token#FUNCTION} node.\n   *\n   * @param t The node traversal object that supplies context, such as the\n   * scope chain to use in name lookups as well as error reporting.\n   * @param n The node being visited.\n   */",
+    "code": "private void visitFunction(NodeTraversal t, Node n) {\n    FunctionType functionType = (FunctionType) n.getJSType();\n    String functionPrivateName = n.getFirstChild().getString();\n    if (functionType.isConstructor()) {\n      FunctionType baseConstructor = functionType.\n          getPrototype().getImplicitPrototype().getConstructor();\n      if (baseConstructor != null &&\n          baseConstructor != getNativeType(OBJECT_FUNCTION_TYPE) &&\n          (baseConstructor.isInterface() && functionType.isConstructor())) {\n        compiler.report(\n            t.makeError(n, CONFLICTING_EXTENDED_TYPE, functionPrivateName));\n      } else {\n        for (JSType baseInterface : functionType.getImplementedInterfaces()) {\n          boolean badImplementedType = false;\n          ObjectType baseInterfaceObj = ObjectType.cast(baseInterface);\n          if (baseInterfaceObj != null) {\n            FunctionType interfaceConstructor =\n              baseInterfaceObj.getConstructor();\n            if (interfaceConstructor != null &&\n                !interfaceConstructor.isInterface()) {\n              badImplementedType = true;\n            }\n          } else {\n            badImplementedType = true;\n          }\n          if (badImplementedType) {\n            report(t, n, BAD_IMPLEMENTED_TYPE, functionPrivateName);\n          }\n        }\n        validator.expectAllInterfaceProperties(t, n, functionType);\n      }\n    } else if (functionType.isInterface()) {\n      for (ObjectType extInterface : functionType.getExtendedInterfaces()) {\n        if (extInterface.getConstructor() != null\n            && !extInterface.getConstructor().isInterface()) {\n          compiler.report(\n              t.makeError(n, CONFLICTING_EXTENDED_TYPE, functionPrivateName));\n        }\n      }\n      if (functionType.hasImplementedInterfaces()) {\n        compiler.report(t.makeError(n,\n            CONFLICTING_IMPLEMENTED_TYPE, functionPrivateName));\n      }\n      if (functionType.getExtendedInterfacesCount() > 1) {\n        HashMap<String, ObjectType> properties\n            = new HashMap<String, ObjectType>();\n        HashMap<String, ObjectType> currentProperties\n            = new HashMap<String, ObjectType>();\n        for (ObjectType interfaceType : functionType.getExtendedInterfaces()) {\n          currentProperties.clear();\n          checkInterfaceConflictProperties(t, n, functionPrivateName,\n              properties, currentProperties, interfaceType);\n          properties.putAll(currentProperties);\n        }\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitName",
+    "doc": "/**\n   * Visits a NAME node.\n   *\n   * @param t The node traversal object that supplies context, such as the\n   * scope chain to use in name lookups as well as error reporting.\n   * @param n The node being visited.\n   * @param parent The parent of the node n.\n   * @return whether the node is typeable or not\n   */",
+    "code": "boolean visitName(NodeTraversal t, Node n, Node parent) {\n    int parentNodeType = parent.getType();\n    if (parentNodeType == Token.FUNCTION ||\n        parentNodeType == Token.CATCH ||\n        parentNodeType == Token.LP ||\n        parentNodeType == Token.VAR) {\n      return false;\n    }\n\n    JSType type = n.getJSType();\n    if (type == null) {\n      type = getNativeType(UNKNOWN_TYPE);\n      Var var = t.getScope().getVar(n.getString());\n      if (var != null) {\n        JSType varType = var.getType();\n        if (varType != null) {\n          type = varType;\n        }\n      }\n    }\n    ensureTyped(t, n, type);\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

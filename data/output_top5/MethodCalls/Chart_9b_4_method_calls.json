@@ -1,0 +1,32 @@
+[
+  {
+    "method": "org.jfree.data.time.RegularTimePeriod.compareTo",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.fireSeriesChanged",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getItemCount",
+    "doc": "/**\n     * Returns the number of items in the series.\n     *\n     * @return The item count.\n     */",
+    "code": "public int getItemCount() {\n        return this.data.size();\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.getTimePeriod",
+    "doc": "/**\n     * Returns the time period at the specified index.\n     *\n     * @param index  the index of the data item.\n     *\n     * @return The time period.\n     */",
+    "code": "public RegularTimePeriod getTimePeriod(int index) {\n        return getDataItem(index).getPeriod();\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeries.removeAgedItems",
+    "doc": "/**\n     * Age items in the series.  Ensure that the timespan from the youngest to\n     * the oldest record in the series does not exceed maximumItemAge time\n     * periods.  Oldest items will be removed if required.\n     *\n     * @param notify  controls whether or not a {@link SeriesChangeEvent} is\n     *                sent to registered listeners IF any items are removed.\n     */",
+    "code": "public void removeAgedItems(boolean notify) {\n        if (getItemCount() > 1) {\n            long latest = getTimePeriod(getItemCount() - 1).getSerialIndex();\n            boolean removed = false;\n            while ((latest - getTimePeriod(0).getSerialIndex())\n                    > this.maximumItemAge) {\n                this.data.remove(0);\n                removed = true;\n            }\n            if (removed && notify) {\n                fireSeriesChanged();\n            }\n        }\n    }"
+  },
+  {
+    "method": "org.jfree.data.time.TimeSeriesDataItem.getPeriod",
+    "doc": "/**\n     * Returns the time period.\n     *\n     * @return The time period (never <code>null</code>).\n     */",
+    "code": "public RegularTimePeriod getPeriod() {\n        return this.period;\n    }"
+  }
+]

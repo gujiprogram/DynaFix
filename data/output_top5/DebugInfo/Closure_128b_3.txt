@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue942 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x={[0]:1}> but was:<var x={["0"]:1}>
+
+com.google.javascript.jscomp.CodeGenerator:jsString:990->[Local Variables] {"s":"0","useSlashV":false}
+com.google.javascript.jscomp.CodeGenerator:jsString:993->[Local Variables] {"singleq":0,"doubleq":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:994 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Control Flow] Branch Info: Line: 994, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: true
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Local Variables] {"i":0}
+com.google.javascript.jscomp.CodeGenerator:jsString:995->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:995 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Control Flow] Loop Info: Line: 994, Description: while at line 994
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:994 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:jsString:994->[Control Flow] Branch Info: Line: 994, Condition: if (java.lang.String.length() < java.lang.String.length()), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:1003->[Control Flow] Branch Info: Line: 1003, Condition: if (this.preferSingleQuotes != false), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:1003->[Control Flow] Branch Info: Line: 1003, Condition: if (doubleq <= doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:1003->[Control Flow] Branch Info: Line: 1003, Condition: if (doubleq < doubleq), Executed: false
+com.google.javascript.jscomp.CodeGenerator:jsString:1011->[Local Variables] {"quote":"\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:1012->[Local Variables] {"doublequote":"\\\""}
+com.google.javascript.jscomp.CodeGenerator:jsString:1015->[Local Variables] {"singlequote":"\u0027"}
+com.google.javascript.jscomp.CodeGenerator:jsString:1016->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.jsString:1016 -> com.google.javascript.jscomp.CodeGenerator.strEscape

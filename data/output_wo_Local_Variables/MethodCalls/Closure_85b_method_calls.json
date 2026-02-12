@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode",
+    "doc": "/**\n   * Given an entry node, find all the nodes reachable from that node\n   * and prioritize them.\n   */",
+    "code": "static Node computeFollowNode(Node node, ControlFlowAnalysis cfa) {\n    return computeFollowNode(node, node, cfa);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowGraph.getDirectedGraphNode",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.UnreachableCodeElimination.computeFollowing",
+    "doc": "/**\n   * Tries to remove n if an unconditional branch node (break, continue or\n   * return) if the target of n is the same as the the follow of n. That is, if\n   * we remove n, the control flow remains the same. Also if n targets to\n   * another unconditional branch, this function will recursively try to remove\n   * the target branch as well. The reason why we want to cascade this removal\n   * is because we only run this pass once. If we have code such as\n   *\n   * break -> break -> break\n   *\n   * where all 3 break's are useless. The order of removal matters. When we\n   * first look at the first break, we see that it branches to the 2nd break.\n   * However, if we remove the last break, the 2nd break becomes useless and\n   * finally the first break becomes useless as well.\n   *\n   * @return The target of this jump. If the target is also useless jump,\n   *     the target of that useless jump recursively.\n   */",
+    "code": "private Node computeFollowing(Node n) {\n    Node next = ControlFlowAnalysis.computeFollowNode(n);\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.UnreachableCodeElimination.removeDeadExprStatementSafely",
+    "doc": "/**\n   * Tries to remove n if an unconditional branch node (break, continue or\n   * return) if the target of n is the same as the the follow of n. That is, if\n   * we remove n, the control flow remains the same. Also if n targets to\n   * another unconditional branch, this function will recursively try to remove\n   * the target branch as well. The reason why we want to cascade this removal\n   * is because we only run this pass once. If we have code such as\n   *\n   * break -> break -> break\n   *\n   * where all 3 break's are useless. The order of removal matters. When we\n   * first look at the first break, we see that it branches to the 2nd break.\n   * However, if we remove the last break, the 2nd break becomes useless and\n   * finally the first break becomes useless as well.\n   *\n   * @return The target of this jump. If the target is also useless jump,\n   *     the target of that useless jump recursively.\n   */",
+    "code": "private void removeDeadExprStatementSafely(Node n) {\n    Node parent = n.getParent();\n    if (n.getType() == Token.EMPTY ||\n        (n.getType() == Token.BLOCK && !n.hasChildren())) {\n      return;\n    }\n\n    switch (n.getType()) {\n      case Token.DO:\n        return;\n\n      case Token.BLOCK:\n        if (parent.getType() == Token.TRY) {\n          if (NodeUtil.isTryCatchNodeContainer(n)) {\n            return;\n          }\n        }\n        break;\n\n      case Token.CATCH:\n        Node tryNode = parent.getParent();\n        NodeUtil.maybeAddFinally(tryNode);\n        break;\n    }\n\n    NodeUtil.redeclareVarsInsideBranch(n);\n    compiler.reportCodeChange();\n    if (logger.isLoggable(Level.FINE)) {\n      logger.fine(\"Removing \" + n.toString());\n    }\n    NodeUtil.removeChild(n.getParent(), n);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphEdge.getDestination",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphEdge.getValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getOutEdges",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.graph.DiGraph$DiGraphNode.getValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getNext() {\n    return next;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

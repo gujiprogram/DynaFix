@@ -1,0 +1,49 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CommandLineRunnerTest::testDependencySortingWhitespaceMode ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.Compiler:parseInputs:1362->[Control Flow] Branch Info: Line: 1362, Condition: if (TransVarAstRoot == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1366->[Control Flow] Branch Info: Line: 1366, Condition: if (TransVarDevModeIsOn != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1368->[Control Flow] Branch Info: Line: 1368, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1383->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1383 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Loop Info: Line: 1360, Description: while at line 1360
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Branch Info: Line: 1360, Condition: if (TransVarException != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1386->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1386 -> com.google.javascript.jscomp.Compiler.hasErrors
+com.google.javascript.jscomp.Compiler:parseInputs:1386->[Control Flow] Branch Info: Line: 1386, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1391->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1391 -> com.google.javascript.jscomp.Compiler.stopTracer
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.List.iterator
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Branch Info: Line: 1360, Condition: if (TransVarException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Local Variables] "{TransVarInput1\u003dinput0}"
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1361 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Local Variables] "{TransVarAstRoot\u003dSCRIPT 1 [synthetic: 1] [source_file: input0] [input_id: InputId: input0]}"
+com.google.javascript.jscomp.Compiler:parseInputs:1362->[Control Flow] Branch Info: Line: 1362, Condition: if (TransVarAstRoot == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1366->[Control Flow] Branch Info: Line: 1366, Condition: if (TransVarDevModeIsOn != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1368->[Control Flow] Branch Info: Line: 1368, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1383->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1383 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Loop Info: Line: 1360, Description: while at line 1360
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Branch Info: Line: 1360, Condition: if (TransVarException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Local Variables] "{TransVarInput1\u003dinput1}"
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1361 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Local Variables] "{TransVarAstRoot\u003dSCRIPT 1 [synthetic: 1] [source_file: input1] [input_id: InputId: input1]}"
+com.google.javascript.jscomp.Compiler:parseInputs:1362->[Control Flow] Branch Info: Line: 1362, Condition: if (TransVarAstRoot == null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1366->[Control Flow] Branch Info: Line: 1366, Condition: if (TransVarDevModeIsOn != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1368->[Control Flow] Branch Info: Line: 1368, Condition: if (com.google.javascript.jscomp.Compiler.hasErrors() != 0), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.sourceMapOutputPath == null), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1373->[Control Flow] Branch Info: Line: 1373, Condition: if (this.nameReferenceReportPath != null), Executed: false
+com.google.javascript.jscomp.Compiler:parseInputs:1383->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1383 -> com.google.javascript.rhino.Node.addChildToBack
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Loop Info: Line: 1360, Description: while at line 1360
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Control Flow] Branch Info: Line: 1360, Condition: if (TransVarException != 0), Executed: true
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1360 -> java.util.Iterator.next
+com.google.javascript.jscomp.Compiler:parseInputs:1360->[Local Variables] "{TransVarInput1\u003dinput2}"
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Method Call] Call Stack: com.google.javascript.jscomp.Compiler.parseInputs:1361 -> com.google.javascript.jscomp.CompilerInput.getAstRoot
+com.google.javascript.jscomp.Compiler:parseInputs:1361->[Local Variables] "{TransVarAstRoot\u003dSCRIPT 1 [synthetic: 1] [source_file: input2] [input_id: InputId: input2]}"

@@ -1,0 +1,27 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.StringUtilsTest::testEscapeSurrogatePairs ===
+Exception: java.lang.StringIndexOutOfBoundsException: String index out of range: 2
+
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:53->[Local Variables] {"input":"😰"}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:54->[Control Flow] Branch Info: Line: 54, Condition: if (input == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:58 -> java.lang.CharSequence.length
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:58 -> java.io.StringWriter.<init>
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:58->[Local Variables] {"writer":{"buf":"","lock":""}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:78->[Local Variables] {"TransVarInput2":"😰","TransVarOutput":{"buf":"","lock":""}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:79->[Control Flow] Branch Info: Line: 79, Condition: if (TransVarOutput == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:85->[Control Flow] Branch Info: Line: 85, Condition: if (TransVarInput2 == null), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:91->[Local Variables] {"TransVarPosition":0}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:92 -> java.lang.CharSequence.length
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:92->[Local Variables] {"TransVarLength":2}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:93->[Control Flow] Branch Info: Line: 93, Condition: if (TransVarLength < TransVarLength), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:94->[Local Variables] {"TransVarConsumedLength":2,"TransVarOutput":{"buf":"😰","lock":"😰"}}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:95->[Control Flow] Branch Info: Line: 95, Condition: if (TransVarConsumedLength == 0), Executed: false
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:102->[Local Variables] {"TransVarI":0}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:103->[Control Flow] Branch Info: Line: 103, Condition: if (TransVarConsumedLength < TransVarConsumedLength), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:104->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:104 -> java.lang.Character.codePointAt
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:104->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:104 -> java.lang.Character.charCount
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:104->[Local Variables] {"TransVarPosition":2}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:102->[Control Flow] Loop Info: Line: 102, Description: while at line 102
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:102->[Local Variables] {"TransVarI":1}
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:103->[Control Flow] Branch Info: Line: 103, Condition: if (TransVarConsumedLength < TransVarConsumedLength), Executed: true
+org.apache.commons.lang3.text.translate.CharSequenceTranslator:translate:104->[Method Call] Call Stack: org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate:104 -> java.lang.Character.codePointAt

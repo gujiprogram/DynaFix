@@ -1,0 +1,22 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.NameAnalyzerTest::testAssignWithCall ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1585->[Local Variables] "{t\u003dcom.google.javascript.jscomp.NodeTraversal@5d3ff859}"
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1586->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1586 -> com.google.javascript.jscomp.NodeTraversal.getEnclosingFunction
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1586->[Local Variables] "{function\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1587->[Control Flow] Branch Info: Line: 1587, Condition: if (function == null), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1591->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1591 -> com.google.common.collect.ListMultimap.get
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1591->[Local Variables] {"refs":[]}
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1592->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1592 -> java.util.List.isEmpty
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1592->[Control Flow] Branch Info: Line: 1592, Condition: if (refs == 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1598->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1598 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1598->[Local Variables] "{parent\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1599->[Control Flow] Branch Info: Line: 1599, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1602->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1602 -> com.google.javascript.rhino.Node.isHook
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1602->[Control Flow] Branch Info: Line: 1602, Condition: if (com.google.javascript.rhino.Node.isHook() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1606->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1606 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1606->[Control Flow] Branch Info: Line: 1606, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1610->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1610 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1610->[Control Flow] Branch Info: Line: 1610, Condition: if (com.google.javascript.rhino.Node.isAssign() != 0), Executed: true
+com.google.javascript.jscomp.NameAnalyzer:getEnclosingFunctionDependencyScope:1611->[Method Call] Call Stack: com.google.javascript.jscomp.NameAnalyzer.getEnclosingFunctionDependencyScope:1611 -> com.google.common.collect.ListMultimap.get

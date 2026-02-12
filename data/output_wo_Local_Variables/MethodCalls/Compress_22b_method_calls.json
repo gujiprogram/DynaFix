@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.endBlock",
+    "doc": "/**\n             * Allocate data here instead in constructor, so we do not allocate\n             * it if the input file is empty.\n             */",
+    "code": "private void endBlock() throws IOException {\n        this.computedBlockCRC = this.crc.getFinalCRC();\n\n        if (this.storedBlockCRC != this.computedBlockCRC) {\n            this.computedCombinedCRC = (this.storedCombinedCRC << 1)\n                | (this.storedCombinedCRC >>> 31);\n            this.computedCombinedCRC ^= this.storedBlockCRC;\n\n            throw new IOException(\"BZip2 CRC error\");\n        }\n\n        this.computedCombinedCRC = (this.computedCombinedCRC << 1)\n            | (this.computedCombinedCRC >>> 31);\n        this.computedCombinedCRC ^= this.computedBlockCRC;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.initBlock",
+    "doc": "/**\n             * Allocate data here instead in constructor, so we do not allocate\n             * it if the input file is empty.\n             */",
+    "code": "private void initBlock() throws IOException {\n        char magic0;\n        char magic1;\n        char magic2;\n        char magic3;\n        char magic4;\n        char magic5;\n\n        while (true) {\n            magic0 = bsGetUByte();\n            magic1 = bsGetUByte();\n            magic2 = bsGetUByte();\n            magic3 = bsGetUByte();\n            magic4 = bsGetUByte();\n            magic5 = bsGetUByte();\n\n            if (magic0 != 0x17 || magic1 != 0x72 || magic2 != 0x45\n                    || magic3 != 0x38 || magic4 != 0x50 || magic5 != 0x90) {\n                break;\n            }\n\n            if (complete()) {\n                return;\n            }\n        }\n\n        if (magic0 != 0x31 || // '1'\n            magic1 != 0x41 || // ')'\n            magic2 != 0x59 || // 'Y'\n            magic3 != 0x26 || // '&'\n            magic4 != 0x53 || // 'S'\n            magic5 != 0x59 // 'Y'\n            ) {\n            this.currentState = EOF;\n            throw new IOException(\"bad block header\");\n        } else {\n            this.storedBlockCRC = bsGetInt();\n            this.blockRandomised = bsR(1) == 1;\n\n            if (this.data == null) {\n                this.data = new Data(this.blockSize100k);\n            }\n\n            getAndMoveToFrontDecode();\n\n            this.crc.initialiseCRC();\n            this.currentState = START_BLOCK_STATE;\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.setupNoRandPartB",
+    "doc": "/**\n     * Called by recvDecodingTables() exclusively.\n     */",
+    "code": "private int setupNoRandPartB() throws IOException {\n        if (this.su_ch2 != this.su_chPrev) {\n            this.su_count = 1;\n            return setupNoRandPartA();\n        } else if (++this.su_count >= 4) {\n            this.su_z = (char) (this.data.ll8[this.su_tPos] & 0xff);\n            this.su_tPos = this.data.tt[this.su_tPos];\n            this.su_j2 = 0;\n            return setupNoRandPartC();\n        } else {\n            return setupNoRandPartA();\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.CRC.updateCRC",
+    "doc": "/**\n * A simple class the hold and calculate the CRC for sanity checking of the\n * data.\n * @NotThreadSafe\n */",
+    "code": "void updateCRC(int inCh) {\n            int temp = (globalCrc >> 24) ^ inCh;\n            if (temp < 0) {\n                temp = 256 + temp;\n            }\n            globalCrc = (globalCrc << 8) ^ CRC.crc32Table[temp];\n        }"
+  }
+]

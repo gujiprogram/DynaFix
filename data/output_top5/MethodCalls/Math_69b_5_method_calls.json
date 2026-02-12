@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.regression.SimpleRegression.addData",
+    "doc": "/**\n     * Adds the observation (x,y) to the regression data set.\n     * <p>\n     * Uses updating formulas for means and sums of squares defined in\n     * \"Algorithms for Computing the Sample Variance: Analysis and\n     * Recommendations\", Chan, T.F., Golub, G.H., and LeVeque, R.J.\n     * 1983, American Statistician, vol. 37, pp. 242-247, referenced in\n     * Weisberg, S. \"Applied Linear Regression\". 2nd Ed. 1985.</p>\n     *\n     *\n     * @param x independent variable value\n     * @param y dependent variable value\n     */",
+    "code": "public void addData(double x, double y) {\n        if (n == 0) {\n            xbar = x;\n            ybar = y;\n        } else {\n            double dx = x - xbar;\n            double dy = y - ybar;\n            sumXX += dx * dx * (double) n / (n + 1d);\n            sumYY += dy * dy * (double) n / (n + 1d);\n            sumXY += dx * dy * (double) n / (n + 1d);\n            xbar += dx / (n + 1.0);\n            ybar += dy / (n + 1.0);\n        }\n        sumX += x;\n        sumY += y;\n        n++;\n\n        if (n > 2) {\n            distribution.setDegreesOfFreedom(n - 2);\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.stat.regression.SimpleRegression.getR",
+    "doc": "/**\n     * Returns <a href=\"http://mathworld.wolfram.com/CorrelationCoefficient.html\">\n     * Pearson's product moment correlation coefficient</a>,\n     * usually denoted r.\n     * <p>\n     * <strong>Preconditions</strong>: <ul>\n     * <li>At least two observations (with at least two different x values)\n     * must have been added before invoking this method. If this method is\n     * invoked before a model can be estimated, <code>Double,NaN</code> is\n     * returned.\n     * </li></ul></p>\n     *\n     * @return Pearson's r\n     */",
+    "code": "public double getR() {\n        double b1 = getSlope();\n        double result = Math.sqrt(getRSquare());\n        if (b1 < 0) {\n            result = -result;\n        }\n        return result;\n    }"
+  }
+]

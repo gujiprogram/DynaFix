@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveEntry.getUnixMode",
+    "doc": "/**\n     * Unix permission.\n     * @return the unix permissions\n     */",
+    "code": "public int getUnixMode() {\n        return platform != PLATFORM_UNIX ? 0 :\n            (int) ((getExternalAttributes() >> SHORT_SHIFT) & SHORT_MASK);\n    }"
+  }
+]

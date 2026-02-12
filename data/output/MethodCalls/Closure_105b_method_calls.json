@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newLinkedList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Compiler.reportCodeChange",
+    "doc": "/**\n   * All passes should call reportCodeChange() when they alter\n   * the JS tree structure. This is verified by CompilerTestCase.\n   * This allows us to optimize to a fixed point.\n   */",
+    "code": "public void reportCodeChange() {\n    for (CodeChangeHandler handler : codeChangeHandlers) {\n      handler.reportChange();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.InlineCostEstimator.getCost",
+    "doc": "/**\n   * Determines the size of the js code.\n   */",
+    "code": "static int getCost(Node root) {\n    return getCost(root, Integer.MAX_VALUE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getCompiler",
+    "doc": "/**\n   * Gets the compiler.\n   */",
+    "code": "public Compiler getCompiler() {\n    return (Compiler) compiler;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getStringValue",
+    "doc": "/**\n   * Gets the value of a node as a String, or null if it cannot be converted.\n   * When it returns a non-null String, this method effectively emulates the\n   * <code>String()</code> JavaScript cast function.\n   */",
+    "code": "static String getStringValue(Node n) {\n    switch (n.getType()) {\n      case Token.NAME:\n      case Token.STRING:\n        return n.getString();\n\n      case Token.NUMBER:\n        double value = n.getDouble();\n        long longValue = (long) value;\n\n        if (longValue == value) {\n          return Long.toString(longValue);\n        } else {\n          return Double.toString(n.getDouble());\n        }\n\n      case Token.FALSE:\n      case Token.TRUE:\n      case Token.NULL:\n        return Node.tokenToName(n.getType());\n\n      case Token.VOID:\n        return \"undefined\";\n    }\n    return null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isImmutableValue",
+    "doc": "/**\n   * Returns true if this is an immutable value.\n   */",
+    "code": "static boolean isImmutableValue(Node n) {\n    switch (n.getType()) {\n      case Token.STRING:\n      case Token.NUMBER:\n      case Token.NULL:\n      case Token.TRUE:\n      case Token.FALSE:\n      case Token.VOID:\n        return true;\n      case Token.NEG:\n        return isImmutableValue(n.getFirstChild());\n      case Token.NAME:\n        String name = n.getString();\n        return \"undefined\".equals(name)\n            || \"Infinity\".equals(name)\n            || \"NaN\".equals(name);\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.detachChildren",
+    "doc": "/**\n     * Removes all children from this node and isolates the children from each\n     * other.\n     */",
+    "code": "public void detachChildren() {\n      for (Node child = first; child != null; ) {\n        Node nextChild = child.getNext();\n        child.parent = null;\n        child.next = null;\n        child = nextChild;\n      }\n      first = null;\n      last = null;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getNext() {\n        return next;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newString",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public static Node newString(String str) {\n        return new StringNode(Token.STRING, str);\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n     * Detaches child from Node and replaces it with newChild.\n     */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n        Preconditions.checkArgument(newChild.next == null,\n            \"The new child node has siblings.\");\n        Preconditions.checkArgument(newChild.parent == null,\n            \"The new child node already has a parent.\");\n\n        newChild.copyInformationFrom(child);\n\n        newChild.next = child.next;\n        newChild.parent = this;\n        if (child == first) {\n            first = newChild;\n        } else {\n            Node prev = getChildBefore(child);\n            prev.next = newChild;\n        }\n        if (child == last)\n            last = newChild;\n        child.next = null;\n        child.parent = null;\n    }"
+  }
+]

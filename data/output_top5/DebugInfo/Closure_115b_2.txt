@@ -1,0 +1,128 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:403->[Control Flow] Branch Info: Line: 403, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.Node.getFirstChild() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:408 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Control Flow] Branch Info: Line: 408, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:409 -> com.google.javascript.jscomp.NodeUtil.isConstantName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Control Flow] Branch Info: Line: 409, Condition: if (parent == 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:410 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:411 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Control Flow] Branch Info: Line: 411, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:420->[Local Variables] "{decomposer\u003dcom.google.javascript.jscomp.ExpressionDecomposer@41ccb3b9}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:421->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:421 -> com.google.javascript.jscomp.ExpressionDecomposer.canExposeExpression
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:423->[Control Flow] Branch Info: Line: 423, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Local Variables] "{parent\u003dNAME JSCompiler_inline_result$$0 10 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:398->[Local Variables] "{grandParent\u003dVAR 10 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:402 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Control Flow] Branch Info: Line: 402, Condition: if (grandParent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:403->[Control Flow] Branch Info: Line: 403, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.Node.getFirstChild() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:408 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Control Flow] Branch Info: Line: 408, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:409 -> com.google.javascript.jscomp.NodeUtil.isConstantName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Control Flow] Branch Info: Line: 409, Condition: if (parent == 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:410 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:411 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Control Flow] Branch Info: Line: 411, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:402 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Control Flow] Branch Info: Line: 402, Condition: if (grandParent != 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1 ===
+Exception: junit.framework.AssertionFailedError:
+
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:394->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Local Variables] "{parent\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:398->[Local Variables] "{grandParent\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:394->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Local Variables] "{parent\u003dEXPR_RESULT 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:398->[Local Variables] "{grandParent\u003dSCRIPT 1 [synthetic: 1] [source_file: testcode] [input_id: InputId: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: true
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:411 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Control Flow] Branch Info: Line: 411, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:402 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Control Flow] Branch Info: Line: 402, Condition: if (grandParent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:403->[Control Flow] Branch Info: Line: 403, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.Node.getFirstChild() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:408 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Control Flow] Branch Info: Line: 408, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:409 -> com.google.javascript.jscomp.NodeUtil.isConstantName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Control Flow] Branch Info: Line: 409, Condition: if (parent == 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:410 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:411 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Control Flow] Branch Info: Line: 411, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Control Flow] Branch Info: Line: 408, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Control Flow] Branch Info: Line: 409, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:411->[Control Flow] Branch Info: Line: 411, Condition: if (com.google.javascript.rhino.Node.hasOneChild() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:417->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:417 -> com.google.javascript.jscomp.ExpressionDecomposer.findExpressionRoot
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:418->[Control Flow] Branch Info: Line: 418, Condition: if (expressionRoot != null), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:419->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:419 -> com.google.javascript.jscomp.ExpressionDecomposer.<init>
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:420->[Local Variables] "{decomposer\u003dcom.google.javascript.jscomp.ExpressionDecomposer@3e28fee1}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:421->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:421 -> com.google.javascript.jscomp.ExpressionDecomposer.canExposeExpression
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:422->[Local Variables] {"type":"MOVABLE"}
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:423->[Control Flow] Branch Info: Line: 423, Condition: if (unknown_condition_166), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:395 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:395->[Local Variables] "{parent\u003dNAME JSCompiler_inline_result$$1 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:396->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:396 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:398->[Local Variables] "{grandParent\u003dVAR 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:399 -> com.google.javascript.jscomp.NodeUtil.isExprCall
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:399->[Control Flow] Branch Info: Line: 399, Condition: if (parent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:402 -> com.google.javascript.jscomp.NodeUtil.isExprAssign
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:402->[Control Flow] Branch Info: Line: 402, Condition: if (grandParent != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:403->[Control Flow] Branch Info: Line: 403, Condition: if (parent == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.Node.getFirstChild() == 0), Executed: false
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:408 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:408->[Control Flow] Branch Info: Line: 408, Condition: if (com.google.javascript.rhino.Node.isName() != 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:409 -> com.google.javascript.jscomp.NodeUtil.isConstantName
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:409->[Control Flow] Branch Info: Line: 409, Condition: if (parent == 0), Executed: true
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.classifyCallSite:410 -> com.google.javascript.rhino.Node.isVar
+com.google.javascript.jscomp.FunctionInjector:classifyCallSite:410->[Control Flow] Branch Info: Line: 410, Condition: if (com.google.javascript.rhino.Node.isVar() != 0), Executed: true

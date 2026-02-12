@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.collect.Multimap.put",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.createEdge",
+    "doc": "/**\n   * Connects the two nodes in the control flow graph.\n   *\n   * @param fromNode Source.\n   * @param toNode Destination.\n   */",
+    "code": "private void createEdge(Node fromNode, ControlFlowGraph.Branch branch,\n      Node toNode) {\n    cfg.createNode(fromNode);\n    cfg.createNode(toNode);\n    cfg.connectIfNotFound(fromNode, branch, toNode);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ControlFlowAnalysis.mayThrowException",
+    "doc": "/**\n   * Determines if the subtree might throw an exception.\n   */",
+    "code": "public static boolean mayThrowException(Node n) {\n    switch (n.getType()) {\n      case Token.CALL:\n      case Token.GETPROP:\n      case Token.GETELEM:\n      case Token.THROW:\n      case Token.NEW:\n      case Token.ASSIGN:\n      case Token.INC:\n      case Token.DEC:\n      case Token.INSTANCEOF:\n        return true;\n      case Token.FUNCTION:\n        return false;\n    }\n    for (Node c = n.getFirstChild(); c != null; c = c.getNext()) {\n      if (!ControlFlowGraph.isEnteringNewCfgNode(c) && mayThrowException(c)) {\n        return true;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isFunction",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

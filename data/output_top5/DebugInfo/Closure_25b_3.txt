@@ -1,0 +1,25 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testBackwardsInferenceNew ===
+Exception: junit.framework.ComparisonFailure: expected:<{[foo: (number|undefined)]}> but was:<{[]}>
+
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:648->[Local Variables] "{scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@6bcc3f27, n\u003dOBJECTLIT 4 [source_file: [testcode]] : {}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:649->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:649 -> com.google.javascript.rhino.Node.getJSType
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:649->[Local Variables] "{type\u003d{}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:650->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:650 -> com.google.common.base.Preconditions.checkNotNull
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:652->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:652 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:652->[Control Flow] Branch Info: Line: 652, Condition: if (objectType != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:662->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:662 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:662->[Local Variables] "{objectType\u003d{}}"
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:663->[Control Flow] Branch Info: Line: 663, Condition: if (objectType == null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:667->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:667 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:667->[Control Flow] Branch Info: Line: 667, Condition: if (com.google.javascript.rhino.Node.getJSDocInfo() != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:668->[Control Flow] Branch Info: Line: 668, Condition: if (com.google.javascript.rhino.JSDocInfo.getLendsName() != null), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:668->[Local Variables] {"hasLendsName":false}
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:669->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:669 -> com.google.javascript.rhino.jstype.ObjectType.hasReferenceName
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:669->[Control Flow] Branch Info: Line: 669, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasReferenceName() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:669->[Control Flow] Branch Info: Line: 669, Condition: if (hasLendsName == 0), Executed: false
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:674->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:674 -> com.google.javascript.jscomp.NodeUtil.getBestLValue
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:673->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:673 -> com.google.javascript.jscomp.NodeUtil.getBestLValueName
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:674->[Local Variables] {"qObjName":"y"}
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:675->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.traverseObjectLiteral:675 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeInference:traverseObjectLiteral:675->[Control Flow] Branch Info: Line: 675, Condition: if (name != null), Executed: false

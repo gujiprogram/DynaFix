@@ -1,0 +1,52 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newArrayList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.DefinitionProvider.getDefinitionsReferencedAt",
+    "doc": "/**\n   * Returns a collection of definitions that characterize the\n   * possible values of a variable or property.  If information is\n   * unavailable or incomplete, return null.  This function should\n   * never return an empty collection.\n   *\n   * @return non-empty definition collection, or null.\n   */",
+    "code": "Collection<Definition> getDefinitionsReferencedAt(Node useSite);\n}"
+  },
+  {
+    "method": "com.google.javascript.jscomp.DefinitionsRemover$Definition.getRValue",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isConstantName",
+    "doc": "/**\n   * Returns true if a name node represents a constant variable.\n   *\n   * <p>Determining whether a variable is constant has three steps:\n   * <ol>\n   * <li>In CodingConventionAnnotator, any name that matches the\n   *     {@link CodingConvention#isConstant(String)} is annotated with an\n   *     IS_CONSTANT_NAME property.\n   * <li>The normalize pass renames any variable with the IS_CONSTANT_NAME\n   *     annotation and that is initialized to a constant value with\n   *     a variable name inlucding $$constant.\n   * <li>Return true here if the variable includes $$constant in its name.\n   * </ol>\n   *\n   * @param node A NAME or STRING node\n   * @return True if the variable is constant\n   */",
+    "code": "static boolean isConstantName(Node node) {\n    return node.getBooleanProp(Node.IS_CONSTANT_NAME);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isFunction",
+    "doc": "/**\n   * Is this a FUNCTION node?\n   */",
+    "code": "static boolean isFunction(Node n) {\n    return n.getType() == Token.FUNCTION;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGetProp",
+    "doc": "/**\n   * Is this a GETPROP node?\n   */",
+    "code": "static boolean isGetProp(Node n) {\n    return n.getType() == Token.GETPROP;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isName",
+    "doc": "/**\n   * Is this a NAME node?\n   */",
+    "code": "static boolean isName(Node n) {\n    return n.getType() == Token.NAME;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * This function takes a set of GETPROP nodes and produces a string that is\n     * each property separated by dots.  If the node ultimately under the left\n     * sub-tree is not a simple name, this is not a valid qualified name.\n     *\n     * @return a null if this is not a qualified name, or a dot-separated string\n     * of the name and properties.\n     */",
+    "code": "return getString();\n        } else if (type == Token.GETPROP) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  }
+]

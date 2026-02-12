@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.ClosureReverseAbstractInterpreter.getTypeIfRefinable",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ClosureReverseAbstractInterpreter.nextPreciserScopeKnowingConditionOutcome",
+    "doc": "/**\n   * Creates a {@link ClosureReverseAbstractInterpreter}.\n   */",
+    "code": "return nextPreciserScopeKnowingConditionOutcome(\n        condition, blindScope, outcome);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FlowScope.getSlot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n     * Check for more than one child more efficiently than by iterating over all\n     * the children as is done with Node.getChildCount().\n     * @return Whether the node more than one child.\n     */",
+    "code": "public int getChildCount() {\n        int c = 0;\n        for (Node n = first; n != null; n = n.next)\n            c++;\n\n        return c;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getFirstChild() {\n        return first;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n     * Copies source file and name information from the other node to the\n     * entire tree rooted at this node.\n     */",
+    "code": "public JSType getJSType() {\n        return jsType;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public Node getLastChild() {\n        return last;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * This function takes a set of GETPROP nodes and produces a string that is\n     * each property separated by dots.  If the node ultimately under the left\n     * sub-tree is not a simple name, this is not a valid qualified name.\n     *\n     * @return a null if this is not a qualified name, or a dot-separated string\n     * of the name and properties.\n     */",
+    "code": "return getString();\n        } else if (type == Token.GETPROP) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n         * This should only be called for STRING nodes created in object lits.\n         */",
+    "code": "public int getType() {\n        return type;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isQualifiedName",
+    "doc": "/**\n     * Returns whether a node corresponds to a simple or a qualified name, such\n     * as <code>x</code> or <code>a.b.c</code> or <code>this.a</code>.\n     */",
+    "code": "public boolean isQualifiedName() {\n        switch (getType()) {\n            case Token.NAME:\n            case Token.THIS:\n                return true;\n            case Token.GETPROP:\n                return getFirstChild().isQualifiedName();\n            default:\n                return false;\n        }\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.setJSType",
+    "doc": "/**\n     * Copies source file and name information from the other node to the\n     * entire tree rooted at this node.\n     */",
+    "code": "public void setJSType(JSType jsType) {\n        this.jsType = jsType;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.getType",
+    "doc": "/**\n   * Returns the type information, if any, for this slot.\n   * @return The type or {@code null} if no type is declared for it.\n   */",
+    "code": "T getType();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.StaticSlot.isTypeInferred",
+    "doc": "/**\n   * Returns whether the type has been inferred (as opposed to declared).\n   */",
+    "code": "boolean isTypeInferred();\n}"
+  }
+]

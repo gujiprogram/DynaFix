@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.lang3.time.FastDateFormat.parseToken",
+    "doc": "/**\n     * <p>Performs the parsing of tokens.</p>\n     *\n     * @param pattern  the pattern\n     * @param indexRef  index references\n     * @return parsed token\n     */",
+    "code": "protected String parseToken(String pattern, int[] indexRef) {\n        StringBuilder buf = new StringBuilder();\n\n        int i = indexRef[0];\n        int length = pattern.length();\n\n        char c = pattern.charAt(i);\n        if (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {\n            buf.append(c);\n\n            while (i + 1 < length) {\n                char peek = pattern.charAt(i + 1);\n                if (peek == c) {\n                    buf.append(c);\n                    i++;\n                } else {\n                    break;\n                }\n            }\n        } else {\n            buf.append('\\'');\n\n            boolean inLiteral = false;\n\n            for (; i < length; i++) {\n                c = pattern.charAt(i);\n\n                if (c == '\\'') {\n                    if (i + 1 < length && pattern.charAt(i + 1) == '\\'') {\n                        i++;\n                        buf.append(c);\n                    } else {\n                        inLiteral = !inLiteral;\n                    }\n                } else if (!inLiteral &&\n                         (c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z')) {\n                    i--;\n                    break;\n                } else {\n                    buf.append(c);\n                }\n            }\n        }\n\n        indexRef[0] = i;\n        return buf.toString();\n    }"
+  },
+  {
+    "method": "org.apache.commons.lang3.time.FastDateFormat.selectNumberRule",
+    "doc": "/**\n     * <p>Gets an appropriate rule for the padding required.</p>\n     *\n     * @param field  the field to get a rule for\n     * @param padding  the padding required\n     * @return a new rule with the correct padding\n     */",
+    "code": "protected NumberRule selectNumberRule(int field, int padding) {\n        switch (padding) {\n        case 1:\n            return new UnpaddedNumberField(field);\n        case 2:\n            return new TwoDigitNumberField(field);\n        default:\n            return new PaddedNumberField(field, padding);\n        }\n    }"
+  }
+]

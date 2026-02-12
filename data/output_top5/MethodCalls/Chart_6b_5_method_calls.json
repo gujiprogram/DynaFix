@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.jfree.chart.util.AbstractObjectList.hashCode",
+    "doc": "/**\n     * Returns a hash code value for the object.\n     *\n     * @return The hashcode.\n     */",
+    "code": "public int hashCode() {\n    \tint result = 127;\n    \tint size = size();\n    \tresult = HashUtilities.hashCode(result, size());\n        if (size > 0) {\n            result = HashUtilities.hashCode(result, this.objects[0]);\n            if (size > 1) {\n                result = HashUtilities.hashCode(result, this.objects[size - 1]);\n                if (size > 2) {\n                    result = HashUtilities.hashCode(result,\n                    \t\tthis.objects[size / 2]);\n                }\n            }\n        }\n        return result;\n    }"
+  }
+]

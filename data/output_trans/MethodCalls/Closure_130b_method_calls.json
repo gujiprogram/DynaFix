@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.common.collect.Lists.newArrayList",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CollapseProperties.inlineAliasIfPossible",
+    "doc": "/**\n   * For each qualified name N in the global scope, we check if:\n   * (a) No ancestor of N is ever aliased or assigned an unknown value type.\n   *     (If N = \"a.b.c\", \"a\" and \"a.b\" are never aliased).\n   * (b) N has exactly one write, and it lives in the global scope.\n   * (c) N is aliased in a local scope.\n   *\n   * If (a) is true, then GlobalNamespace must know all the writes to N.\n   * If (a) and (b) are true, then N cannot change during the execution of\n   *    a local scope.\n   * If (a) and (b) and (c) are true, then the alias can be inlined if the\n   *    alias obeys the usual rules for how we decide whether a variable is\n   *    inlineable.\n   * @see InlineVariables\n   */",
+    "code": "private boolean inlineAliasIfPossible(Ref alias, GlobalNamespace namespace) {\n    Node aliasParent = alias.node.getParent();\n    if (aliasParent.isName()) {\n      Scope scope = alias.scope;\n      Var aliasVar = scope.getVar(aliasParent.getString());\n      ReferenceCollectingCallback collector =\n          new ReferenceCollectingCallback(compiler,\n              ReferenceCollectingCallback.DO_NOTHING_BEHAVIOR,\n              Predicates.<Var>equalTo(aliasVar));\n      (new NodeTraversal(compiler, collector)).traverseAtScope(scope);\n\n      ReferenceCollection aliasRefs = collector.getReferences(aliasVar);\n      if (aliasRefs.isWellDefined()\n          && aliasRefs.firstReferenceIsAssigningDeclaration()\n          && aliasRefs.isAssignedOnceInLifetime()) {\n        int size = aliasRefs.references.size();\n        Set<Node> newNodes = Sets.newHashSetWithExpectedSize(size - 1);\n        for (int i = 1; i < size; i++) {\n          ReferenceCollectingCallback.Reference aliasRef =\n              aliasRefs.references.get(i);\n\n          Node newNode = alias.node.cloneTree();\n          aliasRef.getParent().replaceChild(aliasRef.getNode(), newNode);\n          newNodes.add(newNode);\n        }\n\n        aliasParent.replaceChild(alias.node, IR.nullNode());\n        compiler.reportCodeChange();\n\n        namespace.scanNewNodes(alias.scope, newNodes);\n        return true;\n      }\n    }\n\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.getRefs",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.GlobalNamespace$Name.removeRef",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isLocal",
+    "doc": "/**\n     * Returns whether this is a local variable.\n     */",
+    "code": "public boolean isLocal() {\n      return scope.isLocal();\n    }"
+  }
+]

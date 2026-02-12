@@ -1,0 +1,326 @@
+
+=== Debug Info for Test: org.apache.commons.cli.BasicParserTest::testPropertyOptionGroup ===
+Exception: org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"lastReturned":{"hash":98,"key":"b","value":"true"},"type":0,"iterator":false,"expectedModCount":2},"option":"b"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"b","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"b":"true","x":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":98,"key":"b","value":"true"},"lastReturned":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2},"option":"x"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"x","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Loop Info: Line: 259, Description: while at line 259
+
+=== Debug Info for Test: org.apache.commons.cli.BasicParserTest::testPropertyOptionUnexpected ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"f":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"entry":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"lastReturned":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1},"option":"f"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+
+=== Debug Info for Test: org.apache.commons.cli.DefaultParserTest::testPropertyOptionGroup ===
+Exception: org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Control Flow] Branch Info: Line: 146, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.lang.Object.toString
+org.apache.commons.cli.DefaultParser:handleProperties:149->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"lastReturned":{"hash":98,"key":"b","value":"true"},"type":0,"iterator":false,"expectedModCount":2},"option":"b"}
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:150 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:152->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:152 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.DefaultParser:handleProperties:156->[Local Variables] {"opt":{"opt":"b","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.DefaultParser:handleProperties:157->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:157 -> java.util.Properties.getProperty
+org.apache.commons.cli.DefaultParser:handleProperties:159->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:159 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.DefaultParser:handleProperties:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:166 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Control Flow] Branch Info: Line: 166, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:167->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:167 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.DefaultParser:handleProperties:161->[Control Flow] Branch Info: Line: 161, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Control Flow] Branch Info: Line: 166, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:167->[Control Flow] Branch Info: Line: 167, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:168->[Control Flow] Branch Info: Line: 168, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:174->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:174 -> org.apache.commons.cli.DefaultParser.handleOption
+org.apache.commons.cli.DefaultParser:handleProperties:140->[Local Variables] {"properties":{"b":"true","x":"true"}}
+org.apache.commons.cli.DefaultParser:handleProperties:141->[Control Flow] Branch Info: Line: 141, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:146 -> java.util.Properties.propertyNames
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:146 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Control Flow] Branch Info: Line: 146, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:147->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2}}
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.lang.Object.toString
+org.apache.commons.cli.DefaultParser:handleProperties:149->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":98,"key":"b","value":"true"},"lastReturned":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2},"option":"x"}
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:150 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:152->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:152 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.DefaultParser:handleProperties:156->[Local Variables] {"opt":{"opt":"x","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.DefaultParser:handleProperties:157->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:157 -> java.util.Properties.getProperty
+org.apache.commons.cli.DefaultParser:handleProperties:158->[Local Variables] {"value":"true"}
+org.apache.commons.cli.DefaultParser:handleProperties:159->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:159 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.DefaultParser:handleProperties:159->[Control Flow] Branch Info: Line: 159, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:166 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Control Flow] Branch Info: Line: 166, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:167->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:167 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.DefaultParser:handleProperties:161->[Control Flow] Branch Info: Line: 161, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:166->[Control Flow] Branch Info: Line: 166, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:167->[Control Flow] Branch Info: Line: 167, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:168->[Control Flow] Branch Info: Line: 168, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:174->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:174 -> org.apache.commons.cli.DefaultParser.handleOption
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Control Flow] Loop Info: Line: 146, Description: while at line 146
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:146 -> java.util.Enumeration.hasMoreElements
+
+=== Debug Info for Test: org.apache.commons.cli.DefaultParserTest::testPropertyOptionUnexpected ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.DefaultParser:handleProperties:140->[Local Variables] {"properties":{"f":"true"}}
+org.apache.commons.cli.DefaultParser:handleProperties:141->[Control Flow] Branch Info: Line: 141, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:146 -> java.util.Properties.propertyNames
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:146 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.DefaultParser:handleProperties:146->[Control Flow] Branch Info: Line: 146, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:147->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"entry":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1}}
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.DefaultParser:handleProperties:148->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:148 -> java.lang.Object.toString
+org.apache.commons.cli.DefaultParser:handleProperties:149->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"lastReturned":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1},"option":"f"}
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:150 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.DefaultParser:handleProperties:150->[Control Flow] Branch Info: Line: 150, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.DefaultParser:handleProperties:152->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:152 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.DefaultParser:handleProperties:157->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:157 -> java.util.Properties.getProperty
+org.apache.commons.cli.DefaultParser:handleProperties:158->[Local Variables] {"value":"true"}
+org.apache.commons.cli.DefaultParser:handleProperties:159->[Method Call] Call Stack: org.apache.commons.cli.DefaultParser.handleProperties:159 -> org.apache.commons.cli.Option.hasArg
+
+=== Debug Info for Test: org.apache.commons.cli.GnuParserTest::testPropertyOptionGroup ===
+Exception: org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"lastReturned":{"hash":98,"key":"b","value":"true"},"type":0,"iterator":false,"expectedModCount":2},"option":"b"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"b","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"b":"true","x":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":98,"key":"b","value":"true"},"lastReturned":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2},"option":"x"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"x","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Loop Info: Line: 259, Description: while at line 259
+
+=== Debug Info for Test: org.apache.commons.cli.GnuParserTest::testPropertyOptionUnexpected ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"f":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"entry":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"lastReturned":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1},"option":"f"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+
+=== Debug Info for Test: org.apache.commons.cli.OptionGroupTest::testTwoOptionsFromGroupWithProperties ===
+Exception: org.apache.commons.cli.AlreadySelectedException: The option 'd' was specified but an option from this group has already been selected: 'f'
+
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"d":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,{"hash":100,"key":"d","value":"true"},null,null,null,null,null,null,null,null,null],"index":1,"entry":{"hash":100,"key":"d","value":"true"},"type":0,"iterator":false,"expectedModCount":1}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,{"hash":100,"key":"d","value":"true"},null,null,null,null,null,null,null,null,null],"index":1,"lastReturned":{"hash":100,"key":"d","value":"true"},"type":0,"iterator":false,"expectedModCount":1},"option":"d"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"d","longOpt":"directory","argName":"arg","description":"directory to process","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+
+=== Debug Info for Test: org.apache.commons.cli.PosixParserTest::testPropertyOptionGroup ===
+Exception: org.apache.commons.cli.AlreadySelectedException: The option 'b' was specified but an option from this group has already been selected: 'a'
+
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"lastReturned":{"hash":98,"key":"b","value":"true"},"type":0,"iterator":false,"expectedModCount":2},"option":"b"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"b","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"b":"true","x":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,null,null,null,null,null,null,null,{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}}],"index":10,"entry":{"hash":98,"key":"b","value":"true"},"lastReturned":{"hash":120,"key":"x","value":"true","next":{"hash":98,"key":"b","value":"true"}},"type":0,"iterator":false,"expectedModCount":2},"option":"x"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:269->[Local Variables] {"opt":{"opt":"x","argName":"arg","required":false,"optionalArg":false,"numberOfArgs":-1,"values":[],"valuesep":"\u0000"}}
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg
+org.apache.commons.cli.Parser:processProperties:272->[Control Flow] Branch Info: Line: 272, Condition: if (org.apache.commons.cli.Option.hasArg() != 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:286 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:287->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:287 -> java.lang.String.equalsIgnoreCase
+org.apache.commons.cli.Parser:processProperties:274->[Control Flow] Branch Info: Line: 274, Condition: if (org.apache.commons.cli.Option.getValues() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:286->[Control Flow] Branch Info: Line: 286, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:287->[Control Flow] Branch Info: Line: 287, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:288->[Control Flow] Branch Info: Line: 288, Condition: if (java.lang.String.equalsIgnoreCase() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:295->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:295 -> org.apache.commons.cli.CommandLine.addOption
+org.apache.commons.cli.Parser:processProperties:296->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:296 -> org.apache.commons.cli.Parser.updateRequiredOptions
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Loop Info: Line: 259, Description: while at line 259
+
+=== Debug Info for Test: org.apache.commons.cli.PosixParserTest::testPropertyOptionUnexpected ===
+Exception: java.lang.NullPointerException
+
+org.apache.commons.cli.Parser:processProperties:253->[Local Variables] {"properties":{"f":"true"}}
+org.apache.commons.cli.Parser:processProperties:254->[Control Flow] Branch Info: Line: 254, Condition: if (properties == null), Executed: false
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Properties.propertyNames
+org.apache.commons.cli.Parser:processProperties:259->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:259 -> java.util.Enumeration.hasMoreElements
+org.apache.commons.cli.Parser:processProperties:259->[Control Flow] Branch Info: Line: 259, Condition: if (e != 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:260->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"entry":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1}}
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.util.Enumeration.nextElement
+org.apache.commons.cli.Parser:processProperties:261->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:261 -> java.lang.Object.toString
+org.apache.commons.cli.Parser:processProperties:262->[Local Variables] {"e":{"table":[null,null,null,{"hash":102,"key":"f","value":"true"},null,null,null,null,null,null,null],"index":3,"lastReturned":{"hash":102,"key":"f","value":"true"},"type":0,"iterator":false,"expectedModCount":1},"option":"f"}
+org.apache.commons.cli.Parser:processProperties:263->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:263 -> org.apache.commons.cli.CommandLine.hasOption
+org.apache.commons.cli.Parser:processProperties:263->[Control Flow] Branch Info: Line: 263, Condition: if (org.apache.commons.cli.CommandLine.hasOption() == 0), Executed: true
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Parser.getOptions
+org.apache.commons.cli.Parser:processProperties:265->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:265 -> org.apache.commons.cli.Options.getOption
+org.apache.commons.cli.Parser:processProperties:270->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:270 -> java.util.Properties.getProperty
+org.apache.commons.cli.Parser:processProperties:271->[Local Variables] {"value":"true"}
+org.apache.commons.cli.Parser:processProperties:272->[Method Call] Call Stack: org.apache.commons.cli.Parser.processProperties:272 -> org.apache.commons.cli.Option.hasArg

@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkPropertyAccess",
+    "doc": "/**\n   * Emit a warning if we can prove that a property cannot possibly be\n   * defined on an object. Note the difference between JS and a strictly\n   * statically typed language: we're checking if the property\n   * *cannot be defined*, whereas a java compiler would check if the\n   * property *can be undefined*.\n   */",
+    "code": "private void checkPropertyAccess(JSType childType, String propName,\n      NodeTraversal t, Node n) {\n    JSType propType = getJSType(n);\n    if (propType.isEquivalentTo(typeRegistry.getNativeType(UNKNOWN_TYPE))) {\n      childType = childType.autobox();\n      ObjectType objectType = ObjectType.cast(childType);\n      if (objectType != null) {\n        if (!objectType.hasProperty(propName) ||\n            objectType.isEquivalentTo(\n                typeRegistry.getNativeType(UNKNOWN_TYPE))) {\n          if (objectType instanceof EnumType) {\n            report(t, n, INEXISTENT_ENUM_ELEMENT, propName);\n          } else {\n            checkPropertyAccessHelper(objectType, propName, t, n);\n          }\n        }\n\n      } else {\n        checkPropertyAccessHelper(childType, propName, t, n);\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getNativeType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "return getNativeType(UNKNOWN_TYPE);\n    } else {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectNotNullOrUndefined",
+    "doc": "/**\n   * Expect the type to be anything but the null or void type. If the\n   * expectation is not met, issue a warning at the provided node's\n   * source code position. Note that a union type that includes the\n   * void type and at least one other type meets the expectation.\n   * @return Whether the expectation was met.\n   */",
+    "code": "boolean expectNotNullOrUndefined(\n      NodeTraversal t, Node n, JSType type, String msg, JSType expectedType) {\n    if (!type.isNoType() && !type.isUnknownType() &&\n        type.isSubtype(nullOrUndefined) &&\n        !containsForwardDeclaredUnresolvedName(type)) {\n\n      if (n.isGetProp() &&\n          !t.inGlobalScope() && type.isNullType()) {\n        return true;\n      }\n\n      mismatch(t, n, msg, type, expectedType);\n      return false;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getJSType",
+    "doc": "/**\n   * Overwrite all the source information in this node and its subtree with\n   * that of {@code other} iff the source info is missing.\n   */",
+    "code": "public JSType getJSType() {\n      return jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isAssign",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isDict",
+    "doc": "/**\n   * Returns true iff {@code this} can be a {@code dict}.\n   * UnionType overrides the method, assume {@code this} is not a union here.\n   */",
+    "code": "public boolean isDict() {\n    if (isObject()) {\n      FunctionType ctor = toObjectType().getConstructor();\n      return ctor != null && ctor.makesDicts();\n    }\n    return false;\n  }"
+  }
+]

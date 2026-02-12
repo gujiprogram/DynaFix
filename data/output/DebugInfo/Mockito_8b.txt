@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: org.mockito.internal.util.reflection.GenericMetadataSupportTest::typeVariable_of_self_type ===
+Exception: java.lang.StackOverflowError
+
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:67->[Control Flow] Branch Info: Line: 67, Condition: if (classType == 0), Executed: true
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:66->[Local Variables] "{classType\u003dorg.mockito.internal.util.reflection.GenericMetadataSupportTest$GenericsSelfReference\u003cT\u003e}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:67->[Control Flow] Branch Info: Line: 67, Condition: if (classType == 0), Executed: false
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:70->[Local Variables] "{parameterizedType\u003dorg.mockito.internal.util.reflection.GenericMetadataSupportTest$GenericsSelfReference\u003cT\u003e}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:71->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariablesOn:71 -> java.lang.reflect.ParameterizedType.getRawType
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:71->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariablesOn:71 -> java.lang.Class.getTypeParameters
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:71->[Local Variables] "{typeParameters\u003d[Ljava.lang.reflect.TypeVariable;@5bc9ba1d}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:72->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariablesOn:72 -> java.lang.reflect.ParameterizedType.getActualTypeArguments
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:72->[Local Variables] "{actualTypeArguments\u003d[Ljava.lang.reflect.Type;@1021f6c9}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:73->[Control Flow] Branch Info: Line: 73, Condition: if (actualTypeArguments < actualTypeArguments), Executed: true
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:73->[Local Variables] {"i":0}
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:74->[Local Variables] "{typeParameter\u003dT}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:76->[Local Variables] "{actualTypeArgument\u003dT}"
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:77->[Control Flow] Branch Info: Line: 77, Condition: if (actualTypeArgument != 0), Executed: false
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:80->[Method Call] Call Stack: org.mockito.internal.util.reflection.GenericMetadataSupport.registerTypeVariablesOn:80 -> java.util.Map.put
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:73->[Control Flow] Loop Info: Line: 73, Description: while at line 73
+org.mockito.internal.util.reflection.GenericMetadataSupport:registerTypeVariablesOn:73->[Control Flow] Branch Info: Line: 73, Condition: if (actualTypeArguments < actualTypeArguments), Executed: false

@@ -1,0 +1,14 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testBoundaryRangeTooLarge ===
+Exception: java.lang.Exception: Unexpected exception, expected<org.apache.commons.math3.exception.NumberIsTooLargeException> but was<org.apache.commons.math3.exception.MathIllegalStateException>
+
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:356->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:356 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.checkParameters
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:358->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:358 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getGoalType
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:358->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:358 -> org.apache.commons.math3.optimization.GoalType.equals
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:359->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:359 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction.<init>
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:359->[Local Variables] {"fitfun":{"valueRange":1.0,"isRepairMode":true}}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:360->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:360 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getStartPoint
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:360->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:360 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction.encode
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:361->[Local Variables] {"guess":[0.0]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:363->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:363 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.initializeCMA
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:365->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:365 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer$FitnessFunction.value

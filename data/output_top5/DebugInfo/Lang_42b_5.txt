@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.apache.commons.lang.StringEscapeUtilsTest::testEscapeHtmlHighUnicode ===
+Exception: junit.framework.ComparisonFailure: High unicode was not escaped correctly expected:<&#[119650];> but was:<&#[55348;&#57186];>
+
+org.apache.commons.lang.Entities:fillWithHtml40Entities:398->[Local Variables] {"entities":{"map":{"LOOKUP_TABLE_SIZE":256,"mapNameToValue":{},"mapValueToName":{"threshold":15,"loadFactor":0.75}}}}
+org.apache.commons.lang.Entities:fillWithHtml40Entities:399->[Method Call] Call Stack: org.apache.commons.lang.Entities.fillWithHtml40Entities:399 -> org.apache.commons.lang.Entities.addEntities
+org.apache.commons.lang.Entities:fillWithHtml40Entities:399->[Local Variables] {"entities":{"map":{"LOOKUP_TABLE_SIZE":256,"mapNameToValue":{"amp":38,"lt":60,"quot":34,"gt":62},"mapValueToName":{"threshold":15,"loadFactor":0.75}}}}
+org.apache.commons.lang.Entities:fillWithHtml40Entities:400->[Method Call] Call Stack: org.apache.commons.lang.Entities.fillWithHtml40Entities:400 -> org.apache.commons.lang.Entities.addEntities
+org.apache.commons.lang.Entities:fillWithHtml40Entities:401->[Method Call] Call Stack: org.apache.commons.lang.Entities.fillWithHtml40Entities:401 -> org.apache.commons.lang.Entities.addEntities

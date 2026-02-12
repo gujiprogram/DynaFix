@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toStringHelper",
+    "doc": "/**\n   * A hash code function for diagnosing complicated issues\n   * around type-identity.\n   */",
+    "code": "return toStringHelper(false);\n  }\n\n  public String toDebugHashCodeString() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.PrototypeObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the number of properties of this object.\n   */",
+    "code": "public JSType getPropertyType(String property) {\n    StaticSlot<JSType> slot = getSlot(property);\n    if (slot == null) {\n      return getNativeType(JSTypeNative.UNKNOWN_TYPE);\n    }\n    return slot.getType();\n  }"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "method": "com.google.debugging.sourcemap.SourceMapConsumerV3$Entry.getNameId",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.SourceMapConsumerV3$Entry.getSourceColumn",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.SourceMapConsumerV3$Entry.getSourceFileId",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.SourceMapConsumerV3$Entry.getSourceLine",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.SourceMapGenerator.addMapping",
+    "doc": "/**\n   * Adds a mapping for the given node.  Mappings must be added in order.\n   * @param sourceName The file name to use in the generate source map\n   *     to represent this source.\n   * @param symbolName The symbol name associated with this position in the\n   *     source map.\n   * @param sourceStartPosition The starting position in the original source for\n   *     represented range outputStartPosition to outputEndPosition in the\n   *     generated file.\n   * @param outputStartPosition The position on the starting line\n   * @param outputEndPosition The position on the ending line.\n   */",
+    "code": "void addMapping(String sourceName, @Nullable String symbolName,\n           FilePosition sourceStartPosition,"
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping$Builder.build",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping$Builder.setColumnPosition",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping$Builder.setIdentifier",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping$Builder.setLineNumber",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping$Builder.setOriginalFile",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.debugging.sourcemap.proto.Mapping$OriginalMapping.newBuilder",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceMap.fixupSourceLocation",
+    "doc": "/**\n   * @param sourceFile The source file location to fixup.\n   * @return a remapped source file.\n   */",
+    "code": "private String fixupSourceLocation(String sourceFile) {\n    if (prefixMappings.isEmpty()) {\n      return sourceFile;\n    }\n\n    String fixed = sourceLocationFixupCache.get(sourceFile);\n    if (fixed != null) {\n      return fixed;\n    }\n\n    for (LocationMapping mapping : prefixMappings) {\n      if (sourceFile.startsWith(mapping.prefix)) {\n        fixed = mapping.replacement + sourceFile.substring(\n          mapping.prefix.length());\n        break;\n      }\n    }\n\n    if (fixed == null) {\n      fixed = sourceFile;\n    }\n\n    sourceLocationFixupCache.put(sourceFile, fixed);\n    return fixed;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getCharno",
+    "doc": "/**\n   * @return The Id of the CompilerInput associated with this Node.\n   */",
+    "code": "public int getCharno() {\n    return extractCharno(sourcePosition);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLineno",
+    "doc": "/**\n   * @return The Id of the CompilerInput associated with this Node.\n   */",
+    "code": "public int getLineno() {\n    return extractLineno(sourcePosition);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getProp",
+    "doc": "/**\n   * @param item The item to inspect\n   * @param propType The property to look for\n   * @return The replacement list if the property was removed, or\n   *   'item' otherwise.\n   */",
+    "code": "public Object getProp(int propType) {\n    if (propType == SOURCENAME_PROP) {\n      return getSourceFileName();\n    }\n\n    PropListItem item = lookupProperty(propType);\n    if (item == null) {\n      return null;\n    }\n    return item.getObjectValue();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getSourceFileName",
+    "doc": "/**\n   * @param item The item to inspect\n   * @param propType The property to look for\n   * @return The replacement list if the property was removed, or\n   *   'item' otherwise.\n   */",
+    "code": "return getSourceFileName();\n    }\n\n    PropListItem item = lookupProperty(propType);\n    if (item == null) {"
+  }
+]

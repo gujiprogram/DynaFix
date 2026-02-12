@@ -1,0 +1,61 @@
+
+=== Debug Info for Test: org.jsoup.safety.CleanerTest::handlesCustomProtocols ===
+Exception: junit.framework.AssertionFailedError: expected:<<img [src="cid:12345" />
+
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Local Variables] {"TransVarProtocolVal":"https:"}
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.toLowerCase
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.startsWith
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Control Flow] Branch Info: Line: 353, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Loop Info: Line: 348, Description: while at line 348
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.hasNext
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Branch Info: Line: 348, Condition: if (var5 != 0), Executed: true
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.next
+org.jsoup.safety.Whitelist:testValidProtocol:351->[Local Variables] {"TransVarProtocol1":{"value":"cid"}}
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> org.jsoup.safety.Whitelist$Protocol.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Local Variables] {"TransVarProtocolVal":"cid:"}
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.toLowerCase
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.startsWith
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Control Flow] Branch Info: Line: 353, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Loop Info: Line: 348, Description: while at line 348
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.hasNext
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Branch Info: Line: 348, Condition: if (var5 != 0), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:345->[Control Flow] Branch Info: Line: 345, Condition: if (this.preserveRelativeLinks == false), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:347->[Local Variables] "{TransVarAttr1\u003dsrc\u003d\"\", TransVarElement\u003d\u003cimg src\u003d\"\" /\u003e}"
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Set.iterator
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.hasNext
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Branch Info: Line: 348, Condition: if (var5 != 0), Executed: true
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.next
+org.jsoup.safety.Whitelist:testValidProtocol:351->[Local Variables] {"TransVarProtocol1":{"value":"http"}}
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> org.jsoup.safety.Whitelist$Protocol.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Local Variables] {"TransVarProtocolVal":"http:"}
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.toLowerCase
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.startsWith
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Control Flow] Branch Info: Line: 353, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Loop Info: Line: 348, Description: while at line 348
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.hasNext
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Branch Info: Line: 348, Condition: if (var5 != 0), Executed: true
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.next
+org.jsoup.safety.Whitelist:testValidProtocol:351->[Local Variables] {"TransVarProtocol1":{"value":"data"}}
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> org.jsoup.safety.Whitelist$Protocol.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Local Variables] {"TransVarProtocolVal":"data:"}
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.toLowerCase
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:353 -> java.lang.String.startsWith
+org.jsoup.safety.Whitelist:testValidProtocol:353->[Control Flow] Branch Info: Line: 353, Condition: if (java.lang.String.startsWith() != 0), Executed: false
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Loop Info: Line: 348, Description: while at line 348
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.hasNext
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Control Flow] Branch Info: Line: 348, Condition: if (var5 != 0), Executed: true
+org.jsoup.safety.Whitelist:testValidProtocol:348->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:348 -> java.util.Iterator.next
+org.jsoup.safety.Whitelist:testValidProtocol:351->[Local Variables] {"TransVarProtocol1":{"value":"https"}}
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> org.jsoup.safety.Whitelist$Protocol.toString
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append
+org.jsoup.safety.Whitelist:testValidProtocol:352->[Method Call] Call Stack: org.jsoup.safety.Whitelist.testValidProtocol:352 -> java.lang.StringBuilder.append

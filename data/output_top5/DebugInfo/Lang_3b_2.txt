@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testStringCreateNumberEnsureNoPrecisionLoss ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:620->[Local Variables] {"str":"1"}
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:621->[Control Flow] Branch Info: Line: 621, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:624->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.isAllZeros:624 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:624->[Control Flow] Branch Info: Line: 624, Condition: if (i >= 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:624->[Local Variables] {"i":0}
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:625->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.isAllZeros:625 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:625->[Control Flow] Branch Info: Line: 625, Condition: if (java.lang.String.charAt() != java.lang.String.charAt()), Executed: true
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:620->[Local Variables] {"str":"3"}
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:621->[Control Flow] Branch Info: Line: 621, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:624->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.isAllZeros:624 -> java.lang.String.length
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:624->[Control Flow] Branch Info: Line: 624, Condition: if (i >= 0), Executed: true
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:625->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.isAllZeros:625 -> java.lang.String.charAt
+org.apache.commons.lang3.math.NumberUtils:isAllZeros:625->[Control Flow] Branch Info: Line: 625, Condition: if (java.lang.String.charAt() != java.lang.String.charAt()), Executed: true

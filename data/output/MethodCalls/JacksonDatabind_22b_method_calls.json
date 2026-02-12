@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isContainerType",
+    "doc": "/**\n     * @return True if type represented is a container type; this includes\n     *    array, Map and Collection types.\n     */",
+    "code": "public abstract boolean isContainerType();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.SerializerProvider.getConfig",
+    "doc": "/**\n     * Method for accessing configuration for the serialization processing.\n     */",
+    "code": "public final SerializationConfig getConfig() { return _config; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig.hasSerializerModifiers",
+    "doc": "/**\n     * List of modifiers that can change the way {@link BeanSerializer} instances\n     * are configured and constructed.\n     */",
+    "code": "public boolean hasSerializerModifiers() { return _modifiers.length > 0; }\n    public Iterable<Serializers> serializers() { return new ArrayIterator<Serializers>(_additionalSerializers); }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.customSerializers",
+    "doc": "/**\n     * Method used by module registration functionality, to attach additional\n     * serializer providers into this serializer factory. This is typically\n     * handled by constructing a new instance with additional serializers,\n     * to ensure thread-safe access.\n     */",
+    "code": "protected Iterable<Serializers> customSerializers() {\n        return _factoryConfig.serializers();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerByAnnotations",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findSerializerByLookup",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.ser.Serializers.findSerializer",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

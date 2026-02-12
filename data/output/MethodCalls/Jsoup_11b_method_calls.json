@@ -1,0 +1,77 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.notEmpty",
+    "doc": "/**\n     * Validates that the string is not empty\n     * @param string the string to test\n     */",
+    "code": "public static void notEmpty(String string) {\n        if (string == null || string.length() == 0)\n            throw new IllegalArgumentException(\"String must not be empty\");\n    }"
+  },
+  {
+    "method": "org.jsoup.helper.Validate.notNull",
+    "doc": "/**\n     * Validates that the obect is not null\n     * @param obj object to test\n     */",
+    "code": "public static void notNull(Object obj) {\n        if (obj == null)\n            throw new IllegalArgumentException(\"Object must not be null\");\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.consumeWhitespace",
+    "doc": "/**\n     * Pulls the next run of whitespace characters of the queue.\n     */",
+    "code": "public boolean consumeWhitespace() {\n        boolean seen = false;\n        while (matchesWhitespace()) {\n            pos++;\n            seen = true;\n        }\n        return seen;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.isEmpty",
+    "doc": "/**\n     * Is the queue empty?\n     * @return true if no data left in queue.\n     */",
+    "code": "public boolean isEmpty() {\n        return remainingLength() == 0;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchChomp",
+    "doc": "/**\n     * Tests if the queue matches the sequence (as with match), and if they do, removes the matched string from the\n     * queue.\n     * @param seq String to search for, and if found, remove from queue.\n     * @return true if found and removed, false if not found.\n     */",
+    "code": "public boolean matchChomp(String seq) {\n        if (matches(seq)) {\n            pos += seq.length();\n            return true;\n        } else {\n            return false;\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matches",
+    "doc": "/**\n     * Tests if the next characters on the queue match the sequence. Case insensitive.\n     * @param seq String to check queue for.\n     * @return true if the next characters match.\n     */",
+    "code": "public boolean matches(String seq) {\n        int count = seq.length();\n        if (count > remainingLength())\n            return false;\n\n        while (--count >= 0) {\n            if (Character.toLowerCase(seq.charAt(count)) != Character.toLowerCase(queue.charAt(pos+count)))\n                return false;\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchesAny",
+    "doc": "/**\n     Tests if the next characters match any of the sequences. Case insensitive.\n     @param seq\n     @return\n     */",
+    "code": "public boolean matchesAny(String... seq) {\n        for (String s : seq) {\n            if (matches(s))\n                return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.matchesWord",
+    "doc": "/**\n     Test if the queue matches a word character (letter or digit).\n     @return if matches a word character\n     */",
+    "code": "public boolean matchesWord() {\n        return !isEmpty() && Character.isLetterOrDigit(queue.charAt(pos));\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokenQueue.remainder",
+    "doc": "/**\n     * Pulls a string off the queue, up to but exclusive of the match sequence, or to the queue running out.\n     * @param seq String to end on (and not include in return, but leave on queue). <b>Case sensitive.</b>\n     * @return The matched data consumed from queue.\n     */",
+    "code": "return remainder();\n        }\n    }\n\n    public String consumeToIgnoreCase(String seq) {\n        int start = pos;\n        String first = seq.substring(0, 1);\n        boolean canScan = first.toLowerCase().equals(first.toUpperCase()); // if first is not cased, use index of\n        while (!isEmpty() && !matches(seq)) {"
+  },
+  {
+    "method": "org.jsoup.select.Selector.addElements",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "private void addElements(Collection<Element> add) {\n        elements.addAll(add);\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Selector.byTag",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "return byTag();\n        } else if (tq.matches(\"[\")) {"
+  },
+  {
+    "method": "org.jsoup.select.Selector.filterForSelf",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "private static Elements filterForSelf(Collection<Element> parents, Collection<Element> candidates) {\n        Elements children = new Elements();\n        CHILD: for (Element c : candidates) {\n            for (Element p : parents) {\n                if (c.equals(p)) {\n                    children.add(c);\n                    continue CHILD;\n                }\n            }\n        }\n        return children;\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Selector.findElements",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "private Elements findElements() {\n        if (tq.matchChomp(\"#\")) {\n            return byId();\n        } else if (tq.matchChomp(\".\")) {\n            return byClass();\n        } else if (tq.matchesWord()) {\n            return byTag();\n        } else if (tq.matches(\"[\")) {\n            return byAttribute();\n        } else if (tq.matchChomp(\"*\")) {\n            return allElements();\n        } else if (tq.matchChomp(\":lt(\")) {\n            return indexLessThan();\n        } else if (tq.matchChomp(\":gt(\")) {\n            return indexGreaterThan();\n        } else if (tq.matchChomp(\":eq(\")) {\n            return indexEquals();\n        } else if (tq.matches(\":has(\")) {\n            return has();\n        } else if (tq.matches(\":contains(\")) {\n            return contains(false);\n        } else if (tq.matches(\":containsOwn(\")) {\n            return contains(true);\n        } else if (tq.matches(\":matches(\")) {\n            return matches(false);\n        } else if (tq.matches(\":matchesOwn(\")) {\n            return matches(true);\n        } else { // unhandled\n            throw new SelectorParseException(\"Could not parse query '%s': unexpected token at '%s'\", query, tq.remainder());\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.select.Selector.has",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "return has();\n        } else if (tq.matches(\":contains(\")) {"
+  },
+  {
+    "method": "org.jsoup.select.Selector.intersectElements",
+    "doc": "/**\n     Find elements matching selector.\n     @param query CSS selector\n     @param roots root elements to descend into\n     @return matching elements, empty if not\n     */",
+    "code": "private void intersectElements(Collection<Element> intersect) {\n        elements.retainAll(intersect);\n    }"
+  }
+]

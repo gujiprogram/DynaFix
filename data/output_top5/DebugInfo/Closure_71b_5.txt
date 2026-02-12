@@ -1,0 +1,82 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6 ===
+Exception: junit.framework.AssertionFailedError: Overriding private property of Foo.prototype.
+
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dBLOCK 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dASSIGN 2 [sourcename: input1] : function (this:SubFoo): undefined, n\u003dFUNCTION  2 [sourcename: input1] : function (this:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dEXPR_RESULT 2 [sourcename: input1], n\u003dASSIGN 2 [sourcename: input1] : function (this:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dSCRIPT 1 [sourcename: input1] [synthetic: 1], n\u003dEXPR_RESULT 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dBLOCK [synthetic: 1], n\u003dSCRIPT 1 [sourcename: input1] [synthetic: 1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dnull, n\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dEMPTY 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dGETPROP 2 [sourcename: input1] : SubFoo.prototype, n\u003dNAME SubFoo 2 [sourcename: input1] : function (new:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:217->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:217 -> com.google.javascript.jscomp.CheckAccessControls.checkNameDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:218->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:218 -> com.google.javascript.jscomp.CheckAccessControls.checkNameVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dSTRING prototype 2 [sourcename: input1] : string}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dGETPROP 2 [sourcename: input1] : function (this:SubFoo): undefined, n\u003dGETPROP 2 [sourcename: input1] : SubFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:221->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:221 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:222->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:222 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:223->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:223 -> com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dSTRING bar_ 2 [sourcename: input1] : string}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dASSIGN 2 [sourcename: input1] : function (this:SubFoo): undefined, n\u003dGETPROP 2 [sourcename: input1] : function (this:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:221->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:221 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:222->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:222 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:223->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:223 -> com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dFUNCTION  2 [sourcename: input1] : function (this:SubFoo): undefined, n\u003dNAME  2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:217->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:217 -> com.google.javascript.jscomp.CheckAccessControls.checkNameDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:218->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:218 -> com.google.javascript.jscomp.CheckAccessControls.checkNameVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dLP 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dSCRIPT 1 [sourcename: input1] [synthetic: 1], n\u003dFUNCTION SubFoo 2 [sourcename: input1] [jsdoc_info: JSDocInfo] : function (new:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dEMPTY 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dBLOCK [synthetic: 1], n\u003dSCRIPT 1 [sourcename: input1] [synthetic: 1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dnull, n\u003dBLOCK [synthetic: 1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dSCRIPT 1 [sourcename: input0] [synthetic: 1], n\u003dFUNCTION Foo 1 [sourcename: input0] [jsdoc_info: JSDocInfo] : function (new:Foo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dBLOCK [synthetic: 1], n\u003dSCRIPT 1 [sourcename: input0] [synthetic: 1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dFUNCTION SubFoo 2 [sourcename: input1] [jsdoc_info: JSDocInfo] : function (new:SubFoo): undefined, n\u003dNAME SubFoo 2 [sourcename: input1] : function (new:SubFoo): undefined}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:217->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:217 -> com.google.javascript.jscomp.CheckAccessControls.checkNameDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:218->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:218 -> com.google.javascript.jscomp.CheckAccessControls.checkNameVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dLP 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dGETPROP 2 [sourcename: input1] : number, n\u003dTHIS 2 [sourcename: input1] : SubFoo}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dSTRING bar_ 2 [sourcename: input1] : string}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dASSIGN 2 [sourcename: input1] [jsdoc_info: JSDocInfo] : number, n\u003dGETPROP 2 [sourcename: input1] : number}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:221->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:221 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyDeprecation
+com.google.javascript.jscomp.CheckAccessControls:visit:222->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:222 -> com.google.javascript.jscomp.CheckAccessControls.checkPropertyVisibility
+com.google.javascript.jscomp.CheckAccessControls:visit:223->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:223 -> com.google.javascript.jscomp.CheckAccessControls.checkConstantProperty
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{n\u003dNUMBER 3.0 2 [sourcename: input1] : number}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dEXPR_RESULT 2 [sourcename: input1], n\u003dASSIGN 2 [sourcename: input1] [jsdoc_info: JSDocInfo] : number}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dBLOCK 2 [sourcename: input1], n\u003dEXPR_RESULT 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.CheckAccessControls:visit:214->[Local Variables] "{parent\u003dFUNCTION SubFoo 2 [sourcename: input1] [jsdoc_info: JSDocInfo] : function (new:SubFoo): undefined, n\u003dBLOCK 2 [sourcename: input1]}"
+com.google.javascript.jscomp.CheckAccessControls:visit:215->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.visit:215 -> com.google.javascript.rhino.Node.getType

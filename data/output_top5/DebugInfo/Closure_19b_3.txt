@@ -1,0 +1,6 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeInferenceTest::testNoThisInference ===
+Exception: java.lang.IllegalArgumentException: Node cannot be refined.
+
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:getTypeIfRefinable:118->[Local Variables] "{node\u003dTHIS 1 [source_file: [testcode]] : Object, scope\u003dcom.google.javascript.jscomp.LinkedFlowScope@5de5e95}"
+com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter:getTypeIfRefinable:119->[Method Call] Call Stack: com.google.javascript.jscomp.type.ChainableReverseAbstractInterpreter.getTypeIfRefinable:119 -> com.google.javascript.rhino.Node.getType

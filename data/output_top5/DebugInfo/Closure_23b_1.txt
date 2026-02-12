@@ -1,0 +1,23 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldGetElem ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_INDEX_OUT_OF_BOUNDS_ERROR. Array index out of bounds: NUMBER 0.0 1 [source_file: testcode] at testcode line 1 : 10 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1422->[Local Variables] "{left\u003dARRAYLIT 1 [source_file: testcode], right\u003dNUMBER 0.0 1 [source_file: testcode], n\u003dGETELEM 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1423->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1423 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1426->[Local Variables] "{parent\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1427->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1427 -> com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1427->[Control Flow] Branch Info: Line: 1427, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1431->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1431 -> com.google.javascript.rhino.Node.isNumber
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1431->[Control Flow] Branch Info: Line: 1431, Condition: if (com.google.javascript.rhino.Node.isNumber() == 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1437->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1437 -> com.google.javascript.rhino.Node.getDouble
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1437->[Local Variables] {"index":0.0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1438->[Local Variables] {"intIndex":0}
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1439->[Control Flow] Branch Info: Line: 1439, Condition: if (index != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1444->[Control Flow] Branch Info: Line: 1444, Condition: if (intIndex < 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1449->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1449 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1449->[Local Variables] "{current\u003dEMPTY 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1451->[Control Flow] Branch Info: Line: 1451, Condition: if (current != null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1451->[Control Flow] Branch Info: Line: 1451, Condition: if (current != null), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1451->[Control Flow] Branch Info: Line: 1451, Condition: if (intIndex < intIndex), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1457->[Control Flow] Branch Info: Line: 1457, Condition: if (elem == null), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldArrayAccess:1458->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldArrayAccess:1458 -> com.google.javascript.jscomp.PeepholeFoldConstants.error

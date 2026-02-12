@@ -1,0 +1,17 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isValidPropertyName",
+    "doc": "/**\n   * Determines whether the given name can appear on the right side of\n   * the dot operator. Many properties (like reserved words) cannot.\n   */",
+    "code": "static boolean isValidPropertyName(String name) {\n    return TokenStream.isJSIdentifier(name) &&\n        !TokenStream.isKeyword(name) &&\n        isLatin(name);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.verifyArgument",
+    "doc": "/**\n   * Verifies that a method call has exactly one argument, and that it's a\n   * string literal. Reports a compile error if it doesn't.\n   *\n   * @return Whether the argument checked out okay\n   */",
+    "code": "private boolean verifyArgument(NodeTraversal t, Node methodName, Node arg) {\n    return verifyArgument(t, methodName, arg, Token.STRING);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  }
+]

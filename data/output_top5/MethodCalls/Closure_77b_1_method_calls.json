@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.appendHexJavaScriptRepresentation",
+    "doc": "/**\n   * @see #appendHexJavaScriptRepresentation(int, Appendable)\n   */",
+    "code": "private static void appendHexJavaScriptRepresentation(\n      StringBuilder sb, char c) {\n    try {\n      appendHexJavaScriptRepresentation(c, sb);\n    } catch (IOException ex) {\n      throw new RuntimeException(ex);\n    }\n  }"
+  }
+]

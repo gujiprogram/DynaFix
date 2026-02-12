@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: org.apache.commons.math.complex.ComplexTest::testMath221 ===
+Exception: junit.framework.AssertionFailedError: expected:<org.apache.commons.math.complex.Complex@98b00000> but was:<org.apache.commons.math.complex.Complex@18b00000>
+
+org.apache.commons.math.complex.Complex:equals:250->[Local Variables] {"TransVarObj":{"imaginary":-1.0,"real":-0.0}}
+org.apache.commons.math.complex.Complex:equals:251->[Control Flow] Branch Info: Line: 251, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.math.complex.Complex:equals:256->[Control Flow] Branch Info: Line: 256, Condition: if (TransVarObj == null), Executed: false
+org.apache.commons.math.complex.Complex:equals:263->[Local Variables] {"TransVarComplex":{"imaginary":-1.0,"real":-0.0}}
+org.apache.commons.math.complex.Complex:equals:264->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:264 -> org.apache.commons.math.complex.Complex.isNaN
+org.apache.commons.math.complex.Complex:equals:264->[Control Flow] Branch Info: Line: 264, Condition: if (org.apache.commons.math.complex.Complex.isNaN() != 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:267 -> java.lang.Double.doubleToRawLongBits
+org.apache.commons.math.complex.Complex:equals:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:267 -> org.apache.commons.math.complex.Complex.getReal
+org.apache.commons.math.complex.Complex:equals:267->[Method Call] Call Stack: org.apache.commons.math.complex.Complex.equals:267 -> java.lang.Double.doubleToRawLongBits
+org.apache.commons.math.complex.Complex:equals:267->[Control Flow] Branch Info: Line: 267, Condition: if (org.apache.commons.math.complex.Complex.getReal() == 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:267->[Control Flow] Branch Info: Line: 267, Condition: if (org.apache.commons.math.complex.Complex.getImaginary() == 0), Executed: false
+org.apache.commons.math.complex.Complex:equals:271->[Local Variables] {"TransVarResult":false}

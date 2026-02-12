@@ -1,0 +1,28 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_831 ===
+Exception: junit.framework.AssertionFailedError: Parsed dates should be equal expected:<null> but was:<Mon Mar 02 21:00:00 PST 1970>
+
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":"M"}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateParser:getStrategy:565->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:565 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateParser:getStrategy:565->[Control Flow] Branch Info: Line: 565, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":" "}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateParser:getStrategy:546->[Control Flow] Branch Info: Line: 546, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getStrategy:551->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:551 -> org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy.<init>
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":"E"}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt
+
+=== Debug Info for Test: org.apache.commons.lang3.time.FastDateParserTest::testLANG_831 ===
+Exception: junit.framework.AssertionFailedError: Expected FDF failure, but got Mon Mar 02 21:00:00 PST 1970 for [M E,3  Tue] using (\p{IsNd}++)\s*+(Fri|Friday|Mon|Monday|Sat|Saturday|Sun|Sunday|Thu|Thursday|Tue|Tuesday|Wed|Wednesday)
+
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":"M"}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateParser:getStrategy:565->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:565 -> java.lang.String.length
+org.apache.commons.lang3.time.FastDateParser:getStrategy:565->[Control Flow] Branch Info: Line: 565, Condition: if (java.lang.String.length() >= java.lang.String.length()), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":" "}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt
+org.apache.commons.lang3.time.FastDateParser:getStrategy:546->[Control Flow] Branch Info: Line: 546, Condition: if (java.lang.String.length() > java.lang.String.length()), Executed: false
+org.apache.commons.lang3.time.FastDateParser:getStrategy:551->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:551 -> org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy.<init>
+org.apache.commons.lang3.time.FastDateParser:getStrategy:543->[Local Variables] {"formatField":"E"}
+org.apache.commons.lang3.time.FastDateParser:getStrategy:544->[Method Call] Call Stack: org.apache.commons.lang3.time.FastDateParser.getStrategy:544 -> java.lang.String.charAt

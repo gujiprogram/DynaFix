@@ -1,0 +1,61 @@
+
+=== Debug Info for Test: org.apache.commons.lang.time.DateUtilsTest::testRoundLang346 ===
+Exception: junit.framework.AssertionFailedError: Minute Round Up Failed expected:<Mon Jul 02 08:09:00 PDT 2007> but was:<Mon Jul 02 08:01:00 PDT 2007>
+
+org.apache.commons.lang.time.DateUtils:modify:739->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:739 -> java.util.Calendar.set
+org.apache.commons.lang.time.DateUtils:modify:738->[Control Flow] Branch Info: Line: 738, Condition: if (offset != 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:670->[Local Variables] {"val":{"year":2007,"month":6,"dayOfMonth":2,"hourOfDay":8,"minute":0,"second":0}}
+org.apache.commons.lang.time.DateUtils:modify:671->[Control Flow] Loop Info: Line: 671, Description: while at line 671
+org.apache.commons.lang.time.DateUtils:modify:671->[Control Flow] Branch Info: Line: 671, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:671->[Local Variables] {"i":2}
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Branch Info: Line: 672, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:673->[Control Flow] Branch Info: Line: 673, Condition: if (field == field), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:675->[Control Flow] Branch Info: Line: 675, Condition: if (round != 0), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:675->[Control Flow] Branch Info: Line: 675, Condition: if (roundUp != 0), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:676->[Control Flow] Branch Info: Line: 676, Condition: if (field == field), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:689->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:689 -> java.util.Calendar.add
+org.apache.commons.lang.time.DateUtils:modify:675->[Control Flow] Branch Info: Line: 675, Condition: if (round != 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:675->[Control Flow] Branch Info: Line: 675, Condition: if (roundUp != 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:691->[Local Variables] {"val":{"year":2007,"month":6,"dayOfMonth":2,"hourOfDay":8,"minute":1,"second":0}}
+org.apache.commons.lang.time.DateUtils:modify:669->[Local Variables] {"val":{"year":2007,"month":6,"dayOfMonth":2,"hourOfDay":8,"minute":0,"second":50}}
+org.apache.commons.lang.time.DateUtils:modify:670->[Local Variables] {"roundUp":false}
+org.apache.commons.lang.time.DateUtils:modify:671->[Control Flow] Branch Info: Line: 671, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:671->[Local Variables] {"i":0}
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Branch Info: Line: 672, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:672->[Local Variables] {"j":0}
+org.apache.commons.lang.time.DateUtils:modify:673->[Control Flow] Branch Info: Line: 673, Condition: if (field == field), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Loop Info: Line: 672, Description: while at line 672
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Branch Info: Line: 672, Condition: if (i < i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:696->[Local Variables] {"offset":0}
+org.apache.commons.lang.time.DateUtils:modify:698->[Local Variables] {"offsetSet":false}
+org.apache.commons.lang.time.DateUtils:modify:701->[Control Flow] Branch Info: Line: 701, Condition: if (i == i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:717->[Control Flow] Branch Info: Line: 717, Condition: if (i == i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:729->[Control Flow] Branch Info: Line: 729, Condition: if (offsetSet == 0), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:730->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:730 -> java.util.Calendar.getActualMinimum
+org.apache.commons.lang.time.DateUtils:modify:730->[Local Variables] {"min":0}
+org.apache.commons.lang.time.DateUtils:modify:731->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:731 -> java.util.Calendar.getActualMaximum
+org.apache.commons.lang.time.DateUtils:modify:732->[Local Variables] {"max":999}
+org.apache.commons.lang.time.DateUtils:modify:733->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:733 -> java.util.Calendar.get
+org.apache.commons.lang.time.DateUtils:modify:735->[Control Flow] Branch Info: Line: 735, Condition: if (min > min), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:729->[Control Flow] Branch Info: Line: 729, Condition: if (offsetSet == 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:738->[Control Flow] Branch Info: Line: 738, Condition: if (offset != 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:671->[Control Flow] Loop Info: Line: 671, Description: while at line 671
+org.apache.commons.lang.time.DateUtils:modify:671->[Control Flow] Branch Info: Line: 671, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:671->[Local Variables] {"i":1}
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Branch Info: Line: 672, Condition: if (i < i), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:673->[Control Flow] Branch Info: Line: 673, Condition: if (field == field), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Loop Info: Line: 672, Description: while at line 672
+org.apache.commons.lang.time.DateUtils:modify:672->[Control Flow] Branch Info: Line: 672, Condition: if (i < i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:701->[Control Flow] Branch Info: Line: 701, Condition: if (i == i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:717->[Control Flow] Branch Info: Line: 717, Condition: if (i == i), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:729->[Control Flow] Branch Info: Line: 729, Condition: if (offsetSet == 0), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:730->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:730 -> java.util.Calendar.getActualMinimum
+org.apache.commons.lang.time.DateUtils:modify:731->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:731 -> java.util.Calendar.getActualMaximum
+org.apache.commons.lang.time.DateUtils:modify:732->[Local Variables] {"max":59}
+org.apache.commons.lang.time.DateUtils:modify:733->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:733 -> java.util.Calendar.get
+org.apache.commons.lang.time.DateUtils:modify:734->[Local Variables] {"offset":50}
+org.apache.commons.lang.time.DateUtils:modify:735->[Control Flow] Branch Info: Line: 735, Condition: if (min > min), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:729->[Control Flow] Branch Info: Line: 729, Condition: if (offsetSet == 0), Executed: false
+org.apache.commons.lang.time.DateUtils:modify:737->[Local Variables] {"roundUp":true}
+org.apache.commons.lang.time.DateUtils:modify:738->[Control Flow] Branch Info: Line: 738, Condition: if (offset != 0), Executed: true
+org.apache.commons.lang.time.DateUtils:modify:739->[Method Call] Call Stack: org.apache.commons.lang.time.DateUtils.modify:739 -> java.util.Calendar.get

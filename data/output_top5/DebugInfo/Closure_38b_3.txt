@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testMinusNegativeZero ===
+Exception: junit.framework.ComparisonFailure: expected:<x-[ ]-0.0> but was:<x-[]-0.0>
+
+com.google.javascript.jscomp.CodeConsumer:isNegativeZero:269->[Local Variables] {"x":-0.0}
+com.google.javascript.jscomp.CodeConsumer:isNegativeZero:270->[Control Flow] Branch Info: Line: 270, Condition: if (x == 0), Executed: true
+com.google.javascript.jscomp.CodeConsumer:isNegativeZero:270->[Method Call] Call Stack: com.google.javascript.jscomp.CodeConsumer.isNegativeZero:270 -> java.lang.Math.copySign
+com.google.javascript.jscomp.CodeConsumer:isNegativeZero:270->[Control Flow] Branch Info: Line: 270, Condition: if (x == 0), Executed: true

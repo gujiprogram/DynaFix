@@ -1,0 +1,11 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testUnicode ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="[\u007f]"> but was:<var x="[]">
+
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:74->[Local Variables] {"identifier":"x"}
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeGenerator.identifierEscape
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeConsumer.addIdentifier
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeGenerator.identifierEscape
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeConsumer.addIdentifier
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeGenerator.identifierEscape
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:75->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:75 -> com.google.javascript.jscomp.CodeConsumer.addIdentifier

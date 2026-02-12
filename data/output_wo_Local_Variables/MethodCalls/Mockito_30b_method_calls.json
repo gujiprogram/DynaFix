@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.mockito.internal.util.StringJoiner.join",
+    "doc": "[No documentation]",
+    "code": "public static String join(Object ... linesToBreak) {\n        StringBuilder out = new StringBuilder(\"\\n\");\n        for (Object line : linesToBreak) {\n            out.append(line.toString()).append(\"\\n\");\n        }\n        int lastBreak = out.lastIndexOf(\"\\n\");\n        return out.replace(lastBreak, lastBreak+1, \"\").toString();\n    }"
+  }
+]

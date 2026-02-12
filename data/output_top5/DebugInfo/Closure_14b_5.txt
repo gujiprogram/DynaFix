@@ -1,0 +1,46 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckMissingReturnTest::testIssue779 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_MISSING_RETURN_STATEMENT. Missing return statement. Function expected to return number. at testcode line 1 : 24 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:357->[Local Variables] "{node\u003dIF 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Local Variables] "{thenBlock\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:359->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:359 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:362->[Control Flow] Branch Info: Line: 362, Condition: if (elseBlock == null), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:364->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:364 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:363->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:363 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:369->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:369 -> com.google.javascript.jscomp.NodeUtil.getConditionExpression
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:368->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:368 -> com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:359->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:359 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:362->[Control Flow] Branch Info: Line: 362, Condition: if (elseBlock == null), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:364->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:364 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:363->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:363 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:369->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:369 -> com.google.javascript.jscomp.NodeUtil.getConditionExpression
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:368->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:368 -> com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:357->[Local Variables] "{node\u003dIF 1 [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:358 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:358->[Local Variables] "{thenBlock\u003dBLOCK 1 [empty_block: 1] [source_file: cfgtest]}"
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:359->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:359 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFallThrough
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:360->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:360 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:362->[Control Flow] Branch Info: Line: 362, Condition: if (elseBlock == null), Executed: true
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:364->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:364 -> com.google.javascript.jscomp.ControlFlowAnalysis.computeFollowNode
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:363->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:363 -> com.google.javascript.jscomp.ControlFlowAnalysis.createEdge
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:369->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:369 -> com.google.javascript.jscomp.NodeUtil.getConditionExpression
+com.google.javascript.jscomp.ControlFlowAnalysis:handleIf:368->[Method Call] Call Stack: com.google.javascript.jscomp.ControlFlowAnalysis.handleIf:368 -> com.google.javascript.jscomp.ControlFlowAnalysis.connectToPossibleExceptionHandler
+
+=== Debug Info for Test: com.google.javascript.jscomp.ControlFlowAnalysisTest::testDeepNestedBreakwithFinally ===
+Exception: junit.framework.AssertionFailedError: No cross edges found
+

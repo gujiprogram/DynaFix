@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: org.jsoup.parser.XmlTreeBuilderTest::handlesXmlDeclarationAsDeclaration ===
+Exception: junit.framework.AssertionFailedError: expected:<<[?xml encoding='UTF-8' ?]> <body> One </body>...> but was:<<[!--?xml encoding='UTF-8' ?--]> <body> One </body>...>
+
+org.jsoup.parser.XmlTreeBuilder:insert:64->[Local Variables] {"commentToken":{"data":"?xml encoding\u003d\u0027UTF-8\u0027 ?","type":"Comment"}}
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:65 -> org.jsoup.parser.Token$Comment.getData
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:65 -> org.jsoup.nodes.Comment.<init>
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Local Variables] {"comment":{"childNodes":[],"attributes":{"attributes":{"comment":{"key":"comment","value":"?xml encoding\u003d\u0027UTF-8\u0027 ?"}}},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:66->[Local Variables] {"insert":{"childNodes":[],"attributes":{"attributes":{"comment":{"key":"comment","value":"?xml encoding\u003d\u0027UTF-8\u0027 ?"}}},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:67->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:67 -> org.jsoup.parser.XmlTreeBuilder.insertNode
+org.jsoup.parser.XmlTreeBuilder:insert:67->[Local Variables] "{insert\u003d\n\u003c!--?xml encoding\u003d\u0027UTF-8\u0027 ?--\u003e, comment\u003d\n\u003c!--?xml encoding\u003d\u0027UTF-8\u0027 ?--\u003e}"
+org.jsoup.parser.XmlTreeBuilder:insert:49->[Local Variables] {"startTag":{"tagName":"body","selfClosing":false,"attributes":{},"type":"StartTag"}}
+org.jsoup.parser.XmlTreeBuilder:insert:50->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:50 -> org.jsoup.parser.Token$StartTag.name
+org.jsoup.parser.XmlTreeBuilder:insert:50->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:50 -> org.jsoup.parser.Tag.valueOf
+org.jsoup.parser.XmlTreeBuilder:insert:51->[Local Variables] {"tag":{"tagName":"body","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false}}
+org.jsoup.parser.XmlTreeBuilder:insert:52->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:52 -> org.jsoup.nodes.Element.<init>
+org.jsoup.parser.XmlTreeBuilder:insert:52->[Local Variables] {"el":{"tag":{"tagName":"body","isBlock":true,"formatAsBlock":true,"canContainBlock":true,"canContainInline":true,"empty":false,"selfClosing":false,"preserveWhitespace":false},"childNodes":[],"attributes":{},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:53->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:53 -> org.jsoup.parser.XmlTreeBuilder.insertNode
+org.jsoup.parser.XmlTreeBuilder:insert:53->[Local Variables] "{el\u003d\u003cbody\u003e\u003c/body\u003e}"
+org.jsoup.parser.XmlTreeBuilder:insert:54->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:54 -> org.jsoup.parser.Token$StartTag.isSelfClosing
+org.jsoup.parser.XmlTreeBuilder:insert:54->[Control Flow] Branch Info: Line: 54, Condition: if (org.jsoup.parser.Token$StartTag.isSelfClosing() != 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:insert:59->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:59 -> org.jsoup.helper.DescendableLinkedList.add
+org.jsoup.parser.XmlTreeBuilder:insert:56->[Control Flow] Branch Info: Line: 56, Condition: if (org.jsoup.parser.Tag.isKnownTag() == 0), Executed: false
+org.jsoup.parser.XmlTreeBuilder:insert:70->[Local Variables] {"characterToken":{"data":"One","type":"Character"}}
+org.jsoup.parser.XmlTreeBuilder:insert:71->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:71 -> org.jsoup.parser.Token$Character.getData
+org.jsoup.parser.XmlTreeBuilder:insert:71->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:71 -> org.jsoup.nodes.TextNode.<init>
+org.jsoup.parser.XmlTreeBuilder:insert:71->[Local Variables] {"node":{"text":"One","childNodes":[],"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:72->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:72 -> org.jsoup.parser.XmlTreeBuilder.insertNode
+org.jsoup.parser.XmlTreeBuilder:insert:72->[Local Variables] "{node\u003d\nOne}"
+org.jsoup.parser.XmlTreeBuilder:insert:64->[Local Variables] {"commentToken":{"data":" comment ","type":"Comment"}}
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:65 -> org.jsoup.parser.Token$Comment.getData
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:65 -> org.jsoup.nodes.Comment.<init>
+org.jsoup.parser.XmlTreeBuilder:insert:65->[Local Variables] {"comment":{"childNodes":[],"attributes":{"attributes":{"comment":{"key":"comment","value":" comment "}}},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:66->[Local Variables] {"insert":{"childNodes":[],"attributes":{"attributes":{"comment":{"key":"comment","value":" comment "}}},"baseUri":"","siblingIndex":0}}
+org.jsoup.parser.XmlTreeBuilder:insert:67->[Method Call] Call Stack: org.jsoup.parser.XmlTreeBuilder.insert:67 -> org.jsoup.parser.XmlTreeBuilder.insertNode
+org.jsoup.parser.XmlTreeBuilder:insert:67->[Local Variables] "{insert\u003d\n\u003c!-- comment --\u003e, comment\u003d\n\u003c!-- comment --\u003e}"

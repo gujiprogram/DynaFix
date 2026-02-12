@@ -1,0 +1,76 @@
+
+=== Debug Info for Test: org.apache.commons.csv.CSVFormatTest::testDuplicateHeaderElements ===
+Exception: java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.IllegalStateException>
+
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:316->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:316 -> [Ljava.lang.String;.clone
+org.apache.commons.csv.CSVFormat:validate:636->[Control Flow] Branch Info: Line: 636, Condition: if (this.quoteChar != null), Executed: true
+org.apache.commons.csv.CSVFormat:validate:636->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:636 -> java.lang.Character.charValue
+org.apache.commons.csv.CSVFormat:validate:636->[Control Flow] Branch Info: Line: 636, Condition: if (this.quoteChar != null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:636->[Control Flow] Branch Info: Line: 636, Condition: if (java.lang.Character.charValue() == java.lang.Character.charValue()), Executed: false
+org.apache.commons.csv.CSVFormat:validate:641->[Control Flow] Branch Info: Line: 641, Condition: if (this.escape != null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:641->[Control Flow] Branch Info: Line: 641, Condition: if (java.lang.Character.charValue() == java.lang.Character.charValue()), Executed: false
+org.apache.commons.csv.CSVFormat:validate:646->[Control Flow] Branch Info: Line: 646, Condition: if (this.commentStart != null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:646->[Control Flow] Branch Info: Line: 646, Condition: if (java.lang.Character.charValue() == java.lang.Character.charValue()), Executed: false
+org.apache.commons.csv.CSVFormat:validate:651->[Control Flow] Branch Info: Line: 651, Condition: if (this.quoteChar != null), Executed: true
+org.apache.commons.csv.CSVFormat:validate:651->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:651 -> java.lang.Character.equals
+org.apache.commons.csv.CSVFormat:validate:651->[Control Flow] Branch Info: Line: 651, Condition: if (this.quoteChar != null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:651->[Control Flow] Branch Info: Line: 651, Condition: if (java.lang.Character.equals() != 0), Executed: false
+org.apache.commons.csv.CSVFormat:validate:656->[Control Flow] Branch Info: Line: 656, Condition: if (this.escape != null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:656->[Control Flow] Branch Info: Line: 656, Condition: if (java.lang.Character.equals() != 0), Executed: false
+org.apache.commons.csv.CSVFormat:validate:661->[Control Flow] Branch Info: Line: 661, Condition: if (this.escape == null), Executed: true
+org.apache.commons.csv.CSVFormat:validate:661->[Control Flow] Branch Info: Line: 661, Condition: if (this.escape == null), Executed: false
+org.apache.commons.csv.CSVFormat:validate:661->[Control Flow] Branch Info: Line: 661, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.csv.CSVFormat:validate:665->[Control Flow] Branch Info: Line: 665, Condition: if (this.header != null), Executed: true
+org.apache.commons.csv.CSVFormat:validate:666->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:666 -> java.util.HashSet.<init>
+org.apache.commons.csv.CSVFormat:validate:666->[Local Variables] {"set":[]}
+org.apache.commons.csv.CSVFormat:validate:667->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:667 -> java.util.Arrays.asList
+org.apache.commons.csv.CSVFormat:validate:667->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:667 -> java.util.Set.addAll
+org.apache.commons.csv.CSVFormat:validate:667->[Local Variables] {"set":["A"]}
+org.apache.commons.csv.CSVFormat:validate:668->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:668 -> java.util.Set.size
+org.apache.commons.csv.CSVFormat:validate:668->[Control Flow] Branch Info: Line: 668, Condition: if (this.header != this.header), Executed: true
+org.apache.commons.csv.CSVFormat:validate:669->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:669 -> java.lang.StringBuilder.append
+org.apache.commons.csv.CSVFormat:validate:669->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:669 -> java.util.Arrays.toString
+org.apache.commons.csv.CSVFormat:validate:669->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:669 -> java.lang.StringBuilder.append
+org.apache.commons.csv.CSVFormat:validate:669->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.validate:669 -> java.lang.StringBuilder.toString
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"quoteChar":"\"","skipHeaderRecord":false,"delimiter":",","ignoreEmptyLines":true,"ignoreSurroundingSpaces":false,"recordSeparator":"\r\n"}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"ignoreEmptyLines":false}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"delimiter":"\t","ignoreEmptyLines":true}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"ignoreSurroundingSpaces":true}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"ignoreSurroundingSpaces":false}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"escape":"\\"}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"ignoreEmptyLines":false}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"recordSeparator":"\n"}
+org.apache.commons.csv.CSVFormat:<init>:301->[Method Call] Call Stack: org.apache.commons.csv.CSVFormat.<init>:301 -> org.apache.commons.csv.CSVFormat.isLineBreak
+org.apache.commons.csv.CSVFormat:<init>:301->[Control Flow] Branch Info: Line: 301, Condition: if (delimiter != 0), Executed: false
+org.apache.commons.csv.CSVFormat:<init>:313->[Control Flow] Branch Info: Line: 313, Condition: if (header == null), Executed: true
+org.apache.commons.csv.CSVFormat:<init>:299->[Local Variables] {"quoteChar":"\"","delimiter":",","header":["A","A"],"ignoreEmptyLines":true,"recordSeparator":"\r\n"}

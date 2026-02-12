@@ -1,0 +1,32 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.getGlobalVarReferences",
+    "doc": "/**\n   * This can be used to get the list of all references to all global variables\n   * based on all previous calls to {@code updateGlobalVarReferences}.\n   *\n   * @return The reference collection map associated to global scope variable.\n   */",
+    "code": "abstract GlobalVarReferenceMap getGlobalVarReferences();"
+  },
+  {
+    "method": "com.google.javascript.jscomp.AbstractCompiler.updateGlobalVarReferences",
+    "doc": "/**\n   * Updates the list of references for variables in global scope.\n   *\n   * @param refMapPatch Maps each variable to all of its references; may contain\n   *     references collected from the whole AST or only a SCRIPT sub-tree.\n   * @param collectionRoot The root of sub-tree in which reference collection\n   *     has been done. This should either be a SCRIPT node (if collection is\n   *     done on a single file) or it is assumed that collection is on full AST.\n   */",
+    "code": "abstract void updateGlobalVarReferences(Map<Var, ReferenceCollection>\n      refMapPatch, Node collectionRoot);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScopeRoot",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ReferenceCollectingCallback$Behavior.afterExitScope",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isGlobal",
+    "doc": "/**\n     * Returns whether this is a global variable.\n     */",
+    "code": "public boolean isGlobal() {\n      return scope.isGlobal();\n    }"
+  }
+]

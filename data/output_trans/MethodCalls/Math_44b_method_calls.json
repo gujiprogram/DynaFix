@@ -1,0 +1,52 @@
+[
+  {
+    "method": "org.apache.commons.math.ode.AbstractIntegrator.computeDerivatives",
+    "doc": "/** Compute the derivatives and check the number of evaluations.\n     * @param t current value of the independent <I>time</I> variable\n     * @param y array containing the current value of the state vector\n     * @param yDot placeholder array where to put the time derivative of the state vector\n     * @exception MaxCountExceededException if the number of functions evaluations is exceeded\n     */",
+    "code": "public void computeDerivatives(final double t, final double[] y, final double[] yDot)\n        throws MaxCountExceededException {\n        evaluations.incrementCount();\n        expandable.computeDerivatives(t, y, yDot);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.EventState.evaluateStep",
+    "doc": "/** Evaluate the impact of the proposed step on the event handler.\n     * @param interpolator step interpolator for the proposed step\n     * @return true if the event handler triggers an event before\n     * the end of the proposed step\n     * @exception ConvergenceException if an event cannot be located\n     */",
+    "code": "public boolean evaluateStep(final StepInterpolator interpolator)\n        throws ConvergenceException {\n\n            forward = interpolator.isForward();\n            final double t1 = interpolator.getCurrentTime();\n            final double dt = t1 - t0;\n            if (FastMath.abs(dt) < convergence) {\n                return false;\n            }\n            final int    n = FastMath.max(1, (int) FastMath.ceil(FastMath.abs(dt) / maxCheckInterval));\n            final double h = dt / n;\n\n            final UnivariateRealFunction f = new UnivariateRealFunction() {\n                public double value(final double t) {\n                    interpolator.setInterpolatedTime(t);\n                    return handler.g(t, interpolator.getInterpolatedState());\n                }\n            };\n\n            double ta = t0;\n            double ga = g0;\n            for (int i = 0; i < n; ++i) {\n\n                final double tb = t0 + (i + 1) * h;\n                interpolator.setInterpolatedTime(tb);\n                final double gb = handler.g(tb, interpolator.getInterpolatedState());\n\n                if (g0Positive ^ (gb >= 0)) {\n\n                    increasing = gb >= ga;\n\n                    final double root;\n                    if (solver instanceof BracketedUnivariateRealSolver<?>) {\n                        @SuppressWarnings(\"unchecked\")\n                        BracketedUnivariateRealSolver<UnivariateRealFunction> bracketing =\n                                (BracketedUnivariateRealSolver<UnivariateRealFunction>) solver;\n                        root = forward ?\n                               bracketing.solve(maxIterationCount, f, ta, tb, AllowedSolution.RIGHT_SIDE) :\n                               bracketing.solve(maxIterationCount, f, tb, ta, AllowedSolution.LEFT_SIDE);\n                    } else {\n                        final double baseRoot = forward ?\n                                                solver.solve(maxIterationCount, f, ta, tb) :\n                                                solver.solve(maxIterationCount, f, tb, ta);\n                        final int remainingEval = maxIterationCount - solver.getEvaluations();\n                        BracketedUnivariateRealSolver<UnivariateRealFunction> bracketing =\n                                new PegasusSolver(solver.getRelativeAccuracy(), solver.getAbsoluteAccuracy());\n                        root = forward ?\n                               UnivariateRealSolverUtils.forceSide(remainingEval, f, bracketing,\n                                                                   baseRoot, ta, tb, AllowedSolution.RIGHT_SIDE) :\n                               UnivariateRealSolverUtils.forceSide(remainingEval, f, bracketing,\n                                                                   baseRoot, tb, ta, AllowedSolution.LEFT_SIDE);\n                    }\n\n                    if ((!Double.isNaN(previousEventTime)) &&\n                        (FastMath.abs(root - ta) <= convergence) &&\n                        (FastMath.abs(root - previousEventTime) <= convergence)) {\n                        ta = forward ? ta + convergence : ta - convergence;\n                        ga = f.value(ta);\n                        --i;\n                    } else if (Double.isNaN(previousEventTime) ||\n                               (FastMath.abs(previousEventTime - root) > convergence)) {\n                        pendingEventTime = root;\n                        pendingEvent = true;\n                        return true;\n                    } else {\n                        ta = tb;\n                        ga = gb;\n                    }\n\n                } else {\n                    ta = tb;\n                    ga = gb;\n                }\n\n            }\n\n            pendingEvent     = false;\n            pendingEventTime = Double.NaN;\n            return false;\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.EventState.reset",
+    "doc": "/** Let the event handler reset the state if it wants.\n     * @param t value of the independent <i>time</i> variable at the\n     * beginning of the next step\n     * @param y array were to put the desired state vector at the beginning\n     * of the next step\n     * @return true if the integrator should reset the derivatives too\n     */",
+    "code": "public boolean reset(final double t, final double[] y) {\n\n        if (!(pendingEvent && (FastMath.abs(pendingEventTime - t) <= convergence))) {\n            return false;\n        }\n\n        if (nextAction == EventHandler.Action.RESET_STATE) {\n            handler.resetState(t, y);\n        }\n        pendingEvent      = false;\n        pendingEventTime  = Double.NaN;\n\n        return (nextAction == EventHandler.Action.RESET_STATE) ||\n               (nextAction == EventHandler.Action.RESET_DERIVATIVES);\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.EventState.stepAccepted",
+    "doc": "/** Acknowledge the fact the step has been accepted by the integrator.\n     * @param t value of the independent <i>time</i> variable at the\n     * end of the step\n     * @param y array containing the current value of the state vector\n     * at the end of the step\n     */",
+    "code": "public void stepAccepted(final double t, final double[] y) {\n\n        t0 = t;\n        g0 = handler.g(t, y);\n\n        if (pendingEvent && (FastMath.abs(pendingEventTime - t) <= convergence)) {\n            previousEventTime = t;\n            g0Positive        = increasing;\n            nextAction        = handler.eventOccurred(t, y, !(increasing ^ forward));\n        } else {\n            g0Positive = g0 >= 0;\n            nextAction = EventHandler.Action.CONTINUE;\n        }\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.events.EventState.stop",
+    "doc": "/** Check if the integration should be stopped at the end of the\n     * current step.\n     * @return true if the integration should be stopped\n     */",
+    "code": "public boolean stop() {\n        return nextAction == EventHandler.Action.STOP;\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getGlobalCurrentTime",
+    "doc": "/**\n   * Get the current global grid point time.\n   * @return current global grid point time\n   */",
+    "code": "public double getGlobalCurrentTime() {\n    return globalCurrentTime;\n  }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getGlobalPreviousTime",
+    "doc": "/**\n   * Get the previous global grid point time.\n   * @return previous global grid point time\n   */",
+    "code": "public double getGlobalPreviousTime() {\n    return globalPreviousTime;\n  }"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.getInterpolatedState",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.isForward",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.ode.sampling.AbstractStepInterpolator.setInterpolatedTime",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

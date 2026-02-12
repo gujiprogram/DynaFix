@@ -1,0 +1,31 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.exc.BasicExceptionTest::testLocationAddition ===
+
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:124->[Control Flow] Branch Info: Line: 124, Condition: if (key == null), Executed: false
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:128->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer.deserializeKey:128 -> com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer._parse
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:134->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer.deserializeKey:134 -> java.lang.Object.getClass
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:134->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer.deserializeKey:134 -> java.lang.Class.getName
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:135->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer.deserializeKey:135 -> java.lang.Exception.getMessage
+com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer:deserializeKey:133->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer.deserializeKey:133 -> com.fasterxml.jackson.databind.DeserializationContext.handleWeirdKey
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:291->[Control Flow] Branch Info: Line: 291, Condition: if (deser != 0), Executed: false
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:296->[Control Flow] Branch Info: Line: 296, Condition: if (addToCache != 0), Executed: true
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:297->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2:297 -> java.util.concurrent.ConcurrentHashMap.put
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:296->[Control Flow] Branch Info: Line: 296, Condition: if (addToCache != 0), Executed: false
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:264->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2:264 -> com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:270->[Control Flow] Branch Info: Line: 270, Condition: if (deser == null), Executed: false
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:277->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2:277 -> com.fasterxml.jackson.databind.deser.DeserializerCache._hasCustomHandlers
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:277->[Control Flow] Branch Info: Line: 277, Condition: if (type == 0), Executed: true
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:277->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2:277 -> com.fasterxml.jackson.databind.JsonDeserializer.isCachable
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:277->[Control Flow] Branch Info: Line: 277, Condition: if (com.fasterxml.jackson.databind.JsonDeserializer.isCachable() != 0), Executed: true
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:291->[Control Flow] Branch Info: Line: 291, Condition: if (deser != 0), Executed: false
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:296->[Control Flow] Branch Info: Line: 296, Condition: if (addToCache != 0), Executed: true
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:297->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2:297 -> java.util.concurrent.ConcurrentHashMap.put
+com.fasterxml.jackson.databind.deser.DeserializerCache:_createAndCache2:296->[Control Flow] Branch Info: Line: 296, Condition: if (addToCache != 0), Executed: false
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1559->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1559 -> com.fasterxml.jackson.databind.JavaType.getRawClass
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1559->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1559 -> com.fasterxml.jackson.databind.DeserializationConfig.introspectClassAnnotations
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1560->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1560 -> com.fasterxml.jackson.databind.BeanDescription.getClassInfo
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1561->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1561 -> com.fasterxml.jackson.databind.DeserializationConfig.getAnnotationIntrospector
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1562->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1562 -> com.fasterxml.jackson.databind.AnnotationIntrospector.findTypeResolver
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1567->[Control Flow] Branch Info: Line: 1567, Condition: if (b == null), Executed: true
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1568->[Method Call] Call Stack: com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer:1568 -> com.fasterxml.jackson.databind.DeserializationConfig.getDefaultTyper
+com.fasterxml.jackson.databind.deser.BasicDeserializerFactory:findTypeDeserializer:1569->[Control Flow] Branch Info: Line: 1569, Condition: if (b == null), Executed: true

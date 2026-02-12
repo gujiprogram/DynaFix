@@ -1,0 +1,99 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties6 ===
+Exception: junit.framework.AssertionFailedError: Overriding private property of Foo.prototype.
+
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dObject.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dObject.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{prop\u003dbar_, type\u003dSubFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Local Variables] {"info":{"sourceName":"input0","visibility":"PRIVATE","bitset":0,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:622 -> com.google.javascript.rhino.JSDocInfo.isDeprecated
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dObject}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dObject}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckAccessControlsTest::testNoPrivateAccessForProperties8 ===
+Exception: junit.framework.AssertionFailedError: There should be one error.  expected:<1> but was:<0>
+
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dObject}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dObject.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dObject.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003d{...}}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dSubFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dSubFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dFoo}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Local Variables] {"info":{"sourceName":"input0","visibility":"PRIVATE","bitset":0,"includeDocumentation":false}}
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:622 -> com.google.javascript.rhino.JSDocInfo.isDeprecated
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:620->[Local Variables] "{type\u003dFoo.prototype}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:621->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:621 -> com.google.javascript.rhino.jstype.ObjectType.getOwnPropertyJSDocInfo
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (info != null), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:622->[Control Flow] Branch Info: Line: 622, Condition: if (com.google.javascript.rhino.JSDocInfo.isDeprecated() != 0), Executed: false
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Method Call] Call Stack: com.google.javascript.jscomp.CheckAccessControls.getPropertyDeprecationInfo:629 -> com.google.javascript.rhino.jstype.ObjectType.getImplicitPrototype
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:629->[Local Variables] "{implicitProto\u003dObject}"
+com.google.javascript.jscomp.CheckAccessControls:getPropertyDeprecationInfo:630->[Control Flow] Branch Info: Line: 630, Condition: if (implicitProto != null), Executed: true

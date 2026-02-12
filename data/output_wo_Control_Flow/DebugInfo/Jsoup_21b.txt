@@ -1,0 +1,68 @@
+
+=== Debug Info for Test: org.jsoup.select.SelectorTest::handlesCommasInSelector ===
+
+org.jsoup.select.QueryParser:parse:51->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:51 -> org.jsoup.select.QueryParser.findElements
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:56->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:56 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:58->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:58 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.select.QueryParser:parse:66->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:66 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.select.QueryParser:parse:71->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:71 -> org.jsoup.select.QueryParser.findElements
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":"[name\u003d1,2]"}
+org.jsoup.select.QueryParser:parse:36->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:36 -> org.jsoup.select.QueryParser.<init>
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":"[name\u003d1,2]","pos":0},"query":"[name\u003d1,2]","evals":[]}}
+org.jsoup.select.QueryParser:parse:45->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:45 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:47->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:47 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.select.QueryParser:parse:51->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:51 -> org.jsoup.select.QueryParser.findElements
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:75->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:75 -> java.util.List.size
+org.jsoup.select.QueryParser:parse:76->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:76 -> java.util.List.get
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":"div, li:matches([0-9,]+)"}
+org.jsoup.select.QueryParser:parse:36->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:36 -> org.jsoup.select.QueryParser.<init>
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":"div, li:matches([0-9,]+)","pos":0},"query":"div, li:matches([0-9,]+)","evals":[]}}
+org.jsoup.select.QueryParser:parse:45->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:45 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:47->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:47 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.select.QueryParser:parse:51->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:51 -> org.jsoup.select.QueryParser.findElements
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:56->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:56 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:57->[Local Variables] {"seenWhite":false}
+org.jsoup.select.QueryParser:parse:58->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:58 -> org.jsoup.parser.TokenQueue.matchChomp
+org.jsoup.select.QueryParser:parse:59->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:59 -> org.jsoup.select.CombiningEvaluator$Or.<init>
+org.jsoup.select.QueryParser:parse:59->[Local Variables] {"or":{"evaluators":[{"tagName":"div"}]}}
+org.jsoup.select.QueryParser:parse:60->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:60 -> java.util.List.clear
+org.jsoup.select.QueryParser:parse:61->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:61 -> java.util.List.add
+org.jsoup.select.QueryParser:parse:62->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:62 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:63->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:63 -> org.jsoup.parser.TokenQueue.chompTo
+org.jsoup.select.QueryParser:parse:63->[Local Variables] {"subQuery":" li:matches([0-9"}
+org.jsoup.select.QueryParser:parse:35->[Local Variables] {"query":" li:matches([0-9"}
+org.jsoup.select.QueryParser:parse:36->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:36 -> org.jsoup.select.QueryParser.<init>
+org.jsoup.select.QueryParser:parse:36->[Local Variables] {"p":{"tq":{"queue":" li:matches([0-9","pos":0},"query":" li:matches([0-9","evals":[]}}
+org.jsoup.select.QueryParser:parse:45->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:45 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:47->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:47 -> org.jsoup.parser.TokenQueue.matchesAny
+
+=== Debug Info for Test: org.jsoup.select.SelectorTest::mixCombinatorGroup ===
+
+org.jsoup.select.QueryParser:parse:75->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:75 -> java.util.List.size
+org.jsoup.select.QueryParser:parse:76->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:76 -> java.util.List.get
+org.jsoup.select.QueryParser:combinator:83->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:83 -> org.jsoup.select.QueryParser.consumeSubQuery
+org.jsoup.select.QueryParser:combinator:86->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:86 -> java.util.List.size
+org.jsoup.select.QueryParser:combinator:87->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:87 -> java.util.List.get
+org.jsoup.select.QueryParser:combinator:89->[Local Variables] {"e":{"evaluators":[{"tagName":"li"},{"evaluator":{"tagName":"ol"}}]}}
+org.jsoup.select.QueryParser:combinator:90->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:90 -> java.util.List.clear
+org.jsoup.select.QueryParser:combinator:91->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:91 -> org.jsoup.select.QueryParser.parse
+org.jsoup.select.QueryParser:parse:36->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:36 -> org.jsoup.select.QueryParser.<init>
+org.jsoup.select.QueryParser:parse:45->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:45 -> org.jsoup.parser.TokenQueue.consumeWhitespace
+org.jsoup.select.QueryParser:parse:47->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:47 -> org.jsoup.parser.TokenQueue.matchesAny
+org.jsoup.select.QueryParser:parse:51->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:51 -> org.jsoup.select.QueryParser.findElements
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:75->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:75 -> java.util.List.size
+org.jsoup.select.QueryParser:parse:76->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:76 -> java.util.List.get
+org.jsoup.select.QueryParser:combinator:98->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:98 -> org.jsoup.select.StructuralEvaluator$ImmediatePreviousSibling.<init>
+org.jsoup.select.QueryParser:combinator:98->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:98 -> org.jsoup.select.CombiningEvaluator$And.<init>
+org.jsoup.select.QueryParser:combinator:98->[Method Call] Call Stack: org.jsoup.select.QueryParser.combinator:98 -> java.util.List.add
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:75->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:75 -> java.util.List.size
+org.jsoup.select.QueryParser:parse:76->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:76 -> java.util.List.get
+org.jsoup.select.QueryParser:parse:64->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:64 -> org.jsoup.select.CombiningEvaluator$Or.add
+org.jsoup.select.QueryParser:parse:64->[Local Variables] {"or":{"evaluators":[{"evaluators":[{"tagName":"ol"},{"evaluator":{"className":"foo"}}]},{"evaluators":[{"tagName":"li"},{"evaluator":{"evaluators":[{"tagName":"li"},{"evaluator":{"tagName":"ol"}}]}}]}]},"seenWhite":false}
+org.jsoup.select.QueryParser:parse:62->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:62 -> org.jsoup.parser.TokenQueue.isEmpty
+org.jsoup.select.QueryParser:parse:54->[Method Call] Call Stack: org.jsoup.select.QueryParser.parse:54 -> org.jsoup.parser.TokenQueue.isEmpty

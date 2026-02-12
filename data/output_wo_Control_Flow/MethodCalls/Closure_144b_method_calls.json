@@ -1,0 +1,97 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.FunctionTypeBuilder.getOrCreateConstructor",
+    "doc": "/**\n   * Returns a constructor function either by returning it from the\n   * registry if it exists or creating and registering a new type. If\n   * there is already a type, then warn if the existing type is\n   * different than the one we are creating, though still return the\n   * existing function if possible.  The primary purpose of this is\n   * that registering a constructor will fail for all built-in types\n   * that are initialized in {@link JSTypeRegistry}.  We a) want to\n   * make sure that the type information specified in the externs file\n   * matches what is in the registry and b) annotate the externs with\n   * the {@link JSType} from the registry so that there are not two\n   * separate JSType objects for one type.\n   */",
+    "code": "private FunctionType getOrCreateConstructor() {\n    FunctionType fnType = typeRegistry.createConstructorType(\n        fnName, sourceNode, parametersNode, returnType);\n    JSType existingType = typeRegistry.getType(fnName);\n\n    if (existingType != null) {\n      boolean isInstanceObject = existingType instanceof InstanceObjectType;\n      if (isInstanceObject || fnName.equals(\"Function\")) {\n        FunctionType existingFn =\n            isInstanceObject ?\n            ((InstanceObjectType) existingType).getConstructor() :\n            typeRegistry.getNativeFunctionType(FUNCTION_FUNCTION_TYPE);\n\n        if (existingFn.getSource() == null) {\n          existingFn.setSource(sourceNode);\n        }\n\n        if (!existingFn.hasEqualCallType(fnType)) {\n          reportWarning(TYPE_REDEFINITION, fnName,\n              fnType.toString(), existingFn.toString());\n        }\n\n        return existingFn;\n      } else {\n      }\n    }\n\n    maybeSetBaseType(fnType);\n\n    if (scope.isGlobal() && !fnName.isEmpty()) {\n      typeRegistry.declareType(fnName, fnType.getInstanceType());\n    }\n    return fnType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.FunctionTypeBuilder.maybeSetBaseType",
+    "doc": "/**\n   * Builds the function type, and puts it in the registry.\n   */",
+    "code": "private void maybeSetBaseType(FunctionType fnType) {\n    if (baseType != null) {\n      fnType.setPrototypeBasedOn(baseType);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.isGlobal",
+    "doc": "/**\n     * Returns whether this is a global variable.\n     */",
+    "code": "public boolean isGlobal() {\n      return scope.isGlobal();\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.getReturnType",
+    "doc": "/**\n   * Gets the return type specified by the {@code @return} annotation.\n   */",
+    "code": "public JSTypeExpression getReturnType() {\n    return getType(TYPEFIELD_RETURN);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfo.hasReturnType",
+    "doc": "/**\n   * Returns whether this {@link JSDocInfo} contains a type for {@code @return}\n   * annotation.\n   */",
+    "code": "public boolean hasReturnType() {\n    return hasType(TYPEFIELD_RETURN);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSTypeExpression.evaluate",
+    "doc": "/**\n   * Evaluates the type expression into a {@code JSType} object.\n   */",
+    "code": "public JSType evaluate(StaticScope<JSType> scope, JSTypeRegistry registry) {\n    return registry.createFromTypeNodes(root, sourceName, scope,\n        root.getBooleanProp(Node.BRACELESS_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.build",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withParamsNode",
+    "doc": "/**\n   * Set the parameters of the function type with a specially-formatted node.\n   */",
+    "code": "public FunctionBuilder withParamsNode(Node parametersNode) {\n    this.parametersNode = parametersNode;\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withReturnType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withSourceNode",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withTemplateName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionBuilder.withTypeOfThis",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getInstanceType",
+    "doc": "/**\n   * Gets the type of instance of this function.\n   * @throws IllegalStateException if this function is not a constructor\n   *         (see {@link #isConstructor()}).\n   */",
+    "code": "public ObjectType getInstanceType() {\n    Preconditions.checkState(hasInstanceType());\n    return typeOfThis;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.setImplementedInterfaces",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.clearTemplateTypeName",
+    "doc": "/**\n   * Clears the template type name.\n   */",
+    "code": "public void clearTemplateTypeName() {\n    templateTypeName = null;\n    templateType = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.createInterfaceType",
+    "doc": "/**\n   * Creates an interface function type.\n   * @param name the function's name\n   * @param source the node defining this function. Its type\n   *     ({@link Node#getType()}) must be {@link Token#FUNCTION}.\n   */",
+    "code": "public FunctionType createInterfaceType(String name, Node source) {\n    return FunctionType.forInterface(this, name, source);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.declareType",
+    "doc": "/**\n   * Records declared type names. Given the limited scopes of JavaScript, all\n   * named types are dumped in a common global scope. We may need to revise this\n   * assumption in the future.\n   *\n   * @param name The name of the type to be recorded.\n   * @param t The actual type being associated with the name.\n   * @return True if this name is not already defined, false otherwise.\n   */",
+    "code": "public boolean declareType(String name, JSType t) {\n    if (namesToTypes.containsKey(name)) {\n      return false;\n    }\n    register(t, name);\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeType",
+    "doc": "/**\n   * Returns whether the given property can possibly be set on the given type.\n   */",
+    "code": "return getNativeType(NO_TYPE);\n  }\n\n  public boolean canPropertyBeDefined(JSType type, String propertyName) {"
+  }
+]

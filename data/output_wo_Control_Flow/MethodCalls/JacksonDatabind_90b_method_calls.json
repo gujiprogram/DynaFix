@@ -1,0 +1,42 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromBoolean",
+    "doc": "/**\n     * Method that can be called to check whether a double (boolean / Boolean) based\n     * creator is available to use (to call {@link #createFromDouble}).\n     */",
+    "code": "public boolean canCreateFromBoolean() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromDouble",
+    "doc": "/**\n     * Method that can be called to check whether a double (double / Double) based\n     * creator is available to use (to call {@link #createFromDouble}).\n     */",
+    "code": "public boolean canCreateFromDouble() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromInt",
+    "doc": "/**\n     * Method that can be called to check whether an integer (int, Integer) based\n     * creator is available to use (to call {@link #createFromInt}).\n     */",
+    "code": "public boolean canCreateFromInt() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromLong",
+    "doc": "/**\n     * Method that can be called to check whether a long (long, Long) based\n     * creator is available to use (to call {@link #createFromLong}).\n     */",
+    "code": "public boolean canCreateFromLong() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromObjectWith",
+    "doc": "/**\n     * Method that can be called to check whether a property-based creator\n     * (argument-taking constructor or factory method)\n     * is available to instantiate values from JSON Object\n     */",
+    "code": "public boolean canCreateFromObjectWith() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateFromString",
+    "doc": "/**\n     * Method that can be called to check whether a String-based creator\n     * is available for this instantiator\n     */",
+    "code": "public boolean canCreateFromString() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateUsingDefault",
+    "doc": "/**\n     * Method that will return true if any of <code>canCreateXxx</code> method\n     * returns true: that is, if there is any way that an instance could\n     * be created.\n     */",
+    "code": "return canCreateUsingDefault()\n                || canCreateUsingDelegate()"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.ValueInstantiator.canCreateUsingDelegate",
+    "doc": "/**\n     * Method that can be called to check whether a delegate-based creator (single-arg\n     * constructor or factory method)\n     * is available for this instantiator\n     */",
+    "code": "public boolean canCreateUsingDelegate() { return false; }"
+  }
+]

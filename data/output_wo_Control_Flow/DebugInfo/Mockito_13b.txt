@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: org.mockitousage.bugs.VerifyingWithAnExtraCallToADifferentMockTest::shouldAllowVerifyingWhenOtherMockCallIsInTheSameLine ===
+
+org.mockito.internal.MockHandler:handle:103->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:103 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:103->[Local Variables] {"ret":0}
+org.mockito.internal.MockHandler:handle:68->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:68 -> org.mockito.internal.invocation.MatchersBinder.bindMatchers
+org.mockito.internal.MockHandler:handle:71->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:71 -> org.mockito.internal.progress.MockingProgress.validateState
+org.mockito.internal.MockHandler:handle:86->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:86 -> org.mockito.internal.stubbing.InvocationContainerImpl.setInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:86->[Local Variables] "{invocation\u003dmockTwo.finalize();, invocationMatcher\u003dmockTwo.finalize();}"
+org.mockito.internal.MockHandler:handle:87->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:87 -> org.mockito.internal.stubbing.OngoingStubbingImpl.<init>
+org.mockito.internal.MockHandler:handle:87->[Local Variables] "{invocation\u003dmockTwo.simpleMethod(\"foo\");, invocationMatcher\u003dmockTwo.simpleMethod(\"foo\");, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@6d0c2990}"
+org.mockito.internal.MockHandler:handle:88->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:88 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:87->[Local Variables] "{invocation\u003dmockTwo.finalize();, invocationMatcher\u003dmockTwo.finalize();, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@580b6093}"
+org.mockito.internal.MockHandler:handle:88->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:88 -> org.mockito.internal.progress.MockingProgress.reportOngoingStubbing
+org.mockito.internal.MockHandler:handle:89->[Local Variables] "{invocation\u003dmockTwo.finalize();, invocationMatcher\u003dmockTwo.finalize();}"
+org.mockito.internal.MockHandler:handle:90->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:90 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:89->[Local Variables] "{invocation\u003dmockTwo.simpleMethod(\"foo\");, invocationMatcher\u003dmockTwo.simpleMethod(\"foo\");, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@6d0c2990}"
+org.mockito.internal.MockHandler:handle:90->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:90 -> org.mockito.internal.stubbing.InvocationContainerImpl.findAnswerFor
+org.mockito.internal.MockHandler:handle:91->[Local Variables] "{invocation\u003dmockTwo.simpleMethod(\"foo\");, invocationMatcher\u003dmockTwo.simpleMethod(\"foo\");}"
+org.mockito.internal.MockHandler:handle:91->[Local Variables] "{ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@580b6093}"
+org.mockito.internal.MockHandler:handle:95->[Local Variables] "{ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@6d0c2990}"
+org.mockito.internal.MockHandler:handle:96->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:96 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:96->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:96 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:95->[Local Variables] "{invocation\u003dmockTwo.finalize();, invocationMatcher\u003dmockTwo.finalize();, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@580b6093}"
+org.mockito.internal.MockHandler:handle:96->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:96 -> org.mockito.internal.creation.MockSettingsImpl.getDefaultAnswer
+org.mockito.internal.MockHandler:handle:96->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:96 -> org.mockito.stubbing.Answer.answer
+org.mockito.internal.MockHandler:handle:102->[Local Variables] "{ret\u003dnull, invocation\u003dmockTwo.simpleMethod(\"foo\");, invocationMatcher\u003dmockTwo.simpleMethod(\"foo\");, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@6d0c2990}"
+org.mockito.internal.MockHandler:handle:103->[Method Call] Call Stack: org.mockito.internal.MockHandler.handle:103 -> org.mockito.internal.stubbing.InvocationContainerImpl.resetInvocationForPotentialStubbing
+org.mockito.internal.MockHandler:handle:102->[Local Variables] "{ret\u003d0, invocation\u003dmockTwo.finalize();, invocationMatcher\u003dmockTwo.finalize();, ongoingStubbing\u003dorg.mockito.internal.stubbing.OngoingStubbingImpl@580b6093}"

@@ -1,0 +1,22 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isExpressionNode",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isExpressionNode(Node n) {\n    return n.getType() == Token.EXPR_RESULT;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.hasOneChild",
+    "doc": "/**\n   * Check for one child more efficiently than by iterating over all the\n   * children as is done with Node.getChildCount().\n   *\n   * @return Whether the node has exactly one child.\n   */",
+    "code": "public boolean hasOneChild() {\n    return first != null && first == last;\n  }"
+  }
+]

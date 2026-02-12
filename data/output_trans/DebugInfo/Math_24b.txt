@@ -1,0 +1,38 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.univariate.BrentOptimizerTest::testMath855 ===
+Exception: junit.framework.AssertionFailedError: Best point not reported
+
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:159->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:159 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:159->[Control Flow] Branch Info: Line: 159, Condition: if (TransVarB <= 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:160->[Local Variables] {"TransVarIsStop":true}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:161->[Control Flow] Branch Info: Line: 161, Condition: if (TransVarIsStop == 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:186->[Control Flow] Branch Info: Line: 186, Condition: if (TransVarM2 <= 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:184->[Control Flow] Branch Info: Line: 184, Condition: if (TransVarTol1 < 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:207->[Local Variables] {"TransVarD1":4.712389027602411E-8}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:208->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:208 -> org.apache.commons.math3.util.FastMath.abs
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:208->[Control Flow] Branch Info: Line: 208, Condition: if (TransVarTol2 < 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:216->[Local Variables] {"TransVarInitialValue":4.7123890747263015}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:217->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:217 -> org.apache.commons.math3.optimization.univariate.BrentOptimizer.computeObjectiveValue
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:217->[Local Variables] {"TransVarObjVal":-0.9999999999999956}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:218->[Control Flow] Branch Info: Line: 218, Condition: if (TransVarIsMinimize == 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:221->[Local Variables] {"TransVarPreviousPointValuePair":{"point":4.712389027602411,"value":-1.999999999999999}}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:222->[Control Flow] Branch Info: Line: 222, Condition: if (TransVarIsMinimize != 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:222->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:222 -> org.apache.commons.math3.optimization.univariate.UnivariatePointValuePair.<init>
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:223->[Local Variables] {"TransVarCurrentPoint":{"point":4.7123890747263015,"value":-0.9999999999999956}}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:224->[Control Flow] Branch Info: Line: 224, Condition: if (TransVarConvergenceChecker != null), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:225->[Control Flow] Branch Info: Line: 225, Condition: if (TransVarCurrentPoint != 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:230->[Control Flow] Branch Info: Line: 230, Condition: if (TransVarF <= 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:243->[Control Flow] Branch Info: Line: 243, Condition: if (TransVarMid < 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:247->[Local Variables] {"TransVarBest":4.7123890747263015}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarFxw > 0), Executed: true
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:248->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:248 -> org.apache.commons.math3.util.Precision.equals
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:248->[Control Flow] Branch Info: Line: 248, Condition: if (TransVarMid != 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:253->[Control Flow] Branch Info: Line: 253, Condition: if (TransVarValueFunction > 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:253->[Control Flow] Branch Info: Line: 253, Condition: if (TransVarMid == 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:255->[Local Variables] {"TransVarVariable":4.7123890747263015}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:254->[Control Flow] Branch Info: Line: 254, Condition: if (TransVarW1 != 0), Executed: false
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:258->[Local Variables] {"TransVarValueFunction":-0.9999999999999956}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:262->[Local Variables] {"TransVarI":5}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:154->[Control Flow] Loop Info: Line: 154, Description: while at line 154
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:156->[Local Variables] {"TransVarM2":4.712389027602411}
+org.apache.commons.math3.optimization.univariate.BrentOptimizer:doOptimize:157->[Method Call] Call Stack: org.apache.commons.math3.optimization.univariate.BrentOptimizer.doOptimize:157 -> org.apache.commons.math3.util.FastMath.abs

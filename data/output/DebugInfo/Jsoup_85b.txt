@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.jsoup.nodes.AttributeTest::validatesKeysNotEmpty ===
+Exception: junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalArgumentException
+
+org.jsoup.nodes.Attribute:<init>:32->[Local Variables] {"value":"Check","key":" "}
+org.jsoup.nodes.Attribute:<init>:41->[Local Variables] {"val":"Check"}
+org.jsoup.nodes.Attribute:<init>:43->[Method Call] Call Stack: org.jsoup.nodes.Attribute.<init>:43 -> org.jsoup.helper.Validate.notNull
+org.jsoup.nodes.Attribute:<init>:44->[Method Call] Call Stack: org.jsoup.nodes.Attribute.<init>:44 -> java.lang.String.trim
+org.jsoup.nodes.Attribute:<init>:45->[Method Call] Call Stack: org.jsoup.nodes.Attribute.<init>:45 -> org.jsoup.helper.Validate.notEmpty

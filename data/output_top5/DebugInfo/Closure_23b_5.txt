@@ -1,0 +1,8 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldGetElem ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_INDEX_OUT_OF_BOUNDS_ERROR. Array index out of bounds: NUMBER 0.0 1 [source_file: testcode] at testcode line 1 : 10 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:458->[Local Variables] "{left\u003dNAME x 1 [source_file: testcode], right\u003dGETELEM 1 [source_file: testcode], n\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:459->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:459 -> com.google.javascript.rhino.Node.isAssign
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:459->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign:459 -> com.google.common.base.Preconditions.checkArgument
+com.google.javascript.jscomp.PeepholeFoldConstants:tryFoldAssign:461->[Control Flow] Branch Info: Line: 461, Condition: if (this.late == false), Executed: true

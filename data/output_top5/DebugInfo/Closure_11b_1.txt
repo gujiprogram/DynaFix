@@ -1,0 +1,96 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testGetprop4 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitAssign:896->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:896 -> com.google.javascript.jscomp.TypeCheck.checkPropertyInheritanceOnGetpropAssign
+com.google.javascript.jscomp.TypeCheck:visitAssign:851->[Local Variables] "{objectJsType\u003dnull}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:852->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:852 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:852->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:852 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitAssign:855->[Local Variables] {"property":"prop"}
+com.google.javascript.jscomp.TypeCheck:visitAssign:856->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:856 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.TypeCheck:visitAssign:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:858->[Control Flow] Branch Info: Line: 858, Condition: if (com.google.javascript.rhino.jstype.JSType.isInterface() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:859->[Control Flow] Branch Info: Line: 859, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:864->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:864 -> com.google.javascript.jscomp.TypeCheck.checkEnumAlias
+com.google.javascript.jscomp.TypeCheck:visitAssign:870->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:870 -> java.lang.String.equals
+com.google.javascript.jscomp.TypeCheck:visitAssign:870->[Control Flow] Branch Info: Line: 870, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:871->[Control Flow] Branch Info: Line: 871, Condition: if (rightChild != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:871->[Control Flow] Branch Info: Line: 871, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:873->[Control Flow] Branch Info: Line: 873, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:886->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:886 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitAssign:885->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:885 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeCheck:visitAssign:886->[Local Variables] "{type\u003dNone}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:887->[Control Flow] Branch Info: Line: 887, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:888->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:888 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeCheck:visitAssign:888->[Control Flow] Branch Info: Line: 888, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:889->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:889 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitAssign:889->[Control Flow] Branch Info: Line: 889, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:890->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:890 -> com.google.javascript.jscomp.TypeCheck.propertyIsImplicitCast
+com.google.javascript.jscomp.TypeCheck:visitAssign:890->[Control Flow] Branch Info: Line: 890, Condition: if (rightType == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:891->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:891 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.jscomp.TypeCheck:visitAssign:891->[Local Variables] "{expectedType\u003dNone}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:892->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:892 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:visitAssign:892->[Control Flow] Branch Info: Line: 892, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:894->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:894 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:893->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:893 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue810 ===
+Exception: junit.framework.AssertionFailedError: expected a warning
+
+com.google.javascript.jscomp.TypeCheck:visitAssign:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:858->[Control Flow] Branch Info: Line: 858, Condition: if (com.google.javascript.rhino.jstype.JSType.isInterface() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:859->[Control Flow] Branch Info: Line: 859, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:864->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:864 -> com.google.javascript.jscomp.TypeCheck.checkEnumAlias
+com.google.javascript.jscomp.TypeCheck:visitAssign:870->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:870 -> java.lang.String.equals
+com.google.javascript.jscomp.TypeCheck:visitAssign:870->[Control Flow] Branch Info: Line: 870, Condition: if (java.lang.String.equals() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:871->[Control Flow] Branch Info: Line: 871, Condition: if (rightChild != null), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:871->[Control Flow] Branch Info: Line: 871, Condition: if (com.google.javascript.rhino.jstype.JSType.isFunctionType() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:873->[Control Flow] Branch Info: Line: 873, Condition: if (com.google.javascript.rhino.jstype.FunctionType.isConstructor() != 0), Executed: false
+com.google.javascript.jscomp.TypeCheck:visitAssign:886->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:886 -> com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined
+com.google.javascript.jscomp.TypeCheck:visitAssign:885->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:885 -> com.google.javascript.rhino.jstype.ObjectType.cast
+com.google.javascript.jscomp.TypeCheck:visitAssign:886->[Local Variables] "{type\u003dType.prototype}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:887->[Control Flow] Branch Info: Line: 887, Condition: if (type != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:888->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:888 -> com.google.javascript.rhino.jstype.ObjectType.hasProperty
+com.google.javascript.jscomp.TypeCheck:visitAssign:888->[Control Flow] Branch Info: Line: 888, Condition: if (com.google.javascript.rhino.jstype.ObjectType.hasProperty() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:889->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:889 -> com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitAssign:889->[Control Flow] Branch Info: Line: 889, Condition: if (com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:890->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:890 -> com.google.javascript.jscomp.TypeCheck.propertyIsImplicitCast
+com.google.javascript.jscomp.TypeCheck:visitAssign:890->[Control Flow] Branch Info: Line: 890, Condition: if (rightType == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:891->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:891 -> com.google.javascript.rhino.jstype.ObjectType.getPropertyType
+com.google.javascript.jscomp.TypeCheck:visitAssign:891->[Local Variables] "{expectedType\u003dfunction (this:Type, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:892->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:892 -> com.google.javascript.rhino.jstype.JSType.isUnknownType
+com.google.javascript.jscomp.TypeCheck:visitAssign:892->[Control Flow] Branch Info: Line: 892, Condition: if (com.google.javascript.rhino.jstype.JSType.isUnknownType() == 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:894->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:894 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:893->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:893 -> com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf
+com.google.javascript.jscomp.TypeCheck:visitAssign:896->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:896 -> com.google.javascript.jscomp.TypeCheck.checkPropertyInheritanceOnGetpropAssign
+com.google.javascript.jscomp.TypeCheck:visitAssign:917->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:917 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:917->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:917 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:917->[Local Variables] "{rvalueType\u003d?}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:918->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:918 -> com.google.javascript.jscomp.NodeTraversal.getScope
+com.google.javascript.jscomp.TypeCheck:visitAssign:918->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:918 -> com.google.javascript.rhino.Node.getQualifiedName
+com.google.javascript.jscomp.TypeCheck:visitAssign:918->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:918 -> com.google.javascript.jscomp.Scope.getVar
+com.google.javascript.jscomp.TypeCheck:visitAssign:918->[Local Variables] "{var\u003dScope.Var this.prop{?}}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:919->[Control Flow] Branch Info: Line: 919, Condition: if (rightType != null), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:920->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:920 -> com.google.javascript.jscomp.Scope$Var.isTypeInferred
+com.google.javascript.jscomp.TypeCheck:visitAssign:920->[Control Flow] Branch Info: Line: 920, Condition: if (com.google.javascript.jscomp.Scope$Var.isTypeInferred() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:843->[Local Variables] "{assign\u003dASSIGN 1 [source_file: [testcode]] : function (this:Type, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:844->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:844 -> com.google.javascript.rhino.Node.getJSDocInfo
+com.google.javascript.jscomp.TypeCheck:visitAssign:845->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:845 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:845->[Local Variables] "{lvalue\u003dGETPROP 1 [source_file: [testcode]] : function (this:Type, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:846->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:846 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:848->[Local Variables] "{rvalue\u003dFUNCTION  1 [source_file: [testcode]] : function (this:Type, ?): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:849->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:849 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.TypeCheck:visitAssign:849->[Control Flow] Branch Info: Line: 849, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:850->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:850 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:850->[Local Variables] "{object\u003dGETPROP 1 [source_file: [testcode]] : Type.prototype}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:851->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:851 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:851->[Local Variables] "{objectJsType\u003dType.prototype}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:852->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:852 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:852->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:852 -> com.google.javascript.rhino.Node.getString
+com.google.javascript.jscomp.TypeCheck:visitAssign:855->[Local Variables] {"property":"doIt"}
+com.google.javascript.jscomp.TypeCheck:visitAssign:856->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:856 -> com.google.javascript.rhino.Node.isGetProp
+com.google.javascript.jscomp.TypeCheck:visitAssign:856->[Control Flow] Branch Info: Line: 856, Condition: if (com.google.javascript.rhino.Node.isGetProp() != 0), Executed: true
+com.google.javascript.jscomp.TypeCheck:visitAssign:857->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:857 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.TypeCheck:visitAssign:857->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:857 -> com.google.javascript.jscomp.TypeCheck.getJSType
+com.google.javascript.jscomp.TypeCheck:visitAssign:857->[Local Variables] "{jsType\u003dfunction (new:Type): undefined}"
+com.google.javascript.jscomp.TypeCheck:visitAssign:858->[Method Call] Call Stack: com.google.javascript.jscomp.TypeCheck.visitAssign:858 -> com.google.javascript.rhino.jstype.JSType.isInterface

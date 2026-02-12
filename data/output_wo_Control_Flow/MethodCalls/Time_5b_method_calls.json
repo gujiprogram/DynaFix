@@ -1,0 +1,62 @@
+[
+  {
+    "method": "org.joda.time.DateTimeUtils.getPeriodType",
+    "doc": "/**\n     * Gets the period type handling null.\n     * <p>\n     * If the zone is <code>null</code>, {@link PeriodType#standard()}\n     * will be returned. Otherwise, the type specified is returned.\n     *\n     * @param type  the time zone to use, null means the standard type\n     * @return the type to use, never null\n     */",
+    "code": "public static final PeriodType getPeriodType(PeriodType type) {\n        if (type == null) {\n            return PeriodType.standard();\n        }\n        return type;\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getDays",
+    "doc": "/**\n     * Gets the days field part of the period.\n     *\n     * @return the number of days in the period, zero if unsupported\n     */",
+    "code": "public int getDays() {\n        return getPeriodType().getIndexedField(this, PeriodType.DAY_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getHours",
+    "doc": "/**\n     * Gets the hours field part of the period.\n     *\n     * @return the number of hours in the period, zero if unsupported\n     */",
+    "code": "public int getHours() {\n        return getPeriodType().getIndexedField(this, PeriodType.HOUR_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getMillis",
+    "doc": "/**\n     * Gets the millis field part of the period.\n     *\n     * @return the number of millis in the period, zero if unsupported\n     */",
+    "code": "public int getMillis() {\n        return getPeriodType().getIndexedField(this, PeriodType.MILLI_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getMinutes",
+    "doc": "/**\n     * Gets the minutes field part of the period.\n     *\n     * @return the number of minutes in the period, zero if unsupported\n     */",
+    "code": "public int getMinutes() {\n        return getPeriodType().getIndexedField(this, PeriodType.MINUTE_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getMonths",
+    "doc": "/**\n     * Gets the months field part of the period.\n     *\n     * @return the number of months in the period, zero if unsupported\n     */",
+    "code": "public int getMonths() {\n        return getPeriodType().getIndexedField(this, PeriodType.MONTH_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getSeconds",
+    "doc": "/**\n     * Gets the seconds field part of the period.\n     *\n     * @return the number of seconds in the period, zero if unsupported\n     */",
+    "code": "public int getSeconds() {\n        return getPeriodType().getIndexedField(this, PeriodType.SECOND_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getWeeks",
+    "doc": "/**\n     * Gets the weeks field part of the period.\n     *\n     * @return the number of weeks in the period, zero if unsupported\n     */",
+    "code": "public int getWeeks() {\n        return getPeriodType().getIndexedField(this, PeriodType.WEEK_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.getYears",
+    "doc": "/**\n     * Gets the years field part of the period.\n     *\n     * @return the number of years in the period, zero if unsupported\n     */",
+    "code": "public int getYears() {\n        return getPeriodType().getIndexedField(this, PeriodType.YEAR_INDEX);\n    }"
+  },
+  {
+    "method": "org.joda.time.Period.withYears",
+    "doc": "/**\n     * Returns a new period with the specified number of years.\n     * <p>\n     * This period instance is immutable and unaffected by this method call.\n     *\n     * @param years  the amount of years to add, may be negative\n     * @return the new period with the increased years\n     * @throws UnsupportedOperationException if the field is not supported\n     */",
+    "code": "public Period withYears(int years) {\n        int[] values = getValues();  // cloned\n        getPeriodType().setIndexedField(this, PeriodType.YEAR_INDEX, values, years);\n        return new Period(values, getPeriodType());\n    }"
+  },
+  {
+    "method": "org.joda.time.chrono.ISOChronology.getInstanceUTC",
+    "doc": "/**\n     * Gets an instance of the ISOChronology.\n     * The time zone of the returned instance is UTC.\n     *\n     * @return a singleton UTC instance of the chronology\n     */",
+    "code": "public static ISOChronology getInstanceUTC() {\n        return INSTANCE_UTC;\n    }"
+  },
+  {
+    "method": "org.joda.time.field.FieldUtils.safeAdd",
+    "doc": "/**\n     * Add two values throwing an exception if overflow occurs.\n     *\n     * @param val1  the first value\n     * @param val2  the second value\n     * @return the new total\n     * @throws ArithmeticException if the value is too big or too small\n     */",
+    "code": "public static int safeAdd(int val1, int val2) {\n        int sum = val1 + val2;\n        if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {\n            throw new ArithmeticException\n                (\"The calculation caused an overflow: \" + val1 + \" + \" + val2);\n        }\n        return sum;\n    }"
+  }
+]

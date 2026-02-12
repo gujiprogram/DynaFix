@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.jsoup.helper.StringUtil.isBlank",
+    "doc": "/**\n     * Tests if a string is blank: null, emtpy, or only whitespace (\" \", \\r\\n, \\t, etc)\n     * @param string string to test\n     * @return if string is blank\n     */",
+    "code": "public static boolean isBlank(String string) {\n        if (string == null || string.length() == 0)\n            return true;\n\n        int l = string.length();\n        for (int i = 0; i < l; i++) {\n            if (!Character.isWhitespace(string.codePointAt(i)))\n                return false;\n        }\n        return true;\n    }"
+  },
+  {
+    "method": "org.jsoup.nodes.DocumentType.attr",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

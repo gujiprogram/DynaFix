@@ -1,0 +1,18 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.TestDefaultWithCreators::testWithCreatorAndJsonValue ===
+
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:202->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:202 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getValue
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:204->[Control Flow] Branch Info: Line: 204, Condition: if (value == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:209->[Control Flow] Branch Info: Line: 209, Condition: if (e == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:216->[Control Flow] Branch Info: Line: 216, Condition: if (this._forceTypeInformation != false), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:226->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:226 -> com.fasterxml.jackson.databind.JsonSerializer.serializeWithType
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.jsontype.ext.ExternalTypeIdTest::testWithAsValue ===
+
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:202->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:202 -> com.fasterxml.jackson.databind.introspect.AnnotatedMethod.getValue
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:204->[Control Flow] Branch Info: Line: 204, Condition: if (value == null), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:209->[Control Flow] Branch Info: Line: 209, Condition: if (e == null), Executed: true
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:211 -> java.lang.Object.getClass
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:211->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:211 -> com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:216->[Control Flow] Branch Info: Line: 216, Condition: if (this._forceTypeInformation != false), Executed: false
+com.fasterxml.jackson.databind.ser.std.JsonValueSerializer:serializeWithType:226->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.std.JsonValueSerializer.serializeWithType:226 -> com.fasterxml.jackson.databind.JsonSerializer.serializeWithType

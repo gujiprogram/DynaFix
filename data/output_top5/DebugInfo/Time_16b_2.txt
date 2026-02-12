@@ -1,0 +1,245 @@
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseStartYear ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-05-01T12:20:30.000+09:00> but was:<2000-05-01T12:20:30.000+09:00>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1083381630000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1083381630000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":32400000}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1083414030000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-05-01T12:20:30.000+09:00"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":957151230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":957151230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":957183630000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-05-01T12:20:30.000+09:00"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseStartYear ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-01-01T12:20:30.000+09:00> but was:<2000-01-01T12:20:30.000+09:00>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1072927230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1072927230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":32400000}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1072959630000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-01-01T12:20:30.000+09:00"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":946696830000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":946696830000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":946729230000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-01-01T12:20:30.000+09:00"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_baseEndYear ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-05-31T12:20:30.000+09:00> but was:<2000-05-31T12:20:30.000+09:00>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1085973630000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1085973630000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":32400000}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1086006030000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-05-31T12:20:30.000+09:00"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":959743230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":959743230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":959775630000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-05-31T12:20:30.000+09:00"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-05-09T12:20:30.000+01:00> but was:<2000-05-09T12:20:30.000+01:00>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1084101630000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1084101630000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":3600000}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1084105230000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-05-09T12:20:30.000+01:00"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":957871230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":957871230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":957874830000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-05-09T12:20:30.000+01:00"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_withDefaultYear_feb29 ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-02-29T12:20:30.000Z> but was:<2012-02-29T12:20:30.000Z>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":0}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-02-29T12:20:30.000Z"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1330518030000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1330518030000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1330518030000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2012-02-29T12:20:30.000Z"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthDay_feb29 ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-02-29T12:20:30.000Z> but was:<2000-02-29T12:20:30.000Z>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":0}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1078057230000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-02-29T12:20:30.000Z"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":951826830000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":951826830000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":951826830000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-02-29T12:20:30.000Z"}
+
+=== Debug Info for Test: org.joda.time.format.TestDateTimeFormatter::testParseInto_monthOnly_parseEndYear ===
+Exception: junit.framework.AssertionFailedError: expected:<2004-12-31T12:20:30.000+09:00> but was:<2000-12-31T12:20:30.000+09:00>
+
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":1104463230000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":1104463230000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:623->[Local Variables] {"offset":32400000}
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":1104495630000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2004-12-31T12:20:30.000+09:00"}
+org.joda.time.format.DateTimeFormatter:printTo:458->[Local Variables] {"buf":""}
+org.joda.time.format.DateTimeFormatter:printTo:459->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:459 -> org.joda.time.DateTimeUtils.getInstantMillis
+org.joda.time.format.DateTimeFormatter:printTo:459->[Local Variables] {"millis":978232830000}
+org.joda.time.format.DateTimeFormatter:printTo:460->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:460 -> org.joda.time.DateTimeUtils.getInstantChronology
+org.joda.time.format.DateTimeFormatter:printTo:617->[Local Variables] {"instant":978232830000}
+org.joda.time.format.DateTimeFormatter:printTo:618->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:618 -> org.joda.time.format.DateTimeFormatter.requirePrinter
+org.joda.time.format.DateTimeFormatter:printTo:619->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:619 -> org.joda.time.format.DateTimeFormatter.selectChronology
+org.joda.time.format.DateTimeFormatter:printTo:622->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:622 -> org.joda.time.Chronology.getZone
+org.joda.time.format.DateTimeFormatter:printTo:623->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:623 -> org.joda.time.DateTimeZone.getOffset
+org.joda.time.format.DateTimeFormatter:printTo:624->[Local Variables] {"adjustedInstant":978265230000}
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (adjustedInstant < 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:625->[Control Flow] Branch Info: Line: 625, Condition: if (offset >= 0), Executed: false
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.Chronology.withUTC
+org.joda.time.format.DateTimeFormatter:printTo:631->[Method Call] Call Stack: org.joda.time.format.DateTimeFormatter.printTo:631 -> org.joda.time.format.DateTimePrinter.printTo
+org.joda.time.format.DateTimeFormatter:printTo:631->[Local Variables] {"buf":"2000-12-31T12:20:30.000+09:00"}

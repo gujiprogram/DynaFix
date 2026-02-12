@@ -1,0 +1,93 @@
+
+=== Debug Info for Test: org.joda.time.TestDateTimeZone::testForOffsetHoursMinutes_int_int ===
+Exception: java.lang.IllegalArgumentException: Minutes out of range: -15
+
+org.joda.time.DateTimeZone:printOffset:658->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:658 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"buf":"+"}
+org.joda.time.DateTimeZone:printOffset:664->[Local Variables] {"hours":0}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"+00"}
+org.joda.time.DateTimeZone:printOffset:668->[Local Variables] {"minutes":15}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"+00:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"+00:15"}
+org.joda.time.DateTimeZone:printOffset:671->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":900000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:658->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:658 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"buf":"+"}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"+00"}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"+00:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"+00:15"}
+org.joda.time.DateTimeZone:printOffset:671->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":-900000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: false
+org.joda.time.DateTimeZone:printOffset:660->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:660 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:660->[Local Variables] {"buf":"-"}
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"offset":900000}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"-00"}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"-00:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"-00:15"}
+org.joda.time.DateTimeZone:printOffset:671->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":8100000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:658->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:658 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"buf":"+"}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"+02"}
+org.joda.time.DateTimeZone:printOffset:667->[Local Variables] {"offset":900000}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"+02:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"+02:15"}
+org.joda.time.DateTimeZone:printOffset:671->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":7200000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:658->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:658 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"buf":"+"}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"+02"}
+org.joda.time.DateTimeZone:printOffset:667->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:668->[Local Variables] {"minutes":0}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"+02:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"+02:00"}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":7200000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:658->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:658 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:663->[Local Variables] {"buf":"+"}
+org.joda.time.DateTimeZone:printOffset:665->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:665 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:665->[Local Variables] {"buf":"+02"}
+org.joda.time.DateTimeZone:printOffset:667->[Local Variables] {"offset":0}
+org.joda.time.DateTimeZone:printOffset:669->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:669 -> java.lang.StringBuffer.append
+org.joda.time.DateTimeZone:printOffset:669->[Local Variables] {"buf":"+02:"}
+org.joda.time.DateTimeZone:printOffset:670->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:670 -> org.joda.time.format.FormatUtils.appendPaddedInteger
+org.joda.time.DateTimeZone:printOffset:670->[Local Variables] {"buf":"+02:00"}
+org.joda.time.DateTimeZone:printOffset:672->[Control Flow] Branch Info: Line: 672, Condition: if (offset == 0), Executed: true
+org.joda.time.DateTimeZone:printOffset:673->[Method Call] Call Stack: org.joda.time.DateTimeZone.printOffset:673 -> java.lang.StringBuffer.toString
+org.joda.time.DateTimeZone:printOffset:655->[Local Variables] {"offset":900000}
+org.joda.time.DateTimeZone:printOffset:656->[Local Variables] {"buf":""}
+org.joda.time.DateTimeZone:printOffset:657->[Control Flow] Branch Info: Line: 657, Condition: if (offset >= 0), Executed: true

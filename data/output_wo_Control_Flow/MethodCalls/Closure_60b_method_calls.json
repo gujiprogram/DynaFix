@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects",
+    "doc": "/**\n   * Returns true if the node which may have side effects when executed.\n   */",
+    "code": "static boolean mayHaveSideEffects(Node n) {\n    return mayHaveSideEffects(n, null);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getDouble",
+    "doc": "/**\n * This class implements the root of the intermediate representation.\n *\n */",
+    "code": "public double getDouble() {\n      return this.number;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.TernaryValue.forBoolean",
+    "doc": "/**\n   * Gets the TernaryValue for the given boolean.\n   */",
+    "code": "public static TernaryValue forBoolean(boolean val) {\n    return val ? TernaryValue.TRUE : TernaryValue.FALSE;\n  }"
+  }
+]

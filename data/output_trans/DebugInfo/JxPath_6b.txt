@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.compiler.VariableTest::testIterateVariable ===
+Exception: junit.framework.AssertionFailedError: Evaluating <$d = 'a'> expected:<true> but was:<false>
+
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:140->[Control Flow] Branch Info: Line: 140, Condition: if (l == 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:140->[Control Flow] Branch Info: Line: 140, Condition: if (r != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:143->[Control Flow] Branch Info: Line: 143, Condition: if (l == 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:143->[Control Flow] Branch Info: Line: 143, Condition: if (r != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:143->[Control Flow] Branch Info: Line: 143, Condition: if (l == 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:145->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:145 -> org.apache.commons.jxpath.ri.InfoSetUtil.stringValue
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:145->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:145 -> org.apache.commons.jxpath.ri.InfoSetUtil.stringValue
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:145->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:145 -> java.lang.String.equals
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:52->[Local Variables] "{TransVarEvalContext\u003dExpression context [0] /, TransVarLeftExp\u003d$d, TransVarRightExp\u003d\u0027a\u0027}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:53->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:53 -> org.apache.commons.jxpath.ri.compiler.Expression.compute
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:53->[Local Variables] "{TransVarLeft\u003dExpression context [0] $d}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:54->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:54 -> org.apache.commons.jxpath.ri.compiler.Expression.compute
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:59->[Local Variables] {"TransVarRight":"a"}
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:60->[Control Flow] Branch Info: Line: 60, Condition: if (TransVarLeft == 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:64->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:64 -> org.apache.commons.jxpath.ri.EvalContext.getSingleNodePointer
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:60->[Control Flow] Branch Info: Line: 60, Condition: if (TransVarLeft != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:66->[Local Variables] "{TransVarLeft\u003d$d}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:67->[Control Flow] Branch Info: Line: 67, Condition: if (TransVarRight == 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:67->[Control Flow] Branch Info: Line: 67, Condition: if (TransVarRight != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:74->[Control Flow] Branch Info: Line: 74, Condition: if (TransVarLeft != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:78->[Control Flow] Branch Info: Line: 78, Condition: if (TransVarRight != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:82->[Control Flow] Branch Info: Line: 82, Condition: if (TransVarLeft != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:82->[Control Flow] Branch Info: Line: 82, Condition: if (TransVarRight == 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:85->[Control Flow] Branch Info: Line: 85, Condition: if (TransVarLeft == 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:85->[Control Flow] Branch Info: Line: 85, Condition: if (TransVarLeft == 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:85->[Control Flow] Branch Info: Line: 85, Condition: if (TransVarRight != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:88->[Control Flow] Branch Info: Line: 88, Condition: if (TransVarLeft != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:88->[Control Flow] Branch Info: Line: 88, Condition: if (TransVarRight != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:117->[Local Variables] "{r\u003da, l\u003d$d}"
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:118->[Control Flow] Branch Info: Line: 118, Condition: if (l != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:118->[Control Flow] Branch Info: Line: 118, Condition: if (l != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:118->[Control Flow] Branch Info: Line: 118, Condition: if (r != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:119->[Control Flow] Branch Info: Line: 119, Condition: if (java.lang.Object.equals() != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:124->[Control Flow] Branch Info: Line: 124, Condition: if (l != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:125->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.CoreOperationCompare.equal:125 -> org.apache.commons.jxpath.Pointer.getValue
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:124->[Control Flow] Branch Info: Line: 124, Condition: if (l != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:127->[Local Variables] {"l":["a","b"]}
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:128->[Control Flow] Branch Info: Line: 128, Condition: if (r != 0), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:132->[Control Flow] Branch Info: Line: 132, Condition: if (unknown_condition_166), Executed: false
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:137->[Control Flow] Branch Info: Line: 137, Condition: if (l == 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.CoreOperationCompare:equal:137->[Control Flow] Branch Info: Line: 137, Condition: if (r != 0), Executed: false

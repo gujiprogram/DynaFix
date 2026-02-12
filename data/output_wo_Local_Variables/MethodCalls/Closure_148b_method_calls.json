@@ -1,0 +1,77 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkArgument",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isLiteralValue",
+    "doc": "/**\n   * Returns true if this is a literal value. We define a literal value\n   * as any node that evaluates to the same thing regardless of when or\n   * where it is evaluated. So /xyz/ and [3, 5] are literals, but\n   * function() { return a; } is not.\n   */",
+    "code": "static boolean isLiteralValue(Node n) {\n    switch (n.getType()) {\n      case Token.ARRAYLIT:\n      case Token.OBJECTLIT:\n      case Token.REGEXP:\n        for (Node child = n.getFirstChild(); child != null;\n             child = child.getNext()) {\n          if (!isLiteralValue(child)) {\n            return false;\n          }\n        }\n        return true;\n\n      default:\n        return isImmutableValue(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Position.getCharacterIndex",
+    "doc": "/**\n   * Returns the character index on the line\n   * of this position.\n   */",
+    "code": "public int getCharacterIndex() {\n    return characterIndex;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Position.getLineNumber",
+    "doc": "/**\n   * Returns the line number of this postion.\n   */",
+    "code": "public int getLineNumber() {\n    return lineNumber;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceMap$LineMapper.appendLineMappings",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceMap$Mapping.appendTo",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceMap.escapeString",
+    "doc": "/**\n   * Escapes the given string for JSON.\n   */",
+    "code": "private static String escapeString(String value) {\n    return CodeGenerator.escapeToDoubleQuotedJsString(value);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.SourceMap.findLastLine",
+    "doc": "/**\n   * Resets the source map for reuse for the generation of a new source file.\n   */",
+    "code": "private int findLastLine() {\n    int maxLine = 0;\n    for (Mapping mapping : mappings) {\n      int endPositionLine = mapping.endPosition.getLineNumber();\n      maxLine = Math.max(maxLine, endPositionLine);\n    }\n    return maxLine + prefixPosition.getLineNumber();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.newString",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public static Node newString(String str) {\n    return new StringNode(Token.STRING, str);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  }
+]

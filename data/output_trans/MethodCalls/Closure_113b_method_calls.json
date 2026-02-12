@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getSourceName",
+    "doc": "/**\n   * Gets the current input source name.\n   *\n   * @return A string that may be empty, but not null\n   */",
+    "code": "public String getSourceName() {\n    return sourceName;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.maybeAddStringNodeToSymbolTable",
+    "doc": "/**\n   * The string in {@code n} is a reference name. Create a synthetic\n   * node for it with all the proper source info, and add it to the symbol\n   * table.\n   */",
+    "code": "private void maybeAddStringNodeToSymbolTable(Node n) {\n    if (preprocessorSymbolTable == null) {\n      return;\n    }\n\n    String name = n.getString();\n    Node syntheticRef = NodeUtil.newQualifiedNameNode(\n        compiler.getCodingConvention(), name,\n        name);\n\n    final int forQuote = 1;\n    final int forDot = 1;\n\n    Node current = null;\n    for (current = syntheticRef;\n         current.isGetProp();\n         current = current.getFirstChild()) {\n      int fullLen = current.getQualifiedName().length();\n      int namespaceLen = current.getFirstChild().getQualifiedName().length();\n\n      current.setSourceEncodedPosition(n.getSourcePosition() + forQuote);\n      current.setLength(fullLen);\n\n      current.getLastChild().setSourceEncodedPosition(\n          n.getSourcePosition() + namespaceLen + forQuote + forDot);\n      current.getLastChild().setLength(\n          current.getLastChild().getString().length());\n    }\n\n    current.setSourceEncodedPosition(n.getSourcePosition() + forQuote);\n    current.setLength(current.getString().length());\n\n    maybeAddToSymbolTable(syntheticRef);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.maybeAddToSymbolTable",
+    "doc": "/**\n   * Add the given qualified name node to the symbol table.\n   */",
+    "code": "private void maybeAddToSymbolTable(Node n) {\n    if (preprocessorSymbolTable != null) {\n      preprocessorSymbolTable.addReference(n);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.ProcessClosurePrimitives.verifyLastArgumentIsString",
+    "doc": "/**\n   * Verifies that a method call has exactly one argument, and that it's a\n   * string literal. Reports a compile error if it doesn't.\n   *\n   * @return Whether the argument checked out okay\n   */",
+    "code": "private boolean verifyLastArgumentIsString(\n      NodeTraversal t, Node methodName, Node arg) {\n    return verifyNotNull(t, methodName, arg) &&\n        verifyOfType(t, methodName, arg, Token.STRING) &&\n        verifyIsLast(t, methodName, arg);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldAssign",
+    "doc": "/**\n   * @param late When late is false, this mean we are currently running before\n   * most of the other optimizations. In this case we would avoid optimizations\n   * that would make the code harder to analyze. When this is true, we would\n   * do anything to minimize for size.\n   */",
+    "code": "return tryFoldAssign(subtree, left, right);"
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeFoldConstants.tryFoldGetElem",
+    "doc": "/**\n   * @param late When late is false, this mean we are currently running before\n   * most of the other optimizations. In this case we would avoid optimizations\n   * that would make the code harder to analyze. When this is true, we would\n   * do anything to minimize for size.\n   */",
+    "code": "return tryFoldGetElem(subtree, left, right);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

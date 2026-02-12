@@ -1,0 +1,47 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkArgument",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionPrototypeType.getImplicitPrototype",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getPrototype",
+    "doc": "/**\n   * Gets the {@code prototype} property of this function type. This is\n   * equivalent to {@code (ObjectType) getPropertyType(\"prototype\")}.\n   */",
+    "code": "public FunctionPrototypeType getPrototype() {\n    if (prototype == null) {\n      setPrototype(new FunctionPrototypeType(registry, this, null));\n    }\n    return prototype;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isConstructor",
+    "doc": "/**\n   * Gets the type of {@code this} in this function.\n   */",
+    "code": "return isConstructor() || isInterface();\n  }\n\n  public ObjectType getTypeOfThis() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.isUnknownType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getConstructor",
+    "doc": "/**\n   * Gets this object's constructor.\n   * @return this object's constructor or {@code null} if it is a native\n   * object (constructed natively v.s. by instantiation of a function)\n   */",
+    "code": "public abstract FunctionType getConstructor();"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isEmptyType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isUnknownType",
+    "doc": "/**\n   * We treat this as the unknown type if any of its implicit prototype\n   * properties is unknown.\n   */",
+    "code": "public boolean isUnknownType() {\n    if (unknown) {\n      ObjectType implicitProto = getImplicitPrototype();\n      if (implicitProto == null ||\n          implicitProto.isNativeObjectType()) {\n        unknown = false;\n        for (ObjectType interfaceType : getCtorExtendedInterfaces()) {\n          if (interfaceType.isUnknownType()) {\n            unknown = true;\n            break;\n          }\n        }\n      } else {\n        unknown = implicitProto.isUnknownType();\n      }\n    }\n    return unknown;\n  }"
+  }
+]

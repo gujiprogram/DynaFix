@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.apache.commons.cli2.bug.Bug27575Test::testRequiredOptions ===
+Exception: junit.framework.ComparisonFailure: expected:<[[-h]]> but was:<[-c <arg>]>
+
+org.apache.commons.cli2.builder.PatternBuilder:<init>:46->[Method Call] Call Stack: org.apache.commons.cli2.builder.PatternBuilder.<init>:46 -> org.apache.commons.cli2.builder.GroupBuilder.<init>
+org.apache.commons.cli2.builder.PatternBuilder:<init>:46->[Method Call] Call Stack: org.apache.commons.cli2.builder.PatternBuilder.<init>:46 -> org.apache.commons.cli2.builder.DefaultOptionBuilder.<init>
+org.apache.commons.cli2.builder.PatternBuilder:<init>:46->[Method Call] Call Stack: org.apache.commons.cli2.builder.PatternBuilder.<init>:46 -> org.apache.commons.cli2.builder.ArgumentBuilder.<init>
+org.apache.commons.cli2.builder.PatternBuilder:<init>:60->[Local Variables] {"gbuilder":{"options":[],"minimum":0,"maximum":2147483647},"obuilder":{"shortPrefix":"-","longPrefix":"--","burstEnabled":true,"aliases":[],"burstAliases":[],"required":false,"id":0},"abuilder":{"name":"arg","minimum":0,"maximum":2147483647,"initialSeparator":"\u0000","subsequentSeparator":"\u0000","consumeRemaining":"--","id":0}}
+org.apache.commons.cli2.builder.PatternBuilder:<init>:67->[Method Call] Call Stack: org.apache.commons.cli2.builder.PatternBuilder.<init>:67 -> java.util.HashSet.<init>

@@ -1,0 +1,42 @@
+[
+  {
+    "method": "org.jsoup.helper.Validate.isFalse",
+    "doc": "/**\n     * Validates that the value is false\n     * @param val object to test\n     */",
+    "code": "public static void isFalse(boolean val) {\n        if (val)\n            throw new IllegalArgumentException(\"Must be false\");\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.HtmlTreeBuilder.insertNode",
+    "doc": "/**\n * HTML Tree Builder; creates a DOM from Tokens.\n */",
+    "code": "private void insertNode(Node node) {\n        if (stack.size() == 0)\n            doc.appendChild(node);\n        else if (isFosterInserts())\n            insertInFosterParent(node);\n        else\n            currentElement().appendChild(node);\n\n        if (node instanceof Element && ((Element) node).tag().isFormListed()) {\n            if (formElement != null)\n                formElement.addElement((Element) node);\n        }\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.isKnownTag",
+    "doc": "/**\n     * Get if this is a pre-defined tag, or was auto created on parsing.\n     *\n     * @return if a known tag\n     */",
+    "code": "public boolean isKnownTag() {\n        return tags.containsKey(tagName);\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Tag.isSelfClosing",
+    "doc": "/**\n     * Get if this tag is self closing.\n     *\n     * @return if this tag should be output as self closing.\n     */",
+    "code": "public boolean isSelfClosing() {\n        return empty || selfClosing;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.Token$Character.data",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Token$StartTag.isSelfClosing",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.jsoup.parser.Tokeniser.acknowledgeSelfClosingFlag",
+    "doc": "/**\n * Readers the input stream into tokens.\n */",
+    "code": "void acknowledgeSelfClosingFlag() {\n        selfClosingFlagAcknowledged = true;\n    }"
+  },
+  {
+    "method": "org.jsoup.parser.TokeniserState.read",
+    "doc": "/**\n * States and transition activations for the Tokeniser.\n */",
+    "code": "void read(Tokeniser t, CharacterReader r) {\n            switch (r.current()) {\n                case '&':\n                    t.advanceTransition(CharacterReferenceInData);\n                    break;\n                case '<':\n                    t.advanceTransition(TagOpen);\n                    break;\n                case nullChar:\n                    t.error(this); // NOT replacement character (oddly?)\n                    t.emit(r.consume());\n                    break;\n                case eof:\n                    t.emit(new Token.EOF());\n                    break;\n                default:\n                    String data = r.consumeData();\n                    t.emit(data);\n                    break;\n            }\n        }"
+  }
+]

@@ -1,0 +1,64 @@
+
+=== Debug Info for Test: org.joda.time.format.TestPeriodFormatterBuilder::testBug2495455 ===
+Exception: java.lang.IllegalArgumentException: Invalid format: "PT1003199059S" is malformed at "1003199059S"
+
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:124->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:124 -> [Lorg.joda.time.format.PeriodFormatterBuilder$FieldFormatter;.clone
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:794->[Local Variables] "{elementPairs\u003d[org.joda.time.format.PeriodFormatterBuilder$Separator@13c3c1e1, org.joda.time.format.PeriodFormatterBuilder$Separator@13c3c1e1]}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:798 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Local Variables] {"size":2}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (size >= size), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:799 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (elementPairs != 0), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:800->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:800 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:801->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:801 -> java.util.List.subList
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:794->[Local Variables] {"elementPairs":[]}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:798 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Local Variables] {"size":0}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (size >= size), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (elementPairs != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:805 -> org.joda.time.format.PeriodFormatterBuilder.createComposite
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Local Variables] {"comp":[{"iText":""},{"iText":""}]}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:806->[Control Flow] Branch Info: Line: 806, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:808->[Control Flow] Branch Info: Line: 808, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:811->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:811 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:801->[Local Variables] "{elementPairs\u003d[org.joda.time.format.PeriodFormatterBuilder$Separator@13c3c1e1, org.joda.time.format.PeriodFormatterBuilder$Separator@13c3c1e1], size\u003d2, f\u003dorg.joda.time.format.PeriodFormatter@3918c187}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatter.getPrinter
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatter.getParser
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatterBuilder$Separator.finish
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:803->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:803 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:123->[Local Variables] "{formatter\u003dorg.joda.time.format.PeriodFormatter@2c88b9fc}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:124->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:124 -> [Lorg.joda.time.format.PeriodFormatterBuilder$FieldFormatter;.clone
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:124->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:124 -> [Lorg.joda.time.format.PeriodFormatterBuilder$FieldFormatter;.clone
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:798 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (size >= size), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:799 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (elementPairs != 0), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:800->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:800 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:800->[Local Variables] "{sep\u003dorg.joda.time.format.PeriodFormatterBuilder$Separator@13c3c1e1}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:801->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:801 -> java.util.List.subList
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:794->[Local Variables] "{elementPairs\u003d[org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@1d8062d2, org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@1d8062d2, org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@1e63ec0b, org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@1e63ec0b, org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@3b956878, org.joda.time.format.PeriodFormatterBuilder$FieldFormatter@3b956878]}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:795->[Control Flow] Branch Info: Line: 795, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:798 -> java.util.List.size
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:798->[Local Variables] {"size":6}
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (size >= size), Executed: true
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:799 -> java.util.List.get
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (size >= size), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:799->[Control Flow] Branch Info: Line: 799, Condition: if (elementPairs != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:805 -> org.joda.time.format.PeriodFormatterBuilder.createComposite
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:805->[Local Variables] "{comp\u003d[Ljava.lang.Object;@36546a22}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:806->[Control Flow] Branch Info: Line: 806, Condition: if (notPrinter != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:808->[Control Flow] Branch Info: Line: 808, Condition: if (notParser != 0), Executed: false
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:811->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:811 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:801->[Local Variables] "{size\u003d8, f\u003dorg.joda.time.format.PeriodFormatter@285c08c8}"
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatter.getPrinter
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatter.getParser
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:802->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:802 -> org.joda.time.format.PeriodFormatterBuilder$Separator.finish
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:803->[Method Call] Call Stack: org.joda.time.format.PeriodFormatterBuilder.toFormatter:803 -> org.joda.time.format.PeriodFormatter.<init>
+org.joda.time.format.PeriodFormatterBuilder:toFormatter:123->[Local Variables] "{formatter\u003dorg.joda.time.format.PeriodFormatter@295eaa7c}"

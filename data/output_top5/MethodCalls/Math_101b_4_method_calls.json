@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.math.complex.ComplexFormat.parseNextCharacter",
+    "doc": "/**\n     * Parses <code>source</code> until a non-whitespace character is found.\n     *\n     * @param source the string to parse\n     * @param pos input/ouput parsing parameter.\n     * @return the first non-whitespace character.\n     */",
+    "code": "private char parseNextCharacter(String source, ParsePosition pos) {\n         int index = pos.getIndex();\n         int n = source.length();\n         char ret = 0;\n\n         if (index < n) {\n             char c;\n             do {\n                 c = source.charAt(index++);\n             } while (Character.isWhitespace(c) && index < n);\n             pos.setIndex(index);\n\n             if (index < n) {\n                 ret = c;\n             }\n         }\n\n         return ret;\n    }"
+  }
+]

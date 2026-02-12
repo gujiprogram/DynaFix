@@ -1,0 +1,22 @@
+[
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexSolver.incrementIterationsCounter",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getEntry",
+    "doc": "/** Get an entry of the tableau.\n     * @param row row index\n     * @param column column index\n     * @return entry at (row, column)\n     */",
+    "code": "protected final double getEntry(final int row, final int column) {\n        return tableau.getEntry(row, column);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.getHeight",
+    "doc": "/**\n     * Get the height of the tableau.\n     * @return height of the tableau\n     */",
+    "code": "protected final int getHeight() {\n        return tableau.getRowDimension();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.optimization.linear.SimplexTableau.subtractRow",
+    "doc": "/**\n     * Subtracts a multiple of one row from another.\n     * <p>\n     * After application of this operation, the following will hold:\n     *   minuendRow = minuendRow - multiple * subtrahendRow\n     * </p>\n     * @param minuendRow row index\n     * @param subtrahendRow row index\n     * @param multiple multiplication factor\n     */",
+    "code": "protected void subtractRow(final int minuendRow, final int subtrahendRow,\n                               final double multiple) {\n        for (int i = 0; i < getWidth(); i++) {\n            double result = tableau.getEntry(minuendRow, i) - tableau.getEntry(subtrahendRow, i) * multiple;\n            if (FastMath.abs(result) < CUTOFF_THRESHOLD) {\n                result = 0.0;\n            }\n            tableau.setEntry(minuendRow, i, result);\n        }\n    }"
+  }
+]

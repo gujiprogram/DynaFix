@@ -1,0 +1,47 @@
+[
+  {
+    "method": "org.apache.commons.compress.compressors.bzip2.BZip2CompressorInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a bzip2 file.\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a bzip2 compressed stream, false otherwise\n     *\n     * @since 1.1\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n\n        if (length < 3) {\n            return false;\n        }\n\n        if (signature[0] != 'B') {\n            return false;\n        }\n\n        if (signature[1] != 'Z') {\n            return false;\n        }\n\n        if (signature[2] != 'h') {\n            return false;\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.gzip.GzipCompressorInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a .gz file.\n     *\n     * @param signature the bytes to check\n     * @param length    the number of bytes to check\n     * @return          true if this is a .gz stream, false otherwise\n     *\n     * @since 1.1\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n\n        if (length < 2) {\n            return false;\n        }\n\n        if (signature[0] != 31) {\n            return false;\n        }\n\n        if (signature[1] != -117) {\n            return false;\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.lzma.LZMAUtils.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a .lzma file.\n     *\n     * @param   signature     the bytes to check\n     * @param   length        the number of bytes to check\n     * @return  true if signature matches the .lzma magic bytes, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < HEADER_MAGIC.length) {\n            return false;\n        }\n\n        for (int i = 0; i < HEADER_MAGIC.length; ++i) {\n            if (signature[i] != HEADER_MAGIC[i]) {\n                return false;\n            }\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a pack200\n     * file (0xCAFED00D).\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a pack200 compressed stream,\n     * false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < SIG_LENGTH) {\n            return false;\n        }\n\n        for (int i = 0; i < SIG_LENGTH; i++) {\n            if (signature[i] != CAFE_DOOD[i]) {\n                return false;\n            }\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.snappy.FramedSnappyCompressorInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a .sz file.\n     *\n     * <p>.sz files start with a chunk with tag 0xff and content sNaPpY.</p>\n     *\n     * @param signature the bytes to check\n     * @param length    the number of bytes to check\n     * @return          true if this is a .sz stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n\n        if (length < SZ_SIGNATURE.length) {\n            return false;\n        }\n\n        byte[] shortenedSig = signature;\n        if (signature.length > SZ_SIGNATURE.length) {\n            shortenedSig = new byte[SZ_SIGNATURE.length];\n            System.arraycopy(signature, 0, shortenedSig, 0, SZ_SIGNATURE.length);\n        }\n\n        return Arrays.equals(shortenedSig, SZ_SIGNATURE);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.xz.XZUtils.isXZCompressionAvailable",
+    "doc": "/**\n     * Are the classes required to support XZ compression available?\n     * @since 1.5\n     */",
+    "code": "public static boolean isXZCompressionAvailable() {\n        final CachedAvailability cachedResult = cachedXZAvailability;\n        if (cachedResult != CachedAvailability.DONT_CACHE) {\n            return cachedResult == CachedAvailability.CACHED_AVAILABLE;\n        }\n        return internalIsXZCompressionAvailable();\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.xz.XZUtils.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a .xz file.\n     *\n     * <p>This is more or less a copy of the version found in {@link\n     * XZCompressorInputStream} but doesn't depend on the presence of\n     * XZ for Java.</p>\n     *\n     * @param   signature     the bytes to check\n     * @param   length        the number of bytes to check\n     * @return  true if signature matches the .xz magic bytes, false otherwise\n     * @since 1.9\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < HEADER_MAGIC.length) {\n            return false;\n        }\n\n        for (int i = 0; i < HEADER_MAGIC.length; ++i) {\n            if (signature[i] != HEADER_MAGIC[i]) {\n                return false;\n            }\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.compressors.z.ZCompressorInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a Unix compress file.\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a Unix compress compressed\n     * stream, false otherwise\n     *\n     * @since 1.9\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        return length > 3 && signature[0] == MAGIC_1 && signature[1] == (byte) MAGIC_2;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.utils.IOUtils.readFully",
+    "doc": "/**\n     * Reads as much from input as possible to fill the given array.\n     *\n     * <p>This method may invoke read repeatedly to fill the array and\n     * only read less bytes than the length of the array if the end of\n     * the stream has been reached.</p>\n     *\n     * @param input stream to read from\n     * @param b buffer to fill\n     * @return the number of bytes actually read\n     * @throws IOException\n     */",
+    "code": "public static int readFully(InputStream input, byte[] b) throws IOException {\n        return readFully(input, b, 0, b.length);\n    }"
+  }
+]

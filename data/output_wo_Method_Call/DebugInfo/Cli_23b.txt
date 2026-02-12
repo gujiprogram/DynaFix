@@ -1,0 +1,51 @@
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testInfiniteLoop ===
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Local Variables] {"sb":" -h,--help   This is\n             a\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Control Flow] Loop Info: Line: 820, Description: while at line 820
+org.apache.commons.cli.HelpFormatter:renderWrappedText:824->[Local Variables] {"lastPos":14}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:825->[Local Variables] {"text":"             looooong description"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:827->[Local Variables] {"pos":12}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:828->[Control Flow] Branch Info: Line: 828, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Control Flow] Branch Info: Line: 834, Condition: if (lastPos == lastPos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:839->[Local Variables] {"sb":" -h,--help   This is\n             a\n\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:820->[Control Flow] Loop Info: Line: 820, Description: while at line 820
+org.apache.commons.cli.HelpFormatter:renderWrappedText:824->[Local Variables] {"lastPos":12}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:828->[Control Flow] Branch Info: Line: 828, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Control Flow] Branch Info: Line: 834, Condition: if (lastPos == lastPos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:807->[Local Variables] {"nextLineTabStop":7,"width":20,"text":"usage: app","sb":""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Local Variables] {"pos":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:813->[Local Variables] {"sb":"usage: app"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:807->[Local Variables] {"nextLineTabStop":13,"text":" -h,--help   This is a looooong description","sb":""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Local Variables] {"pos":20}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Local Variables] {"sb":" -h,--help   This is\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:823->[Local Variables] {"padding":"             "}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:824->[Local Variables] {"lastPos":20}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:825->[Local Variables] {"text":"             a looooong description"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:827->[Local Variables] {"pos":14}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:828->[Control Flow] Branch Info: Line: 828, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Control Flow] Branch Info: Line: 834, Condition: if (lastPos == lastPos), Executed: false
+
+=== Debug Info for Test: org.apache.commons.cli.bug.BugCLI162Test::testPrintHelpLongLines ===
+
+org.apache.commons.cli.HelpFormatter:renderWrappedText:807->[Local Variables] {"text":" -d,--driver \u003carg\u003e           JDBC driver class name"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:807->[Local Variables] {"text":" -e,--description \u003carg\u003e      SFMD description. A default description is used if omited. Example: -e \"Runs such and such\""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Local Variables] {"pos":71}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:824->[Local Variables] {"lastPos":71}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:825->[Local Variables] {"text":"                             used if omited. Example: -e \"Runs such and such\""}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:828->[Control Flow] Branch Info: Line: 828, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:834->[Control Flow] Branch Info: Line: 834, Condition: if (lastPos == lastPos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:809->[Local Variables] {"pos":74}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: false
+org.apache.commons.cli.HelpFormatter:renderWrappedText:819->[Local Variables] {"sb":" -2,--jdbc2sfmd \u003carg\u003e        Converts the JDBC file in the first argument\n                             to an SMFD file specified in the second\n                             argument.\n -a,--paramNames \u003carg\u003e       Parameter XML names; default names are\n                             param1, param2, etc. Example: -a \"pname1\n                             pname2\"\n -b,--jdbc \u003carg\u003e             Writes a JDBC binding node file for the given\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:824->[Local Variables] {"lastPos":74}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:825->[Local Variables] {"text":"                             SQL"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:827->[Local Variables] {"pos":-1}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:828->[Control Flow] Branch Info: Line: 828, Condition: if (pos == pos), Executed: true
+org.apache.commons.cli.HelpFormatter:renderWrappedText:831->[Local Variables] {"sb":" -2,--jdbc2sfmd \u003carg\u003e        Converts the JDBC file in the first argument\n                             to an SMFD file specified in the second\n                             argument.\n -a,--paramNames \u003carg\u003e       Parameter XML names; default names are\n                             param1, param2, etc. Example: -a \"pname1\n                             pname2\"\n -b,--jdbc \u003carg\u003e             Writes a JDBC binding node file for the given\n                             SQL"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:807->[Local Variables] {"text":" -c,--url \u003carg\u003e              Connection URL","sb":" -2,--jdbc2sfmd \u003carg\u003e        Converts the JDBC file in the first argument\n                             to an SMFD file specified in the second\n                             argument.\n -a,--paramNames \u003carg\u003e       Parameter XML names; default names are\n                             param1, param2, etc. Example: -a \"pname1\n                             pname2\"\n -b,--jdbc \u003carg\u003e             Writes a JDBC binding node file for the given\n                             SQL\n"}
+org.apache.commons.cli.HelpFormatter:renderWrappedText:810->[Control Flow] Branch Info: Line: 810, Condition: if (pos == pos), Executed: true

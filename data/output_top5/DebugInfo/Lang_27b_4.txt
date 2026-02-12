@@ -1,0 +1,21 @@
+
+=== Debug Info for Test: org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber ===
+Exception: java.lang.StringIndexOutOfBoundsException: begin 0, end 4, length 3
+
+org.apache.commons.lang3.math.NumberUtils:createDouble:647->[Local Variables] {"str":"1234.5"}
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf
+org.apache.commons.lang3.math.NumberUtils:createDouble:647->[Local Variables] {"str":"1.1E200"}
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf
+org.apache.commons.lang3.math.NumberUtils:createDouble:647->[Local Variables] {"str":"-1.1E200"}
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf
+org.apache.commons.lang3.math.NumberUtils:createDouble:647->[Local Variables] {"str":"1.1E-200"}
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf
+org.apache.commons.lang3.math.NumberUtils:createDouble:647->[Local Variables] {"str":"1.1E-700"}
+org.apache.commons.lang3.math.NumberUtils:createDouble:648->[Control Flow] Branch Info: Line: 648, Condition: if (str == null), Executed: false
+org.apache.commons.lang3.math.NumberUtils:createDouble:651->[Method Call] Call Stack: org.apache.commons.lang3.math.NumberUtils.createDouble:651 -> java.lang.Double.valueOf

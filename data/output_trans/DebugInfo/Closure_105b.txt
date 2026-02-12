@@ -1,0 +1,42 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FoldConstantsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransVarFoldChildren == TransVarFoldChildren), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransVarFoldedReplacement != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Local Variables] {"TransBreakFlag0":false,"TransVarFoldChildren":[]}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1518->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1518 -> com.google.javascript.jscomp.NodeTraversal.getCompiler
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1518->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1518 -> com.google.javascript.jscomp.Compiler.reportCodeChange
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1501->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1501 -> java.util.List.add
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1502->[Local Variables] "{TransVarFoldChildren\u003d[NAME foo 1]}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1503->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1503 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1487->[Control Flow] Loop Info: Line: 1487, Description: while at line 1487
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1488->[Control Flow] Branch Info: Line: 1488, Condition: if (TransVarElement != null), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1506->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1506 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1506->[Control Flow] Branch Info: Line: 1506, Condition: if (java.lang.StringBuilder.length() > 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1512->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1512 -> java.util.List.size
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1514->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1514 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1514->[Local Variables] {"TransVarCost":15}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> java.util.List.size
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransBreakFlag0 != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransVarFoldChildren == 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransFallThroughFlag0 == 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransBreakFlag0 != 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> java.util.List.size
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransVarFoldChildren == TransVarFoldChildren), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransFallThroughFlag0 == 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> java.util.List.remove
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (TransVarCost > TransVarCost), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> com.google.javascript.rhino.Node.detachChildren
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1517 -> com.google.javascript.rhino.Node.replaceChild

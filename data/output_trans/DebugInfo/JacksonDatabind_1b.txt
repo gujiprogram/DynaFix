@@ -1,0 +1,30 @@
+
+=== Debug Info for Test: com.fasterxml.jackson.databind.struct.TestPOJOAsArray::testNullColumn ===
+Exception: junit.framework.ComparisonFailure: expected:<[null,[]"bar"]> but was:<[null,[null,]"bar"]>
+
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:587->[Local Variables] "{TransVarBean\u003dcom.fasterxml.jackson.core.json.WriterBasedJsonGenerator@1608bcbd, TransVarBean1\u003dcom.fasterxml.jackson.databind.struct.TestPOJOAsArray$TwoStringsBean@5bf8fa12, TransVarSerializer\u003dcom.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl@29ca3d04}"
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:588->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsColumn:588 -> com.fasterxml.jackson.databind.ser.BeanPropertyWriter.get
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:589->[Control Flow] Branch Info: Line: 589, Condition: if (TransVarObj == null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:593->[Control Flow] Branch Info: Line: 593, Condition: if (this._nullSerializer != null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:597->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsColumn:597 -> com.fasterxml.jackson.databind.JsonSerializer.serialize
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:589->[Control Flow] Branch Info: Line: 589, Condition: if (TransVarObj == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:603->[Local Variables] {"TransVarJsonSerializer":{"_handledType":"class java.lang.String"}}
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:604->[Control Flow] Branch Info: Line: 604, Condition: if (TransVarJsonSerializer == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:608->[Control Flow] Branch Info: Line: 608, Condition: if (TransVarJsonSerializer == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:613->[Control Flow] Branch Info: Line: 613, Condition: if (this._suppressableValue != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:615->[Control Flow] Branch Info: Line: 615, Condition: if (com.fasterxml.jackson.databind.JsonSerializer.isEmpty() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:619->[Control Flow] Branch Info: Line: 619, Condition: if (java.lang.Object.equals() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:625->[Control Flow] Branch Info: Line: 625, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:628->[Control Flow] Branch Info: Line: 628, Condition: if (this._typeSerializer == null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:629->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsColumn:629 -> com.fasterxml.jackson.databind.JsonSerializer.serialize
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:588->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsColumn:588 -> com.fasterxml.jackson.databind.ser.BeanPropertyWriter.get
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:588->[Local Variables] {"TransVarObj":"bar"}
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:589->[Control Flow] Branch Info: Line: 589, Condition: if (TransVarObj == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:604->[Control Flow] Branch Info: Line: 604, Condition: if (TransVarJsonSerializer == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:608->[Control Flow] Branch Info: Line: 608, Condition: if (TransVarJsonSerializer == null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:613->[Control Flow] Branch Info: Line: 613, Condition: if (this._suppressableValue != null), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:615->[Control Flow] Branch Info: Line: 615, Condition: if (com.fasterxml.jackson.databind.JsonSerializer.isEmpty() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:619->[Control Flow] Branch Info: Line: 619, Condition: if (java.lang.Object.equals() != 0), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:625->[Control Flow] Branch Info: Line: 625, Condition: if (unknown_condition_166), Executed: false
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:628->[Control Flow] Branch Info: Line: 628, Condition: if (this._typeSerializer == null), Executed: true
+com.fasterxml.jackson.databind.ser.BeanPropertyWriter:serializeAsColumn:629->[Method Call] Call Stack: com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsColumn:629 -> com.fasterxml.jackson.databind.JsonSerializer.serialize

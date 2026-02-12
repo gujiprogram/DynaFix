@@ -1,0 +1,20 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testIssue942 ===
+Exception: junit.framework.ComparisonFailure: expected:<var x={[0]:1}> but was:<var x={["0"]:1}>
+
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:786->[Local Variables] {"TransVarS1":"0"}
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:787->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isSimpleNumber:787 -> java.lang.String.length
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:787->[Local Variables] {"TransVarLengthOfString":1}
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:788->[Local Variables] {"TransVarIndex2":0}
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:789->[Control Flow] Branch Info: Line: 789, Condition: if (TransVarLengthOfString < TransVarLengthOfString), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:793->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isSimpleNumber:793 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:793->[Local Variables] {"TransVarC2":"0"}
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarC2 >= TransVarC2), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:794->[Control Flow] Branch Info: Line: 794, Condition: if (TransVarC2 > TransVarC2), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:800->[Local Variables] {"TransVarIndex2":1}
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:788->[Control Flow] Loop Info: Line: 788, Description: while at line 788
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:789->[Control Flow] Branch Info: Line: 789, Condition: if (TransVarLengthOfString < TransVarLengthOfString), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:802->[Control Flow] Branch Info: Line: 802, Condition: if (TransVarLengthOfString > 0), Executed: true
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:802->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.isSimpleNumber:802 -> java.lang.String.charAt
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:802->[Control Flow] Branch Info: Line: 802, Condition: if (TransVarLengthOfString > 0), Executed: false
+com.google.javascript.jscomp.CodeGenerator:isSimpleNumber:802->[Control Flow] Branch Info: Line: 802, Condition: if (java.lang.String.charAt() != java.lang.String.charAt()), Executed: false

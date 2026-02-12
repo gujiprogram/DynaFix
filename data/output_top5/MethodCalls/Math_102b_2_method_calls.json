@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math.distribution.ChiSquaredDistribution.cumulativeProbability",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.apache.commons.math.distribution.ChiSquaredDistribution.setDegreesOfFreedom",
+    "doc": "/**\n     * Modify the degrees of freedom.\n     * @param degreesOfFreedom the new degrees of freedom.\n     */",
+    "code": "void setDegreesOfFreedom(double degreesOfFreedom);"
+  },
+  {
+    "method": "org.apache.commons.math.stat.inference.ChiSquareTestImpl.chiSquare",
+    "doc": "/**\n     * {@inheritDoc}\n     * <p><strong>Note: </strong>This implementation rescales the\n     * <code>expected</code> array if necessary to ensure that the sum of the\n     * expected and observed counts are equal.</p>\n     *\n     * @param observed array of observed frequency counts\n     * @param expected array of expected frequency counts\n     * @return chi-square test statistic\n     * @throws IllegalArgumentException if preconditions are not met\n     * or length is less than 2\n     */",
+    "code": "public double chiSquare(double[] expected, long[] observed)\n        throws IllegalArgumentException {\n        if ((expected.length < 2) || (expected.length != observed.length)) {\n            throw new IllegalArgumentException(\n                    \"observed, expected array lengths incorrect\");\n        }\n        if (!isPositive(expected) || !isNonNegative(observed)) {\n            throw new IllegalArgumentException(\n                \"observed counts must be non-negative and expected counts must be postive\");\n        }\n        double sumSq = 0.0d;\n        double dev = 0.0d;\n        for (int i = 0; i < observed.length; i++) {\n                dev = ((double) observed[i] - expected[i]);\n                sumSq += dev * dev / expected[i];\n        }\n        return sumSq;\n    }"
+  }
+]

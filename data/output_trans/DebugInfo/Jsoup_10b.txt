@@ -1,0 +1,15 @@
+
+=== Debug Info for Test: org.jsoup.nodes.NodeTest::absHandlesRelativeQuery ===
+Exception: junit.framework.AssertionFailedError: expected:<...tp://jsoup.org/path/[file]?foo> but was:<...tp://jsoup.org/path/[]?foo>
+
+org.jsoup.nodes.Node:absUrl:159->[Local Variables] {"TransVarKey":"href"}
+org.jsoup.nodes.Node:absUrl:160->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:160 -> org.jsoup.helper.Validate.notEmpty
+org.jsoup.nodes.Node:absUrl:162->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:162 -> org.jsoup.nodes.Node.attr
+org.jsoup.nodes.Node:absUrl:162->[Local Variables] {"TransVarRelativeUrl":"?foo"}
+org.jsoup.nodes.Node:absUrl:163->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:163 -> org.jsoup.nodes.Node.hasAttr
+org.jsoup.nodes.Node:absUrl:163->[Control Flow] Branch Info: Line: 163, Condition: if (org.jsoup.nodes.Node.hasAttr() == 0), Executed: false
+org.jsoup.nodes.Node:absUrl:175->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:175 -> java.net.URL.<init>
+org.jsoup.nodes.Node:absUrl:179->[Local Variables] {"TransVarBaseUrl":"http://jsoup.org/path/file?bar"}
+org.jsoup.nodes.Node:absUrl:182->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:182 -> java.net.URL.<init>
+org.jsoup.nodes.Node:absUrl:182->[Local Variables] {"TransVarAbsURL":"http://jsoup.org/path/?foo"}
+org.jsoup.nodes.Node:absUrl:183->[Method Call] Call Stack: org.jsoup.nodes.Node.absUrl:183 -> java.net.URL.toExternalForm

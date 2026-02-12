@@ -1,0 +1,68 @@
+
+=== Debug Info for Test: org.apache.commons.cli.OptionsTest::testMissingOptionsException ===
+Exception: junit.framework.ComparisonFailure: expected:<... required options: f[, ]x> but was:<... required options: f[]x>
+
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:311 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:311 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Control Flow] Branch Info: Line: 311, Condition: if (org.apache.commons.cli.Parser.getRequiredOptions() > 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:316 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:316 -> java.util.List.iterator
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Local Variables] {"TransVarIterator":{"cursor":0,"lastRet":-1,"expectedModCount":2}}
+org.apache.commons.cli.Parser:checkRequiredOptions:317->[Local Variables] {"TransVarLocalBuff":"Missing required option"}
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Control Flow] Branch Info: Line: 318, Condition: if (org.apache.commons.cli.Parser.getRequiredOptions() == org.apache.commons.cli.Parser.getRequiredOptions()), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Local Variables] {"TransVarLocalBuff":"Missing required options"}
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:319 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarLocalBuff":"Missing required options: "}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Control Flow] Loop Info: Line: 319, Description: while at line 319
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarIterator":{"cursor":1,"lastRet":0,"expectedModCount":2},"TransVarLocalBuff":"Missing required options: f"}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Control Flow] Loop Info: Line: 319, Description: while at line 319
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarIterator":{"cursor":2,"lastRet":1,"expectedModCount":2},"TransVarLocalBuff":"Missing required options: fx"}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:329->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:329 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.Parser:checkRequiredOptions:329->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:329 -> org.apache.commons.cli.MissingOptionException.<init>
+
+=== Debug Info for Test: org.apache.commons.cli.ParseRequiredTest::testMissingRequiredOptions ===
+Exception: junit.framework.ComparisonFailure: Incorrect exception message expected:<... required options: b[, ]c> but was:<... required options: b[]c>
+
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:311 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:311 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:311->[Control Flow] Branch Info: Line: 311, Condition: if (org.apache.commons.cli.Parser.getRequiredOptions() > 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:316 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:316 -> java.util.List.iterator
+org.apache.commons.cli.Parser:checkRequiredOptions:316->[Local Variables] {"TransVarIterator":{"cursor":0,"lastRet":-1,"expectedModCount":2}}
+org.apache.commons.cli.Parser:checkRequiredOptions:317->[Local Variables] {"TransVarLocalBuff":"Missing required option"}
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> org.apache.commons.cli.Parser.getRequiredOptions
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> java.util.List.size
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Control Flow] Branch Info: Line: 318, Condition: if (org.apache.commons.cli.Parser.getRequiredOptions() == org.apache.commons.cli.Parser.getRequiredOptions()), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:318 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:318->[Local Variables] {"TransVarLocalBuff":"Missing required options"}
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:319 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarLocalBuff":"Missing required options: "}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Control Flow] Loop Info: Line: 319, Description: while at line 319
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarIterator":{"cursor":1,"lastRet":0,"expectedModCount":2},"TransVarLocalBuff":"Missing required options: b"}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: true
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.util.Iterator.next
+org.apache.commons.cli.Parser:checkRequiredOptions:326->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:326 -> java.lang.StringBuffer.append
+org.apache.commons.cli.Parser:checkRequiredOptions:319->[Control Flow] Loop Info: Line: 319, Description: while at line 319
+org.apache.commons.cli.Parser:checkRequiredOptions:321->[Local Variables] {"TransVarIterator":{"cursor":2,"lastRet":1,"expectedModCount":2},"TransVarLocalBuff":"Missing required options: bc"}
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:322 -> java.util.Iterator.hasNext
+org.apache.commons.cli.Parser:checkRequiredOptions:322->[Control Flow] Branch Info: Line: 322, Condition: if (TransVarIterator != 0), Executed: false
+org.apache.commons.cli.Parser:checkRequiredOptions:329->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:329 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.Parser:checkRequiredOptions:329->[Method Call] Call Stack: org.apache.commons.cli.Parser.checkRequiredOptions:329 -> org.apache.commons.cli.MissingOptionException.<init>

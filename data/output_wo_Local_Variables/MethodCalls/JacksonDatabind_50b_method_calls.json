@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentName",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.getCurrentToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.core.JsonParser.nextToken",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping",
+    "doc": "/**\n     * @since 2.8\n     */",
+    "code": "protected final Object _deserializeWithErrorWrapping(JsonParser p,\n            DeserializationContext ctxt, SettableBeanProperty prop)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.BeanDeserializer.wrapAndThrow",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize",
+    "doc": "/**\n     * This method is needed by some specialized bean deserializers,\n     * and also called by some {@link #deserializeAndSet} implementations.\n     *<p>\n     * Pre-condition is that passed parser must point to the first token\n     * that should be consumed to produce the value (the only value for\n     * scalars, multiple for Objects and Arrays).\n     *<p>\n     * Note that this method is final for performance reasons: to override\n     * functionality you must override other methods that call this method;\n     * this method should also not be called directly unless you really know\n     * what you are doing (and probably not even then).\n     */",
+    "code": "public final Object deserialize(JsonParser p, DeserializationContext ctxt) throws IOException\n    {\n        JsonToken t = p.getCurrentToken();\n\n        if (t == JsonToken.VALUE_NULL) {\n            return _valueDeserializer.getNullValue(ctxt);\n        }\n        if (_valueTypeDeserializer != null) {\n            return _valueDeserializer.deserializeWithType(p, ctxt, _valueTypeDeserializer);\n        }\n        return _valueDeserializer.deserialize(p, ctxt);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.SettableBeanProperty.getName",
+    "doc": "/**********************************************************\n     */",
+    "code": "public final String getName() {\n        return _propName.getSimpleName();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap.find",
+    "doc": "/**\n     * @since 2.3\n     */",
+    "code": "public SettableBeanProperty find(int index)\n    {\n        for (int i = 1, end = _hashArea.length; i < end; i += 2) {\n            SettableBeanProperty prop = (SettableBeanProperty) _hashArea[i];\n            if ((prop != null) && (index == prop.getPropertyIndex())) {\n                return prop;\n            }\n        }\n        return null;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator.findCreatorProperty",
+    "doc": "/**********************************************************\n     */",
+    "code": "public SettableBeanProperty findCreatorProperty(String name) {\n        return _propertyLookup.get(name);\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.assignParameter",
+    "doc": "/**\n     * @return True if we have received all creator parameters\n     *\n     * @since 2.6\n     */",
+    "code": "public boolean assignParameter(SettableBeanProperty prop, Object value)\n    {\n        final int ix = prop.getCreatorIndex();\n        _creatorParameters[ix] = value;\n\n        if (_paramsSeenBig == null) {\n            int old = _paramsSeen;\n            int newValue = (old | (1 << ix));\n            if (old != newValue) {\n                _paramsSeen = newValue;\n                if (--_paramsNeeded <= 0) {\n                    return true;\n                }\n            }\n        } else {\n            if (!_paramsSeenBig.get(ix)) {\n                if (--_paramsNeeded <= 0) {\n                    return true;\n                }\n                _paramsSeenBig.set(ix);\n            }\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer.readIdProperty",
+    "doc": "/**\n     * Helper method called to see if given non-creator property is the \"id property\";\n     * and if so, handle appropriately.\n     *\n     * @since 2.1\n     */",
+    "code": "public boolean readIdProperty(String propName) throws IOException\n    {\n        if ((_objectIdReader != null) && propName.equals(_objectIdReader.propertyName.getSimpleName())) {\n            _idValue = _objectIdReader.readObjectReference(_parser, _context);\n            return true;\n        }\n        return false;\n    }"
+  }
+]

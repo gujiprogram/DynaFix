@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: org.apache.commons.math.ode.events.EventStateTest::closeEvents ===
+
+org.apache.commons.math.ode.events.EventState:evaluateStep:179->[Control Flow] Branch Info: Line: 179, Condition: if (interpolator != 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:180->[Control Flow] Branch Info: Line: 180, Condition: if (n < n), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:184->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:184 -> org.apache.commons.math.ode.sampling.StepInterpolator.setInterpolatedTime
+org.apache.commons.math.ode.events.EventState:evaluateStep:185->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:185 -> org.apache.commons.math.ode.sampling.StepInterpolator.getInterpolatedState
+org.apache.commons.math.ode.events.EventState:evaluateStep:185->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:185 -> org.apache.commons.math.ode.events.EventHandler.g
+org.apache.commons.math.ode.events.EventState:evaluateStep:188->[Control Flow] Branch Info: Line: 188, Condition: if (gb >= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:188->[Control Flow] Branch Info: Line: 188, Condition: if (gb != 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:201->[Control Flow] Branch Info: Line: 201, Condition: if (ga >= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:203->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:203 -> org.apache.commons.math.ode.events.EventState$1.<init>
+org.apache.commons.math.ode.events.EventState:evaluateStep:215->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:215 -> org.apache.commons.math.analysis.solvers.BrentSolver.<init>
+org.apache.commons.math.ode.events.EventState:evaluateStep:216->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:216 -> org.apache.commons.math.analysis.solvers.BrentSolver.setAbsoluteAccuracy
+org.apache.commons.math.ode.events.EventState:evaluateStep:217->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:217 -> org.apache.commons.math.analysis.solvers.BrentSolver.setMaximalIterationCount
+org.apache.commons.math.ode.events.EventState:evaluateStep:218->[Control Flow] Branch Info: Line: 218, Condition: if (tb <= 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:218->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:218 -> org.apache.commons.math.analysis.solvers.BrentSolver.solve
+org.apache.commons.math.ode.events.EventState:evaluateStep:217->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:217 -> org.apache.commons.math.analysis.solvers.BrentSolver.setMaximalIterationCount
+org.apache.commons.math.ode.events.EventState:evaluateStep:218->[Control Flow] Branch Info: Line: 218, Condition: if (tb <= 0), Executed: true
+org.apache.commons.math.ode.events.EventState:evaluateStep:218->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:218 -> org.apache.commons.math.analysis.solvers.BrentSolver.solve
+org.apache.commons.math.ode.events.EventState:evaluateStep:219->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:219 -> java.lang.Math.abs
+org.apache.commons.math.ode.events.EventState:evaluateStep:219->[Control Flow] Branch Info: Line: 219, Condition: if (this.convergence <= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:220->[Control Flow] Branch Info: Line: 220, Condition: if (this.convergence <= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:224->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:224 -> java.lang.Double.isNaN
+org.apache.commons.math.ode.events.EventState:evaluateStep:224->[Control Flow] Branch Info: Line: 224, Condition: if (this.previousEventTime == false), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:227->[Control Flow] Branch Info: Line: 227, Condition: if (this.pendingEvent != false), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:227->[Control Flow] Branch Info: Line: 227, Condition: if (this.convergence <= 0), Executed: false
+org.apache.commons.math.ode.events.EventState:evaluateStep:172->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:172 -> org.apache.commons.math.ode.sampling.StepInterpolator.isForward
+org.apache.commons.math.ode.events.EventState:evaluateStep:173->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:173 -> org.apache.commons.math.ode.sampling.StepInterpolator.getCurrentTime
+org.apache.commons.math.ode.events.EventState:evaluateStep:174->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:174 -> java.lang.Math.abs
+org.apache.commons.math.ode.events.EventState:evaluateStep:174->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:174 -> java.lang.Math.ceil
+org.apache.commons.math.ode.events.EventState:evaluateStep:174->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:174 -> java.lang.Math.max
+org.apache.commons.math.ode.events.EventState:evaluateStep:179->[Method Call] Call Stack: org.apache.commons.math.ode.events.EventState.evaluateStep:179 -> org.apache.commons.math.ode.sampling.StepInterpolator.isForward

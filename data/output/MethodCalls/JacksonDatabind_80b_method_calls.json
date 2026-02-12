@@ -1,0 +1,27 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findSubtypes",
+    "doc": "/**\n     * Method for locating annotation-specified subtypes related to annotated\n     * entity (class, method, field). Note that this is only guaranteed to be\n     * a list of directly\n     * declared subtypes, no recursive processing is guarantees (i.e. caller\n     * has to do it if/as necessary)\n     *\n     * @param a Annotated entity (class, field/method) to check for annotations\n     */",
+    "code": "public List<NamedType> findSubtypes(Annotated a) { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getRawClass",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.MapperConfig.getAnnotationIntrospector",
+    "doc": "/**\n     * Method for getting {@link AnnotationIntrospector} configured\n     * to introspect annotation values used for configuration.\n     *<p>\n     * Non-final since it is actually overridden by sub-classes (for now?)\n     */",
+    "code": "public AnnotationIntrospector getAnnotationIntrospector() {\n        if (isEnabled(MapperFeature.USE_ANNOTATIONS)) {\n            return _base.getAnnotationIntrospector();\n        }\n        return NopAnnotationIntrospector.instance;\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.AnnotatedClassResolver.resolveWithoutSuperTypes",
+    "doc": "/**\n * Helper class that contains logic for resolving annotations to construct\n * {@link AnnotatedClass} instances.\n *\n * @since 2.9\n */",
+    "code": "public static AnnotatedClass resolveWithoutSuperTypes(MapperConfig<?> config, JavaType forType,\n            MixInResolver r)"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver._collectAndResolveByTypeId",
+    "doc": "/**\n     * Method called to find subtypes for a specific type (class), using\n     * type id as the unique key (in case of conflicts).\n     */",
+    "code": "protected void _collectAndResolveByTypeId(AnnotatedClass annotatedType, NamedType namedType,\n            MapperConfig<?> config,"
+  }
+]

@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CodePrinterTest::testZero ===
+Exception: junit.framework.ComparisonFailure: expected:<var x="\0[00]"> but was:<var x="\0[]">
+
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:78->[Local Variables] {"identifier":"x"}
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:79->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:79 -> com.google.javascript.jscomp.CodeGenerator.identifierEscape
+com.google.javascript.jscomp.CodeGenerator:addIdentifier:79->[Method Call] Call Stack: com.google.javascript.jscomp.CodeGenerator.addIdentifier:79 -> com.google.javascript.jscomp.CodeConsumer.addIdentifier

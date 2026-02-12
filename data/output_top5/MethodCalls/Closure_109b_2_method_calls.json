@@ -1,0 +1,7 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.reportTypeSyntaxWarning",
+    "doc": "/**\n   * FunctionType := 'function' FunctionSignatureType\n   * FunctionSignatureType :=\n   *    TypeParameters '(' 'this' ':' TypeName, ParametersType ')' ResultType\n   */",
+    "code": "return reportTypeSyntaxWarning(\"msg.jsdoc.missing.gt\");\n        }\n\n        next();\n      }\n    }\n    return typeNameNode;\n  }\n\n  private Node parseFunctionType(JsDocToken token) {\n    if (token != JsDocToken.LP) {\n      restoreLookAhead(token);\n      return reportTypeSyntaxWarning(\"msg.jsdoc.missing.lp\");\n    }\n\n    Node functionType = newNode(Token.FUNCTION);\n    Node parameters = null;\n    skipEOLs();\n    if (!match(JsDocToken.RP)) {\n      token = next();\n\n      boolean hasParams = true;\n      if (token == JsDocToken.STRING) {\n        String tokenStr = stream.getString();\n        boolean isThis = \"this\".equals(tokenStr);\n        boolean isNew = \"new\".equals(tokenStr);\n        if (isThis || isNew) {"
+  }
+]

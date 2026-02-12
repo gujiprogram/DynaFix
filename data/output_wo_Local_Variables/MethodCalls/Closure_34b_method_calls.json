@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeConsumer.continueProcessing",
+    "doc": "/**\n   * Provides a means of interrupting the CodeGenerator. Derived classes should\n   * return false to stop further processing.\n   */",
+    "code": "boolean continueProcessing() {\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.addExpr",
+    "doc": "/**\n   * @return Whether the Node is a DO or FUNCTION (with or without\n   * labels).\n   */",
+    "code": "private void addExpr(Node n, int minPrecedence, Context context) {\n    if ((NodeUtil.precedence(n.getType()) < minPrecedence) ||\n        ((context == Context.IN_FOR_INIT_CLAUSE) &&\n        (n.isIn()))){\n      add(\"(\");\n      add(n, clearContextForNoInOperator(context));\n      add(\")\");\n    } else {\n      add(n, context);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.CodeGenerator.getContextForNoInOperator",
+    "doc": "/**\n   * If we're in a IN_FOR_INIT_CLAUSE, we can't permit in operators in the\n   * expression.  Pass on the IN_FOR_INIT_CLAUSE flag through subexpressions.\n   */",
+    "code": "private  Context getContextForNoInOperator(Context context) {\n    return (context == Context.IN_FOR_INIT_CLAUSE\n        ? Context.IN_FOR_INIT_CLAUSE : Context.OTHER);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isAssignmentOp",
+    "doc": "/**\n   * Returns true if the operator is commutative.\n   * e.g. (a * b) * c = c * (b * a)\n   * Note 1: \"+\" is not commutative because it is also the concatenation\n   * for strings. e.g. \"a\" + (1 + 2) is not \"a\" + 1 + 2\n   * Note 2: only operations on literals and pure functions are commutative.\n   */",
+    "code": "static boolean isAssignmentOp(Node n) {\n    switch (n.getType()){\n      case Token.ASSIGN:\n      case Token.ASSIGN_BITOR:\n      case Token.ASSIGN_BITXOR:\n      case Token.ASSIGN_BITAND:\n      case Token.ASSIGN_LSH:\n      case Token.ASSIGN_RSH:\n      case Token.ASSIGN_URSH:\n      case Token.ASSIGN_ADD:\n      case Token.ASSIGN_SUB:\n      case Token.ASSIGN_MUL:\n      case Token.ASSIGN_DIV:\n      case Token.ASSIGN_MOD:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.opToStr",
+    "doc": "/**\n   * Converts an operator's token value (see {@link Token}) to a string\n   * representation.\n   *\n   * @param operator the operator's token value to convert\n   * @return the string representation or {@code null} if the token value is\n   * not an operator\n   */",
+    "code": "static String opToStr(int operator) {\n    switch (operator) {\n      case Token.BITOR: return \"|\";\n      case Token.OR: return \"||\";\n      case Token.BITXOR: return \"^\";\n      case Token.AND: return \"&&\";\n      case Token.BITAND: return \"&\";\n      case Token.SHEQ: return \"===\";\n      case Token.EQ: return \"==\";\n      case Token.NOT: return \"!\";\n      case Token.NE: return \"!=\";\n      case Token.SHNE: return \"!==\";\n      case Token.LSH: return \"<<\";\n      case Token.IN: return \"in\";\n      case Token.LE: return \"<=\";\n      case Token.LT: return \"<\";\n      case Token.URSH: return \">>>\";\n      case Token.RSH: return \">>\";\n      case Token.GE: return \">=\";\n      case Token.GT: return \">\";\n      case Token.MUL: return \"*\";\n      case Token.DIV: return \"/\";\n      case Token.MOD: return \"%\";\n      case Token.BITNOT: return \"~\";\n      case Token.ADD: return \"+\";\n      case Token.SUB: return \"-\";\n      case Token.POS: return \"+\";\n      case Token.NEG: return \"-\";\n      case Token.ASSIGN: return \"=\";\n      case Token.ASSIGN_BITOR: return \"|=\";\n      case Token.ASSIGN_BITXOR: return \"^=\";\n      case Token.ASSIGN_BITAND: return \"&=\";\n      case Token.ASSIGN_LSH: return \"<<=\";\n      case Token.ASSIGN_RSH: return \">>=\";\n      case Token.ASSIGN_URSH: return \">>>=\";\n      case Token.ASSIGN_ADD: return \"+=\";\n      case Token.ASSIGN_SUB: return \"-=\";\n      case Token.ASSIGN_MUL: return \"*=\";\n      case Token.ASSIGN_DIV: return \"/=\";\n      case Token.ASSIGN_MOD: return \"%=\";\n      case Token.VOID: return \"void\";\n      case Token.TYPEOF: return \"typeof\";\n      case Token.INSTANCEOF: return \"instanceof\";\n      default: return null;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.precedence",
+    "doc": "/**\n   * @param knownConstants A set of names known to be constant value at\n   * node 'n' (such as locals that are last written before n can execute).\n   * @return Whether the tree can be affected by side-effects or\n   * has side-effects.\n   */",
+    "code": "static int precedence(int type) {\n    switch (type) {\n      case Token.COMMA:  return 0;\n      case Token.ASSIGN_BITOR:\n      case Token.ASSIGN_BITXOR:\n      case Token.ASSIGN_BITAND:\n      case Token.ASSIGN_LSH:\n      case Token.ASSIGN_RSH:\n      case Token.ASSIGN_URSH:\n      case Token.ASSIGN_ADD:\n      case Token.ASSIGN_SUB:\n      case Token.ASSIGN_MUL:\n      case Token.ASSIGN_DIV:\n      case Token.ASSIGN_MOD:\n      case Token.ASSIGN: return 1;\n      case Token.HOOK:   return 2;  // ?: operator\n      case Token.OR:     return 3;\n      case Token.AND:    return 4;\n      case Token.BITOR:  return 5;\n      case Token.BITXOR: return 6;\n      case Token.BITAND: return 7;\n      case Token.EQ:\n      case Token.NE:\n      case Token.SHEQ:\n      case Token.SHNE:   return 8;\n      case Token.LT:\n      case Token.GT:\n      case Token.LE:\n      case Token.GE:\n      case Token.INSTANCEOF:\n      case Token.IN:     return 9;\n      case Token.LSH:\n      case Token.RSH:\n      case Token.URSH:   return 10;\n      case Token.SUB:\n      case Token.ADD:    return 11;\n      case Token.MUL:\n      case Token.MOD:\n      case Token.DIV:    return 12;\n      case Token.INC:\n      case Token.DEC:\n      case Token.NEW:\n      case Token.DELPROP:\n      case Token.TYPEOF:\n      case Token.VOID:\n      case Token.NOT:\n      case Token.BITNOT:\n      case Token.POS:\n      case Token.NEG:    return 13;\n\n      case Token.CALL:\n      case Token.GETELEM:\n      case Token.GETPROP:\n      case Token.ARRAYLIT:\n      case Token.EMPTY:  // TODO(johnlenz): remove this.\n      case Token.FALSE:\n      case Token.FUNCTION:\n      case Token.NAME:\n      case Token.NULL:\n      case Token.NUMBER:\n      case Token.OBJECTLIT:\n      case Token.REGEXP:\n      case Token.STRING:\n      case Token.THIS:\n      case Token.TRUE:\n        return 15;\n\n      default: throw new Error(\"Unknown precedence for \" +\n                               Token.name(type) +\n                               \" (type \" + type + \")\");\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getChildCount",
+    "doc": "/**\n   * Check for more than one child more efficiently than by iterating over all\n   * the children as is done with Node.getChildCount().\n   *\n   * @return Whether the node more than one child.\n   */",
+    "code": "public int getChildCount() {\n    int c = 0;\n    for (Node n = first; n != null; n = n.next)\n      c++;\n\n    return c;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getLastChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getLastChild() {\n    return last;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  }
+]

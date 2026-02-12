@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getObjectLitKeyName",
+    "doc": "/**\n   * Get the name of an object literal key.\n   *\n   * @param key A node\n   */",
+    "code": "static String getObjectLitKeyName(Node key) {\n    switch (key.getType()) {\n      case Token.STRING:\n      case Token.GET:\n      case Token.SET:\n        return key.getString();\n    }\n    throw new IllegalStateException(\"Unexpected node type: \" + key);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.getObjectLitKeyTypeFromValueType",
+    "doc": "/**\n   * @param key A OBJECTLIT key node.\n   * @return The type expected when using the key.\n   */",
+    "code": "static JSType getObjectLitKeyTypeFromValueType(Node key, JSType valueType) {\n    if (valueType != null) {\n      switch (key.getType()) {\n        case Token.GET:\n          if (valueType.isFunctionType()) {\n            FunctionType fntype = ((FunctionType) valueType);\n            valueType = fntype.getReturnType();\n          } else {\n            return null;\n          }\n          break;\n        case Token.SET:\n          if (valueType.isFunctionType()) {\n            FunctionType fntype = ((FunctionType) valueType);\n            Node param = fntype.getParametersNode().getFirstChild();\n            valueType = param.getJSType();\n          } else {\n            return null;\n          }\n          break;\n      }\n    }\n    return valueType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.getJSType",
+    "doc": "/**\n   * This method gets the JSType from the Node argument and verifies that it is\n   * present.\n   */",
+    "code": "private JSType getJSType(Node n) {\n    JSType jsType = n.getJSType();\n    if (jsType == null) {\n      return getNativeType(UNKNOWN_TYPE);\n    } else {\n      return jsType;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.propertyIsImplicitCast",
+    "doc": "/**\n   * Returns true if any type in the chain has an implictCast annotation for\n   * the given property.\n   */",
+    "code": "private boolean propertyIsImplicitCast(ObjectType type, String prop) {\n    for (; type != null; type = type.getImplicitPrototype()) {\n      JSDocInfo docInfo = type.getOwnPropertyJSDocInfo(prop);\n      if (docInfo != null && docInfo.isImplicitCast()) {\n        return true;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeValidator.expectCanAssignToPropertyOf",
+    "doc": "/**\n   * Expect that the first type can be assigned to a symbol of the second\n   * type.\n   *\n   * @param t The node traversal.\n   * @param n The node to issue warnings on.\n   * @param rightType The type on the RHS of the assign.\n   * @param leftType The type of the symbol on the LHS of the assign.\n   * @param owner The owner of the property being assigned to.\n   * @param propName The name of the property being assigned to.\n   * @return True if the types matched, false otherwise.\n   */",
+    "code": "boolean expectCanAssignToPropertyOf(NodeTraversal t, Node n, JSType rightType,\n      JSType leftType, Node owner, String propName) {\n    if (!leftType.isNoType() && !rightType.canAssignTo(leftType)) {\n      if (bothIntrinsics(rightType, leftType)) {\n        registerMismatch(rightType, leftType);\n      } else {\n        mismatch(t, n,\n            \"assignment to property \" + propName + \" of \" +\n            getReadableJSTypeName(owner, true),\n            rightType, leftType);\n      }\n      return false;\n    }\n    return true;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.restrictByNotNullOrUndefined",
+    "doc": "/**\n   * If this is a union type, returns a union type that does not include\n   * the null or undefined type.\n   */",
+    "code": "public JSType restrictByNotNullOrUndefined() {\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.cast",
+    "doc": "/**\n   * A null-safe version of JSType#toObjectType.\n   */",
+    "code": "public static ObjectType cast(JSType type) {\n    return type == null ? null : type.toObjectType();\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the property type of the property whose name is given. If the\n   * underlying object does not have this property, the Unknown type is\n   * returned to indicate that no information is available on this property.\n   *\n   * @return the property's type or {@link UnknownType}. This method never\n   *         returns {@code null}.\n   */",
+    "code": "public abstract JSType getPropertyType(String propertyName);"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasProperty",
+    "doc": "/**\n   * Sets the docInfo for the specified property from the\n   * {@link JSDocInfo} on its definition.\n   * @param info {@code JSDocInfo} for the property definition. May be\n   *        {@code null}.\n   * @param inExterns {@code true} if this property was defined in an externs\n   *        file. TightenTypes assumes that any function passed to an externs\n   *        property could be called, so setting this incorrectly could result\n   *        in live code being removed.\n   */",
+    "code": "return hasProperty(propertyName) ?\n        getPropertyType(propertyName) : null;"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeInferred",
+    "doc": "/**\n   * Checks whether the property's type is inferred.\n   */",
+    "code": "public abstract boolean isPropertyTypeInferred(String propertyName);"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.apache.commons.compress.archivers.ar.ArArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches ASCII \"!<arch>\" followed by a single LF\n     * control character\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is an Ar archive stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n\n        if (length < 8) {\n            return false;\n        }\n        if (signature[0] != 0x21) {\n            return false;\n        }\n        if (signature[1] != 0x3c) {\n            return false;\n        }\n        if (signature[2] != 0x61) {\n            return false;\n        }\n        if (signature[3] != 0x72) {\n            return false;\n        }\n        if (signature[4] != 0x63) {\n            return false;\n        }\n        if (signature[5] != 0x68) {\n            return false;\n        }\n        if (signature[6] != 0x3e) {\n            return false;\n        }\n        if (signature[7] != 0x0a) {\n            return false;\n        }\n\n        return true;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.cpio.CpioArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches one of the following magic values:\n     *\n     * Strings:\n     *\n     * \"070701\" - MAGIC_NEW\n     * \"070702\" - MAGIC_NEW_CRC\n     * \"070707\" - MAGIC_OLD_ASCII\n     *\n     * Octal Binary value:\n     *\n     * 070707 - MAGIC_OLD_BINARY (held as a short) = 0x71C7 or 0xC771\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < 6) {\n            return false;\n        }\n\n        if (signature[0] == 0x71 && (signature[1] & 0xFF) == 0xc7) {\n            return true;\n        }\n        if (signature[1] == 0x71 && (signature[0] & 0xFF) == 0xc7) {\n            return true;\n        }\n\n        if (signature[0] != 0x30) {\n            return false;\n        }\n        if (signature[1] != 0x37) {\n            return false;\n        }\n        if (signature[2] != 0x30) {\n            return false;\n        }\n        if (signature[3] != 0x37) {\n            return false;\n        }\n        if (signature[4] != 0x30) {\n            return false;\n        }\n        if (signature[5] == 0x31) {\n            return true;\n        }\n        if (signature[5] == 0x32) {\n            return true;\n        }\n        if (signature[5] == 0x37) {\n            return true;\n        }\n\n        return false;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.dump.DumpArchiveInputStream.matches",
+    "doc": "/**\n     * Look at the first few bytes of the file to decide if it's a dump\n     * archive. With 32 bytes we can look at the magic value, with a full\n     * 1k we can verify the checksum.\n     */",
+    "code": "public static boolean matches(byte[] buffer, int length) {\n        if (length < 32) {\n            return false;\n        }\n\n        if (length >= DumpArchiveConstants.TP_SIZE) {\n            return DumpArchiveUtil.verify(buffer);\n        }\n\n        return DumpArchiveConstants.NFS_MAGIC == DumpArchiveUtil.convert32(buffer,\n            24);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.jar.JarArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a jar file\n     * (in this case it is the same as for a zip file).\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a jar archive stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length ) {\n        return ZipArchiveInputStream.matches(signature, length);\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.getNextEntry",
+    "doc": "/**\n     * Adds the sparse chunks from the current entry to the sparse chunks,\n     * including any additional sparse entries following the current entry.\n     *\n     * @throws IOException on error\n     *\n     * @todo Sparse files get not yet really processed.\n     */",
+    "code": "public ArchiveEntry getNextEntry() throws IOException {\n        return getNextTarEntry();\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.tar.TarArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a tar file.\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a tar archive stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < TarConstants.VERSION_OFFSET+TarConstants.VERSIONLEN) {\n            return false;\n        }\n\n        if (ArchiveUtils.matchAsciiBuffer(TarConstants.MAGIC_POSIX,\n                signature, TarConstants.MAGIC_OFFSET, TarConstants.MAGICLEN)\n            &&\n            ArchiveUtils.matchAsciiBuffer(TarConstants.VERSION_POSIX,\n                signature, TarConstants.VERSION_OFFSET, TarConstants.VERSIONLEN)\n                ){\n            return true;\n        }\n        if (ArchiveUtils.matchAsciiBuffer(TarConstants.MAGIC_GNU,\n                signature, TarConstants.MAGIC_OFFSET, TarConstants.MAGICLEN)\n            &&\n            (\n             ArchiveUtils.matchAsciiBuffer(TarConstants.VERSION_GNU_SPACE,\n                signature, TarConstants.VERSION_OFFSET, TarConstants.VERSIONLEN)\n            ||\n            ArchiveUtils.matchAsciiBuffer(TarConstants.VERSION_GNU_ZERO,\n                signature, TarConstants.VERSION_OFFSET, TarConstants.VERSIONLEN)\n            )\n                ){\n            return true;\n        }\n        if (ArchiveUtils.matchAsciiBuffer(TarConstants.MAGIC_ANT,\n                signature, TarConstants.MAGIC_OFFSET, TarConstants.MAGICLEN)\n            &&\n            ArchiveUtils.matchAsciiBuffer(TarConstants.VERSION_ANT,\n                signature, TarConstants.VERSION_OFFSET, TarConstants.VERSIONLEN)\n                ){\n            return true;\n        }\n        return false;\n    }"
+  },
+  {
+    "method": "org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.matches",
+    "doc": "/**\n     * Checks if the signature matches what is expected for a zip file.\n     * Does not currently handle self-extracting zips which may have arbitrary\n     * leading content.\n     *\n     * @param signature\n     *            the bytes to check\n     * @param length\n     *            the number of bytes to check\n     * @return true, if this stream is a zip archive stream, false otherwise\n     */",
+    "code": "public static boolean matches(byte[] signature, int length) {\n        if (length < ZipArchiveOutputStream.LFH_SIG.length) {\n            return false;\n        }\n\n        return checksig(signature, ZipArchiveOutputStream.LFH_SIG) // normal file\n            || checksig(signature, ZipArchiveOutputStream.EOCD_SIG); // empty zip\n    }"
+  }
+]

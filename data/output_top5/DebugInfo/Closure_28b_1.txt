@@ -1,0 +1,36 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineCostEstimatorTest::testCost ===
+Exception: junit.framework.AssertionFailedError: expected:<1> but was:<4>
+
+com.google.javascript.jscomp.InlineCostEstimator:getCost:38->[Local Variables] "{root\u003dSCRIPT 1 [synthetic: 1] [source_file: [testcode]] [input_id: InputId: [testcode]]}"
+com.google.javascript.jscomp.InlineCostEstimator:getCost:45->[Local Variables] {"costThreshhold":2147483647}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:46 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.<init>
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Local Variables] {"estimator":{"maxCost":2147483647,"cost":0,"last":"\u0000","continueProcessing":true,"statementNeedsEnded":false,"statementStarted":false,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:47 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.add
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Local Variables] {"estimator":{"maxCost":2147483647,"cost":1,"last":"1","continueProcessing":true,"statementNeedsEnded":true,"statementStarted":true,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:48->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:48 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.getCost
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:46 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.<init>
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Local Variables] {"estimator":{"maxCost":2147483647,"cost":0,"last":"\u0000","continueProcessing":true,"statementNeedsEnded":false,"statementStarted":false,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:47 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.add
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Local Variables] {"estimator":{"maxCost":2147483647,"cost":4,"last":"e","continueProcessing":true,"statementNeedsEnded":true,"statementStarted":true,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:48->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:48 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.getCost
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testIssue728 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.InlineCostEstimator:getCost:45->[Local Variables] "{costThreshhold\u003d27, root\u003dFUNCTION  1 [source_file: testcode]}"
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:46 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.<init>
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Local Variables] {"estimator":{"maxCost":27,"cost":0,"last":"\u0000","continueProcessing":true,"statementNeedsEnded":false,"statementStarted":false,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:47 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.add
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Local Variables] {"estimator":{"maxCost":27,"cost":27,"last":"}","continueProcessing":false,"statementNeedsEnded":false,"statementStarted":true,"sawFunction":true}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:48->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:48 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.getCost
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:46 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.<init>
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Local Variables] {"estimator":{"maxCost":27,"cost":0,"last":"\u0000","continueProcessing":true,"statementNeedsEnded":false,"statementStarted":false,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:47 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.add
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Local Variables] {"estimator":{"maxCost":27,"cost":27,"last":"}","continueProcessing":false,"statementNeedsEnded":false,"statementStarted":true,"sawFunction":true}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:48->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:48 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.getCost
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:46 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.<init>
+com.google.javascript.jscomp.InlineCostEstimator:getCost:46->[Local Variables] {"estimator":{"maxCost":27,"cost":0,"last":"\u0000","continueProcessing":true,"statementNeedsEnded":false,"statementStarted":false,"sawFunction":false}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:47 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.add
+com.google.javascript.jscomp.InlineCostEstimator:getCost:47->[Local Variables] {"estimator":{"maxCost":27,"cost":27,"last":"}","continueProcessing":false,"statementNeedsEnded":false,"statementStarted":true,"sawFunction":true}}
+com.google.javascript.jscomp.InlineCostEstimator:getCost:48->[Method Call] Call Stack: com.google.javascript.jscomp.InlineCostEstimator.getCost:48 -> com.google.javascript.jscomp.InlineCostEstimator$CompiledSizeEstimator.getCost

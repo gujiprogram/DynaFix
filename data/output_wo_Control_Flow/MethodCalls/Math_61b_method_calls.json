@@ -1,0 +1,12 @@
+[
+  {
+    "method": "org.apache.commons.math.MathRuntimeException.createIllegalArgumentException",
+    "doc": "/**\n     * Constructs a new <code>IllegalArgumentException</code> with specified formatted detail message.\n     * Message formatting is delegated to {@link java.text.MessageFormat}.\n     * @param pattern format specifier\n     * @param arguments format arguments\n     * @return built exception\n     * @deprecated as of 2.2 replaced by {@link #createIllegalArgumentException(Localizable, Object...)}\n     */",
+    "code": "public static IllegalArgumentException createIllegalArgumentException(final String pattern,\n                                                                          final Object ... arguments) {\n        return createIllegalArgumentException(new DummyLocalizable(pattern), arguments);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.FastMath.sqrt",
+    "doc": "/** Compute the square root of a number.\n     * @param a number on which evaluation is done\n     * @return square root of a\n     */",
+    "code": "public static double sqrt(final double a) {\n        return Math.sqrt(a);\n    }"
+  }
+]

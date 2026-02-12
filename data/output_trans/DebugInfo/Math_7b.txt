@@ -1,0 +1,37 @@
+
+=== Debug Info for Test: org.apache.commons.math3.ode.nonstiff.DormandPrince853IntegratorTest::testEventsScheduling ===
+Exception: junit.framework.AssertionFailedError
+
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:331->[Control Flow] Branch Info: Line: 331, Condition: if (TransVarCurrentInterpolatedState != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:331->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:331 -> java.util.Iterator.next
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:331->[Local Variables] "{TransVarCurrentEventState\u003dorg.apache.commons.math3.ode.events.EventState@286b39c2}"
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:332->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:332 -> org.apache.commons.math3.ode.events.EventState.evaluateStep
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Loop Info: Line: 338, Description: while at line 338
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Branch Info: Line: 338, Condition: if (TransVarEventReset != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.util.Iterator.next
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> org.apache.commons.math3.ode.sampling.StepHandler.handleStep
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Loop Info: Line: 338, Description: while at line 338
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Branch Info: Line: 338, Condition: if (TransVarEventReset != 0), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Branch Info: Line: 338, Condition: if (this.isLastStep != false), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> org.apache.commons.math3.ode.events.EventState.reset
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Branch Info: Line: 338, Condition: if (TransVarEventReset != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.lang.System.arraycopy
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> org.apache.commons.math3.ode.AbstractIntegrator.computeDerivatives
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.util.SortedSet.iterator
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:338 -> java.util.Iterator.hasNext
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:338->[Control Flow] Branch Info: Line: 338, Condition: if (TransVarState != 0), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:302->[Local Variables] {"TransVarYValues":[0.9828422718828915,-0.18444801055674162],"TransVarYDotTemp":[-0.18444801055674162,-0.9828422718828915]}
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:303->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:303 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.getGlobalPreviousTime
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:303->[Local Variables] {"TransVarPrevTime":1.5707963267949083}
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:304->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:304 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.getGlobalCurrentTime
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:306->[Local Variables] {"TransVarCurrentTime":1.7563065338322272}
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:307->[Control Flow] Branch Info: Line: 307, Condition: if (this.statesInitialized == false), Executed: false
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:321->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:321 -> org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.isForward
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:321->[Control Flow] Branch Info: Line: 321, Condition: if (org.apache.commons.math3.ode.sampling.AbstractStepInterpolator.isForward() != 0), Executed: true
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:322 -> org.apache.commons.math3.ode.AbstractIntegrator$1.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:322->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:322 -> java.util.TreeSet.<init>
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:330->[Local Variables] {"TransVarOccuringEventStates":[]}
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:331->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:331 -> java.util.Collection.iterator
+org.apache.commons.math3.ode.AbstractIntegrator:acceptStep:331->[Method Call] Call Stack: org.apache.commons.math3.ode.AbstractIntegrator.acceptStep:331 -> java.util.Iterator.hasNext

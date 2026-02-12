@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math.stat.Frequency.getCount",
+    "doc": "/**\n     * Returns the number of values = v.\n     * Returns 0 if the value is not comparable.\n     *\n     * @param v the value to lookup.\n     * @return the frequency of v.\n     * @deprecated replaced by {@link #getCount(Comparable)} as of 2.0\n     */",
+    "code": "public long getCount(Object v) {\n        return getCount((Comparable<?>) v);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.stat.Frequency.getCumPct",
+    "doc": "/**\n     * Returns the percentage of values that are equal to v\n     * (as a proportion between 0 and 1).\n     * <p>\n     * Returns <code>Double.NaN</code> if no values have been added.</p>\n     *\n     * @param v the value to lookup\n     * @return the proportion of values equal to v\n     */",
+    "code": "return getCumPct((Comparable<?>) TransVarObject);\n    }\n\n    public double getPct(Comparable<?> v) {"
+  },
+  {
+    "method": "org.apache.commons.math.stat.Frequency.getSumFreq",
+    "doc": "/**\n     * Returns the sum of all frequencies.\n     *\n     * @return the total frequency count.\n     */",
+    "code": "public long getSumFreq() {\n        long result = 0;\n        Iterator<Long> iterator = freqTable.values().iterator();\n        while (iterator.hasNext())  {\n            result += iterator.next().longValue();\n        }\n        return result;\n    }"
+  }
+]

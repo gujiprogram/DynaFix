@@ -1,0 +1,7 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testBug1832432 ===
+Exception: java.lang.IllegalArgumentException: Requires start <= end.
+
+org.jfree.data.time.TimeSeries:createCopy:875->[Local Variables] {"start":0,"end":-1}
+org.jfree.data.time.TimeSeries:createCopy:876->[Control Flow] Branch Info: Line: 876, Condition: if (start < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:879->[Control Flow] Branch Info: Line: 879, Condition: if (start < start), Executed: true

@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.fasterxml.jackson.databind.AnnotationIntrospector.findSerializationType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.getContentType",
+    "doc": "/**********************************************************\n     */",
+    "code": "public JavaType getContentType() { return null; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.hasRawClass",
+    "doc": "/**\n     * Method that can be used to check whether this type has\n     * specified Class as its type erasure. Put another way, returns\n     * true if instantiation of this Type is given (type-erased) Class.\n     */",
+    "code": "public final boolean hasRawClass(Class<?> clz) { return _class == clz; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.JavaType.isMapLikeType",
+    "doc": "/**\n     * @return True if type is either true {@link java.util.Map} type,\n     *    or something similar (meaning it has at least two type parameter;\n     *    first one describing key type, second value type)\n     */",
+    "code": "public boolean isMapLikeType() { return false; }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.cfg.MapperConfig.getTypeFactory",
+    "doc": "/**\n     * Method called to locate a type info handler for types that do not have\n     * one explicitly declared via annotations (or other configuration).\n     * If such default handler is configured, it is returned; otherwise\n     * null is returned.\n     */",
+    "code": "public final TypeFactory getTypeFactory() {\n        return _base.getTypeFactory();\n    }"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.introspect.Annotated.getName",
+    "doc": "/**\n     * Method that can be used to find actual JDK element that this instance\n     * represents. It is non-null, except for method/constructor parameters\n     * which do not have a JDK counterpart.\n     */",
+    "code": "public abstract String getName();"
+  },
+  {
+    "method": "com.fasterxml.jackson.databind.type.TypeFactory.constructGeneralizedType",
+    "doc": "/**\n     * Method similar to {@link #constructSpecializedType}, but that creates a\n     * less-specific type of given type. Usually this is as simple as simply\n     * finding super-type with type erasure of <code>superClass</code>, but\n     * there may be need for some additional work-arounds.\n     *\n     * @param superClass\n     *\n     * @since 2.7\n     */",
+    "code": "public JavaType constructGeneralizedType(JavaType baseType, Class<?> superClass)\n    {\n        final Class<?> rawBase = baseType.getRawClass();\n        if (rawBase == superClass) {\n            return baseType;\n        }\n        JavaType superType = baseType.findSuperType(superClass);\n        if (superType == null) {\n            if (!superClass.isAssignableFrom(rawBase)) {\n                throw new IllegalArgumentException(String.format(\n                        \"Class %s not a super-type of %s\", superClass.getName(), baseType));\n            }\n            throw new IllegalArgumentException(String.format(\n                    \"Internal error: class %s not included as super-type for %s\",\n                    superClass.getName(), baseType));\n        }\n        return superType;\n    }"
+  }
+]

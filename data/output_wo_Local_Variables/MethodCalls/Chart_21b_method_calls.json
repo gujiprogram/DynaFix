@@ -1,0 +1,37 @@
+[
+  {
+    "method": "org.jfree.data.KeyedObjects2D.addObject",
+    "doc": "/**\n     * Adds an object to the table.  Performs the same function as setObject().\n     *\n     * @param object  the object.\n     * @param rowKey  the row key (<code>null</code> not permitted).\n     * @param columnKey  the column key (<code>null</code> not permitted).\n     */",
+    "code": "public void addObject(Object object, Comparable rowKey,\n            Comparable columnKey) {\n        setObject(object, rowKey, columnKey);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.getColumnIndex",
+    "doc": "/**\n     * Returns the column index for a given key.\n     *\n     * @param key  the key.\n     *\n     * @return The column index.\n     *\n     * @see #getColumnKey(int)\n     */",
+    "code": "public int getColumnIndex(Comparable key) {\n        return this.columnKeys.indexOf(key);\n    }"
+  },
+  {
+    "method": "org.jfree.data.KeyedObjects2D.getRowIndex",
+    "doc": "/**\n     * Returns the row index for a given key.\n     *\n     * @param key  the key.\n     *\n     * @return The row index.\n     *\n     * @see #getRowKey(int)\n     */",
+    "code": "public int getRowIndex(Comparable key) {\n        return this.rowKeys.indexOf(key);\n    }"
+  },
+  {
+    "method": "org.jfree.data.statistics.BoxAndWhiskerItem.getMaxOutlier",
+    "doc": "/**\n     * Returns the maximum outlier.\n     *\n     * @return The maximum outlier (possibly <code>null</code>).\n     */",
+    "code": "public Number getMaxOutlier() {\n        return this.maxOutlier;\n    }"
+  },
+  {
+    "method": "org.jfree.data.statistics.BoxAndWhiskerItem.getMinOutlier",
+    "doc": "/**\n     * Returns the minimum outlier.\n     *\n     * @return The minimum outlier (possibly <code>null</code>).\n     */",
+    "code": "public Number getMinOutlier() {\n        return this.minOutlier;\n    }"
+  },
+  {
+    "method": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.fireDatasetChanged",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "org.jfree.data.statistics.DefaultBoxAndWhiskerCategoryDataset.updateBounds",
+    "doc": "/**\n     * Resets the cached bounds, by iterating over the entire dataset to find\n     * the current bounds.\n     */",
+    "code": "private void updateBounds() {\n        this.minimumRangeValue = Double.NaN;\n        this.maximumRangeValue = Double.NaN;\n    }"
+  }
+]

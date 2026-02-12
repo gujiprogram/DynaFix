@@ -1,0 +1,63 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.LooseTypeCheckTest::testTypeRedefinition ===
+
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{n\u003dASSIGN 1 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : function (new:a.A): undefined, rightType\u003dfunction (new:a.A): undefined}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isEnumType() != 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:403->[Local Variables] "{msg\u003dassignment, t\u003dcom.google.javascript.jscomp.NodeTraversal@a09303, leftType\u003d{A: enum{a.A}}, n\u003dASSIGN 1 [source_file: [testcode]] : {A: enum{a.A}}, rightType\u003d{A: enum{a.A}}}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{owner\u003dOBJECTLIT 1 [source_file: [testcode]] : enum{a.A}, t\u003dcom.google.javascript.jscomp.NodeTraversal@a09303, leftType\u003dstring, propName\u003dZOR, n\u003dSTRING_KEY ZOR 1 [source_file: [testcode]] : a.A.\u003cstring\u003e, rightType\u003dstring}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{leftType\u003da.A.\u003cstring\u003e, rightType\u003da.A.\u003cstring\u003e}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:403->[Local Variables] "{msg\u003dincompatible enum element types, leftType\u003dstring, n\u003dOBJECTLIT 1 [source_file: [testcode]] : enum{a.A}, rightType\u003dstring}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{owner\u003dNAME a 1 [source_file: [testcode]] : {A: enum{a.A}}, leftType\u003denum{a.A}, propName\u003dA, n\u003dASSIGN 1 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : enum{a.A}, rightType\u003denum{a.A}}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue635b ===
+
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{owner\u003dGETPROP 6 [source_file: [externs]] : String.prototype, t\u003dcom.google.javascript.jscomp.NodeTraversal@d3f4505, leftType\u003dfunction (...[?]): string, propName\u003dslice, n\u003dASSIGN 6 [jsdoc_info: JSDocInfo] [source_file: [externs]] : function (this:String, number): string, rightType\u003dfunction (this:String, number): string}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:403->[Local Variables] "{msg\u003dinitializing variable, t\u003dcom.google.javascript.jscomp.NodeTraversal@32bb0072, leftType\u003dfunction (new:G): ?, n\u003dNAME F 1 [source_file: [testcode]] : function (new:F): undefined, rightType\u003dfunction (new:F): undefined}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:405->[Control Flow] Branch Info: Line: 405, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTypeRedefinition ===
+
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{n\u003dASSIGN 1 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : function (new:a.A): undefined, rightType\u003dfunction (new:a.A): undefined}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isEnumType() != 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:366->[Control Flow] Branch Info: Line: 366, Condition: if (com.google.javascript.rhino.jstype.JSType.isConstructor() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:403->[Local Variables] "{msg\u003dassignment, t\u003dcom.google.javascript.jscomp.NodeTraversal@a09303, leftType\u003d{A: enum{a.A}}, n\u003dASSIGN 1 [source_file: [testcode]] : {A: enum{a.A}}, rightType\u003d{A: enum{a.A}}}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{owner\u003dOBJECTLIT 1 [source_file: [testcode]] : enum{a.A}, t\u003dcom.google.javascript.jscomp.NodeTraversal@a09303, leftType\u003dstring, propName\u003dZOR, n\u003dSTRING_KEY ZOR 1 [source_file: [testcode]] : a.A.\u003cstring\u003e, rightType\u003dstring}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{leftType\u003da.A.\u003cstring\u003e, rightType\u003da.A.\u003cstring\u003e}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:403->[Local Variables] "{msg\u003dincompatible enum element types, leftType\u003dstring, n\u003dOBJECTLIT 1 [source_file: [testcode]] : enum{a.A}, rightType\u003dstring}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignTo:404->[Control Flow] Branch Info: Line: 404, Condition: if (com.google.javascript.rhino.jstype.JSType.canAssignTo() == 0), Executed: false
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:364->[Local Variables] "{owner\u003dNAME a 1 [source_file: [testcode]] : {A: enum{a.A}}, leftType\u003denum{a.A}, propName\u003dA, n\u003dASSIGN 1 [jsdoc_info: JSDocInfo] [source_file: [testcode]] : enum{a.A}, rightType\u003denum{a.A}}"
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: true
+com.google.javascript.jscomp.TypeValidator:expectCanAssignToPropertyOf:365->[Control Flow] Branch Info: Line: 365, Condition: if (com.google.javascript.rhino.jstype.JSType.isNoType() == 0), Executed: false

@@ -1,0 +1,67 @@
+[
+  {
+    "method": "com.google.common.base.Preconditions.checkState",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.PeepholeSubstituteAlternateSyntax.reportCodeChange",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.add",
+    "doc": "/**\n   * \"===\"\n   */",
+    "code": "public static Node add(Node expr1, Node expr2) {\n    return binaryOp(Token.ADD, expr1, expr2);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.IR.string",
+    "doc": "/**\n   * \"===\"\n   */",
+    "code": "public static Node string(String s) {\n    return Node.newString(s);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.detachFromParent",
+    "doc": "/**\n   * Removes this node from its parent. Equivalent to:\n   * node.getParent().removeChild();\n   */",
+    "code": "public Node detachFromParent() {\n    Preconditions.checkState(parent != null);\n    parent.removeChild(this);\n    return this;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getFirstChild",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public Node getFirstChild() {\n    return first;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getNext",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "PropListItem getNext();\n    PropListItem chain(PropListItem next);"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isCall",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isName",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.replaceChild",
+    "doc": "/**\n   * Detaches child from Node and replaces it with newChild.\n   */",
+    "code": "public void replaceChild(Node child, Node newChild) {\n    Preconditions.checkArgument(newChild.next == null,\n        \"The new child node has siblings.\");\n    Preconditions.checkArgument(newChild.parent == null,\n        \"The new child node already has a parent.\");\n\n    newChild.copyInformationFrom(child);\n\n    newChild.next = child.next;\n    newChild.parent = this;\n    if (child == first) {\n        first = newChild;\n    } else {\n        Node prev = getChildBefore(child);\n        prev.next = newChild;\n    }\n    if (child == last)\n        last = newChild;\n    child.next = null;\n    child.parent = null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.srcref",
+    "doc": "/**\n   * Overwrite all the source information in this node with\n   * that of {@code other}.\n   */",
+    "code": "public Node srcref(Node other) {\n    return useSourceInfoFrom(other);\n  }"
+  }
+]

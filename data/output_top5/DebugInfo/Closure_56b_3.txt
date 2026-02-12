@@ -1,0 +1,17 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.JSCompilerSourceExcerptProviderTest::testExceptNoNewLine ===
+Exception: junit.framework.ComparisonFailure: expected:<foo2:third line> but was:<null>
+
+com.google.javascript.jscomp.SourceFile:setCode:155->[Local Variables] {"sourceCode":"foo:first line\nfoo:second line\nfoo:third line\n"}
+com.google.javascript.jscomp.SourceFile:setCode:155->[Local Variables] {"sourceCode":"bar:first line\nbar:second line\nbar:third line\nbar:fourth line\n"}
+com.google.javascript.jscomp.SourceFile:setCode:155->[Local Variables] {"sourceCode":"foo2:first line\nfoo2:second line\nfoo2:third line"}
+
+=== Debug Info for Test: com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError1 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.SourceFile:setCode:155->[Local Variables] {"sourceCode":"if (true) {}}"}
+
+=== Debug Info for Test: com.google.javascript.jscomp.JsMessageExtractorTest::testSyntaxError2 ===
+Exception: junit.framework.AssertionFailedError
+
+com.google.javascript.jscomp.SourceFile:setCode:155->[Local Variables] {"sourceCode":"\nif (true) {}}"}

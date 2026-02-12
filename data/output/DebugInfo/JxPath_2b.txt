@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: org.apache.commons.jxpath.ri.compiler.ExtensionFunctionTest::testNodeSetReturn ===
+Exception: junit.framework.AssertionFailedError: Evaluating value iterator <test:nodeSet()/name> expected:<[Name 1, Name 2]> but was:<[Name 2]>
+
+org.apache.commons.jxpath.ri.compiler.Expression:iterate:72->[Local Variables] "{context\u003dExpression context [0] /}"
+org.apache.commons.jxpath.ri.compiler.Expression:iterate:73->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.Expression.iterate:73 -> org.apache.commons.jxpath.ri.compiler.Expression.compute
+org.apache.commons.jxpath.ri.compiler.Expression:iterate:73->[Local Variables] "{result\u003dExpression context [1] /beans[1]/name}"
+org.apache.commons.jxpath.ri.compiler.Expression:iterate:74->[Control Flow] Branch Info: Line: 74, Condition: if (result != 0), Executed: true
+org.apache.commons.jxpath.ri.compiler.Expression:iterate:75->[Method Call] Call Stack: org.apache.commons.jxpath.ri.compiler.Expression.iterate:75 -> org.apache.commons.jxpath.ri.compiler.Expression$ValueIterator.<init>

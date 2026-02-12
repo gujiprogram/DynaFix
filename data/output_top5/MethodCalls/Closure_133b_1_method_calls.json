@@ -1,0 +1,62 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.parsing.Annotation.ordinal",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.createJSTypeExpression",
+    "doc": "/**\n   * Constructs a new {@code JSTypeExpression}.\n   * @param n A node. May be null.\n   */",
+    "code": "JSTypeExpression createJSTypeExpression(Node n) {\n    return n == null ? null :\n        new JSTypeExpression(n, getSourceName());\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.extractMultilineTextualBlock",
+    "doc": "/**\n   * Extracts the text found on the current line starting at token. Note that\n   * token = token.info; should be called after this method is used to update\n   * the token properly in the parser.\n   *\n   * @return The extraction information.\n   */",
+    "code": "private ExtractionInfo extractMultilineTextualBlock(JsDocToken token) {\n    return extractMultilineTextualBlock(token, WhitespaceOption.SINGLE_LINE);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.lookAheadForTypeAnnotation",
+    "doc": "/**\n   * Look ahead for a type annotation by advancing the character stream.\n   * Does not modify the token stream.\n   * This is kind of a hack, and is only necessary because we use the token\n   * stream to parse types, but need the underlying character stream to get\n   * JsDoc descriptions.\n   * @return Whether we found a type annotation.\n   */",
+    "code": "private boolean lookAheadForTypeAnnotation() {\n    boolean matchedLc = false;\n    int c;\n    while (true) {\n      c = stream.getChar();\n      if (c == ' ') {\n        continue;\n      } else if (c == '{') {\n        matchedLc = true;\n        break;\n      } else {\n        break;\n      }\n    }\n    stream.ungetChar(c);\n    return matchedLc;\n  }\n}"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.newNode",
+    "doc": "/**\n   * TypeExpression := BasicTypeExpression\n   *     | '?' BasicTypeExpression\n   *     | '!' BasicTypeExpression\n   *     | BasicTypeExpression '?'\n   *     | BasicTypeExpression '!'\n   *     | '?'\n   */",
+    "code": "return newNode(Token.QMARK);\n      }\n\n      return wrapNode(Token.QMARK, parseBasicTypeExpression(token));\n    } else if (token == JsDocToken.BANG) {\n      return wrapNode(Token.BANG, parseBasicTypeExpression(next()));\n    } else {\n      Node basicTypeExpr = parseBasicTypeExpression(token);\n      if (basicTypeExpr != null) {"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.next",
+    "doc": "/**\n   * Gets the next token of the token stream or the buffered token if a matching\n   * was previously made.\n   */",
+    "code": "private JsDocToken next() {\n    if (unreadToken == NO_UNREAD_TOKEN) {\n      return stream.getJsDocToken();\n    } else {\n      return current();\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.parseAndRecordTypeNode",
+    "doc": "/**\n   * Looks for a type expression at the current token and if found,\n   * returns it. Note that this method consumes input.\n   *\n   * @param token The current token.\n   * @return The type expression found or null if none.\n   */",
+    "code": "Node parseAndRecordTypeNode(JsDocToken token) {\n    return parseAndRecordTypeNode(token, token == JsDocToken.LC);\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocInfoParser.skipEOLs",
+    "doc": "/**\n   * Skips all EOLs and all empty lines in the JSDoc. Call this method if you\n   * want the JSDoc entry to span multiple lines.\n   */",
+    "code": "private void skipEOLs() {\n    while (match(JsDocToken.EOL)) {\n      next();\n      if (match(JsDocToken.STAR)) {\n        next();\n      }\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getCharno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getCharno() {\n    return lineno == initLineno? initCharno + charno : charno;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.parsing.JsDocTokenStream.getLineno",
+    "doc": "/**\n   * Gets the remaining JSDoc line without the {@link JsDocToken#EOL},\n   * {@link JsDocToken#EOF} or {@link JsDocToken#EOC}.\n   */",
+    "code": "final int getLineno() { return lineno; }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.recordReturnType",
+    "doc": "/**\n   * Records a return type.\n   *\n   * @return {@code true} if the return type was recorded and {@code false} if\n   *     it is invalid or was already defined\n   */",
+    "code": "public boolean recordReturnType(JSTypeExpression jsType) {\n    if (jsType != null && currentInfo.getReturnType() == null &&\n        !hasAnySingletonTypeTags()) {\n      currentInfo.setReturnType(jsType);\n      populated = true;\n      return true;\n    } else {\n      return false;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.JSDocInfoBuilder.shouldParseDocumentation",
+    "doc": "/**\n   * Sets the original JSDoc comment string. This is a no-op if the builder\n   * isn't configured to record documentation.\n   */",
+    "code": "public boolean shouldParseDocumentation() {\n    return parseDocumentation;\n  }"
+  }
+]

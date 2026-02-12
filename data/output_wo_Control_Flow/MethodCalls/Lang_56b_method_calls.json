@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang.time.FastDateFormat.init",
+    "doc": "/**\n     * <p>Initializes the instance for first use.</p>\n     */",
+    "code": "protected void init() {\n        List rulesList = parsePattern();\n        mRules = (Rule[]) rulesList.toArray(new Rule[rulesList.size()]);\n\n        int len = 0;\n        for (int i=mRules.length; --i >= 0; ) {\n            len += mRules[i].estimateLength();\n        }\n\n        mMaxLengthEstimate = len;\n    }"
+  }
+]

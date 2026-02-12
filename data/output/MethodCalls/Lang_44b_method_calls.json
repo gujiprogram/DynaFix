@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang.NumberUtils.isAllZeros",
+    "doc": "/**\n     * <p>Utility method for {@link #createNumber(java.lang.String)}.</p>\n     *\n     * <p>Returns <code>true</code> if s is <code>null</code>.</p>\n     *\n     * @param s the String to check\n     * @return if it is all zeros or <code>null</code>\n     */",
+    "code": "private static boolean isAllZeros(String s) {\n        if (s == null) {\n            return true;\n        }\n        for (int i = s.length() - 1; i >= 0; i--) {\n            if (s.charAt(i) != '0') {\n                return false;\n            }\n        }\n        return s.length() > 0;\n    }"
+  }
+]

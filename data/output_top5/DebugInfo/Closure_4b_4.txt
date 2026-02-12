@@ -1,0 +1,45 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsExtendsLoop ===
+Exception: junit.framework.AssertionFailedError: unexpected warning(s) : JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 2 : 29, JSC_IMPLEMENTS_NON_INTERFACE. can only implement interfaces at [testcode] line 3 : 26 expected:<1> but was:<2>
+
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:188->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@2db33feb, enclosing\u003dcom.google.javascript.jscomp.Scope@109f8c7e}"
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:189 -> com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Local Variables] {"resolved":true}
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:190 -> com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Control Flow] Branch Info: Line: 190, Condition: if (com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle() != 0), Executed: false
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:194->[Control Flow] Branch Info: Line: 194, Condition: if (resolved != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:195->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:195 -> com.google.javascript.rhino.jstype.ProxyObjectType.resolveInternal
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:196->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:196 -> com.google.javascript.rhino.jstype.NamedType.finishPropertyContinuations
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:197 -> com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration() != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:198->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:198 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testImplementsLoop ===
+Exception: junit.framework.AssertionFailedError: expected:<[Parse error. Cycle detected in inheritance chain of type T]> but was:<[can only implement interfaces]>
+
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:188->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@70f68288, enclosing\u003dcom.google.javascript.jscomp.Scope@5ebffb44}"
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:189 -> com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Local Variables] {"resolved":true}
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:190 -> com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Control Flow] Branch Info: Line: 190, Condition: if (com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle() != 0), Executed: false
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:194->[Control Flow] Branch Info: Line: 194, Condition: if (resolved != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:195->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:195 -> com.google.javascript.rhino.jstype.ProxyObjectType.resolveInternal
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:196->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:196 -> com.google.javascript.rhino.jstype.NamedType.finishPropertyContinuations
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:197 -> com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration() != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:198->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:198 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testConversionFromInterfaceToRecursiveConstructor ===
+Exception: java.lang.StackOverflowError
+
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:188->[Local Variables] "{t\u003dcom.google.javascript.jscomp.RhinoErrorReporter$OldRhinoErrorReporter@2db33feb, enclosing\u003dcom.google.javascript.jscomp.Scope@234cff57}"
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:189 -> com.google.javascript.rhino.jstype.NamedType.resolveViaRegistry
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:189->[Local Variables] {"resolved":true}
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:190 -> com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:190->[Control Flow] Branch Info: Line: 190, Condition: if (com.google.javascript.rhino.jstype.NamedType.detectImplicitPrototypeCycle() != 0), Executed: false
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:194->[Control Flow] Branch Info: Line: 194, Condition: if (resolved != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:195->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:195 -> com.google.javascript.rhino.jstype.ProxyObjectType.resolveInternal
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:196->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:196 -> com.google.javascript.rhino.jstype.NamedType.finishPropertyContinuations
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:197 -> com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:197->[Control Flow] Branch Info: Line: 197, Condition: if (com.google.javascript.rhino.jstype.JSTypeRegistry.isLastGeneration() != 0), Executed: true
+com.google.javascript.rhino.jstype.NamedType:resolveInternal:198->[Method Call] Call Stack: com.google.javascript.rhino.jstype.NamedType.resolveInternal:198 -> com.google.javascript.rhino.jstype.NamedType.getReferencedType

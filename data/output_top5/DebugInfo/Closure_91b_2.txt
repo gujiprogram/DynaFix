@@ -1,0 +1,9 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.CheckGlobalThisTest::testLendsAnnotation3 ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_USED_GLOBAL_THIS. dangerous use of the global this object at testcode line 1 : 110 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:157->[Local Variables] "{parent\u003dGETPROP 1 [sourcename: testcode], n\u003dTHIS 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:158->[Control Flow] Branch Info: Line: 158, Condition: if (this.assignLhsChild != null), Executed: false
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:164->[Control Flow] Branch Info: Line: 164, Condition: if (parent != null), Executed: true
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:164->[Method Call] Call Stack: com.google.javascript.jscomp.CheckGlobalThis.shouldReportThis:164 -> com.google.javascript.jscomp.NodeUtil.isGet
+com.google.javascript.jscomp.CheckGlobalThis:shouldReportThis:164->[Control Flow] Branch Info: Line: 164, Condition: if (parent != 0), Executed: true

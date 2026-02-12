@@ -1,0 +1,22 @@
+[
+  {
+    "method": "[[Lorg.apache.commons.math3.geometry.euclidean.twod.Vector2D;.clone",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.euclidean.twod.PolygonsSet.followLoop",
+    "doc": "/** Follow a boundary loop.\n     * @param node node containing the segment starting the loop\n     * @param sorted set of segments belonging to the boundary, sorted by\n     * start points (contains {@code node})\n     * @return a list of connected sub-hyperplanes starting at\n     * {@code node}\n     */",
+    "code": "private List<ComparableSegment> followLoop(final AVLTree<ComparableSegment>.Node node,\n                                               final AVLTree<ComparableSegment> sorted) {\n\n        final ArrayList<ComparableSegment> loop = new ArrayList<ComparableSegment>();\n        ComparableSegment segment = node.getElement();\n        loop.add(segment);\n        final Vector2D globalStart = segment.getStart();\n        Vector2D end = segment.getEnd();\n        node.delete();\n\n        final boolean open = segment.getStart() == null;\n\n        while ((end != null) && (open || (globalStart.distance(end) > 1.0e-10))) {\n\n            AVLTree<ComparableSegment>.Node selectedNode = null;\n            ComparableSegment       selectedSegment  = null;\n            double                  selectedDistance = Double.POSITIVE_INFINITY;\n            final ComparableSegment lowerLeft        = new ComparableSegment(end, -1.0e-10, -1.0e-10);\n            final ComparableSegment upperRight       = new ComparableSegment(end, +1.0e-10, +1.0e-10);\n            for (AVLTree<ComparableSegment>.Node n = sorted.getNotSmaller(lowerLeft);\n                 (n != null) && (n.getElement().compareTo(upperRight) <= 0);\n                 n = n.getNext()) {\n                segment = n.getElement();\n                final double distance = end.distance(segment.getStart());\n                if (distance < selectedDistance) {\n                    selectedNode     = n;\n                    selectedSegment  = segment;\n                    selectedDistance = distance;\n                }\n            }\n\n            if (selectedDistance > 1.0e-10) {\n                return null;\n            }\n\n            end = selectedSegment.getEnd();\n            loop.add(selectedSegment);\n            selectedNode.delete();\n\n        }\n\n        if ((loop.size() == 2) && !open) {\n            return null;\n        }\n\n        if ((end == null) && !open) {\n            throw new MathInternalError();\n        }\n\n        return loop;\n\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.partitioning.utilities.AVLTree.getSmallest",
+    "doc": "/** Get the node whose element is the smallest one in the tree.\n     * @return the tree node containing the smallest element in the tree\n     * or null if the tree is empty\n     * @see #getLargest\n     * @see #getNotSmaller\n     * @see #getNotLarger\n     * @see Node#getPrevious\n     * @see Node#getNext\n     */",
+    "code": "public Node getSmallest() {\n        return (top == null) ? null : top.getSmallest();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math3.geometry.partitioning.utilities.AVLTree.isEmpty",
+    "doc": "/** Check if the tree is empty.\n     * @return true if the tree is empty\n     */",
+    "code": "public boolean isEmpty() {\n        return top == null;\n    }"
+  }
+]

@@ -1,0 +1,29 @@
+
+=== Debug Info for Test: org.apache.commons.cli.HelpFormatterTest::testIndentedHeaderAndFooter ===
+Exception: junit.framework.ComparisonFailure: expected:<...e: foobar
+
+org.apache.commons.cli.HelpFormatter:printWrapped:727->[Local Variables] {"nextLineTabStop":7,"pw":{"out":{"buf":"","lock":""},"autoFlush":false,"trouble":false,"lock":{"buf":"","lock":""}},"width":80,"text":"usage: foobar "}
+org.apache.commons.cli.HelpFormatter:printWrapped:728->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:728 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:printWrapped:729->[Local Variables] {"sb":""}
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:730 -> org.apache.commons.cli.HelpFormatter.renderWrappedText
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Local Variables] {"sb":"usage: foobar"}
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.io.PrintWriter.println
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Local Variables] {"pw":{"out":{"buf":"usage: foobar\n","lock":"usage: foobar\n"},"autoFlush":false,"trouble":false,"lock":{"buf":"usage: foobar\n","lock":"usage: foobar\n"}}}
+org.apache.commons.cli.HelpFormatter:printWrapped:714->[Local Variables] {"text":"  Header1\n  Header2"}
+org.apache.commons.cli.HelpFormatter:printWrapped:727->[Local Variables] {"nextLineTabStop":0}
+org.apache.commons.cli.HelpFormatter:printWrapped:728->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:728 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:printWrapped:729->[Local Variables] {"sb":""}
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:730 -> org.apache.commons.cli.HelpFormatter.renderWrappedText
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Local Variables] {"sb":"  Header1\nHeader2"}
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.io.PrintWriter.println
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Local Variables] {"pw":{"out":{"buf":"usage: foobar\n  Header1\nHeader2\n","lock":"usage: foobar\n  Header1\nHeader2\n"},"autoFlush":false,"trouble":false,"lock":{"buf":"usage: foobar\n  Header1\nHeader2\n","lock":"usage: foobar\n  Header1\nHeader2\n"}}}
+org.apache.commons.cli.HelpFormatter:printWrapped:714->[Local Variables] {"pw":{"out":{"buf":"usage: foobar\n  Header1\nHeader2\n\n","lock":"usage: foobar\n  Header1\nHeader2\n\n"},"autoFlush":false,"trouble":false,"lock":{"buf":"usage: foobar\n  Header1\nHeader2\n\n","lock":"usage: foobar\n  Header1\nHeader2\n\n"}},"text":"  Footer1\n  Footer2"}
+org.apache.commons.cli.HelpFormatter:printWrapped:728->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:728 -> java.lang.String.length
+org.apache.commons.cli.HelpFormatter:printWrapped:729->[Local Variables] {"sb":""}
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:730 -> org.apache.commons.cli.HelpFormatter.renderWrappedText
+org.apache.commons.cli.HelpFormatter:printWrapped:730->[Local Variables] {"sb":"  Footer1\nFooter2"}
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.lang.StringBuffer.toString
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Method Call] Call Stack: org.apache.commons.cli.HelpFormatter.printWrapped:731 -> java.io.PrintWriter.println
+org.apache.commons.cli.HelpFormatter:printWrapped:731->[Local Variables] {"pw":{"out":{"buf":"usage: foobar\n  Header1\nHeader2\n\n  Footer1\nFooter2\n","lock":"usage: foobar\n  Header1\nHeader2\n\n  Footer1\nFooter2\n"},"autoFlush":false,"trouble":false,"lock":{"buf":"usage: foobar\n  Header1\nHeader2\n\n  Footer1\nFooter2\n","lock":"usage: foobar\n  Header1\nHeader2\n\n  Footer1\nFooter2\n"}}}

@@ -1,0 +1,16 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeFoldConstantsTest::testFoldGetElem ===
+Exception: junit.framework.AssertionFailedError: Unexpected error(s): JSC_INDEX_OUT_OF_BOUNDS_ERROR. Array index out of bounds: NUMBER 0.0 1 [source_file: testcode] at testcode line 1 : 10 expected:<0> but was:<1>
+
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1409->[Local Variables] "{n\u003dGETELEM 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1410->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget:1410 -> com.google.javascript.rhino.Node.getParent
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1410->[Local Variables] "{parent\u003dASSIGN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1411->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget:1411 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (parent != 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1411->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget:1411 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (unknown_condition_165), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1411->[Control Flow] Branch Info: Line: 1411, Condition: if (parent != 0), Executed: false
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1412->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget:1412 -> com.google.javascript.rhino.Node.isInc
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1412->[Control Flow] Branch Info: Line: 1412, Condition: if (com.google.javascript.rhino.Node.isInc() == 0), Executed: true
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1413->[Method Call] Call Stack: com.google.javascript.jscomp.PeepholeFoldConstants.isAssignmentTarget:1413 -> com.google.javascript.rhino.Node.isDec
+com.google.javascript.jscomp.PeepholeFoldConstants:isAssignmentTarget:1413->[Control Flow] Branch Info: Line: 1413, Condition: if (com.google.javascript.rhino.Node.isDec() != 0), Executed: false

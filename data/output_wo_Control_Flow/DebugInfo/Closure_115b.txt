@@ -1,0 +1,121 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818 ===
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{fnParam\u003dNAME self$$1 9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:690->[Local Variables] "{callNode\u003dCALL 15 [free_call: 1] [source_file: testcode], fnNode\u003dFUNCTION  9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:691->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:691 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:695->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:695 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:696->[Local Variables] "{block\u003dBLOCK 9 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:697->[Local Variables] {"hasSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:698->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:698 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:700 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Local Variables] "{stmt\u003dRETURN 10 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:705->[Local Variables] {"hasSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Local Variables] "{cArg\u003dNAME self$$2 15 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.isName
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testDoubleInlining1 ===
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.isName
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:691->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:691 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:695->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:695 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:697->[Local Variables] {"hasSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:698->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:698 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:700 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:705->[Local Variables] {"hasSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified8 ===
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{fnParam\u003dNAME a 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:690->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode], fnNode\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:691->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:691 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:695->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:695 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:696->[Local Variables] "{block\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:697->[Local Variables] {"hasSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:698->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:698 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:700 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Local Variables] "{stmt\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:705->[Local Variables] {"hasSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Local Variables] "{cArg\u003dNAME o 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.isName
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testNoInlineIfParametersModified9 ===
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{fnParam\u003dNAME a 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:690->[Local Variables] "{callNode\u003dCALL 1 [free_call: 1] [source_file: testcode], fnNode\u003dFUNCTION f 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:691->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:691 -> com.google.javascript.jscomp.FunctionInjector.isDirectCallNodeReplacementPossible
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:695->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:695 -> com.google.javascript.rhino.Node.getLastChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:696->[Local Variables] "{block\u003dBLOCK 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:697->[Local Variables] {"hasSideEffects":false}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:698->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:698 -> com.google.javascript.rhino.Node.hasChildren
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.javascript.rhino.Node.hasOneChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:699->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:699 -> com.google.common.base.Preconditions.checkState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:700 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:700->[Local Variables] "{stmt\u003dRETURN 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:701->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:701 -> com.google.javascript.rhino.Node.isReturn
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:702->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:702 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:705->[Local Variables] {"hasSideEffects":true}
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:706->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:706 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:710->[Local Variables] "{cArg\u003dNAME o 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:711->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:711 -> com.google.javascript.rhino.Node.isName
+
+=== Debug Info for Test: com.google.javascript.jscomp.InlineFunctionsTest::testInlineFunctions6 ===
+
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:736 -> com.google.javascript.jscomp.NodeUtil.mayEffectMutableState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:744->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:744 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Local Variables] "{fnParam\u003dNAME z 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:750->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:750 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:753->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:753 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{cArg\u003dNAME baz 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.jscomp.NodeUtil.getFunctionParameters
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:725 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{fnParam\u003dNAME x 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:730->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:730 -> com.google.javascript.jscomp.NodeUtil.canBeSideEffected
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:736->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:736 -> com.google.javascript.jscomp.NodeUtil.mayEffectMutableState
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:744->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:744 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:748->[Local Variables] "{fnParam\u003dNAME y 1 [source_file: testcode]}"
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:750->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:750 -> com.google.javascript.jscomp.NodeUtil.mayHaveSideEffects
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:753->[Method Call] Call Stack: com.google.javascript.jscomp.FunctionInjector.canInlineReferenceDirectly:753 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FunctionInjector:canInlineReferenceDirectly:725->[Local Variables] "{cArg\u003dNUMBER 2.0 1 [source_file: testcode]}"

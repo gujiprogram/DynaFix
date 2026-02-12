@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.NameAnalyzer.isExternallyReferenceable",
+    "doc": "/**\n   * Checks whether a name can be referenced outside of the compiled code.\n   * These names will be the root of dependency trees.\n   *\n   * @param scope The current variable scope\n   * @param name The name\n   * @return True if can be referenced outside\n   */",
+    "code": "private boolean isExternallyReferenceable(Scope scope, String name) {\n    if (compiler.getCodingConvention().isExported(name)) {\n      return true;\n    }\n    if (scope.isLocal()) {\n      return false;\n    }\n    for (String s : globalNames) {\n      if (name.startsWith(s)) {\n        return true;\n      }\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeTraversal.getScope",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isGet",
+    "doc": "/**\n   * Is this a GETPROP or GETELEM node?\n   */",
+    "code": "static boolean isGet(Node n) {\n    return n.isGetProp() || n.isGetElem();\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.NodeUtil.isObjectLitKey",
+    "doc": "/**\n   * Determines whether a node represents an object literal key\n   * (e.g. key1 in {key1: value1, key2: value2}).\n   *\n   * @param node A node\n   */",
+    "code": "static boolean isObjectLitKey(Node node) {\n    switch (node.getType()) {\n      case Token.STRING_KEY:\n      case Token.GETTER_DEF:\n      case Token.SETTER_DEF:\n        return true;\n    }\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope$Var.isGlobal",
+    "doc": "[Source file not found]",
+    "code": ""
+  },
+  {
+    "method": "com.google.javascript.jscomp.Scope.getVar",
+    "doc": "/**\n   * Undeclares a variable, to be used when the compiler optimizes out\n   * a variable and removes it from the scope.\n   */",
+    "code": "return getVar(name);\n  }\n\n  @Override\n  public Var getOwnSlot(String name) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getParent",
+    "doc": "/**\n   * @see Node#siblings()\n   */",
+    "code": "public Node getParent() {\n    return parent;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getString",
+    "doc": "/**\n     * returns the string content.\n     * @return non null.\n     */",
+    "code": "public String getString() {\n      return this.str;\n    }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "int getType();\n    PropListItem getNext();"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isCall",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.isGetProp",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

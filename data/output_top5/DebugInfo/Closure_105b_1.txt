@@ -1,0 +1,56 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.FoldConstantsTest::testStringJoinAdd ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1506->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1506 -> java.util.List.size
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1508->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1508 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1508->[Local Variables] {"originalSize":15}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1509->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1509 -> java.util.List.size
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1516->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1516 -> java.util.List.remove
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1516->[Local Variables] "{arrayFoldedChildren\u003d[], foldedStringNode\u003dNAME foo 1}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1517->[Control Flow] Branch Info: Line: 1517, Condition: if (originalSize > originalSize), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1520->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1520 -> com.google.javascript.rhino.Node.detachChildren
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1520->[Local Variables] {"foldedStringNode":{"str":"foo","type":38,"sourcePosition":4105}}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1521->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1521 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1521->[Control Flow] Branch Info: Line: 1521, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1525->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1525 -> com.google.javascript.rhino.Node.newString
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1525->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1525 -> com.google.javascript.rhino.Node.<init>
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1525->[Local Variables] "{foldedStringNode\u003dNAME foo 1, replacement\u003dADD}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1521->[Control Flow] Branch Info: Line: 1521, Condition: if (com.google.javascript.rhino.Node.getType() != com.google.javascript.rhino.Node.getType()), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1527->[Local Variables] "{foldedStringNode\u003dADD}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1528->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1528 -> com.google.javascript.rhino.Node.replaceChild
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1528->[Local Variables] "{foldedStringNode\u003dADD 1}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1543->[Control Flow] Branch Info: Line: 1543, Condition: if (var17 != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1548->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1548 -> com.google.javascript.jscomp.NodeTraversal.getCompiler
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1548->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1548 -> com.google.javascript.jscomp.Compiler.reportCodeChange
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1475->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1475 -> com.google.javascript.jscomp.NodeUtil.getStringValue
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1475->[Local Variables] {"joinString":","}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1476->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1476 -> com.google.common.collect.Lists.newLinkedList
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1477->[Local Variables] {"sb":""}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1478->[Local Variables] {"foldedSize":0}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1479->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1479 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1480->[Local Variables] "{elem\u003dSTRING  1}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1481->[Control Flow] Branch Info: Line: 1481, Condition: if (elem != null), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1482->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1482 -> com.google.javascript.jscomp.NodeUtil.isImmutableValue
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1482->[Control Flow] Branch Info: Line: 1482, Condition: if (elem != 0), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1483->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1483 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1483->[Control Flow] Branch Info: Line: 1483, Condition: if (java.lang.StringBuilder.length() > 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1486->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1486 -> com.google.javascript.jscomp.NodeUtil.getStringValue
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1486->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1486 -> java.lang.StringBuilder.append
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1497->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1497 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1479->[Control Flow] Loop Info: Line: 1479, Description: while at line 1479
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1480->[Local Variables] "{elem\u003dNAME foo 1}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1481->[Control Flow] Branch Info: Line: 1481, Condition: if (elem != null), Executed: true
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1482->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1482 -> com.google.javascript.jscomp.NodeUtil.isImmutableValue
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1482->[Control Flow] Branch Info: Line: 1482, Condition: if (elem != 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1488->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1488 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1488->[Control Flow] Branch Info: Line: 1488, Condition: if (java.lang.StringBuilder.length() > 0), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1494->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1494 -> com.google.javascript.jscomp.InlineCostEstimator.getCost
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1494->[Local Variables] {"foldedSize":2}
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1495->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1495 -> java.util.List.add
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1496->[Local Variables] "{arrayFoldedChildren\u003d[NAME foo 1]}"
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1497->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1497 -> com.google.javascript.rhino.Node.getNext
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1479->[Control Flow] Loop Info: Line: 1479, Description: while at line 1479
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1481->[Control Flow] Branch Info: Line: 1481, Condition: if (elem != null), Executed: false
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1500->[Method Call] Call Stack: com.google.javascript.jscomp.FoldConstants.tryFoldStringJoin:1500 -> java.lang.StringBuilder.length
+com.google.javascript.jscomp.FoldConstants:tryFoldStringJoin:1500->[Control Flow] Branch Info: Line: 1500, Condition: if (java.lang.StringBuilder.length() > 0), Executed: false

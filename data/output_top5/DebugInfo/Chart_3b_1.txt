@@ -1,0 +1,33 @@
+
+=== Debug Info for Test: org.jfree.data.time.junit.TimeSeriesTests::testCreateCopy3 ===
+Exception: junit.framework.AssertionFailedError: expected:<101.0> but was:<102.0>
+
+org.jfree.data.time.TimeSeries:createCopy:1049->[Local Variables] {"start":0,"end":1}
+org.jfree.data.time.TimeSeries:createCopy:1050->[Control Flow] Branch Info: Line: 1050, Condition: if (start < 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1053->[Control Flow] Branch Info: Line: 1053, Condition: if (start < start), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1056->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1056 -> org.jfree.data.general.Series.clone
+org.jfree.data.time.TimeSeries:createCopy:1056->[Local Variables] "{copy\u003dorg.jfree.data.time.TimeSeries@5152f042}"
+org.jfree.data.time.TimeSeries:createCopy:1057->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1057 -> java.util.ArrayList.<init>
+org.jfree.data.time.TimeSeries:createCopy:1057->[Local Variables] "{copy\u003dorg.jfree.data.time.TimeSeries@efb8c0be}"
+org.jfree.data.time.TimeSeries:createCopy:1058->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1058 -> java.util.List.size
+org.jfree.data.time.TimeSeries:createCopy:1058->[Control Flow] Branch Info: Line: 1058, Condition: if (this.data > 0), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (end <= end), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1059->[Local Variables] {"index":0}
+org.jfree.data.time.TimeSeries:createCopy:1061->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1061 -> java.util.List.get
+org.jfree.data.time.TimeSeries:createCopy:1061->[Local Variables] {"item":{"period":{"year":2009,"firstMillisecond":1230796800000,"lastMillisecond":1262332799999},"value":100.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1062->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1062 -> org.jfree.data.time.TimeSeriesDataItem.clone
+org.jfree.data.time.TimeSeries:createCopy:1063->[Local Variables] {"clone":{"period":{"year":2009,"firstMillisecond":1230796800000,"lastMillisecond":1262332799999},"value":100.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1064->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1064 -> org.jfree.data.time.TimeSeries.add
+org.jfree.data.time.TimeSeries:createCopy:1067->[Local Variables] "{copy\u003dorg.jfree.data.time.TimeSeries@37d699f5}"
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Loop Info: Line: 1059, Description: while at line 1059
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (end <= end), Executed: true
+org.jfree.data.time.TimeSeries:createCopy:1059->[Local Variables] {"index":1}
+org.jfree.data.time.TimeSeries:createCopy:1061->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1061 -> java.util.List.get
+org.jfree.data.time.TimeSeries:createCopy:1061->[Local Variables] {"item":{"period":{"year":2010,"firstMillisecond":1262332800000,"lastMillisecond":1293868799999},"value":101.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1062->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1062 -> org.jfree.data.time.TimeSeriesDataItem.clone
+org.jfree.data.time.TimeSeries:createCopy:1063->[Local Variables] {"clone":{"period":{"year":2010,"firstMillisecond":1262332800000,"lastMillisecond":1293868799999},"value":101.0,"selected":false}}
+org.jfree.data.time.TimeSeries:createCopy:1064->[Method Call] Call Stack: org.jfree.data.time.TimeSeries.createCopy:1064 -> org.jfree.data.time.TimeSeries.add
+org.jfree.data.time.TimeSeries:createCopy:1067->[Local Variables] "{copy\u003dorg.jfree.data.time.TimeSeries@81a93a29}"
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Loop Info: Line: 1059, Description: while at line 1059
+org.jfree.data.time.TimeSeries:createCopy:1058->[Control Flow] Branch Info: Line: 1058, Condition: if (this.data > 0), Executed: false
+org.jfree.data.time.TimeSeries:createCopy:1059->[Control Flow] Branch Info: Line: 1059, Condition: if (end <= end), Executed: false

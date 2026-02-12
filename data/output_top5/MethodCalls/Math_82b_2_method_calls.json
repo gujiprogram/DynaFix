@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getEntry",
+    "doc": "/** Get an entry of the tableau.\n     * @param row row index\n     * @param column column index\n     * @return entry at (row, column)\n     */",
+    "code": "protected final double getEntry(final int row, final int column) {\n        return tableau.getEntry(row, column);\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.optimization.linear.SimplexTableau.getWidth",
+    "doc": "/**\n     * Get the width of the tableau.\n     * @return width of the tableau\n     */",
+    "code": "protected final int getWidth() {\n        return tableau.getColumnDimension();\n    }"
+  },
+  {
+    "method": "org.apache.commons.math.util.MathUtils.compareTo",
+    "doc": "/**\n     * Compares two numbers given some amount of allowed error.\n     *\n     * @param x the first number\n     * @param y the second number\n     * @param eps the amount of error to allow when checking for equality\n     * @return <ul><li>0 if  {@link #equals(double, double, double) equals(x, y, eps)}</li>\n     *       <li>&lt; 0 if !{@link #equals(double, double, double) equals(x, y, eps)} &amp;&amp; x &lt; y</li>\n     *       <li>> 0 if !{@link #equals(double, double, double) equals(x, y, eps)} &amp;&amp; x > y</li></ul>\n     */",
+    "code": "public static int compareTo(double x, double y, double eps) {\n        if (equals(x, y, eps)) {\n            return 0;\n        } else if (x < y) {\n          return -1;\n        }\n        return 1;\n    }"
+  }
+]

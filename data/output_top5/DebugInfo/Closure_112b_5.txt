@@ -1,0 +1,71 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testIssue1058 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1129->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1129 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1132->[Local Variables] "{resolvedTypes\u003d{CLASS\u003d(number|string)}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1133 -> com.google.javascript.rhino.Node.isVarArgs
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Control Flow] Branch Info: Line: 1133, Condition: if (com.google.javascript.rhino.Node.isVarArgs() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1134->[Control Flow] Branch Info: Line: 1134, Condition: if (callParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Loop Info: Line: 1127, Description: while at line 1127
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1132->[Local Variables] "{callParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@3ddb774f, declParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@2582b0ef, declParam\u003dNAME  : function (CLASS): CLASS}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1133 -> com.google.javascript.rhino.Node.isVarArgs
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Control Flow] Branch Info: Line: 1133, Condition: if (com.google.javascript.rhino.Node.isVarArgs() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1134->[Control Flow] Branch Info: Line: 1134, Condition: if (callParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Loop Info: Line: 1127, Description: while at line 1127
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1118->[Local Variables] "{callParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@3ddb774f, declParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@2582b0ef, resolvedTypes\u003d{}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1128 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Local Variables] "{declParam\u003dNAME  : function (CLASS): CLASS}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1130->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1130 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1129->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1129 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1118->[Local Variables] "{callParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@1da4b3f9, declParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@23cbbd07, resolvedTypes\u003d{CLASS\u003dstring}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1128 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Local Variables] "{declParam\u003dNAME  : CLASS}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1130->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1130 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> java.util.Iterator.next
+
+=== Debug Info for Test: com.google.javascript.jscomp.TypeCheckTest::testTemplatized11 ===
+Exception: junit.framework.AssertionFailedError: unexpected warnings(s):
+
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1118->[Local Variables] "{callParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@3408f695, declParams\u003dcom.google.javascript.rhino.Node$SiblingNodeIterable@2b6a0ea9, resolvedTypes\u003d{}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1120->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1120 -> java.lang.Iterable.iterator
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: true
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1128 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1128->[Local Variables] "{declParam\u003dNAME  : (K|T)}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1130->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1130 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> java.util.Iterator.next
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1131->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1131 -> com.google.javascript.jscomp.TypeInference.getJSType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1129->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1129 -> com.google.javascript.jscomp.TypeInference.maybeResolveTemplatedType
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1132->[Local Variables] "{resolvedTypes\u003d{T\u003dnumber, K\u003dnumber}}"
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1133 -> com.google.javascript.rhino.Node.isVarArgs
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1133->[Control Flow] Branch Info: Line: 1133, Condition: if (com.google.javascript.rhino.Node.isVarArgs() != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1134->[Control Flow] Branch Info: Line: 1134, Condition: if (callParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Loop Info: Line: 1127, Description: while at line 1127
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Method Call] Call Stack: com.google.javascript.jscomp.TypeInference.maybeResolveTemplateTypeFromNodes:1127 -> java.util.Iterator.hasNext
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (declParams != 0), Executed: false
+com.google.javascript.jscomp.TypeInference:maybeResolveTemplateTypeFromNodes:1127->[Control Flow] Branch Info: Line: 1127, Condition: if (callParams != 0), Executed: false

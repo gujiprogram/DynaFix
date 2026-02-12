@@ -1,0 +1,7 @@
+[
+  {
+    "method": "org.apache.commons.lang3.math.Fraction.greatestCommonDivisor",
+    "doc": "/**\n     * <p>Gets the greatest common divisor of the absolute value of\n     * two numbers, using the \"binary gcd\" method which avoids\n     * division and modulo operations.  See Knuth 4.5.2 algorithm B.\n     * This algorithm is due to Josef Stein (1961).</p>\n     *\n     * @param u  a non-zero number\n     * @param v  a non-zero number\n     * @return the greatest common divisor, never zero\n     */",
+    "code": "private static int greatestCommonDivisor(int u, int v) {\n        if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {\n            return 1;\n        }\n        if (u>0) { u=-u; } // make u negative\n        if (v>0) { v=-v; } // make v negative\n        int k=0;\n        while ((u&1)==0 && (v&1)==0 && k<31) { // while u and v are both even...\n            u/=2; v/=2; k++; // cast out twos.\n        }\n        if (k==31) {\n            throw new ArithmeticException(\"overflow: gcd is 2^31\");\n        }\n        do {\n            while ((t&1)==0) { // while t is even..\n                t/=2; // cast out twos\n            }\n            if (t>0) {\n                u = -t;\n            } else {\n                v = t;\n            }\n            t = (v - u)/2;\n        } while (t!=0);\n        return -u*(1<<k); // gcd is u*2^k\n    }"
+  }
+]

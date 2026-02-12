@@ -1,0 +1,12 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getAllImplementedInterfaces",
+    "doc": "/**\n   * Returns all interfaces implemented by a class or its superclass and any\n   * superclasses for any of those interfaces. If this is called before all\n   * types are resolved, it may return an incomplete set.\n   */",
+    "code": "public Iterable<ObjectType> getAllImplementedInterfaces() {\n    Set<ObjectType> interfaces = Sets.newLinkedHashSet();\n\n    for (ObjectType type : getImplementedInterfaces()) {\n      addRelatedInterfaces(type, interfaces);\n    }\n    return interfaces;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.FunctionType.getInstanceType",
+    "doc": "/**\n   * Gets the type of instance of this function.\n   * @throws IllegalStateException if this function is not a constructor\n   *         (see {@link #isConstructor()}).\n   */",
+    "code": "public ObjectType getInstanceType() {\n    Preconditions.checkState(hasInstanceType());\n    return typeOfThis.toObjectType();\n  }"
+  }
+]

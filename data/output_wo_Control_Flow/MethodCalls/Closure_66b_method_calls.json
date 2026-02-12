@@ -1,0 +1,37 @@
+[
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.checkNoTypeCheckSection",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.doPercentTypedAccounting",
+    "doc": "/**\n   * Counts the given node in the typed statistics.\n   * @param n a node that should be typed\n   */",
+    "code": "private void doPercentTypedAccounting(NodeTraversal t, Node n) {\n    JSType type = n.getJSType();\n    if (type == null) {\n      nullCount++;\n    } else if (type.isUnknownType()) {\n      if (reportUnknownTypes.isOn()) {\n        compiler.report(\n            t.makeError(n, reportUnknownTypes, UNKNOWN_EXPR_TYPE));\n      }\n      unknownCount++;\n    } else {\n      typedCount++;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.ensureTyped",
+    "doc": "/**\n   * Ensure that the given node has a type. If it does not have one,\n   * attach the UNKNOWN_TYPE.\n   */",
+    "code": "private void ensureTyped(NodeTraversal t, Node n) {\n    ensureTyped(t, n, getNativeType(UNKNOWN_TYPE));\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitAssign",
+    "doc": "/**\n   * Visits an assignment <code>lvalue = rvalue</code>. If the\n   * <code>lvalue</code> is a prototype modification, we change the schema\n   * of the object type it is referring to.\n   * @param t the traversal\n   * @param assign the assign node\n   * (<code>assign.getType() == Token.ASSIGN</code> is an implicit invariant)\n   */",
+    "code": "private void visitAssign(NodeTraversal t, Node assign) {\n    JSDocInfo info = assign.getJSDocInfo();\n    Node lvalue = assign.getFirstChild();\n    Node rvalue = assign.getLastChild();\n\n    if (lvalue.getType() == Token.GETPROP) {\n      Node object = lvalue.getFirstChild();\n      JSType objectJsType = getJSType(object);\n      String property = lvalue.getLastChild().getString();\n\n      if (object.getType() == Token.GETPROP) {\n        JSType jsType = getJSType(object.getFirstChild());\n        if (jsType.isInterface() &&\n            object.getLastChild().getString().equals(\"prototype\")) {\n          visitInterfaceGetprop(t, assign, object, property, lvalue, rvalue);\n        }\n      }\n\n      if (info != null && info.hasType()) {\n        visitAnnotatedAssignGetprop(t, assign,\n            info.getType().evaluate(t.getScope(), typeRegistry), object,\n            property, rvalue);\n        return;\n      }\n\n      if (info != null && info.hasEnumParameterType()) {\n        checkEnumInitializer(\n            t, rvalue, info.getEnumParameterType().evaluate(\n                t.getScope(), typeRegistry));\n        return;\n      }\n\n      if (property.equals(\"prototype\")) {\n        if (objectJsType instanceof FunctionType) {\n          FunctionType functionType = (FunctionType) objectJsType;\n          if (functionType.isConstructor()) {\n            JSType rvalueType = rvalue.getJSType();\n            validator.expectObject(t, rvalue, rvalueType,\n                OVERRIDING_PROTOTYPE_WITH_NON_OBJECT);\n          }\n        } else {\n        }\n        return;\n      }\n\n      if (object.getType() == Token.GETPROP) {\n        Node object2 = object.getFirstChild();\n        String property2 = NodeUtil.getStringValue(object.getLastChild());\n\n        if (\"prototype\".equals(property2)) {\n          JSType jsType = object2.getJSType();\n          if (jsType instanceof FunctionType) {\n            FunctionType functionType = (FunctionType) jsType;\n            if (functionType.isConstructor() || functionType.isInterface()) {\n              checkDeclaredPropertyInheritance(\n                  t, assign, functionType, property, info, getJSType(rvalue));\n            }\n          } else {\n          }\n          return;\n        }\n      }\n\n      ObjectType type = ObjectType.cast(\n          objectJsType.restrictByNotNullOrUndefined());\n      if (type != null) {\n        if (type.hasProperty(property) &&\n            !type.isPropertyTypeInferred(property) &&\n            !propertyIsImplicitCast(type, property)) {\n          validator.expectCanAssignToPropertyOf(\n              t, assign, getJSType(rvalue),\n              type.getPropertyType(property), object, property);\n        }\n        return;\n      }\n    } else if (lvalue.getType() == Token.NAME) {\n      JSType rvalueType = getJSType(assign.getLastChild());\n      Var var = t.getScope().getVar(lvalue.getString());\n      if (var != null) {\n        if (var.isTypeInferred()) {\n          return;\n        }\n      }\n    }\n\n    JSType leftType = getJSType(lvalue);\n    Node rightChild = assign.getLastChild();\n    JSType rightType = getJSType(rightChild);\n    if (validator.expectCanAssignTo(\n            t, assign, rightType, leftType, \"assignment\")) {\n      ensureTyped(t, assign, rightType);\n    } else {\n      ensureTyped(t, assign);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.jscomp.TypeCheck.visitObjLitKey",
+    "doc": "/**\n   * Visits an object literal field definition <code>key : value</code>.\n   *\n   * If the <code>lvalue</code> is a prototype modification, we change the\n   * schema of the object type it is referring to.\n   *\n   * @param t the traversal\n   * @param key the assign node\n   */",
+    "code": "private void visitObjLitKey(NodeTraversal t, Node key, Node objlit) {\n\n    Node rvalue = key.getFirstChild();\n    JSType rightType = NodeUtil.getObjectLitKeyTypeFromValueType(\n        key, getJSType(rvalue));\n    if (rightType == null) {\n      rightType = getNativeType(UNKNOWN_TYPE);\n    }\n\n    Node owner = objlit;\n\n\n    JSType keyType = getJSType(key);\n    boolean valid = validator.expectCanAssignToPropertyOf(t, key,\n        rightType, keyType,\n        owner, NodeUtil.getObjectLitKeyName(key));\n    if (valid) {\n      ensureTyped(t, key, rightType);\n    } else {\n      ensureTyped(t, key);\n    }\n\n\n    JSType objlitType = getJSType(objlit);\n    ObjectType type = ObjectType.cast(\n        objlitType.restrictByNotNullOrUndefined());\n    if (type != null) {\n      String property = NodeUtil.getObjectLitKeyName(key);\n      if (type.hasProperty(property) &&\n          !type.isPropertyTypeInferred(property) &&\n          !propertyIsImplicitCast(type, property)) {\n        validator.expectCanAssignToPropertyOf(\n            t, key, keyType,\n            type.getPropertyType(property), owner, property);\n      }\n      return;\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.children",
+    "doc": "/**\n   * <p>Return an iterable object that iterates over this nodes's children.\n   * The iterator does not support the optional operation\n   * {@link Iterator#remove()}.</p>\n   *\n   * <p>To iterate over a node's siblings, one can write</p>\n   * <pre>Node n = ...;\n   * for (Node child : n.children()) { ...</pre>\n   */",
+    "code": "public Iterable<Node> children() {\n    if (first == null) {\n      return Collections.emptySet();\n    } else {\n      return new SiblingNodeIterable(first);\n    }\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.Node.getType",
+    "doc": "/**\n     * This should only be called for STRING nodes created in object lits.\n     */",
+    "code": "public int getType() {\n    return type;\n  }"
+  }
+]

@@ -1,0 +1,129 @@
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall1 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{checkForNewObjects\u003dfalse, compiler\u003dcom.google.javascript.jscomp.Compiler@43982337, n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Local Variables] "{c\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testCall2 ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{checkForNewObjects\u003dfalse, compiler\u003dcom.google.javascript.jscomp.Compiler@43982337, n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Local Variables] "{c\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects
+
+=== Debug Info for Test: com.google.javascript.jscomp.PeepholeRemoveDeadCodeTest::testRemoveUselessOps ===
+Exception: junit.framework.AssertionFailedError:
+
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{checkForNewObjects\u003dfalse, compiler\u003dcom.google.javascript.jscomp.Compiler@52d6d273, n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Local Variables] "{c\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Control Flow] Branch Info: Line: 799, Condition: if (compiler == 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Control Flow] Branch Info: Line: 860, Condition: if (compiler != 0), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:860->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dSCRIPT 1 [sourcename: testcode] [synthetic: 1]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:807 -> com.google.javascript.jscomp.NodeUtil.isSimpleOperatorType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:807->[Control Flow] Branch Info: Line: 807, Condition: if (com.google.javascript.rhino.Node.getType() != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:811 -> com.google.javascript.jscomp.NodeUtil.isAssignmentOp
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:811->[Control Flow] Branch Info: Line: 811, Condition: if (n != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dEXPR_RESULT 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:766->[Control Flow] Branch Info: Line: 766, Condition: if (checkForNewObjects != 0), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:773->[Control Flow] Branch Info: Line: 773, Condition: if (com.google.javascript.rhino.Node.getFirstChild() != null), Executed: false
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:859 -> com.google.javascript.rhino.Node.getFirstChild
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:859->[Control Flow] Branch Info: Line: 859, Condition: if (c != null), Executed: true
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:726->[Local Variables] "{n\u003dCALL 1 [sourcename: testcode]}"
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:727->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:727 -> com.google.javascript.rhino.Node.getType
+com.google.javascript.jscomp.NodeUtil:checkForStateChangeHelper:799->[Method Call] Call Stack: com.google.javascript.jscomp.NodeUtil.checkForStateChangeHelper:799 -> com.google.javascript.jscomp.NodeUtil.functionCallHasSideEffects

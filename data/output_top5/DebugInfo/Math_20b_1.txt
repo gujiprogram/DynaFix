@@ -1,0 +1,47 @@
+
+=== Debug Info for Test: org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864 ===
+Exception: junit.framework.AssertionFailedError: Out of bounds (0.5717088425299153 > 0.5)
+
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.stopTolHistFun < 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:460->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:460 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.max
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:460->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:460 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.min
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:460->[Control Flow] Branch Info: Line: 460, Condition: if (this.diagD > 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:464->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:464 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getConvergenceChecker
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:464->[Control Flow] Branch Info: Line: 464, Condition: if (org.apache.commons.math3.optimization.direct.CMAESOptimizer.getConvergenceChecker() != null), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:466->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:466 -> org.apache.commons.math3.linear.RealMatrix.getColumn
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:467->[Control Flow] Branch Info: Line: 467, Condition: if (this.isMinimize != false), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:467->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:467 -> org.apache.commons.math3.optimization.PointValuePair.<init>
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:467->[Local Variables] {"current":{"key":[1.000000026360781],"value":0.25}}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:468->[Control Flow] Branch Info: Line: 468, Condition: if (lastResult != null), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:469->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:469 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.getConvergenceChecker
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:469->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:469 -> org.apache.commons.math3.optimization.ConvergenceChecker.converged
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:469->[Control Flow] Branch Info: Line: 469, Condition: if (lastResult != 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:368->[Control Flow] Branch Info: Line: 368, Condition: if (this.maxIterations <= this.maxIterations), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:421->[Control Flow] Branch Info: Line: 421, Condition: if (org.apache.commons.math3.optimization.direct.CMAESOptimizer.getConvergenceChecker() != null), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:421->[Control Flow] Branch Info: Line: 421, Condition: if (lastResult != null), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:422->[Control Flow] Branch Info: Line: 422, Condition: if (lastResult != 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:429->[Control Flow] Branch Info: Line: 429, Condition: if (this.stopFitness != false), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:430->[Control Flow] Branch Info: Line: 430, Condition: if (this.stopFitness < 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:434->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:434 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.sqrt
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:434->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:434 -> org.apache.commons.math3.linear.RealMatrix.getColumn
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:434->[Local Variables] {"sqrtDiagC":[0.3569342273004934]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:435->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:435 -> org.apache.commons.math3.linear.RealMatrix.getColumn
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:435->[Local Variables] {"pcCol":[-0.3183397303727323]}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:436->[Control Flow] Branch Info: Line: 436, Condition: if (this.dimension < this.dimension), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:437->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:437 -> java.lang.Math.abs
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:437->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:437 -> java.lang.Math.max
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:437->[Control Flow] Branch Info: Line: 437, Condition: if (this.stopTolX > 0), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:436->[Control Flow] Branch Info: Line: 436, Condition: if (this.dimension < this.dimension), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:444->[Control Flow] Branch Info: Line: 444, Condition: if (this.dimension < this.dimension), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:445->[Control Flow] Branch Info: Line: 445, Condition: if (this.stopTolUpX > 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:444->[Control Flow] Loop Info: Line: 444, Description: while at line 444
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:444->[Control Flow] Branch Info: Line: 444, Condition: if (this.dimension < this.dimension), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:449->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:449 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.min
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:449->[Local Variables] {"historyBest":0.25}
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:450->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:450 -> org.apache.commons.math3.optimization.direct.CMAESOptimizer.max
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:451->[Control Flow] Branch Info: Line: 451, Condition: if (this.iterations > this.iterations), Executed: true
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:451->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:451 -> java.lang.Math.max
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:452->[Method Call] Call Stack: org.apache.commons.math3.optimization.direct.CMAESOptimizer.doOptimize:452 -> java.lang.Math.min
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:451->[Control Flow] Branch Info: Line: 451, Condition: if (this.iterations > this.iterations), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:452->[Control Flow] Branch Info: Line: 452, Condition: if (this.stopTolFun < 0), Executed: false
+org.apache.commons.math3.optimization.direct.CMAESOptimizer:doOptimize:455->[Control Flow] Branch Info: Line: 455, Condition: if (this.fitnessHistory > this.fitnessHistory), Executed: false

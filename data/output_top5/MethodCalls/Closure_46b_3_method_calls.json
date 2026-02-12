@@ -1,0 +1,57 @@
+[
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isEquivalentTo",
+    "doc": "/**\n   * Checks if two types are equivalent.\n   */",
+    "code": "public boolean isEquivalentTo(JSType jsType) {\n    if (jsType instanceof ProxyObjectType) {\n      return jsType.isEquivalentTo(this);\n    }\n    return this == jsType;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isRecordType",
+    "doc": "/**\n   * Downcasts this to an EnumType, or returns null if this is not an EnumType.\n   */",
+    "code": "public boolean isRecordType() {\n    return toMaybeRecordType() != null;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isSubtypeHelper",
+    "doc": "/**\n   * Whether this type is meaningfully different from {@code that} type.\n   * This is a trickier check than pure equality, because it has to properly\n   * handle unknown types.\n   *\n   * @see <a href=\"http://www.youtube.com/watch?v=_RpSv3HjpEw\">Unknown\n   *     unknowns</a>\n   */",
+    "code": "return isSubtypeHelper(this, that);\n  }\n\n  public boolean differsFrom(JSType that) {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.isUnknownType",
+    "doc": "/**\n   * Tests whether the type is a number (value or Object).\n   * @return {@code this &lt;: (Number, number)}\n   */",
+    "code": "public boolean isUnknownType() {\n    return false;\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSType.toMaybeRecordType",
+    "doc": "/**\n   * Downcasts this to a RecordType, or returns null if this is not\n   * a RecordType.\n   */",
+    "code": "return toMaybeRecordType() != null;\n  }\n\n  RecordType toMaybeRecordType() {"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.JSTypeRegistry.getNativeObjectType",
+    "doc": "/**\n   * Looks up a type by name.\n   *\n   * @param jsTypeName The name string.\n   * @return the corresponding JSType object or {@code null} it cannot be found\n   */",
+    "code": "public ObjectType getNativeObjectType(JSTypeNative typeId) {\n    return (ObjectType) getNativeType(typeId);\n  }"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.getPropertyType",
+    "doc": "/**\n   * Gets the property type of the property whose name is given. If the\n   * underlying object does not have this property, the Unknown type is\n   * returned to indicate that no information is available on this property.\n   *\n   * @return the property's type or {@link UnknownType}. This method never\n   *         returns {@code null}.\n   */",
+    "code": "public abstract JSType getPropertyType(String propertyName);"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.hasProperty",
+    "doc": "/**\n   * Sets the docInfo for the specified property from the\n   * {@link JSDocInfo} on its definition.\n   * @param info {@code JSDocInfo} for the property definition. May be\n   *        {@code null}.\n   */",
+    "code": "return hasProperty(propertyName) ?\n        getPropertyType(propertyName) : null;"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isPropertyTypeDeclared",
+    "doc": "/**\n   * Checks whether the property's type is declared.\n   */",
+    "code": "public abstract boolean isPropertyTypeDeclared(String propertyName);"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.ObjectType.isSubtype",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  },
+  {
+    "method": "com.google.javascript.rhino.jstype.RecordType.getPropertyType",
+    "doc": "[No documentation]",
+    "code": "[No method body]"
+  }
+]

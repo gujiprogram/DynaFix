@@ -1,0 +1,17 @@
+[
+  {
+    "method": "org.jfree.data.DefaultKeyedValues.getIndex",
+    "doc": "/**\n     * Returns the index for a given key.\n     *\n     * @param key  the key (<code>null</code> not permitted).\n     *\n     * @return The index, or <code>-1</code> if the key is not recognised.\n     *\n     * @throws IllegalArgumentException if <code>key</code> is\n     *     <code>null</code>.\n     */",
+    "code": "public int getIndex(Comparable key) {\n        if (key == null) {\n            throw new IllegalArgumentException(\"Null 'key' argument.\");\n        }\n        final Integer i = (Integer) this.indexMap.get(key);\n        if (i == null) {\n            return -1;  // key not found\n        }\n        return i.intValue();\n    }"
+  },
+  {
+    "method": "org.jfree.data.DefaultKeyedValues.rebuildIndex",
+    "doc": "/**\n     * Rebuilds the key to indexed-position mapping after an positioned insert\n     * or a remove operation.\n     */",
+    "code": "private void rebuildIndex () {\n        this.indexMap.clear();\n        for (int i = 0; i < this.keys.size(); i++) {\n            final Object key = this.keys.get(i);\n            this.indexMap.put(key, new Integer(i));\n        }\n    }"
+  },
+  {
+    "method": "org.jfree.data.DefaultKeyedValues.removeValue",
+    "doc": "/**\n     * Removes a value from the collection.\n     *\n     * @param index  the index of the item to remove (in the range\n     *     <code>0</code> to <code>getItemCount() - 1</code>).\n     *\n     * @throws IndexOutOfBoundsException if <code>index</code> is not within\n     *     the specified range.\n     */",
+    "code": "public void removeValue(int index) {\n        this.keys.remove(index);\n        this.values.remove(index);\n        if (index < this.keys.size()) {\n        rebuildIndex();\n        }\n    }"
+  }
+]
