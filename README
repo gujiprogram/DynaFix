@@ -1,3 +1,13 @@
+DynaFix: A Dynamic Analysis-Enhanced LLM Framework for Automated Program Repair
+This repository contains the replication package for the paper submitted to TOSEM: "DynaFix: Enhancing LLM-based Program Repair with Dynamic Execution Traces".
+
+📖 Overview
+DynaFix is an automated program repair (APR) framework that leverages dynamic execution traces to guide Large Language Models (LLMs) in fixing software bugs. It integrates a lightweight Java agent (ByteTrace) to capture runtime variable values and method calls, providing LLMs with precise context for patch generation.
+
+📂 Project Structure
+(这里粘贴你刚才整理好的那段 File Structure)
+
+Plaintext
 .
 ├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
 │   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
@@ -18,3 +28,48 @@
 │   └── result/                 # Temporary logs for current repair sessions
 │
 └── Result/                     # 📊 Experimental Results (RQ1-RQ4)
+
+🛠️ Requirements
+To run DynaFix and reproduce the experiments, you need the following environment:
+
+Operating System: Linux (Ubuntu 20.04+ recommended) or macOS. (Note: Defects4J works best on Linux/macOS)
+
+Java: JDK 1.8 (Required for Defects4J and the target projects).
+
+Python: Python 3.8 or higher.
+
+Defects4J: Version 2.0. Please follow the official installation guide.
+
+API Keys: OpenAI API Key (for GPT-4o) or DeepSeek API Key.
+
+🚀 Installation
+Clone the repository:
+
+Bash
+git clone https://github.com/gujiprogram/DynaFix.git
+cd DynaFix
+Install Python dependencies:
+
+Bash
+pip install -r requirements.txt
+Configure Environment Variables:
+Create a .env file in the root directory and add your API keys:
+
+代码段
+OPENAI_API_KEY=sk-...
+DEEPSEEK_API_KEY=sk-...
+DEFECTS4J_HOME=/path/to/defects4j
+💻 Usage
+1. Instrumentation (ByteTrace)
+If you want to manually collect traces using ByteTrace:
+
+Bash
+# Example command to attach the agent
+java -javaagent:ByteTrace/ByteTrace.jar -cp ...
+(或者说明 DynaFix 会自动调用它，不需要手动运行)
+
+2. Running DynaFix (Automated Repair)
+To run the full repair pipeline on a specific bug (e.g., Chart-1):
+
+Bash
+python DynaFix/LLM_Fix.py --project Chart --bug_id 1 --model gpt-4o
