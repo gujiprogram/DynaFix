@@ -16,7 +16,6 @@ For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.2
 
 ## 📂 Project Structure
 
-```text
 .
 ├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
 │   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
