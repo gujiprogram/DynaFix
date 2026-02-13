@@ -1,27 +1,20 @@
 .
-├── DynaFix/                    # 🧠 Core Python Framework (The main approach)
-│   ├── DebugInfoFetch/         # Scripts for interacting with defects4j and collecting traces
-│   ├── LLM/                    # Interface for LLM interaction (GPT-4o, DeepSeek, etc.)
-│   ├── validator/              # Test execution and patch validation logic
-│   └── result/                 # Temporary storage for current repair session logs
+├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
+│   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
+│   └── ByteTrace.jar           # Pre-compiled Java Agent JAR file
 │
-├── ByteTrace/                  # 🕵️ Java Instrumentation Agent (ASM-based)
-│   ├── src/main/java/          # Source code for bytecode manipulation
-│   ├── src/main/kotlin/        # Kotlin utilities for logging runtime values
-│   └── build.gradle.kts        # Gradle build configuration
+├── data/                       # 💾 Datasets and Input/Output Data
+│   ├── input/                  # Buggy method locations (Fault Localization)
+│   ├── output/                 # Collected dynamic runtime information
+│   ├── SBFL/                   # Top-k suspicion lists from SBFL
+│   ├── Defects4J/              # Metadata for the standard Defects4J dataset
+│   └── Defects4J_trans/        # Metadata for the transformed Defects4J dataset
 │
-├── data/                       # 💾 Datasets and Intermediate Data
-│   ├── input/                  # Buggy method locations and metadata
-│   ├── output/                 # Collected runtime information (DebugInfo & MethodCalls)
-│   ├── Defects4J/              # Defects4J v1.2/v2.0 metadata
-│   └── Defects4J_trans/        # Transformed dataset for specific experiments
+├── DynaFix/                    # 🧠 Core Repair Framework (Python)
+│   ├── LLM_Fix.py              # 🚀 Main entry script for executing repair
+│   ├── DebugInfoFetch/         # Scripts for Defects4J interaction & trace collection
+│   ├── LLM/                    # Interfaces for LLM models (GPT-4o, DeepSeek)
+│   ├── validator/              # Logic for test execution and patch validation
+│   └── result/                 # Temporary logs for current repair sessions
 │
-├── Result/                     # 📊 Experimental Results (Paper Evaluation)
-│   ├── RQ1/                    # Effectiveness evaluation (vs. SBFL, etc.)
-│   ├── RQ2/                    # Comparison with SOTA (ReInFix, etc.)
-│   ├── RQ3/                    # Parameter sensitivity (Breadth vs. Depth)
-│   ├── RQ4/                    # Ablation study (Components impact)
-│   └── Baseline/               # Baseline model results
-│
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+└── Result/                     # 📊 Experimental Results (RQ1-RQ4)
