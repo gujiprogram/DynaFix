@@ -41,17 +41,15 @@ For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.2
 ```
 
 ## 🛠️ Requirements
-To run DynaFix and reproduce the experiments, you need the following environment:
 
-Operating System: Linux (Ubuntu 20.04+ recommended) or macOS. (Note: Defects4J works best on Linux/macOS)
+To run DynaFix and reproduce the experiments, we recommend the following environment (verified on Ubuntu 20.04):
 
-Java: JDK 1.8 (Required for Defects4J and the target projects).
-
-Python: Python 3.8 or higher.
-
-Defects4J: Version 2.0. Please follow the official installation guide.
-
-API Keys: OpenAI API Key (for GPT-4o) or DeepSeek API Key.
+* **Operating System:** Linux (Ubuntu 20.04 LTS recommended).
+* **Java:** OpenJDK 11 (Tested on `11.0.27`).
+    * *Note: While the DynaFix framework runs on Java 11, ensure Defects4J is properly configured to handle the target project compilation (often requiring JDK 1.8 compatibility).*
+* **Python:** Python 3.10 or higher.
+* **Defects4J:** Version 2.0. Please follow the [official installation guide](https://github.com/rjust/defects4j).
+* **API Keys:** OpenAI API Key (for GPT-4o) or DeepSeek API Key.
 
 ## 🚀 Installation
 Clone the repository:
