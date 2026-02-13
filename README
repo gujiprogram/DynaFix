@@ -1,13 +1,22 @@
-DynaFix: A Dynamic Analysis-Enhanced LLM Framework for Automated Program Repair
-This repository contains the replication package for the paper submitted to TOSEM: "DynaFix: Enhancing LLM-based Program Repair with Dynamic Execution Traces".
+# DynaFix: Iterative Automated Program Repair Driven by Execution-Level Dynamic Information
 
-📖 Overview
-DynaFix is an automated program repair (APR) framework that leverages dynamic execution traces to guide Large Language Models (LLMs) in fixing software bugs. It integrates a lightweight Java agent (ByteTrace) to capture runtime variable values and method calls, providing LLMs with precise context for patch generation.
+[![arXiv](https://img.shields.io/badge/arXiv-2512.24635-b31b1b.svg)](https://arxiv.org/abs/2512.24635)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 
-📂 Project Structure
-(这里粘贴你刚才整理好的那段 File Structure)
+This repository contains the **official implementation and replication package** for the paper: *"DynaFix: Iterative Automated Program Repair Driven by Execution-Level Dynamic Information"*.
 
-Plaintext
+## 📖 Overview
+
+Automated Program Repair (APR) has evolved significantly with Large Language Models (LLMs), yet existing methods often struggle due to their reliance on static code representations, which lack fine-grained execution feedback and are sensitive to syntactic variations. **DynaFix** addresses these limitations by integrating execution-level dynamic information directly into the iterative repair workflow. Utilizing a lightweight instrumentation tool named **ByteTrace**, DynaFix captures runtime variable states, branch paths, and call stacks to provide precise context. This approach mimics human debugging: if a patch fails validation, the system re-executes the program to collect updated execution traces, continuously guiding the LLM’s reasoning and avoiding the blind trial-and-error common in static-only methods.
+
+We evaluated DynaFix on the Defects4J v2.0, Real-World Benchmark (RWB), and Defects4J-Trans benchmarks, where it demonstrated superior effectiveness and robustness. DynaFix correctly repaired **236 bugs** using GPT-4 and **186** with GPT-4o, including 23 unique bugs unresolved by existing baselines. Notably, it exhibits exceptional generalization against syntactic perturbations, outperforming state-of-the-art (SOTA) methods by **15.8%–18.2%** on Defects4J-Trans. Furthermore, DynaFix is highly cost-effective, reducing token consumption by approximately **60%–70%** compared to SOTA approaches, making it a robust and efficient solution for automated program repair.
+
+For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.24635).
+
+## 📂 Project Structure
+
+```text
 .
 ├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
 │   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
@@ -29,7 +38,7 @@ Plaintext
 │
 └── Result/                     # 📊 Experimental Results (RQ1-RQ4)
 
-🛠️ Requirements
+## 🛠️ Requirements
 To run DynaFix and reproduce the experiments, you need the following environment:
 
 Operating System: Linux (Ubuntu 20.04+ recommended) or macOS. (Note: Defects4J works best on Linux/macOS)
@@ -42,7 +51,7 @@ Defects4J: Version 2.0. Please follow the official installation guide.
 
 API Keys: OpenAI API Key (for GPT-4o) or DeepSeek API Key.
 
-🚀 Installation
+## 🚀 Installation
 Clone the repository:
 
 Bash
@@ -59,7 +68,7 @@ Create a .env file in the root directory and add your API keys:
 OPENAI_API_KEY=sk-...
 DEEPSEEK_API_KEY=sk-...
 DEFECTS4J_HOME=/path/to/defects4j
-💻 Usage
+## 💻 Usage
 1. Instrumentation (ByteTrace)
 If you want to manually collect traces using ByteTrace:
 
@@ -71,5 +80,19 @@ java -javaagent:ByteTrace/ByteTrace.jar -cp ...
 2. Running DynaFix (Automated Repair)
 To run the full repair pipeline on a specific bug (e.g., Chart-1):
 
+
 Bash
 python DynaFix/LLM_Fix.py --project Chart --bug_id 1 --model gpt-4o
+
+
+
+## 📜 Citation
+If you find this work useful for your research, please cite our paper:
+
+代码段
+@article{huang2025dynafix,
+  title={DynaFix: Iterative Automated Program Repair Driven by Execution-Level Dynamic Information},
+  author={Huang, Zhili and Xu, Ling and Liu, Chao and Sun, Weifeng and Zhang, Xu and Lei, Yan and Yan, Meng and Zhang, Hongyu},
+  journal={arXiv preprint arXiv:2512.24635},
+  year={2025}
+}
