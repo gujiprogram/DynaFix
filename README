@@ -1,19 +1,20 @@
-This replication package contains all the data, code, and results used in our experiments on automated program repair (APR). The contents are organized as follows:
-
-1. ByteTrace
-Contains the source code and pre-built JAR of the ByteTrace tool, which is used for execution-level instrumentation and dynamic data collection.
-
-2. data
-Contains the processed Defects4J dataset, including:
-Execution-level dynamic information
-Exception information
-Classification of single-function and multi-function bugs
-
-3. DynaFix
-Contains the source code of the DynaFix repair tool used in the experiments.
-
-4. Result
-Contains all experimental results, including:
-Baseline results
-Results for the four research questions (RQs)
-Results from external threats analysis, including DeepSeek-based DynaFix repairs
+.
+├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
+│   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
+│   └── ByteTrace.jar           # Pre-compiled Java Agent JAR file
+│
+├── data/                       # 💾 Datasets and Input/Output Data
+│   ├── input/                  # Buggy method locations (Fault Localization)
+│   ├── output/                 # Collected dynamic runtime information
+│   ├── SBFL/                   # Top-k suspicion lists from SBFL
+│   ├── Defects4J/              # Metadata for the standard Defects4J dataset
+│   └── Defects4J_trans/        # Metadata for the transformed Defects4J dataset
+│
+├── DynaFix/                    # 🧠 Core Repair Framework (Python)
+│   ├── LLM_Fix.py              # 🚀 Main entry script for executing repair
+│   ├── DebugInfoFetch/         # Scripts for Defects4J interaction & trace collection
+│   ├── LLM/                    # Interfaces for LLM models (GPT-4o, DeepSeek)
+│   ├── validator/              # Logic for test execution and patch validation
+│   └── result/                 # Temporary logs for current repair sessions
+│
+└── Result/                     # 📊 Experimental Results (RQ1-RQ4)
