@@ -16,6 +16,7 @@ For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.2
 
 ## 📂 Project Structure
 
+```text
 .
 ├── ByteTrace/                  # 🕵️ Java Instrumentation Tool (Agent)
 │   ├── ByteTrace_code/         # Source code (Java/Kotlin implementation)
@@ -36,6 +37,8 @@ For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.2
 │   └── result/                 # Temporary logs for current repair sessions
 │
 └── Result/                     # 📊 Experimental Results (RQ1-RQ4)
+
+```
 
 ## 🛠️ Requirements
 To run DynaFix and reproduce the experiments, you need the following environment:
