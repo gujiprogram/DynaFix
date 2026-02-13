@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2512.24635-b31b1b.svg)](https://arxiv.org/abs/2512.24635)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://www.python.org/)
 
 This repository contains the **official implementation and replication package** for the paper: *"DynaFix: Iterative Automated Program Repair Driven by Execution-Level Dynamic Information"*.
 
@@ -51,16 +51,39 @@ To run DynaFix and reproduce the experiments, we recommend the following environ
 * **Defects4J:** Version 2.0. Please follow the [official installation guide](https://github.com/rjust/defects4j).
 * **API Keys:** OpenAI API Key (for GPT-4o) or DeepSeek API Key.
 
-## 💻 Usage
+## 🚀 Setup & Execution
 
-### 1. Configuration
-Before running, create a `.env` file in the root directory and configure your API keys and Defects4J path:
+### Step 1. Download ByteTrace (Instrumentation Tool)
+Download the pre-compiled `ByteTrace.jar` from our [Release Page](#) (or locate it directly in the `ByteTrace/` directory of this repository). Save it to a known path, e.g., `/path/to/ByteTrace.jar`.
 
-```env
-OPENAI_API_KEY=sk-...
-DEEPSEEK_API_KEY=sk-...
-DEFECTS4J_HOME=/path/to/defects4j
+### Step 2. Configure ByteTrace in Defects4J
+To enable dynamic trace collection, you need to inject ByteTrace as a Java agent into the Defects4J execution environment. 
+
+Navigate to `{Defects4J_HOME}/major/bin/ant` and open the file. **Remember to back up this file first!** Add the `-javaagent` argument to the Java command line as shown below:
+
+```bash
+#!/bin/sh
+# This is an example of how to add ByteTrace as a java agent in Defects4J
+
+BASE="`dirname $0`/.."
+if [ -z "$JAVA_HOME" ]; then
+    CMD="java"
+else
+    CMD="$JAVA_HOME/bin/java"
+fi
+
+# Add the "-javaagent" line here pointing to your ByteTrace.jar
+$CMD \
+    -javaagent:/path/to/ByteTrace.jar \
+    -Xverify:none \
+    -XX:ReservedCodeCacheSize=256M \
+    -XX:MaxPermSize=1G \
+    -Djava.awt.headless=true \
+    -Xbootclasspath/a:$BASE/config/config.jar \
+    -jar $BASE/lib/ant-launcher.jar $*
 ```
+Step 3. Configure Repair ParametersYou can run the repair framework by modifying the default arguments directly in LLM_Fix.py or by passing them via the command line.Below is a detailed explanation of the parameters you need to configure to match your local environment:LLM & API Settings:--api_key: Your LLM API key (e.g., OpenAI or DeepSeek key).--remote_model: The model name to use (default: gpt-4o-2024-11-20).Defects4J Environment Paths:--checkout_path: Directory where Defects4J buggy projects are checked out (e.g., /path/to/defects4j_buggy).--major_root: Path to the Defects4J major directory (e.g., /path/to/defects4j/major).Dataset & Input Paths:--data_path: Path to the Defects4J target dataset CSV (e.g., Defects4J_v1.2_single_function.csv).--msg_path: Path to the exception metadata file (defects4j_exception_info.csv).--input_path: Directory containing the initial buggy method locations (Fault Localization results).Output & Log Directories (ByteTrace & DynaFix):--debug_info_dir: Directory to store the raw debug traces collected by ByteTrace.--method_calls_dir: Directory to store method call sequences.--dynamic_output_path: Directory for parsed dynamic execution info.--result_path: Base path to save the final generated patches (predictions).--eval_path: Base path to save test validation results (plausible/correct stats).Search Strategy (LPR):--width_try: Maximum search breadth $B$ (Default: 7).--deep_try: Maximum search depth $D$ (Default: 5).--mode: The context mode for LLM (pure, debuginfo, or exception).--temperature: LLM sampling temperature (Default: 1.0).--early_stop: Stop the search tree early if a correct patch is found (Default: True).Step 4. Run DynaFixOnce your environment and paths are set, simply run the Python script to start the automated repair process:Bashpython LLM_Fix.py
+(Alternatively, you can override default settings via CLI, e.g., python LLM_Fix.py --remote_model gpt-4o --width_try 5)
 
 
 ## 📜 Citation
