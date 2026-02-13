@@ -51,48 +51,26 @@ To run DynaFix and reproduce the experiments, we recommend the following environ
 * **Defects4J:** Version 2.0. Please follow the [official installation guide](https://github.com/rjust/defects4j).
 * **API Keys:** OpenAI API Key (for GPT-4o) or DeepSeek API Key.
 
-## 🚀 Installation
-Clone the repository:
+## 💻 Usage
 
-Bash
-git clone https://github.com/gujiprogram/DynaFix.git
-cd DynaFix
-Install Python dependencies:
+### 1. Configuration
+Before running, create a `.env` file in the root directory and configure your API keys and Defects4J path:
 
-Bash
-pip install -r requirements.txt
-Configure Environment Variables:
-Create a .env file in the root directory and add your API keys:
-
-代码段
+```env
 OPENAI_API_KEY=sk-...
 DEEPSEEK_API_KEY=sk-...
 DEFECTS4J_HOME=/path/to/defects4j
-## 💻 Usage
-1. Instrumentation (ByteTrace)
-If you want to manually collect traces using ByteTrace:
-
-Bash
-# Example command to attach the agent
-java -javaagent:ByteTrace/ByteTrace.jar -cp ...
-(或者说明 DynaFix 会自动调用它，不需要手动运行)
-
-2. Running DynaFix (Automated Repair)
-To run the full repair pipeline on a specific bug (e.g., Chart-1):
-
-
-Bash
-python DynaFix/LLM_Fix.py --project Chart --bug_id 1 --model gpt-4o
-
+```
 
 
 ## 📜 Citation
 If you find this work useful for your research, please cite our paper:
 
-代码段
+```text
 @article{huang2025dynafix,
   title={DynaFix: Iterative Automated Program Repair Driven by Execution-Level Dynamic Information},
   author={Huang, Zhili and Xu, Ling and Liu, Chao and Sun, Weifeng and Zhang, Xu and Lei, Yan and Yan, Meng and Zhang, Hongyu},
   journal={arXiv preprint arXiv:2512.24635},
   year={2025}
 }
+```
