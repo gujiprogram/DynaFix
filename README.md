@@ -9,7 +9,7 @@ This repository contains the **official implementation and replication package**
 ## 📖 Overview
 
 <div align="center">
-  <img src="Figure/overview.png" alt="DynaFix Overview" width="800">
+  <img src="Figure/DynaFix_overview.png" alt="DynaFix Overview" width="800">
 </div>
 
 Automated Program Repair (APR) has evolved significantly with Large Language Models (LLMs), yet existing methods often struggle due to their reliance on static code representations, which lack fine-grained execution feedback and are sensitive to syntactic variations. **DynaFix** addresses these limitations by integrating execution-level dynamic information directly into the iterative repair workflow. Utilizing a lightweight instrumentation tool named **ByteTrace**, DynaFix captures runtime variable states, branch paths, and call stacks to provide precise context. This approach mimics human debugging: if a patch fails validation, the system re-executes the program to collect updated execution traces, continuously guiding the LLM’s reasoning and avoiding the blind trial-and-error common in static-only methods.
