@@ -114,7 +114,7 @@ Once your environment is configured, start the automated repair process:
 python LLM_Fix.py
 ```
 
-Optional: Override parameters via CLI:
+Alternatively, you can override parameters directly via the CLI:
 
 ```bash
 python LLM_Fix.py --api_key "sk-..." --remote_model "gpt-4" --width_try 5
