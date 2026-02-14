@@ -96,6 +96,7 @@ pip install -r requirements.txt
 Then, navigate to the framework directory and run the collection script to generate dynamic execution traces:
 
 ```bash
+cd DynaFix
 python DebugInfoFetch/CollectDynamicInfo.py
 ```
 
