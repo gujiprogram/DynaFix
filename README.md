@@ -8,6 +8,10 @@ This repository contains the **official implementation and replication package**
 
 ## 📖 Overview
 
+<div align="center">
+  <img src="Figure/overview.png" alt="DynaFix Overview" width="800">
+</div>
+
 Automated Program Repair (APR) has evolved significantly with Large Language Models (LLMs), yet existing methods often struggle due to their reliance on static code representations, which lack fine-grained execution feedback and are sensitive to syntactic variations. **DynaFix** addresses these limitations by integrating execution-level dynamic information directly into the iterative repair workflow. Utilizing a lightweight instrumentation tool named **ByteTrace**, DynaFix captures runtime variable states, branch paths, and call stacks to provide precise context. This approach mimics human debugging: if a patch fails validation, the system re-executes the program to collect updated execution traces, continuously guiding the LLM’s reasoning and avoiding the blind trial-and-error common in static-only methods.
 
 We evaluated DynaFix on the Defects4J v2.0, Real-World Benchmark (RWB), and Defects4J-Trans benchmarks, where it demonstrated superior effectiveness and robustness. DynaFix correctly repaired **236 bugs** using GPT-4 and **186** with GPT-4o, including 23 unique bugs unresolved by existing baselines. Notably, it exhibits exceptional generalization against syntactic perturbations, outperforming state-of-the-art (SOTA) methods by **15.8%–18.2%** on Defects4J-Trans. Furthermore, DynaFix is highly cost-effective, reducing token consumption by approximately **60%–70%** compared to SOTA approaches, making it a robust and efficient solution for automated program repair.
