@@ -54,36 +54,71 @@ To run DynaFix and reproduce the experiments, we recommend the following environ
 ## 🚀 Setup & Execution
 
 ### Step 1. Download ByteTrace (Instrumentation Tool)
-Download the pre-compiled `ByteTrace.jar` from our [Release Page](#) (or locate it directly in the `ByteTrace/` directory of this repository). Save it to a known path, e.g., `/path/to/ByteTrace.jar`.
+Download the pre-compiled **`ByteTrace.jar`** from our [Release Page](https://github.com/gujiprogram/DynaFix/releases/tag/v.1.0) (or locate it directly in the `ByteTrace/` directory of this repository).
 
-### Step 2. Configure ByteTrace in Defects4J
-To enable dynamic trace collection, you need to inject ByteTrace as a Java agent into the Defects4J execution environment. 
+### Step 2. Configure Defects4J
+After you finish the setup of Defects4J, navigate to the `{Defects4J_HOME}/major/bin/` directory (where the original `ant` file is located). In this directory, create a **new** file named `ant_debug` with the following content.
 
-Navigate to `{Defects4J_HOME}/major/bin/ant` and open the file. **Remember to back up this file first!** Add the `-javaagent` argument to the Java command line as shown below:
+**Note:** Replace `/path/to/ByteTrace.jar` with your actual path and ensure the file is executable (`chmod +x ant_debug`).
 
 ```bash
-#!/bin/sh
-# This is an example of how to add ByteTrace as a java agent in Defects4J
+#!/usr/bin/env bash
 
-BASE="`dirname $0`/.."
+BASE="$(dirname "$0")/.."
+
 if [ -z "$JAVA_HOME" ]; then
     CMD="java"
 else
     CMD="$JAVA_HOME/bin/java"
 fi
 
-# Add the "-javaagent" line here pointing to your ByteTrace.jar
+TEMP_PROPERTIES=${TEMP_PROPERTIES:-./temp.properties}
+
 $CMD \
-    -javaagent:/path/to/ByteTrace.jar \
-    -Xverify:none \
+    -javaagent:/path/to/ByteTrace.jar="$TEMP_PROPERTIES" -Xverify:none \
     -XX:ReservedCodeCacheSize=256M \
-    -XX:MaxPermSize=1G \
     -Djava.awt.headless=true \
     -Xbootclasspath/a:$BASE/config/config.jar \
-    -jar $BASE/lib/ant-launcher.jar $*
+    -jar $BASE/lib/ant/ant-launcher.jar $*
 ```
-Step 3. Configure Repair ParametersYou can run the repair framework by modifying the default arguments directly in LLM_Fix.py or by passing them via the command line.Below is a detailed explanation of the parameters you need to configure to match your local environment:LLM & API Settings:--api_key: Your LLM API key (e.g., OpenAI or DeepSeek key).--remote_model: The model name to use (default: gpt-4o-2024-11-20).Defects4J Environment Paths:--checkout_path: Directory where Defects4J buggy projects are checked out (e.g., /path/to/defects4j_buggy).--major_root: Path to the Defects4J major directory (e.g., /path/to/defects4j/major).Dataset & Input Paths:--data_path: Path to the Defects4J target dataset CSV (e.g., Defects4J_v1.2_single_function.csv).--msg_path: Path to the exception metadata file (defects4j_exception_info.csv).--input_path: Directory containing the initial buggy method locations (Fault Localization results).Output & Log Directories (ByteTrace & DynaFix):--debug_info_dir: Directory to store the raw debug traces collected by ByteTrace.--method_calls_dir: Directory to store method call sequences.--dynamic_output_path: Directory for parsed dynamic execution info.--result_path: Base path to save the final generated patches (predictions).--eval_path: Base path to save test validation results (plausible/correct stats).Search Strategy (LPR):--width_try: Maximum search breadth $B$ (Default: 7).--deep_try: Maximum search depth $D$ (Default: 5).--mode: The context mode for LLM (pure, debuginfo, or exception).--temperature: LLM sampling temperature (Default: 1.0).--early_stop: Stop the search tree early if a correct patch is found (Default: True).Step 4. Run DynaFixOnce your environment and paths are set, simply run the Python script to start the automated repair process:Bashpython LLM_Fix.py
-(Alternatively, you can override default settings via CLI, e.g., python LLM_Fix.py --remote_model gpt-4o --width_try 5)
+After this, run the following command to collect dynamic execution information:
+
+```bash
+python DebugInfoFetch/CollectDynamicInfo.py
+```
+
+### Step 3. Configure Repair Parameters
+You can run the repair framework by modifying the default arguments in `LLM_Fix.py` or by passing them via the command line.
+
+**1. Essential Configurations (You MUST set these):**
+* `--api_key`: Your LLM API key (e.g., OpenAI or DeepSeek).
+* `--checkout_path`: The local directory where Defects4J buggy projects are checked out (e.g., `/path/to/defects4j_buggy`).
+* `--major_root`: The path to the Defects4J `major` directory (e.g., `/path/to/defects4j/major`).
+* `--base_dir`: The base working directory for temporary files (usually same as checkout path).
+
+**2. Model & Strategy Settings (Defaults available):**
+* `--remote_model`: The model name (Default: `gpt-4o-2024-11-20`).
+* `--mode`: The repair context mode. Options: `pure` (source only), `debuginfo` (with traces), `exception` (stack trace).
+* `--width_try`: Maximum search breadth $B$ (Default: `7`).
+* `--deep_try`: Maximum search depth $D$ (Default: `5`).
+
+**3. Data Paths (Pre-configured):**
+* `--data_path`: Points to `./data/test_data/...` (Default provided).
+* `--msg_path`: Points to `./data/defects4j_exception_info.csv` (Default provided).
+* `--debug_info_dir` / `--method_calls_dir`: Output directories for intermediate data.
+
+### Step 4. Run DynaFix
+Once your environment is configured, start the automated repair process:
+
+```bash
+python LLM_Fix.py
+```
+
+Optional: Override parameters via CLI:
+
+```bash
+python LLM_Fix.py --api_key "sk-..." --remote_model "gpt-4" --width_try 5
+```
 
 
 ## 📜 Citation
