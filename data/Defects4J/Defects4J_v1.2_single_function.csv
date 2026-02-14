@@ -1,5 +1,5 @@
 slug,class_path,buggy_code
-Chart_1,/home/common/huangzhili/defects4j_buggy/Chart_1_buggy/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java,"public LegendItemCollection getLegendItems() {
+Chart_1,/path/to/defects4j_buggy/Chart_1_buggy/source/org/jfree/chart/renderer/category/AbstractCategoryItemRenderer.java,"public LegendItemCollection getLegendItems() {
         LegendItemCollection result = new LegendItemCollection();
         if (this.plot == null) {
             return result;
@@ -32,7 +32,7 @@ Chart_1,/home/common/huangzhili/defects4j_buggy/Chart_1_buggy/source/org/jfree/c
         }
         return result;
     }"
-Chart_3,/home/common/huangzhili/defects4j_buggy/Chart_3_buggy/source/org/jfree/data/time/TimeSeries.java,"public TimeSeries createCopy(int start, int end)
+Chart_3,/path/to/defects4j_buggy/Chart_3_buggy/source/org/jfree/data/time/TimeSeries.java,"public TimeSeries createCopy(int start, int end)
             throws CloneNotSupportedException {
         if (start < 0) {
             throw new IllegalArgumentException(""Requires start >= 0."");
@@ -57,7 +57,7 @@ Chart_3,/home/common/huangzhili/defects4j_buggy/Chart_3_buggy/source/org/jfree/d
         }
         return copy;
     }"
-Chart_4,/home/common/huangzhili/defects4j_buggy/Chart_4_buggy/source/org/jfree/chart/plot/XYPlot.java,"    public Range getDataRange(ValueAxis axis) {
+Chart_4,/path/to/defects4j_buggy/Chart_4_buggy/source/org/jfree/chart/plot/XYPlot.java,"    public Range getDataRange(ValueAxis axis) {
 
         Range result = null;
         List mappedDatasets = new ArrayList();
@@ -152,7 +152,7 @@ Chart_4,/home/common/huangzhili/defects4j_buggy/Chart_4_buggy/source/org/jfree/c
         return result;
 
     }"
-Chart_5,/home/common/huangzhili/defects4j_buggy/Chart_5_buggy/source/org/jfree/data/xy/XYSeries.java,"public XYDataItem addOrUpdate(Number x, Number y) {
+Chart_5,/path/to/defects4j_buggy/Chart_5_buggy/source/org/jfree/data/xy/XYSeries.java,"public XYDataItem addOrUpdate(Number x, Number y) {
          if (x == null) {
              throw new IllegalArgumentException(""Null 'x' argument."");
          }
@@ -189,7 +189,7 @@ Chart_5,/home/common/huangzhili/defects4j_buggy/Chart_5_buggy/source/org/jfree/d
         fireSeriesChanged();
         return overwritten;
     }"
-Chart_6,/home/common/huangzhili/defects4j_buggy/Chart_6_buggy/source/org/jfree/chart/util/ShapeList.java,"public boolean equals(Object obj) {
+Chart_6,/path/to/defects4j_buggy/Chart_6_buggy/source/org/jfree/chart/util/ShapeList.java,"public boolean equals(Object obj) {
 
         if (obj == this) {
             return true;
@@ -200,7 +200,7 @@ Chart_6,/home/common/huangzhili/defects4j_buggy/Chart_6_buggy/source/org/jfree/c
          return super.equals(obj);
  
      }"
-Chart_7,/home/common/huangzhili/defects4j_buggy/Chart_7_buggy/source/org/jfree/data/time/TimePeriodValues.java,"private void updateBounds(TimePeriod period, int index) {
+Chart_7,/path/to/defects4j_buggy/Chart_7_buggy/source/org/jfree/data/time/TimePeriodValues.java,"private void updateBounds(TimePeriod period, int index) {
         
         long start = period.getStart().getTime();
         long end = period.getEnd().getTime();
@@ -279,12 +279,12 @@ Chart_7,/home/common/huangzhili/defects4j_buggy/Chart_7_buggy/source/org/jfree/d
         }
         
     }"
-Chart_8,/home/common/huangzhili/defects4j_buggy/Chart_8_buggy/source/org/jfree/data/time/Week.java,"    public Week(Date time, TimeZone zone) {
+Chart_8,/path/to/defects4j_buggy/Chart_8_buggy/source/org/jfree/data/time/Week.java,"    public Week(Date time, TimeZone zone) {
         // defer argument checking...
         this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
     }
 "
-Chart_9,/home/common/huangzhili/defects4j_buggy/Chart_9_buggy/source/org/jfree/data/time/TimeSeries.java,"public TimeSeries createCopy(RegularTimePeriod start, RegularTimePeriod end)
+Chart_9,/path/to/defects4j_buggy/Chart_9_buggy/source/org/jfree/data/time/TimeSeries.java,"public TimeSeries createCopy(RegularTimePeriod start, RegularTimePeriod end)
         throws CloneNotSupportedException {
 
         if (start == null) {
@@ -323,12 +323,12 @@ Chart_9,/home/common/huangzhili/defects4j_buggy/Chart_9_buggy/source/org/jfree/d
         }
 
     }"
-Chart_10,/home/common/huangzhili/defects4j_buggy/Chart_10_buggy/source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java,"    public String generateToolTipFragment(String toolTipText) {
+Chart_10,/path/to/defects4j_buggy/Chart_10_buggy/source/org/jfree/chart/imagemap/StandardToolTipTagFragmentGenerator.java,"    public String generateToolTipFragment(String toolTipText) {
         return "" title=\"""" + toolTipText
             + ""\"" alt=\""\"""";
     }
 "
-Chart_11,/home/common/huangzhili/defects4j_buggy/Chart_11_buggy/source/org/jfree/chart/util/ShapeUtilities.java,"public static boolean equal(GeneralPath p1, GeneralPath p2) {
+Chart_11,/path/to/defects4j_buggy/Chart_11_buggy/source/org/jfree/chart/util/ShapeUtilities.java,"public static boolean equal(GeneralPath p1, GeneralPath p2) {
         if (p1 == null) {
             return (p2 == null);
         }
@@ -361,7 +361,7 @@ Chart_11,/home/common/huangzhili/defects4j_buggy/Chart_11_buggy/source/org/jfree
         }
         return true;
     }"
-Chart_12,/home/common/huangzhili/defects4j_buggy/Chart_12_buggy/source/org/jfree/chart/plot/MultiplePiePlot.java,"    public MultiplePiePlot(CategoryDataset dataset) {
+Chart_12,/path/to/defects4j_buggy/Chart_12_buggy/source/org/jfree/chart/plot/MultiplePiePlot.java,"    public MultiplePiePlot(CategoryDataset dataset) {
         super();
         this.dataset = dataset;
         PiePlot piePlot = new PiePlot(null);
@@ -378,7 +378,7 @@ Chart_12,/home/common/huangzhili/defects4j_buggy/Chart_12_buggy/source/org/jfree
         this.sectionPaints = new HashMap();
     }
 "
-Chart_13,/home/common/huangzhili/defects4j_buggy/Chart_13_buggy/source/org/jfree/chart/block/BorderArrangement.java,"protected Size2D arrangeFF(BlockContainer container, Graphics2D g2,
+Chart_13,/path/to/defects4j_buggy/Chart_13_buggy/source/org/jfree/chart/block/BorderArrangement.java,"protected Size2D arrangeFF(BlockContainer container, Graphics2D g2,
                                RectangleConstraint constraint) {
         double[] w = new double[5];
         double[] h = new double[5];
@@ -446,25 +446,25 @@ Chart_13,/home/common/huangzhili/defects4j_buggy/Chart_13_buggy/source/org/jfree
         }
         return new Size2D(constraint.getWidth(), constraint.getHeight());
     }"
-Chart_17,/home/common/huangzhili/defects4j_buggy/Chart_17_buggy/source/org/jfree/data/time/TimeSeries.java,"    public Object clone() throws CloneNotSupportedException {
+Chart_17,/path/to/defects4j_buggy/Chart_17_buggy/source/org/jfree/data/time/TimeSeries.java,"    public Object clone() throws CloneNotSupportedException {
         Object clone = createCopy(0, getItemCount() - 1);
         return clone;
     }
 "
-Chart_20,/home/common/huangzhili/defects4j_buggy/Chart_20_buggy/source/org/jfree/chart/plot/ValueMarker.java,"    public ValueMarker(double value, Paint paint, Stroke stroke, 
+Chart_20,/path/to/defects4j_buggy/Chart_20_buggy/source/org/jfree/chart/plot/ValueMarker.java,"    public ValueMarker(double value, Paint paint, Stroke stroke, 
                        Paint outlinePaint, Stroke outlineStroke, float alpha) {
         super(paint, stroke, paint, stroke, alpha);
         this.value = value;
     }
 "
-Chart_24,/home/common/huangzhili/defects4j_buggy/Chart_24_buggy/source/org/jfree/chart/renderer/GrayPaintScale.java,"public Paint getPaint(double value) {
+Chart_24,/path/to/defects4j_buggy/Chart_24_buggy/source/org/jfree/chart/renderer/GrayPaintScale.java,"public Paint getPaint(double value) {
          double v = Math.max(value, this.lowerBound);
          v = Math.min(v, this.upperBound);
          int g = (int) ((value - this.lowerBound) / (this.upperBound 
                  - this.lowerBound) * 255.0);
          return new Color(g, g, g);
      }"
-Chart_26,/home/common/huangzhili/defects4j_buggy/Chart_26_buggy/source/org/jfree/chart/axis/Axis.java,"    protected AxisState drawLabel(String label, Graphics2D g2, 
+Chart_26,/path/to/defects4j_buggy/Chart_26_buggy/source/org/jfree/chart/axis/Axis.java,"    protected AxisState drawLabel(String label, Graphics2D g2, 
             Rectangle2D plotArea, Rectangle2D dataArea, RectangleEdge edge, 
             AxisState state, PlotRenderingInfo plotState) {
 
@@ -574,7 +574,7 @@ Chart_26,/home/common/huangzhili/defects4j_buggy/Chart_26_buggy/source/org/jfree
 
     }
 "
-Closure_1,/home/common/huangzhili/defects4j_buggy/Closure_1_buggy/src/com/google/javascript/jscomp/RemoveUnusedVars.java,"private void removeUnreferencedFunctionArgs(Scope fnScope) {
+Closure_1,/path/to/defects4j_buggy/Closure_1_buggy/src/com/google/javascript/jscomp/RemoveUnusedVars.java,"private void removeUnreferencedFunctionArgs(Scope fnScope) {
     // Notice that removing unreferenced function args breaks
     // Function.prototype.length. In advanced mode, we don't really care
     // about this: we consider ""length"" the equivalent of reflecting on
@@ -612,7 +612,7 @@ Closure_1,/home/common/huangzhili/defects4j_buggy/Closure_1_buggy/src/com/google
       callSiteOptimizer.optimize(fnScope, referenced);
     }
   }"
-Closure_2,/home/common/huangzhili/defects4j_buggy/Closure_2_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void checkInterfaceConflictProperties(NodeTraversal t, Node n,
+Closure_2,/path/to/defects4j_buggy/Closure_2_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void checkInterfaceConflictProperties(NodeTraversal t, Node n,
       String functionName, HashMap<String, ObjectType> properties,
       HashMap<String, ObjectType> currentProperties,
        ObjectType interfaceType) {
@@ -639,7 +639,7 @@ Closure_2,/home/common/huangzhili/defects4j_buggy/Closure_2_buggy/src/com/google
           currentProperties, iType);
     }
   }"
-Closure_4,/home/common/huangzhili/defects4j_buggy/Closure_4_buggy/src/com/google/javascript/rhino/jstype/NamedType.java,"@Override
+Closure_4,/path/to/defects4j_buggy/Closure_4_buggy/src/com/google/javascript/rhino/jstype/NamedType.java,"@Override
   JSType resolveInternal(ErrorReporter t, StaticScope<JSType> enclosing) {
     // TODO(user): Investigate whether it is really necessary to keep two
     // different mechanisms for resolving named types, and if so, which order
@@ -669,7 +669,7 @@ Closure_4,/home/common/huangzhili/defects4j_buggy/Closure_4_buggy/src/com/google
     return registry.isLastGeneration() ?
         getReferencedType() : this;
   }"
-Closure_5,/home/common/huangzhili/defects4j_buggy/Closure_5_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private boolean isInlinableObject(List<Reference> refs) {
+Closure_5,/path/to/defects4j_buggy/Closure_5_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private boolean isInlinableObject(List<Reference> refs) {
       boolean ret = false;
       Set<String> validProperties = Sets.newHashSet();
       for (Reference ref : refs) {
@@ -768,7 +768,7 @@ Closure_5,/home/common/huangzhili/defects4j_buggy/Closure_5_buggy/src/com/google
       }
       return ret;
     }"
-Closure_7,/home/common/huangzhili/defects4j_buggy/Closure_7_buggy/src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java,"@Override
+Closure_7,/path/to/defects4j_buggy/Closure_7_buggy/src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java,"@Override
      public JSType caseObjectType(ObjectType type) {
        if (value.equals(""function"")) {
          JSType ctorType = getNativeType(U2U_CONSTRUCTOR_TYPE);
@@ -778,14 +778,14 @@ Closure_7,/home/common/huangzhili/defects4j_buggy/Closure_7_buggy/src/com/google
        }
        return matchesExpectation(""object"") ? type : null;
      }"
-Closure_10,/home/common/huangzhili/defects4j_buggy/Closure_10_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean mayBeString(Node n, boolean recurse) {
+Closure_10,/path/to/defects4j_buggy/Closure_10_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean mayBeString(Node n, boolean recurse) {
      if (recurse) {
        return allResultsMatch(n, MAY_BE_STRING_PREDICATE);
      } else {
        return mayBeStringHelper(n);
      }
   }"
-Closure_11,/home/common/huangzhili/defects4j_buggy/Closure_11_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitGetProp(NodeTraversal t, Node n, Node parent) {
+Closure_11,/path/to/defects4j_buggy/Closure_11_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitGetProp(NodeTraversal t, Node n, Node parent) {
     // obj.prop or obj.method()
     // Lots of types can appear on the left, a call to a void function can
     // never be on the left. getPropertyType will decide what is acceptable
@@ -804,10 +804,10 @@ Closure_11,/home/common/huangzhili/defects4j_buggy/Closure_11_buggy/src/com/goog
     }
     ensureTyped(t, n);
   }"
-Closure_12,/home/common/huangzhili/defects4j_buggy/Closure_12_buggy/src/com/google/javascript/jscomp/MaybeReachingVariableUse.java,"   private boolean hasExceptionHandler(Node cfgNode) {
+Closure_12,/path/to/defects4j_buggy/Closure_12_buggy/src/com/google/javascript/jscomp/MaybeReachingVariableUse.java,"   private boolean hasExceptionHandler(Node cfgNode) {
      return false;
    }"
-Closure_13,/home/common/huangzhili/defects4j_buggy/Closure_13_buggy/src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java,"private void traverse(Node node) {
+Closure_13,/path/to/defects4j_buggy/Closure_13_buggy/src/com/google/javascript/jscomp/PeepholeOptimizationsPass.java,"private void traverse(Node node) {
     // The goal here is to avoid retraversing
     // the entire AST to catch newly created opportunities.
     // So we track whether a ""unit of code"" has changed,
@@ -833,7 +833,7 @@ Closure_13,/home/common/huangzhili/defects4j_buggy/Closure_13_buggy/src/com/goog
 
     exitNode(node);
   }"
-Closure_14,/home/common/huangzhili/defects4j_buggy/Closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java,"private static Node computeFollowNode(
+Closure_14,/path/to/defects4j_buggy/Closure_14_buggy/src/com/google/javascript/jscomp/ControlFlowAnalysis.java,"private static Node computeFollowNode(
       Node fromNode, Node node, ControlFlowAnalysis cfa) {
     /*
      * This is the case where:
@@ -931,7 +931,7 @@ Closure_14,/home/common/huangzhili/defects4j_buggy/Closure_14_buggy/src/com/goog
       return computeFollowNode(fromNode, parent, cfa);
     }
   }"
-Closure_15,/home/common/huangzhili/defects4j_buggy/Closure_15_buggy/src/com/google/javascript/jscomp/FlowSensitiveInlineVariables.java,"@Override
+Closure_15,/path/to/defects4j_buggy/Closure_15_buggy/src/com/google/javascript/jscomp/FlowSensitiveInlineVariables.java,"@Override
       public boolean apply(Node n) {
         // When the node is null it means, we reached the implicit return
         // where the function returns (possibly without an return statement)
@@ -958,7 +958,7 @@ Closure_15,/home/common/huangzhili/defects4j_buggy/Closure_15_buggy/src/com/goog
         }
         return false;
       }"
-Closure_17,/home/common/huangzhili/defects4j_buggy/Closure_17_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"private JSType getDeclaredType(String sourceName, JSDocInfo info,
+Closure_17,/path/to/defects4j_buggy/Closure_17_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"private JSType getDeclaredType(String sourceName, JSDocInfo info,
         Node lValue, @Nullable Node rValue) {
       if (info != null && info.hasType()) {
         return getDeclaredTypeInAnnotation(sourceName, lValue, info);
@@ -1009,7 +1009,7 @@ Closure_17,/home/common/huangzhili/defects4j_buggy/Closure_17_buggy/src/com/goog
 
       return getDeclaredTypeInAnnotation(sourceName, lValue, info);
     }"
-Closure_18,/home/common/huangzhili/defects4j_buggy/Closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java,"Node parseInputs() {
+Closure_18,/path/to/defects4j_buggy/Closure_18_buggy/src/com/google/javascript/jscomp/Compiler.java,"Node parseInputs() {
     boolean devMode = options.devMode != DevMode.OFF;
 
     // If old roots exist (we are parsing a second time), detach each of the
@@ -1132,7 +1132,7 @@ Closure_18,/home/common/huangzhili/defects4j_buggy/Closure_18_buggy/src/com/goog
       stopTracer(tracer, ""parseInputs"");
     }
   }"
-Closure_19,/home/common/huangzhili/defects4j_buggy/Closure_19_buggy/src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java,"protected void declareNameInScope(FlowScope scope, Node node, JSType type) {
+Closure_19,/path/to/defects4j_buggy/Closure_19_buggy/src/com/google/javascript/jscomp/type/ChainableReverseAbstractInterpreter.java,"protected void declareNameInScope(FlowScope scope, Node node, JSType type) {
     switch (node.getType()) {
       case Token.NAME:
         scope.inferSlotType(node.getString(), type);
@@ -1154,7 +1154,7 @@ Closure_19,/home/common/huangzhili/defects4j_buggy/Closure_19_buggy/src/com/goog
             node.toStringTree());
     }
   }"
-Closure_20,/home/common/huangzhili/defects4j_buggy/Closure_20_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private Node tryFoldSimpleFunctionCall(Node n) {
+Closure_20,/path/to/defects4j_buggy/Closure_20_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private Node tryFoldSimpleFunctionCall(Node n) {
     Preconditions.checkState(n.isCall());
     Node callTarget = n.getFirstChild();
     if (callTarget != null && callTarget.isName() &&
@@ -1177,7 +1177,7 @@ Closure_20,/home/common/huangzhili/defects4j_buggy/Closure_20_buggy/src/com/goog
     }
     return n;
   }"
-Closure_21,/home/common/huangzhili/defects4j_buggy/Closure_21_buggy/src/com/google/javascript/jscomp/CheckSideEffects.java,"@Override
+Closure_21,/path/to/defects4j_buggy/Closure_21_buggy/src/com/google/javascript/jscomp/CheckSideEffects.java,"@Override
   public void visit(NodeTraversal t, Node n, Node parent) {
     // VOID nodes appear when there are extra semicolons at the BLOCK level.
     // I've been unable to think of any cases where this indicates a bug,
@@ -1243,7 +1243,7 @@ Closure_21,/home/common/huangzhili/defects4j_buggy/Closure_21_buggy/src/com/goog
       }
     }
   }"
-Closure_22,/home/common/huangzhili/defects4j_buggy/Closure_22_buggy/src/com/google/javascript/jscomp/CheckSideEffects.java,"@Override
+Closure_22,/path/to/defects4j_buggy/Closure_22_buggy/src/com/google/javascript/jscomp/CheckSideEffects.java,"@Override
   public void visit(NodeTraversal t, Node n, Node parent) {
     // VOID nodes appear when there are extra semicolons at the BLOCK level.
     // I've been unable to think of any cases where this indicates a bug,
@@ -1316,7 +1316,7 @@ Closure_22,/home/common/huangzhili/defects4j_buggy/Closure_22_buggy/src/com/goog
       }
     }
   }"
-Closure_23,/home/common/huangzhili/defects4j_buggy/Closure_23_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node tryFoldArrayAccess(Node n, Node left, Node right) {
+Closure_23,/path/to/defects4j_buggy/Closure_23_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node tryFoldArrayAccess(Node n, Node left, Node right) {
     Node parent = n.getParent();
     // If GETPROP/GETELEM is used as assignment target the array literal is
     // acting as a temporary we can't fold it here:
@@ -1367,7 +1367,7 @@ Closure_23,/home/common/huangzhili/defects4j_buggy/Closure_23_buggy/src/com/goog
     reportCodeChange();
     return elem;
   }"
-Closure_24,/home/common/huangzhili/defects4j_buggy/Closure_24_buggy/src/com/google/javascript/jscomp/ScopedAliases.java,"private void findAliases(NodeTraversal t) {
+Closure_24,/path/to/defects4j_buggy/Closure_24_buggy/src/com/google/javascript/jscomp/ScopedAliases.java,"private void findAliases(NodeTraversal t) {
       Scope scope = t.getScope();
       for (Var v : scope.getVarIterable()) {
          Node n = v.getNode();
@@ -1393,7 +1393,7 @@ Closure_24,/home/common/huangzhili/defects4j_buggy/Closure_24_buggy/src/com/goog
         }
       }
     }"
-Closure_25,/home/common/huangzhili/defects4j_buggy/Closure_25_buggy/src/com/google/javascript/jscomp/TypeInference.java,"private FlowScope traverseNew(Node n, FlowScope scope) {
+Closure_25,/path/to/defects4j_buggy/Closure_25_buggy/src/com/google/javascript/jscomp/TypeInference.java,"private FlowScope traverseNew(Node n, FlowScope scope) {
 
     Node constructor = n.getFirstChild();
     scope = traverse(constructor, scope);
@@ -1422,7 +1422,7 @@ Closure_25,/home/common/huangzhili/defects4j_buggy/Closure_25_buggy/src/com/goog
      }
      return scope;
    }"
-Closure_29,/home/common/huangzhili/defects4j_buggy/Closure_29_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private boolean isInlinableObject(List<Reference> refs) {
+Closure_29,/path/to/defects4j_buggy/Closure_29_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private boolean isInlinableObject(List<Reference> refs) {
        boolean ret = false;
        for (Reference ref : refs) {
          Node name = ref.getNode();
@@ -1508,7 +1508,7 @@ Closure_29,/home/common/huangzhili/defects4j_buggy/Closure_29_buggy/src/com/goog
       }
       return ret;
     }"
-Closure_31,/home/common/huangzhili/defects4j_buggy/Closure_31_buggy/src/com/google/javascript/jscomp/Compiler.java,"Node parseInputs() {
+Closure_31,/path/to/defects4j_buggy/Closure_31_buggy/src/com/google/javascript/jscomp/Compiler.java,"Node parseInputs() {
     boolean devMode = options.devMode != DevMode.OFF;
 
     // If old roots exist (we are parsing a second time), detach each of the
@@ -1660,7 +1660,7 @@ Closure_31,/home/common/huangzhili/defects4j_buggy/Closure_31_buggy/src/com/goog
       stopTracer(tracer, ""parseInputs"");
     }
   }"
-Closure_32,/home/common/huangzhili/defects4j_buggy/Closure_32_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"@SuppressWarnings(""fallthrough"")
+Closure_32,/path/to/defects4j_buggy/Closure_32_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"@SuppressWarnings(""fallthrough"")
   private ExtractionInfo extractMultilineTextualBlock(JsDocToken token,
                                                       WhitespaceOption option) {
 
@@ -1762,7 +1762,7 @@ Closure_32,/home/common/huangzhili/defects4j_buggy/Closure_32_buggy/src/com/goog
       }
     } while (true);
   }"
-Closure_33,/home/common/huangzhili/defects4j_buggy/Closure_33_buggy/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java,"@Override
+Closure_33,/path/to/defects4j_buggy/Closure_33_buggy/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java,"@Override
    public void matchConstraint(ObjectType constraintObj) {
      // We only want to match contraints on anonymous types.
  
@@ -1789,7 +1789,7 @@ Closure_33,/home/common/huangzhili/defects4j_buggy/Closure_33_buggy/src/com/goog
       }
     }
   }"
-Closure_35,/home/common/huangzhili/defects4j_buggy/Closure_35_buggy/src/com/google/javascript/jscomp/TypeInference.java,"private void inferPropertyTypesToMatchConstraint(
+Closure_35,/path/to/defects4j_buggy/Closure_35_buggy/src/com/google/javascript/jscomp/TypeInference.java,"private void inferPropertyTypesToMatchConstraint(
       JSType type, JSType constraint) {
     if (type == null || constraint == null) {
       return;
@@ -1814,7 +1814,7 @@ Closure_35,/home/common/huangzhili/defects4j_buggy/Closure_35_buggy/src/com/goog
        }
      }
    }"
-Closure_36,/home/common/huangzhili/defects4j_buggy/Closure_36_buggy/src/com/google/javascript/jscomp/InlineVariables.java,"private boolean canInline(
+Closure_36,/path/to/defects4j_buggy/Closure_36_buggy/src/com/google/javascript/jscomp/InlineVariables.java,"private boolean canInline(
         Reference declaration,
         Reference initialization,
         Reference reference) {
@@ -1876,7 +1876,7 @@ Closure_36,/home/common/huangzhili/defects4j_buggy/Closure_36_buggy/src/com/goog
       return canMoveAggressively(value) ||
           canMoveModerately(initialization, reference);
     }"
-Closure_38,/home/common/huangzhili/defects4j_buggy/Closure_38_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void addNumber(double x) {
+Closure_38,/path/to/defects4j_buggy/Closure_38_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void addNumber(double x) {
     // This is not pretty printing. This is to prevent misparsing of x- -4 as
      // x--4 (which is a syntax error).
      char prev = getLastChar();
@@ -1904,7 +1904,7 @@ Closure_38,/home/common/huangzhili/defects4j_buggy/Closure_38_buggy/src/com/goog
       add(String.valueOf(x));
     }
   }"
-Closure_39,/home/common/huangzhili/defects4j_buggy/Closure_39_buggy/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java,"@Override
+Closure_39,/path/to/defects4j_buggy/Closure_39_buggy/src/com/google/javascript/rhino/jstype/PrototypeObjectType.java,"@Override
   String toStringHelper(boolean forAnnotations) {
     if (hasReferenceName()) {
       return getReferenceName();
@@ -1949,7 +1949,7 @@ Closure_39,/home/common/huangzhili/defects4j_buggy/Closure_39_buggy/src/com/goog
        return ""{...}"";
      }
    }"
-Closure_40,/home/common/huangzhili/defects4j_buggy/Closure_40_buggy/src/com/google/javascript/jscomp/NameAnalyzer.java,"@Override
+Closure_40,/path/to/defects4j_buggy/Closure_40_buggy/src/com/google/javascript/jscomp/NameAnalyzer.java,"@Override
     public void visit(NodeTraversal t, Node n, Node parent) {
 
       // Record global variable and function declarations
@@ -1997,7 +1997,7 @@ Closure_40,/home/common/huangzhili/defects4j_buggy/Closure_40_buggy/src/com/goog
          }
        }
      }"
-Closure_42,/home/common/huangzhili/defects4j_buggy/Closure_42_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"@Override
+Closure_42,/path/to/defects4j_buggy/Closure_42_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"@Override
      Node processForInLoop(ForInLoop loopNode) {
  
          // Return the bare minimum to put the AST in a valid state.
@@ -2007,7 +2007,7 @@ Closure_42,/home/common/huangzhili/defects4j_buggy/Closure_42_buggy/src/com/goog
           transform(loopNode.getIteratedObject()),
           transformBlock(loopNode.getBody()));
     }"
-Closure_44,/home/common/huangzhili/defects4j_buggy/Closure_44_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void add(String newcode) {
+Closure_44,/path/to/defects4j_buggy/Closure_44_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void add(String newcode) {
     maybeEndStatement();
 
     if (newcode.length() == 0) {
@@ -2029,7 +2029,7 @@ Closure_44,/home/common/huangzhili/defects4j_buggy/Closure_44_buggy/src/com/goog
  
      append(newcode);
   }"
-Closure_48,/home/common/huangzhili/defects4j_buggy/Closure_48_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"void maybeDeclareQualifiedName(NodeTraversal t, JSDocInfo info,
+Closure_48,/path/to/defects4j_buggy/Closure_48_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"void maybeDeclareQualifiedName(NodeTraversal t, JSDocInfo info,
         Node n, Node parent, Node rhsValue) {
       Node ownerNode = n.getFirstChild();
       String ownerName = ownerNode.getQualifiedName();
@@ -2175,7 +2175,7 @@ Closure_48,/home/common/huangzhili/defects4j_buggy/Closure_48_buggy/src/com/goog
         }
       }
     }"
-Closure_50,/home/common/huangzhili/defects4j_buggy/Closure_50_buggy/src/com/google/javascript/jscomp/PeepholeReplaceKnownMethods.java,"private Node tryFoldArrayJoin(Node n) {
+Closure_50,/path/to/defects4j_buggy/Closure_50_buggy/src/com/google/javascript/jscomp/PeepholeReplaceKnownMethods.java,"private Node tryFoldArrayJoin(Node n) {
     Node callTarget = n.getFirstChild();
 
     if (callTarget == null || !NodeUtil.isGetProp(callTarget)) {
@@ -2285,7 +2285,7 @@ Closure_50,/home/common/huangzhili/defects4j_buggy/Closure_50_buggy/src/com/goog
 
     return n;
   }"
-Closure_51,/home/common/huangzhili/defects4j_buggy/Closure_51_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void addNumber(double x) {
+Closure_51,/path/to/defects4j_buggy/Closure_51_buggy/src/com/google/javascript/jscomp/CodeConsumer.java,"void addNumber(double x) {
     // This is not pretty printing. This is to prevent misparsing of x- -4 as
     // x--4 (which is a syntax error).
     char prev = getLastChar();
@@ -2313,7 +2313,7 @@ Closure_51,/home/common/huangzhili/defects4j_buggy/Closure_51_buggy/src/com/goog
     }
 
   }"
-Closure_52,/home/common/huangzhili/defects4j_buggy/Closure_52_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static boolean isSimpleNumber(String s) {
+Closure_52,/path/to/defects4j_buggy/Closure_52_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static boolean isSimpleNumber(String s) {
     int len = s.length();
     for (int index = 0; index < len; index++) {
       char c = s.charAt(index);
@@ -2323,7 +2323,7 @@ Closure_52,/home/common/huangzhili/defects4j_buggy/Closure_52_buggy/src/com/goog
      }
      return len > 0;
    }"
-Closure_53,/home/common/huangzhili/defects4j_buggy/Closure_53_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private void replaceAssignmentExpression(Var v, Reference ref,
+Closure_53,/path/to/defects4j_buggy/Closure_53_buggy/src/com/google/javascript/jscomp/InlineObjectLiterals.java,"private void replaceAssignmentExpression(Var v, Reference ref,
                                              Map<String, String> varmap) {
       // Compute all of the assignments necessary
       List<Node> nodes = Lists.newArrayList();
@@ -2381,10 +2381,10 @@ Closure_53,/home/common/huangzhili/defects4j_buggy/Closure_53_buggy/src/com/goog
         replace.getParent().replaceChild(replace, replacement);
       }
     }"
-Closure_55,/home/common/huangzhili/defects4j_buggy/Closure_55_buggy/src/com/google/javascript/jscomp/FunctionRewriter.java,"   private static boolean isReduceableFunctionExpression(Node n) {
+Closure_55,/path/to/defects4j_buggy/Closure_55_buggy/src/com/google/javascript/jscomp/FunctionRewriter.java,"   private static boolean isReduceableFunctionExpression(Node n) {
     return NodeUtil.isFunctionExpression(n);
    }"
-Closure_56,/home/common/huangzhili/defects4j_buggy/Closure_56_buggy/src/com/google/javascript/jscomp/SourceFile.java,"public String getLine(int lineNumber) {
+Closure_56,/path/to/defects4j_buggy/Closure_56_buggy/src/com/google/javascript/jscomp/SourceFile.java,"public String getLine(int lineNumber) {
     String js = """";
     try {
       // NOTE(nicksantos): Right now, this is optimized for few warnings.
@@ -2426,7 +2426,7 @@ Closure_56,/home/common/huangzhili/defects4j_buggy/Closure_56_buggy/src/com/goog
        return js.substring(pos, js.indexOf('\n', pos));
      }
   }"
-Closure_57,/home/common/huangzhili/defects4j_buggy/Closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java,"private static String extractClassNameIfGoog(Node node, Node parent,
+Closure_57,/path/to/defects4j_buggy/Closure_57_buggy/src/com/google/javascript/jscomp/ClosureCodingConvention.java,"private static String extractClassNameIfGoog(Node node, Node parent,
       String functionName){
     String className = null;
     if (NodeUtil.isExprCall(parent)) {
@@ -2443,7 +2443,7 @@ Closure_57,/home/common/huangzhili/defects4j_buggy/Closure_57_buggy/src/com/goog
     }
     return className;
   }"
-Closure_58,/home/common/huangzhili/defects4j_buggy/Closure_58_buggy/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java,"private void computeGenKill(Node n, BitSet gen, BitSet kill,
+Closure_58,/path/to/defects4j_buggy/Closure_58_buggy/src/com/google/javascript/jscomp/LiveVariablesAnalysis.java,"private void computeGenKill(Node n, BitSet gen, BitSet kill,
       boolean conditional) {
 
     switch (n.getType()) {
@@ -2529,7 +2529,7 @@ Closure_58,/home/common/huangzhili/defects4j_buggy/Closure_58_buggy/src/com/goog
         return;
     }
   }"
-Closure_59,/home/common/huangzhili/defects4j_buggy/Closure_59_buggy/src/com/google/javascript/jscomp/Compiler.java,"public void initOptions(CompilerOptions options) {
+Closure_59,/path/to/defects4j_buggy/Closure_59_buggy/src/com/google/javascript/jscomp/Compiler.java,"public void initOptions(CompilerOptions options) {
     this.options = options;
     if (errorManager == null) {
       if (outStream == null) {
@@ -2592,7 +2592,7 @@ Closure_59,/home/common/huangzhili/defects4j_buggy/Closure_59_buggy/src/com/goog
 
     this.warningsGuard = composedGuards;
   }"
-Closure_61,/home/common/huangzhili/defects4j_buggy/Closure_61_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean functionCallHasSideEffects(
+Closure_61,/path/to/defects4j_buggy/Closure_61_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean functionCallHasSideEffects(
       Node callNode, @Nullable AbstractCompiler compiler) {
     if (callNode.getType() != Token.CALL) {
       throw new IllegalStateException(
@@ -2643,7 +2643,7 @@ Closure_61,/home/common/huangzhili/defects4j_buggy/Closure_61_buggy/src/com/goog
 
     return true;
   }"
-Closure_62,/home/common/huangzhili/defects4j_buggy/Closure_62_buggy/src/com/google/javascript/jscomp/LightweightMessageFormatter.java,"private String format(JSError error, boolean warning) {
+Closure_62,/path/to/defects4j_buggy/Closure_62_buggy/src/com/google/javascript/jscomp/LightweightMessageFormatter.java,"private String format(JSError error, boolean warning) {
     // extract source excerpt
     SourceExcerptProvider source = getSource();
     String sourceExcerpt = source == null ? null :
@@ -2689,7 +2689,7 @@ Closure_62,/home/common/huangzhili/defects4j_buggy/Closure_62_buggy/src/com/goog
     }
     return b.toString();
   }"
-Closure_65,/home/common/huangzhili/defects4j_buggy/Closure_65_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
+Closure_65,/path/to/defects4j_buggy/Closure_65_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
                           String doublequoteEscape,
                           String singlequoteEscape,
                           String backslashEscape,
@@ -2760,7 +2760,7 @@ Closure_65,/home/common/huangzhili/defects4j_buggy/Closure_65_buggy/src/com/goog
     sb.append(quote);
     return sb.toString();
   }"
-Closure_66,/home/common/huangzhili/defects4j_buggy/Closure_66_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"public void visit(NodeTraversal t, Node n, Node parent) {
+Closure_66,/path/to/defects4j_buggy/Closure_66_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"public void visit(NodeTraversal t, Node n, Node parent) {
     JSType childType;
     JSType leftType, rightType;
     Node left, right;
@@ -3113,7 +3113,7 @@ Closure_66,/home/common/huangzhili/defects4j_buggy/Closure_66_buggy/src/com/goog
 
     checkNoTypeCheckSection(n, false);
   }"
-Closure_67,/home/common/huangzhili/defects4j_buggy/Closure_67_buggy/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java,"private boolean isPrototypePropertyAssign(Node assign) {
+Closure_67,/path/to/defects4j_buggy/Closure_67_buggy/src/com/google/javascript/jscomp/AnalyzePrototypeProperties.java,"private boolean isPrototypePropertyAssign(Node assign) {
        Node n = assign.getFirstChild();
        if (n != null && NodeUtil.isVarOrSimpleAssignLhs(n, assign)
            && n.getType() == Token.GETPROP
@@ -3134,7 +3134,7 @@ Closure_67,/home/common/huangzhili/defects4j_buggy/Closure_67_buggy/src/com/goog
 
       return false;
     }"
-Closure_69,/home/common/huangzhili/defects4j_buggy/Closure_69_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitCall(NodeTraversal t, Node n) {
+Closure_69,/path/to/defects4j_buggy/Closure_69_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitCall(NodeTraversal t, Node n) {
     Node child = n.getFirstChild();
     JSType childType = getJSType(child).restrictByNotNullOrUndefined();
 
@@ -3181,7 +3181,7 @@ Closure_69,/home/common/huangzhili/defects4j_buggy/Closure_69_buggy/src/com/goog
     // supported by IE.  Either say something about the return type or warn
     // about the non-portability of the call or both.
   }"
-Closure_70,/home/common/huangzhili/defects4j_buggy/Closure_70_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"private void declareArguments(Node functionNode) {
+Closure_70,/path/to/defects4j_buggy/Closure_70_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"private void declareArguments(Node functionNode) {
       Node astParameters = functionNode.getFirstChild().getNext();
       Node body = astParameters.getNext();
       FunctionType functionType = (FunctionType) functionNode.getJSType();
@@ -3201,7 +3201,7 @@ Closure_70,/home/common/huangzhili/defects4j_buggy/Closure_70_buggy/src/com/goog
         }
       }
     } // end declareArguments"
-Closure_71,/home/common/huangzhili/defects4j_buggy/Closure_71_buggy/src/com/google/javascript/jscomp/CheckAccessControls.java,"private void checkPropertyVisibility(NodeTraversal t,
+Closure_71,/path/to/defects4j_buggy/Closure_71_buggy/src/com/google/javascript/jscomp/CheckAccessControls.java,"private void checkPropertyVisibility(NodeTraversal t,
       Node getprop, Node parent) {
     ObjectType objectType =
         ObjectType.cast(dereference(getprop.getFirstChild().getJSType()));
@@ -3295,7 +3295,7 @@ Closure_71,/home/common/huangzhili/defects4j_buggy/Closure_71_buggy/src/com/goog
       }
     }
   }"
-Closure_73,/home/common/huangzhili/defects4j_buggy/Closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
+Closure_73,/path/to/defects4j_buggy/Closure_73_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
                           String doublequoteEscape,
                           String singlequoteEscape,
                           String backslashEscape,
@@ -3366,7 +3366,7 @@ Closure_73,/home/common/huangzhili/defects4j_buggy/Closure_73_buggy/src/com/goog
     sb.append(quote);
     return sb.toString();
   }"
-Closure_77,/home/common/huangzhili/defects4j_buggy/Closure_77_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
+Closure_77,/path/to/defects4j_buggy/Closure_77_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static String strEscape(String s, char quote,
                           String doublequoteEscape,
                           String singlequoteEscape,
                           String backslashEscape,
@@ -3436,7 +3436,7 @@ Closure_77,/home/common/huangzhili/defects4j_buggy/Closure_77_buggy/src/com/goog
     sb.append(quote);
     return sb.toString();
   }"
-Closure_78,/home/common/huangzhili/defects4j_buggy/Closure_78_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node performArithmeticOp(int opType, Node left, Node right) {
+Closure_78,/path/to/defects4j_buggy/Closure_78_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node performArithmeticOp(int opType, Node left, Node right) {
     // Unlike other operations, ADD operands are not always converted
     // to Number.
     if (opType == Token.ADD
@@ -3519,7 +3519,7 @@ Closure_78,/home/common/huangzhili/defects4j_buggy/Closure_78_buggy/src/com/goog
 
     return null;
   }"
-Closure_81,/home/common/huangzhili/defects4j_buggy/Closure_81_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"@Override
+Closure_81,/path/to/defects4j_buggy/Closure_81_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"@Override
     Node processFunctionNode(FunctionNode functionNode) {
        Name name = functionNode.getFunctionName();
        Boolean isUnnamedFunction = false;
@@ -3570,10 +3570,10 @@ Closure_81,/home/common/huangzhili/defects4j_buggy/Closure_81_buggy/src/com/goog
       node.addChildToBack(bodyNode);
      return node;
     }"
-Closure_82,/home/common/huangzhili/defects4j_buggy/Closure_82_buggy/src/com/google/javascript/rhino/jstype/JSType.java,"   public final boolean isEmptyType() {
+Closure_82,/path/to/defects4j_buggy/Closure_82_buggy/src/com/google/javascript/rhino/jstype/JSType.java,"   public final boolean isEmptyType() {
     return isNoType() || isNoObjectType() || isNoResolvedType();
    }"
-Closure_83,/home/common/huangzhili/defects4j_buggy/Closure_83_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"      public int parseArguments(Parameters params) throws CmdLineException {
+Closure_83,/path/to/defects4j_buggy/Closure_83_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"      public int parseArguments(Parameters params) throws CmdLineException {
         String param = params.getParameter(0);
 
         if (param == null) {
@@ -3592,7 +3592,7 @@ Closure_83,/home/common/huangzhili/defects4j_buggy/Closure_83_buggy/src/com/goog
           return 1;
         }
       }"
-Closure_86,/home/common/huangzhili/defects4j_buggy/Closure_86_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean evaluatesToLocalValue(Node value, Predicate<Node> locals) {
+Closure_86,/path/to/defects4j_buggy/Closure_86_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean evaluatesToLocalValue(Node value, Predicate<Node> locals) {
     switch (value.getType()) {
       case Token.ASSIGN:
         // A result that is aliased by a non-local name, is the effectively the
@@ -3658,7 +3658,7 @@ Closure_86,/home/common/huangzhili/defects4j_buggy/Closure_86_buggy/src/com/goog
             ""\n parent:"" + value.getParent());
     }
   }"
-Closure_87,/home/common/huangzhili/defects4j_buggy/Closure_87_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private boolean isFoldableExpressBlock(Node n) {
+Closure_87,/path/to/defects4j_buggy/Closure_87_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private boolean isFoldableExpressBlock(Node n) {
      if (n.getType() == Token.BLOCK) {
        if (n.hasOneChild()) {
          Node maybeExpr = n.getFirstChild();
@@ -3678,7 +3678,7 @@ Closure_87,/home/common/huangzhili/defects4j_buggy/Closure_87_buggy/src/com/goog
  
     return false;
   }"
-Closure_88,/home/common/huangzhili/defects4j_buggy/Closure_88_buggy/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java,"private VariableLiveness isVariableReadBeforeKill(
+Closure_88,/path/to/defects4j_buggy/Closure_88_buggy/src/com/google/javascript/jscomp/DeadAssignmentsElimination.java,"private VariableLiveness isVariableReadBeforeKill(
        Node n, String variable) {
      if (NodeUtil.isName(n) && variable.equals(n.getString())) {
        if (NodeUtil.isLhs(n, n.getParent())) {
@@ -3703,7 +3703,7 @@ Closure_88,/home/common/huangzhili/defects4j_buggy/Closure_88_buggy/src/com/goog
     }
     return VariableLiveness.MAYBE_LIVE;
   }"
-Closure_91,/home/common/huangzhili/defects4j_buggy/Closure_91_buggy/src/com/google/javascript/jscomp/CheckGlobalThis.java,"public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
+Closure_91,/path/to/defects4j_buggy/Closure_91_buggy/src/com/google/javascript/jscomp/CheckGlobalThis.java,"public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
 
     if (n.getType() == Token.FUNCTION) {
       // Don't traverse functions that are constructors or have the @this
@@ -3768,7 +3768,7 @@ Closure_91,/home/common/huangzhili/defects4j_buggy/Closure_91_buggy/src/com/goog
 
     return true;
   }"
-Closure_92,/home/common/huangzhili/defects4j_buggy/Closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java,"void replace() {
+Closure_92,/path/to/defects4j_buggy/Closure_92_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java,"void replace() {
       if (firstNode == null) {
         // Don't touch the base case ('goog').
         replacementNode = candidateDefinition;
@@ -3831,7 +3831,7 @@ Closure_92,/home/common/huangzhili/defects4j_buggy/Closure_92_buggy/src/com/goog
         compiler.reportCodeChange();
       }
     }"
-Closure_94,/home/common/huangzhili/defects4j_buggy/Closure_94_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean isValidDefineValue(Node val, Set<String> defines) {
+Closure_94,/path/to/defects4j_buggy/Closure_94_buggy/src/com/google/javascript/jscomp/NodeUtil.java,"static boolean isValidDefineValue(Node val, Set<String> defines) {
     switch (val.getType()) {
       case Token.STRING:
       case Token.NUMBER:
@@ -3859,7 +3859,7 @@ Closure_94,/home/common/huangzhili/defects4j_buggy/Closure_94_buggy/src/com/goog
     }
     return false;
   }"
-Closure_95,/home/common/huangzhili/defects4j_buggy/Closure_95_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"void defineSlot(Node n, Node parent, JSType type, boolean inferred) {
+Closure_95,/path/to/defects4j_buggy/Closure_95_buggy/src/com/google/javascript/jscomp/TypedScopeCreator.java,"void defineSlot(Node n, Node parent, JSType type, boolean inferred) {
       Preconditions.checkArgument(inferred || type != null);
 
       // Only allow declarations of NAMEs and qualfied names.
@@ -3933,7 +3933,7 @@ Closure_95,/home/common/huangzhili/defects4j_buggy/Closure_95_buggy/src/com/goog
         }
       }
     }"
-Closure_96,/home/common/huangzhili/defects4j_buggy/Closure_96_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitParameterList(NodeTraversal t, Node call,
+Closure_96,/path/to/defects4j_buggy/Closure_96_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitParameterList(NodeTraversal t, Node call,
       FunctionType functionType) {
     Iterator<Node> arguments = call.children().iterator();
     arguments.next(); // skip the function name
@@ -3965,7 +3965,7 @@ Closure_96,/home/common/huangzhili/defects4j_buggy/Closure_96_buggy/src/com/goog
               "" and no more than "" + maxArgs + "" argument(s)"" : """");
     }
   }"
-Closure_97,/home/common/huangzhili/defects4j_buggy/Closure_97_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node tryFoldShift(Node n, Node left, Node right) {
+Closure_97,/path/to/defects4j_buggy/Closure_97_buggy/src/com/google/javascript/jscomp/PeepholeFoldConstants.java,"private Node tryFoldShift(Node n, Node left, Node right) {
     if (left.getType() == Token.NUMBER &&
         right.getType() == Token.NUMBER) {
 
@@ -4027,7 +4027,7 @@ Closure_97,/home/common/huangzhili/defects4j_buggy/Closure_97_buggy/src/com/goog
 
     return n;
   }"
-Closure_99,/home/common/huangzhili/defects4j_buggy/Closure_99_buggy/src/com/google/javascript/jscomp/CheckGlobalThis.java,"public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
+Closure_99,/path/to/defects4j_buggy/Closure_99_buggy/src/com/google/javascript/jscomp/CheckGlobalThis.java,"public boolean shouldTraverse(NodeTraversal t, Node n, Node parent) {
 
     if (n.getType() == Token.FUNCTION) {
       // Don't traverse functions that are constructors or have the @this
@@ -4080,7 +4080,7 @@ Closure_99,/home/common/huangzhili/defects4j_buggy/Closure_99_buggy/src/com/goog
 
     return true;
   }"
-Closure_101,/home/common/huangzhili/defects4j_buggy/Closure_101_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"@Override
+Closure_101,/path/to/defects4j_buggy/Closure_101_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"@Override
   protected CompilerOptions createOptions() {
     CompilerOptions options = new CompilerOptions();
     options.setCodingConvention(new ClosureCodingConvention());
@@ -4102,7 +4102,7 @@ Closure_101,/home/common/huangzhili/defects4j_buggy/Closure_101_buggy/src/com/go
      initOptionsFromFlags(options);
      return options;
    }"
-Closure_102,/home/common/huangzhili/defects4j_buggy/Closure_102_buggy/src/com/google/javascript/jscomp/Normalize.java,"@Override
+Closure_102,/path/to/defects4j_buggy/Closure_102_buggy/src/com/google/javascript/jscomp/Normalize.java,"@Override
    public void process(Node externs, Node root) {
      NodeTraversal.traverse(compiler, root, this);
      if (MAKE_LOCAL_NAMES_UNIQUE) {
@@ -4114,7 +4114,7 @@ Closure_102,/home/common/huangzhili/defects4j_buggy/Closure_102_buggy/src/com/go
      new PropogateConstantAnnotations(compiler, assertOnChange)
          .process(externs, root);
    }"
-Closure_104,/home/common/huangzhili/defects4j_buggy/Closure_104_buggy/src/com/google/javascript/rhino/jstype/UnionType.java,"JSType meet(JSType that) {
+Closure_104,/path/to/defects4j_buggy/Closure_104_buggy/src/com/google/javascript/rhino/jstype/UnionType.java,"JSType meet(JSType that) {
     UnionTypeBuilder builder = new UnionTypeBuilder(registry);
     for (JSType alternate : alternates) {
       if (alternate.isSubtype(that)) {
@@ -4140,7 +4140,7 @@ Closure_104,/home/common/huangzhili/defects4j_buggy/Closure_104_buggy/src/com/go
       return getNativeType(JSTypeNative.NO_TYPE);
     }
   }"
-Closure_105,/home/common/huangzhili/defects4j_buggy/Closure_105_buggy/src/com/google/javascript/jscomp/FoldConstants.java,"void tryFoldStringJoin(NodeTraversal t, Node n, Node left, Node right,
+Closure_105,/path/to/defects4j_buggy/Closure_105_buggy/src/com/google/javascript/jscomp/FoldConstants.java,"void tryFoldStringJoin(NodeTraversal t, Node n, Node left, Node right,
                          Node parent) {
     if (!NodeUtil.isGetProp(left) || !NodeUtil.isImmutableValue(right)) {
       return;
@@ -4229,7 +4229,7 @@ Closure_105,/home/common/huangzhili/defects4j_buggy/Closure_105_buggy/src/com/go
     }
     t.getCompiler().reportCodeChange();
   }"
-Closure_107,/home/common/huangzhili/defects4j_buggy/Closure_107_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"@Override
+Closure_107,/path/to/defects4j_buggy/Closure_107_buggy/src/com/google/javascript/jscomp/CommandLineRunner.java,"@Override
   protected CompilerOptions createOptions() {
     CompilerOptions options = new CompilerOptions();
     if (flags.processJqueryPrimitives) {
@@ -4290,15 +4290,15 @@ Closure_107,/home/common/huangzhili/defects4j_buggy/Closure_107_buggy/src/com/go
  
      return options;
   }"
-Closure_109,/home/common/huangzhili/defects4j_buggy/Closure_109_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"  private Node parseContextTypeExpression(JsDocToken token) {
+Closure_109,/path/to/defects4j_buggy/Closure_109_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"  private Node parseContextTypeExpression(JsDocToken token) {
           return parseTypeName(token);
   }
 "
-Closure_111,/home/common/huangzhili/defects4j_buggy/Closure_111_buggy/src/com/google/javascript/jscomp/type/ClosureReverseAbstractInterpreter.java,"        protected JSType caseTopType(JSType topType) {
+Closure_111,/path/to/defects4j_buggy/Closure_111_buggy/src/com/google/javascript/jscomp/type/ClosureReverseAbstractInterpreter.java,"        protected JSType caseTopType(JSType topType) {
           return topType;
         }
 "
-Closure_112,/home/common/huangzhili/defects4j_buggy/Closure_112_buggy/src/com/google/javascript/jscomp/TypeInference.java,"  private boolean inferTemplatedTypesForCall(
+Closure_112,/path/to/defects4j_buggy/Closure_112_buggy/src/com/google/javascript/jscomp/TypeInference.java,"  private boolean inferTemplatedTypesForCall(
       Node n, FunctionType fnType) {
     final ImmutableList<TemplateType> keys = fnType.getTemplateTypeMap()
         .getTemplateKeys();
@@ -4326,7 +4326,7 @@ Closure_112,/home/common/huangzhili/defects4j_buggy/Closure_112_buggy/src/com/go
 
     return replacer.madeChanges;
   }"
-Closure_113,/home/common/huangzhili/defects4j_buggy/Closure_113_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java,"private void processRequireCall(NodeTraversal t, Node n, Node parent) {
+Closure_113,/path/to/defects4j_buggy/Closure_113_buggy/src/com/google/javascript/jscomp/ProcessClosurePrimitives.java,"private void processRequireCall(NodeTraversal t, Node n, Node parent) {
     Node left = n.getFirstChild();
     Node arg = left.getNext();
     if (verifyLastArgumentIsString(t, left, arg)) {
@@ -4366,7 +4366,7 @@ Closure_113,/home/common/huangzhili/defects4j_buggy/Closure_113_buggy/src/com/go
        }
     }
   }"
-Closure_114,/home/common/huangzhili/defects4j_buggy/Closure_114_buggy/src/com/google/javascript/jscomp/NameAnalyzer.java,"private void recordAssignment(NodeTraversal t, Node n, Node recordNode) {
+Closure_114,/path/to/defects4j_buggy/Closure_114_buggy/src/com/google/javascript/jscomp/NameAnalyzer.java,"private void recordAssignment(NodeTraversal t, Node n, Node recordNode) {
       Node nameNode = n.getFirstChild();
       Node parent = n.getParent();
       NameInformation ns = createNameInformation(t, nameNode);
@@ -4397,7 +4397,7 @@ Closure_114,/home/common/huangzhili/defects4j_buggy/Closure_114_buggy/src/com/go
         }
       }
     }"
-Closure_115,/home/common/huangzhili/defects4j_buggy/Closure_115_buggy/src/com/google/javascript/jscomp/FunctionInjector.java,"private CanInlineResult canInlineReferenceDirectly(
+Closure_115,/path/to/defects4j_buggy/Closure_115_buggy/src/com/google/javascript/jscomp/FunctionInjector.java,"private CanInlineResult canInlineReferenceDirectly(
       Node callNode, Node fnNode) {
     if (!isDirectCallNodeReplacementPossible(fnNode)) {
       return CanInlineResult.NO;
@@ -4467,7 +4467,7 @@ Closure_115,/home/common/huangzhili/defects4j_buggy/Closure_115_buggy/src/com/go
 
     return CanInlineResult.YES;
   }"
-Closure_116,/home/common/huangzhili/defects4j_buggy/Closure_116_buggy/src/com/google/javascript/jscomp/FunctionInjector.java,"private CanInlineResult canInlineReferenceDirectly(
+Closure_116,/path/to/defects4j_buggy/Closure_116_buggy/src/com/google/javascript/jscomp/FunctionInjector.java,"private CanInlineResult canInlineReferenceDirectly(
       Node callNode, Node fnNode) {
     if (!isDirectCallNodeReplacementPossible(fnNode)) {
       return CanInlineResult.NO;
@@ -4528,7 +4528,7 @@ Closure_116,/home/common/huangzhili/defects4j_buggy/Closure_116_buggy/src/com/go
 
     return CanInlineResult.YES;
   }"
-Closure_117,/home/common/huangzhili/defects4j_buggy/Closure_117_buggy/src/com/google/javascript/jscomp/TypeValidator.java,"String getReadableJSTypeName(Node n, boolean dereference) {
+Closure_117,/path/to/defects4j_buggy/Closure_117_buggy/src/com/google/javascript/jscomp/TypeValidator.java,"String getReadableJSTypeName(Node n, boolean dereference) {
  
      // The best type name is the actual type name.
  
@@ -4582,7 +4582,7 @@ Closure_117,/home/common/huangzhili/defects4j_buggy/Closure_117_buggy/src/com/go
       return type.toString();
     }
   }"
-Closure_118,/home/common/huangzhili/defects4j_buggy/Closure_118_buggy/src/com/google/javascript/jscomp/DisambiguateProperties.java,"private void handleObjectLit(NodeTraversal t, Node n) {
+Closure_118,/path/to/defects4j_buggy/Closure_118_buggy/src/com/google/javascript/jscomp/DisambiguateProperties.java,"private void handleObjectLit(NodeTraversal t, Node n) {
       for (Node child = n.getFirstChild();
            child != null;
            child = child.getNext()) {
@@ -4606,7 +4606,7 @@ Closure_118,/home/common/huangzhili/defects4j_buggy/Closure_118_buggy/src/com/go
         }
       }
     }"
-Closure_119,/home/common/huangzhili/defects4j_buggy/Closure_119_buggy/src/com/google/javascript/jscomp/GlobalNamespace.java,"public void collect(JSModule module, Scope scope, Node n) {
+Closure_119,/path/to/defects4j_buggy/Closure_119_buggy/src/com/google/javascript/jscomp/GlobalNamespace.java,"public void collect(JSModule module, Scope scope, Node n) {
       Node parent = n.getParent();
 
       String name;
@@ -4731,7 +4731,7 @@ Closure_119,/home/common/huangzhili/defects4j_buggy/Closure_119_buggy/src/com/go
         handleGet(module, scope, n, parent, name);
       }
     }"
-Closure_120,/home/common/huangzhili/defects4j_buggy/Closure_120_buggy/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java,"boolean isAssignedOnceInLifetime() {
+Closure_120,/path/to/defects4j_buggy/Closure_120_buggy/src/com/google/javascript/jscomp/ReferenceCollectingCallback.java,"boolean isAssignedOnceInLifetime() {
       Reference ref = getOneAndOnlyAssignment();
       if (ref == null) {
         return false;
@@ -4749,7 +4749,7 @@ Closure_120,/home/common/huangzhili/defects4j_buggy/Closure_120_buggy/src/com/go
 
       return true;
     }"
-Closure_121,/home/common/huangzhili/defects4j_buggy/Closure_121_buggy/src/com/google/javascript/jscomp/InlineVariables.java,"private void inlineNonConstants(
+Closure_121,/path/to/defects4j_buggy/Closure_121_buggy/src/com/google/javascript/jscomp/InlineVariables.java,"private void inlineNonConstants(
         Var v, ReferenceCollection referenceInfo,
         boolean maybeModifiedArguments) {
       int refCount = referenceInfo.references.size();
@@ -4823,7 +4823,7 @@ Closure_121,/home/common/huangzhili/defects4j_buggy/Closure_121_buggy/src/com/go
         }
       }
     }"
-Closure_122,/home/common/huangzhili/defects4j_buggy/Closure_122_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"  private void handleBlockComment(Comment comment) {
+Closure_122,/path/to/defects4j_buggy/Closure_122_buggy/src/com/google/javascript/jscomp/parsing/IRFactory.java,"  private void handleBlockComment(Comment comment) {
     if (comment.getValue().indexOf(""/* @"") != -1 || comment.getValue().indexOf(""\n * @"") != -1) {
       errorReporter.warning(
           SUSPICIOUS_COMMENT_WARNING,
@@ -4832,7 +4832,7 @@ Closure_122,/home/common/huangzhili/defects4j_buggy/Closure_122_buggy/src/com/go
     }
   }
 "
-Closure_123,/home/common/huangzhili/defects4j_buggy/Closure_123_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"void add(Node n, Context context) {
+Closure_123,/path/to/defects4j_buggy/Closure_123_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"void add(Node n, Context context) {
     if (!cc.continueProcessing()) {
       return;
     }
@@ -5497,7 +5497,7 @@ Closure_123,/home/common/huangzhili/defects4j_buggy/Closure_123_buggy/src/com/go
 
     cc.endSourceMapping(n);
   }"
-Closure_124,/home/common/huangzhili/defects4j_buggy/Closure_124_buggy/src/com/google/javascript/jscomp/ExploitAssigns.java,"private boolean isSafeReplacement(Node node, Node replacement) {
+Closure_124,/path/to/defects4j_buggy/Closure_124_buggy/src/com/google/javascript/jscomp/ExploitAssigns.java,"private boolean isSafeReplacement(Node node, Node replacement) {
     // No checks are needed for simple names.
     if (node.isName()) {
       return true;
@@ -5512,7 +5512,7 @@ Closure_124,/home/common/huangzhili/defects4j_buggy/Closure_124_buggy/src/com/go
 
     return true;
   }"
-Closure_125,/home/common/huangzhili/defects4j_buggy/Closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitNew(NodeTraversal t, Node n) {
+Closure_125,/path/to/defects4j_buggy/Closure_125_buggy/src/com/google/javascript/jscomp/TypeCheck.java,"private void visitNew(NodeTraversal t, Node n) {
     Node constructor = n.getFirstChild();
      JSType type = getJSType(constructor).restrictByNotNullOrUndefined();
      if (type.isConstructor() || type.isEmptyType() || type.isUnknownType()) {
@@ -5528,7 +5528,7 @@ Closure_125,/home/common/huangzhili/defects4j_buggy/Closure_125_buggy/src/com/go
       ensureTyped(t, n);
     }
   }"
-Closure_126,/home/common/huangzhili/defects4j_buggy/Closure_126_buggy/src/com/google/javascript/jscomp/MinimizeExitPoints.java,"void tryMinimizeExits(Node n, int exitType, String labelName) {
+Closure_126,/path/to/defects4j_buggy/Closure_126_buggy/src/com/google/javascript/jscomp/MinimizeExitPoints.java,"void tryMinimizeExits(Node n, int exitType, String labelName) {
 
     // Just an 'exit'.
     if (matchingExitNode(n, exitType, labelName)) {
@@ -5624,7 +5624,7 @@ Closure_126,/home/common/huangzhili/defects4j_buggy/Closure_126_buggy/src/com/go
       }
     }
   }"
-Closure_128,/home/common/huangzhili/defects4j_buggy/Closure_128_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static boolean isSimpleNumber(String s) {
+Closure_128,/path/to/defects4j_buggy/Closure_128_buggy/src/com/google/javascript/jscomp/CodeGenerator.java,"static boolean isSimpleNumber(String s) {
      int len = s.length();
      for (int index = 0; index < len; index++) {
        char c = s.charAt(index);
@@ -5634,7 +5634,7 @@ Closure_128,/home/common/huangzhili/defects4j_buggy/Closure_128_buggy/src/com/go
      }
      return len > 0 && s.charAt(0) != '0';
    }"
-Closure_129,/home/common/huangzhili/defects4j_buggy/Closure_129_buggy/src/com/google/javascript/jscomp/PrepareAst.java,"private void annotateCalls(Node n) {
+Closure_129,/path/to/defects4j_buggy/Closure_129_buggy/src/com/google/javascript/jscomp/PrepareAst.java,"private void annotateCalls(Node n) {
       Preconditions.checkState(n.isCall());
 
       // Keep track of of the ""this"" context of a call.  A call without an
@@ -5654,7 +5654,7 @@ Closure_129,/home/common/huangzhili/defects4j_buggy/Closure_129_buggy/src/com/go
         first.putBooleanProp(Node.DIRECT_EVAL, true);
       }
     }"
-Closure_130,/home/common/huangzhili/defects4j_buggy/Closure_130_buggy/src/com/google/javascript/jscomp/CollapseProperties.java,"private void inlineAliases(GlobalNamespace namespace) {
+Closure_130,/path/to/defects4j_buggy/Closure_130_buggy/src/com/google/javascript/jscomp/CollapseProperties.java,"private void inlineAliases(GlobalNamespace namespace) {
     // Invariant: All the names in the worklist meet condition (a).
     Deque<Name> workList = new ArrayDeque<Name>(namespace.getNameForest());
     while (!workList.isEmpty()) {
@@ -5691,7 +5691,7 @@ Closure_130,/home/common/huangzhili/defects4j_buggy/Closure_130_buggy/src/com/go
       }
     }
   }"
-Closure_131,/home/common/huangzhili/defects4j_buggy/Closure_131_buggy/src/com/google/javascript/rhino/TokenStream.java,"public static boolean isJSIdentifier(String s) {
+Closure_131,/path/to/defects4j_buggy/Closure_131_buggy/src/com/google/javascript/rhino/TokenStream.java,"public static boolean isJSIdentifier(String s) {
        int length = s.length();
  
        if (length == 0 ||
@@ -5708,7 +5708,7 @@ Closure_131,/home/common/huangzhili/defects4j_buggy/Closure_131_buggy/src/com/go
 
       return true;
     }"
-Closure_132,/home/common/huangzhili/defects4j_buggy/Closure_132_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private Node tryMinimizeIf(Node n) {
+Closure_132,/path/to/defects4j_buggy/Closure_132_buggy/src/com/google/javascript/jscomp/PeepholeSubstituteAlternateSyntax.java,"private Node tryMinimizeIf(Node n) {
 
     Node parent = n.getParent();
 
@@ -5941,11 +5941,11 @@ Closure_132,/home/common/huangzhili/defects4j_buggy/Closure_132_buggy/src/com/go
 
     return n;
   }"
-Closure_133,/home/common/huangzhili/defects4j_buggy/Closure_133_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"private String getRemainingJSDocLine() {
+Closure_133,/path/to/defects4j_buggy/Closure_133_buggy/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java,"private String getRemainingJSDocLine() {
      String result = stream.getRemainingJSDocLine();
      return result;
    }"
-Lang_1,/home/common/huangzhili/defects4j_buggy/Lang_1_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(final String str) throws NumberFormatException {
+Lang_1,/path/to/defects4j_buggy/Lang_1_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(final String str) throws NumberFormatException {
         if (str == null) {
             return null;
         }
@@ -6110,7 +6110,7 @@ Lang_1,/home/common/huangzhili/defects4j_buggy/Lang_1_buggy/src/main/java/org/ap
 
         return createBigDecimal(str);
     }"
-Lang_3,/home/common/huangzhili/defects4j_buggy/Lang_3_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(final String str) throws NumberFormatException {
+Lang_3,/path/to/defects4j_buggy/Lang_3_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(final String str) throws NumberFormatException {
         if (str == null) {
             return null;
         }
@@ -6271,7 +6271,7 @@ Lang_3,/home/common/huangzhili/defects4j_buggy/Lang_3_buggy/src/main/java/org/ap
 
         return createBigDecimal(str);
     }"
-Lang_5,/home/common/huangzhili/defects4j_buggy/Lang_5_buggy/src/main/java/org/apache/commons/lang3/LocaleUtils.java,"public static Locale toLocale(final String str) {
+Lang_5,/path/to/defects4j_buggy/Lang_5_buggy/src/main/java/org/apache/commons/lang3/LocaleUtils.java,"public static Locale toLocale(final String str) {
         if (str == null) {
             return null;
         }
@@ -6312,7 +6312,7 @@ Lang_5,/home/common/huangzhili/defects4j_buggy/Lang_5_buggy/src/main/java/org/ap
             }
             return new Locale(str.substring(0, 2), str.substring(3, 5), str.substring(6));
     }"
-Lang_6,/home/common/huangzhili/defects4j_buggy/Lang_6_buggy/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java,"public final void translate(CharSequence input, Writer out) throws IOException {
+Lang_6,/path/to/defects4j_buggy/Lang_6_buggy/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java,"public final void translate(CharSequence input, Writer out) throws IOException {
         if (out == null) {
             throw new IllegalArgumentException(""The Writer must not be null"");
         }
@@ -6336,7 +6336,7 @@ Lang_6,/home/common/huangzhili/defects4j_buggy/Lang_6_buggy/src/main/java/org/ap
              }
          }
      }"
-Lang_9,/home/common/huangzhili/defects4j_buggy/Lang_9_buggy/src/main/java/org/apache/commons/lang3/time/FastDateParser.java,"private void init() {
+Lang_9,/path/to/defects4j_buggy/Lang_9_buggy/src/main/java/org/apache/commons/lang3/time/FastDateParser.java,"private void init() {
         thisYear= Calendar.getInstance(timeZone, locale).get(Calendar.YEAR);
 
         nameValues= new ConcurrentHashMap<Integer, KeyValue[]>();
@@ -6372,7 +6372,7 @@ Lang_9,/home/common/huangzhili/defects4j_buggy/Lang_9_buggy/src/main/java/org/ap
         strategies= collector.toArray(new Strategy[collector.size()]);
         parsePattern= Pattern.compile(regex.toString());
     }"
-Lang_10,/home/common/huangzhili/defects4j_buggy/Lang_10_buggy/src/main/java/org/apache/commons/lang3/time/FastDateParser.java,"    private static StringBuilder escapeRegex(StringBuilder regex, String value, boolean unquote) {
+Lang_10,/path/to/defects4j_buggy/Lang_10_buggy/src/main/java/org/apache/commons/lang3/time/FastDateParser.java,"    private static StringBuilder escapeRegex(StringBuilder regex, String value, boolean unquote) {
         boolean wasWhite= false;
         for(int i= 0; i<value.length(); ++i) {
             char c= value.charAt(i);
@@ -6414,7 +6414,7 @@ Lang_10,/home/common/huangzhili/defects4j_buggy/Lang_10_buggy/src/main/java/org/
         return regex;
     }
 "
-Lang_11,/home/common/huangzhili/defects4j_buggy/Lang_11_buggy/src/main/java/org/apache/commons/lang3/RandomStringUtils.java,"public static String random(int count, int start, int end, boolean letters, boolean numbers,
+Lang_11,/path/to/defects4j_buggy/Lang_11_buggy/src/main/java/org/apache/commons/lang3/RandomStringUtils.java,"public static String random(int count, int start, int end, boolean letters, boolean numbers,
                                 char[] chars, Random random) {
         if (count == 0) {
             return """";
@@ -6481,7 +6481,7 @@ Lang_11,/home/common/huangzhili/defects4j_buggy/Lang_11_buggy/src/main/java/org/
         }
         return new String(buffer);
     }"
-Lang_12,/home/common/huangzhili/defects4j_buggy/Lang_12_buggy/src/main/java/org/apache/commons/lang3/RandomStringUtils.java,"public static String random(int count, int start, int end, boolean letters, boolean numbers,
+Lang_12,/path/to/defects4j_buggy/Lang_12_buggy/src/main/java/org/apache/commons/lang3/RandomStringUtils.java,"public static String random(int count, int start, int end, boolean letters, boolean numbers,
                                 char[] chars, Random random) {
         if (count == 0) {
             return """";
@@ -6541,7 +6541,7 @@ Lang_12,/home/common/huangzhili/defects4j_buggy/Lang_12_buggy/src/main/java/org/
         }
         return new String(buffer);
     }"
-Lang_14,/home/common/huangzhili/defects4j_buggy/Lang_14_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java,"public static boolean equals(CharSequence cs1, CharSequence cs2) {
+Lang_14,/path/to/defects4j_buggy/Lang_14_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java,"public static boolean equals(CharSequence cs1, CharSequence cs2) {
         if (cs1 == cs2) {
             return true;
         }
@@ -6550,7 +6550,7 @@ Lang_14,/home/common/huangzhili/defects4j_buggy/Lang_14_buggy/src/main/java/org/
          }
              return cs1.equals(cs2);
      }"
-Lang_16,/home/common/huangzhili/defects4j_buggy/Lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
+Lang_16,/path/to/defects4j_buggy/Lang_16_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
         if (str == null) {
             return null;
         }
@@ -6701,7 +6701,7 @@ Lang_16,/home/common/huangzhili/defects4j_buggy/Lang_16_buggy/src/main/java/org/
             }
         }
     }"
-Lang_17,/home/common/huangzhili/defects4j_buggy/Lang_17_buggy/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java,"public final void translate(CharSequence input, Writer out) throws IOException {
+Lang_17,/path/to/defects4j_buggy/Lang_17_buggy/src/main/java/org/apache/commons/lang3/text/translate/CharSequenceTranslator.java,"public final void translate(CharSequence input, Writer out) throws IOException {
         if (out == null) {
             throw new IllegalArgumentException(""The Writer must not be null"");
         }
@@ -6731,7 +6731,7 @@ Lang_17,/home/common/huangzhili/defects4j_buggy/Lang_17_buggy/src/main/java/org/
              pos++;
          }
      }"
-Lang_19,/home/common/huangzhili/defects4j_buggy/Lang_19_buggy/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java,"@Override
+Lang_19,/path/to/defects4j_buggy/Lang_19_buggy/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java,"@Override
     public int translate(CharSequence input, int index, Writer out) throws IOException {
         int seqEnd = input.length();
         // Uses -2 to ensure there is something after the &#
@@ -6779,7 +6779,7 @@ Lang_19,/home/common/huangzhili/defects4j_buggy/Lang_19_buggy/src/main/java/org/
         }
         return 0;
     }"
-Lang_21,/home/common/huangzhili/defects4j_buggy/Lang_21_buggy/src/main/java/org/apache/commons/lang3/time/DateUtils.java,"public static boolean isSameLocalTime(Calendar cal1, Calendar cal2) {
+Lang_21,/path/to/defects4j_buggy/Lang_21_buggy/src/main/java/org/apache/commons/lang3/time/DateUtils.java,"public static boolean isSameLocalTime(Calendar cal1, Calendar cal2) {
         if (cal1 == null || cal2 == null) {
             throw new IllegalArgumentException(""The date must not be null"");
         }
@@ -6792,7 +6792,7 @@ Lang_21,/home/common/huangzhili/defects4j_buggy/Lang_21_buggy/src/main/java/org/
                  cal1.get(Calendar.ERA) == cal2.get(Calendar.ERA) &&
                 cal1.getClass() == cal2.getClass());
     }"
-Lang_22,/home/common/huangzhili/defects4j_buggy/Lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java,"private static int greatestCommonDivisor(int u, int v) {
+Lang_22,/path/to/defects4j_buggy/Lang_22_buggy/src/main/java/org/apache/commons/lang3/math/Fraction.java,"private static int greatestCommonDivisor(int u, int v) {
          // From Commons Math:
          //if either operand is abs 1, return 1:
          if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
@@ -6836,7 +6836,7 @@ Lang_22,/home/common/huangzhili/defects4j_buggy/Lang_22_buggy/src/main/java/org/
         } while (t!=0);
         return -u*(1<<k); // gcd is u*2^k
     }"
-Lang_24,/home/common/huangzhili/defects4j_buggy/Lang_24_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static boolean isNumber(String str) {
+Lang_24,/path/to/defects4j_buggy/Lang_24_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static boolean isNumber(String str) {
         if (StringUtils.isEmpty(str)) {
             return false;
         }
@@ -6939,13 +6939,13 @@ Lang_24,/home/common/huangzhili/defects4j_buggy/Lang_24_buggy/src/main/java/org/
         // found digit it to make sure weird stuff like '.' and '1E-' doesn't pass
         return !allowSigns && foundDigit;
     }"
-Lang_26,/home/common/huangzhili/defects4j_buggy/Lang_26_buggy/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java,"    public String format(Date date) {
+Lang_26,/path/to/defects4j_buggy/Lang_26_buggy/src/main/java/org/apache/commons/lang3/time/FastDateFormat.java,"    public String format(Date date) {
         Calendar c = new GregorianCalendar(mTimeZone);
         c.setTime(date);
         return applyRules(c, new StringBuffer(mMaxLengthEstimate)).toString();
     }
 "
-Lang_27,/home/common/huangzhili/defects4j_buggy/Lang_27_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
+Lang_27,/path/to/defects4j_buggy/Lang_27_buggy/src/main/java/org/apache/commons/lang3/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
         if (str == null) {
             return null;
         }
@@ -7093,7 +7093,7 @@ Lang_27,/home/common/huangzhili/defects4j_buggy/Lang_27_buggy/src/main/java/org/
             }
         }
     }"
-Lang_28,/home/common/huangzhili/defects4j_buggy/Lang_28_buggy/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java,"@Override
+Lang_28,/path/to/defects4j_buggy/Lang_28_buggy/src/main/java/org/apache/commons/lang3/text/translate/NumericEntityUnescaper.java,"@Override
     public int translate(CharSequence input, int index, Writer out) throws IOException {
         // TODO: Protect from ArrayIndexOutOfBounds
         if(input.charAt(index) == '&' && input.charAt(index + 1) == '#') {
@@ -7127,11 +7127,11 @@ Lang_28,/home/common/huangzhili/defects4j_buggy/Lang_28_buggy/src/main/java/org/
          }
          return 0;
     }"
-Lang_29,/home/common/huangzhili/defects4j_buggy/Lang_29_buggy/src/main/java/org/apache/commons/lang3/SystemUtils.java,"    static float toJavaVersionInt(String version) {
+Lang_29,/path/to/defects4j_buggy/Lang_29_buggy/src/main/java/org/apache/commons/lang3/SystemUtils.java,"    static float toJavaVersionInt(String version) {
         return toVersionInt(toJavaVersionIntArray(version, JAVA_VERSION_TRIM_SIZE));
     }
 "
-Lang_31,/home/common/huangzhili/defects4j_buggy/Lang_31_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java," public static boolean containsAny(CharSequence cs, char[] searchChars) {
+Lang_31,/path/to/defects4j_buggy/Lang_31_buggy/src/main/java/org/apache/commons/lang3/StringUtils.java," public static boolean containsAny(CharSequence cs, char[] searchChars) {
   if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) {
    return false;
   }
@@ -7149,7 +7149,7 @@ Lang_31,/home/common/huangzhili/defects4j_buggy/Lang_31_buggy/src/main/java/org/
   }
   return false;
  }"
-Lang_33,/home/common/huangzhili/defects4j_buggy/Lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java,"public static Class<?>[] toClass(Object[] array) {
+Lang_33,/path/to/defects4j_buggy/Lang_33_buggy/src/main/java/org/apache/commons/lang3/ClassUtils.java,"public static Class<?>[] toClass(Object[] array) {
         if (array == null) {
             return null;
         } else if (array.length == 0) {
@@ -7161,7 +7161,7 @@ Lang_33,/home/common/huangzhili/defects4j_buggy/Lang_33_buggy/src/main/java/org/
          }
          return classes;
      }"
-Lang_37,/home/common/huangzhili/defects4j_buggy/Lang_37_buggy/src/java/org/apache/commons/lang3/ArrayUtils.java,"@SuppressWarnings(""unchecked"")
+Lang_37,/path/to/defects4j_buggy/Lang_37_buggy/src/java/org/apache/commons/lang3/ArrayUtils.java,"@SuppressWarnings(""unchecked"")
     public static <T> T[] addAll(T[] array1, T... array2) {
         if (array1 == null) {
             return clone(array2);
@@ -7175,14 +7175,14 @@ Lang_37,/home/common/huangzhili/defects4j_buggy/Lang_37_buggy/src/java/org/apach
              // Check if problem is incompatible types
          return joinedArray;
      }"
-Lang_38,/home/common/huangzhili/defects4j_buggy/Lang_38_buggy/src/java/org/apache/commons/lang3/time/FastDateFormat.java,"public StringBuffer format(Calendar calendar, StringBuffer buf) {
+Lang_38,/path/to/defects4j_buggy/Lang_38_buggy/src/java/org/apache/commons/lang3/time/FastDateFormat.java,"public StringBuffer format(Calendar calendar, StringBuffer buf) {
          if (mTimeZoneForced) {
              calendar = (Calendar) calendar.clone();
              calendar.setTimeZone(mTimeZone);
          }
         return applyRules(calendar, buf);
     }"
-Lang_39,/home/common/huangzhili/defects4j_buggy/Lang_39_buggy/src/java/org/apache/commons/lang3/StringUtils.java,"private static String replaceEach(String text, String[] searchList, String[] replacementList, 
+Lang_39,/path/to/defects4j_buggy/Lang_39_buggy/src/java/org/apache/commons/lang3/StringUtils.java,"private static String replaceEach(String text, String[] searchList, String[] replacementList, 
                                       boolean repeat, int timeToLive) 
     {
 
@@ -7309,13 +7309,13 @@ Lang_39,/home/common/huangzhili/defects4j_buggy/Lang_39_buggy/src/java/org/apach
 
         return replaceEach(result, searchList, replacementList, repeat, timeToLive - 1);
     }"
-Lang_40,/home/common/huangzhili/defects4j_buggy/Lang_40_buggy/src/java/org/apache/commons/lang/StringUtils.java,"public static boolean containsIgnoreCase(String str, String searchStr) {
+Lang_40,/path/to/defects4j_buggy/Lang_40_buggy/src/java/org/apache/commons/lang/StringUtils.java,"public static boolean containsIgnoreCase(String str, String searchStr) {
          if (str == null || searchStr == null) {
              return false;
          }
          return contains(str.toUpperCase(), searchStr.toUpperCase());
      }"
-Lang_42,/home/common/huangzhili/defects4j_buggy/Lang_42_buggy/src/java/org/apache/commons/lang/Entities.java,"public void escape(Writer writer, String str) throws IOException {
+Lang_42,/path/to/defects4j_buggy/Lang_42_buggy/src/java/org/apache/commons/lang/Entities.java,"public void escape(Writer writer, String str) throws IOException {
          int len = str.length();
          for (int i = 0; i < len; i++) {
              char c = str.charAt(i);
@@ -7335,7 +7335,7 @@ Lang_42,/home/common/huangzhili/defects4j_buggy/Lang_42_buggy/src/java/org/apach
             }
         }
     }"
-Lang_43,/home/common/huangzhili/defects4j_buggy/Lang_43_buggy/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java,"    private StringBuffer appendQuotedString(String pattern, ParsePosition pos,
+Lang_43,/path/to/defects4j_buggy/Lang_43_buggy/src/java/org/apache/commons/lang/text/ExtendedMessageFormat.java,"    private StringBuffer appendQuotedString(String pattern, ParsePosition pos,
             StringBuffer appendTo, boolean escapingOn) {
         int start = pos.getIndex();
         char[] c = pattern.toCharArray();
@@ -7364,7 +7364,7 @@ Lang_43,/home/common/huangzhili/defects4j_buggy/Lang_43_buggy/src/java/org/apach
                 ""Unterminated quoted string at position "" + start);
     }
 "
-Lang_44,/home/common/huangzhili/defects4j_buggy/Lang_44_buggy/src/java/org/apache/commons/lang/NumberUtils.java,"    public static Number createNumber(String val) throws NumberFormatException {
+Lang_44,/path/to/defects4j_buggy/Lang_44_buggy/src/java/org/apache/commons/lang/NumberUtils.java,"    public static Number createNumber(String val) throws NumberFormatException {
         if (val == null) {
             return null;
         }
@@ -7514,7 +7514,7 @@ Lang_44,/home/common/huangzhili/defects4j_buggy/Lang_44_buggy/src/java/org/apach
         }
     }
 "
-Lang_45,/home/common/huangzhili/defects4j_buggy/Lang_45_buggy/src/java/org/apache/commons/lang/WordUtils.java,"public static String abbreviate(String str, int lower, int upper, String appendToEnd) {
+Lang_45,/path/to/defects4j_buggy/Lang_45_buggy/src/java/org/apache/commons/lang/WordUtils.java,"public static String abbreviate(String str, int lower, int upper, String appendToEnd) {
         // initial parameter checks
         if (str == null) {
             return null;
@@ -7552,7 +7552,7 @@ Lang_45,/home/common/huangzhili/defects4j_buggy/Lang_45_buggy/src/java/org/apach
         }
         return result.toString();
     }"
-Lang_49,/home/common/huangzhili/defects4j_buggy/Lang_49_buggy/src/java/org/apache/commons/lang/math/Fraction.java,"    public Fraction reduce() {
+Lang_49,/path/to/defects4j_buggy/Lang_49_buggy/src/java/org/apache/commons/lang/math/Fraction.java,"    public Fraction reduce() {
         int gcd = greatestCommonDivisor(Math.abs(numerator), denominator);
         if (gcd == 1) {
             return this;
@@ -7560,7 +7560,7 @@ Lang_49,/home/common/huangzhili/defects4j_buggy/Lang_49_buggy/src/java/org/apach
         return Fraction.getFraction(numerator / gcd, denominator / gcd);
     }
 "
-Lang_51,/home/common/huangzhili/defects4j_buggy/Lang_51_buggy/src/java/org/apache/commons/lang/BooleanUtils.java,"public static boolean toBoolean(String str) {
+Lang_51,/path/to/defects4j_buggy/Lang_51_buggy/src/java/org/apache/commons/lang/BooleanUtils.java,"public static boolean toBoolean(String str) {
         // Previously used equalsIgnoreCase, which was fast for interned 'true'.
         // Non interned 'true' matched 15 times slower.
         // 
@@ -7612,7 +7612,7 @@ Lang_51,/home/common/huangzhili/defects4j_buggy/Lang_51_buggy/src/java/org/apach
         }
         return false;
     }"
-Lang_52,/home/common/huangzhili/defects4j_buggy/Lang_52_buggy/src/java/org/apache/commons/lang/StringEscapeUtils.java,"private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {
+Lang_52,/path/to/defects4j_buggy/Lang_52_buggy/src/java/org/apache/commons/lang/StringEscapeUtils.java,"private static void escapeJavaStyleString(Writer out, String str, boolean escapeSingleQuote) throws IOException {
         if (out == null) {
             throw new IllegalArgumentException(""The Writer must not be null"");
         }
@@ -7684,7 +7684,7 @@ Lang_52,/home/common/huangzhili/defects4j_buggy/Lang_52_buggy/src/java/org/apach
             }
         }
     }"
-Lang_53,/home/common/huangzhili/defects4j_buggy/Lang_53_buggy/src/java/org/apache/commons/lang/time/DateUtils.java,"private static void modify(Calendar val, int field, boolean round) {
+Lang_53,/path/to/defects4j_buggy/Lang_53_buggy/src/java/org/apache/commons/lang/time/DateUtils.java,"private static void modify(Calendar val, int field, boolean round) {
         if (val.get(Calendar.YEAR) > 280000000) {
             throw new ArithmeticException(""Calendar value too large for accurate calculations"");
         }
@@ -7809,7 +7809,7 @@ Lang_53,/home/common/huangzhili/defects4j_buggy/Lang_53_buggy/src/java/org/apach
         throw new IllegalArgumentException(""The field "" + field + "" is not supported"");
 
     }"
-Lang_54,/home/common/huangzhili/defects4j_buggy/Lang_54_buggy/src/java/org/apache/commons/lang/LocaleUtils.java,"public static Locale toLocale(String str) {
+Lang_54,/path/to/defects4j_buggy/Lang_54_buggy/src/java/org/apache/commons/lang/LocaleUtils.java,"public static Locale toLocale(String str) {
         if (str == null) {
             return null;
         }
@@ -7843,18 +7843,18 @@ Lang_54,/home/common/huangzhili/defects4j_buggy/Lang_54_buggy/src/java/org/apach
             }
         }
     }"
-Lang_55,/home/common/huangzhili/defects4j_buggy/Lang_55_buggy/src/java/org/apache/commons/lang/time/StopWatch.java,"public void stop() {
+Lang_55,/path/to/defects4j_buggy/Lang_55_buggy/src/java/org/apache/commons/lang/time/StopWatch.java,"public void stop() {
          if(this.runningState != STATE_RUNNING && this.runningState != STATE_SUSPENDED) {
              throw new IllegalStateException(""Stopwatch is not running. "");
          }
              stopTime = System.currentTimeMillis();
          this.runningState = STATE_STOPPED;
      }"
-Lang_57,/home/common/huangzhili/defects4j_buggy/Lang_57_buggy/src/java/org/apache/commons/lang/LocaleUtils.java,"    public static boolean isAvailableLocale(Locale locale) {
+Lang_57,/path/to/defects4j_buggy/Lang_57_buggy/src/java/org/apache/commons/lang/LocaleUtils.java,"    public static boolean isAvailableLocale(Locale locale) {
         return cAvailableLocaleSet.contains(locale);
     }
 "
-Lang_58,/home/common/huangzhili/defects4j_buggy/Lang_58_buggy/src/java/org/apache/commons/lang/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
+Lang_58,/path/to/defects4j_buggy/Lang_58_buggy/src/java/org/apache/commons/lang/math/NumberUtils.java,"public static Number createNumber(String str) throws NumberFormatException {
         if (str == null) {
             return null;
         }
@@ -8003,7 +8003,7 @@ Lang_58,/home/common/huangzhili/defects4j_buggy/Lang_58_buggy/src/java/org/apach
             }
         }
     }"
-Lang_59,/home/common/huangzhili/defects4j_buggy/Lang_59_buggy/src/java/org/apache/commons/lang/text/StrBuilder.java,"public StrBuilder appendFixedWidthPadRight(Object obj, int width, char padChar) {
+Lang_59,/path/to/defects4j_buggy/Lang_59_buggy/src/java/org/apache/commons/lang/text/StrBuilder.java,"public StrBuilder appendFixedWidthPadRight(Object obj, int width, char padChar) {
         if (width > 0) {
             ensureCapacity(size + width);
              String str = (obj == null ? getNullText() : obj.toString());
@@ -8021,7 +8021,7 @@ Lang_59,/home/common/huangzhili/defects4j_buggy/Lang_59_buggy/src/java/org/apach
         }
         return this;
     }"
-Lang_61,/home/common/huangzhili/defects4j_buggy/Lang_61_buggy/src/java/org/apache/commons/lang/text/StrBuilder.java,"public int indexOf(String str, int startIndex) {
+Lang_61,/path/to/defects4j_buggy/Lang_61_buggy/src/java/org/apache/commons/lang/text/StrBuilder.java,"public int indexOf(String str, int startIndex) {
         startIndex = (startIndex < 0 ? 0 : startIndex);
         if (str == null || startIndex >= size) {
             return -1;
@@ -8049,7 +8049,7 @@ Lang_61,/home/common/huangzhili/defects4j_buggy/Lang_61_buggy/src/java/org/apach
         }
         return -1;
     }"
-Lang_65,/home/common/huangzhili/defects4j_buggy/Lang_65_buggy/src/java/org/apache/commons/lang/time/DateUtils.java,"    private static void modify(Calendar val, int field, boolean round) {
+Lang_65,/path/to/defects4j_buggy/Lang_65_buggy/src/java/org/apache/commons/lang/time/DateUtils.java,"    private static void modify(Calendar val, int field, boolean round) {
         if (val.get(Calendar.YEAR) > 280000000) {
             throw new ArithmeticException(""Calendar value too large for accurate calculations"");
         }
@@ -8145,11 +8145,11 @@ Lang_65,/home/common/huangzhili/defects4j_buggy/Lang_65_buggy/src/java/org/apach
 
     }
 "
-Math_2,/home/common/huangzhili/defects4j_buggy/Math_2_buggy/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java,"    public double getNumericalMean() {
+Math_2,/path/to/defects4j_buggy/Math_2_buggy/src/main/java/org/apache/commons/math3/distribution/HypergeometricDistribution.java,"    public double getNumericalMean() {
         return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) getPopulationSize();
     }
 "
-Math_3,/home/common/huangzhili/defects4j_buggy/Math_3_buggy/src/main/java/org/apache/commons/math3/util/MathArrays.java,"    public static double linearCombination(final double[] a, final double[] b)
+Math_3,/path/to/defects4j_buggy/Math_3_buggy/src/main/java/org/apache/commons/math3/util/MathArrays.java,"    public static double linearCombination(final double[] a, final double[] b)
         throws DimensionMismatchException {
         final int len = a.length;
         if (len != b.length) {
@@ -8208,7 +8208,7 @@ Math_3,/home/common/huangzhili/defects4j_buggy/Math_3_buggy/src/main/java/org/ap
 
         return result;
     }"
-Math_5,/home/common/huangzhili/defects4j_buggy/Math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java,"public Complex reciprocal() {
+Math_5,/path/to/defects4j_buggy/Math_5_buggy/src/main/java/org/apache/commons/math3/complex/Complex.java,"public Complex reciprocal() {
         if (isNaN) {
             return NaN;
          }
@@ -8231,7 +8231,7 @@ Math_5,/home/common/huangzhili/defects4j_buggy/Math_5_buggy/src/main/java/org/ap
             return createComplex(scale, -scale * q);
         }
     }"
-Math_7,/home/common/huangzhili/defects4j_buggy/Math_7_buggy/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java,"protected double acceptStep(final AbstractStepInterpolator interpolator,
+Math_7,/path/to/defects4j_buggy/Math_7_buggy/src/main/java/org/apache/commons/math3/ode/AbstractIntegrator.java,"protected double acceptStep(final AbstractStepInterpolator interpolator,
                                 final double[] y, final double[] yDot, final double tEnd)
         throws MaxCountExceededException, DimensionMismatchException, NoBracketingException {
 
@@ -8341,7 +8341,7 @@ Math_7,/home/common/huangzhili/defects4j_buggy/Math_7_buggy/src/main/java/org/ap
             return currentT;
 
     }"
-Math_8,/home/common/huangzhili/defects4j_buggy/Math_8_buggy/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java,"    public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
+Math_8,/path/to/defects4j_buggy/Math_8_buggy/src/main/java/org/apache/commons/math3/distribution/DiscreteDistribution.java,"    public T[] sample(int sampleSize) throws NotStrictlyPositiveException {
         if (sampleSize <= 0) {
             throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_SAMPLES,
                     sampleSize);
@@ -8357,12 +8357,12 @@ Math_8,/home/common/huangzhili/defects4j_buggy/Math_8_buggy/src/main/java/org/ap
 
     }
 "
-Math_9,/home/common/huangzhili/defects4j_buggy/Math_9_buggy/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java,"    public Line revert() {
+Math_9,/path/to/defects4j_buggy/Math_9_buggy/src/main/java/org/apache/commons/math3/geometry/euclidean/threed/Line.java,"    public Line revert() {
         final Line reverted = new Line(zero, zero.subtract(direction));
         return reverted;
     }
 "
-Math_10,/home/common/huangzhili/defects4j_buggy/Math_10_buggy/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java,"public void atan2(final double[] y, final int yOffset,
+Math_10,/path/to/defects4j_buggy/Math_10_buggy/src/main/java/org/apache/commons/math3/analysis/differentiation/DSCompiler.java,"public void atan2(final double[] y, final int yOffset,
                       final double[] x, final int xOffset,
                       final double[] result, final int resultOffset) {
 
@@ -8401,7 +8401,7 @@ Math_10,/home/common/huangzhili/defects4j_buggy/Math_10_buggy/src/main/java/org/
          // fix value to take special cases (+0/+0, +0/-0, -0/+0, -0/-0, +/-infinity) correctly
  
      }"
-Math_11,/home/common/huangzhili/defects4j_buggy/Math_11_buggy/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java,"public double density(final double[] vals) throws DimensionMismatchException {
+Math_11,/path/to/defects4j_buggy/Math_11_buggy/src/main/java/org/apache/commons/math3/distribution/MultivariateNormalDistribution.java,"public double density(final double[] vals) throws DimensionMismatchException {
         final int dim = getDimension();
         if (vals.length != dim) {
              throw new DimensionMismatchException(vals.length, dim);
@@ -8411,16 +8411,16 @@ Math_11,/home/common/huangzhili/defects4j_buggy/Math_11_buggy/src/main/java/org/
              FastMath.pow(covarianceMatrixDeterminant, -0.5) *
              getExponentTerm(vals);
      }"
-Math_13,/home/common/huangzhili/defects4j_buggy/Math_13_buggy/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java,"    private RealMatrix squareRoot(RealMatrix m) {
+Math_13,/path/to/defects4j_buggy/Math_13_buggy/src/main/java/org/apache/commons/math3/optimization/general/AbstractLeastSquaresOptimizer.java,"    private RealMatrix squareRoot(RealMatrix m) {
             final EigenDecomposition dec = new EigenDecomposition(m);
             return dec.getSquareRoot();
     }
 "
-Math_17,/home/common/huangzhili/defects4j_buggy/Math_17_buggy/src/main/java/org/apache/commons/math3/dfp/Dfp.java,"    public Dfp multiply(final int x) {
+Math_17,/path/to/defects4j_buggy/Math_17_buggy/src/main/java/org/apache/commons/math3/dfp/Dfp.java,"    public Dfp multiply(final int x) {
             return multiplyFast(x);
     }
 "
-Math_19,/home/common/huangzhili/defects4j_buggy/Math_19_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,"private void checkParameters() {
+Math_19,/path/to/defects4j_buggy/Math_19_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,"private void checkParameters() {
         final double[] init = getStartPoint();
         final double[] lB = getLowerBound();
         final double[] uB = getUpperBound();
@@ -8490,12 +8490,12 @@ Math_19,/home/common/huangzhili/defects4j_buggy/Math_19_buggy/src/main/java/org/
         }
         // initialize sigma
         double[][] sigmaArray = new double[guess.length][1];"
-Math_20,/home/common/huangzhili/defects4j_buggy/Math_20_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,"        public double[] repairAndDecode(final double[] x) {
+Math_20,/path/to/defects4j_buggy/Math_20_buggy/src/main/java/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java,"        public double[] repairAndDecode(final double[] x) {
             return
                 decode(x);
         }
 "
-Math_21,/home/common/huangzhili/defects4j_buggy/Math_21_buggy/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java,"    public RectangularCholeskyDecomposition(RealMatrix matrix, double small)
+Math_21,/path/to/defects4j_buggy/Math_21_buggy/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java,"    public RectangularCholeskyDecomposition(RealMatrix matrix, double small)
         throws NonPositiveDefiniteMatrixException {
 
         final int order = matrix.getRowDimension();
@@ -8585,7 +8585,7 @@ Math_21,/home/common/huangzhili/defects4j_buggy/Math_21_buggy/src/main/java/org/
         }
 
     }"
-Math_23,/home/common/huangzhili/defects4j_buggy/Math_23_buggy/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java,"@Override
+Math_23,/path/to/defects4j_buggy/Math_23_buggy/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java,"@Override
     protected UnivariatePointValuePair doOptimize() {
         final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
         final double lo = getMin();
@@ -8753,7 +8753,7 @@ Math_23,/home/common/huangzhili/defects4j_buggy/Math_23_buggy/src/main/java/org/
              ++iter;
         }
     }"
-Math_24,/home/common/huangzhili/defects4j_buggy/Math_24_buggy/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java,"@Override
+Math_24,/path/to/defects4j_buggy/Math_24_buggy/src/main/java/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java,"@Override
     protected UnivariatePointValuePair doOptimize() {
         final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
         final double lo = getMin();
@@ -8917,7 +8917,7 @@ Math_24,/home/common/huangzhili/defects4j_buggy/Math_24_buggy/src/main/java/org/
              ++iter;
          }
     }"
-Math_25,/home/common/huangzhili/defects4j_buggy/Math_25_buggy/src/main/java/org/apache/commons/math3/optimization/fitting/HarmonicFitter.java,"private void guessAOmega() {
+Math_25,/path/to/defects4j_buggy/Math_25_buggy/src/main/java/org/apache/commons/math3/optimization/fitting/HarmonicFitter.java,"private void guessAOmega() {
             // initialize the sums for the linear model between the two integrals
             double sx2 = 0;
             double sy2 = 0;
@@ -8990,7 +8990,7 @@ Math_25,/home/common/huangzhili/defects4j_buggy/Math_25_buggy/src/main/java/org/
                  omega = FastMath.sqrt(c2 / c3);
             }
         }"
-Math_26,/home/common/huangzhili/defects4j_buggy/Math_26_buggy/src/main/java/org/apache/commons/math3/fraction/Fraction.java,"    private Fraction(double value, double epsilon, int maxDenominator, int maxIterations)
+Math_26,/path/to/defects4j_buggy/Math_26_buggy/src/main/java/org/apache/commons/math3/fraction/Fraction.java,"    private Fraction(double value, double epsilon, int maxDenominator, int maxIterations)
         throws FractionConversionException
     {
         long overflow = Integer.MAX_VALUE;
@@ -9055,11 +9055,11 @@ Math_26,/home/common/huangzhili/defects4j_buggy/Math_26_buggy/src/main/java/org/
 
     }
 "
-Math_27,/home/common/huangzhili/defects4j_buggy/Math_27_buggy/src/main/java/org/apache/commons/math3/fraction/Fraction.java,"    public double percentageValue() {
+Math_27,/path/to/defects4j_buggy/Math_27_buggy/src/main/java/org/apache/commons/math3/fraction/Fraction.java,"    public double percentageValue() {
         return multiply(100).doubleValue();
     }
 "
-Math_28,/home/common/huangzhili/defects4j_buggy/Math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java,"private Integer getPivotRow(SimplexTableau tableau, final int col) {
+Math_28,/path/to/defects4j_buggy/Math_28_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexSolver.java,"private Integer getPivotRow(SimplexTableau tableau, final int col) {
         // create a list of all the rows that tie for the lowest score in the minimum ratio test
         List<Integer> minRatioPositions = new ArrayList<Integer>();
         double minRatio = Double.MAX_VALUE;
@@ -9124,7 +9124,7 @@ Math_28,/home/common/huangzhili/defects4j_buggy/Math_28_buggy/src/main/java/org/
          }
          return minRatioPositions.get(0);
      }"
-Math_30,/home/common/huangzhili/defects4j_buggy/Math_30_buggy/src/main/java/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java,"private double calculateAsymptoticPValue(final double Umin,
+Math_30,/path/to/defects4j_buggy/Math_30_buggy/src/main/java/org/apache/commons/math3/stat/inference/MannWhitneyUTest.java,"private double calculateAsymptoticPValue(final double Umin,
                                              final int n1,
                                               final int n2)
          throws ConvergenceException, MaxCountExceededException {
@@ -9141,7 +9141,7 @@ Math_30,/home/common/huangzhili/defects4j_buggy/Math_30_buggy/src/main/java/org/
 
         return 2 * standardNormal.cumulativeProbability(z);
     }"
-Math_31,/home/common/huangzhili/defects4j_buggy/Math_31_buggy/src/main/java/org/apache/commons/math3/util/ContinuedFraction.java,"public double evaluate(double x, double epsilon, int maxIterations) {
+Math_31,/path/to/defects4j_buggy/Math_31_buggy/src/main/java/org/apache/commons/math3/util/ContinuedFraction.java,"public double evaluate(double x, double epsilon, int maxIterations) {
         final double small = 1e-50;
         double hPrev = getA(0, x);
 
@@ -9218,7 +9218,7 @@ Math_31,/home/common/huangzhili/defects4j_buggy/Math_31_buggy/src/main/java/org/
 
         return hN;
     }"
-Math_32,/home/common/huangzhili/defects4j_buggy/Math_32_buggy/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java,"@Override
+Math_32,/path/to/defects4j_buggy/Math_32_buggy/src/main/java/org/apache/commons/math3/geometry/euclidean/twod/PolygonsSet.java,"@Override
     protected void computeGeometricalProperties() {
 
         final Vector2D[][] v = getVertices();
@@ -9271,7 +9271,7 @@ Math_32,/home/common/huangzhili/defects4j_buggy/Math_32_buggy/src/main/java/org/
         }
 
     }"
-Math_33,/home/common/huangzhili/defects4j_buggy/Math_33_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java,"protected void dropPhase1Objective() {
+Math_33,/path/to/defects4j_buggy/Math_33_buggy/src/main/java/org/apache/commons/math3/optimization/linear/SimplexTableau.java,"protected void dropPhase1Objective() {
         if (getNumObjectiveFunctions() == 1) {
             return;
         }
@@ -9312,11 +9312,11 @@ Math_33,/home/common/huangzhili/defects4j_buggy/Math_33_buggy/src/main/java/org/
         this.tableau = new Array2DRowRealMatrix(matrix);
         this.numArtificialVariables = 0;
     }"
-Math_34,/home/common/huangzhili/defects4j_buggy/Math_34_buggy/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java,"    public Iterator<Chromosome> iterator() {
+Math_34,/path/to/defects4j_buggy/Math_34_buggy/src/main/java/org/apache/commons/math3/genetics/ListPopulation.java,"    public Iterator<Chromosome> iterator() {
         return chromosomes.iterator();
     }
 "
-Math_38,/home/common/huangzhili/defects4j_buggy/Math_38_buggy/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java,"private void prelim(double[] lowerBound,
+Math_38,/path/to/defects4j_buggy/Math_38_buggy/src/main/java/org/apache/commons/math/optimization/direct/BOBYQAOptimizer.java,"private void prelim(double[] lowerBound,
                         double[] upperBound) {
         printMethod(); // XXX
 
@@ -9490,7 +9490,7 @@ Math_38,/home/common/huangzhili/defects4j_buggy/Math_38_buggy/src/main/java/org/
             }
         } while (getEvaluations() < npt);
     } // prelim"
-Math_39,/home/common/huangzhili/defects4j_buggy/Math_39_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java,"@Override
+Math_39,/path/to/defects4j_buggy/Math_39_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java,"@Override
   public void integrate(final ExpandableStatefulODE equations, final double t)
       throws MathIllegalStateException, MathIllegalArgumentException {
 
@@ -9629,7 +9629,7 @@ Math_39,/home/common/huangzhili/defects4j_buggy/Math_39_buggy/src/main/java/org/
     resetInternalState();
 
   }"
-Math_40,/home/common/huangzhili/defects4j_buggy/Math_40_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java,"@Override
+Math_40,/path/to/defects4j_buggy/Math_40_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BracketingNthOrderBrentSolver.java,"@Override
     protected double doSolve() {
 
         // prepare arrays with the first points
@@ -9833,7 +9833,7 @@ Math_40,/home/common/huangzhili/defects4j_buggy/Math_40_buggy/src/main/java/org/
         }
 
     }"
-Math_41,/home/common/huangzhili/defects4j_buggy/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java,"public double evaluate(final double[] values, final double[] weights,
+Math_41,/path/to/defects4j_buggy/Math_41_buggy/src/main/java/org/apache/commons/math/stat/descriptive/moment/Variance.java,"public double evaluate(final double[] values, final double[] weights,
                            final double mean, final int begin, final int length) {
 
         double var = Double.NaN;
@@ -9865,7 +9865,7 @@ Math_41,/home/common/huangzhili/defects4j_buggy/Math_41_buggy/src/main/java/org/
         }
         return var;
     }"
-Math_42,/home/common/huangzhili/defects4j_buggy/Math_42_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"protected RealPointValuePair getSolution() {
+Math_42,/path/to/defects4j_buggy/Math_42_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"protected RealPointValuePair getSolution() {
       int negativeVarColumn = columnLabels.indexOf(NEGATIVE_VAR_COLUMN_LABEL);
       Integer negativeVarBasicRow = negativeVarColumn > 0 ? getBasicRow(negativeVarColumn) : null;
       double mostNegative = negativeVarBasicRow == null ? 0 : getEntry(negativeVarBasicRow, getRhsOffset());
@@ -9895,7 +9895,7 @@ Math_42,/home/common/huangzhili/defects4j_buggy/Math_42_buggy/src/main/java/org/
       }
       return new RealPointValuePair(coefficients, f.getValue(coefficients));
     }"
-Math_43,/home/common/huangzhili/defects4j_buggy/Math_43_buggy/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java,"public void addValue(double value) {
+Math_43,/path/to/defects4j_buggy/Math_43_buggy/src/main/java/org/apache/commons/math/stat/descriptive/SummaryStatistics.java,"public void addValue(double value) {
         sumImpl.increment(value);
         sumsqImpl.increment(value);
         minImpl.increment(value);
@@ -9915,7 +9915,7 @@ Math_43,/home/common/huangzhili/defects4j_buggy/Math_43_buggy/src/main/java/org/
          }
          n++;
     }"
-Math_44,/home/common/huangzhili/defects4j_buggy/Math_44_buggy/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java,"protected double acceptStep(final AbstractStepInterpolator interpolator,
+Math_44,/path/to/defects4j_buggy/Math_44_buggy/src/main/java/org/apache/commons/math/ode/AbstractIntegrator.java,"protected double acceptStep(final AbstractStepInterpolator interpolator,
                                 final double[] y, final double[] yDot, final double tEnd)
         throws MathIllegalStateException {
 
@@ -10016,14 +10016,14 @@ Math_44,/home/common/huangzhili/defects4j_buggy/Math_44_buggy/src/main/java/org/
             return currentT;
 
     }"
-Math_45,/home/common/huangzhili/defects4j_buggy/Math_45_buggy/src/main/java/org/apache/commons/math/linear/OpenMapRealMatrix.java,"    public OpenMapRealMatrix(int rowDimension, int columnDimension) {
+Math_45,/path/to/defects4j_buggy/Math_45_buggy/src/main/java/org/apache/commons/math/linear/OpenMapRealMatrix.java,"    public OpenMapRealMatrix(int rowDimension, int columnDimension) {
         super(rowDimension, columnDimension);
         this.rows = rowDimension;
         this.columns = columnDimension;
         this.entries = new OpenIntToDoubleHashMap(0.0);
     }
 "
-Math_48,/home/common/huangzhili/defects4j_buggy/Math_48_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
+Math_48,/path/to/defects4j_buggy/Math_48_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
         // Get initial solution
         double x0 = getMin();
         double x1 = getMax();
@@ -10146,7 +10146,7 @@ Math_48,/home/common/huangzhili/defects4j_buggy/Math_48_buggy/src/main/java/org/
             }
         }
     }"
-Math_50,/home/common/huangzhili/defects4j_buggy/Math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
+Math_50,/path/to/defects4j_buggy/Math_50_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
         // Get initial solution
         double x0 = getMin();
         double x1 = getMax();
@@ -10272,7 +10272,7 @@ Math_50,/home/common/huangzhili/defects4j_buggy/Math_50_buggy/src/main/java/org/
             }
         }
     }"
-Math_51,/home/common/huangzhili/defects4j_buggy/Math_51_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
+Math_51,/path/to/defects4j_buggy/Math_51_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java,"protected final double doSolve() {
         // Get initial solution
         double x0 = getMin();
         double x1 = getMax();
@@ -10392,7 +10392,7 @@ Math_51,/home/common/huangzhili/defects4j_buggy/Math_51_buggy/src/main/java/org/
             }
         }
     }"
-Math_52,/home/common/huangzhili/defects4j_buggy/Math_52_buggy/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Rotation.java,"  public Rotation(Vector3D u1, Vector3D u2, Vector3D v1, Vector3D v2) {
+Math_52,/path/to/defects4j_buggy/Math_52_buggy/src/main/java/org/apache/commons/math/geometry/euclidean/threed/Rotation.java,"  public Rotation(Vector3D u1, Vector3D u2, Vector3D v1, Vector3D v2) {
 
   // norms computation
   double u1u1 = u1.getNormSq();
@@ -10471,13 +10471,13 @@ Math_52,/home/common/huangzhili/defects4j_buggy/Math_52_buggy/src/main/java/org/
 
   }
 "
-Math_53,/home/common/huangzhili/defects4j_buggy/Math_53_buggy/src/main/java/org/apache/commons/math/complex/Complex.java,"public Complex add(Complex rhs)
+Math_53,/path/to/defects4j_buggy/Math_53_buggy/src/main/java/org/apache/commons/math/complex/Complex.java,"public Complex add(Complex rhs)
          throws NullArgumentException {
          MathUtils.checkNotNull(rhs);
          return createComplex(real + rhs.getReal(),
              imaginary + rhs.getImaginary());
      }"
-Math_55,/home/common/huangzhili/defects4j_buggy/Math_55_buggy/src/main/java/org/apache/commons/math/geometry/Vector3D.java,"public static Vector3D crossProduct(final Vector3D v1, final Vector3D v2) {
+Math_55,/path/to/defects4j_buggy/Math_55_buggy/src/main/java/org/apache/commons/math/geometry/Vector3D.java,"public static Vector3D crossProduct(final Vector3D v1, final Vector3D v2) {
 
 
       // rescale both vectors without losing precision,
@@ -10496,7 +10496,7 @@ Math_55,/home/common/huangzhili/defects4j_buggy/Math_55_buggy/src/main/java/org/
        return new Vector3D(v1.y * v2.z - v1.z * v2.y, v1.z * v2.x - v1.x * v2.z, v1.x * v2.y - v1.y * v2.x);
  
    }"
-Math_56,/home/common/huangzhili/defects4j_buggy/Math_56_buggy/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java,"public int[] getCounts(int index) {
+Math_56,/path/to/defects4j_buggy/Math_56_buggy/src/main/java/org/apache/commons/math/util/MultidimensionalCounter.java,"public int[] getCounts(int index) {
         if (index < 0 ||
             index >= totalSize) {
             throw new OutOfRangeException(index, 0, totalSize);
@@ -10527,7 +10527,7 @@ Math_56,/home/common/huangzhili/defects4j_buggy/Math_56_buggy/src/main/java/org/
  
          return indices;
      }"
-Math_57,/home/common/huangzhili/defects4j_buggy/Math_57_buggy/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java,"private static <T extends Clusterable<T>> List<Cluster<T>>
+Math_57,/path/to/defects4j_buggy/Math_57_buggy/src/main/java/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java,"private static <T extends Clusterable<T>> List<Cluster<T>>
         chooseInitialCenters(final Collection<T> points, final int k, final Random random) {
 
         final List<T> pointSet = new ArrayList<T>(points);
@@ -10566,15 +10566,15 @@ Math_57,/home/common/huangzhili/defects4j_buggy/Math_57_buggy/src/main/java/org/
 
     }
 "
-Math_58,/home/common/huangzhili/defects4j_buggy/Math_58_buggy/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java,"public double[] fit() {
+Math_58,/path/to/defects4j_buggy/Math_58_buggy/src/main/java/org/apache/commons/math/optimization/fitting/GaussianFitter.java,"public double[] fit() {
          final double[] guess = (new ParameterGuesser(getObservations())).guess();
          return fit(new Gaussian.Parametric(), guess);
      }"
-Math_59,/home/common/huangzhili/defects4j_buggy/Math_59_buggy/src/main/java/org/apache/commons/math/util/FastMath.java,"    public static float max(final float a, final float b) {
+Math_59,/path/to/defects4j_buggy/Math_59_buggy/src/main/java/org/apache/commons/math/util/FastMath.java,"    public static float max(final float a, final float b) {
         return (a <= b) ? b : (Float.isNaN(a + b) ? Float.NaN : b);
     }
 "
-Math_60,/home/common/huangzhili/defects4j_buggy/Math_60_buggy/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java,"public double cumulativeProbability(double x) throws MathException {
+Math_60,/path/to/defects4j_buggy/Math_60_buggy/src/main/java/org/apache/commons/math/distribution/NormalDistributionImpl.java,"public double cumulativeProbability(double x) throws MathException {
          final double dev = x - mean;
          try {
          return 0.5 * (1.0 + Erf.erf((dev) /
@@ -10589,11 +10589,11 @@ Math_60,/home/common/huangzhili/defects4j_buggy/Math_60_buggy/src/main/java/org/
              }
          }
      }"
-Math_63,/home/common/huangzhili/defects4j_buggy/Math_63_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java,"    public static boolean equals(double x, double y) {
+Math_63,/path/to/defects4j_buggy/Math_63_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java,"    public static boolean equals(double x, double y) {
         return (Double.isNaN(x) && Double.isNaN(y)) || x == y;
     }
 "
-Math_64,/home/common/huangzhili/defects4j_buggy/Math_64_buggy/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java,"@Override
+Math_64,/path/to/defects4j_buggy/Math_64_buggy/src/main/java/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java,"@Override
     protected VectorialPointValuePair doOptimize()
         throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
 
@@ -10818,7 +10818,7 @@ Math_64,/home/common/huangzhili/defects4j_buggy/Math_64_buggy/src/main/java/org/
         }
 
     }"
-Math_69,/home/common/huangzhili/defects4j_buggy/Math_69_buggy/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java,"public RealMatrix getCorrelationPValues() throws MathException {
+Math_69,/path/to/defects4j_buggy/Math_69_buggy/src/main/java/org/apache/commons/math/stat/correlation/PearsonsCorrelation.java,"public RealMatrix getCorrelationPValues() throws MathException {
         TDistribution tDistribution = new TDistributionImpl(nObs - 2);
         int nVars = correlationMatrix.getColumnDimension();
         double[][] out = new double[nVars][nVars];
@@ -10835,11 +10835,11 @@ Math_69,/home/common/huangzhili/defects4j_buggy/Math_69_buggy/src/main/java/org/
          }
         return new BlockRealMatrix(out);
     }"
-Math_70,/home/common/huangzhili/defects4j_buggy/Math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java,"public double solve(final UnivariateRealFunction f, double min, double max, double initial)
+Math_70,/path/to/defects4j_buggy/Math_70_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BisectionSolver.java,"public double solve(final UnivariateRealFunction f, double min, double max, double initial)
          throws MaxIterationsExceededException, FunctionEvaluationException {
          return solve(min, max);
      }"
-Math_72,/home/common/huangzhili/defects4j_buggy/Math_72_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java,"public double solve(final UnivariateRealFunction f,
+Math_72,/path/to/defects4j_buggy/Math_72_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java,"public double solve(final UnivariateRealFunction f,
                         final double min, final double max, final double initial)
         throws MaxIterationsExceededException, FunctionEvaluationException {
 
@@ -10886,7 +10886,7 @@ Math_72,/home/common/huangzhili/defects4j_buggy/Math_72_buggy/src/main/java/org/
         return solve(f, min, yMin, max, yMax, initial, yInitial);
 
     }"
-Math_73,/home/common/huangzhili/defects4j_buggy/Math_73_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java,"public double solve(final UnivariateRealFunction f,
+Math_73,/path/to/defects4j_buggy/Math_73_buggy/src/main/java/org/apache/commons/math/analysis/solvers/BrentSolver.java,"public double solve(final UnivariateRealFunction f,
                         final double min, final double max, final double initial)
         throws MaxIterationsExceededException, FunctionEvaluationException {
 
@@ -10929,7 +10929,7 @@ Math_73,/home/common/huangzhili/defects4j_buggy/Math_73_buggy/src/main/java/org/
          return solve(f, min, yMin, max, yMax, initial, yInitial);
 
     }"
-Math_74,/home/common/huangzhili/defects4j_buggy/Math_74_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java,"@Override
+Math_74,/path/to/defects4j_buggy/Math_74_buggy/src/main/java/org/apache/commons/math/ode/nonstiff/EmbeddedRungeKuttaIntegrator.java,"@Override
   public double integrate(final FirstOrderDifferentialEquations equations,
                           final double t0, final double[] y0,
                           final double t, final double[] y)
@@ -11098,11 +11098,11 @@ Math_74,/home/common/huangzhili/defects4j_buggy/Math_74_buggy/src/main/java/org/
     return stopTime;
 
   }"
-Math_75,/home/common/huangzhili/defects4j_buggy/Math_75_buggy/src/main/java/org/apache/commons/math/stat/Frequency.java,"    public double getPct(Object v) {
+Math_75,/path/to/defects4j_buggy/Math_75_buggy/src/main/java/org/apache/commons/math/stat/Frequency.java,"    public double getPct(Object v) {
         return getCumPct((Comparable<?>) v);
     }
 "
-Math_78,/home/common/huangzhili/defects4j_buggy/Math_78_buggy/src/main/java/org/apache/commons/math/ode/events/EventState.java,"public boolean evaluateStep(final StepInterpolator interpolator)
+Math_78,/path/to/defects4j_buggy/Math_78_buggy/src/main/java/org/apache/commons/math/ode/events/EventState.java,"public boolean evaluateStep(final StepInterpolator interpolator)
         throws DerivativeException, EventException, ConvergenceException {
 
         try {
@@ -11199,7 +11199,7 @@ Math_78,/home/common/huangzhili/defects4j_buggy/Math_78_buggy/src/main/java/org/
         }
 
     }"
-Math_79,/home/common/huangzhili/defects4j_buggy/Math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java,"    public static double distance(int[] p1, int[] p2) {
+Math_79,/path/to/defects4j_buggy/Math_79_buggy/src/main/java/org/apache/commons/math/util/MathUtils.java,"    public static double distance(int[] p1, int[] p2) {
       int sum = 0;
       for (int i = 0; i < p1.length; i++) {
           final int dp = p1[i] - p2[i];
@@ -11208,7 +11208,7 @@ Math_79,/home/common/huangzhili/defects4j_buggy/Math_79_buggy/src/main/java/org/
       return Math.sqrt(sum);
     }
 "
-Math_80,/home/common/huangzhili/defects4j_buggy/Math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java,"private boolean flipIfWarranted(final int n, final int step) {
+Math_80,/path/to/defects4j_buggy/Math_80_buggy/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java,"private boolean flipIfWarranted(final int n, final int step) {
          if (1.5 * work[pingPong] < work[4 * (n - 1) + pingPong]) {
              // flip array
              int j = 4 * n - 1;
@@ -11224,7 +11224,7 @@ Math_80,/home/common/huangzhili/defects4j_buggy/Math_80_buggy/src/main/java/org/
         }
         return false;
     }"
-Math_82,/home/common/huangzhili/defects4j_buggy/Math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java,"private Integer getPivotRow(final int col, final SimplexTableau tableau) {
+Math_82,/path/to/defects4j_buggy/Math_82_buggy/src/main/java/org/apache/commons/math/optimization/linear/SimplexSolver.java,"private Integer getPivotRow(final int col, final SimplexTableau tableau) {
         double minRatio = Double.MAX_VALUE;
         Integer minRatioPos = null;
          for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {
@@ -11240,7 +11240,7 @@ Math_82,/home/common/huangzhili/defects4j_buggy/Math_82_buggy/src/main/java/org/
         }
         return minRatioPos;
     }"
-Math_84,/home/common/huangzhili/defects4j_buggy/Math_84_buggy/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java,"@Override
+Math_84,/path/to/defects4j_buggy/Math_84_buggy/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java,"@Override
      protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
          throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
  
@@ -11280,7 +11280,7 @@ Math_84,/home/common/huangzhili/defects4j_buggy/Math_84_buggy/src/main/java/org/
         }
 
     }"
-Math_85,/home/common/huangzhili/defects4j_buggy/Math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java,"public static double[] bracket(UnivariateRealFunction function,
+Math_85,/path/to/defects4j_buggy/Math_85_buggy/src/java/org/apache/commons/math/analysis/solvers/UnivariateRealSolverUtils.java,"public static double[] bracket(UnivariateRealFunction function,
             double initial, double lowerBound, double upperBound, 
             int maximumIterations) throws ConvergenceException, 
             FunctionEvaluationException {
@@ -11324,7 +11324,7 @@ Math_85,/home/common/huangzhili/defects4j_buggy/Math_85_buggy/src/java/org/apach
         
         return new double[]{a, b};
     }"
-Math_86,/home/common/huangzhili/defects4j_buggy/Math_86_buggy/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java,"    public CholeskyDecompositionImpl(final RealMatrix matrix,
+Math_86,/path/to/defects4j_buggy/Math_86_buggy/src/java/org/apache/commons/math/linear/CholeskyDecompositionImpl.java,"    public CholeskyDecompositionImpl(final RealMatrix matrix,
                                      final double relativeSymmetryThreshold,
                                      final double absolutePositivityThreshold)
         throws NonSquareMatrixException,
@@ -11383,7 +11383,7 @@ Math_86,/home/common/huangzhili/defects4j_buggy/Math_86_buggy/src/java/org/apach
         }
 
     }"
-Math_87,/home/common/huangzhili/defects4j_buggy/Math_87_buggy/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"private Integer getBasicRow(final int col) {
+Math_87,/path/to/defects4j_buggy/Math_87_buggy/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"private Integer getBasicRow(final int col) {
          Integer row = null;
          for (int i = getNumObjectiveFunctions(); i < getHeight(); i++) {
              if (!MathUtils.equals(getEntry(i, col), 0.0, epsilon)) {
@@ -11396,7 +11396,7 @@ Math_87,/home/common/huangzhili/defects4j_buggy/Math_87_buggy/src/java/org/apach
          }
          return row;
     }"
-Math_88,/home/common/huangzhili/defects4j_buggy/Math_88_buggy/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"protected RealPointValuePair getSolution() {
+Math_88,/path/to/defects4j_buggy/Math_88_buggy/src/java/org/apache/commons/math/optimization/linear/SimplexTableau.java,"protected RealPointValuePair getSolution() {
         double[] coefficients = new double[getOriginalNumDecisionVariables()];
          Integer basicRow =
              getBasicRow(getNumObjectiveFunctions() + getOriginalNumDecisionVariables());
@@ -11418,11 +11418,11 @@ Math_88,/home/common/huangzhili/defects4j_buggy/Math_88_buggy/src/java/org/apach
          }
          return new RealPointValuePair(coefficients, f.getValue(coefficients));
     }"
-Math_89,/home/common/huangzhili/defects4j_buggy/Math_89_buggy/src/java/org/apache/commons/math/stat/Frequency.java,"    public void addValue(Object v) {
+Math_89,/path/to/defects4j_buggy/Math_89_buggy/src/java/org/apache/commons/math/stat/Frequency.java,"    public void addValue(Object v) {
             addValue((Comparable<?>) v);            
     }
 "
-Math_90,/home/common/huangzhili/defects4j_buggy/Math_90_buggy/src/java/org/apache/commons/math/stat/Frequency.java,"    public void addValue(Object v) {
+Math_90,/path/to/defects4j_buggy/Math_90_buggy/src/java/org/apache/commons/math/stat/Frequency.java,"    public void addValue(Object v) {
     
     /**
      * Adds 1 to the frequency count for v.
@@ -11450,13 +11450,13 @@ Math_90,/home/common/huangzhili/defects4j_buggy/Math_90_buggy/src/java/org/apach
             throw new IllegalArgumentException(""Value not comparable to existing values."");
         }
     }"
-Math_91,/home/common/huangzhili/defects4j_buggy/Math_91_buggy/src/java/org/apache/commons/math/fraction/Fraction.java,"    public int compareTo(Fraction object) {
+Math_91,/path/to/defects4j_buggy/Math_91_buggy/src/java/org/apache/commons/math/fraction/Fraction.java,"    public int compareTo(Fraction object) {
         double nOd = doubleValue();
         double dOn = object.doubleValue();
         return (nOd < dOn) ? -1 : ((nOd > dOn) ? +1 : 0);
     }
 "
-Math_94,/home/common/huangzhili/defects4j_buggy/Math_94_buggy/src/java/org/apache/commons/math/util/MathUtils.java,"    public static int gcd(int u, int v) {
+Math_94,/path/to/defects4j_buggy/Math_94_buggy/src/java/org/apache/commons/math/util/MathUtils.java,"    public static int gcd(int u, int v) {
         if (u * v == 0) {
             return (Math.abs(u) + Math.abs(v));
         }
@@ -11507,7 +11507,7 @@ Math_94,/home/common/huangzhili/defects4j_buggy/Math_94_buggy/src/java/org/apach
         return -u * (1 << k); // gcd is u*2^k
     }
 "
-Math_95,/home/common/huangzhili/defects4j_buggy/Math_95_buggy/src/java/org/apache/commons/math/distribution/FDistributionImpl.java,"    protected double getInitialDomain(double p) {
+Math_95,/path/to/defects4j_buggy/Math_95_buggy/src/java/org/apache/commons/math/distribution/FDistributionImpl.java,"    protected double getInitialDomain(double p) {
         double ret;
         double d = getDenominatorDegreesOfFreedom();
             // use mean
@@ -11515,7 +11515,7 @@ Math_95,/home/common/huangzhili/defects4j_buggy/Math_95_buggy/src/java/org/apach
         return ret;
     }
 "
-Math_96,/home/common/huangzhili/defects4j_buggy/Math_96_buggy/src/java/org/apache/commons/math/complex/Complex.java,"public boolean equals(Object other) {
+Math_96,/path/to/defects4j_buggy/Math_96_buggy/src/java/org/apache/commons/math/complex/Complex.java,"public boolean equals(Object other) {
         boolean ret;
         
         if (this == other) { 
@@ -11538,7 +11538,7 @@ Math_96,/home/common/huangzhili/defects4j_buggy/Math_96_buggy/src/java/org/apach
       
         return ret;
     }"
-Math_97,/home/common/huangzhili/defects4j_buggy/Math_97_buggy/src/java/org/apache/commons/math/analysis/BrentSolver.java,"public double solve(double min, double max) throws MaxIterationsExceededException, 
+Math_97,/path/to/defects4j_buggy/Math_97_buggy/src/java/org/apache/commons/math/analysis/BrentSolver.java,"public double solve(double min, double max) throws MaxIterationsExceededException, 
         FunctionEvaluationException {
         
         clearResult();
@@ -11566,7 +11566,7 @@ Math_97,/home/common/huangzhili/defects4j_buggy/Math_97_buggy/src/java/org/apach
  
          return ret;
     }"
-Math_101,/home/common/huangzhili/defects4j_buggy/Math_101_buggy/src/java/org/apache/commons/math/complex/ComplexFormat.java,"public Complex parse(String source, ParsePosition pos) {
+Math_101,/path/to/defects4j_buggy/Math_101_buggy/src/java/org/apache/commons/math/complex/ComplexFormat.java,"public Complex parse(String source, ParsePosition pos) {
         int initialIndex = pos.getIndex();
 
         // parse whitespace
@@ -11636,7 +11636,7 @@ Math_101,/home/common/huangzhili/defects4j_buggy/Math_101_buggy/src/java/org/apa
 
         return new Complex(re.doubleValue(), im.doubleValue() * sign);
     }"
-Math_102,/home/common/huangzhili/defects4j_buggy/Math_102_buggy/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java,"public double chiSquare(double[] expected, long[] observed)
+Math_102,/path/to/defects4j_buggy/Math_102_buggy/src/java/org/apache/commons/math/stat/inference/ChiSquareTestImpl.java,"public double chiSquare(double[] expected, long[] observed)
         throws IllegalArgumentException {
         if ((expected.length < 2) || (expected.length != observed.length)) {
             throw new IllegalArgumentException(
@@ -11654,16 +11654,16 @@ Math_102,/home/common/huangzhili/defects4j_buggy/Math_102_buggy/src/java/org/apa
          }
          return sumSq;
      }"
-Math_103,/home/common/huangzhili/defects4j_buggy/Math_103_buggy/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java,"    public double cumulativeProbability(double x) throws MathException {
+Math_103,/path/to/defects4j_buggy/Math_103_buggy/src/java/org/apache/commons/math/distribution/NormalDistributionImpl.java,"    public double cumulativeProbability(double x) throws MathException {
             return 0.5 * (1.0 + Erf.erf((x - mean) /
                     (standardDeviation * Math.sqrt(2.0))));
     }
 "
-Math_105,/home/common/huangzhili/defects4j_buggy/Math_105_buggy/src/java/org/apache/commons/math/stat/regression/SimpleRegression.java,"    public double getSumSquaredErrors() {
+Math_105,/path/to/defects4j_buggy/Math_105_buggy/src/java/org/apache/commons/math/stat/regression/SimpleRegression.java,"    public double getSumSquaredErrors() {
         return sumYY - sumXY * sumXY / sumXX;
     }
 "
-Math_106,/home/common/huangzhili/defects4j_buggy/Math_106_buggy/src/java/org/apache/commons/math/fraction/ProperFractionFormat.java,"    public Fraction parse(String source, ParsePosition pos) {
+Math_106,/path/to/defects4j_buggy/Math_106_buggy/src/java/org/apache/commons/math/fraction/ProperFractionFormat.java,"    public Fraction parse(String source, ParsePosition pos) {
         // try to parse improper fraction
         Fraction ret = super.parse(source, pos);
         if (ret != null) {
@@ -11741,7 +11741,7 @@ Math_106,/home/common/huangzhili/defects4j_buggy/Math_106_buggy/src/java/org/apa
         return new Fraction(((Math.abs(w) * d) + n) * MathUtils.sign(w), d);
     }
 "
-Mockito_1,/home/common/huangzhili/defects4j_buggy/Mockito_1_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"    public void captureArgumentsFrom(Invocation invocation) {
+Mockito_1,/path/to/defects4j_buggy/Mockito_1_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"    public void captureArgumentsFrom(Invocation invocation) {
         if (invocation.getMethod().isVarArgs()) {
             int indexOfVararg = invocation.getRawArguments().length - 1;
             throw new UnsupportedOperationException();
@@ -11773,7 +11773,7 @@ Mockito_1,/home/common/huangzhili/defects4j_buggy/Mockito_1_buggy/src/org/mockit
 //        }
     }
 "
-Mockito_5,/home/common/huangzhili/defects4j_buggy/Mockito_5_buggy/src/org/mockito/internal/verification/VerificationOverTimeImpl.java,"    public void verify(VerificationData data) {
+Mockito_5,/path/to/defects4j_buggy/Mockito_5_buggy/src/org/mockito/internal/verification/VerificationOverTimeImpl.java,"    public void verify(VerificationData data) {
         AssertionError error = null;
 
         timer.start();
@@ -11799,14 +11799,14 @@ Mockito_5,/home/common/huangzhili/defects4j_buggy/Mockito_5_buggy/src/org/mockit
         }
     }
 "
-Mockito_7,/home/common/huangzhili/defects4j_buggy/Mockito_7_buggy/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java,"        private void readTypeVariables() {
+Mockito_7,/path/to/defects4j_buggy/Mockito_7_buggy/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java,"        private void readTypeVariables() {
             for (Type type : typeVariable.getBounds()) {
                 registerTypeVariablesOn(type);
             }
             registerTypeVariablesOn(getActualTypeArgumentFor(typeVariable));
         }
 "
-Mockito_8,/home/common/huangzhili/defects4j_buggy/Mockito_8_buggy/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java,"    protected void registerTypeVariablesOn(Type classType) {
+Mockito_8,/path/to/defects4j_buggy/Mockito_8_buggy/src/org/mockito/internal/util/reflection/GenericMetadataSupport.java,"    protected void registerTypeVariablesOn(Type classType) {
         if (!(classType instanceof ParameterizedType)) {
             return;
         }
@@ -11826,7 +11826,7 @@ Mockito_8,/home/common/huangzhili/defects4j_buggy/Mockito_8_buggy/src/org/mockit
         }
     }
 "
-Mockito_12,/home/common/huangzhili/defects4j_buggy/Mockito_12_buggy/src/org/mockito/internal/util/reflection/GenericMaster.java,"public Class getGenericType(Field field) {        
+Mockito_12,/path/to/defects4j_buggy/Mockito_12_buggy/src/org/mockito/internal/util/reflection/GenericMaster.java,"public Class getGenericType(Field field) {        
          Type generic = field.getGenericType();
          if (generic != null && generic instanceof ParameterizedType) {
              Type actual = ((ParameterizedType) generic).getActualTypeArguments()[0];
@@ -11836,7 +11836,7 @@ Mockito_12,/home/common/huangzhili/defects4j_buggy/Mockito_12_buggy/src/org/mock
          
          return Object.class;
     }"
-Mockito_13,/home/common/huangzhili/defects4j_buggy/Mockito_13_buggy/src/org/mockito/internal/MockHandler.java,"public Object handle(Invocation invocation) throws Throwable {
+Mockito_13,/path/to/defects4j_buggy/Mockito_13_buggy/src/org/mockito/internal/MockHandler.java,"public Object handle(Invocation invocation) throws Throwable {
         if (invocationContainerImpl.hasAnswersForStubbing()) {
             // stubbing voids with stubVoid() or doAnswer() style
             InvocationMatcher invocationMatcher = matchersBinder.bindMatchers(mockingProgress
@@ -11885,7 +11885,7 @@ Mockito_13,/home/common/huangzhili/defects4j_buggy/Mockito_13_buggy/src/org/mock
             return ret;
         }
     }"
-Mockito_18,/home/common/huangzhili/defects4j_buggy/Mockito_18_buggy/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java,"    Object returnValueFor(Class<?> type) {
+Mockito_18,/path/to/defects4j_buggy/Mockito_18_buggy/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java,"    Object returnValueFor(Class<?> type) {
         if (Primitives.isPrimitiveOrWrapper(type)) {
             return Primitives.defaultValueForPrimitiveOrWrapper(type);
             //new instances are used instead of Collections.emptyList(), etc.
@@ -11922,7 +11922,7 @@ Mockito_18,/home/common/huangzhili/defects4j_buggy/Mockito_18_buggy/src/org/mock
         //Let's not care about the rest of collections.
         return null;
     }"
-Mockito_20,/home/common/huangzhili/defects4j_buggy/Mockito_20_buggy/src/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java,"    public <T> T createMock(MockCreationSettings<T> settings, MockHandler handler) {
+Mockito_20,/path/to/defects4j_buggy/Mockito_20_buggy/src/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java,"    public <T> T createMock(MockCreationSettings<T> settings, MockHandler handler) {
         if (settings.getSerializableMode() == SerializableMode.ACROSS_CLASSLOADERS) {
             throw new MockitoException(""Serialization across classloaders not yet supported with ByteBuddyMockMaker"");
         }
@@ -11953,7 +11953,7 @@ Mockito_20,/home/common/huangzhili/defects4j_buggy/Mockito_20_buggy/src/org/mock
         }
     }
 "
-Mockito_22,/home/common/huangzhili/defects4j_buggy/Mockito_22_buggy/src/org/mockito/internal/matchers/Equality.java,"    public static boolean areEqual(Object o1, Object o2) {
+Mockito_22,/path/to/defects4j_buggy/Mockito_22_buggy/src/org/mockito/internal/matchers/Equality.java,"    public static boolean areEqual(Object o1, Object o2) {
         if (o1 == null || o2 == null) {
             return o1 == null && o2 == null;
         } else if (isArray(o1)) {
@@ -11963,7 +11963,7 @@ Mockito_22,/home/common/huangzhili/defects4j_buggy/Mockito_22_buggy/src/org/mock
         }
     }
 "
-Mockito_24,/home/common/huangzhili/defects4j_buggy/Mockito_24_buggy/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java,"    public Object answer(InvocationOnMock invocation) {
+Mockito_24,/path/to/defects4j_buggy/Mockito_24_buggy/src/org/mockito/internal/stubbing/defaultanswers/ReturnsEmptyValues.java,"    public Object answer(InvocationOnMock invocation) {
         if (methodsGuru.isToString(invocation.getMethod())) {
             Object mock = invocation.getMock();
             MockName name = mockUtil.getMockName(mock);
@@ -11983,7 +11983,7 @@ Mockito_24,/home/common/huangzhili/defects4j_buggy/Mockito_24_buggy/src/org/mock
         return returnValueFor(returnType);
     }
 "
-Mockito_26,/home/common/huangzhili/defects4j_buggy/Mockito_26_buggy/src/org/mockito/internal/util/Primitives.java,"/*
+Mockito_26,/path/to/defects4j_buggy/Mockito_26_buggy/src/org/mockito/internal/util/Primitives.java,"/*
  * Copyright (c) 2007 Mockito contributors
  * This program is made available under the terms of the MIT License.
  */
@@ -12051,25 +12051,25 @@ public class Primitives {
         primitiveValues.put(double.class, 0);
     }
 }"
-Mockito_27,/home/common/huangzhili/defects4j_buggy/Mockito_27_buggy/src/org/mockito/internal/util/MockUtil.java,"public <T> void resetMock(T mock) {
+Mockito_27,/path/to/defects4j_buggy/Mockito_27_buggy/src/org/mockito/internal/util/MockUtil.java,"public <T> void resetMock(T mock) {
          MockHandlerInterface<T> oldMockHandler = getMockHandler(mock);
          MockHandler<T> newMockHandler = new MockHandler<T>(oldMockHandler);
          MethodInterceptorFilter newFilter = new MethodInterceptorFilter(newMockHandler, (MockSettingsImpl) org.mockito.Mockito.withSettings().defaultAnswer(org.mockito.Mockito.RETURNS_DEFAULTS));
          ((Factory) mock).setCallback(0, newFilter);
      }"
-Mockito_28,/home/common/huangzhili/defects4j_buggy/Mockito_28_buggy/src/org/mockito/internal/configuration/DefaultInjectionEngine.java,"private void injectMockCandidate(Class<?> awaitingInjectionClazz, Set<Object> mocks, Object fieldInstance) {
+Mockito_28,/path/to/defects4j_buggy/Mockito_28_buggy/src/org/mockito/internal/configuration/DefaultInjectionEngine.java,"private void injectMockCandidate(Class<?> awaitingInjectionClazz, Set<Object> mocks, Object fieldInstance) {
          for(Field field : orderedInstanceFieldsFrom(awaitingInjectionClazz)) {
              mockCandidateFilter.filterCandidate(mocks, field, fieldInstance).thenInject();
          }
      }"
-Mockito_29,/home/common/huangzhili/defects4j_buggy/Mockito_29_buggy/src/org/mockito/internal/matchers/Same.java,"public void describeTo(Description description) {
+Mockito_29,/path/to/defects4j_buggy/Mockito_29_buggy/src/org/mockito/internal/matchers/Same.java,"public void describeTo(Description description) {
          description.appendText(""same("");
          appendQuoting(description);
          description.appendText(wanted.toString());
          appendQuoting(description);
          description.appendText("")"");
      }"
-Mockito_33,/home/common/huangzhili/defects4j_buggy/Mockito_33_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"public boolean hasSameMethod(Invocation candidate) {        
+Mockito_33,/path/to/defects4j_buggy/Mockito_33_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"public boolean hasSameMethod(Invocation candidate) {        
         //not using method.equals() for 1 good reason:
         //sometimes java generates forwarding methods when generics are in play see JavaGenericsForwardingMethodsTest
          Method m1 = invocation.getMethod();
@@ -12078,7 +12078,7 @@ Mockito_33,/home/common/huangzhili/defects4j_buggy/Mockito_33_buggy/src/org/mock
          	/* Avoid unnecessary cloning */
          return m1.equals(m2);
      }"
-Mockito_34,/home/common/huangzhili/defects4j_buggy/Mockito_34_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"public void captureArgumentsFrom(Invocation i) {
+Mockito_34,/path/to/defects4j_buggy/Mockito_34_buggy/src/org/mockito/internal/invocation/InvocationMatcher.java,"public void captureArgumentsFrom(Invocation i) {
          int k = 0;
          for (Matcher m : matchers) {
              if (m instanceof CapturesArguments) {
@@ -12087,10 +12087,10 @@ Mockito_34,/home/common/huangzhili/defects4j_buggy/Mockito_34_buggy/src/org/mock
              k++;
         }
     }"
-Mockito_38,/home/common/huangzhili/defects4j_buggy/Mockito_38_buggy/src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java,"     private boolean toStringEquals(Matcher m, Object arg) {
+Mockito_38,/path/to/defects4j_buggy/Mockito_38_buggy/src/org/mockito/internal/verification/argumentmatching/ArgumentMatchingTool.java,"     private boolean toStringEquals(Matcher m, Object arg) {
         return StringDescription.toString(m).equals(arg.toString());
      }"
-Time_4,/home/common/huangzhili/defects4j_buggy/Time_4_buggy/src/main/java/org/joda/time/Partial.java,"public Partial with(DateTimeFieldType fieldType, int value) {
+Time_4,/path/to/defects4j_buggy/Time_4_buggy/src/main/java/org/joda/time/Partial.java,"public Partial with(DateTimeFieldType fieldType, int value) {
         if (fieldType == null) {
             throw new IllegalArgumentException(""The field type must not be null"");
         }
@@ -12139,7 +12139,7 @@ Time_4,/home/common/huangzhili/defects4j_buggy/Time_4_buggy/src/main/java/org/jo
         newValues = getField(index).set(this, index, newValues, value);
         return new Partial(this, newValues);
     }"
-Time_5,/home/common/huangzhili/defects4j_buggy/Time_5_buggy/src/main/java/org/joda/time/Period.java,"public Period normalizedStandard(PeriodType type) {
+Time_5,/path/to/defects4j_buggy/Time_5_buggy/src/main/java/org/joda/time/Period.java,"public Period normalizedStandard(PeriodType type) {
         type = DateTimeUtils.getPeriodType(type);
         long millis = getMillis();  // no overflow can happen, even with Integer.MAX_VALUEs
         millis += (((long) getSeconds()) * ((long) DateTimeConstants.MILLIS_PER_SECOND));
@@ -12162,7 +12162,7 @@ Time_5,/home/common/huangzhili/defects4j_buggy/Time_5_buggy/src/main/java/org/jo
          }
          return result;
     }"
-Time_7,/home/common/huangzhili/defects4j_buggy/Time_7_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java,"public int parseInto(ReadWritableInstant instant, String text, int position) {
+Time_7,/path/to/defects4j_buggy/Time_7_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java,"public int parseInto(ReadWritableInstant instant, String text, int position) {
         DateTimeParser parser = requireParser();
         if (instant == null) {
             throw new IllegalArgumentException(""Instant must not be null"");
@@ -12191,7 +12191,7 @@ Time_7,/home/common/huangzhili/defects4j_buggy/Time_7_buggy/src/main/java/org/jo
         }
         return newPos;
     }"
-Time_8,/home/common/huangzhili/defects4j_buggy/Time_8_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) throws IllegalArgumentException {
+Time_8,/path/to/defects4j_buggy/Time_8_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public static DateTimeZone forOffsetHoursMinutes(int hoursOffset, int minutesOffset) throws IllegalArgumentException {
         if (hoursOffset == 0 && minutesOffset == 0) {
             return DateTimeZone.UTC;
         }
@@ -12215,12 +12215,12 @@ Time_8,/home/common/huangzhili/defects4j_buggy/Time_8_buggy/src/main/java/org/jo
         }
         return forOffsetMillis(offset);
     }"
-Time_11,/home/common/huangzhili/defects4j_buggy/Time_11_buggy/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java,"    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
+Time_11,/path/to/defects4j_buggy/Time_11_buggy/src/main/java/org/joda/time/tz/ZoneInfoCompiler.java,"    static ThreadLocal<Boolean> cVerbose = new ThreadLocal<Boolean>();
     static {
         cVerbose.set(Boolean.FALSE);
     }
 "
-Time_14,/home/common/huangzhili/defects4j_buggy/Time_14_buggy/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java,"public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {
+Time_14,/path/to/defects4j_buggy/Time_14_buggy/src/main/java/org/joda/time/chrono/BasicMonthOfYearDateTimeField.java,"public int[] add(ReadablePartial partial, int fieldIndex, int[] values, int valueToAdd) {
         // overridden as superclass algorithm can't handle
         // 2004-02-29 + 48 months -> 2008-02-29 type dates
          if (valueToAdd == 0) {
@@ -12238,7 +12238,7 @@ Time_14,/home/common/huangzhili/defects4j_buggy/Time_14_buggy/src/main/java/org/
             return super.add(partial, fieldIndex, values, valueToAdd);
         }
     }"
-Time_15,/home/common/huangzhili/defects4j_buggy/Time_15_buggy/src/main/java/org/joda/time/field/FieldUtils.java,"public static long safeMultiply(long val1, int val2) {
+Time_15,/path/to/defects4j_buggy/Time_15_buggy/src/main/java/org/joda/time/field/FieldUtils.java,"public static long safeMultiply(long val1, int val2) {
          switch (val2) {
              case -1:
                  return -val1;
@@ -12253,7 +12253,7 @@ Time_15,/home/common/huangzhili/defects4j_buggy/Time_15_buggy/src/main/java/org/
         }
         return total;
     }"
-Time_16,/home/common/huangzhili/defects4j_buggy/Time_16_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java,"public int parseInto(ReadWritableInstant instant, String text, int position) {
+Time_16,/path/to/defects4j_buggy/Time_16_buggy/src/main/java/org/joda/time/format/DateTimeFormatter.java,"public int parseInto(ReadWritableInstant instant, String text, int position) {
         DateTimeParser parser = requireParser();
         if (instant == null) {
             throw new IllegalArgumentException(""Instant must not be null"");
@@ -12281,7 +12281,7 @@ Time_16,/home/common/huangzhili/defects4j_buggy/Time_16_buggy/src/main/java/org/
         }
         return newPos;
     }"
-Time_17,/home/common/huangzhili/defects4j_buggy/Time_17_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public long adjustOffset(long instant, boolean earlierOrLater) {
+Time_17,/path/to/defects4j_buggy/Time_17_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public long adjustOffset(long instant, boolean earlierOrLater) {
          // a bit messy, but will work in all non-pathological cases
          
          // evaluate 3 hours before and after to work out if anything is happening
@@ -12299,7 +12299,7 @@ Time_17,/home/common/huangzhili/defects4j_buggy/Time_17_buggy/src/main/java/org/
            // currently in later offset
            // currently in earlier offset
      }"
-Time_18,/home/common/huangzhili/defects4j_buggy/Time_18_buggy/src/main/java/org/joda/time/chrono/GJChronology.java,"public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,
+Time_18,/path/to/defects4j_buggy/Time_18_buggy/src/main/java/org/joda/time/chrono/GJChronology.java,"public long getDateTimeMillis(int year, int monthOfYear, int dayOfMonth,
                                   int hourOfDay, int minuteOfHour,
                                   int secondOfMinute, int millisOfSecond)
         throws IllegalArgumentException
@@ -12328,7 +12328,7 @@ Time_18,/home/common/huangzhili/defects4j_buggy/Time_18_buggy/src/main/java/org/
         }
         return instant;
     }"
-Time_19,/home/common/huangzhili/defects4j_buggy/Time_19_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public int getOffsetFromLocal(long instantLocal) {
+Time_19,/path/to/defects4j_buggy/Time_19_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public int getOffsetFromLocal(long instantLocal) {
         // get the offset at instantLocal (first estimate)
         final int offsetLocal = getOffset(instantLocal);
         // adjust instantLocal using the estimate and recalc the offset
@@ -12360,7 +12360,7 @@ Time_19,/home/common/huangzhili/defects4j_buggy/Time_19_buggy/src/main/java/org/
         }
         return offsetAdjusted;
     }"
-Time_20,/home/common/huangzhili/defects4j_buggy/Time_20_buggy/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java,"public int parseInto(DateTimeParserBucket bucket, String text, int position) {
+Time_20,/path/to/defects4j_buggy/Time_20_buggy/src/main/java/org/joda/time/format/DateTimeFormatterBuilder.java,"public int parseInto(DateTimeParserBucket bucket, String text, int position) {
              String str = text.substring(position);
              for (String id : ALL_IDS) {
                  if (str.startsWith(id)) {
@@ -12370,12 +12370,12 @@ Time_20,/home/common/huangzhili/defects4j_buggy/Time_20_buggy/src/main/java/org/
              }
              return ~position;
          }"
-Time_22,/home/common/huangzhili/defects4j_buggy/Time_22_buggy/src/main/java/org/joda/time/base/BasePeriod.java,"    protected BasePeriod(long duration) {
+Time_22,/path/to/defects4j_buggy/Time_22_buggy/src/main/java/org/joda/time/base/BasePeriod.java,"    protected BasePeriod(long duration) {
         this(duration, null, null);
         // bug [3264409]
     }
 "
-Time_23,/home/common/huangzhili/defects4j_buggy/Time_23_buggy/src/main/java/org/joda/time/DateTimeZone.java,"private static synchronized String getConvertedId(String id) {
+Time_23,/path/to/defects4j_buggy/Time_23_buggy/src/main/java/org/joda/time/DateTimeZone.java,"private static synchronized String getConvertedId(String id) {
         Map<String, String> map = cZoneIdConversion;
         if (map == null) {
             // Backwards compatibility with TimeZone.
@@ -12416,7 +12416,7 @@ Time_23,/home/common/huangzhili/defects4j_buggy/Time_23_buggy/src/main/java/org/
         }
         return map.get(id);
     }"
-Time_24,/home/common/huangzhili/defects4j_buggy/Time_24_buggy/src/main/java/org/joda/time/format/DateTimeParserBucket.java,"public long computeMillis(boolean resetFields, String text) {
+Time_24,/path/to/defects4j_buggy/Time_24_buggy/src/main/java/org/joda/time/format/DateTimeParserBucket.java,"public long computeMillis(boolean resetFields, String text) {
         SavedField[] savedFields = iSavedFields;
         int count = iSavedFieldsCount;
         if (iSavedFieldsShared) {
@@ -12464,7 +12464,7 @@ Time_24,/home/common/huangzhili/defects4j_buggy/Time_24_buggy/src/main/java/org/
         
         return millis;
     }"
-Time_25,/home/common/huangzhili/defects4j_buggy/Time_25_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public int getOffsetFromLocal(long instantLocal) {
+Time_25,/path/to/defects4j_buggy/Time_25_buggy/src/main/java/org/joda/time/DateTimeZone.java,"public int getOffsetFromLocal(long instantLocal) {
         // get the offset at instantLocal (first estimate)
         final int offsetLocal = getOffset(instantLocal);
         // adjust instantLocal using the estimate and recalc the offset
@@ -12487,7 +12487,7 @@ Time_25,/home/common/huangzhili/defects4j_buggy/Time_25_buggy/src/main/java/org/
          }
          return offsetAdjusted;
      }"
-Time_27,/home/common/huangzhili/defects4j_buggy/Time_27_buggy/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java,"private static PeriodFormatter toFormatter(List<Object> elementPairs, boolean notPrinter, boolean notParser) {
+Time_27,/path/to/defects4j_buggy/Time_27_buggy/src/main/java/org/joda/time/format/PeriodFormatterBuilder.java,"private static PeriodFormatter toFormatter(List<Object> elementPairs, boolean notPrinter, boolean notParser) {
         if (notPrinter && notParser) {
             throw new IllegalStateException(""Builder has created neither a printer nor a parser"");
         }
