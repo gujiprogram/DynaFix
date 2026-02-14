@@ -36,7 +36,9 @@ For more details, please refer to our [arXiv paper](https://arxiv.org/abs/2512.2
 │   ├── validator/              # Logic for test execution and patch validation
 │   └── result/                 # Temporary logs for current repair sessions
 │
-└── Result/                     # 📊 Experimental Results (RQ1-RQ4)
+├── Result/                     # 📊 Experimental Results (RQ1-RQ4)
+│
+└── requirements.txt            # 📦 Python project dependencies
 
 ```
 
@@ -81,13 +83,23 @@ $CMD \
     -Xbootclasspath/a:$BASE/config/config.jar \
     -jar $BASE/lib/ant/ant-launcher.jar $*
 ```
-After this, run the following command to collect dynamic execution information:
+
+
+### Step 3. Install Dependencies & Collect Dynamic Info
+
+First, install the required Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Then, navigate to the framework directory and run the collection script to generate dynamic execution traces:
 
 ```bash
 python DebugInfoFetch/CollectDynamicInfo.py
 ```
 
-### Step 3. Configure Repair Parameters
+### Step 4. Configure Repair Parameters
 You can run the repair framework by modifying the default arguments in `LLM_Fix.py` or by passing them via the command line.
 
 **1. Essential Configurations (You MUST set these):**
@@ -107,7 +119,7 @@ You can run the repair framework by modifying the default arguments in `LLM_Fix.
 * `--msg_path`: Points to `./data/defects4j_exception_info.csv` (Default provided).
 * `--debug_info_dir` / `--method_calls_dir`: Output directories for intermediate data.
 
-### Step 4. Run DynaFix
+### Step 5. Run DynaFix
 Once your environment is configured, start the automated repair process:
 
 ```bash
