@@ -134,7 +134,7 @@ python LLM_Fix.py
 Alternatively, you can override parameters directly via the CLI:
 
 ```bash
-python LLM_Fix.py --api_key "sk-..." --remote_model "gpt-4" --width_try 5
+python LLM_Fix.py --api_key "sk-..." --remote_model "gpt-4" --width_try 7 --deep_try 5 
 ```
 
 
